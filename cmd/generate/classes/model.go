@@ -14,17 +14,18 @@ type GDMethodDoc struct {
 
 // GDAPI is a structure for parsed JSON from godot_api.json.
 type GDAPI struct {
-	APIType      string           `json:"api_type"`
-	BaseClass    string           `json:"base_class"`
-	Constants    map[string]int64 `json:"constants"`
-	Enums        []GDEnums        `json:"enums"`
-	Methods      []GDMethod       `json:"methods"`
-	Name         string           `json:"name"`
-	Properties   []GDProperty     `json:"properties"`
-	Signals      []GDSignal       `json:"signals"`
-	Singleton    bool             `json:"singleton"`
-	Instanciable bool             `json:"instanciable"`
-	IsReference  bool             `json:"is_reference"`
+	APIType       string           `json:"api_type"`
+	BaseClass     string           `json:"base_class"`
+	Constants     map[string]int64 `json:"constants"`
+	Enums         []GDEnums        `json:"enums"`
+	Methods       []GDMethod       `json:"methods"`
+	Name          string           `json:"name"`
+	SingletonName string           `json:"singleton_name"`
+	Properties    []GDProperty     `json:"properties"`
+	Signals       []GDSignal       `json:"signals"`
+	Singleton     bool             `json:"singleton"`
+	Instanciable  bool             `json:"instanciable"`
+	IsReference   bool             `json:"is_reference"`
 }
 
 // ByName is used for sorting GDAPI objects by name

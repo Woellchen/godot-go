@@ -69,7 +69,7 @@ type {{ $view.SetClassName $API.Name $API.Singleton }} struct {
 		return
 	}
 	//log.Println("Singleton not found. Fetching from GDNative...")
-    	base := gdnative.GetSingleton("{{ $API.Name }}")
+    	base := gdnative.GetSingleton("{{ $API.SingletonName }}")
 	o.SetBaseObject(base)
 	o.initialized = true
     }
