@@ -11,7 +11,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/gabstv/godot-go/cmd/generate/methods"
+	"github.com/Woellchen/godot-go/cmd/generate/methods"
 	"github.com/kr/pretty"
 	"github.com/pinzolo/casee"
 )

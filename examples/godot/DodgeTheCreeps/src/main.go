@@ -4,8 +4,8 @@ import (
 	"log"
 	"math/rand"
 
-	gd "github.com/gabstv/godot-go/gdnative"
-	"github.com/gabstv/godot-go/godot"
+	gd "github.com/Woellchen/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/godot"
 )
 
 // main is required to be exported as a shared library

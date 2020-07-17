@@ -1,4 +1,4 @@
-module github.com/gabstv/godot-go
+module github.com/Woellchen/godot-go
 
 go 1.13
 

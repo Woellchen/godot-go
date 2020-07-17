@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 // SimpleClass is a structure that we can register with Godot.

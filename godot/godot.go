@@ -8,7 +8,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 	"github.com/pinzolo/casee"
 )
 

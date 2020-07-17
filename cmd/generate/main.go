@@ -6,9 +6,9 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/gabstv/godot-go/cmd/generate/classes"
-	"github.com/gabstv/godot-go/cmd/generate/gdnative"
-	"github.com/gabstv/godot-go/cmd/generate/types"
+	"github.com/Woellchen/godot-go/cmd/generate/classes"
+	"github.com/Woellchen/godot-go/cmd/generate/gdnative"
+	"github.com/Woellchen/godot-go/cmd/generate/types"
 	"github.com/spf13/cobra"
 )
 
