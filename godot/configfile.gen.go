@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newConfigFileFromPointer(ptr gdnative.Pointer) ConfigFile {
 }
 
 /*
-This helper class can be used to store [Variant] values on the filesystem using INI-style formatting. The stored values are identified by a section and a key: [codeblock] [section] some_key=42 string_example="Hello World3D!" a_vector=Vector3( 1, 0, 2 ) [/codeblock] The stored data can be saved to or parsed from a file, though ConfigFile objects can also be used directly without accessing the filesystem. The following example shows how to parse an INI-style file from the system, read its contents and store new values in it: [codeblock] var config = ConfigFile.new() var err = config.load("user://settings.cfg") if err == OK: # If not, something went wrong with the file loading # Look for the display/width pair, and default to 1024 if missing var screen_width = config.get_value("display", "width", 1024) # Store a variable if and only if it hasn't been defined yet if not config.has_section_key("audio", "mute"): config.set_value("audio", "mute", false) # Save the changes by overwriting the previous file config.save("user://settings.cfg") [/codeblock] Keep in mind that section and property names can't contain spaces. Anything after a space will be ignored on save and on load. ConfigFiles can also contain manually written comment lines starting with a semicolon ([code];[/code]). Those lines will be ignored when parsing the file. Note that comments will be lost when saving the ConfigFile. This can still be useful for dedicated server configuration files, which are typically never overwritten without explicit user action.
+This helper class can be used to store [Variant] values on the filesystem using INI-style formatting. The stored values are identified by a section and a key: [codeblock] [section] some_key=42 string_example="Hello World!" a_vector=Vector3( 1, 0, 2 ) [/codeblock] The stored data can be saved to or parsed from a file, though ConfigFile objects can also be used directly without accessing the filesystem. The following example shows how to parse an INI-style file from the system, read its contents and store new values in it: [codeblock] var config = ConfigFile.new() var err = config.load("user://settings.cfg") if err == OK: # If not, something went wrong with the file loading # Look for the display/width pair, and default to 1024 if missing var screen_width = config.get_value("display", "width", 1024) # Store a variable if and only if it hasn't been defined yet if not config.has_section_key("audio", "mute"): config.set_value("audio", "mute", false) # Save the changes by overwriting the previous file config.save("user://settings.cfg") [/codeblock] Keep in mind that section and property names can't contain spaces. Anything after a space will be ignored on save and on load. ConfigFiles can also contain manually written comment lines starting with a semicolon ([code];[/code]). Those lines will be ignored when parsing the file. Note that comments will be lost when saving the ConfigFile. This can still be useful for dedicated server configuration files, which are typically never overwritten without explicit user action.
 */
 type ConfigFile struct {
 	Reference
@@ -250,18 +250,42 @@ func (o *ConfigFile) LoadEncrypted(path gdnative.String, key gdnative.PoolByteAr
 
 /*
         Loads the encrypted config file specified as a parameter, using the provided [code]password[/code] to decrypt it. The file's contents are parsed and loaded in the [ConfigFile] object which the method was called on. Returns one of the [enum Error] code constants ([code]OK[/code] on success).
-	Args: [{ false path String} { false pass String}], Returns: enum.Error
+	Args: [{ false path String} { false password String}], Returns: enum.Error
 */
-func (o *ConfigFile) LoadEncryptedPass(path gdnative.String, pass gdnative.String) gdnative.Error {
+func (o *ConfigFile) LoadEncryptedPass(path gdnative.String, password gdnative.String) gdnative.Error {
 	//log.Println("Calling ConfigFile.LoadEncryptedPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
 	ptrArguments[0] = gdnative.NewPointerFromString(path)
-	ptrArguments[1] = gdnative.NewPointerFromString(pass)
+	ptrArguments[1] = gdnative.NewPointerFromString(password)
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("ConfigFile", "load_encrypted_pass")
+
+	// Call the parent method.
+	// enum.Error
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return gdnative.Error(ret)
+}
+
+/*
+        Parses the the passed string as the contents of a config file. The string is parsed and loaded in the ConfigFile object which the method was called on. Returns one of the [enum Error] code constants ([code]OK[/code] on success).
+	Args: [{ false data String}], Returns: enum.Error
+*/
+func (o *ConfigFile) Parse(data gdnative.String) gdnative.Error {
+	//log.Println("Calling ConfigFile.Parse()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromString(data)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("ConfigFile", "parse")
 
 	// Call the parent method.
 	// enum.Error
@@ -324,15 +348,15 @@ func (o *ConfigFile) SaveEncrypted(path gdnative.String, key gdnative.PoolByteAr
 
 /*
         Saves the contents of the [ConfigFile] object to the AES-256 encrypted file specified as a parameter, using the provided [code]password[/code] to encrypt it. The output file uses an INI-style structure. Returns one of the [enum Error] code constants ([code]OK[/code] on success).
-	Args: [{ false path String} { false pass String}], Returns: enum.Error
+	Args: [{ false path String} { false password String}], Returns: enum.Error
 */
-func (o *ConfigFile) SaveEncryptedPass(path gdnative.String, pass gdnative.String) gdnative.Error {
+func (o *ConfigFile) SaveEncryptedPass(path gdnative.String, password gdnative.String) gdnative.Error {
 	//log.Println("Calling ConfigFile.SaveEncryptedPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
 	ptrArguments[0] = gdnative.NewPointerFromString(path)
-	ptrArguments[1] = gdnative.NewPointerFromString(pass)
+	ptrArguments[1] = gdnative.NewPointerFromString(password)
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("ConfigFile", "save_encrypted_pass")

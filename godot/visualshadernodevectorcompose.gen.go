@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeVectorComposeFromPointer(ptr gdnative.Pointer) VisualSha
 }
 
 /*
-
- */
+Creates a [code]vec3[/code] using three scalar values that can be provided from separate inputs.
+*/
 type VisualShaderNodeVectorCompose struct {
 	VisualShaderNode
 	owner gdnative.Object

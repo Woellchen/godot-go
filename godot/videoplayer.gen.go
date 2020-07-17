@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -187,7 +187,7 @@ func (o *VideoPlayer) GetStreamPosition() gdnative.Real {
 }
 
 /*
-        Returns the current frame as a [Texture2D].
+        Returns the current frame as a [Texture].
 	Args: [], Returns: Texture
 */
 func (o *VideoPlayer) GetVideoTexture() TextureImplementer {

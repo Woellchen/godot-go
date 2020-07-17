@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -41,8 +41,8 @@ func newVisualShaderNodeTextureUniformFromPointer(ptr gdnative.Pointer) VisualSh
 }
 
 /*
-
- */
+Performs a lookup operation on the texture provided as a uniform for the shader.
+*/
 type VisualShaderNodeTextureUniform struct {
 	VisualShaderNodeUniform
 	owner gdnative.Object

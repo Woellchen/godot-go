@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ func newLineEditFromPointer(ptr gdnative.Pointer) LineEdit {
 }
 
 /*
-LineEdit provides a single-line string editor, used for text fields. It features many built-in shortcuts which will always be available ([code]Ctrl[/code] here maps to [code]Command[/code] on macOS): - Ctrl + C: Copy - Ctrl + X: Cut - Ctrl + V or Ctrl + Y: Paste/"yank" - Ctrl + Z: Undo - Ctrl + Shift + Z: Redo - Ctrl + U: Delete text from the cursor position to the beginning of the line - Ctrl + K: Delete text from the cursor position to the end of the line - Ctrl + A: Select all text - Up/Down arrow: Move the cursor to the beginning/end of the line On macOS, some extra keyboard shortcuts are available: - Ctrl + F: Like the right arrow key, move the cursor one character right - Ctrl + B: Like the left arrow key, move the cursor one character left - Ctrl + P: Like the up arrow key, move the cursor to the previous line - Ctrl + N: Like the down arrow key, move the cursor to the next line - Ctrl + D: Like the Delete key, delete the character on the right side of cursor - Ctrl + H: Like the Backspace key, delete the character on the left side of the cursor - Ctrl + A: Like the Home key, move the cursor to the beginning of the line - Ctrl + E: Like the End key, move the cursor to the end of the line - Command + Left arrow: Like the Home key, move the cursor to the beginning of the line - Command + Right arrow: Like the End key, move the cursor to the end of the line
+LineEdit provides a single-line string editor, used for text fields. It features many built-in shortcuts which will always be available ([code]Ctrl[/code] here maps to [code]Command[/code] on macOS): - Ctrl + C: Copy - Ctrl + X: Cut - Ctrl + V or Ctrl + Y: Paste/"yank" - Ctrl + Z: Undo - Ctrl + Shift + Z: Redo - Ctrl + U: Delete text from the cursor position to the beginning of the line - Ctrl + K: Delete text from the cursor position to the end of the line - Ctrl + A: Select all text - Up/Down arrow: Move the cursor to the beginning/end of the line On macOS, some extra keyboard shortcuts are available: - Ctrl + F: Like the right arrow key, move the cursor one character right - Ctrl + B: Like the left arrow key, move the cursor one character left - Ctrl + P: Like the up arrow key, move the cursor to the previous line - Ctrl + N: Like the down arrow key, move the cursor to the next line - Ctrl + D: Like the Delete key, delete the character on the right side of cursor - Ctrl + H: Like the Backspace key, delete the character on the left side of the cursor - Command + Left arrow: Like the Home key, move the cursor to the beginning of the line - Command + Right arrow: Like the End key, move the cursor to the end of the line
 */
 type LineEdit struct {
 	Control
@@ -161,7 +161,7 @@ func (o *LineEdit) AppendAtCursor(text gdnative.String) {
 }
 
 /*
-        Erases the [LineEdit] text.
+        Erases the [LineEdit]'s [member text].
 	Args: [], Returns: void
 */
 func (o *LineEdit) Clear() {
@@ -260,6 +260,48 @@ func (o *LineEdit) CursorSetBlinkSpeed(blinkSpeed gdnative.Real) {
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("LineEdit", "cursor_set_blink_speed")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Deletes one character at the cursor's current position (equivalent to pressing the [code]Delete[/code] key).
+	Args: [], Returns: void
+*/
+func (o *LineEdit) DeleteCharAtCursor() {
+	//log.Println("Calling LineEdit.DeleteCharAtCursor()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("LineEdit", "delete_char_at_cursor")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Deletes a section of the [member text] going from position [code]from_column[/code] to [code]to_column[/code]. Both parameters should be within the text's length.
+	Args: [{ false from_column int} { false to_column int}], Returns: void
+*/
+func (o *LineEdit) DeleteText(fromColumn gdnative.Int, toColumn gdnative.Int) {
+	//log.Println("Calling LineEdit.DeleteText()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromInt(fromColumn)
+	ptrArguments[1] = gdnative.NewPointerFromInt(toColumn)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("LineEdit", "delete_text")
 
 	// Call the parent method.
 	// void
@@ -1075,6 +1117,8 @@ type LineEditImplementer interface {
 	CursorGetBlinkSpeed() gdnative.Real
 	CursorSetBlinkEnabled(enabled gdnative.Bool)
 	CursorSetBlinkSpeed(blinkSpeed gdnative.Real)
+	DeleteCharAtCursor()
+	DeleteText(fromColumn gdnative.Int, toColumn gdnative.Int)
 	Deselect()
 	GetCursorPosition() gdnative.Int
 	GetExpandToTextLength() gdnative.Bool

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newPopupDialogFromPointer(ptr gdnative.Pointer) PopupDialog {
 }
 
 /*
-Undocumented
+PopupDialog is a base class for popup dialogs, along with [WindowDialog].
 */
 type PopupDialog struct {
 	Popup

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ func (o *classDb) ensureSingleton() {
 		return
 	}
 	//log.Println("Singleton not found. Fetching from GDNative...")
-	base := gdnative.GetSingleton("_ClassDB")
+	base := gdnative.GetSingleton("ClassDB")
 	o.SetBaseObject(base)
 	o.initialized = true
 }

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -345,6 +345,29 @@ func (o *ARVRPositionalTracker) GetRumble() gdnative.Real {
 }
 
 /*
+        Returns the internal tracker ID. This uniquely identifies the tracker per tracker type and matches the ID you need to specify for nodes such as the [ARVRController] and [ARVRAnchor] nodes.
+	Args: [], Returns: int
+*/
+func (o *ARVRPositionalTracker) GetTrackerId() gdnative.Int {
+	//log.Println("Calling ARVRPositionalTracker.GetTrackerId()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("ARVRPositionalTracker", "get_tracker_id")
+
+	// Call the parent method.
+	// int
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
         Returns [code]true[/code] if this device tracks orientation.
 	Args: [], Returns: bool
 */
@@ -474,6 +497,7 @@ type ARVRPositionalTrackerImplementer interface {
 	GetOrientation() gdnative.Basis
 	GetPosition() gdnative.Vector3
 	GetRumble() gdnative.Real
+	GetTrackerId() gdnative.Int
 	GetTracksOrientation() gdnative.Bool
 	GetTracksPosition() gdnative.Bool
 	GetTransform(adjustByReferenceFrame gdnative.Bool) gdnative.Transform

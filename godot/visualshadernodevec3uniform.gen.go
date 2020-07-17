@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeVec3UniformFromPointer(ptr gdnative.Pointer) VisualShade
 }
 
 /*
-
- */
+Translated to [code]uniform vec3[/code] in the shader language.
+*/
 type VisualShaderNodeVec3Uniform struct {
 	VisualShaderNodeUniform
 	owner gdnative.Object

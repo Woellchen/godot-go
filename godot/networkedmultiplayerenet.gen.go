@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -333,6 +333,52 @@ func (o *NetworkedMultiplayerENet) IsAlwaysOrdered() gdnative.Bool {
         Undocumented
 	Args: [], Returns: bool
 */
+func (o *NetworkedMultiplayerENet) IsDtlsEnabled() gdnative.Bool {
+	//log.Println("Calling NetworkedMultiplayerENet.IsDtlsEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("NetworkedMultiplayerENet", "is_dtls_enabled")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: bool
+*/
+func (o *NetworkedMultiplayerENet) IsDtlsVerifyEnabled() gdnative.Bool {
+	//log.Println("Calling NetworkedMultiplayerENet.IsDtlsVerifyEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("NetworkedMultiplayerENet", "is_dtls_verify_enabled")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: bool
+*/
 func (o *NetworkedMultiplayerENet) IsServerRelayEnabled() gdnative.Bool {
 	//log.Println("Calling NetworkedMultiplayerENet.IsServerRelayEnabled()")
 
@@ -438,6 +484,90 @@ func (o *NetworkedMultiplayerENet) SetCompressionMode(mode gdnative.Int) {
 
 /*
         Undocumented
+	Args: [{ false certificate X509Certificate}], Returns: void
+*/
+func (o *NetworkedMultiplayerENet) SetDtlsCertificate(certificate X509CertificateImplementer) {
+	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsCertificate()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromObject(certificate.GetBaseObject())
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("NetworkedMultiplayerENet", "set_dtls_certificate")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
+	Args: [{ false enabled bool}], Returns: void
+*/
+func (o *NetworkedMultiplayerENet) SetDtlsEnabled(enabled gdnative.Bool) {
+	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromBool(enabled)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("NetworkedMultiplayerENet", "set_dtls_enabled")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
+	Args: [{ false key CryptoKey}], Returns: void
+*/
+func (o *NetworkedMultiplayerENet) SetDtlsKey(key CryptoKeyImplementer) {
+	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsKey()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromObject(key.GetBaseObject())
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("NetworkedMultiplayerENet", "set_dtls_key")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
+	Args: [{ false enabled bool}], Returns: void
+*/
+func (o *NetworkedMultiplayerENet) SetDtlsVerifyEnabled(enabled gdnative.Bool) {
+	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsVerifyEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromBool(enabled)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("NetworkedMultiplayerENet", "set_dtls_verify_enabled")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetServerRelayEnabled(enabled gdnative.Bool) {
@@ -491,11 +621,17 @@ type NetworkedMultiplayerENetImplementer interface {
 	GetPeerPort(id gdnative.Int) gdnative.Int
 	GetTransferChannel() gdnative.Int
 	IsAlwaysOrdered() gdnative.Bool
+	IsDtlsEnabled() gdnative.Bool
+	IsDtlsVerifyEnabled() gdnative.Bool
 	IsServerRelayEnabled() gdnative.Bool
 	SetAlwaysOrdered(ordered gdnative.Bool)
 	SetBindIp(ip gdnative.String)
 	SetChannelCount(channels gdnative.Int)
 	SetCompressionMode(mode gdnative.Int)
+	SetDtlsCertificate(certificate X509CertificateImplementer)
+	SetDtlsEnabled(enabled gdnative.Bool)
+	SetDtlsKey(key CryptoKeyImplementer)
+	SetDtlsVerifyEnabled(enabled gdnative.Bool)
 	SetServerRelayEnabled(enabled gdnative.Bool)
 	SetTransferChannel(channel gdnative.Int)
 }

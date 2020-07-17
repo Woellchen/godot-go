@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ func newVisibilityEnablerFromPointer(ptr gdnative.Pointer) VisibilityEnabler {
 }
 
 /*
-Undocumented
+The VisibilityEnabler will disable [RigidBody] and [AnimationPlayer] nodes when they are not visible. It will only affect other nodes within the same scene as the VisibilityEnabler itself. [b]Note:[/b] VisibilityEnabler uses an approximate heuristic for performance reasons. It doesn't take walls and other occlusion into account. If you need exact visibility checking, use another method such as adding an [Area] node as a child of a [Camera] node. [b]Note:[/b] VisibilityEnabler will not affect nodes added after scene initialization.
 */
 type VisibilityEnabler struct {
 	VisibilityNotifier
@@ -65,7 +65,7 @@ func (o *VisibilityEnabler) X_NodeRemoved(arg0 NodeImplementer) {
 }
 
 /*
-        Undocumented
+        Returns whether the enabler identified by given [enum Enabler] constant is active.
 	Args: [{ false enabler int}], Returns: bool
 */
 func (o *VisibilityEnabler) IsEnablerEnabled(enabler gdnative.Int) gdnative.Bool {
@@ -89,7 +89,7 @@ func (o *VisibilityEnabler) IsEnablerEnabled(enabler gdnative.Int) gdnative.Bool
 }
 
 /*
-        Undocumented
+        Sets active state of the enabler identified by given [enum Enabler] constant.
 	Args: [{ false enabler int} { false enabled bool}], Returns: void
 */
 func (o *VisibilityEnabler) SetEnabler(enabler gdnative.Int, enabled gdnative.Bool) {

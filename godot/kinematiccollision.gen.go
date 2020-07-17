@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newKinematicCollisionFromPointer(ptr gdnative.Pointer) KinematicCollision {
 }
 
 /*
-Undocumented
+Contains collision data for [KinematicBody] collisions. When a [KinematicBody] is moved using [method KinematicBody.move_and_collide], it stops if it detects a collision with another body. If a collision is detected, a KinematicCollision object is returned. This object contains information about the collision, including the colliding object, the remaining motion, and the collision position. This information can be used to calculate a collision response.
 */
 type KinematicCollision struct {
 	Reference

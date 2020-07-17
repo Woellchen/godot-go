@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newSpatialGizmoFromPointer(ptr gdnative.Pointer) SpatialGizmo {
 }
 
 /*
-Undocumented
-*/
+
+ */
 type SpatialGizmo struct {
 	Reference
 	owner gdnative.Object

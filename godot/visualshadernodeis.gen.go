@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -31,8 +31,8 @@ func newVisualShaderNodeIsFromPointer(ptr gdnative.Pointer) VisualShaderNodeIs {
 }
 
 /*
-
- */
+Returns the boolean result of the comparison between [code]INF[/code] or [code]NaN[/code] and a scalar parameter.
+*/
 type VisualShaderNodeIs struct {
 	VisualShaderNode
 	owner gdnative.Object

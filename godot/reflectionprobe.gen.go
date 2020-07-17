@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ func newReflectionProbeFromPointer(ptr gdnative.Pointer) ReflectionProbe {
 }
 
 /*
-Captures its surroundings as a cubemap, and stores versions of it with increasing levels of blur to simulate different material roughnesses. The [ReflectionProbe] is used to create high-quality reflections at the cost of performance. It can be combined with [GIProbe]s and Screen Space Reflections to achieve high quality reflections. [ReflectionProbe]s render all objects within their [member cull_mask], so updating them can be quite expensive. It is best to update them once with the important static objects and then leave them.
+Capture its surroundings as a dual paraboloid image, and stores versions of it with increasing levels of blur to simulate different material roughnesses. The [ReflectionProbe] is used to create high-quality reflections at the cost of performance. It can be combined with [GIProbe]s and Screen Space Reflections to achieve high quality reflections. [ReflectionProbe]s render all objects within their [member cull_mask], so updating them can be quite expensive. It is best to update them once with the important static objects and then leave them. Note: By default Godot will only render 16 reflection probes. If you need more, increase the number of atlas subdivisions. This setting can be found in [member ProjectSettings.rendering/quality/reflections/atlas_subdiv].
 */
 type ReflectionProbe struct {
 	VisualInstance

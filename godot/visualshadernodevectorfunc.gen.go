@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -64,8 +64,8 @@ func newVisualShaderNodeVectorFuncFromPointer(ptr gdnative.Pointer) VisualShader
 }
 
 /*
-
- */
+A visual shader node able to perform different functions using vectors.
+*/
 type VisualShaderNodeVectorFunc struct {
 	VisualShaderNode
 	owner gdnative.Object

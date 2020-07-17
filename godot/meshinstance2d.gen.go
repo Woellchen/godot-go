@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newMeshInstance2DFromPointer(ptr gdnative.Pointer) MeshInstance2D {
 }
 
 /*
-Node used for displaying a [Mesh] in 2D. Can be constructed from an existing [Sprite2D] via a tool in the editor toolbar. Select "Sprite2D" then "Convert to Mesh2D", select settings in popup and press "Create Mesh2D".
+Node used for displaying a [Mesh] in 2D. Can be constructed from an existing [Sprite] via a tool in the editor toolbar. Select "Sprite" then "Convert to Mesh2D", select settings in popup and press "Create Mesh2D".
 */
 type MeshInstance2D struct {
 	Node2D

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -231,6 +231,27 @@ func (o *EditorExportPlugin) AddIosPlistContent(plistContent gdnative.String) {
 
 /*
 
+	Args: [{ false path String}], Returns: void
+*/
+func (o *EditorExportPlugin) AddIosProjectStaticLib(path gdnative.String) {
+	//log.Println("Calling EditorExportPlugin.AddIosProjectStaticLib()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromString(path)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("EditorExportPlugin", "add_ios_project_static_lib")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+
 	Args: [{ false path String} { false tags PoolStringArray}], Returns: void
 */
 func (o *EditorExportPlugin) AddSharedObject(path gdnative.String, tags gdnative.PoolStringArray) {
@@ -284,6 +305,7 @@ type EditorExportPluginImplementer interface {
 	AddIosFramework(path gdnative.String)
 	AddIosLinkerFlags(flags gdnative.String)
 	AddIosPlistContent(plistContent gdnative.String)
+	AddIosProjectStaticLib(path gdnative.String)
 	AddSharedObject(path gdnative.String, tags gdnative.PoolStringArray)
 	Skip()
 }

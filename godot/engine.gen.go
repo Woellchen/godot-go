@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -27,12 +27,12 @@ func newSingletonEngine() *engine {
 }
 
 /*
-   The [Engine] class allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others.
+   The [Engine] singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others.
 */
 var Engine = newSingletonEngine()
 
 /*
-The [Engine] class allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others.
+The [Engine] singleton allows you to query and modify the project's run-time parameters, such as frames per second, time scale, and others.
 */
 type engine struct {
 	Object
@@ -47,7 +47,7 @@ func (o *engine) ensureSingleton() {
 		return
 	}
 	//log.Println("Singleton not found. Fetching from GDNative...")
-	base := gdnative.GetSingleton("_Engine")
+	base := gdnative.GetSingleton("Engine")
 	o.SetBaseObject(base)
 	o.initialized = true
 }

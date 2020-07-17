@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeScalarInterpFromPointer(ptr gdnative.Pointer) VisualShad
 }
 
 /*
-
- */
+Translates to [code]mix(a, b, weight)[/code] in the shader language.
+*/
 type VisualShaderNodeScalarInterp struct {
 	VisualShaderNode
 	owner gdnative.Object

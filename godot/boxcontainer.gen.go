@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ func newBoxContainerFromPointer(ptr gdnative.Pointer) BoxContainer {
 }
 
 /*
-Arranges child [Control] nodes vertically or horizontally, and rearranges them automatically when their minimum size changes.
+Arranges child controls vertically or horizontally, and rearranges the controls automatically when their minimum size changes.
 */
 type BoxContainer struct {
 	Container
@@ -44,7 +44,7 @@ func (o *BoxContainer) BaseClass() string {
 }
 
 /*
-        Adds a [Control] node to the box as a spacer. If [code]begin[/code] is [code]true[/code], it will insert the [Control] node in front of all other children.
+        Adds a control to the box as a spacer. If [code]true[/code], [code]begin[/code] will insert the spacer control in front of other children.
 	Args: [{ false begin bool}], Returns: void
 */
 func (o *BoxContainer) AddSpacer(begin gdnative.Bool) {

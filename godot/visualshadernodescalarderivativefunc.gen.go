@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -32,8 +32,8 @@ func newVisualShaderNodeScalarDerivativeFuncFromPointer(ptr gdnative.Pointer) Vi
 }
 
 /*
-
- */
+This node is only available in [code]Fragment[/code] and [code]Light[/code] visual shaders.
+*/
 type VisualShaderNodeScalarDerivativeFunc struct {
 	VisualShaderNode
 	owner gdnative.Object

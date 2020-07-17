@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -143,6 +143,28 @@ func (o *Shape2D) CollideWithMotionAndGetContacts(localXform gdnative.Transform2
 }
 
 /*
+        Draws a solid shape onto a [CanvasItem] with the [VisualServer] API filled with the specified [code]color[/code]. The exact drawing method is specific for each shape and cannot be configured.
+	Args: [{ false canvas_item RID} { false color Color}], Returns: void
+*/
+func (o *Shape2D) Draw(canvasItem gdnative.Rid, color gdnative.Color) {
+	//log.Println("Calling Shape2D.Draw()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromRid(canvasItem)
+	ptrArguments[1] = gdnative.NewPointerFromColor(color)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("Shape2D", "draw")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
         Undocumented
 	Args: [], Returns: float
 */
@@ -194,6 +216,7 @@ type Shape2DImplementer interface {
 	CollideAndGetContacts(localXform gdnative.Transform2D, withShape Shape2DImplementer, shapeXform gdnative.Transform2D) gdnative.Array
 	CollideWithMotion(localXform gdnative.Transform2D, localMotion gdnative.Vector2, withShape Shape2DImplementer, shapeXform gdnative.Transform2D, shapeMotion gdnative.Vector2) gdnative.Bool
 	CollideWithMotionAndGetContacts(localXform gdnative.Transform2D, localMotion gdnative.Vector2, withShape Shape2DImplementer, shapeXform gdnative.Transform2D, shapeMotion gdnative.Vector2) gdnative.Array
+	Draw(canvasItem gdnative.Rid, color gdnative.Color)
 	GetCustomSolverBias() gdnative.Real
 	SetCustomSolverBias(bias gdnative.Real)
 }

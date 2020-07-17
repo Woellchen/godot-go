@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newWindowDialogFromPointer(ptr gdnative.Pointer) WindowDialog {
 }
 
 /*
-Undocumented
+Windowdialog is the base class for all window-based dialogs. It's a by-default toplevel [Control] that draws a window decoration and allows motion and resizing.
 */
 type WindowDialog struct {
 	Popup
@@ -76,7 +76,7 @@ func (o *WindowDialog) X_GuiInput(arg0 InputEventImplementer) {
 }
 
 /*
-        Undocumented
+        Returns the close [TextureButton].
 	Args: [], Returns: TextureButton
 */
 func (o *WindowDialog) GetCloseButton() TextureButtonImplementer {

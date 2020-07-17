@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newCylinderShapeFromPointer(ptr gdnative.Pointer) CylinderShape {
 }
 
 /*
-Undocumented
+Cylinder shape for collisions.
 */
 type CylinderShape struct {
 	Shape

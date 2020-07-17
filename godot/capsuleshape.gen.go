@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newCapsuleShapeFromPointer(ptr gdnative.Pointer) CapsuleShape {
 }
 
 /*
-Undocumented
+Capsule shape for collisions.
 */
 type CapsuleShape struct {
 	Shape

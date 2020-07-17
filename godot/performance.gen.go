@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -17,33 +17,35 @@ import (
 type PerformanceMonitor int
 
 const (
-	PerformanceAudioOutputLatency           PerformanceMonitor = 28
+	PerformanceAudioOutputLatency           PerformanceMonitor = 30
 	PerformanceMemoryDynamic                PerformanceMonitor = 4
 	PerformanceMemoryDynamicMax             PerformanceMonitor = 6
 	PerformanceMemoryMessageBufferMax       PerformanceMonitor = 7
 	PerformanceMemoryStatic                 PerformanceMonitor = 3
 	PerformanceMemoryStaticMax              PerformanceMonitor = 5
-	PerformanceMonitorMax                   PerformanceMonitor = 29
+	PerformanceMonitorMax                   PerformanceMonitor = 31
 	PerformanceObjectCount                  PerformanceMonitor = 8
 	PerformanceObjectNodeCount              PerformanceMonitor = 10
 	PerformanceObjectOrphanNodeCount        PerformanceMonitor = 11
 	PerformanceObjectResourceCount          PerformanceMonitor = 9
-	PerformancePhysics2DActiveObjects       PerformanceMonitor = 22
-	PerformancePhysics2DCollisionPairs      PerformanceMonitor = 23
-	PerformancePhysics2DIslandCount         PerformanceMonitor = 24
-	PerformancePhysics3DActiveObjects       PerformanceMonitor = 25
-	PerformancePhysics3DCollisionPairs      PerformanceMonitor = 26
-	PerformancePhysics3DIslandCount         PerformanceMonitor = 27
+	PerformancePhysics2DActiveObjects       PerformanceMonitor = 24
+	PerformancePhysics2DCollisionPairs      PerformanceMonitor = 25
+	PerformancePhysics2DIslandCount         PerformanceMonitor = 26
+	PerformancePhysics3DActiveObjects       PerformanceMonitor = 27
+	PerformancePhysics3DCollisionPairs      PerformanceMonitor = 28
+	PerformancePhysics3DIslandCount         PerformanceMonitor = 29
+	PerformanceRender2DDrawCallsInFrame     PerformanceMonitor = 19
+	PerformanceRender2DItemsInFrame         PerformanceMonitor = 18
 	PerformanceRenderDrawCallsInFrame       PerformanceMonitor = 17
 	PerformanceRenderMaterialChangesInFrame PerformanceMonitor = 14
 	PerformanceRenderObjectsInFrame         PerformanceMonitor = 12
 	PerformanceRenderShaderChangesInFrame   PerformanceMonitor = 15
 	PerformanceRenderSurfaceChangesInFrame  PerformanceMonitor = 16
-	PerformanceRenderTextureMemUsed         PerformanceMonitor = 19
-	PerformanceRenderUsageVideoMemTotal     PerformanceMonitor = 21
-	PerformanceRenderVertexMemUsed          PerformanceMonitor = 20
+	PerformanceRenderTextureMemUsed         PerformanceMonitor = 21
+	PerformanceRenderUsageVideoMemTotal     PerformanceMonitor = 23
+	PerformanceRenderVertexMemUsed          PerformanceMonitor = 22
 	PerformanceRenderVerticesInFrame        PerformanceMonitor = 13
-	PerformanceRenderVideoMemUsed           PerformanceMonitor = 18
+	PerformanceRenderVideoMemUsed           PerformanceMonitor = 20
 	PerformanceTimeFps                      PerformanceMonitor = 0
 	PerformanceTimePhysicsProcess           PerformanceMonitor = 2
 	PerformanceTimeProcess                  PerformanceMonitor = 1

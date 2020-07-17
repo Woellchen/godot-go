@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -64,7 +64,7 @@ func newParticlesMaterialFromPointer(ptr gdnative.Pointer) ParticlesMaterial {
 }
 
 /*
-ParticlesMaterial defines particle properties and behavior. It is used in the [code]process_material[/code] of [GPUParticles3D] and [GPUParticles2D] emitter nodes. Some of this material's properties are applied to each particle when emitted, while others can have a [CurveTexture] applied to vary values over the lifetime of the particle. When a randomness ratio is applied to a property it is used to scale that property by a random amount. The random ratio is used to interpolate between [code]1.0[/code] and a random number less than one, the result is multiplied by the property to obtain the randomized property. For example a random ratio of [code]0.4[/code] would scale the original property between [code]0.4-1.0[/code] of its original value.
+ParticlesMaterial defines particle properties and behavior. It is used in the [code]process_material[/code] of [Particles] and [Particles2D] emitter nodes. Some of this material's properties are applied to each particle when emitted, while others can have a [CurveTexture] applied to vary values over the lifetime of the particle. When a randomness ratio is applied to a property it is used to scale that property by a random amount. The random ratio is used to interpolate between [code]1.0[/code] and a random number less than one, the result is multiplied by the property to obtain the randomized property. For example a random ratio of [code]0.4[/code] would scale the original property between [code]0.4-1.0[/code] of its original value.
 */
 type ParticlesMaterial struct {
 	Material
@@ -503,7 +503,7 @@ func (o *ParticlesMaterial) GetParamRandomness(param gdnative.Int) gdnative.Real
 }
 
 /*
-        Returns the [Texture2D] used by the specified parameter.
+        Returns the [Texture] used by the specified parameter.
 	Args: [{ false param int}], Returns: Texture
 */
 func (o *ParticlesMaterial) GetParamTexture(param gdnative.Int) TextureImplementer {
@@ -1000,7 +1000,7 @@ func (o *ParticlesMaterial) SetParamRandomness(param gdnative.Int, randomness gd
 }
 
 /*
-        Sets the [Texture2D] for the specified [enum Parameter].
+        Sets the [Texture] for the specified [enum Parameter].
 	Args: [{ false param int} { false texture Texture}], Returns: void
 */
 func (o *ParticlesMaterial) SetParamTexture(param gdnative.Int, texture TextureImplementer) {

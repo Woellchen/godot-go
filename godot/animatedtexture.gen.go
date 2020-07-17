@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newAnimatedTextureFromPointer(ptr gdnative.Pointer) AnimatedTexture {
 }
 
 /*
-[AnimatedTexture] is a resource format for frame-based animations, where multiple textures can be chained automatically with a predefined delay for each frame. Unlike [AnimationPlayer] or [AnimatedSprite2D], it isn't a [Node], but has the advantage of being usable anywhere a [Texture2D] resource can be used, e.g. in a [TileSet]. The playback of the animation is controlled by the [member fps] property as well as each frame's optional delay (see [method set_frame_delay]). The animation loops, i.e. it will restart at frame 0 automatically after playing the last frame. [AnimatedTexture] currently requires all frame textures to have the same size, otherwise the bigger ones will be cropped to match the smallest one. Also, it doesn't support [AtlasTexture]. Each frame needs to be separate image.
+[AnimatedTexture] is a resource format for frame-based animations, where multiple textures can be chained automatically with a predefined delay for each frame. Unlike [AnimationPlayer] or [AnimatedSprite], it isn't a [Node], but has the advantage of being usable anywhere a [Texture] resource can be used, e.g. in a [TileSet]. The playback of the animation is controlled by the [member fps] property as well as each frame's optional delay (see [method set_frame_delay]). The animation loops, i.e. it will restart at frame 0 automatically after playing the last frame. [AnimatedTexture] currently requires all frame textures to have the same size, otherwise the bigger ones will be cropped to match the smallest one. Also, it doesn't support [AtlasTexture]. Each frame needs to be separate image.
 */
 type AnimatedTexture struct {
 	Texture
@@ -52,6 +52,29 @@ func (o *AnimatedTexture) X_UpdateProxy() {
 	retPtr := gdnative.NewEmptyVoid()
 	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
 
+}
+
+/*
+        Undocumented
+	Args: [], Returns: int
+*/
+func (o *AnimatedTexture) GetCurrentFrame() gdnative.Int {
+	//log.Println("Calling AnimatedTexture.GetCurrentFrame()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimatedTexture", "get_current_frame")
+
+	// Call the parent method.
+	// int
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
 }
 
 /*
@@ -102,7 +125,7 @@ func (o *AnimatedTexture) GetFrameDelay(frame gdnative.Int) gdnative.Real {
 }
 
 /*
-        Returns the given frame's [Texture2D].
+        Returns the given frame's [Texture].
 	Args: [{ false frame int}], Returns: Texture
 */
 func (o *AnimatedTexture) GetFrameTexture(frame gdnative.Int) TextureImplementer {
@@ -164,6 +187,73 @@ func (o *AnimatedTexture) GetFrames() gdnative.Int {
 
 /*
         Undocumented
+	Args: [], Returns: bool
+*/
+func (o *AnimatedTexture) GetOneshot() gdnative.Bool {
+	//log.Println("Calling AnimatedTexture.GetOneshot()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimatedTexture", "get_oneshot")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: bool
+*/
+func (o *AnimatedTexture) GetPause() gdnative.Bool {
+	//log.Println("Calling AnimatedTexture.GetPause()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimatedTexture", "get_pause")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [{ false frame int}], Returns: void
+*/
+func (o *AnimatedTexture) SetCurrentFrame(frame gdnative.Int) {
+	//log.Println("Calling AnimatedTexture.SetCurrentFrame()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(frame)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimatedTexture", "set_current_frame")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
 	Args: [{ false fps float}], Returns: void
 */
 func (o *AnimatedTexture) SetFps(fps gdnative.Real) {
@@ -206,7 +296,7 @@ func (o *AnimatedTexture) SetFrameDelay(frame gdnative.Int, delay gdnative.Real)
 }
 
 /*
-        Assigns a [Texture2D] to the given frame. Frame IDs start at 0, so the first frame has ID 0, and the last frame of the animation has ID [member frames] - 1. You can define any number of textures up to [constant MAX_FRAMES], but keep in mind that only frames from 0 to [member frames] - 1 will be part of the animation.
+        Assigns a [Texture] to the given frame. Frame IDs start at 0, so the first frame has ID 0, and the last frame of the animation has ID [member frames] - 1. You can define any number of textures up to [constant MAX_FRAMES], but keep in mind that only frames from 0 to [member frames] - 1 will be part of the animation.
 	Args: [{ false frame int} { false texture Texture}], Returns: void
 */
 func (o *AnimatedTexture) SetFrameTexture(frame gdnative.Int, texture TextureImplementer) {
@@ -248,17 +338,65 @@ func (o *AnimatedTexture) SetFrames(frames gdnative.Int) {
 
 }
 
+/*
+        Undocumented
+	Args: [{ false oneshot bool}], Returns: void
+*/
+func (o *AnimatedTexture) SetOneshot(oneshot gdnative.Bool) {
+	//log.Println("Calling AnimatedTexture.SetOneshot()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromBool(oneshot)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimatedTexture", "set_oneshot")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
+	Args: [{ false pause bool}], Returns: void
+*/
+func (o *AnimatedTexture) SetPause(pause gdnative.Bool) {
+	//log.Println("Calling AnimatedTexture.SetPause()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromBool(pause)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimatedTexture", "set_pause")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
 // AnimatedTextureImplementer is an interface that implements the methods
 // of the AnimatedTexture class.
 type AnimatedTextureImplementer interface {
 	TextureImplementer
 	X_UpdateProxy()
+	GetCurrentFrame() gdnative.Int
 	GetFps() gdnative.Real
 	GetFrameDelay(frame gdnative.Int) gdnative.Real
 	GetFrameTexture(frame gdnative.Int) TextureImplementer
 	GetFrames() gdnative.Int
+	GetOneshot() gdnative.Bool
+	GetPause() gdnative.Bool
+	SetCurrentFrame(frame gdnative.Int)
 	SetFps(fps gdnative.Real)
 	SetFrameDelay(frame gdnative.Int, delay gdnative.Real)
 	SetFrameTexture(frame gdnative.Int, texture TextureImplementer)
 	SetFrames(frames gdnative.Int)
+	SetOneshot(oneshot gdnative.Bool)
+	SetPause(pause gdnative.Bool)
 }

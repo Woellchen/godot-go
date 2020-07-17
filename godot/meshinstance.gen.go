@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newMeshInstanceFromPointer(ptr gdnative.Pointer) MeshInstance {
 }
 
 /*
-Undocumented
+MeshInstance is a node that takes a [Mesh] resource and adds it to the current scenario by creating an instance of it. This is the class most often used to get 3D geometry rendered and can be used to instance a single [Mesh] in many places. This allows to reuse geometry and save on resources. When a [Mesh] has to be instanced more than thousands of times at close proximity, consider using a [MultiMesh] in a [MultiMeshInstance] instead.
 */
 type MeshInstance struct {
 	GeometryInstance
@@ -55,7 +55,7 @@ func (o *MeshInstance) X_MeshChanged() {
 }
 
 /*
-        Undocumented
+        This helper creates a [StaticBody] child node with a [ConvexPolygonShape] collision shape calculated from the mesh geometry. It's mainly used for testing.
 	Args: [], Returns: void
 */
 func (o *MeshInstance) CreateConvexCollision() {
@@ -75,7 +75,7 @@ func (o *MeshInstance) CreateConvexCollision() {
 }
 
 /*
-        Undocumented
+        This helper creates a [MeshInstance] child node with gizmos at every vertex calculated from the mesh geometry. It's mainly used for testing.
 	Args: [], Returns: void
 */
 func (o *MeshInstance) CreateDebugTangents() {
@@ -95,7 +95,7 @@ func (o *MeshInstance) CreateDebugTangents() {
 }
 
 /*
-        Undocumented
+        This helper creates a [StaticBody] child node with a [ConcavePolygonShape] collision shape calculated from the mesh geometry. It's mainly used for testing.
 	Args: [], Returns: void
 */
 func (o *MeshInstance) CreateTrimeshCollision() {
@@ -212,7 +212,7 @@ func (o *MeshInstance) GetSkin() SkinImplementer {
 }
 
 /*
-        Undocumented
+        Returns the [Material] for a surface of the [Mesh] resource.
 	Args: [{ false surface int}], Returns: Material
 */
 func (o *MeshInstance) GetSurfaceMaterial(surface gdnative.Int) MaterialImplementer {
@@ -250,7 +250,7 @@ func (o *MeshInstance) GetSurfaceMaterial(surface gdnative.Int) MaterialImplemen
 }
 
 /*
-        Undocumented
+        Returns the number of surface materials.
 	Args: [], Returns: int
 */
 func (o *MeshInstance) GetSurfaceMaterialCount() gdnative.Int {
@@ -336,7 +336,7 @@ func (o *MeshInstance) SetSkin(skin SkinImplementer) {
 }
 
 /*
-        Undocumented
+        Sets the [Material] for a surface of the [Mesh] resource.
 	Args: [{ false surface int} { false material Material}], Returns: void
 */
 func (o *MeshInstance) SetSurfaceMaterial(surface gdnative.Int, material MaterialImplementer) {

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newAnimatedSpriteFromPointer(ptr gdnative.Pointer) AnimatedSprite {
 }
 
 /*
-Undocumented
+Animations are created using a [SpriteFrames] resource, which can be configured in the editor via the SpriteFrames panel.
 */
 type AnimatedSprite struct {
 	Node2D
@@ -297,7 +297,7 @@ func (o *AnimatedSprite) IsFlippedV() gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if an animation is currently being played.
 	Args: [], Returns: bool
 */
 func (o *AnimatedSprite) IsPlaying() gdnative.Bool {
@@ -320,7 +320,7 @@ func (o *AnimatedSprite) IsPlaying() gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Plays the animation named [code]anim[/code]. If no [code]anim[/code] is provided, the current animation is played. If [code]backwards[/code] is [code]true[/code], the animation will be played in reverse.
 	Args: [{ true anim String} {False true backwards bool}], Returns: void
 */
 func (o *AnimatedSprite) Play(anim gdnative.String, backwards gdnative.Bool) {
@@ -510,7 +510,7 @@ func (o *AnimatedSprite) SetSpriteFrames(spriteFrames SpriteFramesImplementer) {
 }
 
 /*
-        Undocumented
+        Stops the current animation (does not reset the frame counter).
 	Args: [], Returns: void
 */
 func (o *AnimatedSprite) Stop() {

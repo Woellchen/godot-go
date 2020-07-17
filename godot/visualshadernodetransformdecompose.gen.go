@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeTransformDecomposeFromPointer(ptr gdnative.Pointer) Visu
 }
 
 /*
-
- */
+Takes a 4x4 transform matrix and decomposes it into four [code]vec3[/code] values, one from each row of the matrix.
+*/
 type VisualShaderNodeTransformDecompose struct {
 	VisualShaderNode
 	owner gdnative.Object

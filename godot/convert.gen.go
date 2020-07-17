@@ -3,7 +3,7 @@ package godot
 import (
 	"log"
 
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -634,6 +634,10 @@ func getActualClass(className gdnative.String, obj gdnative.Object) ObjectImplem
 		class := &CylinderShape{}
 		class.SetBaseObject(obj)
 		return class
+	case "DTLSServer":
+		class := &DTLSServer{}
+		class.SetBaseObject(obj)
+		return class
 	case "DampedSpringJoint2D":
 		class := &DampedSpringJoint2D{}
 		class.SetBaseObject(obj)
@@ -762,8 +766,16 @@ func getActualClass(className gdnative.String, obj gdnative.Object) ObjectImplem
 		class := &Expression{}
 		class.SetBaseObject(obj)
 		return class
+	case "ExternalTexture":
+		class := &ExternalTexture{}
+		class.SetBaseObject(obj)
+		return class
 	case "FileDialog":
 		class := &FileDialog{}
+		class.SetBaseObject(obj)
+		return class
+	case "FileSystemDock":
+		class := &FileSystemDock{}
 		class.SetBaseObject(obj)
 		return class
 	case "Font":
@@ -964,6 +976,10 @@ func getActualClass(className gdnative.String, obj gdnative.Object) ObjectImplem
 		return class
 	case "ItemList":
 		class := &ItemList{}
+		class.SetBaseObject(obj)
+		return class
+	case "JNISingleton":
+		class := &JNISingleton{}
 		class.SetBaseObject(obj)
 		return class
 	case "JSONParseResult":
@@ -1200,6 +1216,10 @@ func getActualClass(className gdnative.String, obj gdnative.Object) ObjectImplem
 		return class
 	case "PacketPeer":
 		class := &PacketPeer{}
+		class.SetBaseObject(obj)
+		return class
+	case "PacketPeerDTLS":
+		class := &PacketPeerDTLS{}
 		class.SetBaseObject(obj)
 		return class
 	case "PacketPeerGDNative":
@@ -1470,16 +1490,8 @@ func getActualClass(className gdnative.String, obj gdnative.Object) ObjectImplem
 		class := &ResourceFormatLoader{}
 		class.SetBaseObject(obj)
 		return class
-	case "ResourceFormatLoaderCrypto":
-		class := &ResourceFormatLoaderCrypto{}
-		class.SetBaseObject(obj)
-		return class
 	case "ResourceFormatSaver":
 		class := &ResourceFormatSaver{}
-		class.SetBaseObject(obj)
-		return class
-	case "ResourceFormatSaverCrypto":
-		class := &ResourceFormatSaverCrypto{}
 		class.SetBaseObject(obj)
 		return class
 	case "ResourceImporter":
@@ -1812,6 +1824,10 @@ func getActualClass(className gdnative.String, obj gdnative.Object) ObjectImplem
 		return class
 	case "Tween":
 		class := &Tween{}
+		class.SetBaseObject(obj)
+		return class
+	case "UDPServer":
+		class := &UDPServer{}
 		class.SetBaseObject(obj)
 		return class
 	case "UPNP":

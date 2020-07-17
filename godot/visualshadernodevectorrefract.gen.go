@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeVectorRefractFromPointer(ptr gdnative.Pointer) VisualSha
 }
 
 /*
-
- */
+Translated to [code]refract(I, N, eta)[/code] in the shader language, where [code]I[/code] is the incident vector, [code]N[/code] is the normal vector and [code]eta[/code] is the ratio of the indicies of the refraction.
+*/
 type VisualShaderNodeVectorRefract struct {
 	VisualShaderNode
 	owner gdnative.Object

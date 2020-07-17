@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newPhysicsShapeQueryParametersFromPointer(ptr gdnative.Pointer) PhysicsShap
 }
 
 /*
-Undocumented
+This class contains the shape and other parameters for 3D intersection/collision queries. See also [PhysicsShapeQueryResult].
 */
 type PhysicsShapeQueryParameters struct {
 	Reference
@@ -301,7 +301,7 @@ func (o *PhysicsShapeQueryParameters) SetMargin(margin gdnative.Real) {
 }
 
 /*
-        Undocumented
+        Sets the [Shape] that will be used for collision/intersection queries.
 	Args: [{ false shape Resource}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetShape(shape ResourceImplementer) {

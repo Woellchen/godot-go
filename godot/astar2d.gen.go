@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -32,6 +32,56 @@ type AStar2D struct {
 
 func (o *AStar2D) BaseClass() string {
 	return "AStar2D"
+}
+
+/*
+        Called when computing the cost between two connected points. Note that this function is hidden in the default [code]AStar2D[/code] class.
+	Args: [{ false from_id int} { false to_id int}], Returns: float
+*/
+func (o *AStar2D) X_ComputeCost(fromId gdnative.Int, toId gdnative.Int) gdnative.Real {
+	//log.Println("Calling AStar2D.X_ComputeCost()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromInt(fromId)
+	ptrArguments[1] = gdnative.NewPointerFromInt(toId)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AStar2D", "_compute_cost")
+
+	// Call the parent method.
+	// float
+	retPtr := gdnative.NewEmptyReal()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewRealFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Called when estimating the cost between a point and the path's ending point. Note that this function is hidden in the default [code]AStar2D[/code] class.
+	Args: [{ false from_id int} { false to_id int}], Returns: float
+*/
+func (o *AStar2D) X_EstimateCost(fromId gdnative.Int, toId gdnative.Int) gdnative.Real {
+	//log.Println("Calling AStar2D.X_EstimateCost()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromInt(fromId)
+	ptrArguments[1] = gdnative.NewPointerFromInt(toId)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AStar2D", "_estimate_cost")
+
+	// Call the parent method.
+	// float
+	retPtr := gdnative.NewEmptyReal()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewRealFromPointer(retPtr)
+	return ret
 }
 
 /*
@@ -171,7 +221,7 @@ func (o *AStar2D) GetAvailablePointId() gdnative.Int {
 }
 
 /*
-        Returns the ID of the closest point to [code]to_position[/code], optionally taking disabled points into account. Returns -1 if there are no points in the points pool.
+        Returns the ID of the closest point to [code]to_position[/code], optionally taking disabled points into account. Returns [code]-1[/code] if there are no points in the points pool. [b]Note:[/b] If several points are the closest to [code]to_position[/code], the one with the smallest ID will be returned, ensuring a deterministic result.
 	Args: [{ false to_position Vector2} {False true include_disabled bool}], Returns: int
 */
 func (o *AStar2D) GetClosestPoint(toPosition gdnative.Vector2, includeDisabled gdnative.Bool) gdnative.Int {
@@ -570,6 +620,8 @@ func (o *AStar2D) SetPointWeightScale(id gdnative.Int, weightScale gdnative.Real
 // of the AStar2D class.
 type AStar2DImplementer interface {
 	ReferenceImplementer
+	X_ComputeCost(fromId gdnative.Int, toId gdnative.Int) gdnative.Real
+	X_EstimateCost(fromId gdnative.Int, toId gdnative.Int) gdnative.Real
 	AddPoint(id gdnative.Int, position gdnative.Vector2, weightScale gdnative.Real)
 	ArePointsConnected(id gdnative.Int, toId gdnative.Int) gdnative.Bool
 	Clear()

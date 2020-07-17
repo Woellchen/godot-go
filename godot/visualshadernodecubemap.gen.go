@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -40,7 +40,7 @@ func newVisualShaderNodeCubeMapFromPointer(ptr gdnative.Pointer) VisualShaderNod
 }
 
 /*
-Undocumented
+Translated to [code]texture(cubemap, vec3)[/code] in the shader language. Returns a color vector and alpha channel as scalar.
 */
 type VisualShaderNodeCubeMap struct {
 	VisualShaderNode

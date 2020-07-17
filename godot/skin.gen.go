@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -125,6 +125,30 @@ func (o *Skin) GetBindCount() gdnative.Int {
 
 /*
 
+	Args: [{ false bind_index int}], Returns: String
+*/
+func (o *Skin) GetBindName(bindIndex gdnative.Int) gdnative.String {
+	//log.Println("Calling Skin.GetBindName()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(bindIndex)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("Skin", "get_bind_name")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
+	return ret
+}
+
+/*
+
 	Args: [{ false bind_index int}], Returns: Transform
 */
 func (o *Skin) GetBindPose(bindIndex gdnative.Int) gdnative.Transform {
@@ -192,6 +216,28 @@ func (o *Skin) SetBindCount(bindCount gdnative.Int) {
 
 /*
 
+	Args: [{ false bind_index int} { false name String}], Returns: void
+*/
+func (o *Skin) SetBindName(bindIndex gdnative.Int, name gdnative.String) {
+	//log.Println("Calling Skin.SetBindName()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromInt(bindIndex)
+	ptrArguments[1] = gdnative.NewPointerFromString(name)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("Skin", "set_bind_name")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+
 	Args: [{ false bind_index int} { false pose Transform}], Returns: void
 */
 func (o *Skin) SetBindPose(bindIndex gdnative.Int, pose gdnative.Transform) {
@@ -220,8 +266,10 @@ type SkinImplementer interface {
 	ClearBinds()
 	GetBindBone(bindIndex gdnative.Int) gdnative.Int
 	GetBindCount() gdnative.Int
+	GetBindName(bindIndex gdnative.Int) gdnative.String
 	GetBindPose(bindIndex gdnative.Int) gdnative.Transform
 	SetBindBone(bindIndex gdnative.Int, bone gdnative.Int)
 	SetBindCount(bindCount gdnative.Int)
+	SetBindName(bindIndex gdnative.Int, name gdnative.String)
 	SetBindPose(bindIndex gdnative.Int, pose gdnative.Transform)
 }

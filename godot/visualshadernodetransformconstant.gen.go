@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeTransformConstantFromPointer(ptr gdnative.Pointer) Visua
 }
 
 /*
-
- */
+A constant [Transform], which can be used as an input node.
+*/
 type VisualShaderNodeTransformConstant struct {
 	VisualShaderNode
 	owner gdnative.Object

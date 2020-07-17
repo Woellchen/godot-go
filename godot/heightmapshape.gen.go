@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newHeightMapShapeFromPointer(ptr gdnative.Pointer) HeightMapShape {
 }
 
 /*
-Undocumented
+Height map shape resource, which can be added to a [PhysicsBody] or [Area].
 */
 type HeightMapShape struct {
 	Shape

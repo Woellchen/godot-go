@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ func newGIProbeFromPointer(ptr gdnative.Pointer) GIProbe {
 }
 
 /*
-[GIProbe]s are used to provide high-quality real-time indirect light to scenes. They precompute the effect of objects that emit light and the effect of static geometry to simulate the behavior of complex light in real-time. [GIProbe]s need to be baked before using, however, once baked, dynamic objects will receive light from them. Further, lights can be fully dynamic or baked. Having [GIProbe]s in a scene can be expensive, the quality of the probe can be turned down in exchange for better performance in the [ProjectSettings] using [member ProjectSettings.rendering/quality/gi_probes/quality].
+[GIProbe]s are used to provide high-quality real-time indirect light to scenes. They precompute the effect of objects that emit light and the effect of static geometry to simulate the behavior of complex light in real-time. [GIProbe]s need to be baked before using, however, once baked, dynamic objects will receive light from them. Further, lights can be fully dynamic or baked. Having [GIProbe]s in a scene can be expensive, the quality of the probe can be turned down in exchange for better performance in the [ProjectSettings] using [member ProjectSettings.rendering/quality/voxel_cone_tracing/high_quality].
 */
 type GIProbe struct {
 	VisualInstance
@@ -46,7 +46,7 @@ func (o *GIProbe) BaseClass() string {
 }
 
 /*
-        Bakes the effect from all [GeometryInstance3D]s marked with [member GeometryInstance3D.use_in_baked_light] and [Light3D]s marked with either [constant Light3D.BAKE_INDIRECT] or [constant Light3D.BAKE_ALL]. If [code]create_visual_debug[/code] is [code]true[/code], after baking the light, this will generate a [MultiMesh] that has a cube representing each solid cell with each cube colored to the cell's albedo color. This can be used to visualize the [GIProbe]'s data and debug any issues that may be occurring.
+        Bakes the effect from all [GeometryInstance]s marked with [member GeometryInstance.use_in_baked_light] and [Light]s marked with either [constant Light.BAKE_INDIRECT] or [constant Light.BAKE_ALL]. If [code]create_visual_debug[/code] is [code]true[/code], after baking the light, this will generate a [MultiMesh] that has a cube representing each solid cell with each cube colored to the cell's albedo color. This can be used to visualize the [GIProbe]'s data and debug any issues that may be occurring.
 	Args: [{Null true from_node Node} {False true create_visual_debug bool}], Returns: void
 */
 func (o *GIProbe) Bake(fromNode NodeImplementer, createVisualDebug gdnative.Bool) {

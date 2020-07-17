@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -30,23 +30,29 @@ const (
 type Generic6DOFJointParam int
 
 const (
-	Generic6DOFJointParamAngularDamping             Generic6DOFJointParam = 13
-	Generic6DOFJointParamAngularErp                 Generic6DOFJointParam = 16
-	Generic6DOFJointParamAngularForceLimit          Generic6DOFJointParam = 15
-	Generic6DOFJointParamAngularLimitSoftness       Generic6DOFJointParam = 12
-	Generic6DOFJointParamAngularLowerLimit          Generic6DOFJointParam = 10
-	Generic6DOFJointParamAngularMotorForceLimit     Generic6DOFJointParam = 18
-	Generic6DOFJointParamAngularMotorTargetVelocity Generic6DOFJointParam = 17
-	Generic6DOFJointParamAngularRestitution         Generic6DOFJointParam = 14
-	Generic6DOFJointParamAngularUpperLimit          Generic6DOFJointParam = 11
-	Generic6DOFJointParamLinearDamping              Generic6DOFJointParam = 4
-	Generic6DOFJointParamLinearLimitSoftness        Generic6DOFJointParam = 2
-	Generic6DOFJointParamLinearLowerLimit           Generic6DOFJointParam = 0
-	Generic6DOFJointParamLinearMotorForceLimit      Generic6DOFJointParam = 6
-	Generic6DOFJointParamLinearMotorTargetVelocity  Generic6DOFJointParam = 5
-	Generic6DOFJointParamLinearRestitution          Generic6DOFJointParam = 3
-	Generic6DOFJointParamLinearUpperLimit           Generic6DOFJointParam = 1
-	Generic6DOFJointParamMax                        Generic6DOFJointParam = 22
+	Generic6DOFJointParamAngularDamping                Generic6DOFJointParam = 13
+	Generic6DOFJointParamAngularErp                    Generic6DOFJointParam = 16
+	Generic6DOFJointParamAngularForceLimit             Generic6DOFJointParam = 15
+	Generic6DOFJointParamAngularLimitSoftness          Generic6DOFJointParam = 12
+	Generic6DOFJointParamAngularLowerLimit             Generic6DOFJointParam = 10
+	Generic6DOFJointParamAngularMotorForceLimit        Generic6DOFJointParam = 18
+	Generic6DOFJointParamAngularMotorTargetVelocity    Generic6DOFJointParam = 17
+	Generic6DOFJointParamAngularRestitution            Generic6DOFJointParam = 14
+	Generic6DOFJointParamAngularSpringDamping          Generic6DOFJointParam = 20
+	Generic6DOFJointParamAngularSpringEquilibriumPoint Generic6DOFJointParam = 21
+	Generic6DOFJointParamAngularSpringStiffness        Generic6DOFJointParam = 19
+	Generic6DOFJointParamAngularUpperLimit             Generic6DOFJointParam = 11
+	Generic6DOFJointParamLinearDamping                 Generic6DOFJointParam = 4
+	Generic6DOFJointParamLinearLimitSoftness           Generic6DOFJointParam = 2
+	Generic6DOFJointParamLinearLowerLimit              Generic6DOFJointParam = 0
+	Generic6DOFJointParamLinearMotorForceLimit         Generic6DOFJointParam = 6
+	Generic6DOFJointParamLinearMotorTargetVelocity     Generic6DOFJointParam = 5
+	Generic6DOFJointParamLinearRestitution             Generic6DOFJointParam = 3
+	Generic6DOFJointParamLinearSpringDamping           Generic6DOFJointParam = 8
+	Generic6DOFJointParamLinearSpringEquilibriumPoint  Generic6DOFJointParam = 9
+	Generic6DOFJointParamLinearSpringStiffness         Generic6DOFJointParam = 7
+	Generic6DOFJointParamLinearUpperLimit              Generic6DOFJointParam = 1
+	Generic6DOFJointParamMax                           Generic6DOFJointParam = 22
 )
 
 //func NewGeneric6DOFJointFromPointer(ptr gdnative.Pointer) Generic6DOFJoint {
@@ -59,7 +65,7 @@ func newGeneric6DOFJointFromPointer(ptr gdnative.Pointer) Generic6DOFJoint {
 }
 
 /*
-Undocumented
+The first 3 DOF axes are linear axes, which represent translation of Bodies, and the latter 3 DOF axes represent the angular motion. Each axis can be either locked, or limited.
 */
 type Generic6DOFJoint struct {
 	Joint
@@ -335,7 +341,7 @@ func (o *Generic6DOFJoint) X_SetAngularLoLimitZ(angle gdnative.Real) {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *Generic6DOFJoint) GetFlagX(flag gdnative.Int) gdnative.Bool {
@@ -359,7 +365,7 @@ func (o *Generic6DOFJoint) GetFlagX(flag gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *Generic6DOFJoint) GetFlagY(flag gdnative.Int) gdnative.Bool {
@@ -383,7 +389,7 @@ func (o *Generic6DOFJoint) GetFlagY(flag gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *Generic6DOFJoint) GetFlagZ(flag gdnative.Int) gdnative.Bool {
@@ -407,7 +413,7 @@ func (o *Generic6DOFJoint) GetFlagZ(flag gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false param int}], Returns: float
 */
 func (o *Generic6DOFJoint) GetParamX(param gdnative.Int) gdnative.Real {
@@ -431,7 +437,7 @@ func (o *Generic6DOFJoint) GetParamX(param gdnative.Int) gdnative.Real {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false param int}], Returns: float
 */
 func (o *Generic6DOFJoint) GetParamY(param gdnative.Int) gdnative.Real {
@@ -455,7 +461,7 @@ func (o *Generic6DOFJoint) GetParamY(param gdnative.Int) gdnative.Real {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false param int}], Returns: float
 */
 func (o *Generic6DOFJoint) GetParamZ(param gdnative.Int) gdnative.Real {
@@ -502,7 +508,7 @@ func (o *Generic6DOFJoint) GetPrecision() gdnative.Int {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false flag int} { false value bool}], Returns: void
 */
 func (o *Generic6DOFJoint) SetFlagX(flag gdnative.Int, value gdnative.Bool) {
@@ -524,7 +530,7 @@ func (o *Generic6DOFJoint) SetFlagX(flag gdnative.Int, value gdnative.Bool) {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false flag int} { false value bool}], Returns: void
 */
 func (o *Generic6DOFJoint) SetFlagY(flag gdnative.Int, value gdnative.Bool) {
@@ -546,7 +552,7 @@ func (o *Generic6DOFJoint) SetFlagY(flag gdnative.Int, value gdnative.Bool) {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false flag int} { false value bool}], Returns: void
 */
 func (o *Generic6DOFJoint) SetFlagZ(flag gdnative.Int, value gdnative.Bool) {
@@ -568,7 +574,7 @@ func (o *Generic6DOFJoint) SetFlagZ(flag gdnative.Int, value gdnative.Bool) {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *Generic6DOFJoint) SetParamX(param gdnative.Int, value gdnative.Real) {
@@ -590,7 +596,7 @@ func (o *Generic6DOFJoint) SetParamX(param gdnative.Int, value gdnative.Real) {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *Generic6DOFJoint) SetParamY(param gdnative.Int, value gdnative.Real) {
@@ -612,7 +618,7 @@ func (o *Generic6DOFJoint) SetParamY(param gdnative.Int, value gdnative.Real) {
 }
 
 /*
-        Undocumented
+
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *Generic6DOFJoint) SetParamZ(param gdnative.Int, value gdnative.Real) {

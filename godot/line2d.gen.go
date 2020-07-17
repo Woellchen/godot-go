@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -50,7 +50,7 @@ func newLine2DFromPointer(ptr gdnative.Pointer) Line2D {
 }
 
 /*
-A line through several points in 2D space.
+A line through several points in 2D space. [b]Note:[/b] By default, Godot can only draw up to 4,096 polygon points at a time. To increase this limit, open the Project Settings and increase [member ProjectSettings.rendering/limits/buffers/canvas_polygon_buffer_size_kb] and [member ProjectSettings.rendering/limits/buffers/canvas_polygon_index_buffer_size_kb].
 */
 type Line2D struct {
 	Node2D

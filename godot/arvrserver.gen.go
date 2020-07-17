@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -251,7 +251,7 @@ func (o *arvrServer) GetInterfaces() gdnative.Array {
 }
 
 /*
-        Returns the absolute timestamp (in μs) of the last [ARVRServer] commit of the AR/VR eyes to [RenderingServer]. The value comes from an internal call to [method OS.get_ticks_usec].
+        Returns the absolute timestamp (in μs) of the last [ARVRServer] commit of the AR/VR eyes to [VisualServer]. The value comes from an internal call to [method OS.get_ticks_usec].
 	Args: [], Returns: int
 */
 func (o *arvrServer) GetLastCommitUsec() gdnative.Int {

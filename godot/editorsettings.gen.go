@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newEditorSettingsFromPointer(ptr gdnative.Pointer) EditorSettings {
 }
 
 /*
-Object that holds the project-independent editor settings. These settings are generally visible in the [b]Editor > Editor Settings[/b] menu. Accessing the settings is done by using the regular [Object] API, such as: [codeblock] settings.set(prop,value) settings.get(prop) list_of_settings = settings.get_property_list() [/codeblock]
+Object that holds the project-independent editor settings. These settings are generally visible in the [b]Editor > Editor Settings[/b] menu. Accessing the settings is done by using the regular [Object] API, such as: [codeblock] settings.set(prop,value) settings.get(prop) list_of_settings = settings.get_property_list() [/codeblock] [b]Note:[/b] This class shouldn't be instantiated directly. Instead, access the singleton using [method EditorInterface.get_editor_settings].
 */
 type EditorSettings struct {
 	Resource

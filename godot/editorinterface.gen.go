@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newEditorInterfaceFromPointer(ptr gdnative.Pointer) EditorInterface {
 }
 
 /*
-EditorInterface gives you control over Godot editor's window. It allows customizing the window, saving and (re-)loading scenes, rendering mesh previews, inspecting and editing resources and objects, and provides access to [EditorSettings], [EditorFileSystem], [EditorResourcePreview], [ScriptEditor], the editor viewport, and information about scenes.
+EditorInterface gives you control over Godot editor's window. It allows customizing the window, saving and (re-)loading scenes, rendering mesh previews, inspecting and editing resources and objects, and provides access to [EditorSettings], [EditorFileSystem], [EditorResourcePreview], [ScriptEditor], the editor viewport, and information about scenes. [b]Note:[/b] This class shouldn't be instantiated directly. Instead, access the singleton using [method EditorPlugin.get_editor_interface].
 */
 type EditorInterface struct {
 	Node
@@ -221,6 +221,43 @@ func (o *EditorInterface) GetEditorViewport() ControlImplementer {
 	if className != "Control" {
 		actualRet := getActualClass(className, ret.GetBaseObject())
 		return actualRet.(ControlImplementer)
+	}
+
+	return &ret
+}
+
+/*
+
+	Args: [], Returns: FileSystemDock
+*/
+func (o *EditorInterface) GetFileSystemDock() FileSystemDockImplementer {
+	//log.Println("Calling EditorInterface.GetFileSystemDock()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("EditorInterface", "get_file_system_dock")
+
+	// Call the parent method.
+	// FileSystemDock
+	retPtr := gdnative.NewEmptyObject()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := newFileSystemDockFromPointer(retPtr)
+
+	// Check to see if we already have an instance of this object in our Go instance registry.
+	if instance, ok := InstanceRegistry.Get(ret.GetBaseObject().ID()); ok {
+		return instance.(FileSystemDockImplementer)
+	}
+
+	// Check to see what kind of class this is and create it. This is generally used with
+	// GetNode().
+	className := ret.GetClass()
+	if className != "FileSystemDock" {
+		actualRet := getActualClass(className, ret.GetBaseObject())
+		return actualRet.(FileSystemDockImplementer)
 	}
 
 	return &ret
@@ -480,6 +517,29 @@ func (o *EditorInterface) InspectObject(object ObjectImplementer, forProperty gd
 }
 
 /*
+        Undocumented
+	Args: [], Returns: bool
+*/
+func (o *EditorInterface) IsDistractionFreeModeEnabled() gdnative.Bool {
+	//log.Println("Calling EditorInterface.IsDistractionFreeModeEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("EditorInterface", "is_distraction_free_mode_enabled")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
+}
+
+/*
         Returns the enabled status of a plugin. The plugin name is the same as its directory name.
 	Args: [{ false plugin String}], Returns: bool
 */
@@ -504,7 +564,7 @@ func (o *EditorInterface) IsPluginEnabled(plugin gdnative.String) gdnative.Bool 
 }
 
 /*
-        Returns mesh previews rendered at the given size as an [Array] of [Texture2D]s.
+        Returns mesh previews rendered at the given size as an [Array] of [Texture]s.
 	Args: [{ false meshes Array} { false preview_size int}], Returns: Array
 */
 func (o *EditorInterface) MakeMeshPreviews(meshes gdnative.Array, previewSize gdnative.Int) gdnative.Array {
@@ -637,7 +697,7 @@ func (o *EditorInterface) SelectFile(file gdnative.String) {
 }
 
 /*
-
+        Undocumented
 	Args: [{ false enter bool}], Returns: void
 */
 func (o *EditorInterface) SetDistractionFreeMode(enter gdnative.Bool) {
@@ -710,6 +770,7 @@ type EditorInterfaceImplementer interface {
 	GetEditedSceneRoot() NodeImplementer
 	GetEditorSettings() EditorSettingsImplementer
 	GetEditorViewport() ControlImplementer
+	GetFileSystemDock() FileSystemDockImplementer
 	GetInspector() EditorInspectorImplementer
 	GetOpenScenes() gdnative.Array
 	GetResourceFilesystem() EditorFileSystemImplementer
@@ -718,6 +779,7 @@ type EditorInterfaceImplementer interface {
 	GetSelectedPath() gdnative.String
 	GetSelection() EditorSelectionImplementer
 	InspectObject(object ObjectImplementer, forProperty gdnative.String)
+	IsDistractionFreeModeEnabled() gdnative.Bool
 	IsPluginEnabled(plugin gdnative.String) gdnative.Bool
 	MakeMeshPreviews(meshes gdnative.Array, previewSize gdnative.Int) gdnative.Array
 	OpenSceneFromPath(sceneFilepath gdnative.String)

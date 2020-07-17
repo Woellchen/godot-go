@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newConcavePolygonShapeFromPointer(ptr gdnative.Pointer) ConcavePolygonShape
 }
 
 /*
-Undocumented
+Concave polygon shape resource, which can be set into a [PhysicsBody] or area. This shape is created by feeding a list of triangles. Note: when used for collision, [ConcavePolygonShape] is intended to work with static [PhysicsBody] nodes like [StaticBody] and will not work with [KinematicBody] or [RigidBody] with a mode other than Static.
 */
 type ConcavePolygonShape struct {
 	Shape
@@ -35,7 +35,7 @@ func (o *ConcavePolygonShape) BaseClass() string {
 }
 
 /*
-        Undocumented
+        Returns the faces (an array of triangles).
 	Args: [], Returns: PoolVector3Array
 */
 func (o *ConcavePolygonShape) GetFaces() gdnative.PoolVector3Array {
@@ -58,7 +58,7 @@ func (o *ConcavePolygonShape) GetFaces() gdnative.PoolVector3Array {
 }
 
 /*
-        Undocumented
+        Sets the faces (an array of triangles).
 	Args: [{ false faces PoolVector3Array}], Returns: void
 */
 func (o *ConcavePolygonShape) SetFaces(faces gdnative.PoolVector3Array) {

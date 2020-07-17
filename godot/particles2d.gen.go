@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ func newParticles2DFromPointer(ptr gdnative.Pointer) Particles2D {
 }
 
 /*
-Undocumented
+2D particle node used to create a variety of particle systems and effects. [Particles2D] features an emitter that generates some number of particles at a given rate. Use the [code]process_material[/code] property to add a [ParticlesMaterial] to configure particle appearance and behavior. Alternatively, you can add a [ShaderMaterial] which will be applied to all particles.
 */
 type Particles2D struct {
 	Node2D
@@ -43,7 +43,7 @@ func (o *Particles2D) BaseClass() string {
 }
 
 /*
-        Undocumented
+        Returns a rectangle containing the positions of all existing particles.
 	Args: [], Returns: Rect2
 */
 func (o *Particles2D) CaptureRect() gdnative.Rect2 {
@@ -476,7 +476,7 @@ func (o *Particles2D) IsEmitting() gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Restarts all the existing particles.
 	Args: [], Returns: void
 */
 func (o *Particles2D) Restart() {

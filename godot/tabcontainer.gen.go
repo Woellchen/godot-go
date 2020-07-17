@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -334,15 +334,15 @@ func (o *TabContainer) GetTabAlign() TabContainerTabAlign {
 }
 
 /*
-        Returns the currently visible tab's [Control] node.
-	Args: [{ false idx int}], Returns: Control
+        Returns the [Control] node from the tab at index [code]tab_idx[/code].
+	Args: [{ false tab_idx int}], Returns: Control
 */
-func (o *TabContainer) GetTabControl(idx gdnative.Int) ControlImplementer {
+func (o *TabContainer) GetTabControl(tabIdx gdnative.Int) ControlImplementer {
 	//log.Println("Calling TabContainer.GetTabControl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
-	ptrArguments[0] = gdnative.NewPointerFromInt(idx)
+	ptrArguments[0] = gdnative.NewPointerFromInt(tabIdx)
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("TabContainer", "get_tab_control")
@@ -419,7 +419,7 @@ func (o *TabContainer) GetTabDisabled(tabIdx gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Returns the [Texture2D] for the tab at index [code]tab_idx[/code] or [code]null[/code] if the tab has no [Texture2D].
+        Returns the [Texture] for the tab at index [code]tab_idx[/code] or [code]null[/code] if the tab has no [Texture].
 	Args: [{ false tab_idx int}], Returns: Texture
 */
 func (o *TabContainer) GetTabIcon(tabIdx gdnative.Int) TextureImplementer {
@@ -753,7 +753,7 @@ type TabContainerImplementer interface {
 	GetDragToRearrangeEnabled() gdnative.Bool
 	GetPopup() PopupImplementer
 	GetPreviousTab() gdnative.Int
-	GetTabControl(idx gdnative.Int) ControlImplementer
+	GetTabControl(tabIdx gdnative.Int) ControlImplementer
 	GetTabCount() gdnative.Int
 	GetTabDisabled(tabIdx gdnative.Int) gdnative.Bool
 	GetTabIcon(tabIdx gdnative.Int) TextureImplementer

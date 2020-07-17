@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeInputFromPointer(ptr gdnative.Pointer) VisualShaderNodeI
 }
 
 /*
-
- */
+Gives access to input variables (built-ins) available for the shader. See the shading reference for the list of available built-ins for each shader type (check [code]Tutorials[/code] section for link).
+*/
 type VisualShaderNodeInput struct {
 	VisualShaderNode
 	owner gdnative.Object
@@ -58,7 +58,7 @@ func (o *VisualShaderNodeInput) GetInputName() gdnative.String {
 }
 
 /*
-        Returns a translated name of the current constant in the Godot Shader Language. eg. [code]"ALBEDO"[/code] if the [member input_name] equal to [code]"albedo"[/code].
+
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeInput) GetInputRealName() gdnative.String {

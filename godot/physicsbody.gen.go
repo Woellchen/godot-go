@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newPhysicsBodyFromPointer(ptr gdnative.Pointer) PhysicsBody {
 }
 
 /*
-Undocumented
+PhysicsBody is an abstract base class for implementing a physics body. All *Body types inherit from it.
 */
 type PhysicsBody struct {
 	CollisionObject
@@ -79,7 +79,7 @@ func (o *PhysicsBody) X_SetLayers(mask gdnative.Int) {
 }
 
 /*
-        Undocumented
+        Adds a body to the list of bodies that this body can't collide with.
 	Args: [{ false body Node}], Returns: void
 */
 func (o *PhysicsBody) AddCollisionExceptionWith(body NodeImplementer) {
@@ -100,7 +100,7 @@ func (o *PhysicsBody) AddCollisionExceptionWith(body NodeImplementer) {
 }
 
 /*
-        Undocumented
+        Returns an array of nodes that were added as collision exceptions for this body.
 	Args: [], Returns: Array
 */
 func (o *PhysicsBody) GetCollisionExceptions() gdnative.Array {
@@ -146,7 +146,7 @@ func (o *PhysicsBody) GetCollisionLayer() gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns an individual bit on the [member collision_layer].
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *PhysicsBody) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
@@ -193,7 +193,7 @@ func (o *PhysicsBody) GetCollisionMask() gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns an individual bit on the [member collision_mask].
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *PhysicsBody) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
@@ -217,7 +217,7 @@ func (o *PhysicsBody) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Removes a body from the list of bodies that this body can't collide with.
 	Args: [{ false body Node}], Returns: void
 */
 func (o *PhysicsBody) RemoveCollisionExceptionWith(body NodeImplementer) {
@@ -259,7 +259,7 @@ func (o *PhysicsBody) SetCollisionLayer(layer gdnative.Int) {
 }
 
 /*
-        Undocumented
+        Sets individual bits on the [member collision_layer] bitmask. Use this if you only need to change one layer's value.
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *PhysicsBody) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
@@ -302,7 +302,7 @@ func (o *PhysicsBody) SetCollisionMask(mask gdnative.Int) {
 }
 
 /*
-        Undocumented
+        Sets individual bits on the [member collision_mask] bitmask. Use this if you only need to change one layer's value.
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *PhysicsBody) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {

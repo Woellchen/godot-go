@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newViewportContainerFromPointer(ptr gdnative.Pointer) ViewportContainer {
 }
 
 /*
-Undocumented
+A [Container] node that holds a [Viewport], automatically setting its size. [b]Note:[/b] Changing a ViewportContainer's [member Control.rect_scale] will cause its contents to appear distorted. To change its visual size without causing distortion, adjust the node's margins instead (if it's not already in a container).
 */
 type ViewportContainer struct {
 	Container

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newConvexPolygonShapeFromPointer(ptr gdnative.Pointer) ConvexPolygonShape {
 }
 
 /*
-Undocumented
+Convex polygon shape resource, which can be added to a [PhysicsBody] or area.
 */
 type ConvexPolygonShape struct {
 	Shape

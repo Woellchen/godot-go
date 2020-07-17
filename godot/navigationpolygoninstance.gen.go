@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newNavigationPolygonInstanceFromPointer(ptr gdnative.Pointer) NavigationPol
 }
 
 /*
-Undocumented
-*/
+
+ */
 type NavigationPolygonInstance struct {
 	Node2D
 	owner gdnative.Object

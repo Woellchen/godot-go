@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newEditorResourcePreviewFromPointer(ptr gdnative.Pointer) EditorResourcePre
 }
 
 /*
-This object is used to generate previews for resources of files.
+This object is used to generate previews for resources of files. [b]Note:[/b] This class shouldn't be instantiated directly. Instead, access the singleton using [method EditorInterface.get_resource_previewer].
 */
 type EditorResourcePreview struct {
 	Node

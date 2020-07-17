@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ func newHingeJointFromPointer(ptr gdnative.Pointer) HingeJoint {
 }
 
 /*
-Undocumented
+A HingeJoint normally uses the Z axis of body A as the hinge axis, another axis can be specified when adding it manually though.
 */
 type HingeJoint struct {
 	Joint
@@ -147,7 +147,7 @@ func (o *HingeJoint) X_SetUpperLimit(upperLimit gdnative.Real) {
 }
 
 /*
-        Undocumented
+        Returns the value of the specified flag.
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *HingeJoint) GetFlag(flag gdnative.Int) gdnative.Bool {
@@ -171,7 +171,7 @@ func (o *HingeJoint) GetFlag(flag gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Returns the value of the specified parameter.
 	Args: [{ false param int}], Returns: float
 */
 func (o *HingeJoint) GetParam(param gdnative.Int) gdnative.Real {
@@ -195,7 +195,7 @@ func (o *HingeJoint) GetParam(param gdnative.Int) gdnative.Real {
 }
 
 /*
-        Undocumented
+        If [code]true[/code], enables the specified flag.
 	Args: [{ false flag int} { false enabled bool}], Returns: void
 */
 func (o *HingeJoint) SetFlag(flag gdnative.Int, enabled gdnative.Bool) {
@@ -217,7 +217,7 @@ func (o *HingeJoint) SetFlag(flag gdnative.Int, enabled gdnative.Bool) {
 }
 
 /*
-        Undocumented
+        Sets the value of the specified parameter.
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *HingeJoint) SetParam(param gdnative.Int, value gdnative.Real) {

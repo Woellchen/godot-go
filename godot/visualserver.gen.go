@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -335,16 +335,18 @@ const (
 type VisualServerRenderInfo int
 
 const (
+	VisualServerInfo2DDrawCallsInFrame     VisualServerRenderInfo = 7
+	VisualServerInfo2DItemsInFrame         VisualServerRenderInfo = 6
 	VisualServerInfoDrawCallsInFrame       VisualServerRenderInfo = 5
 	VisualServerInfoMaterialChangesInFrame VisualServerRenderInfo = 2
 	VisualServerInfoObjectsInFrame         VisualServerRenderInfo = 0
 	VisualServerInfoShaderChangesInFrame   VisualServerRenderInfo = 3
 	VisualServerInfoSurfaceChangesInFrame  VisualServerRenderInfo = 4
-	VisualServerInfoTextureMemUsed         VisualServerRenderInfo = 8
-	VisualServerInfoUsageVideoMemTotal     VisualServerRenderInfo = 6
-	VisualServerInfoVertexMemUsed          VisualServerRenderInfo = 9
+	VisualServerInfoTextureMemUsed         VisualServerRenderInfo = 10
+	VisualServerInfoUsageVideoMemTotal     VisualServerRenderInfo = 8
+	VisualServerInfoVertexMemUsed          VisualServerRenderInfo = 11
 	VisualServerInfoVerticesInFrame        VisualServerRenderInfo = 1
-	VisualServerInfoVideoMemUsed           VisualServerRenderInfo = 7
+	VisualServerInfoVideoMemUsed           VisualServerRenderInfo = 9
 )
 
 // VisualServerScenarioDebugMode is an enum for ScenarioDebugMode values.
@@ -396,9 +398,9 @@ type VisualServerTextureType int
 
 const (
 	VisualServerTextureType2D      VisualServerTextureType = 0
-	VisualServerTextureType2DArray VisualServerTextureType = 2
-	VisualServerTextureType3D      VisualServerTextureType = 3
-	VisualServerTextureTypeCubemap VisualServerTextureType = 1
+	VisualServerTextureType2DArray VisualServerTextureType = 3
+	VisualServerTextureType3D      VisualServerTextureType = 4
+	VisualServerTextureTypeCubemap VisualServerTextureType = 2
 )
 
 // VisualServerViewportClearMode is an enum for ViewportClearMode values.
@@ -437,9 +439,11 @@ const (
 type VisualServerViewportRenderInfo int
 
 const (
+	VisualServerViewportRenderInfo2DDrawCallsInFrame     VisualServerViewportRenderInfo = 7
+	VisualServerViewportRenderInfo2DItemsInFrame         VisualServerViewportRenderInfo = 6
 	VisualServerViewportRenderInfoDrawCallsInFrame       VisualServerViewportRenderInfo = 5
 	VisualServerViewportRenderInfoMaterialChangesInFrame VisualServerViewportRenderInfo = 2
-	VisualServerViewportRenderInfoMax                    VisualServerViewportRenderInfo = 6
+	VisualServerViewportRenderInfoMax                    VisualServerViewportRenderInfo = 8
 	VisualServerViewportRenderInfoObjectsInFrame         VisualServerViewportRenderInfo = 0
 	VisualServerViewportRenderInfoShaderChangesInFrame   VisualServerViewportRenderInfo = 3
 	VisualServerViewportRenderInfoSurfaceChangesInFrame  VisualServerViewportRenderInfo = 4
@@ -480,12 +484,12 @@ func newSingletonVisualServer() *visualServer {
 }
 
 /*
-   Undocumented
+   Server for anything visible. The visual server is the API backend for everything visible. The whole scene system mounts on it to display. The visual server is completely opaque, the internals are entirely implementation specific and cannot be accessed. The visual server can be used to bypass the scene system entirely. Resources are created using the [code]*_create[/code] functions. All objects are drawn to a viewport. You can use the [Viewport] attached to the [SceneTree] or you can create one yourself with [method viewport_create]. When using a custom scenario or canvas, the scenario or canvas needs to be attached to the viewport using [method viewport_set_scenario] or [method viewport_attach_canvas]. In 3D, all visual objects must be associated with a scenario. The scenario is a visual representation of the world. If accessing the visual server from a running game, the scenario can be accessed from the scene tree from any [Spatial] node with [method Spatial.get_world]. Otherwise, a scenario can be created with [method scenario_create]. Similarly in 2D, a canvas is needed to draw all canvas items. In 3D, all visible objects are comprised of a resource and an instance. A resource can be a mesh, a particle system, a light, or any other 3D object. In order to be visible resources must be attached to an instance using [method instance_set_base]. The instance must also be attached to the scenario using [method instance_set_scenario] in order to be visible. In 2D, all visible objects are some form of canvas item. In order to be visible, a canvas item needs to be the child of a canvas attached to a viewport, or it needs to be the child of another canvas item that is eventually attached to the canvas.
 */
 var VisualServer = newSingletonVisualServer()
 
 /*
-Undocumented
+Server for anything visible. The visual server is the API backend for everything visible. The whole scene system mounts on it to display. The visual server is completely opaque, the internals are entirely implementation specific and cannot be accessed. The visual server can be used to bypass the scene system entirely. Resources are created using the [code]*_create[/code] functions. All objects are drawn to a viewport. You can use the [Viewport] attached to the [SceneTree] or you can create one yourself with [method viewport_create]. When using a custom scenario or canvas, the scenario or canvas needs to be attached to the viewport using [method viewport_set_scenario] or [method viewport_attach_canvas]. In 3D, all visual objects must be associated with a scenario. The scenario is a visual representation of the world. If accessing the visual server from a running game, the scenario can be accessed from the scene tree from any [Spatial] node with [method Spatial.get_world]. Otherwise, a scenario can be created with [method scenario_create]. Similarly in 2D, a canvas is needed to draw all canvas items. In 3D, all visible objects are comprised of a resource and an instance. A resource can be a mesh, a particle system, a light, or any other 3D object. In order to be visible resources must be attached to an instance using [method instance_set_base]. The instance must also be attached to the scenario using [method instance_set_scenario] in order to be visible. In 2D, all visible objects are some form of canvas item. In order to be visible, a canvas item needs to be the child of a canvas attached to a viewport, or it needs to be the child of another canvas item that is eventually attached to the canvas.
 */
 type visualServer struct {
 	Object
@@ -510,7 +514,7 @@ func (o *visualServer) BaseClass() string {
 }
 
 /*
-        Undocumented
+        Sets images to be rendered in the window margin.
 	Args: [{ false left RID} { false top RID} { false right RID} { false bottom RID}], Returns: void
 */
 func (o *visualServer) BlackBarsSetImages(left gdnative.Rid, top gdnative.Rid, right gdnative.Rid, bottom gdnative.Rid) {
@@ -535,7 +539,7 @@ func (o *visualServer) BlackBarsSetImages(left gdnative.Rid, top gdnative.Rid, r
 }
 
 /*
-        Undocumented
+        Sets margin size, where black bars (or images, if [method black_bars_set_images] was used) are rendered.
 	Args: [{ false left int} { false top int} { false right int} { false bottom int}], Returns: void
 */
 func (o *visualServer) BlackBarsSetMargins(left gdnative.Int, top gdnative.Int, right gdnative.Int, bottom gdnative.Int) {
@@ -560,7 +564,7 @@ func (o *visualServer) BlackBarsSetMargins(left gdnative.Int, top gdnative.Int, 
 }
 
 /*
-        Undocumented
+        Creates a camera and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]camera_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) CameraCreate() gdnative.Rid {
@@ -584,7 +588,7 @@ func (o *visualServer) CameraCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Sets the cull mask associated with this camera. The cull mask describes which 3D layers are rendered by this camera. Equivalent to [member Camera.cull_mask].
 	Args: [{ false camera RID} { false layers int}], Returns: void
 */
 func (o *visualServer) CameraSetCullMask(camera gdnative.Rid, layers gdnative.Int) {
@@ -607,7 +611,7 @@ func (o *visualServer) CameraSetCullMask(camera gdnative.Rid, layers gdnative.In
 }
 
 /*
-        Undocumented
+        Sets the environment used by this camera. Equivalent to [member Camera.environment].
 	Args: [{ false camera RID} { false env RID}], Returns: void
 */
 func (o *visualServer) CameraSetEnvironment(camera gdnative.Rid, env gdnative.Rid) {
@@ -630,7 +634,7 @@ func (o *visualServer) CameraSetEnvironment(camera gdnative.Rid, env gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets camera to use frustum projection. This mode allows adjusting the [code]offset[/code] argument to create "tilted frustum" effects.
 	Args: [{ false camera RID} { false size float} { false offset Vector2} { false z_near float} { false z_far float}], Returns: void
 */
 func (o *visualServer) CameraSetFrustum(camera gdnative.Rid, size gdnative.Real, offset gdnative.Vector2, zNear gdnative.Real, zFar gdnative.Real) {
@@ -656,7 +660,7 @@ func (o *visualServer) CameraSetFrustum(camera gdnative.Rid, size gdnative.Real,
 }
 
 /*
-        Undocumented
+        Sets camera to use orthogonal projection, also known as orthographic projection. Objects remain the same size on the screen no matter how far away they are.
 	Args: [{ false camera RID} { false size float} { false z_near float} { false z_far float}], Returns: void
 */
 func (o *visualServer) CameraSetOrthogonal(camera gdnative.Rid, size gdnative.Real, zNear gdnative.Real, zFar gdnative.Real) {
@@ -681,7 +685,7 @@ func (o *visualServer) CameraSetOrthogonal(camera gdnative.Rid, size gdnative.Re
 }
 
 /*
-        Undocumented
+        Sets camera to use perspective projection. Objects on the screen becomes smaller when they are far away.
 	Args: [{ false camera RID} { false fovy_degrees float} { false z_near float} { false z_far float}], Returns: void
 */
 func (o *visualServer) CameraSetPerspective(camera gdnative.Rid, fovyDegrees gdnative.Real, zNear gdnative.Real, zFar gdnative.Real) {
@@ -706,7 +710,7 @@ func (o *visualServer) CameraSetPerspective(camera gdnative.Rid, fovyDegrees gdn
 }
 
 /*
-        Undocumented
+        Sets [Transform] of camera.
 	Args: [{ false camera RID} { false transform Transform}], Returns: void
 */
 func (o *visualServer) CameraSetTransform(camera gdnative.Rid, transform gdnative.Transform) {
@@ -729,7 +733,7 @@ func (o *visualServer) CameraSetTransform(camera gdnative.Rid, transform gdnativ
 }
 
 /*
-        Undocumented
+        If [code]true[/code], preserves the horizontal aspect ratio which is equivalent to [constant Camera.KEEP_WIDTH]. If [code]false[/code], preserves the vertical aspect ratio which is equivalent to [constant Camera.KEEP_HEIGHT].
 	Args: [{ false camera RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) CameraSetUseVerticalAspect(camera gdnative.Rid, enable gdnative.Bool) {
@@ -752,7 +756,7 @@ func (o *visualServer) CameraSetUseVerticalAspect(camera gdnative.Rid, enable gd
 }
 
 /*
-        Undocumented
+        Creates a canvas and returns the assigned [RID]. It can be accessed with the RID that is returned. This RID will be used in all [code]canvas_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) CanvasCreate() gdnative.Rid {
@@ -776,7 +780,7 @@ func (o *visualServer) CanvasCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Adds a circle command to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false pos Vector2} { false radius float} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasItemAddCircle(item gdnative.Rid, pos gdnative.Vector2, radius gdnative.Real, color gdnative.Color) {
@@ -801,7 +805,7 @@ func (o *visualServer) CanvasItemAddCircle(item gdnative.Rid, pos gdnative.Vecto
 }
 
 /*
-        Undocumented
+        If ignore is [code]true[/code], the VisualServer does not perform clipping.
 	Args: [{ false item RID} { false ignore bool}], Returns: void
 */
 func (o *visualServer) CanvasItemAddClipIgnore(item gdnative.Rid, ignore gdnative.Bool) {
@@ -824,7 +828,7 @@ func (o *visualServer) CanvasItemAddClipIgnore(item gdnative.Rid, ignore gdnativ
 }
 
 /*
-        Undocumented
+        Adds a line command to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false from Vector2} { false to Vector2} { false color Color} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *visualServer) CanvasItemAddLine(item gdnative.Rid, from gdnative.Vector2, to gdnative.Vector2, color gdnative.Color, width gdnative.Real, antialiased gdnative.Bool) {
@@ -851,7 +855,7 @@ func (o *visualServer) CanvasItemAddLine(item gdnative.Rid, from gdnative.Vector
 }
 
 /*
-        Undocumented
+        Adds a mesh command to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false mesh RID} {((1, 0), (0, 1), (0, 0)) true transform Transform2D} {1,1,1,1 true modulate Color} {[RID] true texture RID} {[RID] true normal_map RID}], Returns: void
 */
 func (o *visualServer) CanvasItemAddMesh(item gdnative.Rid, mesh gdnative.Rid, transform gdnative.Transform2D, modulate gdnative.Color, texture gdnative.Rid, normalMap gdnative.Rid) {
@@ -878,7 +882,7 @@ func (o *visualServer) CanvasItemAddMesh(item gdnative.Rid, mesh gdnative.Rid, t
 }
 
 /*
-        Undocumented
+        Adds a [MultiMesh] to the [CanvasItem]'s draw commands. Only affects its aabb at the moment.
 	Args: [{ false item RID} { false mesh RID} { false texture RID} {[RID] true normal_map RID}], Returns: void
 */
 func (o *visualServer) CanvasItemAddMultimesh(item gdnative.Rid, mesh gdnative.Rid, texture gdnative.Rid, normalMap gdnative.Rid) {
@@ -903,7 +907,7 @@ func (o *visualServer) CanvasItemAddMultimesh(item gdnative.Rid, mesh gdnative.R
 }
 
 /*
-        Undocumented
+        Adds a nine patch image to the [CanvasItem]'s draw commands. See [NinePatchRect] for more explanation.
 	Args: [{ false item RID} { false rect Rect2} { false source Rect2} { false texture RID} { false topleft Vector2} { false bottomright Vector2} {0 true x_axis_mode int} {0 true y_axis_mode int} {True true draw_center bool} {1,1,1,1 true modulate Color} {[RID] true normal_map RID}], Returns: void
 */
 func (o *visualServer) CanvasItemAddNinePatch(item gdnative.Rid, rect gdnative.Rect2, source gdnative.Rect2, texture gdnative.Rid, topleft gdnative.Vector2, bottomright gdnative.Vector2, xAxisMode gdnative.Int, yAxisMode gdnative.Int, drawCenter gdnative.Bool, modulate gdnative.Color, normalMap gdnative.Rid) {
@@ -935,7 +939,7 @@ func (o *visualServer) CanvasItemAddNinePatch(item gdnative.Rid, rect gdnative.R
 }
 
 /*
-        Undocumented
+        Adds a particle system to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false particles RID} { false texture RID} { false normal_map RID}], Returns: void
 */
 func (o *visualServer) CanvasItemAddParticles(item gdnative.Rid, particles gdnative.Rid, texture gdnative.Rid, normalMap gdnative.Rid) {
@@ -960,7 +964,7 @@ func (o *visualServer) CanvasItemAddParticles(item gdnative.Rid, particles gdnat
 }
 
 /*
-        Undocumented
+        Adds a polygon to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false points PoolVector2Array} { false colors PoolColorArray} {[] true uvs PoolVector2Array} {[RID] true texture RID} {[RID] true normal_map RID} {False true antialiased bool}], Returns: void
 */
 func (o *visualServer) CanvasItemAddPolygon(item gdnative.Rid, points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, uvs gdnative.PoolVector2Array, texture gdnative.Rid, normalMap gdnative.Rid, antialiased gdnative.Bool) {
@@ -988,7 +992,7 @@ func (o *visualServer) CanvasItemAddPolygon(item gdnative.Rid, points gdnative.P
 }
 
 /*
-        Undocumented
+        Adds a polyline, which is a line from multiple points with a width, to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false points PoolVector2Array} { false colors PoolColorArray} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *visualServer) CanvasItemAddPolyline(item gdnative.Rid, points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, width gdnative.Real, antialiased gdnative.Bool) {
@@ -1014,7 +1018,7 @@ func (o *visualServer) CanvasItemAddPolyline(item gdnative.Rid, points gdnative.
 }
 
 /*
-        Undocumented
+        Adds a primitive to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false points PoolVector2Array} { false colors PoolColorArray} { false uvs PoolVector2Array} { false texture RID} {1 true width float} {[RID] true normal_map RID}], Returns: void
 */
 func (o *visualServer) CanvasItemAddPrimitive(item gdnative.Rid, points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, uvs gdnative.PoolVector2Array, texture gdnative.Rid, width gdnative.Real, normalMap gdnative.Rid) {
@@ -1042,7 +1046,7 @@ func (o *visualServer) CanvasItemAddPrimitive(item gdnative.Rid, points gdnative
 }
 
 /*
-        Undocumented
+        Adds a rectangle to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false rect Rect2} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasItemAddRect(item gdnative.Rid, rect gdnative.Rect2, color gdnative.Color) {
@@ -1066,7 +1070,7 @@ func (o *visualServer) CanvasItemAddRect(item gdnative.Rid, rect gdnative.Rect2,
 }
 
 /*
-        Undocumented
+        Adds a [Transform2D] command to the [CanvasItem]'s draw commands. This sets the extra_matrix uniform when executed. This affects the later commands of the canvas item.
 	Args: [{ false item RID} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) CanvasItemAddSetTransform(item gdnative.Rid, transform gdnative.Transform2D) {
@@ -1089,7 +1093,7 @@ func (o *visualServer) CanvasItemAddSetTransform(item gdnative.Rid, transform gd
 }
 
 /*
-        Undocumented
+        Adds a textured rect to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false rect Rect2} { false texture RID} {False true tile bool} {1,1,1,1 true modulate Color} {False true transpose bool} {[RID] true normal_map RID}], Returns: void
 */
 func (o *visualServer) CanvasItemAddTextureRect(item gdnative.Rid, rect gdnative.Rect2, texture gdnative.Rid, tile gdnative.Bool, modulate gdnative.Color, transpose gdnative.Bool, normalMap gdnative.Rid) {
@@ -1117,7 +1121,7 @@ func (o *visualServer) CanvasItemAddTextureRect(item gdnative.Rid, rect gdnative
 }
 
 /*
-        Undocumented
+        Adds a texture rect with region setting to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false rect Rect2} { false texture RID} { false src_rect Rect2} {1,1,1,1 true modulate Color} {False true transpose bool} {[RID] true normal_map RID} {True true clip_uv bool}], Returns: void
 */
 func (o *visualServer) CanvasItemAddTextureRectRegion(item gdnative.Rid, rect gdnative.Rect2, texture gdnative.Rid, srcRect gdnative.Rect2, modulate gdnative.Color, transpose gdnative.Bool, normalMap gdnative.Rid, clipUv gdnative.Bool) {
@@ -1146,7 +1150,7 @@ func (o *visualServer) CanvasItemAddTextureRectRegion(item gdnative.Rid, rect gd
 }
 
 /*
-        Undocumented
+        Adds a triangle array to the [CanvasItem]'s draw commands.
 	Args: [{ false item RID} { false indices PoolIntArray} { false points PoolVector2Array} { false colors PoolColorArray} {[] true uvs PoolVector2Array} {[] true bones PoolIntArray} {[] true weights PoolRealArray} {[RID] true texture RID} {-1 true count int} {[RID] true normal_map RID} {False true antialiased bool} {False true antialiasing_use_indices bool}], Returns: void
 */
 func (o *visualServer) CanvasItemAddTriangleArray(item gdnative.Rid, indices gdnative.PoolIntArray, points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, uvs gdnative.PoolVector2Array, bones gdnative.PoolIntArray, weights gdnative.PoolRealArray, texture gdnative.Rid, count gdnative.Int, normalMap gdnative.Rid, antialiased gdnative.Bool, antialiasingUseIndices gdnative.Bool) {
@@ -1179,7 +1183,7 @@ func (o *visualServer) CanvasItemAddTriangleArray(item gdnative.Rid, indices gdn
 }
 
 /*
-        Undocumented
+        Clears the [CanvasItem] and removes all commands in it.
 	Args: [{ false item RID}], Returns: void
 */
 func (o *visualServer) CanvasItemClear(item gdnative.Rid) {
@@ -1201,7 +1205,7 @@ func (o *visualServer) CanvasItemClear(item gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Creates a new [CanvasItem] and returns its [RID]. It can be accessed with the RID that is returned. This RID will be used in all [code]canvas_item_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) CanvasItemCreate() gdnative.Rid {
@@ -1225,7 +1229,7 @@ func (o *visualServer) CanvasItemCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Sets clipping for the [CanvasItem].
 	Args: [{ false item RID} { false clip bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetClip(item gdnative.Rid, clip gdnative.Bool) {
@@ -1248,7 +1252,7 @@ func (o *visualServer) CanvasItemSetClip(item gdnative.Rid, clip gdnative.Bool) 
 }
 
 /*
-        Undocumented
+        Sets the [CanvasItem] to copy a rect to the backbuffer.
 	Args: [{ false item RID} { false enabled bool} { false rect Rect2}], Returns: void
 */
 func (o *visualServer) CanvasItemSetCopyToBackbuffer(item gdnative.Rid, enabled gdnative.Bool, rect gdnative.Rect2) {
@@ -1272,7 +1276,7 @@ func (o *visualServer) CanvasItemSetCopyToBackbuffer(item gdnative.Rid, enabled 
 }
 
 /*
-        Undocumented
+        Defines a custom drawing rectangle for the [CanvasItem].
 	Args: [{ false item RID} { false use_custom_rect bool} {(0, 0, 0, 0) true rect Rect2}], Returns: void
 */
 func (o *visualServer) CanvasItemSetCustomRect(item gdnative.Rid, useCustomRect gdnative.Bool, rect gdnative.Rect2) {
@@ -1296,7 +1300,7 @@ func (o *visualServer) CanvasItemSetCustomRect(item gdnative.Rid, useCustomRect 
 }
 
 /*
-        Undocumented
+        Enables the use of distance fields for GUI elements that are rendering distance field based fonts.
 	Args: [{ false item RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetDistanceFieldMode(item gdnative.Rid, enabled gdnative.Bool) {
@@ -1319,7 +1323,7 @@ func (o *visualServer) CanvasItemSetDistanceFieldMode(item gdnative.Rid, enabled
 }
 
 /*
-        Undocumented
+        Sets [CanvasItem] to be drawn behind its parent.
 	Args: [{ false item RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetDrawBehindParent(item gdnative.Rid, enabled gdnative.Bool) {
@@ -1342,7 +1346,7 @@ func (o *visualServer) CanvasItemSetDrawBehindParent(item gdnative.Rid, enabled 
 }
 
 /*
-        Undocumented
+        Sets the index for the [CanvasItem].
 	Args: [{ false item RID} { false index int}], Returns: void
 */
 func (o *visualServer) CanvasItemSetDrawIndex(item gdnative.Rid, index gdnative.Int) {
@@ -1365,7 +1369,7 @@ func (o *visualServer) CanvasItemSetDrawIndex(item gdnative.Rid, index gdnative.
 }
 
 /*
-        Undocumented
+        The light mask. See [LightOccluder2D] for more information on light masks.
 	Args: [{ false item RID} { false mask int}], Returns: void
 */
 func (o *visualServer) CanvasItemSetLightMask(item gdnative.Rid, mask gdnative.Int) {
@@ -1388,7 +1392,7 @@ func (o *visualServer) CanvasItemSetLightMask(item gdnative.Rid, mask gdnative.I
 }
 
 /*
-        Undocumented
+        Sets a new material to the [CanvasItem].
 	Args: [{ false item RID} { false material RID}], Returns: void
 */
 func (o *visualServer) CanvasItemSetMaterial(item gdnative.Rid, material gdnative.Rid) {
@@ -1411,7 +1415,7 @@ func (o *visualServer) CanvasItemSetMaterial(item gdnative.Rid, material gdnativ
 }
 
 /*
-        Undocumented
+        Sets the color that modulates the [CanvasItem] and its children.
 	Args: [{ false item RID} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasItemSetModulate(item gdnative.Rid, color gdnative.Color) {
@@ -1434,7 +1438,7 @@ func (o *visualServer) CanvasItemSetModulate(item gdnative.Rid, color gdnative.C
 }
 
 /*
-        Undocumented
+        Sets the parent for the [CanvasItem]. The parent can be another canvas item, or it can be the root canvas that is attached to the viewport.
 	Args: [{ false item RID} { false parent RID}], Returns: void
 */
 func (o *visualServer) CanvasItemSetParent(item gdnative.Rid, parent gdnative.Rid) {
@@ -1457,7 +1461,7 @@ func (o *visualServer) CanvasItemSetParent(item gdnative.Rid, parent gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets the color that modulates the [CanvasItem] without children.
 	Args: [{ false item RID} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasItemSetSelfModulate(item gdnative.Rid, color gdnative.Color) {
@@ -1480,7 +1484,7 @@ func (o *visualServer) CanvasItemSetSelfModulate(item gdnative.Rid, color gdnati
 }
 
 /*
-        Undocumented
+        Sets if [CanvasItem]'s children should be sorted by y-position.
 	Args: [{ false item RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetSortChildrenByY(item gdnative.Rid, enabled gdnative.Bool) {
@@ -1503,7 +1507,7 @@ func (o *visualServer) CanvasItemSetSortChildrenByY(item gdnative.Rid, enabled g
 }
 
 /*
-        Undocumented
+        Sets the [CanvasItem]'s [Transform2D].
 	Args: [{ false item RID} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) CanvasItemSetTransform(item gdnative.Rid, transform gdnative.Transform2D) {
@@ -1526,7 +1530,7 @@ func (o *visualServer) CanvasItemSetTransform(item gdnative.Rid, transform gdnat
 }
 
 /*
-        Undocumented
+        Sets if the [CanvasItem] uses its parent's material.
 	Args: [{ false item RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetUseParentMaterial(item gdnative.Rid, enabled gdnative.Bool) {
@@ -1549,7 +1553,7 @@ func (o *visualServer) CanvasItemSetUseParentMaterial(item gdnative.Rid, enabled
 }
 
 /*
-        Undocumented
+        Sets if the canvas item (including its children) is visible.
 	Args: [{ false item RID} { false visible bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetVisible(item gdnative.Rid, visible gdnative.Bool) {
@@ -1572,7 +1576,7 @@ func (o *visualServer) CanvasItemSetVisible(item gdnative.Rid, visible gdnative.
 }
 
 /*
-        Undocumented
+        If this is enabled, the Z index of the parent will be added to the children's Z index.
 	Args: [{ false item RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasItemSetZAsRelativeToParent(item gdnative.Rid, enabled gdnative.Bool) {
@@ -1595,7 +1599,7 @@ func (o *visualServer) CanvasItemSetZAsRelativeToParent(item gdnative.Rid, enabl
 }
 
 /*
-        Undocumented
+        Sets the [CanvasItem]'s Z index, i.e. its draw order (lower indexes are drawn first).
 	Args: [{ false item RID} { false z_index int}], Returns: void
 */
 func (o *visualServer) CanvasItemSetZIndex(item gdnative.Rid, zIndex gdnative.Int) {
@@ -1618,7 +1622,7 @@ func (o *visualServer) CanvasItemSetZIndex(item gdnative.Rid, zIndex gdnative.In
 }
 
 /*
-        Undocumented
+        Attaches the canvas light to the canvas. Removes it from its previous canvas.
 	Args: [{ false light RID} { false canvas RID}], Returns: void
 */
 func (o *visualServer) CanvasLightAttachToCanvas(light gdnative.Rid, canvas gdnative.Rid) {
@@ -1641,7 +1645,7 @@ func (o *visualServer) CanvasLightAttachToCanvas(light gdnative.Rid, canvas gdna
 }
 
 /*
-        Undocumented
+        Creates a canvas light and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]canvas_light_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) CanvasLightCreate() gdnative.Rid {
@@ -1665,7 +1669,7 @@ func (o *visualServer) CanvasLightCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Attaches a light occluder to the canvas. Removes it from its previous canvas.
 	Args: [{ false occluder RID} { false canvas RID}], Returns: void
 */
 func (o *visualServer) CanvasLightOccluderAttachToCanvas(occluder gdnative.Rid, canvas gdnative.Rid) {
@@ -1688,7 +1692,7 @@ func (o *visualServer) CanvasLightOccluderAttachToCanvas(occluder gdnative.Rid, 
 }
 
 /*
-        Undocumented
+        Creates a light occluder and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]canvas_light_ocluder_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) CanvasLightOccluderCreate() gdnative.Rid {
@@ -1712,7 +1716,7 @@ func (o *visualServer) CanvasLightOccluderCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Enables or disables light occluder.
 	Args: [{ false occluder RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasLightOccluderSetEnabled(occluder gdnative.Rid, enabled gdnative.Bool) {
@@ -1735,7 +1739,7 @@ func (o *visualServer) CanvasLightOccluderSetEnabled(occluder gdnative.Rid, enab
 }
 
 /*
-        Undocumented
+        The light mask. See [LightOccluder2D] for more information on light masks.
 	Args: [{ false occluder RID} { false mask int}], Returns: void
 */
 func (o *visualServer) CanvasLightOccluderSetLightMask(occluder gdnative.Rid, mask gdnative.Int) {
@@ -1758,7 +1762,7 @@ func (o *visualServer) CanvasLightOccluderSetLightMask(occluder gdnative.Rid, ma
 }
 
 /*
-        Undocumented
+        Sets a light occluder's polygon.
 	Args: [{ false occluder RID} { false polygon RID}], Returns: void
 */
 func (o *visualServer) CanvasLightOccluderSetPolygon(occluder gdnative.Rid, polygon gdnative.Rid) {
@@ -1781,7 +1785,7 @@ func (o *visualServer) CanvasLightOccluderSetPolygon(occluder gdnative.Rid, poly
 }
 
 /*
-        Undocumented
+        Sets a light occluder's [Transform2D].
 	Args: [{ false occluder RID} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) CanvasLightOccluderSetTransform(occluder gdnative.Rid, transform gdnative.Transform2D) {
@@ -1804,7 +1808,7 @@ func (o *visualServer) CanvasLightOccluderSetTransform(occluder gdnative.Rid, tr
 }
 
 /*
-        Undocumented
+        Sets the color for a light.
 	Args: [{ false light RID} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasLightSetColor(light gdnative.Rid, color gdnative.Color) {
@@ -1827,7 +1831,7 @@ func (o *visualServer) CanvasLightSetColor(light gdnative.Rid, color gdnative.Co
 }
 
 /*
-        Undocumented
+        Enables or disables a canvas light.
 	Args: [{ false light RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasLightSetEnabled(light gdnative.Rid, enabled gdnative.Bool) {
@@ -1850,7 +1854,7 @@ func (o *visualServer) CanvasLightSetEnabled(light gdnative.Rid, enabled gdnativ
 }
 
 /*
-        Undocumented
+        Sets a canvas light's energy.
 	Args: [{ false light RID} { false energy float}], Returns: void
 */
 func (o *visualServer) CanvasLightSetEnergy(light gdnative.Rid, energy gdnative.Real) {
@@ -1873,7 +1877,7 @@ func (o *visualServer) CanvasLightSetEnergy(light gdnative.Rid, energy gdnative.
 }
 
 /*
-        Undocumented
+        Sets a canvas light's height.
 	Args: [{ false light RID} { false height float}], Returns: void
 */
 func (o *visualServer) CanvasLightSetHeight(light gdnative.Rid, height gdnative.Real) {
@@ -1896,7 +1900,7 @@ func (o *visualServer) CanvasLightSetHeight(light gdnative.Rid, height gdnative.
 }
 
 /*
-        Undocumented
+        The light mask. See [LightOccluder2D] for more information on light masks.
 	Args: [{ false light RID} { false mask int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetItemCullMask(light gdnative.Rid, mask gdnative.Int) {
@@ -1919,7 +1923,7 @@ func (o *visualServer) CanvasLightSetItemCullMask(light gdnative.Rid, mask gdnat
 }
 
 /*
-        Undocumented
+        The binary mask used to determine which layers this canvas light's shadows affects. See [LightOccluder2D] for more information on light masks.
 	Args: [{ false light RID} { false mask int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetItemShadowCullMask(light gdnative.Rid, mask gdnative.Int) {
@@ -1942,7 +1946,7 @@ func (o *visualServer) CanvasLightSetItemShadowCullMask(light gdnative.Rid, mask
 }
 
 /*
-        Undocumented
+        The layer range that gets rendered with this light.
 	Args: [{ false light RID} { false min_layer int} { false max_layer int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetLayerRange(light gdnative.Rid, minLayer gdnative.Int, maxLayer gdnative.Int) {
@@ -1966,7 +1970,7 @@ func (o *visualServer) CanvasLightSetLayerRange(light gdnative.Rid, minLayer gdn
 }
 
 /*
-        Undocumented
+        The mode of the light, see [enum CanvasLightMode] constants.
 	Args: [{ false light RID} { false mode int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetMode(light gdnative.Rid, mode gdnative.Int) {
@@ -1989,7 +1993,7 @@ func (o *visualServer) CanvasLightSetMode(light gdnative.Rid, mode gdnative.Int)
 }
 
 /*
-        Undocumented
+        Sets the texture's scale factor of the light. Equivalent to [member Light2D.texture_scale].
 	Args: [{ false light RID} { false scale float}], Returns: void
 */
 func (o *visualServer) CanvasLightSetScale(light gdnative.Rid, scale gdnative.Real) {
@@ -2012,7 +2016,7 @@ func (o *visualServer) CanvasLightSetScale(light gdnative.Rid, scale gdnative.Re
 }
 
 /*
-        Undocumented
+        Sets the width of the shadow buffer, size gets scaled to the next power of two for this.
 	Args: [{ false light RID} { false size int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetShadowBufferSize(light gdnative.Rid, size gdnative.Int) {
@@ -2035,7 +2039,7 @@ func (o *visualServer) CanvasLightSetShadowBufferSize(light gdnative.Rid, size g
 }
 
 /*
-        Undocumented
+        Sets the color of the canvas light's shadow.
 	Args: [{ false light RID} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasLightSetShadowColor(light gdnative.Rid, color gdnative.Color) {
@@ -2058,7 +2062,7 @@ func (o *visualServer) CanvasLightSetShadowColor(light gdnative.Rid, color gdnat
 }
 
 /*
-        Undocumented
+        Enables or disables the canvas light's shadow.
 	Args: [{ false light RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) CanvasLightSetShadowEnabled(light gdnative.Rid, enabled gdnative.Bool) {
@@ -2081,7 +2085,7 @@ func (o *visualServer) CanvasLightSetShadowEnabled(light gdnative.Rid, enabled g
 }
 
 /*
-        Undocumented
+        Sets the canvas light's shadow's filter, see [enum CanvasLightShadowFilter] constants.
 	Args: [{ false light RID} { false filter int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetShadowFilter(light gdnative.Rid, filter gdnative.Int) {
@@ -2104,7 +2108,7 @@ func (o *visualServer) CanvasLightSetShadowFilter(light gdnative.Rid, filter gdn
 }
 
 /*
-        Undocumented
+        Sets the length of the shadow's gradient.
 	Args: [{ false light RID} { false length float}], Returns: void
 */
 func (o *visualServer) CanvasLightSetShadowGradientLength(light gdnative.Rid, length gdnative.Real) {
@@ -2127,7 +2131,7 @@ func (o *visualServer) CanvasLightSetShadowGradientLength(light gdnative.Rid, le
 }
 
 /*
-        Undocumented
+        Smoothens the shadow. The lower, the smoother.
 	Args: [{ false light RID} { false smooth float}], Returns: void
 */
 func (o *visualServer) CanvasLightSetShadowSmooth(light gdnative.Rid, smooth gdnative.Real) {
@@ -2150,7 +2154,7 @@ func (o *visualServer) CanvasLightSetShadowSmooth(light gdnative.Rid, smooth gdn
 }
 
 /*
-        Undocumented
+        Sets texture to be used by light. Equivalent to [member Light2D.texture].
 	Args: [{ false light RID} { false texture RID}], Returns: void
 */
 func (o *visualServer) CanvasLightSetTexture(light gdnative.Rid, texture gdnative.Rid) {
@@ -2173,7 +2177,7 @@ func (o *visualServer) CanvasLightSetTexture(light gdnative.Rid, texture gdnativ
 }
 
 /*
-        Undocumented
+        Sets the offset of the light's texture. Equivalent to [member Light2D.offset].
 	Args: [{ false light RID} { false offset Vector2}], Returns: void
 */
 func (o *visualServer) CanvasLightSetTextureOffset(light gdnative.Rid, offset gdnative.Vector2) {
@@ -2196,7 +2200,7 @@ func (o *visualServer) CanvasLightSetTextureOffset(light gdnative.Rid, offset gd
 }
 
 /*
-        Undocumented
+        Sets the canvas light's [Transform2D].
 	Args: [{ false light RID} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) CanvasLightSetTransform(light gdnative.Rid, transform gdnative.Transform2D) {
@@ -2219,7 +2223,7 @@ func (o *visualServer) CanvasLightSetTransform(light gdnative.Rid, transform gdn
 }
 
 /*
-        Undocumented
+        Sets the Z range of objects that will be affected by this light. Equivalent to [member Light2D.range_z_min] and [member Light2D.range_z_max].
 	Args: [{ false light RID} { false min_z int} { false max_z int}], Returns: void
 */
 func (o *visualServer) CanvasLightSetZRange(light gdnative.Rid, minZ gdnative.Int, maxZ gdnative.Int) {
@@ -2243,7 +2247,7 @@ func (o *visualServer) CanvasLightSetZRange(light gdnative.Rid, minZ gdnative.In
 }
 
 /*
-        Undocumented
+        Creates a new light occluder polygon and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]canvas_occluder_polygon_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) CanvasOccluderPolygonCreate() gdnative.Rid {
@@ -2267,7 +2271,7 @@ func (o *visualServer) CanvasOccluderPolygonCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Sets an occluder polygons cull mode. See [enum CanvasOccluderPolygonCullMode] constants.
 	Args: [{ false occluder_polygon RID} { false mode int}], Returns: void
 */
 func (o *visualServer) CanvasOccluderPolygonSetCullMode(occluderPolygon gdnative.Rid, mode gdnative.Int) {
@@ -2290,7 +2294,7 @@ func (o *visualServer) CanvasOccluderPolygonSetCullMode(occluderPolygon gdnative
 }
 
 /*
-        Undocumented
+        Sets the shape of the occluder polygon.
 	Args: [{ false occluder_polygon RID} { false shape PoolVector2Array} { false closed bool}], Returns: void
 */
 func (o *visualServer) CanvasOccluderPolygonSetShape(occluderPolygon gdnative.Rid, shape gdnative.PoolVector2Array, closed gdnative.Bool) {
@@ -2314,7 +2318,7 @@ func (o *visualServer) CanvasOccluderPolygonSetShape(occluderPolygon gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets the shape of the occluder polygon as lines.
 	Args: [{ false occluder_polygon RID} { false shape PoolVector2Array}], Returns: void
 */
 func (o *visualServer) CanvasOccluderPolygonSetShapeAsLines(occluderPolygon gdnative.Rid, shape gdnative.PoolVector2Array) {
@@ -2337,7 +2341,7 @@ func (o *visualServer) CanvasOccluderPolygonSetShapeAsLines(occluderPolygon gdna
 }
 
 /*
-        Undocumented
+        A copy of the canvas item will be drawn with a local offset of the mirroring [Vector2].
 	Args: [{ false canvas RID} { false item RID} { false mirroring Vector2}], Returns: void
 */
 func (o *visualServer) CanvasSetItemMirroring(canvas gdnative.Rid, item gdnative.Rid, mirroring gdnative.Vector2) {
@@ -2361,7 +2365,7 @@ func (o *visualServer) CanvasSetItemMirroring(canvas gdnative.Rid, item gdnative
 }
 
 /*
-        Undocumented
+        Modulates all colors in the given canvas.
 	Args: [{ false canvas RID} { false color Color}], Returns: void
 */
 func (o *visualServer) CanvasSetModulate(canvas gdnative.Rid, color gdnative.Color) {
@@ -2384,7 +2388,7 @@ func (o *visualServer) CanvasSetModulate(canvas gdnative.Rid, color gdnative.Col
 }
 
 /*
-        Undocumented
+        Creates a directional light and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID can be used in most [code]light_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this directional light to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) DirectionalLightCreate() gdnative.Rid {
@@ -2408,7 +2412,7 @@ func (o *visualServer) DirectionalLightCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Draws a frame. [i]This method is deprecated[/i], please use [method force_draw] instead.
 	Args: [{True true swap_buffers bool} {0 true frame_step float}], Returns: void
 */
 func (o *visualServer) Draw(swapBuffers gdnative.Bool, frameStep gdnative.Real) {
@@ -2431,7 +2435,7 @@ func (o *visualServer) Draw(swapBuffers gdnative.Bool, frameStep gdnative.Real) 
 }
 
 /*
-        Undocumented
+        Creates an environment and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]environment_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) EnvironmentCreate() gdnative.Rid {
@@ -2455,7 +2459,7 @@ func (o *visualServer) EnvironmentCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Sets the values to be used with the "Adjustment" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false brightness float} { false contrast float} { false saturation float} { false ramp RID}], Returns: void
 */
 func (o *visualServer) EnvironmentSetAdjustment(env gdnative.Rid, enable gdnative.Bool, brightness gdnative.Real, contrast gdnative.Real, saturation gdnative.Real, ramp gdnative.Rid) {
@@ -2482,7 +2486,7 @@ func (o *visualServer) EnvironmentSetAdjustment(env gdnative.Rid, enable gdnativ
 }
 
 /*
-        Undocumented
+        Sets the ambient light parameters. See [Environment] for more details.
 	Args: [{ false env RID} { false color Color} {1 true energy float} {0 true sky_contibution float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetAmbientLight(env gdnative.Rid, color gdnative.Color, energy gdnative.Real, skyContibution gdnative.Real) {
@@ -2507,7 +2511,7 @@ func (o *visualServer) EnvironmentSetAmbientLight(env gdnative.Rid, color gdnati
 }
 
 /*
-        Undocumented
+        Sets the [i]BGMode[/i] of the environment. Equivalent to [member Environment.background_mode].
 	Args: [{ false env RID} { false bg int}], Returns: void
 */
 func (o *visualServer) EnvironmentSetBackground(env gdnative.Rid, bg gdnative.Int) {
@@ -2530,7 +2534,7 @@ func (o *visualServer) EnvironmentSetBackground(env gdnative.Rid, bg gdnative.In
 }
 
 /*
-        Undocumented
+        Color displayed for clear areas of the scene (if using Custom color or Color+Sky background modes).
 	Args: [{ false env RID} { false color Color}], Returns: void
 */
 func (o *visualServer) EnvironmentSetBgColor(env gdnative.Rid, color gdnative.Color) {
@@ -2553,7 +2557,7 @@ func (o *visualServer) EnvironmentSetBgColor(env gdnative.Rid, color gdnative.Co
 }
 
 /*
-        Undocumented
+        Sets the intensity of the background color.
 	Args: [{ false env RID} { false energy float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetBgEnergy(env gdnative.Rid, energy gdnative.Real) {
@@ -2576,7 +2580,7 @@ func (o *visualServer) EnvironmentSetBgEnergy(env gdnative.Rid, energy gdnative.
 }
 
 /*
-        Undocumented
+        Sets the maximum layer to use if using Canvas background mode.
 	Args: [{ false env RID} { false max_layer int}], Returns: void
 */
 func (o *visualServer) EnvironmentSetCanvasMaxLayer(env gdnative.Rid, maxLayer gdnative.Int) {
@@ -2599,7 +2603,7 @@ func (o *visualServer) EnvironmentSetCanvasMaxLayer(env gdnative.Rid, maxLayer g
 }
 
 /*
-        Undocumented
+        Sets the values to be used with the "DoF Far Blur" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false distance float} { false transition float} { false far_amount float} { false quality int}], Returns: void
 */
 func (o *visualServer) EnvironmentSetDofBlurFar(env gdnative.Rid, enable gdnative.Bool, distance gdnative.Real, transition gdnative.Real, farAmount gdnative.Real, quality gdnative.Int) {
@@ -2626,7 +2630,7 @@ func (o *visualServer) EnvironmentSetDofBlurFar(env gdnative.Rid, enable gdnativ
 }
 
 /*
-        Undocumented
+        Sets the values to be used with the "DoF Near Blur" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false distance float} { false transition float} { false far_amount float} { false quality int}], Returns: void
 */
 func (o *visualServer) EnvironmentSetDofBlurNear(env gdnative.Rid, enable gdnative.Bool, distance gdnative.Real, transition gdnative.Real, farAmount gdnative.Real, quality gdnative.Int) {
@@ -2653,7 +2657,7 @@ func (o *visualServer) EnvironmentSetDofBlurNear(env gdnative.Rid, enable gdnati
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the scene fog. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false color Color} { false sun_color Color} { false sun_amount float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetFog(env gdnative.Rid, enable gdnative.Bool, color gdnative.Color, sunColor gdnative.Color, sunAmount gdnative.Real) {
@@ -2679,7 +2683,7 @@ func (o *visualServer) EnvironmentSetFog(env gdnative.Rid, enable gdnative.Bool,
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the fog depth effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false depth_begin float} { false depth_end float} { false depth_curve float} { false transmit bool} { false transmit_curve float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetFogDepth(env gdnative.Rid, enable gdnative.Bool, depthBegin gdnative.Real, depthEnd gdnative.Real, depthCurve gdnative.Real, transmit gdnative.Bool, transmitCurve gdnative.Real) {
@@ -2707,7 +2711,7 @@ func (o *visualServer) EnvironmentSetFogDepth(env gdnative.Rid, enable gdnative.
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the fog height effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false min_height float} { false max_height float} { false height_curve float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetFogHeight(env gdnative.Rid, enable gdnative.Bool, minHeight gdnative.Real, maxHeight gdnative.Real, heightCurve gdnative.Real) {
@@ -2733,7 +2737,7 @@ func (o *visualServer) EnvironmentSetFogHeight(env gdnative.Rid, enable gdnative
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the "glow" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false level_flags int} { false intensity float} { false strength float} { false bloom_threshold float} { false blend_mode int} { false hdr_bleed_threshold float} { false hdr_bleed_scale float} { false hdr_luminance_cap float} { false bicubic_upscale bool}], Returns: void
 */
 func (o *visualServer) EnvironmentSetGlow(env gdnative.Rid, enable gdnative.Bool, levelFlags gdnative.Int, intensity gdnative.Real, strength gdnative.Real, bloomThreshold gdnative.Real, blendMode gdnative.Int, hdrBleedThreshold gdnative.Real, hdrBleedScale gdnative.Real, hdrLuminanceCap gdnative.Real, bicubicUpscale gdnative.Bool) {
@@ -2765,7 +2769,7 @@ func (o *visualServer) EnvironmentSetGlow(env gdnative.Rid, enable gdnative.Bool
 }
 
 /*
-        Undocumented
+        Sets the [Sky] to be used as the environment's background when using [i]BGMode[/i] sky. Equivalent to [member Environment.background_sky].
 	Args: [{ false env RID} { false sky RID}], Returns: void
 */
 func (o *visualServer) EnvironmentSetSky(env gdnative.Rid, sky gdnative.Rid) {
@@ -2788,7 +2792,7 @@ func (o *visualServer) EnvironmentSetSky(env gdnative.Rid, sky gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Sets a custom field of view for the background [Sky]. Equivalent to [member Environment.background_sky_custom_fov].
 	Args: [{ false env RID} { false scale float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetSkyCustomFov(env gdnative.Rid, scale gdnative.Real) {
@@ -2811,7 +2815,7 @@ func (o *visualServer) EnvironmentSetSkyCustomFov(env gdnative.Rid, scale gdnati
 }
 
 /*
-        Undocumented
+        Sets the rotation of the background [Sky] expressed as a [Basis]. Equivalent to [member Environment.background_sky_orientation].
 	Args: [{ false env RID} { false orientation Basis}], Returns: void
 */
 func (o *visualServer) EnvironmentSetSkyOrientation(env gdnative.Rid, orientation gdnative.Basis) {
@@ -2834,7 +2838,7 @@ func (o *visualServer) EnvironmentSetSkyOrientation(env gdnative.Rid, orientatio
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the "Screen Space Ambient Occlusion (SSAO)" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false radius float} { false intensity float} { false radius2 float} { false intensity2 float} { false bias float} { false light_affect float} { false ao_channel_affect float} { false color Color} { false quality int} { false blur int} { false bilateral_sharpness float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetSsao(env gdnative.Rid, enable gdnative.Bool, radius gdnative.Real, intensity gdnative.Real, radius2 gdnative.Real, intensity2 gdnative.Real, bias gdnative.Real, lightAffect gdnative.Real, aoChannelAffect gdnative.Real, color gdnative.Color, quality gdnative.Int, blur gdnative.Int, bilateralSharpness gdnative.Real) {
@@ -2868,7 +2872,7 @@ func (o *visualServer) EnvironmentSetSsao(env gdnative.Rid, enable gdnative.Bool
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the "screen space reflections" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false enable bool} { false max_steps int} { false fade_in float} { false fade_out float} { false depth_tolerance float} { false roughness bool}], Returns: void
 */
 func (o *visualServer) EnvironmentSetSsr(env gdnative.Rid, enable gdnative.Bool, maxSteps gdnative.Int, fadeIn gdnative.Real, fadeOut gdnative.Real, depthTolerance gdnative.Real, roughness gdnative.Bool) {
@@ -2896,7 +2900,7 @@ func (o *visualServer) EnvironmentSetSsr(env gdnative.Rid, enable gdnative.Bool,
 }
 
 /*
-        Undocumented
+        Sets the variables to be used with the "tonemap" post-process effect. See [Environment] for more details.
 	Args: [{ false env RID} { false tone_mapper int} { false exposure float} { false white float} { false auto_exposure bool} { false min_luminance float} { false max_luminance float} { false auto_exp_speed float} { false auto_exp_grey float}], Returns: void
 */
 func (o *visualServer) EnvironmentSetTonemap(env gdnative.Rid, toneMapper gdnative.Int, exposure gdnative.Real, white gdnative.Real, autoExposure gdnative.Bool, minLuminance gdnative.Real, maxLuminance gdnative.Real, autoExpSpeed gdnative.Real, autoExpGrey gdnative.Real) {
@@ -2926,7 +2930,7 @@ func (o *visualServer) EnvironmentSetTonemap(env gdnative.Rid, toneMapper gdnati
 }
 
 /*
-        Undocumented
+        Removes buffers and clears testcubes.
 	Args: [], Returns: void
 */
 func (o *visualServer) Finish() {
@@ -2947,7 +2951,7 @@ func (o *visualServer) Finish() {
 }
 
 /*
-        Undocumented
+        Forces a frame to be drawn when the function is called. Drawing a frame updates all [Viewport]s that are set to update. Use with extreme caution.
 	Args: [{True true swap_buffers bool} {0 true frame_step float}], Returns: void
 */
 func (o *visualServer) ForceDraw(swapBuffers gdnative.Bool, frameStep gdnative.Real) {
@@ -2970,7 +2974,7 @@ func (o *visualServer) ForceDraw(swapBuffers gdnative.Bool, frameStep gdnative.R
 }
 
 /*
-        Undocumented
+        Synchronizes threads.
 	Args: [], Returns: void
 */
 func (o *visualServer) ForceSync() {
@@ -2991,7 +2995,7 @@ func (o *visualServer) ForceSync() {
 }
 
 /*
-        Undocumented
+        Tries to free an object in the VisualServer.
 	Args: [{ false rid RID}], Returns: void
 */
 func (o *visualServer) FreeRid(rid gdnative.Rid) {
@@ -3013,7 +3017,7 @@ func (o *visualServer) FreeRid(rid gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Returns a certain information, see [enum RenderInfo] for options.
 	Args: [{ false info int}], Returns: int
 */
 func (o *visualServer) GetRenderInfo(info gdnative.Int) gdnative.Int {
@@ -3038,7 +3042,7 @@ func (o *visualServer) GetRenderInfo(info gdnative.Int) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the id of the test cube. Creates one if none exists.
 	Args: [], Returns: RID
 */
 func (o *visualServer) GetTestCube() gdnative.Rid {
@@ -3062,7 +3066,7 @@ func (o *visualServer) GetTestCube() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the id of the test texture. Creates one if none exists.
 	Args: [], Returns: RID
 */
 func (o *visualServer) GetTestTexture() gdnative.Rid {
@@ -3086,7 +3090,7 @@ func (o *visualServer) GetTestTexture() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2"). [b]Note:[/b] When running a headless or server binary, this function returns an empty string.
 	Args: [], Returns: String
 */
 func (o *visualServer) GetVideoAdapterName() gdnative.String {
@@ -3110,7 +3114,7 @@ func (o *visualServer) GetVideoAdapterName() gdnative.String {
 }
 
 /*
-        Undocumented
+        Returns the vendor of the video adapter (e.g. "NVIDIA Corporation"). [b]Note:[/b] When running a headless or server binary, this function returns an empty string.
 	Args: [], Returns: String
 */
 func (o *visualServer) GetVideoAdapterVendor() gdnative.String {
@@ -3134,7 +3138,7 @@ func (o *visualServer) GetVideoAdapterVendor() gdnative.String {
 }
 
 /*
-        Undocumented
+        Returns the id of a white texture. Creates one if none exists.
 	Args: [], Returns: RID
 */
 func (o *visualServer) GetWhiteTexture() gdnative.Rid {
@@ -3158,7 +3162,7 @@ func (o *visualServer) GetWhiteTexture() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Creates a GI probe and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]gi_probe_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this GI probe to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) GiProbeCreate() gdnative.Rid {
@@ -3182,7 +3186,7 @@ func (o *visualServer) GiProbeCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the bias value for the GI probe. Bias is used to avoid self occlusion. Equivalent to [member GIProbeData.bias].
 	Args: [{ false probe RID}], Returns: float
 */
 func (o *visualServer) GiProbeGetBias(probe gdnative.Rid) gdnative.Real {
@@ -3207,7 +3211,7 @@ func (o *visualServer) GiProbeGetBias(probe gdnative.Rid) gdnative.Real {
 }
 
 /*
-        Undocumented
+        Returns the axis-aligned bounding box that covers the full extent of the GI probe.
 	Args: [{ false probe RID}], Returns: AABB
 */
 func (o *visualServer) GiProbeGetBounds(probe gdnative.Rid) gdnative.Aabb {
@@ -3232,7 +3236,7 @@ func (o *visualServer) GiProbeGetBounds(probe gdnative.Rid) gdnative.Aabb {
 }
 
 /*
-        Undocumented
+        Returns the cell size set by [method gi_probe_set_cell_size].
 	Args: [{ false probe RID}], Returns: float
 */
 func (o *visualServer) GiProbeGetCellSize(probe gdnative.Rid) gdnative.Real {
@@ -3257,7 +3261,7 @@ func (o *visualServer) GiProbeGetCellSize(probe gdnative.Rid) gdnative.Real {
 }
 
 /*
-        Undocumented
+        Returns the data used by the GI probe.
 	Args: [{ false probe RID}], Returns: PoolIntArray
 */
 func (o *visualServer) GiProbeGetDynamicData(probe gdnative.Rid) gdnative.PoolIntArray {
@@ -3282,7 +3286,7 @@ func (o *visualServer) GiProbeGetDynamicData(probe gdnative.Rid) gdnative.PoolIn
 }
 
 /*
-        Undocumented
+        Returns the dynamic range set for this GI probe. Equivalent to [member GIProbe.dynamic_range].
 	Args: [{ false probe RID}], Returns: int
 */
 func (o *visualServer) GiProbeGetDynamicRange(probe gdnative.Rid) gdnative.Int {
@@ -3307,7 +3311,7 @@ func (o *visualServer) GiProbeGetDynamicRange(probe gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the energy multiplier for this GI probe. Equivalent to [member GIProbe.energy].
 	Args: [{ false probe RID}], Returns: float
 */
 func (o *visualServer) GiProbeGetEnergy(probe gdnative.Rid) gdnative.Real {
@@ -3332,7 +3336,7 @@ func (o *visualServer) GiProbeGetEnergy(probe gdnative.Rid) gdnative.Real {
 }
 
 /*
-        Undocumented
+        Returns the normal bias for this GI probe. Equivalent to [member GIProbe.normal_bias].
 	Args: [{ false probe RID}], Returns: float
 */
 func (o *visualServer) GiProbeGetNormalBias(probe gdnative.Rid) gdnative.Real {
@@ -3357,7 +3361,7 @@ func (o *visualServer) GiProbeGetNormalBias(probe gdnative.Rid) gdnative.Real {
 }
 
 /*
-        Undocumented
+        Returns the propagation value for this GI probe. Equivalent to [member GIProbe.propagation].
 	Args: [{ false probe RID}], Returns: float
 */
 func (o *visualServer) GiProbeGetPropagation(probe gdnative.Rid) gdnative.Real {
@@ -3382,7 +3386,7 @@ func (o *visualServer) GiProbeGetPropagation(probe gdnative.Rid) gdnative.Real {
 }
 
 /*
-        Undocumented
+        Returns the Transform set by [method gi_probe_set_to_cell_xform].
 	Args: [{ false probe RID}], Returns: Transform
 */
 func (o *visualServer) GiProbeGetToCellXform(probe gdnative.Rid) gdnative.Transform {
@@ -3407,7 +3411,7 @@ func (o *visualServer) GiProbeGetToCellXform(probe gdnative.Rid) gdnative.Transf
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if the GI probe data associated with this GI probe is compressed. Equivalent to [member GIProbe.compress].
 	Args: [{ false probe RID}], Returns: bool
 */
 func (o *visualServer) GiProbeIsCompressed(probe gdnative.Rid) gdnative.Bool {
@@ -3432,7 +3436,7 @@ func (o *visualServer) GiProbeIsCompressed(probe gdnative.Rid) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if the GI probe is set to interior, meaning it does not account for sky light. Equivalent to [member GIProbe.interior].
 	Args: [{ false probe RID}], Returns: bool
 */
 func (o *visualServer) GiProbeIsInterior(probe gdnative.Rid) gdnative.Bool {
@@ -3457,7 +3461,7 @@ func (o *visualServer) GiProbeIsInterior(probe gdnative.Rid) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Sets the bias value to avoid self-occlusion. Equivalent to [member GIProbe.bias].
 	Args: [{ false probe RID} { false bias float}], Returns: void
 */
 func (o *visualServer) GiProbeSetBias(probe gdnative.Rid, bias gdnative.Real) {
@@ -3480,7 +3484,7 @@ func (o *visualServer) GiProbeSetBias(probe gdnative.Rid, bias gdnative.Real) {
 }
 
 /*
-        Undocumented
+        Sets the axis-aligned bounding box that covers the extent of the GI probe.
 	Args: [{ false probe RID} { false bounds AABB}], Returns: void
 */
 func (o *visualServer) GiProbeSetBounds(probe gdnative.Rid, bounds gdnative.Aabb) {
@@ -3503,7 +3507,7 @@ func (o *visualServer) GiProbeSetBounds(probe gdnative.Rid, bounds gdnative.Aabb
 }
 
 /*
-        Undocumented
+        Sets the size of individual cells within the GI probe.
 	Args: [{ false probe RID} { false range float}], Returns: void
 */
 func (o *visualServer) GiProbeSetCellSize(probe gdnative.Rid, rng gdnative.Real) {
@@ -3526,7 +3530,7 @@ func (o *visualServer) GiProbeSetCellSize(probe gdnative.Rid, rng gdnative.Real)
 }
 
 /*
-        Undocumented
+        Sets the compression setting for the GI probe data. Compressed data will take up less space but may look worse. Equivalent to [member GIProbe.compress].
 	Args: [{ false probe RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) GiProbeSetCompress(probe gdnative.Rid, enable gdnative.Bool) {
@@ -3549,7 +3553,7 @@ func (o *visualServer) GiProbeSetCompress(probe gdnative.Rid, enable gdnative.Bo
 }
 
 /*
-        Undocumented
+        Sets the data to be used in the GI probe for lighting calculations. Normally this is created and called internally within the [GIProbe] node. You should not try to set this yourself.
 	Args: [{ false probe RID} { false data PoolIntArray}], Returns: void
 */
 func (o *visualServer) GiProbeSetDynamicData(probe gdnative.Rid, data gdnative.PoolIntArray) {
@@ -3572,7 +3576,7 @@ func (o *visualServer) GiProbeSetDynamicData(probe gdnative.Rid, data gdnative.P
 }
 
 /*
-        Undocumented
+        Sets the dynamic range of the GI probe. Dynamic range sets the limit for how bright lights can be. A smaller range captures greater detail but limits how bright lights can be. Equivalent to [member GIProbe.dynamic_range].
 	Args: [{ false probe RID} { false range int}], Returns: void
 */
 func (o *visualServer) GiProbeSetDynamicRange(probe gdnative.Rid, rng gdnative.Int) {
@@ -3595,7 +3599,7 @@ func (o *visualServer) GiProbeSetDynamicRange(probe gdnative.Rid, rng gdnative.I
 }
 
 /*
-        Undocumented
+        Sets the energy multiplier for this GI probe. A higher energy makes the indirect light from the GI probe brighter. Equivalent to [member GIProbe.energy].
 	Args: [{ false probe RID} { false energy float}], Returns: void
 */
 func (o *visualServer) GiProbeSetEnergy(probe gdnative.Rid, energy gdnative.Real) {
@@ -3618,7 +3622,7 @@ func (o *visualServer) GiProbeSetEnergy(probe gdnative.Rid, energy gdnative.Real
 }
 
 /*
-        Undocumented
+        Sets the interior value of this GI probe. A GI probe set to interior does not include the sky when calculating lighting. Equivalent to [member GIProbe.interior].
 	Args: [{ false probe RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) GiProbeSetInterior(probe gdnative.Rid, enable gdnative.Bool) {
@@ -3641,7 +3645,7 @@ func (o *visualServer) GiProbeSetInterior(probe gdnative.Rid, enable gdnative.Bo
 }
 
 /*
-        Undocumented
+        Sets the normal bias for this GI probe. Normal bias behaves similar to the other form of bias and may help reduce self-occlusion. Equivalent to [member GIProbe.normal_bias].
 	Args: [{ false probe RID} { false bias float}], Returns: void
 */
 func (o *visualServer) GiProbeSetNormalBias(probe gdnative.Rid, bias gdnative.Real) {
@@ -3664,7 +3668,7 @@ func (o *visualServer) GiProbeSetNormalBias(probe gdnative.Rid, bias gdnative.Re
 }
 
 /*
-        Undocumented
+        Sets the propagation of light within this GI probe. Equivalent to [member GIProbe.propagation].
 	Args: [{ false probe RID} { false propagation float}], Returns: void
 */
 func (o *visualServer) GiProbeSetPropagation(probe gdnative.Rid, propagation gdnative.Real) {
@@ -3687,7 +3691,7 @@ func (o *visualServer) GiProbeSetPropagation(probe gdnative.Rid, propagation gdn
 }
 
 /*
-        Undocumented
+        Sets the to cell [Transform] for this GI probe.
 	Args: [{ false probe RID} { false xform Transform}], Returns: void
 */
 func (o *visualServer) GiProbeSetToCellXform(probe gdnative.Rid, xform gdnative.Transform) {
@@ -3710,7 +3714,7 @@ func (o *visualServer) GiProbeSetToCellXform(probe gdnative.Rid, xform gdnative.
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if changes have been made to the VisualServer's data. [method draw] is usually called if this happens.
 	Args: [], Returns: bool
 */
 func (o *visualServer) HasChanged() gdnative.Bool {
@@ -3734,7 +3738,7 @@ func (o *visualServer) HasChanged() gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Not yet implemented. Always returns [code]false[/code].
 	Args: [{ false feature int}], Returns: bool
 */
 func (o *visualServer) HasFeature(feature gdnative.Int) gdnative.Bool {
@@ -3759,7 +3763,7 @@ func (o *visualServer) HasFeature(feature gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if the OS supports a certain feature. Features might be [code]s3tc[/code], [code]etc[/code], [code]etc2[/code] and [code]pvrtc[/code].
 	Args: [{ false feature String}], Returns: bool
 */
 func (o *visualServer) HasOsFeature(feature gdnative.String) gdnative.Bool {
@@ -3784,7 +3788,7 @@ func (o *visualServer) HasOsFeature(feature gdnative.String) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Sets up [ImmediateGeometry] internals to prepare for drawing. Equivalent to [method ImmediateGeometry.begin].
 	Args: [{ false immediate RID} { false primitive int} {[RID] true texture RID}], Returns: void
 */
 func (o *visualServer) ImmediateBegin(immediate gdnative.Rid, primitive gdnative.Int, texture gdnative.Rid) {
@@ -3808,7 +3812,7 @@ func (o *visualServer) ImmediateBegin(immediate gdnative.Rid, primitive gdnative
 }
 
 /*
-        Undocumented
+        Clears everything that was set up between [method immediate_begin] and [method immediate_end]. Equivalent to [method ImmediateGeometry.clear].
 	Args: [{ false immediate RID}], Returns: void
 */
 func (o *visualServer) ImmediateClear(immediate gdnative.Rid) {
@@ -3830,7 +3834,7 @@ func (o *visualServer) ImmediateClear(immediate gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Sets the color to be used with next vertex. Equivalent to [method ImmediateGeometry.set_color].
 	Args: [{ false immediate RID} { false color Color}], Returns: void
 */
 func (o *visualServer) ImmediateColor(immediate gdnative.Rid, color gdnative.Color) {
@@ -3853,7 +3857,7 @@ func (o *visualServer) ImmediateColor(immediate gdnative.Rid, color gdnative.Col
 }
 
 /*
-        Undocumented
+        Creates an immediate geometry and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]immediate_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this immediate geometry to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) ImmediateCreate() gdnative.Rid {
@@ -3877,7 +3881,7 @@ func (o *visualServer) ImmediateCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Ends drawing the [ImmediateGeometry] and displays it. Equivalent to [method ImmediateGeometry.end].
 	Args: [{ false immediate RID}], Returns: void
 */
 func (o *visualServer) ImmediateEnd(immediate gdnative.Rid) {
@@ -3899,7 +3903,7 @@ func (o *visualServer) ImmediateEnd(immediate gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Returns the material assigned to the [ImmediateGeometry].
 	Args: [{ false immediate RID}], Returns: RID
 */
 func (o *visualServer) ImmediateGetMaterial(immediate gdnative.Rid) gdnative.Rid {
@@ -3924,7 +3928,7 @@ func (o *visualServer) ImmediateGetMaterial(immediate gdnative.Rid) gdnative.Rid
 }
 
 /*
-        Undocumented
+        Sets the normal to be used with next vertex. Equivalent to [method ImmediateGeometry.set_normal].
 	Args: [{ false immediate RID} { false normal Vector3}], Returns: void
 */
 func (o *visualServer) ImmediateNormal(immediate gdnative.Rid, normal gdnative.Vector3) {
@@ -3947,7 +3951,7 @@ func (o *visualServer) ImmediateNormal(immediate gdnative.Rid, normal gdnative.V
 }
 
 /*
-        Undocumented
+        Sets the material to be used to draw the [ImmediateGeometry].
 	Args: [{ false immediate RID} { false material RID}], Returns: void
 */
 func (o *visualServer) ImmediateSetMaterial(immediate gdnative.Rid, material gdnative.Rid) {
@@ -3970,7 +3974,7 @@ func (o *visualServer) ImmediateSetMaterial(immediate gdnative.Rid, material gdn
 }
 
 /*
-        Undocumented
+        Sets the tangent to be used with next vertex. Equivalent to [method ImmediateGeometry.set_tangent].
 	Args: [{ false immediate RID} { false tangent Plane}], Returns: void
 */
 func (o *visualServer) ImmediateTangent(immediate gdnative.Rid, tangent gdnative.Plane) {
@@ -3993,7 +3997,7 @@ func (o *visualServer) ImmediateTangent(immediate gdnative.Rid, tangent gdnative
 }
 
 /*
-        Undocumented
+        Sets the UV to be used with next vertex. Equivalent to [method ImmediateGeometry.set_uv].
 	Args: [{ false immediate RID} { false tex_uv Vector2}], Returns: void
 */
 func (o *visualServer) ImmediateUv(immediate gdnative.Rid, texUv gdnative.Vector2) {
@@ -4016,7 +4020,7 @@ func (o *visualServer) ImmediateUv(immediate gdnative.Rid, texUv gdnative.Vector
 }
 
 /*
-        Undocumented
+        Sets the UV2 to be used with next vertex. Equivalent to [method ImmediateGeometry.set_uv2].
 	Args: [{ false immediate RID} { false tex_uv Vector2}], Returns: void
 */
 func (o *visualServer) ImmediateUv2(immediate gdnative.Rid, texUv gdnative.Vector2) {
@@ -4039,7 +4043,7 @@ func (o *visualServer) ImmediateUv2(immediate gdnative.Rid, texUv gdnative.Vecto
 }
 
 /*
-        Undocumented
+        Adds the next vertex using the information provided in advance. Equivalent to [method ImmediateGeometry.add_vertex].
 	Args: [{ false immediate RID} { false vertex Vector3}], Returns: void
 */
 func (o *visualServer) ImmediateVertex(immediate gdnative.Rid, vertex gdnative.Vector3) {
@@ -4062,7 +4066,7 @@ func (o *visualServer) ImmediateVertex(immediate gdnative.Rid, vertex gdnative.V
 }
 
 /*
-        Undocumented
+        Adds the next vertex using the information provided in advance. This is a helper class that calls [method immediate_vertex] under the hood. Equivalent to [method ImmediateGeometry.add_vertex].
 	Args: [{ false immediate RID} { false vertex Vector2}], Returns: void
 */
 func (o *visualServer) ImmediateVertex2D(immediate gdnative.Rid, vertex gdnative.Vector2) {
@@ -4085,7 +4089,7 @@ func (o *visualServer) ImmediateVertex2D(immediate gdnative.Rid, vertex gdnative
 }
 
 /*
-        Undocumented
+        Initializes the visual server. This function is called internally by platform-dependent code during engine initialization. If called from a running game, it will not do anything.
 	Args: [], Returns: void
 */
 func (o *visualServer) Init() {
@@ -4106,7 +4110,7 @@ func (o *visualServer) Init() {
 }
 
 /*
-        Undocumented
+        Attaches a unique Object ID to instance. Object ID must be attached to instance for proper culling with [method instances_cull_aabb], [method instances_cull_convex], and [method instances_cull_ray].
 	Args: [{ false instance RID} { false id int}], Returns: void
 */
 func (o *visualServer) InstanceAttachObjectInstanceId(instance gdnative.Rid, id gdnative.Int) {
@@ -4129,7 +4133,7 @@ func (o *visualServer) InstanceAttachObjectInstanceId(instance gdnative.Rid, id 
 }
 
 /*
-        Undocumented
+        Attaches a skeleton to an instance. Removes the previous skeleton from the instance.
 	Args: [{ false instance RID} { false skeleton RID}], Returns: void
 */
 func (o *visualServer) InstanceAttachSkeleton(instance gdnative.Rid, skeleton gdnative.Rid) {
@@ -4152,7 +4156,7 @@ func (o *visualServer) InstanceAttachSkeleton(instance gdnative.Rid, skeleton gd
 }
 
 /*
-        Undocumented
+        Creates a visual instance and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]instance_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. An instance is a way of placing a 3D object in the scenario. Objects like particles, meshes, and reflection probes need to be associated with an instance to be visible in the scenario using [method instance_set_base].
 	Args: [], Returns: RID
 */
 func (o *visualServer) InstanceCreate() gdnative.Rid {
@@ -4176,7 +4180,7 @@ func (o *visualServer) InstanceCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Creates a visual instance, adds it to the VisualServer, and sets both base and scenario. It can be accessed with the RID that is returned. This RID will be used in all [code]instance_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [{ false base RID} { false scenario RID}], Returns: RID
 */
 func (o *visualServer) InstanceCreate2(base gdnative.Rid, scenario gdnative.Rid) gdnative.Rid {
@@ -4202,7 +4206,7 @@ func (o *visualServer) InstanceCreate2(base gdnative.Rid, scenario gdnative.Rid)
 }
 
 /*
-        Undocumented
+        Not implemented in Godot 3.x.
 	Args: [{ false instance RID} { false as_lod_of_instance RID}], Returns: void
 */
 func (o *visualServer) InstanceGeometrySetAsInstanceLod(instance gdnative.Rid, asLodOfInstance gdnative.Rid) {
@@ -4225,7 +4229,7 @@ func (o *visualServer) InstanceGeometrySetAsInstanceLod(instance gdnative.Rid, a
 }
 
 /*
-        Undocumented
+        Sets the shadow casting setting to one of [enum ShadowCastingSetting]. Equivalent to [member GeometryInstance.cast_shadow].
 	Args: [{ false instance RID} { false shadow_casting_setting int}], Returns: void
 */
 func (o *visualServer) InstanceGeometrySetCastShadowsSetting(instance gdnative.Rid, shadowCastingSetting gdnative.Int) {
@@ -4248,7 +4252,7 @@ func (o *visualServer) InstanceGeometrySetCastShadowsSetting(instance gdnative.R
 }
 
 /*
-        Undocumented
+        Not implemented in Godot 3.x.
 	Args: [{ false instance RID} { false min float} { false max float} { false min_margin float} { false max_margin float}], Returns: void
 */
 func (o *visualServer) InstanceGeometrySetDrawRange(instance gdnative.Rid, min gdnative.Real, max gdnative.Real, minMargin gdnative.Real, maxMargin gdnative.Real) {
@@ -4274,7 +4278,7 @@ func (o *visualServer) InstanceGeometrySetDrawRange(instance gdnative.Rid, min g
 }
 
 /*
-        Undocumented
+        Sets the flag for a given [enum InstanceFlags]. See [enum InstanceFlags] for more details.
 	Args: [{ false instance RID} { false flag int} { false enabled bool}], Returns: void
 */
 func (o *visualServer) InstanceGeometrySetFlag(instance gdnative.Rid, flag gdnative.Int, enabled gdnative.Bool) {
@@ -4298,7 +4302,7 @@ func (o *visualServer) InstanceGeometrySetFlag(instance gdnative.Rid, flag gdnat
 }
 
 /*
-        Undocumented
+        Sets a material that will override the material for all surfaces on the mesh associated with this instance. Equivalent to [member GeometryInstance.material_override].
 	Args: [{ false instance RID} { false material RID}], Returns: void
 */
 func (o *visualServer) InstanceGeometrySetMaterialOverride(instance gdnative.Rid, material gdnative.Rid) {
@@ -4321,7 +4325,7 @@ func (o *visualServer) InstanceGeometrySetMaterialOverride(instance gdnative.Rid
 }
 
 /*
-        Undocumented
+        Sets the base of the instance. A base can be any of the 3D objects that are created in the VisualServer that can be displayed. For example, any of the light types, mesh, multimesh, immediate geometry, particle system, reflection probe, lightmap capture, and the GI probe are all types that can be set as the base of an instance in order to be displayed in the scenario.
 	Args: [{ false instance RID} { false base RID}], Returns: void
 */
 func (o *visualServer) InstanceSetBase(instance gdnative.Rid, base gdnative.Rid) {
@@ -4344,7 +4348,7 @@ func (o *visualServer) InstanceSetBase(instance gdnative.Rid, base gdnative.Rid)
 }
 
 /*
-        Undocumented
+        Sets the weight for a given blend shape associated with this instance.
 	Args: [{ false instance RID} { false shape int} { false weight float}], Returns: void
 */
 func (o *visualServer) InstanceSetBlendShapeWeight(instance gdnative.Rid, shape gdnative.Int, weight gdnative.Real) {
@@ -4368,7 +4372,7 @@ func (o *visualServer) InstanceSetBlendShapeWeight(instance gdnative.Rid, shape 
 }
 
 /*
-        Undocumented
+        Sets a custom AABB to use when culling objects from the view frustum. Equivalent to [method GeometryInstance.set_custom_aabb].
 	Args: [{ false instance RID} { false aabb AABB}], Returns: void
 */
 func (o *visualServer) InstanceSetCustomAabb(instance gdnative.Rid, aabb gdnative.Aabb) {
@@ -4391,7 +4395,7 @@ func (o *visualServer) InstanceSetCustomAabb(instance gdnative.Rid, aabb gdnativ
 }
 
 /*
-        Undocumented
+        Function not implemented in Godot 3.x.
 	Args: [{ false instance RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) InstanceSetExterior(instance gdnative.Rid, enabled gdnative.Bool) {
@@ -4414,7 +4418,7 @@ func (o *visualServer) InstanceSetExterior(instance gdnative.Rid, enabled gdnati
 }
 
 /*
-        Undocumented
+        Sets a margin to increase the size of the AABB when culling objects from the view frustum. This allows you avoid culling objects that fall outside the view frustum. Equivalent to [member GeometryInstance.extra_cull_margin].
 	Args: [{ false instance RID} { false margin float}], Returns: void
 */
 func (o *visualServer) InstanceSetExtraVisibilityMargin(instance gdnative.Rid, margin gdnative.Real) {
@@ -4437,7 +4441,7 @@ func (o *visualServer) InstanceSetExtraVisibilityMargin(instance gdnative.Rid, m
 }
 
 /*
-        Undocumented
+        Sets the render layers that this instance will be drawn to. Equivalent to [member VisualInstance.layers].
 	Args: [{ false instance RID} { false mask int}], Returns: void
 */
 func (o *visualServer) InstanceSetLayerMask(instance gdnative.Rid, mask gdnative.Int) {
@@ -4460,7 +4464,7 @@ func (o *visualServer) InstanceSetLayerMask(instance gdnative.Rid, mask gdnative
 }
 
 /*
-        Undocumented
+        Sets the scenario that the instance is in. The scenario is the 3D world that the objects will be displayed in.
 	Args: [{ false instance RID} { false scenario RID}], Returns: void
 */
 func (o *visualServer) InstanceSetScenario(instance gdnative.Rid, scenario gdnative.Rid) {
@@ -4483,7 +4487,7 @@ func (o *visualServer) InstanceSetScenario(instance gdnative.Rid, scenario gdnat
 }
 
 /*
-        Undocumented
+        Sets the material of a specific surface. Equivalent to [method MeshInstance.set_surface_material].
 	Args: [{ false instance RID} { false surface int} { false material RID}], Returns: void
 */
 func (o *visualServer) InstanceSetSurfaceMaterial(instance gdnative.Rid, surface gdnative.Int, material gdnative.Rid) {
@@ -4507,7 +4511,7 @@ func (o *visualServer) InstanceSetSurfaceMaterial(instance gdnative.Rid, surface
 }
 
 /*
-        Undocumented
+        Sets the world space transform of the instance. Equivalent to [member Spatial.transform].
 	Args: [{ false instance RID} { false transform Transform}], Returns: void
 */
 func (o *visualServer) InstanceSetTransform(instance gdnative.Rid, transform gdnative.Transform) {
@@ -4530,7 +4534,7 @@ func (o *visualServer) InstanceSetTransform(instance gdnative.Rid, transform gdn
 }
 
 /*
-        Undocumented
+        Sets the lightmap to use with this instance.
 	Args: [{ false instance RID} { false lightmap_instance RID} { false lightmap RID}], Returns: void
 */
 func (o *visualServer) InstanceSetUseLightmap(instance gdnative.Rid, lightmapInstance gdnative.Rid, lightmap gdnative.Rid) {
@@ -4554,7 +4558,7 @@ func (o *visualServer) InstanceSetUseLightmap(instance gdnative.Rid, lightmapIns
 }
 
 /*
-        Undocumented
+        Sets whether an instance is drawn or not. Equivalent to [member Spatial.visible].
 	Args: [{ false instance RID} { false visible bool}], Returns: void
 */
 func (o *visualServer) InstanceSetVisible(instance gdnative.Rid, visible gdnative.Bool) {
@@ -4577,7 +4581,7 @@ func (o *visualServer) InstanceSetVisible(instance gdnative.Rid, visible gdnativ
 }
 
 /*
-        Undocumented
+        Returns an array of object IDs intersecting with the provided AABB. Only visual 3D nodes are considered, such as [MeshInstance] or [DirectionalLight]. Use [method @GDScript.instance_from_id] to obtain the actual nodes. A scenario RID must be provided, which is available in the [World] you want to query. This forces an update for all resources queued to update. [b]Warning:[/b] This function is primarily intended for editor usage. For in-game use cases, prefer physics collision.
 	Args: [{ false aabb AABB} {[RID] true scenario RID}], Returns: Array
 */
 func (o *visualServer) InstancesCullAabb(aabb gdnative.Aabb, scenario gdnative.Rid) gdnative.Array {
@@ -4603,7 +4607,7 @@ func (o *visualServer) InstancesCullAabb(aabb gdnative.Aabb, scenario gdnative.R
 }
 
 /*
-        Undocumented
+        Returns an array of object IDs intersecting with the provided convex shape. Only visual 3D nodes are considered, such as [MeshInstance] or [DirectionalLight]. Use [method @GDScript.instance_from_id] to obtain the actual nodes. A scenario RID must be provided, which is available in the [World] you want to query. This forces an update for all resources queued to update. [b]Warning:[/b] This function is primarily intended for editor usage. For in-game use cases, prefer physics collision.
 	Args: [{ false convex Array} {[RID] true scenario RID}], Returns: Array
 */
 func (o *visualServer) InstancesCullConvex(convex gdnative.Array, scenario gdnative.Rid) gdnative.Array {
@@ -4629,7 +4633,7 @@ func (o *visualServer) InstancesCullConvex(convex gdnative.Array, scenario gdnat
 }
 
 /*
-        Undocumented
+        Returns an array of object IDs intersecting with the provided 3D ray. Only visual 3D nodes are considered, such as [MeshInstance] or [DirectionalLight]. Use [method @GDScript.instance_from_id] to obtain the actual nodes. A scenario RID must be provided, which is available in the [World] you want to query. This forces an update for all resources queued to update. [b]Warning:[/b] This function is primarily intended for editor usage. For in-game use cases, prefer physics collision.
 	Args: [{ false from Vector3} { false to Vector3} {[RID] true scenario RID}], Returns: Array
 */
 func (o *visualServer) InstancesCullRay(from gdnative.Vector3, to gdnative.Vector3, scenario gdnative.Rid) gdnative.Array {
@@ -4657,6 +4661,30 @@ func (o *visualServer) InstancesCullRay(from gdnative.Vector3, to gdnative.Vecto
 
 /*
         Undocumented
+	Args: [], Returns: bool
+*/
+func (o *visualServer) IsRenderLoopEnabled() gdnative.Bool {
+	o.ensureSingleton()
+	//log.Println("Calling VisualServer.IsRenderLoopEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("VisualServer", "is_render_loop_enabled")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
+}
+
+/*
+        If [code]true[/code], this directional light will blend between shadow map splits resulting in a smoother transition between them. Equivalent to [member DirectionalLight.directional_shadow_blend_splits].
 	Args: [{ false light RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) LightDirectionalSetBlendSplits(light gdnative.Rid, enable gdnative.Bool) {
@@ -4679,7 +4707,7 @@ func (o *visualServer) LightDirectionalSetBlendSplits(light gdnative.Rid, enable
 }
 
 /*
-        Undocumented
+        Sets the shadow depth range mode for this directional light. Equivalent to [member DirectionalLight.directional_shadow_depth_range]. See [enum LightDirectionalShadowDepthRangeMode] for options.
 	Args: [{ false light RID} { false range_mode int}], Returns: void
 */
 func (o *visualServer) LightDirectionalSetShadowDepthRangeMode(light gdnative.Rid, rangeMode gdnative.Int) {
@@ -4702,7 +4730,7 @@ func (o *visualServer) LightDirectionalSetShadowDepthRangeMode(light gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets the shadow mode for this directional light. Equivalent to [member DirectionalLight.directional_shadow_mode]. See [enum LightDirectionalShadowMode] for options.
 	Args: [{ false light RID} { false mode int}], Returns: void
 */
 func (o *visualServer) LightDirectionalSetShadowMode(light gdnative.Rid, mode gdnative.Int) {
@@ -4725,7 +4753,7 @@ func (o *visualServer) LightDirectionalSetShadowMode(light gdnative.Rid, mode gd
 }
 
 /*
-        Undocumented
+        Sets whether to use vertical or horizontal detail for this omni light. This can be used to alleviate artifacts in the shadow map. Equivalent to [member OmniLight.omni_shadow_detail].
 	Args: [{ false light RID} { false detail int}], Returns: void
 */
 func (o *visualServer) LightOmniSetShadowDetail(light gdnative.Rid, detail gdnative.Int) {
@@ -4748,7 +4776,7 @@ func (o *visualServer) LightOmniSetShadowDetail(light gdnative.Rid, detail gdnat
 }
 
 /*
-        Undocumented
+        Sets whether to use a dual paraboloid or a cubemap for the shadow map. Dual paraboloid is faster but may suffer from artifacts. Equivalent to [member OmniLight.omni_shadow_mode].
 	Args: [{ false light RID} { false mode int}], Returns: void
 */
 func (o *visualServer) LightOmniSetShadowMode(light gdnative.Rid, mode gdnative.Int) {
@@ -4771,7 +4799,7 @@ func (o *visualServer) LightOmniSetShadowMode(light gdnative.Rid, mode gdnative.
 }
 
 /*
-        Undocumented
+        Sets the color of the light. Equivalent to [member Light.light_color].
 	Args: [{ false light RID} { false color Color}], Returns: void
 */
 func (o *visualServer) LightSetColor(light gdnative.Rid, color gdnative.Color) {
@@ -4794,7 +4822,7 @@ func (o *visualServer) LightSetColor(light gdnative.Rid, color gdnative.Color) {
 }
 
 /*
-        Undocumented
+        Sets the cull mask for this Light. Lights only affect objects in the selected layers. Equivalent to [member Light.light_cull_mask].
 	Args: [{ false light RID} { false mask int}], Returns: void
 */
 func (o *visualServer) LightSetCullMask(light gdnative.Rid, mask gdnative.Int) {
@@ -4817,7 +4845,7 @@ func (o *visualServer) LightSetCullMask(light gdnative.Rid, mask gdnative.Int) {
 }
 
 /*
-        Undocumented
+        If [code]true[/code], light will subtract light instead of adding light. Equivalent to [member Light.light_negative].
 	Args: [{ false light RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) LightSetNegative(light gdnative.Rid, enable gdnative.Bool) {
@@ -4840,7 +4868,7 @@ func (o *visualServer) LightSetNegative(light gdnative.Rid, enable gdnative.Bool
 }
 
 /*
-        Undocumented
+        Sets the specified light parameter. See [enum LightParam] for options. Equivalent to [method Light.set_param].
 	Args: [{ false light RID} { false param int} { false value float}], Returns: void
 */
 func (o *visualServer) LightSetParam(light gdnative.Rid, param gdnative.Int, value gdnative.Real) {
@@ -4864,7 +4892,7 @@ func (o *visualServer) LightSetParam(light gdnative.Rid, param gdnative.Int, val
 }
 
 /*
-        Undocumented
+        Not implemented in Godot 3.x.
 	Args: [{ false light RID} { false texture RID}], Returns: void
 */
 func (o *visualServer) LightSetProjector(light gdnative.Rid, texture gdnative.Rid) {
@@ -4887,7 +4915,7 @@ func (o *visualServer) LightSetProjector(light gdnative.Rid, texture gdnative.Ri
 }
 
 /*
-        Undocumented
+        If [code]true[/code], reverses the backface culling of the mesh. This can be useful when you have a flat mesh that has a light behind it. If you need to cast a shadow on both sides of the mesh, set the mesh to use double sided shadows with [method instance_geometry_set_cast_shadows_setting]. Equivalent to [member Light.shadow_reverse_cull_face].
 	Args: [{ false light RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) LightSetReverseCullFaceMode(light gdnative.Rid, enabled gdnative.Bool) {
@@ -4910,7 +4938,7 @@ func (o *visualServer) LightSetReverseCullFaceMode(light gdnative.Rid, enabled g
 }
 
 /*
-        Undocumented
+        If [code]true[/code], light will cast shadows. Equivalent to [member Light.shadow_enabled].
 	Args: [{ false light RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) LightSetShadow(light gdnative.Rid, enabled gdnative.Bool) {
@@ -4933,7 +4961,7 @@ func (o *visualServer) LightSetShadow(light gdnative.Rid, enabled gdnative.Bool)
 }
 
 /*
-        Undocumented
+        Sets the color of the shadow cast by the light. Equivalent to [member Light.shadow_color].
 	Args: [{ false light RID} { false color Color}], Returns: void
 */
 func (o *visualServer) LightSetShadowColor(light gdnative.Rid, color gdnative.Color) {
@@ -4956,7 +4984,7 @@ func (o *visualServer) LightSetShadowColor(light gdnative.Rid, color gdnative.Co
 }
 
 /*
-        Undocumented
+        Sets whether GI probes capture light information from this light.
 	Args: [{ false light RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) LightSetUseGi(light gdnative.Rid, enabled gdnative.Bool) {
@@ -4979,7 +5007,7 @@ func (o *visualServer) LightSetUseGi(light gdnative.Rid, enabled gdnative.Bool) 
 }
 
 /*
-        Undocumented
+        Creates a lightmap capture and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]lightmap_capture_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this lightmap capture to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) LightmapCaptureCreate() gdnative.Rid {
@@ -5003,7 +5031,7 @@ func (o *visualServer) LightmapCaptureCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the size of the lightmap capture area.
 	Args: [{ false capture RID}], Returns: AABB
 */
 func (o *visualServer) LightmapCaptureGetBounds(capture gdnative.Rid) gdnative.Aabb {
@@ -5028,7 +5056,7 @@ func (o *visualServer) LightmapCaptureGetBounds(capture gdnative.Rid) gdnative.A
 }
 
 /*
-        Undocumented
+        Returns the energy multiplier used by the lightmap capture.
 	Args: [{ false capture RID}], Returns: float
 */
 func (o *visualServer) LightmapCaptureGetEnergy(capture gdnative.Rid) gdnative.Real {
@@ -5053,7 +5081,7 @@ func (o *visualServer) LightmapCaptureGetEnergy(capture gdnative.Rid) gdnative.R
 }
 
 /*
-        Undocumented
+        Returns the octree used by the lightmap capture.
 	Args: [{ false capture RID}], Returns: PoolByteArray
 */
 func (o *visualServer) LightmapCaptureGetOctree(capture gdnative.Rid) gdnative.PoolByteArray {
@@ -5078,7 +5106,7 @@ func (o *visualServer) LightmapCaptureGetOctree(capture gdnative.Rid) gdnative.P
 }
 
 /*
-        Undocumented
+        Returns the cell subdivision amount used by this lightmap capture's octree.
 	Args: [{ false capture RID}], Returns: int
 */
 func (o *visualServer) LightmapCaptureGetOctreeCellSubdiv(capture gdnative.Rid) gdnative.Int {
@@ -5103,7 +5131,7 @@ func (o *visualServer) LightmapCaptureGetOctreeCellSubdiv(capture gdnative.Rid) 
 }
 
 /*
-        Undocumented
+        Returns the cell transform for this lightmap capture's octree.
 	Args: [{ false capture RID}], Returns: Transform
 */
 func (o *visualServer) LightmapCaptureGetOctreeCellTransform(capture gdnative.Rid) gdnative.Transform {
@@ -5128,7 +5156,7 @@ func (o *visualServer) LightmapCaptureGetOctreeCellTransform(capture gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets the size of the area covered by the lightmap capture. Equivalent to [member BakedLightmapData.bounds].
 	Args: [{ false capture RID} { false bounds AABB}], Returns: void
 */
 func (o *visualServer) LightmapCaptureSetBounds(capture gdnative.Rid, bounds gdnative.Aabb) {
@@ -5151,7 +5179,7 @@ func (o *visualServer) LightmapCaptureSetBounds(capture gdnative.Rid, bounds gdn
 }
 
 /*
-        Undocumented
+        Sets the energy multiplier for this lightmap capture. Equivalent to [member BakedLightmapData.energy].
 	Args: [{ false capture RID} { false energy float}], Returns: void
 */
 func (o *visualServer) LightmapCaptureSetEnergy(capture gdnative.Rid, energy gdnative.Real) {
@@ -5174,7 +5202,7 @@ func (o *visualServer) LightmapCaptureSetEnergy(capture gdnative.Rid, energy gdn
 }
 
 /*
-        Undocumented
+        Sets the octree to be used by this lightmap capture. This function is normally used by the [BakedLightmap] node. Equivalent to [member BakedLightmapData.octree].
 	Args: [{ false capture RID} { false octree PoolByteArray}], Returns: void
 */
 func (o *visualServer) LightmapCaptureSetOctree(capture gdnative.Rid, octree gdnative.PoolByteArray) {
@@ -5197,7 +5225,7 @@ func (o *visualServer) LightmapCaptureSetOctree(capture gdnative.Rid, octree gdn
 }
 
 /*
-        Undocumented
+        Sets the subdivision level of this lightmap capture's octree. Equivalent to [member BakedLightmapData.cell_subdiv].
 	Args: [{ false capture RID} { false subdiv int}], Returns: void
 */
 func (o *visualServer) LightmapCaptureSetOctreeCellSubdiv(capture gdnative.Rid, subdiv gdnative.Int) {
@@ -5220,7 +5248,7 @@ func (o *visualServer) LightmapCaptureSetOctreeCellSubdiv(capture gdnative.Rid, 
 }
 
 /*
-        Undocumented
+        Sets the octree cell transform for this lightmap capture's octree. Equivalent to [member BakedLightmapData.cell_space_transform].
 	Args: [{ false capture RID} { false xform Transform}], Returns: void
 */
 func (o *visualServer) LightmapCaptureSetOctreeCellTransform(capture gdnative.Rid, xform gdnative.Transform) {
@@ -5243,7 +5271,7 @@ func (o *visualServer) LightmapCaptureSetOctreeCellTransform(capture gdnative.Ri
 }
 
 /*
-        Undocumented
+        Returns a mesh of a sphere with the given amount of horizontal and vertical subdivisions.
 	Args: [{ false latitudes int} { false longitudes int} { false radius float}], Returns: RID
 */
 func (o *visualServer) MakeSphereMesh(latitudes gdnative.Int, longitudes gdnative.Int, radius gdnative.Real) gdnative.Rid {
@@ -5270,7 +5298,7 @@ func (o *visualServer) MakeSphereMesh(latitudes gdnative.Int, longitudes gdnativ
 }
 
 /*
-        Undocumented
+        Creates an empty material and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]material_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) MaterialCreate() gdnative.Rid {
@@ -5294,7 +5322,7 @@ func (o *visualServer) MaterialCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the value of a certain material's parameter.
 	Args: [{ false material RID} { false parameter String}], Returns: Variant
 */
 func (o *visualServer) MaterialGetParam(material gdnative.Rid, parameter gdnative.String) gdnative.Variant {
@@ -5320,7 +5348,7 @@ func (o *visualServer) MaterialGetParam(material gdnative.Rid, parameter gdnativ
 }
 
 /*
-        Undocumented
+        Returns the default value for the param if available. Otherwise returns an empty [Variant].
 	Args: [{ false material RID} { false parameter String}], Returns: Variant
 */
 func (o *visualServer) MaterialGetParamDefault(material gdnative.Rid, parameter gdnative.String) gdnative.Variant {
@@ -5346,7 +5374,7 @@ func (o *visualServer) MaterialGetParamDefault(material gdnative.Rid, parameter 
 }
 
 /*
-        Undocumented
+        Returns the shader of a certain material's shader. Returns an empty RID if the material doesn't have a shader.
 	Args: [{ false shader_material RID}], Returns: RID
 */
 func (o *visualServer) MaterialGetShader(shaderMaterial gdnative.Rid) gdnative.Rid {
@@ -5371,7 +5399,7 @@ func (o *visualServer) MaterialGetShader(shaderMaterial gdnative.Rid) gdnative.R
 }
 
 /*
-        Undocumented
+        Sets a material's line width.
 	Args: [{ false material RID} { false width float}], Returns: void
 */
 func (o *visualServer) MaterialSetLineWidth(material gdnative.Rid, width gdnative.Real) {
@@ -5394,7 +5422,7 @@ func (o *visualServer) MaterialSetLineWidth(material gdnative.Rid, width gdnativ
 }
 
 /*
-        Undocumented
+        Sets an object's next material.
 	Args: [{ false material RID} { false next_material RID}], Returns: void
 */
 func (o *visualServer) MaterialSetNextPass(material gdnative.Rid, nextMaterial gdnative.Rid) {
@@ -5417,7 +5445,7 @@ func (o *visualServer) MaterialSetNextPass(material gdnative.Rid, nextMaterial g
 }
 
 /*
-        Undocumented
+        Sets a material's parameter.
 	Args: [{ false material RID} { false parameter String} { false value Variant}], Returns: void
 */
 func (o *visualServer) MaterialSetParam(material gdnative.Rid, parameter gdnative.String, value gdnative.Variant) {
@@ -5441,7 +5469,7 @@ func (o *visualServer) MaterialSetParam(material gdnative.Rid, parameter gdnativ
 }
 
 /*
-        Undocumented
+        Sets a material's render priority.
 	Args: [{ false material RID} { false priority int}], Returns: void
 */
 func (o *visualServer) MaterialSetRenderPriority(material gdnative.Rid, priority gdnative.Int) {
@@ -5464,7 +5492,7 @@ func (o *visualServer) MaterialSetRenderPriority(material gdnative.Rid, priority
 }
 
 /*
-        Undocumented
+        Sets a shader material's shader.
 	Args: [{ false shader_material RID} { false shader RID}], Returns: void
 */
 func (o *visualServer) MaterialSetShader(shaderMaterial gdnative.Rid, shader gdnative.Rid) {
@@ -5487,7 +5515,7 @@ func (o *visualServer) MaterialSetShader(shaderMaterial gdnative.Rid, shader gdn
 }
 
 /*
-        Undocumented
+        Adds a surface generated from the Arrays to a mesh. See [enum PrimitiveType] constants for types.
 	Args: [{ false mesh RID} { false primitive int} { false arrays Array} {[] true blend_shapes Array} {97280 true compress_format int}], Returns: void
 */
 func (o *visualServer) MeshAddSurfaceFromArrays(mesh gdnative.Rid, primitive gdnative.Int, arrays gdnative.Array, blendShapes gdnative.Array, compressFormat gdnative.Int) {
@@ -5513,7 +5541,7 @@ func (o *visualServer) MeshAddSurfaceFromArrays(mesh gdnative.Rid, primitive gdn
 }
 
 /*
-        Undocumented
+        Removes all surfaces from a mesh.
 	Args: [{ false mesh RID}], Returns: void
 */
 func (o *visualServer) MeshClear(mesh gdnative.Rid) {
@@ -5535,7 +5563,7 @@ func (o *visualServer) MeshClear(mesh gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Creates a new mesh and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]mesh_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this mesh to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) MeshCreate() gdnative.Rid {
@@ -5559,7 +5587,7 @@ func (o *visualServer) MeshCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns a mesh's blend shape count.
 	Args: [{ false mesh RID}], Returns: int
 */
 func (o *visualServer) MeshGetBlendShapeCount(mesh gdnative.Rid) gdnative.Int {
@@ -5584,7 +5612,7 @@ func (o *visualServer) MeshGetBlendShapeCount(mesh gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns a mesh's blend shape mode.
 	Args: [{ false mesh RID}], Returns: enum.VisualServer::BlendShapeMode
 */
 func (o *visualServer) MeshGetBlendShapeMode(mesh gdnative.Rid) VisualServerBlendShapeMode {
@@ -5609,7 +5637,7 @@ func (o *visualServer) MeshGetBlendShapeMode(mesh gdnative.Rid) VisualServerBlen
 }
 
 /*
-        Undocumented
+        Returns a mesh's custom aabb.
 	Args: [{ false mesh RID}], Returns: AABB
 */
 func (o *visualServer) MeshGetCustomAabb(mesh gdnative.Rid) gdnative.Aabb {
@@ -5634,7 +5662,7 @@ func (o *visualServer) MeshGetCustomAabb(mesh gdnative.Rid) gdnative.Aabb {
 }
 
 /*
-        Undocumented
+        Returns a mesh's number of surfaces.
 	Args: [{ false mesh RID}], Returns: int
 */
 func (o *visualServer) MeshGetSurfaceCount(mesh gdnative.Rid) gdnative.Int {
@@ -5659,7 +5687,7 @@ func (o *visualServer) MeshGetSurfaceCount(mesh gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Removes a mesh's surface.
 	Args: [{ false mesh RID} { false index int}], Returns: void
 */
 func (o *visualServer) MeshRemoveSurface(mesh gdnative.Rid, index gdnative.Int) {
@@ -5682,7 +5710,7 @@ func (o *visualServer) MeshRemoveSurface(mesh gdnative.Rid, index gdnative.Int) 
 }
 
 /*
-        Undocumented
+        Sets a mesh's blend shape count.
 	Args: [{ false mesh RID} { false amount int}], Returns: void
 */
 func (o *visualServer) MeshSetBlendShapeCount(mesh gdnative.Rid, amount gdnative.Int) {
@@ -5705,7 +5733,7 @@ func (o *visualServer) MeshSetBlendShapeCount(mesh gdnative.Rid, amount gdnative
 }
 
 /*
-        Undocumented
+        Sets a mesh's blend shape mode.
 	Args: [{ false mesh RID} { false mode int}], Returns: void
 */
 func (o *visualServer) MeshSetBlendShapeMode(mesh gdnative.Rid, mode gdnative.Int) {
@@ -5728,7 +5756,7 @@ func (o *visualServer) MeshSetBlendShapeMode(mesh gdnative.Rid, mode gdnative.In
 }
 
 /*
-        Undocumented
+        Sets a mesh's custom aabb.
 	Args: [{ false mesh RID} { false aabb AABB}], Returns: void
 */
 func (o *visualServer) MeshSetCustomAabb(mesh gdnative.Rid, aabb gdnative.Aabb) {
@@ -5751,7 +5779,7 @@ func (o *visualServer) MeshSetCustomAabb(mesh gdnative.Rid, aabb gdnative.Aabb) 
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's aabb.
 	Args: [{ false mesh RID} { false surface int}], Returns: AABB
 */
 func (o *visualServer) MeshSurfaceGetAabb(mesh gdnative.Rid, surface gdnative.Int) gdnative.Aabb {
@@ -5777,7 +5805,7 @@ func (o *visualServer) MeshSurfaceGetAabb(mesh gdnative.Rid, surface gdnative.In
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's vertex buffer.
 	Args: [{ false mesh RID} { false surface int}], Returns: PoolByteArray
 */
 func (o *visualServer) MeshSurfaceGetArray(mesh gdnative.Rid, surface gdnative.Int) gdnative.PoolByteArray {
@@ -5803,7 +5831,7 @@ func (o *visualServer) MeshSurfaceGetArray(mesh gdnative.Rid, surface gdnative.I
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's amount of indices.
 	Args: [{ false mesh RID} { false surface int}], Returns: int
 */
 func (o *visualServer) MeshSurfaceGetArrayIndexLen(mesh gdnative.Rid, surface gdnative.Int) gdnative.Int {
@@ -5829,7 +5857,7 @@ func (o *visualServer) MeshSurfaceGetArrayIndexLen(mesh gdnative.Rid, surface gd
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's amount of vertices.
 	Args: [{ false mesh RID} { false surface int}], Returns: int
 */
 func (o *visualServer) MeshSurfaceGetArrayLen(mesh gdnative.Rid, surface gdnative.Int) gdnative.Int {
@@ -5855,7 +5883,7 @@ func (o *visualServer) MeshSurfaceGetArrayLen(mesh gdnative.Rid, surface gdnativ
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's buffer arrays.
 	Args: [{ false mesh RID} { false surface int}], Returns: Array
 */
 func (o *visualServer) MeshSurfaceGetArrays(mesh gdnative.Rid, surface gdnative.Int) gdnative.Array {
@@ -5881,7 +5909,7 @@ func (o *visualServer) MeshSurfaceGetArrays(mesh gdnative.Rid, surface gdnative.
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's arrays for blend shapes.
 	Args: [{ false mesh RID} { false surface int}], Returns: Array
 */
 func (o *visualServer) MeshSurfaceGetBlendShapeArrays(mesh gdnative.Rid, surface gdnative.Int) gdnative.Array {
@@ -5907,7 +5935,7 @@ func (o *visualServer) MeshSurfaceGetBlendShapeArrays(mesh gdnative.Rid, surface
 }
 
 /*
-        Undocumented
+        Returns the format of a mesh's surface.
 	Args: [{ false mesh RID} { false surface int}], Returns: int
 */
 func (o *visualServer) MeshSurfaceGetFormat(mesh gdnative.Rid, surface gdnative.Int) gdnative.Int {
@@ -5933,7 +5961,7 @@ func (o *visualServer) MeshSurfaceGetFormat(mesh gdnative.Rid, surface gdnative.
 }
 
 /*
-        Undocumented
+        Function is unused in Godot 3.x.
 	Args: [{ false format int} { false vertex_len int} { false index_len int} { false array_index int}], Returns: int
 */
 func (o *visualServer) MeshSurfaceGetFormatOffset(format gdnative.Int, vertexLen gdnative.Int, indexLen gdnative.Int, arrayIndex gdnative.Int) gdnative.Int {
@@ -5961,7 +5989,7 @@ func (o *visualServer) MeshSurfaceGetFormatOffset(format gdnative.Int, vertexLen
 }
 
 /*
-        Undocumented
+        Function is unused in Godot 3.x.
 	Args: [{ false format int} { false vertex_len int} { false index_len int}], Returns: int
 */
 func (o *visualServer) MeshSurfaceGetFormatStride(format gdnative.Int, vertexLen gdnative.Int, indexLen gdnative.Int) gdnative.Int {
@@ -5988,7 +6016,7 @@ func (o *visualServer) MeshSurfaceGetFormatStride(format gdnative.Int, vertexLen
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's index buffer.
 	Args: [{ false mesh RID} { false surface int}], Returns: PoolByteArray
 */
 func (o *visualServer) MeshSurfaceGetIndexArray(mesh gdnative.Rid, surface gdnative.Int) gdnative.PoolByteArray {
@@ -6014,7 +6042,7 @@ func (o *visualServer) MeshSurfaceGetIndexArray(mesh gdnative.Rid, surface gdnat
 }
 
 /*
-        Undocumented
+        Returns a mesh's surface's material.
 	Args: [{ false mesh RID} { false surface int}], Returns: RID
 */
 func (o *visualServer) MeshSurfaceGetMaterial(mesh gdnative.Rid, surface gdnative.Int) gdnative.Rid {
@@ -6040,7 +6068,7 @@ func (o *visualServer) MeshSurfaceGetMaterial(mesh gdnative.Rid, surface gdnativ
 }
 
 /*
-        Undocumented
+        Returns the primitive type of a mesh's surface.
 	Args: [{ false mesh RID} { false surface int}], Returns: enum.VisualServer::PrimitiveType
 */
 func (o *visualServer) MeshSurfaceGetPrimitiveType(mesh gdnative.Rid, surface gdnative.Int) VisualServerPrimitiveType {
@@ -6066,7 +6094,7 @@ func (o *visualServer) MeshSurfaceGetPrimitiveType(mesh gdnative.Rid, surface gd
 }
 
 /*
-        Undocumented
+        Returns the aabb of a mesh's surface's skeleton.
 	Args: [{ false mesh RID} { false surface int}], Returns: Array
 */
 func (o *visualServer) MeshSurfaceGetSkeletonAabb(mesh gdnative.Rid, surface gdnative.Int) gdnative.Array {
@@ -6092,7 +6120,7 @@ func (o *visualServer) MeshSurfaceGetSkeletonAabb(mesh gdnative.Rid, surface gdn
 }
 
 /*
-        Undocumented
+        Sets a mesh's surface's material.
 	Args: [{ false mesh RID} { false surface int} { false material RID}], Returns: void
 */
 func (o *visualServer) MeshSurfaceSetMaterial(mesh gdnative.Rid, surface gdnative.Int, material gdnative.Rid) {
@@ -6116,7 +6144,7 @@ func (o *visualServer) MeshSurfaceSetMaterial(mesh gdnative.Rid, surface gdnativ
 }
 
 /*
-        Undocumented
+        Updates a specific region of a vertex buffer for the specified surface. Warning: this function alters the vertex buffer directly with no safety mechanisms, you can easily corrupt your mesh.
 	Args: [{ false mesh RID} { false surface int} { false offset int} { false data PoolByteArray}], Returns: void
 */
 func (o *visualServer) MeshSurfaceUpdateRegion(mesh gdnative.Rid, surface gdnative.Int, offset gdnative.Int, data gdnative.PoolByteArray) {
@@ -6141,7 +6169,7 @@ func (o *visualServer) MeshSurfaceUpdateRegion(mesh gdnative.Rid, surface gdnati
 }
 
 /*
-        Undocumented
+        Allocates space for the multimesh data. Format parameters determine how the data will be stored by OpenGL. See [enum MultimeshTransformFormat], [enum MultimeshColorFormat], and [enum MultimeshCustomDataFormat] for usage. Equivalent to [member MultiMesh.instance_count].
 	Args: [{ false multimesh RID} { false instances int} { false transform_format int} { false color_format int} {0 true custom_data_format int}], Returns: void
 */
 func (o *visualServer) MultimeshAllocate(multimesh gdnative.Rid, instances gdnative.Int, transformFormat gdnative.Int, colorFormat gdnative.Int, customDataFormat gdnative.Int) {
@@ -6167,7 +6195,7 @@ func (o *visualServer) MultimeshAllocate(multimesh gdnative.Rid, instances gdnat
 }
 
 /*
-        Undocumented
+        Creates a new multimesh on the VisualServer and returns an [RID] handle. This RID will be used in all [code]multimesh_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this multimesh to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) MultimeshCreate() gdnative.Rid {
@@ -6191,7 +6219,7 @@ func (o *visualServer) MultimeshCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Calculates and returns the axis-aligned bounding box that encloses all instances within the multimesh.
 	Args: [{ false multimesh RID}], Returns: AABB
 */
 func (o *visualServer) MultimeshGetAabb(multimesh gdnative.Rid) gdnative.Aabb {
@@ -6216,7 +6244,7 @@ func (o *visualServer) MultimeshGetAabb(multimesh gdnative.Rid) gdnative.Aabb {
 }
 
 /*
-        Undocumented
+        Returns the number of instances allocated for this multimesh.
 	Args: [{ false multimesh RID}], Returns: int
 */
 func (o *visualServer) MultimeshGetInstanceCount(multimesh gdnative.Rid) gdnative.Int {
@@ -6241,7 +6269,7 @@ func (o *visualServer) MultimeshGetInstanceCount(multimesh gdnative.Rid) gdnativ
 }
 
 /*
-        Undocumented
+        Returns the RID of the mesh that will be used in drawing this multimesh.
 	Args: [{ false multimesh RID}], Returns: RID
 */
 func (o *visualServer) MultimeshGetMesh(multimesh gdnative.Rid) gdnative.Rid {
@@ -6266,7 +6294,7 @@ func (o *visualServer) MultimeshGetMesh(multimesh gdnative.Rid) gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the number of visible instances for this multimesh.
 	Args: [{ false multimesh RID}], Returns: int
 */
 func (o *visualServer) MultimeshGetVisibleInstances(multimesh gdnative.Rid) gdnative.Int {
@@ -6291,7 +6319,7 @@ func (o *visualServer) MultimeshGetVisibleInstances(multimesh gdnative.Rid) gdna
 }
 
 /*
-        Undocumented
+        Returns the color by which the specified instance will be modulated.
 	Args: [{ false multimesh RID} { false index int}], Returns: Color
 */
 func (o *visualServer) MultimeshInstanceGetColor(multimesh gdnative.Rid, index gdnative.Int) gdnative.Color {
@@ -6317,7 +6345,7 @@ func (o *visualServer) MultimeshInstanceGetColor(multimesh gdnative.Rid, index g
 }
 
 /*
-        Undocumented
+        Returns the custom data associated with the specified instance.
 	Args: [{ false multimesh RID} { false index int}], Returns: Color
 */
 func (o *visualServer) MultimeshInstanceGetCustomData(multimesh gdnative.Rid, index gdnative.Int) gdnative.Color {
@@ -6343,7 +6371,7 @@ func (o *visualServer) MultimeshInstanceGetCustomData(multimesh gdnative.Rid, in
 }
 
 /*
-        Undocumented
+        Returns the [Transform] of the specified instance.
 	Args: [{ false multimesh RID} { false index int}], Returns: Transform
 */
 func (o *visualServer) MultimeshInstanceGetTransform(multimesh gdnative.Rid, index gdnative.Int) gdnative.Transform {
@@ -6369,7 +6397,7 @@ func (o *visualServer) MultimeshInstanceGetTransform(multimesh gdnative.Rid, ind
 }
 
 /*
-        Undocumented
+        Returns the [Transform2D] of the specified instance. For use when the multimesh is set to use 2D transforms.
 	Args: [{ false multimesh RID} { false index int}], Returns: Transform2D
 */
 func (o *visualServer) MultimeshInstanceGetTransform2D(multimesh gdnative.Rid, index gdnative.Int) gdnative.Transform2D {
@@ -6395,7 +6423,7 @@ func (o *visualServer) MultimeshInstanceGetTransform2D(multimesh gdnative.Rid, i
 }
 
 /*
-        Undocumented
+        Sets the color by which this instance will be modulated. Equivalent to [method MultiMesh.set_instance_color].
 	Args: [{ false multimesh RID} { false index int} { false color Color}], Returns: void
 */
 func (o *visualServer) MultimeshInstanceSetColor(multimesh gdnative.Rid, index gdnative.Int, color gdnative.Color) {
@@ -6419,7 +6447,7 @@ func (o *visualServer) MultimeshInstanceSetColor(multimesh gdnative.Rid, index g
 }
 
 /*
-        Undocumented
+        Sets the custom data for this instance. Custom data is passed as a [Color], but is interpreted as a [code]vec4[/code] in the shader. Equivalent to [method MultiMesh.set_instance_custom_data].
 	Args: [{ false multimesh RID} { false index int} { false custom_data Color}], Returns: void
 */
 func (o *visualServer) MultimeshInstanceSetCustomData(multimesh gdnative.Rid, index gdnative.Int, customData gdnative.Color) {
@@ -6443,7 +6471,7 @@ func (o *visualServer) MultimeshInstanceSetCustomData(multimesh gdnative.Rid, in
 }
 
 /*
-        Undocumented
+        Sets the [Transform] for this instance. Equivalent to [method MultiMesh.set_instance_transform].
 	Args: [{ false multimesh RID} { false index int} { false transform Transform}], Returns: void
 */
 func (o *visualServer) MultimeshInstanceSetTransform(multimesh gdnative.Rid, index gdnative.Int, transform gdnative.Transform) {
@@ -6467,7 +6495,7 @@ func (o *visualServer) MultimeshInstanceSetTransform(multimesh gdnative.Rid, ind
 }
 
 /*
-        Undocumented
+        Sets the [Transform2D] for this instance. For use when multimesh is used in 2D. Equivalent to [method MultiMesh.set_instance_transform_2d].
 	Args: [{ false multimesh RID} { false index int} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) MultimeshInstanceSetTransform2D(multimesh gdnative.Rid, index gdnative.Int, transform gdnative.Transform2D) {
@@ -6491,7 +6519,7 @@ func (o *visualServer) MultimeshInstanceSetTransform2D(multimesh gdnative.Rid, i
 }
 
 /*
-        Undocumented
+        Sets all data related to the instances in one go. This is especially useful when loading the data from disk or preparing the data from GDNative. All data is packed in one large float array. An array may look like this: Transform for instance 1, color data for instance 1, custom data for instance 1, transform for instance 2, color data for instance 2, etc. [Transform] is stored as 12 floats, [Transform2D] is stored as 8 floats, [code]COLOR_8BIT[/code] / [code]CUSTOM_DATA_8BIT[/code] is stored as 1 float (4 bytes as is) and [code]COLOR_FLOAT[/code] / [code]CUSTOM_DATA_FLOAT[/code] is stored as 4 floats.
 	Args: [{ false multimesh RID} { false array PoolRealArray}], Returns: void
 */
 func (o *visualServer) MultimeshSetAsBulkArray(multimesh gdnative.Rid, array gdnative.PoolRealArray) {
@@ -6514,7 +6542,7 @@ func (o *visualServer) MultimeshSetAsBulkArray(multimesh gdnative.Rid, array gdn
 }
 
 /*
-        Undocumented
+        Sets the mesh to be drawn by the multimesh. Equivalent to [member MultiMesh.mesh].
 	Args: [{ false multimesh RID} { false mesh RID}], Returns: void
 */
 func (o *visualServer) MultimeshSetMesh(multimesh gdnative.Rid, mesh gdnative.Rid) {
@@ -6537,7 +6565,7 @@ func (o *visualServer) MultimeshSetMesh(multimesh gdnative.Rid, mesh gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets the number of instances visible at a given time. If -1, all instances that have been allocated are drawn. Equivalent to [member MultiMesh.visible_instance_count].
 	Args: [{ false multimesh RID} { false visible int}], Returns: void
 */
 func (o *visualServer) MultimeshSetVisibleInstances(multimesh gdnative.Rid, visible gdnative.Int) {
@@ -6560,7 +6588,7 @@ func (o *visualServer) MultimeshSetVisibleInstances(multimesh gdnative.Rid, visi
 }
 
 /*
-        Undocumented
+        Creates a new omni light and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID can be used in most [code]light_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this omni light to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) OmniLightCreate() gdnative.Rid {
@@ -6584,7 +6612,7 @@ func (o *visualServer) OmniLightCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Creates a particle system and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]particles_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach these particles to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) ParticlesCreate() gdnative.Rid {
@@ -6608,7 +6636,7 @@ func (o *visualServer) ParticlesCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Calculates and returns the axis-aligned bounding box that contains all the particles. Equivalent to [method Particles.capture_aabb].
 	Args: [{ false particles RID}], Returns: AABB
 */
 func (o *visualServer) ParticlesGetCurrentAabb(particles gdnative.Rid) gdnative.Aabb {
@@ -6633,7 +6661,7 @@ func (o *visualServer) ParticlesGetCurrentAabb(particles gdnative.Rid) gdnative.
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if particles are currently set to emitting.
 	Args: [{ false particles RID}], Returns: bool
 */
 func (o *visualServer) ParticlesGetEmitting(particles gdnative.Rid) gdnative.Bool {
@@ -6658,7 +6686,7 @@ func (o *visualServer) ParticlesGetEmitting(particles gdnative.Rid) gdnative.Boo
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if particles are not emitting and particles are set to inactive.
 	Args: [{ false particles RID}], Returns: bool
 */
 func (o *visualServer) ParticlesIsInactive(particles gdnative.Rid) gdnative.Bool {
@@ -6683,7 +6711,7 @@ func (o *visualServer) ParticlesIsInactive(particles gdnative.Rid) gdnative.Bool
 }
 
 /*
-        Undocumented
+        Add particle system to list of particle systems that need to be updated. Update will take place on the next frame, or on the next call to [method instances_cull_aabb], [method instances_cull_convex], or [method instances_cull_ray].
 	Args: [{ false particles RID}], Returns: void
 */
 func (o *visualServer) ParticlesRequestProcess(particles gdnative.Rid) {
@@ -6705,7 +6733,7 @@ func (o *visualServer) ParticlesRequestProcess(particles gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Reset the particles on the next update. Equivalent to [method Particles.restart].
 	Args: [{ false particles RID}], Returns: void
 */
 func (o *visualServer) ParticlesRestart(particles gdnative.Rid) {
@@ -6727,7 +6755,7 @@ func (o *visualServer) ParticlesRestart(particles gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Sets the number of particles to be drawn and allocates the memory for them. Equivalent to [member Particles.amount].
 	Args: [{ false particles RID} { false amount int}], Returns: void
 */
 func (o *visualServer) ParticlesSetAmount(particles gdnative.Rid, amount gdnative.Int) {
@@ -6750,7 +6778,7 @@ func (o *visualServer) ParticlesSetAmount(particles gdnative.Rid, amount gdnativ
 }
 
 /*
-        Undocumented
+        Sets a custom axis-aligned bounding box for the particle system. Equivalent to [member Particles.visibility_aabb].
 	Args: [{ false particles RID} { false aabb AABB}], Returns: void
 */
 func (o *visualServer) ParticlesSetCustomAabb(particles gdnative.Rid, aabb gdnative.Aabb) {
@@ -6773,7 +6801,7 @@ func (o *visualServer) ParticlesSetCustomAabb(particles gdnative.Rid, aabb gdnat
 }
 
 /*
-        Undocumented
+        Sets the draw order of the particles to one of the named enums from [enum ParticlesDrawOrder]. See [enum ParticlesDrawOrder] for options. Equivalent to [member Particles.draw_order].
 	Args: [{ false particles RID} { false order int}], Returns: void
 */
 func (o *visualServer) ParticlesSetDrawOrder(particles gdnative.Rid, order gdnative.Int) {
@@ -6796,7 +6824,7 @@ func (o *visualServer) ParticlesSetDrawOrder(particles gdnative.Rid, order gdnat
 }
 
 /*
-        Undocumented
+        Sets the mesh to be used for the specified draw pass. Equivalent to [member Particles.draw_pass_1], [member Particles.draw_pass_2], [member Particles.draw_pass_3], and [member Particles.draw_pass_4].
 	Args: [{ false particles RID} { false pass int} { false mesh RID}], Returns: void
 */
 func (o *visualServer) ParticlesSetDrawPassMesh(particles gdnative.Rid, pass gdnative.Int, mesh gdnative.Rid) {
@@ -6820,7 +6848,7 @@ func (o *visualServer) ParticlesSetDrawPassMesh(particles gdnative.Rid, pass gdn
 }
 
 /*
-        Undocumented
+        Sets the number of draw passes to use. Equivalent to [member Particles.draw_passes].
 	Args: [{ false particles RID} { false count int}], Returns: void
 */
 func (o *visualServer) ParticlesSetDrawPasses(particles gdnative.Rid, count gdnative.Int) {
@@ -6843,7 +6871,7 @@ func (o *visualServer) ParticlesSetDrawPasses(particles gdnative.Rid, count gdna
 }
 
 /*
-        Undocumented
+        Sets the [Transform] that will be used by the particles when they first emit.
 	Args: [{ false particles RID} { false transform Transform}], Returns: void
 */
 func (o *visualServer) ParticlesSetEmissionTransform(particles gdnative.Rid, transform gdnative.Transform) {
@@ -6866,7 +6894,7 @@ func (o *visualServer) ParticlesSetEmissionTransform(particles gdnative.Rid, tra
 }
 
 /*
-        Undocumented
+        If [code]true[/code], particles will emit over time. Setting to false does not reset the particles, but only stops their emission. Equivalent to [member Particles.emitting].
 	Args: [{ false particles RID} { false emitting bool}], Returns: void
 */
 func (o *visualServer) ParticlesSetEmitting(particles gdnative.Rid, emitting gdnative.Bool) {
@@ -6889,7 +6917,7 @@ func (o *visualServer) ParticlesSetEmitting(particles gdnative.Rid, emitting gdn
 }
 
 /*
-        Undocumented
+        Sets the explosiveness ratio. Equivalent to [member Particles.explosiveness].
 	Args: [{ false particles RID} { false ratio float}], Returns: void
 */
 func (o *visualServer) ParticlesSetExplosivenessRatio(particles gdnative.Rid, ratio gdnative.Real) {
@@ -6912,7 +6940,7 @@ func (o *visualServer) ParticlesSetExplosivenessRatio(particles gdnative.Rid, ra
 }
 
 /*
-        Undocumented
+        Sets the frame rate that the particle system rendering will be fixed to. Equivalent to [member Particles.fixed_fps].
 	Args: [{ false particles RID} { false fps int}], Returns: void
 */
 func (o *visualServer) ParticlesSetFixedFps(particles gdnative.Rid, fps gdnative.Int) {
@@ -6935,7 +6963,7 @@ func (o *visualServer) ParticlesSetFixedFps(particles gdnative.Rid, fps gdnative
 }
 
 /*
-        Undocumented
+        If [code]true[/code], uses fractional delta which smooths the movement of the particles. Equivalent to [member Particles.fract_delta].
 	Args: [{ false particles RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) ParticlesSetFractionalDelta(particles gdnative.Rid, enable gdnative.Bool) {
@@ -6958,7 +6986,7 @@ func (o *visualServer) ParticlesSetFractionalDelta(particles gdnative.Rid, enabl
 }
 
 /*
-        Undocumented
+        Sets the lifetime of each particle in the system. Equivalent to [member Particles.lifetime].
 	Args: [{ false particles RID} { false lifetime float}], Returns: void
 */
 func (o *visualServer) ParticlesSetLifetime(particles gdnative.Rid, lifetime gdnative.Real) {
@@ -6981,7 +7009,7 @@ func (o *visualServer) ParticlesSetLifetime(particles gdnative.Rid, lifetime gdn
 }
 
 /*
-        Undocumented
+        If [code]true[/code], particles will emit once and then stop. Equivalent to [member Particles.one_shot].
 	Args: [{ false particles RID} { false one_shot bool}], Returns: void
 */
 func (o *visualServer) ParticlesSetOneShot(particles gdnative.Rid, oneShot gdnative.Bool) {
@@ -7004,7 +7032,7 @@ func (o *visualServer) ParticlesSetOneShot(particles gdnative.Rid, oneShot gdnat
 }
 
 /*
-        Undocumented
+        Sets the preprocess time for the particles animation. This lets you delay starting an animation until after the particles have begun emitting. Equivalent to [member Particles.preprocess].
 	Args: [{ false particles RID} { false time float}], Returns: void
 */
 func (o *visualServer) ParticlesSetPreProcessTime(particles gdnative.Rid, time gdnative.Real) {
@@ -7027,7 +7055,7 @@ func (o *visualServer) ParticlesSetPreProcessTime(particles gdnative.Rid, time g
 }
 
 /*
-        Undocumented
+        Sets the material for processing the particles. Note: this is not the material used to draw the materials. Equivalent to [member Particles.process_material].
 	Args: [{ false particles RID} { false material RID}], Returns: void
 */
 func (o *visualServer) ParticlesSetProcessMaterial(particles gdnative.Rid, material gdnative.Rid) {
@@ -7050,7 +7078,7 @@ func (o *visualServer) ParticlesSetProcessMaterial(particles gdnative.Rid, mater
 }
 
 /*
-        Undocumented
+        Sets the emission randomness ratio. This randomizes the emission of particles within their phase. Equivalent to [member Particles.randomness].
 	Args: [{ false particles RID} { false ratio float}], Returns: void
 */
 func (o *visualServer) ParticlesSetRandomnessRatio(particles gdnative.Rid, ratio gdnative.Real) {
@@ -7073,7 +7101,7 @@ func (o *visualServer) ParticlesSetRandomnessRatio(particles gdnative.Rid, ratio
 }
 
 /*
-        Undocumented
+        Sets the speed scale of the particle system. Equivalent to [member Particles.speed_scale].
 	Args: [{ false particles RID} { false scale float}], Returns: void
 */
 func (o *visualServer) ParticlesSetSpeedScale(particles gdnative.Rid, scale gdnative.Real) {
@@ -7096,7 +7124,7 @@ func (o *visualServer) ParticlesSetSpeedScale(particles gdnative.Rid, scale gdna
 }
 
 /*
-        Undocumented
+        If [code]true[/code], particles use local coordinates. If [code]false[/code] they use global coordinates. Equivalent to [member Particles.local_coords].
 	Args: [{ false particles RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) ParticlesSetUseLocalCoordinates(particles gdnative.Rid, enable gdnative.Bool) {
@@ -7119,7 +7147,7 @@ func (o *visualServer) ParticlesSetUseLocalCoordinates(particles gdnative.Rid, e
 }
 
 /*
-        Undocumented
+        Creates a reflection probe and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]reflection_probe_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this reflection probe to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) ReflectionProbeCreate() gdnative.Rid {
@@ -7143,7 +7171,7 @@ func (o *visualServer) ReflectionProbeCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        If [code]true[/code], reflections will ignore sky contribution. Equivalent to [member ReflectionProbe.interior_enable].
 	Args: [{ false probe RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetAsInterior(probe gdnative.Rid, enable gdnative.Bool) {
@@ -7166,7 +7194,7 @@ func (o *visualServer) ReflectionProbeSetAsInterior(probe gdnative.Rid, enable g
 }
 
 /*
-        Undocumented
+        Sets the render cull mask for this reflection probe. Only instances with a matching cull mask will be rendered by this probe. Equivalent to [member ReflectionProbe.cull_mask].
 	Args: [{ false probe RID} { false layers int}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetCullMask(probe gdnative.Rid, layers gdnative.Int) {
@@ -7189,7 +7217,7 @@ func (o *visualServer) ReflectionProbeSetCullMask(probe gdnative.Rid, layers gdn
 }
 
 /*
-        Undocumented
+        If [code]true[/code], uses box projection. This can make reflections look more correct in certain situations. Equivalent to [member ReflectionProbe.box_projection].
 	Args: [{ false probe RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetEnableBoxProjection(probe gdnative.Rid, enable gdnative.Bool) {
@@ -7212,7 +7240,7 @@ func (o *visualServer) ReflectionProbeSetEnableBoxProjection(probe gdnative.Rid,
 }
 
 /*
-        Undocumented
+        If [code]true[/code], computes shadows in the reflection probe. This makes the reflection much slower to compute. Equivalent to [member ReflectionProbe.enable_shadows].
 	Args: [{ false probe RID} { false enable bool}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetEnableShadows(probe gdnative.Rid, enable gdnative.Bool) {
@@ -7235,7 +7263,7 @@ func (o *visualServer) ReflectionProbeSetEnableShadows(probe gdnative.Rid, enabl
 }
 
 /*
-        Undocumented
+        Sets the size of the area that the reflection probe will capture. Equivalent to [member ReflectionProbe.extents].
 	Args: [{ false probe RID} { false extents Vector3}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetExtents(probe gdnative.Rid, extents gdnative.Vector3) {
@@ -7258,7 +7286,7 @@ func (o *visualServer) ReflectionProbeSetExtents(probe gdnative.Rid, extents gdn
 }
 
 /*
-        Undocumented
+        Sets the intensity of the reflection probe. Intensity modulates the strength of the reflection. Equivalent to [member ReflectionProbe.intensity].
 	Args: [{ false probe RID} { false intensity float}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetIntensity(probe gdnative.Rid, intensity gdnative.Real) {
@@ -7281,7 +7309,7 @@ func (o *visualServer) ReflectionProbeSetIntensity(probe gdnative.Rid, intensity
 }
 
 /*
-        Undocumented
+        Sets the ambient light color for this reflection probe when set to interior mode. Equivalent to [member ReflectionProbe.interior_ambient_color].
 	Args: [{ false probe RID} { false color Color}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetInteriorAmbient(probe gdnative.Rid, color gdnative.Color) {
@@ -7304,7 +7332,7 @@ func (o *visualServer) ReflectionProbeSetInteriorAmbient(probe gdnative.Rid, col
 }
 
 /*
-        Undocumented
+        Sets the energy multiplier for this reflection probes ambient light contribution when set to interior mode. Equivalent to [member ReflectionProbe.interior_ambient_energy].
 	Args: [{ false probe RID} { false energy float}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetInteriorAmbientEnergy(probe gdnative.Rid, energy gdnative.Real) {
@@ -7327,7 +7355,7 @@ func (o *visualServer) ReflectionProbeSetInteriorAmbientEnergy(probe gdnative.Ri
 }
 
 /*
-        Undocumented
+        Sets the contribution value for how much the reflection affects the ambient light for this reflection probe when set to interior mode. Useful so that ambient light matches the color of the room. Equivalent to [member ReflectionProbe.interior_ambient_contrib].
 	Args: [{ false probe RID} { false contrib float}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetInteriorAmbientProbeContribution(probe gdnative.Rid, contrib gdnative.Real) {
@@ -7350,7 +7378,7 @@ func (o *visualServer) ReflectionProbeSetInteriorAmbientProbeContribution(probe 
 }
 
 /*
-        Undocumented
+        Sets the max distance away from the probe an object can be before it is culled. Equivalent to [member ReflectionProbe.max_distance].
 	Args: [{ false probe RID} { false distance float}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetMaxDistance(probe gdnative.Rid, distance gdnative.Real) {
@@ -7373,7 +7401,7 @@ func (o *visualServer) ReflectionProbeSetMaxDistance(probe gdnative.Rid, distanc
 }
 
 /*
-        Undocumented
+        Sets the origin offset to be used when this reflection probe is in box project mode. Equivalent to [member ReflectionProbe.origin_offset].
 	Args: [{ false probe RID} { false offset Vector3}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetOriginOffset(probe gdnative.Rid, offset gdnative.Vector3) {
@@ -7396,7 +7424,7 @@ func (o *visualServer) ReflectionProbeSetOriginOffset(probe gdnative.Rid, offset
 }
 
 /*
-        Undocumented
+        Sets how often the reflection probe updates. Can either be once or every frame. See [enum ReflectionProbeUpdateMode] for options.
 	Args: [{ false probe RID} { false mode int}], Returns: void
 */
 func (o *visualServer) ReflectionProbeSetUpdateMode(probe gdnative.Rid, mode gdnative.Int) {
@@ -7419,7 +7447,7 @@ func (o *visualServer) ReflectionProbeSetUpdateMode(probe gdnative.Rid, mode gdn
 }
 
 /*
-        Undocumented
+        Schedules a callback to the corresponding named [code]method[/code] on [code]where[/code] after a frame has been drawn. The callback method must use only 1 argument which will be called with [code]userdata[/code].
 	Args: [{ false where Object} { false method String} { false userdata Variant}], Returns: void
 */
 func (o *visualServer) RequestFrameDrawnCallback(where ObjectImplementer, method gdnative.String, userdata gdnative.Variant) {
@@ -7443,7 +7471,7 @@ func (o *visualServer) RequestFrameDrawnCallback(where ObjectImplementer, method
 }
 
 /*
-        Undocumented
+        Creates a scenario and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]scenario_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. The scenario is the 3D world that all the visual instances exist in.
 	Args: [], Returns: RID
 */
 func (o *visualServer) ScenarioCreate() gdnative.Rid {
@@ -7467,7 +7495,7 @@ func (o *visualServer) ScenarioCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Sets the [enum ScenarioDebugMode] for this scenario. See [enum ScenarioDebugMode] for options.
 	Args: [{ false scenario RID} { false debug_mode int}], Returns: void
 */
 func (o *visualServer) ScenarioSetDebug(scenario gdnative.Rid, debugMode gdnative.Int) {
@@ -7490,7 +7518,7 @@ func (o *visualServer) ScenarioSetDebug(scenario gdnative.Rid, debugMode gdnativ
 }
 
 /*
-        Undocumented
+        Sets the environment that will be used with this scenario.
 	Args: [{ false scenario RID} { false environment RID}], Returns: void
 */
 func (o *visualServer) ScenarioSetEnvironment(scenario gdnative.Rid, environment gdnative.Rid) {
@@ -7513,7 +7541,7 @@ func (o *visualServer) ScenarioSetEnvironment(scenario gdnative.Rid, environment
 }
 
 /*
-        Undocumented
+        Sets the fallback environment to be used by this scenario. The fallback environment is used if no environment is set. Internally, this is used by the editor to provide a default environment.
 	Args: [{ false scenario RID} { false environment RID}], Returns: void
 */
 func (o *visualServer) ScenarioSetFallbackEnvironment(scenario gdnative.Rid, environment gdnative.Rid) {
@@ -7536,7 +7564,7 @@ func (o *visualServer) ScenarioSetFallbackEnvironment(scenario gdnative.Rid, env
 }
 
 /*
-        Undocumented
+        Sets the size of the reflection atlas shared by all reflection probes in this scenario.
 	Args: [{ false scenario RID} { false size int} { false subdiv int}], Returns: void
 */
 func (o *visualServer) ScenarioSetReflectionAtlasSize(scenario gdnative.Rid, size gdnative.Int, subdiv gdnative.Int) {
@@ -7560,7 +7588,7 @@ func (o *visualServer) ScenarioSetReflectionAtlasSize(scenario gdnative.Rid, siz
 }
 
 /*
-        Undocumented
+        Sets a boot image. The color defines the background color. If [code]scale[/code] is [code]true[/code], the image will be scaled to fit the screen size. If [code]use_filter[/code] is [code]true[/code], the image will be scaled with linear interpolation. If [code]use_filter[/code] is [code]false[/code], the image will be scaled with nearest-neighbor interpolation.
 	Args: [{ false image Image} { false color Color} { false scale bool} {True true use_filter bool}], Returns: void
 */
 func (o *visualServer) SetBootImage(image ImageImplementer, color gdnative.Color, scale gdnative.Bool, useFilter gdnative.Bool) {
@@ -7585,7 +7613,7 @@ func (o *visualServer) SetBootImage(image ImageImplementer, color gdnative.Color
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the engine will generate wireframes for use with the wireframe debug mode.
 	Args: [{ false generate bool}], Returns: void
 */
 func (o *visualServer) SetDebugGenerateWireframes(generate gdnative.Bool) {
@@ -7607,7 +7635,7 @@ func (o *visualServer) SetDebugGenerateWireframes(generate gdnative.Bool) {
 }
 
 /*
-        Undocumented
+        Sets the default clear color which is used when a specific clear color has not been selected.
 	Args: [{ false color Color}], Returns: void
 */
 func (o *visualServer) SetDefaultClearColor(color gdnative.Color) {
@@ -7630,6 +7658,50 @@ func (o *visualServer) SetDefaultClearColor(color gdnative.Color) {
 
 /*
         Undocumented
+	Args: [{ false enabled bool}], Returns: void
+*/
+func (o *visualServer) SetRenderLoopEnabled(enabled gdnative.Bool) {
+	o.ensureSingleton()
+	//log.Println("Calling VisualServer.SetRenderLoopEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromBool(enabled)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("VisualServer", "set_render_loop_enabled")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Sets the scale to apply to the passage of time for the shaders' [code]TIME[/code] builtin. The default value is [code]1.0[/code], which means [code]TIME[/code] will count the real time as it goes by, without narrowing or stretching it.
+	Args: [{ false scale float}], Returns: void
+*/
+func (o *visualServer) SetShaderTimeScale(scale gdnative.Real) {
+	o.ensureSingleton()
+	//log.Println("Calling VisualServer.SetShaderTimeScale()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromReal(scale)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("VisualServer", "set_shader_time_scale")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Creates an empty shader and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]shader_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) ShaderCreate() gdnative.Rid {
@@ -7653,7 +7725,7 @@ func (o *visualServer) ShaderCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns a shader's code.
 	Args: [{ false shader RID}], Returns: String
 */
 func (o *visualServer) ShaderGetCode(shader gdnative.Rid) gdnative.String {
@@ -7678,7 +7750,7 @@ func (o *visualServer) ShaderGetCode(shader gdnative.Rid) gdnative.String {
 }
 
 /*
-        Undocumented
+        Returns a default texture from a shader searched by name.
 	Args: [{ false shader RID} { false name String}], Returns: RID
 */
 func (o *visualServer) ShaderGetDefaultTextureParam(shader gdnative.Rid, name gdnative.String) gdnative.Rid {
@@ -7704,7 +7776,7 @@ func (o *visualServer) ShaderGetDefaultTextureParam(shader gdnative.Rid, name gd
 }
 
 /*
-        Undocumented
+        Returns the parameters of a shader.
 	Args: [{ false shader RID}], Returns: Array
 */
 func (o *visualServer) ShaderGetParamList(shader gdnative.Rid) gdnative.Array {
@@ -7729,7 +7801,7 @@ func (o *visualServer) ShaderGetParamList(shader gdnative.Rid) gdnative.Array {
 }
 
 /*
-        Undocumented
+        Sets a shader's code.
 	Args: [{ false shader RID} { false code String}], Returns: void
 */
 func (o *visualServer) ShaderSetCode(shader gdnative.Rid, code gdnative.String) {
@@ -7752,7 +7824,7 @@ func (o *visualServer) ShaderSetCode(shader gdnative.Rid, code gdnative.String) 
 }
 
 /*
-        Undocumented
+        Sets a shader's default texture. Overwrites the texture given by name.
 	Args: [{ false shader RID} { false name String} { false texture RID}], Returns: void
 */
 func (o *visualServer) ShaderSetDefaultTextureParam(shader gdnative.Rid, name gdnative.String, texture gdnative.Rid) {
@@ -7776,7 +7848,7 @@ func (o *visualServer) ShaderSetDefaultTextureParam(shader gdnative.Rid, name gd
 }
 
 /*
-        Undocumented
+        Allocates the GPU buffers for this skeleton.
 	Args: [{ false skeleton RID} { false bones int} {False true is_2d_skeleton bool}], Returns: void
 */
 func (o *visualServer) SkeletonAllocate(skeleton gdnative.Rid, bones gdnative.Int, is2DSkeleton gdnative.Bool) {
@@ -7800,7 +7872,7 @@ func (o *visualServer) SkeletonAllocate(skeleton gdnative.Rid, bones gdnative.In
 }
 
 /*
-        Undocumented
+        Returns the [Transform] set for a specific bone of this skeleton.
 	Args: [{ false skeleton RID} { false bone int}], Returns: Transform
 */
 func (o *visualServer) SkeletonBoneGetTransform(skeleton gdnative.Rid, bone gdnative.Int) gdnative.Transform {
@@ -7826,7 +7898,7 @@ func (o *visualServer) SkeletonBoneGetTransform(skeleton gdnative.Rid, bone gdna
 }
 
 /*
-        Undocumented
+        Returns the [Transform2D] set for a specific bone of this skeleton.
 	Args: [{ false skeleton RID} { false bone int}], Returns: Transform2D
 */
 func (o *visualServer) SkeletonBoneGetTransform2D(skeleton gdnative.Rid, bone gdnative.Int) gdnative.Transform2D {
@@ -7852,7 +7924,7 @@ func (o *visualServer) SkeletonBoneGetTransform2D(skeleton gdnative.Rid, bone gd
 }
 
 /*
-        Undocumented
+        Sets the [Transform] for a specific bone of this skeleton.
 	Args: [{ false skeleton RID} { false bone int} { false transform Transform}], Returns: void
 */
 func (o *visualServer) SkeletonBoneSetTransform(skeleton gdnative.Rid, bone gdnative.Int, transform gdnative.Transform) {
@@ -7876,7 +7948,7 @@ func (o *visualServer) SkeletonBoneSetTransform(skeleton gdnative.Rid, bone gdna
 }
 
 /*
-        Undocumented
+        Sets the [Transform2D] for a specific bone of this skeleton.
 	Args: [{ false skeleton RID} { false bone int} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) SkeletonBoneSetTransform2D(skeleton gdnative.Rid, bone gdnative.Int, transform gdnative.Transform2D) {
@@ -7900,7 +7972,7 @@ func (o *visualServer) SkeletonBoneSetTransform2D(skeleton gdnative.Rid, bone gd
 }
 
 /*
-        Undocumented
+        Creates a skeleton and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]skeleton_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) SkeletonCreate() gdnative.Rid {
@@ -7924,7 +7996,7 @@ func (o *visualServer) SkeletonCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Returns the number of bones allocated for this skeleton.
 	Args: [{ false skeleton RID}], Returns: int
 */
 func (o *visualServer) SkeletonGetBoneCount(skeleton gdnative.Rid) gdnative.Int {
@@ -7949,7 +8021,7 @@ func (o *visualServer) SkeletonGetBoneCount(skeleton gdnative.Rid) gdnative.Int 
 }
 
 /*
-        Undocumented
+        Creates an empty sky and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]sky_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) SkyCreate() gdnative.Rid {
@@ -7973,7 +8045,7 @@ func (o *visualServer) SkyCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Sets a sky's texture.
 	Args: [{ false sky RID} { false cube_map RID} { false radiance_size int}], Returns: void
 */
 func (o *visualServer) SkySetTexture(sky gdnative.Rid, cubeMap gdnative.Rid, radianceSize gdnative.Int) {
@@ -7997,7 +8069,7 @@ func (o *visualServer) SkySetTexture(sky gdnative.Rid, cubeMap gdnative.Rid, rad
 }
 
 /*
-        Undocumented
+        Creates a spot light and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID can be used in most [code]light_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method. To place in a scene, attach this spot light to an instance using [method instance_set_base] using the returned RID.
 	Args: [], Returns: RID
 */
 func (o *visualServer) SpotLightCreate() gdnative.Rid {
@@ -8021,7 +8093,7 @@ func (o *visualServer) SpotLightCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Not implemented in Godot 3.x.
 	Args: [], Returns: void
 */
 func (o *visualServer) Sync() {
@@ -8042,7 +8114,7 @@ func (o *visualServer) Sync() {
 }
 
 /*
-        Undocumented
+        Allocates the GPU memory for the texture.
 	Args: [{ false texture RID} { false width int} { false height int} { false depth_3d int} { false format int} { false type int} {7 true flags int}], Returns: void
 */
 func (o *visualServer) TextureAllocate(texture gdnative.Rid, width gdnative.Int, height gdnative.Int, depth3D gdnative.Int, format gdnative.Int, aType gdnative.Int, flags gdnative.Int) {
@@ -8070,7 +8142,7 @@ func (o *visualServer) TextureAllocate(texture gdnative.Rid, width gdnative.Int,
 }
 
 /*
-        Undocumented
+        Binds the texture to a texture slot.
 	Args: [{ false texture RID} { false number int}], Returns: void
 */
 func (o *visualServer) TextureBind(texture gdnative.Rid, number gdnative.Int) {
@@ -8093,7 +8165,7 @@ func (o *visualServer) TextureBind(texture gdnative.Rid, number gdnative.Int) {
 }
 
 /*
-        Undocumented
+        Creates an empty texture and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]texture_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) TextureCreate() gdnative.Rid {
@@ -8117,7 +8189,7 @@ func (o *visualServer) TextureCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Creates a texture, allocates the space for an image, and fills in the image.
 	Args: [{ false image Image} {7 true flags int}], Returns: RID
 */
 func (o *visualServer) TextureCreateFromImage(image ImageImplementer, flags gdnative.Int) gdnative.Rid {
@@ -8143,7 +8215,7 @@ func (o *visualServer) TextureCreateFromImage(image ImageImplementer, flags gdna
 }
 
 /*
-        Undocumented
+        Returns a list of all the textures and their information.
 	Args: [], Returns: Array
 */
 func (o *visualServer) TextureDebugUsage() gdnative.Array {
@@ -8167,7 +8239,7 @@ func (o *visualServer) TextureDebugUsage() gdnative.Array {
 }
 
 /*
-        Undocumented
+        Returns a copy of a texture's image unless it's a CubeMap, in which case it returns the [RID] of the image at one of the cubes sides.
 	Args: [{ false texture RID} {0 true cube_side int}], Returns: Image
 */
 func (o *visualServer) TextureGetData(texture gdnative.Rid, cubeSide gdnative.Int) ImageImplementer {
@@ -8207,7 +8279,7 @@ func (o *visualServer) TextureGetData(texture gdnative.Rid, cubeSide gdnative.In
 }
 
 /*
-        Undocumented
+        Returns the depth of the texture.
 	Args: [{ false texture RID}], Returns: int
 */
 func (o *visualServer) TextureGetDepth(texture gdnative.Rid) gdnative.Int {
@@ -8232,7 +8304,7 @@ func (o *visualServer) TextureGetDepth(texture gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the flags of a texture.
 	Args: [{ false texture RID}], Returns: int
 */
 func (o *visualServer) TextureGetFlags(texture gdnative.Rid) gdnative.Int {
@@ -8257,7 +8329,7 @@ func (o *visualServer) TextureGetFlags(texture gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the format of the texture's image.
 	Args: [{ false texture RID}], Returns: enum.Image::Format
 */
 func (o *visualServer) TextureGetFormat(texture gdnative.Rid) ImageFormat {
@@ -8282,7 +8354,7 @@ func (o *visualServer) TextureGetFormat(texture gdnative.Rid) ImageFormat {
 }
 
 /*
-        Undocumented
+        Returns the texture's height.
 	Args: [{ false texture RID}], Returns: int
 */
 func (o *visualServer) TextureGetHeight(texture gdnative.Rid) gdnative.Int {
@@ -8307,7 +8379,7 @@ func (o *visualServer) TextureGetHeight(texture gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the texture's path.
 	Args: [{ false texture RID}], Returns: String
 */
 func (o *visualServer) TextureGetPath(texture gdnative.Rid) gdnative.String {
@@ -8332,7 +8404,7 @@ func (o *visualServer) TextureGetPath(texture gdnative.Rid) gdnative.String {
 }
 
 /*
-        Undocumented
+        Returns the opengl id of the texture's image.
 	Args: [{ false texture RID}], Returns: int
 */
 func (o *visualServer) TextureGetTexid(texture gdnative.Rid) gdnative.Int {
@@ -8357,7 +8429,7 @@ func (o *visualServer) TextureGetTexid(texture gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the type of the texture, can be any of the [enum TextureType].
 	Args: [{ false texture RID}], Returns: enum.VisualServer::TextureType
 */
 func (o *visualServer) TextureGetType(texture gdnative.Rid) VisualServerTextureType {
@@ -8382,7 +8454,7 @@ func (o *visualServer) TextureGetType(texture gdnative.Rid) VisualServerTextureT
 }
 
 /*
-        Undocumented
+        Returns the texture's width.
 	Args: [{ false texture RID}], Returns: int
 */
 func (o *visualServer) TextureGetWidth(texture gdnative.Rid) gdnative.Int {
@@ -8407,7 +8479,7 @@ func (o *visualServer) TextureGetWidth(texture gdnative.Rid) gdnative.Int {
 }
 
 /*
-        Undocumented
+        Sets the texture's image data. If it's a CubeMap, it sets the image data at a cube side.
 	Args: [{ false texture RID} { false image Image} {0 true layer int}], Returns: void
 */
 func (o *visualServer) TextureSetData(texture gdnative.Rid, image ImageImplementer, layer gdnative.Int) {
@@ -8431,7 +8503,7 @@ func (o *visualServer) TextureSetData(texture gdnative.Rid, image ImageImplement
 }
 
 /*
-        Undocumented
+        Sets a part of the data for a texture. Warning: this function calls the underlying graphics API directly and may corrupt your texture if used improperly.
 	Args: [{ false texture RID} { false image Image} { false src_x int} { false src_y int} { false src_w int} { false src_h int} { false dst_x int} { false dst_y int} { false dst_mip int} {0 true layer int}], Returns: void
 */
 func (o *visualServer) TextureSetDataPartial(texture gdnative.Rid, image ImageImplementer, srcX gdnative.Int, srcY gdnative.Int, srcW gdnative.Int, srcH gdnative.Int, dstX gdnative.Int, dstY gdnative.Int, dstMip gdnative.Int, layer gdnative.Int) {
@@ -8462,7 +8534,7 @@ func (o *visualServer) TextureSetDataPartial(texture gdnative.Rid, image ImageIm
 }
 
 /*
-        Undocumented
+        Sets the texture's flags. See [enum TextureFlags] for options.
 	Args: [{ false texture RID} { false flags int}], Returns: void
 */
 func (o *visualServer) TextureSetFlags(texture gdnative.Rid, flags gdnative.Int) {
@@ -8485,7 +8557,7 @@ func (o *visualServer) TextureSetFlags(texture gdnative.Rid, flags gdnative.Int)
 }
 
 /*
-        Undocumented
+        Sets the texture's path.
 	Args: [{ false texture RID} { false path String}], Returns: void
 */
 func (o *visualServer) TextureSetPath(texture gdnative.Rid, path gdnative.String) {
@@ -8508,7 +8580,7 @@ func (o *visualServer) TextureSetPath(texture gdnative.Rid, path gdnative.String
 }
 
 /*
-        Undocumented
+        If [code]true[/code], sets internal processes to shrink all image data to half the size.
 	Args: [{ false shrink bool}], Returns: void
 */
 func (o *visualServer) TextureSetShrinkAllX2OnSetData(shrink gdnative.Bool) {
@@ -8530,7 +8602,7 @@ func (o *visualServer) TextureSetShrinkAllX2OnSetData(shrink gdnative.Bool) {
 }
 
 /*
-        Undocumented
+        Resizes the texture to the specified dimensions.
 	Args: [{ false texture RID} { false width int} { false height int} { false depth int}], Returns: void
 */
 func (o *visualServer) TextureSetSizeOverride(texture gdnative.Rid, width gdnative.Int, height gdnative.Int, depth gdnative.Int) {
@@ -8555,7 +8627,7 @@ func (o *visualServer) TextureSetSizeOverride(texture gdnative.Rid, width gdnati
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the image will be stored in the texture's images array if overwritten.
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *visualServer) TexturesKeepOriginal(enable gdnative.Bool) {
@@ -8577,7 +8649,7 @@ func (o *visualServer) TexturesKeepOriginal(enable gdnative.Bool) {
 }
 
 /*
-        Undocumented
+        Sets a viewport's camera.
 	Args: [{ false viewport RID} { false camera RID}], Returns: void
 */
 func (o *visualServer) ViewportAttachCamera(viewport gdnative.Rid, camera gdnative.Rid) {
@@ -8600,7 +8672,7 @@ func (o *visualServer) ViewportAttachCamera(viewport gdnative.Rid, camera gdnati
 }
 
 /*
-        Undocumented
+        Sets a viewport's canvas.
 	Args: [{ false viewport RID} { false canvas RID}], Returns: void
 */
 func (o *visualServer) ViewportAttachCanvas(viewport gdnative.Rid, canvas gdnative.Rid) {
@@ -8623,7 +8695,7 @@ func (o *visualServer) ViewportAttachCanvas(viewport gdnative.Rid, canvas gdnati
 }
 
 /*
-        Undocumented
+        Copies viewport to a region of the screen specified by [code]rect[/code]. If [member Viewport.render_direct_to_screen] is [code]true[/code], then viewport does not use a framebuffer and the contents of the viewport are rendered directly to screen. However, note that the root viewport is drawn last, therefore it will draw over the screen. Accordingly, you must set the root viewport to an area that does not cover the area that you have attached this viewport to. For example, you can set the root viewport to not render at all with the following code: [codeblock] func _ready(): get_viewport().set_attach_to_screen_rect(Rect2()) $Viewport.set_attach_to_screen_rect(Rect2(0, 0, 600, 600)) [/codeblock] Using this can result in significant optimization, especially on lower-end devices. However, it comes at the cost of having to manage your viewports manually. For a further optimization see, [method viewport_set_render_direct_to_screen].
 	Args: [{ false viewport RID} {(0, 0, 0, 0) true rect Rect2} {0 true screen int}], Returns: void
 */
 func (o *visualServer) ViewportAttachToScreen(viewport gdnative.Rid, rect gdnative.Rect2, screen gdnative.Int) {
@@ -8647,7 +8719,7 @@ func (o *visualServer) ViewportAttachToScreen(viewport gdnative.Rid, rect gdnati
 }
 
 /*
-        Undocumented
+        Creates an empty viewport and adds it to the VisualServer. It can be accessed with the RID that is returned. This RID will be used in all [code]viewport_*[/code] VisualServer functions. Once finished with your RID, you will want to free the RID using the VisualServer's [method free_rid] static method.
 	Args: [], Returns: RID
 */
 func (o *visualServer) ViewportCreate() gdnative.Rid {
@@ -8671,7 +8743,7 @@ func (o *visualServer) ViewportCreate() gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Detaches the viewport from the screen.
 	Args: [{ false viewport RID}], Returns: void
 */
 func (o *visualServer) ViewportDetach(viewport gdnative.Rid) {
@@ -8693,7 +8765,7 @@ func (o *visualServer) ViewportDetach(viewport gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Returns a viewport's render information. For options, see the [enum ViewportRenderInfo] constants.
 	Args: [{ false viewport RID} { false info int}], Returns: int
 */
 func (o *visualServer) ViewportGetRenderInfo(viewport gdnative.Rid, info gdnative.Int) gdnative.Int {
@@ -8719,7 +8791,7 @@ func (o *visualServer) ViewportGetRenderInfo(viewport gdnative.Rid, info gdnativ
 }
 
 /*
-        Undocumented
+        Returns the viewport's last rendered frame.
 	Args: [{ false viewport RID}], Returns: RID
 */
 func (o *visualServer) ViewportGetTexture(viewport gdnative.Rid) gdnative.Rid {
@@ -8744,7 +8816,7 @@ func (o *visualServer) ViewportGetTexture(viewport gdnative.Rid) gdnative.Rid {
 }
 
 /*
-        Undocumented
+        Detaches a viewport from a canvas and vice versa.
 	Args: [{ false viewport RID} { false canvas RID}], Returns: void
 */
 func (o *visualServer) ViewportRemoveCanvas(viewport gdnative.Rid, canvas gdnative.Rid) {
@@ -8767,7 +8839,7 @@ func (o *visualServer) ViewportRemoveCanvas(viewport gdnative.Rid, canvas gdnati
 }
 
 /*
-        Undocumented
+        If [code]true[/code], sets the viewport active, else sets it inactive.
 	Args: [{ false viewport RID} { false active bool}], Returns: void
 */
 func (o *visualServer) ViewportSetActive(viewport gdnative.Rid, active gdnative.Bool) {
@@ -8790,7 +8862,7 @@ func (o *visualServer) ViewportSetActive(viewport gdnative.Rid, active gdnative.
 }
 
 /*
-        Undocumented
+        Sets the stacking order for a viewport's canvas. [code]layer[/code] is the actual canvas layer, while [code]sublayer[/code] specifies the stacking order of the canvas among those in the same layer.
 	Args: [{ false viewport RID} { false canvas RID} { false layer int} { false sublayer int}], Returns: void
 */
 func (o *visualServer) ViewportSetCanvasStacking(viewport gdnative.Rid, canvas gdnative.Rid, layer gdnative.Int, sublayer gdnative.Int) {
@@ -8815,7 +8887,7 @@ func (o *visualServer) ViewportSetCanvasStacking(viewport gdnative.Rid, canvas g
 }
 
 /*
-        Undocumented
+        Sets the transformation of a viewport's canvas.
 	Args: [{ false viewport RID} { false canvas RID} { false offset Transform2D}], Returns: void
 */
 func (o *visualServer) ViewportSetCanvasTransform(viewport gdnative.Rid, canvas gdnative.Rid, offset gdnative.Transform2D) {
@@ -8839,7 +8911,7 @@ func (o *visualServer) ViewportSetCanvasTransform(viewport gdnative.Rid, canvas 
 }
 
 /*
-        Undocumented
+        Sets the clear mode of a viewport. See [enum ViewportClearMode] for options.
 	Args: [{ false viewport RID} { false clear_mode int}], Returns: void
 */
 func (o *visualServer) ViewportSetClearMode(viewport gdnative.Rid, clearMode gdnative.Int) {
@@ -8862,7 +8934,7 @@ func (o *visualServer) ViewportSetClearMode(viewport gdnative.Rid, clearMode gdn
 }
 
 /*
-        Undocumented
+        Sets the debug draw mode of a viewport. See [enum ViewportDebugDraw] for options.
 	Args: [{ false viewport RID} { false draw int}], Returns: void
 */
 func (o *visualServer) ViewportSetDebugDraw(viewport gdnative.Rid, draw gdnative.Int) {
@@ -8885,7 +8957,7 @@ func (o *visualServer) ViewportSetDebugDraw(viewport gdnative.Rid, draw gdnative
 }
 
 /*
-        Undocumented
+        If [code]true[/code], a viewport's 3D rendering is disabled.
 	Args: [{ false viewport RID} { false disabled bool}], Returns: void
 */
 func (o *visualServer) ViewportSetDisable3D(viewport gdnative.Rid, disabled gdnative.Bool) {
@@ -8908,7 +8980,7 @@ func (o *visualServer) ViewportSetDisable3D(viewport gdnative.Rid, disabled gdna
 }
 
 /*
-        Undocumented
+        If [code]true[/code], rendering of a viewport's environment is disabled.
 	Args: [{ false viewport RID} { false disabled bool}], Returns: void
 */
 func (o *visualServer) ViewportSetDisableEnvironment(viewport gdnative.Rid, disabled gdnative.Bool) {
@@ -8931,7 +9003,7 @@ func (o *visualServer) ViewportSetDisableEnvironment(viewport gdnative.Rid, disa
 }
 
 /*
-        Undocumented
+        Sets the viewport's global transformation matrix.
 	Args: [{ false viewport RID} { false transform Transform2D}], Returns: void
 */
 func (o *visualServer) ViewportSetGlobalCanvasTransform(viewport gdnative.Rid, transform gdnative.Transform2D) {
@@ -8954,7 +9026,7 @@ func (o *visualServer) ViewportSetGlobalCanvasTransform(viewport gdnative.Rid, t
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the viewport renders to hdr.
 	Args: [{ false viewport RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) ViewportSetHdr(viewport gdnative.Rid, enabled gdnative.Bool) {
@@ -8977,7 +9049,7 @@ func (o *visualServer) ViewportSetHdr(viewport gdnative.Rid, enabled gdnative.Bo
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the viewport's canvas is not rendered.
 	Args: [{ false viewport RID} { false hidden bool}], Returns: void
 */
 func (o *visualServer) ViewportSetHideCanvas(viewport gdnative.Rid, hidden gdnative.Bool) {
@@ -9000,7 +9072,7 @@ func (o *visualServer) ViewportSetHideCanvas(viewport gdnative.Rid, hidden gdnat
 }
 
 /*
-        Undocumented
+        Currently unimplemented in Godot 3.x.
 	Args: [{ false viewport RID} { false hidden bool}], Returns: void
 */
 func (o *visualServer) ViewportSetHideScenario(viewport gdnative.Rid, hidden gdnative.Bool) {
@@ -9023,7 +9095,7 @@ func (o *visualServer) ViewportSetHideScenario(viewport gdnative.Rid, hidden gdn
 }
 
 /*
-        Undocumented
+        Sets the anti-aliasing mode. See [enum ViewportMSAA] for options.
 	Args: [{ false viewport RID} { false msaa int}], Returns: void
 */
 func (o *visualServer) ViewportSetMsaa(viewport gdnative.Rid, msaa gdnative.Int) {
@@ -9046,7 +9118,7 @@ func (o *visualServer) ViewportSetMsaa(viewport gdnative.Rid, msaa gdnative.Int)
 }
 
 /*
-        Undocumented
+        Sets the viewport's parent to another viewport.
 	Args: [{ false viewport RID} { false parent_viewport RID}], Returns: void
 */
 func (o *visualServer) ViewportSetParentViewport(viewport gdnative.Rid, parentViewport gdnative.Rid) {
@@ -9069,7 +9141,7 @@ func (o *visualServer) ViewportSetParentViewport(viewport gdnative.Rid, parentVi
 }
 
 /*
-        Undocumented
+        If [code]true[/code], render the contents of the viewport directly to screen. This allows a low-level optimization where you can skip drawing a viewport to the root viewport. While this optimization can result in a significant increase in speed (especially on older devices), it comes at a cost of usability. When this is enabled, you cannot read from the viewport or from the [code]SCREEN_TEXTURE[/code]. You also lose the benefit of certain window settings, such as the various stretch modes. Another consequence to be aware of is that in 2D the rendering happens in window coordinates, so if you have a viewport that is double the size of the window, and you set this, then only the portion that fits within the window will be drawn, no automatic scaling is possible, even if your game scene is significantly larger than the window size.
 	Args: [{ false viewport RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) ViewportSetRenderDirectToScreen(viewport gdnative.Rid, enabled gdnative.Bool) {
@@ -9092,7 +9164,7 @@ func (o *visualServer) ViewportSetRenderDirectToScreen(viewport gdnative.Rid, en
 }
 
 /*
-        Undocumented
+        Sets a viewport's scenario. The scenario contains information about the [enum ScenarioDebugMode], environment information, reflection atlas etc.
 	Args: [{ false viewport RID} { false scenario RID}], Returns: void
 */
 func (o *visualServer) ViewportSetScenario(viewport gdnative.Rid, scenario gdnative.Rid) {
@@ -9115,7 +9187,7 @@ func (o *visualServer) ViewportSetScenario(viewport gdnative.Rid, scenario gdnat
 }
 
 /*
-        Undocumented
+        Sets the shadow atlas quadrant's subdivision.
 	Args: [{ false viewport RID} { false quadrant int} { false subdivision int}], Returns: void
 */
 func (o *visualServer) ViewportSetShadowAtlasQuadrantSubdivision(viewport gdnative.Rid, quadrant gdnative.Int, subdivision gdnative.Int) {
@@ -9139,7 +9211,7 @@ func (o *visualServer) ViewportSetShadowAtlasQuadrantSubdivision(viewport gdnati
 }
 
 /*
-        Undocumented
+        Sets the size of the shadow atlas's images (used for omni and spot lights). The value will be rounded up to the nearest power of 2.
 	Args: [{ false viewport RID} { false size int}], Returns: void
 */
 func (o *visualServer) ViewportSetShadowAtlasSize(viewport gdnative.Rid, size gdnative.Int) {
@@ -9162,7 +9234,7 @@ func (o *visualServer) ViewportSetShadowAtlasSize(viewport gdnative.Rid, size gd
 }
 
 /*
-        Undocumented
+        Sets the viewport's width and height.
 	Args: [{ false viewport RID} { false width int} { false height int}], Returns: void
 */
 func (o *visualServer) ViewportSetSize(viewport gdnative.Rid, width gdnative.Int, height gdnative.Int) {
@@ -9186,7 +9258,7 @@ func (o *visualServer) ViewportSetSize(viewport gdnative.Rid, width gdnative.Int
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the viewport renders its background as transparent.
 	Args: [{ false viewport RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) ViewportSetTransparentBackground(viewport gdnative.Rid, enabled gdnative.Bool) {
@@ -9209,7 +9281,7 @@ func (o *visualServer) ViewportSetTransparentBackground(viewport gdnative.Rid, e
 }
 
 /*
-        Undocumented
+        Sets when the viewport should be updated. See [enum ViewportUpdateMode] constants for options.
 	Args: [{ false viewport RID} { false update_mode int}], Returns: void
 */
 func (o *visualServer) ViewportSetUpdateMode(viewport gdnative.Rid, updateMode gdnative.Int) {
@@ -9232,7 +9304,7 @@ func (o *visualServer) ViewportSetUpdateMode(viewport gdnative.Rid, updateMode g
 }
 
 /*
-        Undocumented
+        Sets the viewport's 2D/3D mode. See [enum ViewportUsage] constants for options.
 	Args: [{ false viewport RID} { false usage int}], Returns: void
 */
 func (o *visualServer) ViewportSetUsage(viewport gdnative.Rid, usage gdnative.Int) {
@@ -9255,7 +9327,7 @@ func (o *visualServer) ViewportSetUsage(viewport gdnative.Rid, usage gdnative.In
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the viewport uses augmented or virtual reality technologies. See [ARVRInterface].
 	Args: [{ false viewport RID} { false use_arvr bool}], Returns: void
 */
 func (o *visualServer) ViewportSetUseArvr(viewport gdnative.Rid, useArvr gdnative.Bool) {
@@ -9278,7 +9350,7 @@ func (o *visualServer) ViewportSetUseArvr(viewport gdnative.Rid, useArvr gdnativ
 }
 
 /*
-        Undocumented
+        If [code]true[/code], the viewport's rendering is flipped vertically.
 	Args: [{ false viewport RID} { false enabled bool}], Returns: void
 */
 func (o *visualServer) ViewportSetVflip(viewport gdnative.Rid, enabled gdnative.Bool) {
@@ -9476,6 +9548,7 @@ type VisualServerImplementer interface {
 	InstancesCullAabb(aabb gdnative.Aabb, scenario gdnative.Rid) gdnative.Array
 	InstancesCullConvex(convex gdnative.Array, scenario gdnative.Rid) gdnative.Array
 	InstancesCullRay(from gdnative.Vector3, to gdnative.Vector3, scenario gdnative.Rid) gdnative.Array
+	IsRenderLoopEnabled() gdnative.Bool
 	LightDirectionalSetBlendSplits(light gdnative.Rid, enable gdnative.Bool)
 	LightDirectionalSetShadowDepthRangeMode(light gdnative.Rid, rangeMode gdnative.Int)
 	LightDirectionalSetShadowMode(light gdnative.Rid, mode gdnative.Int)
@@ -9598,6 +9671,8 @@ type VisualServerImplementer interface {
 	SetBootImage(image ImageImplementer, color gdnative.Color, scale gdnative.Bool, useFilter gdnative.Bool)
 	SetDebugGenerateWireframes(generate gdnative.Bool)
 	SetDefaultClearColor(color gdnative.Color)
+	SetRenderLoopEnabled(enabled gdnative.Bool)
+	SetShaderTimeScale(scale gdnative.Real)
 	ShaderCreate() gdnative.Rid
 	ShaderGetCode(shader gdnative.Rid) gdnative.String
 	ShaderGetDefaultTextureParam(shader gdnative.Rid, name gdnative.String) gdnative.Rid

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -55,6 +55,29 @@ func (o *Shader) GetCode() gdnative.String {
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("Shader", "get_code")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: String
+*/
+func (o *Shader) GetCustomDefines() gdnative.String {
+	//log.Println("Calling Shader.GetCustomDefines()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("Shader", "get_custom_defines")
 
 	// Call the parent method.
 	// String
@@ -173,6 +196,27 @@ func (o *Shader) SetCode(code gdnative.String) {
 }
 
 /*
+        Undocumented
+	Args: [{ false custom_defines String}], Returns: void
+*/
+func (o *Shader) SetCustomDefines(customDefines gdnative.String) {
+	//log.Println("Calling Shader.SetCustomDefines()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromString(customDefines)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("Shader", "set_custom_defines")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
         Sets the default texture to be used with a texture uniform. The default is used if a texture is not set in the [ShaderMaterial]. [b]Note:[/b] [code]param[/code] must match the name of the uniform in the code exactly.
 	Args: [{ false param String} { false texture Texture}], Returns: void
 */
@@ -199,8 +243,10 @@ func (o *Shader) SetDefaultTextureParam(param gdnative.String, texture TextureIm
 type ShaderImplementer interface {
 	ResourceImplementer
 	GetCode() gdnative.String
+	GetCustomDefines() gdnative.String
 	GetDefaultTextureParam(param gdnative.String) TextureImplementer
 	HasParam(name gdnative.String) gdnative.Bool
 	SetCode(code gdnative.String)
+	SetCustomDefines(customDefines gdnative.String)
 	SetDefaultTextureParam(param gdnative.String, texture TextureImplementer)
 }

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ func (o *InputEventKey) GetScancode() gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns the scancode combined with modifier keys such as [code]Shift[/code] or [code]Alt[/code]. See also [InputEventWithModifiers]. To get a human-readable representation of the [InputEventKey] with modifiers, use [code]OS.get_scancode_string(event.get_scancode_with_modifiers())[/code] where [code]event[/code] is the [InputEventKey].
 	Args: [], Returns: int
 */
 func (o *InputEventKey) GetScancodeWithModifiers() gdnative.Int {

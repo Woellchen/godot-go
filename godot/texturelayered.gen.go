@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ func newTextureLayeredFromPointer(ptr gdnative.Pointer) TextureLayered {
 }
 
 /*
-Base class for [Texture2DArray], [Cubemap] and [CubemapArray]. Cannot be used directly, but contains all the functions necessary for accessing the derived resource types. Data is set on a per-layer basis. For [Texture2DArray]s, the layer specifies the array layer.
+Base class for [Texture3D] and [TextureArray]. Cannot be used directly, but contains all the functions necessary for accessing and using [Texture3D] and [TextureArray]. Data is set on a per-layer basis. For [Texture3D]s, the layer sepcifies the depth or Z-index, they can be treated as a bunch of 2D slices. Similarly, for [TextureArray]s, the layer specifies the array layer.
 */
 type TextureLayered struct {
 	Resource
@@ -89,7 +89,7 @@ func (o *TextureLayered) X_SetData(data gdnative.Dictionary) {
 }
 
 /*
-        Undocumented
+        Creates the [Texture3D] or [TextureArray] with specified [code]width[/code], [code]height[/code], and [code]depth[/code]. See [enum Image.Format] for [code]format[/code] options. See [enum Flags] enumerator for [code]flags[/code] options.
 	Args: [{ false width int} { false height int} { false depth int} { false format int} {4 true flags int}], Returns: void
 */
 func (o *TextureLayered) Create(width gdnative.Int, height gdnative.Int, depth gdnative.Int, format gdnative.Int, flags gdnative.Int) {
@@ -114,7 +114,7 @@ func (o *TextureLayered) Create(width gdnative.Int, height gdnative.Int, depth g
 }
 
 /*
-        Undocumented
+        Returns the depth of the texture. Depth is the 3rd dimension (typically Z-axis).
 	Args: [], Returns: int
 */
 func (o *TextureLayered) GetDepth() gdnative.Int {
@@ -267,7 +267,7 @@ func (o *TextureLayered) GetWidth() gdnative.Int {
 }
 
 /*
-        Undocumented
+        Partially sets the data for a specified [code]layer[/code] by overwriting using the data of the specified [code]image[/code]. [code]x_offset[/code] and [code]y_offset[/code] determine where the [Image] is "stamped" over the texture. The [code]image[/code] must fit within the texture.
 	Args: [{ false image Image} { false x_offset int} { false y_offset int} { false layer int} {0 true mipmap int}], Returns: void
 */
 func (o *TextureLayered) SetDataPartial(image ImageImplementer, xOffset gdnative.Int, yOffset gdnative.Int, layer gdnative.Int, mipmap gdnative.Int) {
@@ -313,7 +313,7 @@ func (o *TextureLayered) SetFlags(flags gdnative.Int) {
 }
 
 /*
-        Undocumented
+        Sets the data for the specified layer. Data takes the form of a 2-dimensional [Image] resource.
 	Args: [{ false image Image} { false layer int}], Returns: void
 */
 func (o *TextureLayered) SetLayerData(image ImageImplementer, layer gdnative.Int) {

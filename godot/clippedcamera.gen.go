@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ func newClippedCameraFromPointer(ptr gdnative.Pointer) ClippedCamera {
 }
 
 /*
-Undocumented
+This node extends [Camera] to add collisions with [Area] and/or [PhysicsBody] nodes. The camera cannot move through colliding objects.
 */
 type ClippedCamera struct {
 	Camera
@@ -43,7 +43,7 @@ func (o *ClippedCamera) BaseClass() string {
 }
 
 /*
-        Undocumented
+        Adds a collision exception so the camera does not collide with the specified node.
 	Args: [{ false node Object}], Returns: void
 */
 func (o *ClippedCamera) AddException(node ObjectImplementer) {
@@ -64,7 +64,7 @@ func (o *ClippedCamera) AddException(node ObjectImplementer) {
 }
 
 /*
-        Undocumented
+        Adds a collision exception so the camera does not collide with the specified [RID].
 	Args: [{ false rid RID}], Returns: void
 */
 func (o *ClippedCamera) AddExceptionRid(rid gdnative.Rid) {
@@ -85,7 +85,7 @@ func (o *ClippedCamera) AddExceptionRid(rid gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Removes all collision exceptions.
 	Args: [], Returns: void
 */
 func (o *ClippedCamera) ClearExceptions() {
@@ -105,7 +105,7 @@ func (o *ClippedCamera) ClearExceptions() {
 }
 
 /*
-        Undocumented
+        Returns the distance the camera has been offset due to a collision.
 	Args: [], Returns: float
 */
 func (o *ClippedCamera) GetClipOffset() gdnative.Real {
@@ -151,7 +151,7 @@ func (o *ClippedCamera) GetCollisionMask() gdnative.Int {
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if the specified bit index is on. [b]Note:[/b] Bit indices range from 0-19.
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *ClippedCamera) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
@@ -267,7 +267,7 @@ func (o *ClippedCamera) IsClipToBodiesEnabled() gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Removes a collision exception with the specified node.
 	Args: [{ false node Object}], Returns: void
 */
 func (o *ClippedCamera) RemoveException(node ObjectImplementer) {
@@ -288,7 +288,7 @@ func (o *ClippedCamera) RemoveException(node ObjectImplementer) {
 }
 
 /*
-        Undocumented
+        Removes a collision exception with the specified [RID].
 	Args: [{ false rid RID}], Returns: void
 */
 func (o *ClippedCamera) RemoveExceptionRid(rid gdnative.Rid) {
@@ -372,7 +372,7 @@ func (o *ClippedCamera) SetCollisionMask(mask gdnative.Int) {
 }
 
 /*
-        Undocumented
+        Sets the specified bit index to the [code]value[/code]. [b]Note:[/b] Bit indices range from 0-19.
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *ClippedCamera) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {

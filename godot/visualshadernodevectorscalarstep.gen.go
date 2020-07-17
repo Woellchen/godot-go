@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeVectorScalarStepFromPointer(ptr gdnative.Pointer) Visual
 }
 
 /*
-
- */
+Translates to [code]step(edge, x)[/code] in the shader language. Returns [code]0.0[/code] if [code]x[/code] is smaller than [code]edge[/code] and [code]1.0[/code] otherwise.
+*/
 type VisualShaderNodeVectorScalarStep struct {
 	VisualShaderNode
 	owner gdnative.Object

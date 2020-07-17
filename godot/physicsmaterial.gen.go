@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newPhysicsMaterialFromPointer(ptr gdnative.Pointer) PhysicsMaterial {
 }
 
 /*
-Provides a means of modifying the collision properties of a [PhysicsBody3D].
+Provides a means of modifying the collision properties of a [PhysicsBody].
 */
 type PhysicsMaterial struct {
 	Resource

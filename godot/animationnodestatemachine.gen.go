@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -500,6 +500,28 @@ func (o *AnimationNodeStateMachine) RenameNode(name gdnative.String, newName gdn
 }
 
 /*
+        Replaces the node and keeps its transitions unchanged.
+	Args: [{ false name String} { false node AnimationNode}], Returns: void
+*/
+func (o *AnimationNodeStateMachine) ReplaceNode(name gdnative.String, node AnimationNodeImplementer) {
+	//log.Println("Calling AnimationNodeStateMachine.ReplaceNode()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromString(name)
+	ptrArguments[1] = gdnative.NewPointerFromObject(node.GetBaseObject())
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("AnimationNodeStateMachine", "replace_node")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
         Sets the given node as the graph end point.
 	Args: [{ false name String}], Returns: void
 */
@@ -607,6 +629,7 @@ type AnimationNodeStateMachineImplementer interface {
 	RemoveTransition(from gdnative.String, to gdnative.String)
 	RemoveTransitionByIndex(idx gdnative.Int)
 	RenameNode(name gdnative.String, newName gdnative.String)
+	ReplaceNode(name gdnative.String, node AnimationNodeImplementer)
 	SetEndNode(name gdnative.String)
 	SetGraphOffset(offset gdnative.Vector2)
 	SetNodePosition(name gdnative.String, position gdnative.Vector2)

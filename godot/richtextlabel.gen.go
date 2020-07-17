@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -494,6 +494,29 @@ func (o *RichTextLabel) InstallEffect(effect gdnative.Variant) {
 	retPtr := gdnative.NewEmptyVoid()
 	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
 
+}
+
+/*
+        Undocumented
+	Args: [], Returns: bool
+*/
+func (o *RichTextLabel) IsFitContentHeightEnabled() gdnative.Bool {
+	//log.Println("Calling RichTextLabel.IsFitContentHeightEnabled()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("RichTextLabel", "is_fit_content_height_enabled")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
+	return ret
 }
 
 /*
@@ -1118,6 +1141,27 @@ func (o *RichTextLabel) SetEffects(effects gdnative.Array) {
 
 /*
         Undocumented
+	Args: [{ false enabled bool}], Returns: void
+*/
+func (o *RichTextLabel) SetFitContentHeight(enabled gdnative.Bool) {
+	//log.Println("Calling RichTextLabel.SetFitContentHeight()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromBool(enabled)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("RichTextLabel", "set_fit_content_height")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *RichTextLabel) SetMetaUnderline(enable gdnative.Bool) {
@@ -1369,6 +1413,7 @@ type RichTextLabelImplementer interface {
 	GetVisibleCharacters() gdnative.Int
 	GetVisibleLineCount() gdnative.Int
 	InstallEffect(effect gdnative.Variant)
+	IsFitContentHeightEnabled() gdnative.Bool
 	IsMetaUnderlined() gdnative.Bool
 	IsOverridingSelectedFontColor() gdnative.Bool
 	IsScrollActive() gdnative.Bool
@@ -1397,6 +1442,7 @@ type RichTextLabelImplementer interface {
 	ScrollToLine(line gdnative.Int)
 	SetBbcode(text gdnative.String)
 	SetEffects(effects gdnative.Array)
+	SetFitContentHeight(enabled gdnative.Bool)
 	SetMetaUnderline(enable gdnative.Bool)
 	SetOverrideSelectedFontColor(override gdnative.Bool)
 	SetPercentVisible(percentVisible gdnative.Real)

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeTransformUniformFromPointer(ptr gdnative.Pointer) Visual
 }
 
 /*
-
- */
+Translated to [code]uniform mat4[/code] in the shader language.
+*/
 type VisualShaderNodeTransformUniform struct {
 	VisualShaderNodeUniform
 	owner gdnative.Object

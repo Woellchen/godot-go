@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeOutputFromPointer(ptr gdnative.Pointer) VisualShaderNode
 }
 
 /*
-
- */
+This visual shader node is present in all shader graphs in form of "Output" block with mutliple output value ports.
+*/
 type VisualShaderNodeOutput struct {
 	VisualShaderNode
 	owner gdnative.Object

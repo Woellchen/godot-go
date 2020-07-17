@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newBoneAttachmentFromPointer(ptr gdnative.Pointer) BoneAttachment {
 }
 
 /*
-Undocumented
+This node must be the child of a [Skeleton] node. You can then select a bone for this node to attach to. The BoneAttachment node will copy the transform of the selected bone.
 */
 type BoneAttachment struct {
 	Spatial

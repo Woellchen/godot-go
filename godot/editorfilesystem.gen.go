@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newEditorFileSystemFromPointer(ptr gdnative.Pointer) EditorFileSystem {
 }
 
 /*
-This object holds information of all resources in the filesystem, their types, etc.
+This object holds information of all resources in the filesystem, their types, etc. [b]Note:[/b] This class shouldn't be instantiated directly. Instead, access the singleton using [method EditorInterface.get_resource_filesystem].
 */
 type EditorFileSystem struct {
 	Node

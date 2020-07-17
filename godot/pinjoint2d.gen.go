@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newPinJoint2DFromPointer(ptr gdnative.Pointer) PinJoint2D {
 }
 
 /*
-Pin joint for 2D rigid bodies. It pins two bodies (rigid or static) together.
+Pin Joint for 2D rigid bodies. It pins two bodies (rigid or static) together.
 */
 type PinJoint2D struct {
 	Joint2D

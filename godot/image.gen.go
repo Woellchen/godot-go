@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -107,7 +107,7 @@ func newImageFromPointer(ptr gdnative.Pointer) Image {
 }
 
 /*
-Native image datatype. Contains image data, which can be converted to a [Texture2D], and several functions to interact with it. The maximum width and height for an [Image] are [constant MAX_WIDTH] and [constant MAX_HEIGHT].
+Native image datatype. Contains image data, which can be converted to a [Texture], and several functions to interact with it. The maximum width and height for an [Image] are [constant MAX_WIDTH] and [constant MAX_HEIGHT]. [b]Note:[/b] The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images will fail to import.
 */
 type Image struct {
 	Resource
@@ -390,7 +390,7 @@ func (o *Image) Create(width gdnative.Int, height gdnative.Int, useMipmaps gdnat
 }
 
 /*
-        Creates a new image of given size and format. See [enum Format] constants. Fills the image with the given raw data. If [code]use_mipmaps[/code] is [code]true[/code] then generate mipmaps for this image. See the [method generate_mipmaps].
+        Creates a new image of given size and format. See [enum Format] constants. Fills the image with the given raw data. If [code]use_mipmaps[/code] is [code]true[/code] then loads mipmaps for this image from [code]data[/code]. See [method generate_mipmaps].
 	Args: [{ false width int} { false height int} { false use_mipmaps bool} { false format int} { false data PoolByteArray}], Returns: void
 */
 func (o *Image) CreateFromData(width gdnative.Int, height gdnative.Int, useMipmaps gdnative.Bool, format gdnative.Int, data gdnative.PoolByteArray) {
@@ -701,7 +701,7 @@ func (o *Image) GetMipmapOffset(mipmap gdnative.Int) gdnative.Int {
 }
 
 /*
-        Returns the color of the pixel at [code](x, y)[/code]. This is the same as [method get_pixelv], but with two integer arguments instead of a [Vector2] argument.
+        Returns the color of the pixel at [code](x, y)[/code] if the image is locked. If the image is unlocked, it always returns a [Color] with the value [code](0, 0, 0, 1.0)[/code]. This is the same as [method get_pixelv], but two integer arguments instead of a Vector2 argument.
 	Args: [{ false x int} { false y int}], Returns: Color
 */
 func (o *Image) GetPixel(x gdnative.Int, y gdnative.Int) gdnative.Color {
@@ -726,7 +726,7 @@ func (o *Image) GetPixel(x gdnative.Int, y gdnative.Int) gdnative.Color {
 }
 
 /*
-        Returns the color of the pixel at [code]src[/code]. This is the same as [method get_pixel], but with a [Vector2] argument instead of two integer arguments.
+        Returns the color of the pixel at [code]src[/code] if the image is locked. If the image is unlocked, it always returns a [Color] with the value [code](0, 0, 0, 1.0)[/code]. This is the same as [method get_pixel], but with a Vector2 argument instead of two integer arguments.
 	Args: [{ false src Vector2}], Returns: Color
 */
 func (o *Image) GetPixelv(src gdnative.Vector2) gdnative.Color {
@@ -949,7 +949,7 @@ func (o *Image) IsInvisible() gdnative.Bool {
 }
 
 /*
-        Loads an image from file [code]path[/code].
+        Loads an image from file [code]path[/code]. See [url=https://docs.godotengine.org/en/latest/getting_started/workflow/assets/importing_images.html#supported-image-formats]Supported image formats[/url] for a list of supported image formats and limitations.
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Image) Load(path gdnative.String) gdnative.Error {
@@ -1045,7 +1045,7 @@ func (o *Image) LoadWebpFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error
 }
 
 /*
-        Undocumented
+        Locks the data for reading and writing access. Sends an error to the console if the image is not locked when reading or writing a pixel.
 	Args: [], Returns: void
 */
 func (o *Image) Lock() {
@@ -1235,7 +1235,30 @@ func (o *Image) SavePng(path gdnative.String) gdnative.Error {
 }
 
 /*
-        Sets the [Color] of the pixel at [code](x, y)[/code]. Example: [codeblock] var img = Image.new() img.create(img_width, img_height, false, Image.FORMAT_RGBA8) img.set_pixel(x, y, color) [/codeblock]
+
+	Args: [], Returns: PoolByteArray
+*/
+func (o *Image) SavePngToBuffer() gdnative.PoolByteArray {
+	//log.Println("Calling Image.SavePngToBuffer()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("Image", "save_png_to_buffer")
+
+	// Call the parent method.
+	// PoolByteArray
+	retPtr := gdnative.NewEmptyPoolByteArray()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewPoolByteArrayFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Sets the [Color] of the pixel at [code](x, y)[/code] if the image is locked. Example: [codeblock] var img = Image.new() img.create(img_width, img_height, false, Image.FORMAT_RGBA8) img.lock() img.set_pixel(x, y, color) # Works img.unlock() img.set_pixel(x, y, color) # Does not have an effect [/codeblock]
 	Args: [{ false x int} { false y int} { false color Color}], Returns: void
 */
 func (o *Image) SetPixel(x gdnative.Int, y gdnative.Int, color gdnative.Color) {
@@ -1258,7 +1281,7 @@ func (o *Image) SetPixel(x gdnative.Int, y gdnative.Int, color gdnative.Color) {
 }
 
 /*
-        Sets the [Color] of the pixel at [code](dst.x, dst.y)[/code]. Note that the [code]dst[/code] values must be integers. Example: [codeblock] var img = Image.new() img.create(img_width, img_height, false, Image.FORMAT_RGBA8) img.set_pixelv(Vector2(x, y), color) [/codeblock]
+        Sets the [Color] of the pixel at [code](dst.x, dst.y)[/code] if the image is locked. Note that the [code]dst[/code] values must be integers. Example: [codeblock] var img = Image.new() img.create(img_width, img_height, false, Image.FORMAT_RGBA8) img.lock() img.set_pixelv(Vector2(x, y), color) # Works img.unlock() img.set_pixelv(Vector2(x, y), color) # Does not have an effect [/codeblock]
 	Args: [{ false dst Vector2} { false color Color}], Returns: void
 */
 func (o *Image) SetPixelv(dst gdnative.Vector2, color gdnative.Color) {
@@ -1320,7 +1343,7 @@ func (o *Image) SrgbToLinear() {
 }
 
 /*
-        Undocumented
+        Unlocks the data and prevents changes.
 	Args: [], Returns: void
 */
 func (o *Image) Unlock() {
@@ -1380,6 +1403,7 @@ type ImageImplementer interface {
 	Resize(width gdnative.Int, height gdnative.Int, interpolation gdnative.Int)
 	ResizeToPo2(square gdnative.Bool)
 	RgbeToSrgb() ImageImplementer
+	SavePngToBuffer() gdnative.PoolByteArray
 	SetPixel(x gdnative.Int, y gdnative.Int, color gdnative.Color)
 	SetPixelv(dst gdnative.Vector2, color gdnative.Color)
 	ShrinkX2()

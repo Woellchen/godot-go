@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -77,7 +77,7 @@ func (o *geometry) ensureSingleton() {
 		return
 	}
 	//log.Println("Singleton not found. Fetching from GDNative...")
-	base := gdnative.GetSingleton("_Geometry")
+	base := gdnative.GetSingleton("Geometry")
 	o.SetBaseObject(base)
 	o.initialized = true
 }

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -124,7 +124,7 @@ func (o *os) ensureSingleton() {
 		return
 	}
 	//log.Println("Singleton not found. Fetching from GDNative...")
-	base := gdnative.GetSingleton("_OS")
+	base := gdnative.GetSingleton("OS")
 	o.SetBaseObject(base)
 	o.initialized = true
 }
@@ -554,6 +554,30 @@ func (o *os) GetCurrentScreen() gdnative.Int {
 
 	// If we have a return type, convert it from a pointer into its actual object.
 	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: String
+*/
+func (o *os) GetCurrentTabletDriver() gdnative.String {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.GetCurrentTabletDriver()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "get_current_tablet_driver")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
 	return ret
 }
 
@@ -1427,6 +1451,55 @@ func (o *os) GetSystemTimeSecs() gdnative.Int {
 
 	// If we have a return type, convert it from a pointer into its actual object.
 	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: int
+*/
+func (o *os) GetTabletDriverCount() gdnative.Int {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.GetTabletDriverCount()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "get_tablet_driver_count")
+
+	// Call the parent method.
+	// int
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [{ false idx int}], Returns: String
+*/
+func (o *os) GetTabletDriverName(idx gdnative.Int) gdnative.String {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.GetTabletDriverName()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(idx)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "get_tablet_driver_name")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
 	return ret
 }
 
@@ -2367,6 +2440,126 @@ func (o *os) IsWindowResizable() gdnative.Bool {
 
 /*
         Undocumented
+	Args: [], Returns: int
+*/
+func (o *os) KeyboardGetCurrentLayout() gdnative.Int {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.KeyboardGetCurrentLayout()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "keyboard_get_current_layout")
+
+	// Call the parent method.
+	// int
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [], Returns: int
+*/
+func (o *os) KeyboardGetLayoutCount() gdnative.Int {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.KeyboardGetLayoutCount()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "keyboard_get_layout_count")
+
+	// Call the parent method.
+	// int
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [{ false index int}], Returns: String
+*/
+func (o *os) KeyboardGetLayoutLanguage(index gdnative.Int) gdnative.String {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.KeyboardGetLayoutLanguage()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(index)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "keyboard_get_layout_language")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [{ false index int}], Returns: String
+*/
+func (o *os) KeyboardGetLayoutName(index gdnative.Int) gdnative.String {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.KeyboardGetLayoutName()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(index)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "keyboard_get_layout_name")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Undocumented
+	Args: [{ false index int}], Returns: void
+*/
+func (o *os) KeyboardSetCurrentLayout(index gdnative.Int) {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.KeyboardSetCurrentLayout()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(index)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "keyboard_set_current_layout")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
 	Args: [{ false pid int}], Returns: enum.Error
 */
 func (o *os) Kill(pid gdnative.Int) gdnative.Error {
@@ -2762,6 +2955,28 @@ func (o *os) SetCurrentScreen(screen gdnative.Int) {
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("_OS", "set_current_screen")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Undocumented
+	Args: [{ false name String}], Returns: void
+*/
+func (o *os) SetCurrentTabletDriver(name gdnative.String) {
+	o.ensureSingleton()
+	//log.Println("Calling _OS.SetCurrentTabletDriver()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromString(name)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("_OS", "set_current_tablet_driver")
 
 	// Call the parent method.
 	// void
@@ -3370,6 +3585,7 @@ type OSImplementer interface {
 	GetCmdlineArgs() gdnative.PoolStringArray
 	GetConnectedMidiInputs() gdnative.PoolStringArray
 	GetCurrentScreen() gdnative.Int
+	GetCurrentTabletDriver() gdnative.String
 	GetDate(utc gdnative.Bool) gdnative.Dictionary
 	GetDatetime(utc gdnative.Bool) gdnative.Dictionary
 	GetDatetimeFromUnixTime(unixTimeVal gdnative.Int) gdnative.Dictionary
@@ -3403,6 +3619,8 @@ type OSImplementer interface {
 	GetSystemDir(dir gdnative.Int) gdnative.String
 	GetSystemTimeMsecs() gdnative.Int
 	GetSystemTimeSecs() gdnative.Int
+	GetTabletDriverCount() gdnative.Int
+	GetTabletDriverName(idx gdnative.Int) gdnative.String
 	GetTicksMsec() gdnative.Int
 	GetTicksUsec() gdnative.Int
 	GetTime(utc gdnative.Bool) gdnative.Dictionary
@@ -3442,6 +3660,11 @@ type OSImplementer interface {
 	IsWindowMaximized() gdnative.Bool
 	IsWindowMinimized() gdnative.Bool
 	IsWindowResizable() gdnative.Bool
+	KeyboardGetCurrentLayout() gdnative.Int
+	KeyboardGetLayoutCount() gdnative.Int
+	KeyboardGetLayoutLanguage(index gdnative.Int) gdnative.String
+	KeyboardGetLayoutName(index gdnative.Int) gdnative.String
+	KeyboardSetCurrentLayout(index gdnative.Int)
 	MoveWindowToForeground()
 	NativeVideoIsPlaying() gdnative.Bool
 	NativeVideoPause()
@@ -3458,6 +3681,7 @@ type OSImplementer interface {
 	SetBorderlessWindow(borderless gdnative.Bool)
 	SetClipboard(clipboard gdnative.String)
 	SetCurrentScreen(screen gdnative.Int)
+	SetCurrentTabletDriver(name gdnative.String)
 	SetExitCode(code gdnative.Int)
 	SetIcon(icon ImageImplementer)
 	SetImeActive(active gdnative.Bool)

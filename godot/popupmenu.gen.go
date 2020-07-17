@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -514,6 +514,29 @@ func (o *PopupMenu) GetAllowSearch() gdnative.Bool {
 }
 
 /*
+
+	Args: [], Returns: int
+*/
+func (o *PopupMenu) GetCurrentIndex() gdnative.Int {
+	//log.Println("Calling PopupMenu.GetCurrentIndex()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("PopupMenu", "get_current_index")
+
+	// Call the parent method.
+	// int
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
         Returns the accelerator of the item at index [code]idx[/code]. Accelerators are special combinations of keys that activate the item, no matter which control is focused.
 	Args: [{ false idx int}], Returns: int
 */
@@ -873,7 +896,7 @@ func (o *PopupMenu) IsHideOnStateItemSelection() gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code] if the popup will be hidden when the window loses focus or not.
 	Args: [], Returns: bool
 */
 func (o *PopupMenu) IsHideOnWindowLoseFocus() gdnative.Bool {
@@ -1145,7 +1168,7 @@ func (o *PopupMenu) SetHideOnStateItemSelection(enable gdnative.Bool) {
 }
 
 /*
-        Undocumented
+        Hides the [PopupMenu] when the window loses focus.
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PopupMenu) SetHideOnWindowLoseFocus(enable gdnative.Bool) {
@@ -1298,7 +1321,7 @@ func (o *PopupMenu) SetItemDisabled(idx gdnative.Int, disabled gdnative.Bool) {
 }
 
 /*
-        Replaces the [Texture2D] icon of the specified [code]idx[/code].
+        Replaces the [Texture] icon of the specified [code]idx[/code].
 	Args: [{ false idx int} { false icon Texture}], Returns: void
 */
 func (o *PopupMenu) SetItemIcon(idx gdnative.Int, icon TextureImplementer) {
@@ -1583,6 +1606,7 @@ type PopupMenuImplementer interface {
 	AddSubmenuItem(label gdnative.String, submenu gdnative.String, id gdnative.Int)
 	Clear()
 	GetAllowSearch() gdnative.Bool
+	GetCurrentIndex() gdnative.Int
 	GetItemAccelerator(idx gdnative.Int) gdnative.Int
 	GetItemCount() gdnative.Int
 	GetItemIcon(idx gdnative.Int) TextureImplementer

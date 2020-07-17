@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newVisualShaderNodeCubeMapUniformFromPointer(ptr gdnative.Pointer) VisualSh
 }
 
 /*
-Undocumented
+Translated to [code]uniform samplerCube[/code] in the shader language. The output value can be used as port for [VisualShaderNodeCubeMap].
 */
 type VisualShaderNodeCubeMapUniform struct {
 	VisualShaderNodeTextureUniform

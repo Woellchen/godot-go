@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -1719,7 +1719,7 @@ func (o *TextEdit) RemoveBreakpoints() {
 }
 
 /*
-        Perform a search inside the text. Search flags can be specified in the [enum SearchFlags] enum. Returns an empty [code]PackedInt32Array[/code] if no result was found. Otherwise, the result line and column can be accessed at indices specified in the [enum SearchResult] enum, e.g: [codeblock] var result = search(key, flags, line, column) if result.size() > 0: # Result found. var res_line = result[TextEdit.SEARCH_RESULT_LINE] var res_column = result[TextEdit.SEARCH_RESULT_COLUMN] [/codeblock]
+        Perform a search inside the text. Search flags can be specified in the [enum SearchFlags] enum. Returns an empty [code]PoolIntArray[/code] if no result was found. Otherwise, the result line and column can be accessed at indices specified in the [enum SearchResult] enum, e.g: [codeblock] var result = search(key, flags, line, column) if result.size() > 0: # Result found. var res_line = result[TextEdit.SEARCH_RESULT_LINE] var res_column = result[TextEdit.SEARCH_RESULT_COLUMN] [/codeblock]
 	Args: [{ false key String} { false flags int} { false from_line int} { false from_column int}], Returns: PoolIntArray
 */
 func (o *TextEdit) Search(key gdnative.String, flags gdnative.Int, fromLine gdnative.Int, fromColumn gdnative.Int) gdnative.PoolIntArray {
@@ -1970,6 +1970,28 @@ func (o *TextEdit) SetHighlightCurrentLine(enabled gdnative.Bool) {
 
 	// Get the method bind
 	methodBind := gdnative.NewMethodBind("TextEdit", "set_highlight_current_line")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+        Sets the text for a specific line.
+	Args: [{ false line int} { false new_text String}], Returns: void
+*/
+func (o *TextEdit) SetLine(line gdnative.Int, newText gdnative.String) {
+	//log.Println("Calling TextEdit.SetLine()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromInt(line)
+	ptrArguments[1] = gdnative.NewPointerFromString(newText)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("TextEdit", "set_line")
 
 	// Call the parent method.
 	// void
@@ -2444,6 +2466,7 @@ type TextEditImplementer interface {
 	SetHidingEnabled(enable gdnative.Bool)
 	SetHighlightAllOccurrences(enable gdnative.Bool)
 	SetHighlightCurrentLine(enabled gdnative.Bool)
+	SetLine(line gdnative.Int, newText gdnative.String)
 	SetLineAsHidden(line gdnative.Int, enable gdnative.Bool)
 	SetMinimapWidth(width gdnative.Int)
 	SetOverrideSelectedFontColor(override gdnative.Bool)

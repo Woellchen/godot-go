@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -31,8 +31,8 @@ func newVisualShaderNodeTransformFuncFromPointer(ptr gdnative.Pointer) VisualSha
 }
 
 /*
-
- */
+Computes an inverse or transpose function on the provided [Transform].
+*/
 type VisualShaderNodeTransformFunc struct {
 	VisualShaderNode
 	owner gdnative.Object

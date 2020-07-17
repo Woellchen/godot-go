@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ func newCPUParticles2DFromPointer(ptr gdnative.Pointer) CPUParticles2D {
 }
 
 /*
-CPU-based 2D particle node used to create a variety of particle systems and effects. See also [GPUParticles2D], which provides the same functionality with hardware acceleration, but may not run on older devices.
+CPU-based 2D particle node used to create a variety of particle systems and effects. See also [Particles2D], which provides the same functionality with hardware acceleration, but may not run on older devices.
 */
 type CPUParticles2D struct {
 	Node2D
@@ -81,6 +81,26 @@ type CPUParticles2D struct {
 
 func (o *CPUParticles2D) BaseClass() string {
 	return "CPUParticles2D"
+}
+
+/*
+        Undocumented
+	Args: [], Returns: void
+*/
+func (o *CPUParticles2D) X_TextureChanged() {
+	//log.Println("Calling CPUParticles2D.X_TextureChanged()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("CPUParticles2D", "_texture_changed")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
 }
 
 /*
@@ -104,7 +124,7 @@ func (o *CPUParticles2D) X_UpdateRenderThread() {
 }
 
 /*
-        Sets this node's properties to match a given [GPUParticles2D] node with an assigned [ParticlesMaterial].
+        Sets this node's properties to match a given [Particles2D] node with an assigned [ParticlesMaterial].
 	Args: [{ false particles Node}], Returns: void
 */
 func (o *CPUParticles2D) ConvertFromParticles(particles NodeImplementer) {
@@ -1532,6 +1552,7 @@ func (o *CPUParticles2D) SetUseLocalCoordinates(enable gdnative.Bool) {
 // of the CPUParticles2D class.
 type CPUParticles2DImplementer interface {
 	Node2DImplementer
+	X_TextureChanged()
 	X_UpdateRenderThread()
 	ConvertFromParticles(particles NodeImplementer)
 	GetAmount() gdnative.Int

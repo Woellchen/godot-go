@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -280,31 +280,6 @@ func (o *BitmapFont) CreateFromFnt(path gdnative.String) gdnative.Error {
 }
 
 /*
-        Returns the size of a character, optionally taking kerning into account if the next character is provided.
-	Args: [{ false char int} {0 true next int}], Returns: Vector2
-*/
-func (o *BitmapFont) GetCharSize(char gdnative.Int, next gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling BitmapFont.GetCharSize()")
-
-	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 2, 2)
-	ptrArguments[0] = gdnative.NewPointerFromInt(char)
-	ptrArguments[1] = gdnative.NewPointerFromInt(next)
-
-	// Get the method bind
-	methodBind := gdnative.NewMethodBind("BitmapFont", "get_char_size")
-
-	// Call the parent method.
-	// Vector2
-	retPtr := gdnative.NewEmptyVector2()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
-
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVector2FromPointer(retPtr)
-	return ret
-}
-
-/*
         Undocumented
 	Args: [], Returns: BitmapFont
 */
@@ -525,7 +500,6 @@ type BitmapFontImplementer interface {
 	AddKerningPair(charA gdnative.Int, charB gdnative.Int, kerning gdnative.Int)
 	AddTexture(texture TextureImplementer)
 	Clear()
-	GetCharSize(char gdnative.Int, next gdnative.Int) gdnative.Vector2
 	GetFallback() BitmapFontImplementer
 	GetKerningPair(charA gdnative.Int, charB gdnative.Int) gdnative.Int
 	GetTexture(idx gdnative.Int) TextureImplementer

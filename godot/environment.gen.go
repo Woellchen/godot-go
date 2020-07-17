@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -85,7 +85,7 @@ func newEnvironmentFromPointer(ptr gdnative.Pointer) Environment {
 }
 
 /*
-Resource for environment nodes (like [WorldEnvironment]) that define multiple environment operations (such as background [Sky] or [Color], ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is: - Depth of Field Blur - Glow - Tonemap (Auto Exposure) - Adjustments
+Resource for environment nodes (like [WorldEnvironment]) that define multiple environment operations (such as background [Sky] or [Color], ambient light, fog, depth-of-field...). These parameters affect the final render of the scene. The order of these operations is: - Depth of Field Blur - Glow - Tonemap (Auto Exposure) - Adjustments These effects will only apply when the [Viewport]'s intended usage is "3D" or "3D Without Effects". This can be configured for the root Viewport with [member ProjectSettings.rendering/quality/intended_usage/framebuffer_allocation], or for specific Viewports via the [member Viewport.usage] property.
 */
 type Environment struct {
 	Resource

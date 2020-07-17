@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newIP_UnixFromPointer(ptr gdnative.Pointer) IP_Unix {
 }
 
 /*
-UNIX-specific implementation of IP support functions. See [IP].
+Undocumented
 */
 type IP_Unix struct {
 	ip

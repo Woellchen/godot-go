@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newTextureArrayFromPointer(ptr gdnative.Pointer) TextureArray {
 }
 
 /*
-Undocumented
+[TextureArray]s store an array of images in a single [Texture] primitive. Each layer of the texture array has its own mipmap chain. This makes it is a good alternative to texture atlases.
 */
 type TextureArray struct {
 	TextureLayered

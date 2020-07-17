@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ func newSpatialMaterialFromPointer(ptr gdnative.Pointer) SpatialMaterial {
 }
 
 /*
-Undocumented
+This provides a default material with a wide variety of rendering features and properties without the need to write shader code. See the tutorial below for details.
 */
 type SpatialMaterial struct {
 	Material
@@ -776,7 +776,7 @@ func (o *SpatialMaterial) GetEmissionOperator() SpatialMaterialEmissionOperator 
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code], if the specified [enum Feature] is enabled.
 	Args: [{ false feature int}], Returns: bool
 */
 func (o *SpatialMaterial) GetFeature(feature gdnative.Int) gdnative.Bool {
@@ -800,7 +800,7 @@ func (o *SpatialMaterial) GetFeature(feature gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Undocumented
+        Returns [code]true[/code], if the specified flag is enabled. See [enum Flags] enumerator for options.
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *SpatialMaterial) GetFlag(flag gdnative.Int) gdnative.Bool {
@@ -1261,7 +1261,7 @@ func (o *SpatialMaterial) GetSubsurfaceScatteringStrength() gdnative.Real {
 }
 
 /*
-        Undocumented
+        Returns the [Texture] associated with the specified [enum TextureParam].
 	Args: [{ false param int}], Returns: Texture
 */
 func (o *SpatialMaterial) GetTexture(param gdnative.Int) TextureImplementer {
@@ -2075,7 +2075,7 @@ func (o *SpatialMaterial) SetEmissionOperator(operator gdnative.Int) {
 }
 
 /*
-        Undocumented
+        If [code]true[/code], enables the specified [enum Feature]. Many features that are available in [SpatialMaterial]s need to be enabled before use. This way the cost for using the feature is only incurred when specified. Features can also be enabled by setting the corresponding member to [code]true[/code].
 	Args: [{ false feature int} { false enable bool}], Returns: void
 */
 func (o *SpatialMaterial) SetFeature(feature gdnative.Int, enable gdnative.Bool) {
@@ -2097,7 +2097,7 @@ func (o *SpatialMaterial) SetFeature(feature gdnative.Int, enable gdnative.Bool)
 }
 
 /*
-        Undocumented
+        If [code]true[/code], enables the specified flag. Flags are optional behaviour that can be turned on and off. Only one flag can be enabled at a time with this function, the flag enumerators cannot be bit-masked together to enable or disable multiple flags at once. Flags can also be enabled by setting the corresponding member to [code]true[/code]. See [enum Flags] enumerator for options.
 	Args: [{ false flag int} { false enable bool}], Returns: void
 */
 func (o *SpatialMaterial) SetFlag(flag gdnative.Int, enable gdnative.Bool) {
@@ -2560,7 +2560,7 @@ func (o *SpatialMaterial) SetSubsurfaceScatteringStrength(strength gdnative.Real
 }
 
 /*
-        Undocumented
+        Sets the [Texture] to be used by the specified [enum TextureParam]. This function is called when setting members ending in [code]*_texture[/code].
 	Args: [{ false param int} { false texture Texture}], Returns: void
 */
 func (o *SpatialMaterial) SetTexture(param gdnative.Int, texture TextureImplementer) {

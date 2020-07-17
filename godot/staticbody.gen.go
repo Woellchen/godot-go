@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,7 +23,7 @@ func newStaticBodyFromPointer(ptr gdnative.Pointer) StaticBody {
 }
 
 /*
-Undocumented
+Static body for 3D physics. A static body is a simple body that is not intended to move. In contrast to [RigidBody], they don't consume any CPU resources as long as they don't move. Additionally, a constant linear or angular velocity can be set for the static body, so even if it doesn't move, it affects other bodies as if it was moving (this is useful for simulating conveyor belts or conveyor wheels).
 */
 type StaticBody struct {
 	PhysicsBody

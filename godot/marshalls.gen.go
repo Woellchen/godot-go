@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ var Marshalls = newSingletonMarshalls()
 Provides data transformation and encoding utility functions.
 */
 type marshalls struct {
-	Reference
+	Object
 	owner       gdnative.Object
 	initialized bool
 }
@@ -47,7 +47,7 @@ func (o *marshalls) ensureSingleton() {
 		return
 	}
 	//log.Println("Singleton not found. Fetching from GDNative...")
-	base := gdnative.GetSingleton("_Marshalls")
+	base := gdnative.GetSingleton("Marshalls")
 	o.SetBaseObject(base)
 	o.initialized = true
 }
@@ -211,7 +211,7 @@ func (o *marshalls) VariantToBase64(variant gdnative.Variant, fullObjects gdnati
 // MarshallsImplementer is an interface that implements the methods
 // of the Marshalls class.
 type MarshallsImplementer interface {
-	ReferenceImplementer
+	ObjectImplementer
 	Base64ToRaw(base64Str gdnative.String) gdnative.PoolByteArray
 	Base64ToUtf8(base64Str gdnative.String) gdnative.String
 	Base64ToVariant(base64Str gdnative.String, allowObjects gdnative.Bool) gdnative.Variant

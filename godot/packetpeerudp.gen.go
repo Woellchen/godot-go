@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -55,6 +55,31 @@ func (o *PacketPeerUDP) Close() {
 }
 
 /*
+        Calling this method connects this UDP peer to the given [code]host[/code]/[code]port[/code] pair. UDP is in reality connectionless, so this option only means that incoming packets from different addresses are automatically discarded, and that outgoing packets are always sent to the connected address (future calls to [method set_dest_address] are not allowed). This method does not send any data to the remote peer, to do that, use [method PacketPeer.put_var] or [method PacketPeer.put_packet] as usual. See also [UDPServer]. Note: Connecting to the remote peer does not help to protect from malicious attacks like IP spoofing, etc. Think about using an encryption technique like SSL or DTLS if you feel like your application is transfering sensitive information.
+	Args: [{ false host String} { false port int}], Returns: enum.Error
+*/
+func (o *PacketPeerUDP) ConnectToHost(host gdnative.String, port gdnative.Int) gdnative.Error {
+	//log.Println("Calling PacketPeerUDP.ConnectToHost()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromString(host)
+	ptrArguments[1] = gdnative.NewPointerFromInt(port)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("PacketPeerUDP", "connect_to_host")
+
+	// Call the parent method.
+	// enum.Error
+	retPtr := gdnative.NewEmptyInt()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewIntFromPointer(retPtr)
+	return gdnative.Error(ret)
+}
+
+/*
         Returns the IP of the remote peer that sent the last packet(that was received with [method PacketPeer.get_packet] or [method PacketPeer.get_var]).
 	Args: [], Returns: String
 */
@@ -97,6 +122,29 @@ func (o *PacketPeerUDP) GetPacketPort() gdnative.Int {
 
 	// If we have a return type, convert it from a pointer into its actual object.
 	ret := gdnative.NewIntFromPointer(retPtr)
+	return ret
+}
+
+/*
+        Returns [code]true[/code] if the UDP socket is open and has been connected to a remote address. See [method connect_to_host].
+	Args: [], Returns: bool
+*/
+func (o *PacketPeerUDP) IsConnectedToHost() gdnative.Bool {
+	//log.Println("Calling PacketPeerUDP.IsConnectedToHost()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 0, 0)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("PacketPeerUDP", "is_connected_to_host")
+
+	// Call the parent method.
+	// bool
+	retPtr := gdnative.NewEmptyBool()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewBoolFromPointer(retPtr)
 	return ret
 }
 
@@ -275,6 +323,7 @@ type PacketPeerUDPImplementer interface {
 	Close()
 	GetPacketIp() gdnative.String
 	GetPacketPort() gdnative.Int
+	IsConnectedToHost() gdnative.Bool
 	IsListening() gdnative.Bool
 	SetBroadcastEnabled(enabled gdnative.Bool)
 }

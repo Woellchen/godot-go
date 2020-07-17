@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -23,8 +23,8 @@ func newVisualShaderNodeVectorLenFromPointer(ptr gdnative.Pointer) VisualShaderN
 }
 
 /*
-
- */
+Translated to [code]length(p0)[/code] in the shader language.
+*/
 type VisualShaderNodeVectorLen struct {
 	VisualShaderNode
 	owner gdnative.Object

@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ func newPinJointFromPointer(ptr gdnative.Pointer) PinJoint {
 }
 
 /*
-Undocumented
+Pin joint for 3D rigid bodies. It pins 2 bodies (rigid or static) together.
 */
 type PinJoint struct {
 	Joint
@@ -44,7 +44,7 @@ func (o *PinJoint) BaseClass() string {
 }
 
 /*
-        Undocumented
+        Returns the value of the specified parameter.
 	Args: [{ false param int}], Returns: float
 */
 func (o *PinJoint) GetParam(param gdnative.Int) gdnative.Real {
@@ -68,7 +68,7 @@ func (o *PinJoint) GetParam(param gdnative.Int) gdnative.Real {
 }
 
 /*
-        Undocumented
+        Sets the value of the specified parameter.
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *PinJoint) SetParam(param gdnative.Int, value gdnative.Real) {

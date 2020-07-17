@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ func newBakedLightmapFromPointer(ptr gdnative.Pointer) BakedLightmap {
 }
 
 /*
-Undocumented
+Baked lightmaps are an alternative workflow for adding indirect (or baked) lighting to a scene. Unlike the [GIProbe] approach, baked lightmaps work fine on low-end PCs and mobile devices as they consume almost no resources in run-time. [b]Note:[/b] This node has many known bugs and will be [url=https://godotengine.org/article/godot-40-will-get-new-modernized-lightmapper]rewritten for Godot 4.0[/url]. See [url=https://github.com/godotengine/godot/issues/30929]GitHub issue #30929[/url].
 */
 type BakedLightmap struct {
 	VisualInstance
@@ -63,7 +63,7 @@ func (o *BakedLightmap) BaseClass() string {
 }
 
 /*
-        Undocumented
+        Bakes the lightmaps within the currently edited scene. Returns a [enum BakeError] to signify if the bake was successful, or if unsuccessful, how the bake failed.
 	Args: [{Null true from_node Node} {False true create_visual_debug bool}], Returns: enum.BakedLightmap::BakeError
 */
 func (o *BakedLightmap) Bake(fromNode NodeImplementer, createVisualDebug gdnative.Bool) BakedLightmapBakeError {
@@ -88,7 +88,7 @@ func (o *BakedLightmap) Bake(fromNode NodeImplementer, createVisualDebug gdnativ
 }
 
 /*
-        Undocumented
+        Executes a dry run bake of lightmaps within the currently edited scene.
 	Args: [], Returns: void
 */
 func (o *BakedLightmap) DebugBake() {

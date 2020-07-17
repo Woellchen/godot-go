@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -61,8 +61,8 @@ func newVisualShaderNodeScalarFuncFromPointer(ptr gdnative.Pointer) VisualShader
 }
 
 /*
-Undocumented
-*/
+
+ */
 type VisualShaderNodeScalarFunc struct {
 	VisualShaderNode
 	owner gdnative.Object

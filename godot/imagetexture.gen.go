@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ func newImageTextureFromPointer(ptr gdnative.Pointer) ImageTexture {
 }
 
 /*
-A [Texture2D] based on an [Image]. Can be created from an [Image] with [method create_from_image].
+A [Texture] based on an [Image]. Can be created from an [Image] with [method create_from_image]. [b]Note:[/b] The maximum image size is 16384×16384 pixels due to graphics hardware limitations. Larger images will fail to import.
 */
 type ImageTexture struct {
 	Texture
@@ -65,7 +65,7 @@ func (o *ImageTexture) X_ReloadHook(rid gdnative.Rid) {
 }
 
 /*
-        Undocumented
+        Create a new [ImageTexture] with [code]width[/code] and [code]height[/code]. [code]format[/code] is a value from [enum Image.Format], [code]flags[/code] is any combination of [enum Texture.Flags].
 	Args: [{ false width int} { false height int} { false format int} {7 true flags int}], Returns: void
 */
 func (o *ImageTexture) Create(width gdnative.Int, height gdnative.Int, format gdnative.Int, flags gdnative.Int) {
@@ -89,7 +89,7 @@ func (o *ImageTexture) Create(width gdnative.Int, height gdnative.Int, format gd
 }
 
 /*
-        Create a new [ImageTexture] from an [Image].
+        Create a new [ImageTexture] from an [Image] with [code]flags[/code] from [enum Texture.Flags]. An sRGB to linear color space conversion can take place, according to [enum Image.Format].
 	Args: [{ false image Image} {7 true flags int}], Returns: void
 */
 func (o *ImageTexture) CreateFromImage(image ImageImplementer, flags gdnative.Int) {
@@ -180,7 +180,7 @@ func (o *ImageTexture) GetStorage() ImageTextureStorage {
 }
 
 /*
-        Undocumented
+        Load an [ImageTexture] from a file path.
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *ImageTexture) Load(path gdnative.String) gdnative.Error {
@@ -204,7 +204,7 @@ func (o *ImageTexture) Load(path gdnative.String) gdnative.Error {
 }
 
 /*
-        Undocumented
+        Sets the [Image] of this [ImageTexture].
 	Args: [{ false image Image}], Returns: void
 */
 func (o *ImageTexture) SetData(image ImageImplementer) {

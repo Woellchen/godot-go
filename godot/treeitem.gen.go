@@ -1,7 +1,7 @@
 package godot
 
 import (
-	"github.com/gabstv/godot-go/gdnative"
+	"github.com/Woellchen/godot-go/gdnative"
 )
 
 /*------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ func newTreeItemFromPointer(ptr gdnative.Pointer) TreeItem {
 }
 
 /*
-Control for a single item inside a [Tree]. May have child [TreeItem]s and be styled as well as contain buttons.
+Control for a single item inside a [Tree]. May have child [TreeItem]s and be styled as well as contain buttons. You can remove a [TreeItem] by using [method Object.free].
 */
 type TreeItem struct {
 	Object
@@ -55,7 +55,7 @@ func (o *TreeItem) BaseClass() string {
 }
 
 /*
-        Adds a button with [Texture2D] [code]button[/code] at column [code]column[/code]. The [code]button_idx[/code] index is used to identify the button when calling other methods. If not specified, the next available index is used, which may be retrieved by calling [method get_button_count] immediately after this method. Optionally, the button can be [code]disabled[/code] and have a [code]tooltip[/code].
+        Adds a button with [Texture] [code]button[/code] at column [code]column[/code]. The [code]button_idx[/code] index is used to identify the button when calling other methods. If not specified, the next available index is used, which may be retrieved by calling [method get_button_count] immediately after this method. Optionally, the button can be [code]disabled[/code] and have a [code]tooltip[/code].
 	Args: [{ false column int} { false button Texture} {-1 true button_idx int} {False true disabled bool} { true tooltip String}], Returns: void
 */
 func (o *TreeItem) AddButton(column gdnative.Int, button TextureImplementer, buttonIdx gdnative.Int, disabled gdnative.Bool, tooltip gdnative.String) {
@@ -193,7 +193,7 @@ func (o *TreeItem) EraseButton(column gdnative.Int, buttonIdx gdnative.Int) {
 }
 
 /*
-        Returns the [Texture2D] of the button at index [code]button_idx[/code] in column [code]column[/code].
+        Returns the [Texture] of the button at index [code]button_idx[/code] in column [code]column[/code].
 	Args: [{ false column int} { false button_idx int}], Returns: Texture
 */
 func (o *TreeItem) GetButton(column gdnative.Int, buttonIdx gdnative.Int) TextureImplementer {
@@ -437,7 +437,7 @@ func (o *TreeItem) GetExpandRight(column gdnative.Int) gdnative.Bool {
 }
 
 /*
-        Returns the given column's icon [Texture2D]. Error if no icon is set.
+        Returns the given column's icon [Texture]. Error if no icon is set.
 	Args: [{ false column int}], Returns: Texture
 */
 func (o *TreeItem) GetIcon(column gdnative.Int) TextureImplementer {
@@ -523,7 +523,7 @@ func (o *TreeItem) GetIconModulate(column gdnative.Int) gdnative.Color {
 }
 
 /*
-        Returns the icon [Texture2D] region as [Rect2].
+        Returns the icon [Texture] region as [Rect2].
 	Args: [{ false column int}], Returns: Rect2
 */
 func (o *TreeItem) GetIconRegion(column gdnative.Int) gdnative.Rect2 {
@@ -802,6 +802,30 @@ func (o *TreeItem) GetRangeConfig(column gdnative.Int) gdnative.Dictionary {
 
 	// If we have a return type, convert it from a pointer into its actual object.
 	ret := gdnative.NewDictionaryFromPointer(retPtr)
+	return ret
+}
+
+/*
+
+	Args: [{ false column int}], Returns: String
+*/
+func (o *TreeItem) GetSuffix(column gdnative.Int) gdnative.String {
+	//log.Println("Calling TreeItem.GetSuffix()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 1, 1)
+	ptrArguments[0] = gdnative.NewPointerFromInt(column)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("TreeItem", "get_suffix")
+
+	// Call the parent method.
+	// String
+	retPtr := gdnative.NewEmptyString()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+	// If we have a return type, convert it from a pointer into its actual object.
+	ret := gdnative.NewStringFromPointer(retPtr)
 	return ret
 }
 
@@ -1109,7 +1133,7 @@ func (o *TreeItem) MoveToTop() {
 }
 
 /*
-        Removes the given child TreeItem.
+        Removes the given child [TreeItem] and all its children from the [Tree]. Note that it doesn't free the item from memory, so it can be reused later. To completely remove a [TreeItem] use [method Object.free].
 	Args: [{ false child Object}], Returns: void
 */
 func (o *TreeItem) RemoveChild(child ObjectImplementer) {
@@ -1151,7 +1175,7 @@ func (o *TreeItem) Select(column gdnative.Int) {
 }
 
 /*
-        Sets the given column's button [Texture2D] at index [code]button_idx[/code] to [code]button[/code].
+        Sets the given column's button [Texture] at index [code]button_idx[/code] to [code]button[/code].
 	Args: [{ false column int} { false button_idx int} { false button Texture}], Returns: void
 */
 func (o *TreeItem) SetButton(column gdnative.Int, buttonIdx gdnative.Int, button TextureImplementer) {
@@ -1438,7 +1462,7 @@ func (o *TreeItem) SetExpandRight(column gdnative.Int, enable gdnative.Bool) {
 }
 
 /*
-        Sets the given column's icon [Texture2D].
+        Sets the given column's icon [Texture].
 	Args: [{ false column int} { false texture Texture}], Returns: void
 */
 func (o *TreeItem) SetIcon(column gdnative.Int, texture TextureImplementer) {
@@ -1620,6 +1644,28 @@ func (o *TreeItem) SetSelectable(column gdnative.Int, selectable gdnative.Bool) 
 
 	Args: [{ false column int} { false text String}], Returns: void
 */
+func (o *TreeItem) SetSuffix(column gdnative.Int, text gdnative.String) {
+	//log.Println("Calling TreeItem.SetSuffix()")
+
+	// Build out the method's arguments
+	ptrArguments := make([]gdnative.Pointer, 2, 2)
+	ptrArguments[0] = gdnative.NewPointerFromInt(column)
+	ptrArguments[1] = gdnative.NewPointerFromString(text)
+
+	// Get the method bind
+	methodBind := gdnative.NewMethodBind("TreeItem", "set_suffix")
+
+	// Call the parent method.
+	// void
+	retPtr := gdnative.NewEmptyVoid()
+	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+
+}
+
+/*
+
+	Args: [{ false column int} { false text String}], Returns: void
+*/
 func (o *TreeItem) SetText(column gdnative.Int, text gdnative.String) {
 	//log.Println("Calling TreeItem.SetText()")
 
@@ -1712,6 +1758,7 @@ type TreeItemImplementer interface {
 	GetPrevVisible(wrap gdnative.Bool) TreeItemImplementer
 	GetRange(column gdnative.Int) gdnative.Real
 	GetRangeConfig(column gdnative.Int) gdnative.Dictionary
+	GetSuffix(column gdnative.Int) gdnative.String
 	GetText(column gdnative.Int) gdnative.String
 	GetTooltip(column gdnative.Int) gdnative.String
 	IsButtonDisabled(column gdnative.Int, buttonIdx gdnative.Int) gdnative.Bool
@@ -1747,6 +1794,7 @@ type TreeItemImplementer interface {
 	SetRange(column gdnative.Int, value gdnative.Real)
 	SetRangeConfig(column gdnative.Int, min gdnative.Real, max gdnative.Real, step gdnative.Real, expr gdnative.Bool)
 	SetSelectable(column gdnative.Int, selectable gdnative.Bool)
+	SetSuffix(column gdnative.Int, text gdnative.String)
 	SetText(column gdnative.Int, text gdnative.String)
 	SetTextAlign(column gdnative.Int, textAlign gdnative.Int)
 	SetTooltip(column gdnative.Int, tooltip gdnative.String)
