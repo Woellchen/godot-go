@@ -2,6 +2,8 @@
 package godot
 
 import (
+    "reflect"
+
 	"github.com/Woellchen/godot-go/gdnative"
 )
 
@@ -97,25 +99,31 @@ func (o *{{ $view.SetClassName $API.Name $API.Singleton }}) GetBaseObject() gdna
         {{ $view.MethodDoc $API.Name $method.Name }}
 	Args: {{ $method.Arguments }}, Returns: {{ $method.ReturnType }}
         */
-	func (o *{{ $view.SetClassName $API.Name $API.Singleton }}) {{ $view.GoMethodName $method.Name }}({{ range $k, $arg := $method.Arguments }}{{ $view.GoArgName $arg.Name }} {{ $view.GoValue $arg.Type }}{{ if $view.IsGodotClass $arg.Type }}Implementer{{ end }},{{ end }}{{ if $method.HasVarargs }} args ...gdnative.Variant{{ end }}) {{ if $method.ReturnType }}{{ $view.GoValue $method.ReturnType }}{{ if ($view.IsGodotClass $method.ReturnType) }}Implementer{{ end }}{{ end }} {
+	func (o *{{ $view.SetClassName $API.Name $API.Singleton }}) {{ $view.GoMethodName $method.Name }}({{ range $k, $arg := $method.Arguments }}{{ $view.GoArgName $arg.Name }} {{ $view.GoValue $arg.Type }}{{ if $view.IsGodotClass $arg.Type }}Implementer{{ end }},{{ end }}{{ if $method.HasVarargs }} args ...gdnative.Variant{{ end }}) {{ if $method.ReturnType }}{{ if and ($method.HasVarargs) (ne $method.ReturnType "void") }}(gdnative.Variant, gdnative.VariantCallError){{ else if $method.HasVarargs }}gdnative.VariantCallError{{ else }}{{ $view.GoValue $method.ReturnType }}{{ if ($view.IsGodotClass $method.ReturnType) }}Implementer{{ end }}{{ end }}{{ end }} {
 		{{ if $API.Singleton -}}
 			o.ensureSingleton()
 		{{ end -}}
-                //log.Println("Calling {{ $API.Name }}.{{ $view.GoMethodName $method.Name }}()")
+                // log.Println("Calling {{ $API.Name }}.{{ $view.GoMethodName $method.Name }}()")
 
                 // Build out the method's arguments
-                ptrArguments := make([]gdnative.Pointer, {{ len $method.Arguments }}{{ if $method.HasVarargs }} + len(args){{ end }}, {{ len $method.Arguments }}{{ if $method.HasVarargs }} + len(args) {{ end }})
+                {{ if $method.HasVarargs -}}
+                arguments := make([]gdnative.Variant, {{ len $method.Arguments }} + len(args), {{ len $method.Arguments }} + len(args))
+                {{ else -}}
+                ptrArguments := make([]gdnative.Pointer, {{ len $method.Arguments }}, {{ len $method.Arguments }})
+                {{ end -}}
                 {{ range $k, $arg := $method.Arguments -}}
-	    	    {{ if ($view.IsGodotClass $arg.Type) -}}
+                {{ if $method.HasVarargs -}}
+                    arguments[{{ $k }}] = GoTypeToVariant(reflect.ValueOf({{ $view.GoArgName $arg.Name }}))
+	    	    {{ else if ($view.IsGodotClass $arg.Type) -}}
 	    	        ptrArguments[{{ $k }}] = gdnative.NewPointerFromObject({{ $view.GoArgName $arg.Name }}.GetBaseObject())
 	    	    {{ else -}}
 	    	        ptrArguments[{{ $k }}] = gdnative.NewPointerFrom{{ $view.GoName $arg.Type }}({{ $view.GoArgName $arg.Name }})
 	            {{ end -}}
                 {{ end }}
 
-                {{ if $method.HasVarargs }}
+                {{ if $method.HasVarargs -}}
                     for i, arg := range args {
-                        ptrArguments[i+{{ len $method.Arguments }}] = gdnative.NewPointerFromVariant(arg)
+                        arguments[i+{{ len $method.Arguments }}] = arg
                     }
                 {{ end }}
 
@@ -124,10 +132,16 @@ func (o *{{ $view.SetClassName $API.Name $API.Singleton }}) GetBaseObject() gdna
 
                 // Call the parent method.
 	        // {{ $method.ReturnType }}
-	        retPtr := {{ $view.GoEmptyReturnType $method.ReturnType }}()
-		gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	        {{ if $method.HasVarargs -}}
+	            {{ if ne $method.ReturnType "void" }}ret{{ else }}_{{ end }}, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
+	        {{ else -}}
+                retPtr := {{ $view.GoEmptyReturnType $method.ReturnType }}()
+                gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+		    {{ end }}
 
-               	{{ if $method.ReturnType }}
+                {{ if $method.HasVarargs -}}
+                    return {{ if ne $method.ReturnType "void" }}ret,{{ end }} err
+               	{{ else if $method.ReturnType -}}
 	    	    {{ $returnType := $view.GoValue $method.ReturnType }}{{ if ne $returnType "" }}
 	    		// If we have a return type, convert it from a pointer into its actual object.
 			{{ if $view.IsGodotClass $method.ReturnType -}}
@@ -175,7 +189,7 @@ type {{ $view.GoClassName $API.Name }}Implementer interface {
 	    {{ range $j, $method := $API.Methods -}}
 		{{/* Skip ENUM functions for now*/}}{{ if not ($view.IsEnum $method.ReturnType) -}}
 			{{ if (not ($view.HasParentMethod $API.BaseClass ($view.GoMethodName $method.Name))) -}}
-				{{ $view.GoMethodName $method.Name }}({{ range $k, $arg := $method.Arguments }}{{ $view.GoArgName $arg.Name }} {{ $view.GoValue $arg.Type }}{{ if $view.IsGodotClass $arg.Type }}Implementer{{ end }},{{ end }}{{ if $method.HasVarargs }} args ...gdnative.Variant{{ end }}) {{ if $method.ReturnType }}{{ $view.GoValue $method.ReturnType }}{{ if ($view.IsGodotClass $method.ReturnType) }}Implementer{{ end }}{{ end }}
+				{{ $view.GoMethodName $method.Name }}({{ range $k, $arg := $method.Arguments }}{{ $view.GoArgName $arg.Name }} {{ $view.GoValue $arg.Type }}{{ if $view.IsGodotClass $arg.Type }}Implementer{{ end }},{{ end }}{{ if $method.HasVarargs }} args ...gdnative.Variant{{ end }}) {{ if $method.ReturnType }}{{ if and ($method.HasVarargs) (ne $method.ReturnType "void") }}(gdnative.Variant, gdnative.VariantCallError){{ else if $method.HasVarargs }}gdnative.VariantCallError{{ else }}{{ $view.GoValue $method.ReturnType }}{{ if ($view.IsGodotClass $method.ReturnType) }}Implementer{{ end }}{{ end }}{{ end }}
 			{{ end -}}
 	        {{ end -}}
 	    {{ end -}}

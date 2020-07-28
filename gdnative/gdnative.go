@@ -216,7 +216,12 @@ func MethodBindCall(methodBind MethodBind, instance Object, args []Variant) (Var
 	}
 
 	variant := Variant{base: (*C.godot_variant)(&returns)}
-	err := VariantCallError{base: (*C.godot_variant_call_error)(&cErr)}
+	err := VariantCallError{
+		base: (*C.godot_variant_call_error)(&cErr),
+		Error: VariantCallErrorError(cErr.error),
+		Argument: Int(cErr.argument),
+		Expected: VariantType(cErr.expected),
+	}
 
 	return variant, err
 }
