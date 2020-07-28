@@ -755,6 +755,8 @@ func VariantTypeToConstant(t reflect.Type) gdnative.VariantType {
 		return gdnative.VariantTypeBool
 	case "gdnative.Int":
 		return gdnative.VariantTypeInt
+	case "gdnative.Int64T":
+		return gdnative.VariantTypeInt
 	case "gdnative.Real":
 		return gdnative.VariantTypeReal
 	case "gdnative.String":
