@@ -172,6 +172,55 @@ func MethodBindPtrCall(methodBind MethodBind, instance Object, args []Pointer, r
 	return returns
 }
 
+// MethodBindCall will call the given method on the given Godot Object. Its return
+// value is a godot variant and a call error. This method is higher level than
+// MethodBindPtrCall so it has some overhead. Though if you want to call vararg
+// methods like emit_signal, this method must be used because those do not support
+// ptr calls.
+func MethodBindCall(methodBind MethodBind, instance Object, args []Variant) (Variant, VariantCallError) {
+	GDNative.checkInit()
+	if instance.getBase() == nil {
+		panic("Godot object pointer was nil when calling MethodBindCall")
+	}
+
+	// Build out our C arguments array
+	cArg := (&VariantArray{array: args}).getBase()
+
+	// Method call error
+	var cErr C.godot_variant_call_error
+
+	// Print all of the shit we're passing
+	for i, arg := range args {
+		if debug {
+			log.Println("arg", i, ": ", arg.getBase())
+		}
+	}
+	if debug {
+		log.Println("args: ", cArg)
+		log.Println("object: ", unsafe.Pointer(instance.getBase()))
+		log.Println("methodbind: ", unsafe.Pointer(methodBind.getBase()))
+		log.Println("err: ", cErr)
+	}
+
+	// Call the C method
+	returns := C.go_godot_method_bind_call(
+		GDNative.api,
+		methodBind.getBase(),
+		unsafe.Pointer(instance.getBase()),
+		cArg,
+		C.int(len(args)),
+		&cErr,
+	)
+	if debug {
+		log.Println("Finished calling method.")
+	}
+
+	variant := Variant{base: (*C.godot_variant)(&returns)}
+	err := VariantCallError{base: (*C.godot_variant_call_error)(&cErr)}
+
+	return variant, err
+}
+
 // Pointer is a pointer to arbitrary underlying data. This is primarily used
 // in conjunction with MethodBindPtrCall.
 type Pointer struct {
