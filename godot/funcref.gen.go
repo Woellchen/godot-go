@@ -38,14 +38,14 @@ func (o *FuncRef) BaseClass() string {
         Calls the referenced function previously set by [method set_function] or [method @GDScript.funcref].
 	Args: [], Returns: Variant
 */
-func (o *FuncRef) CallFunc(args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling FuncRef.CallFunc()")
+func (o *FuncRef) CallFunc(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling FuncRef.CallFunc()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 0+len(args), 0+len(args))
+	arguments := make([]gdnative.Variant, 0+len(args), 0+len(args))
 
 	for i, arg := range args {
-		ptrArguments[i+0] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+0] = arg
 	}
 
 	// Get the method bind
@@ -53,12 +53,9 @@ func (o *FuncRef) CallFunc(args ...gdnative.Variant) gdnative.Variant {
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -66,7 +63,7 @@ func (o *FuncRef) CallFunc(args ...gdnative.Variant) gdnative.Variant {
 	Args: [{ false arg_array Array}], Returns: Variant
 */
 func (o *FuncRef) CallFuncv(argArray gdnative.Array) gdnative.Variant {
-	//log.Println("Calling FuncRef.CallFuncv()")
+	// log.Println("Calling FuncRef.CallFuncv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -90,7 +87,7 @@ func (o *FuncRef) CallFuncv(argArray gdnative.Array) gdnative.Variant {
 	Args: [], Returns: bool
 */
 func (o *FuncRef) IsValid() gdnative.Bool {
-	//log.Println("Calling FuncRef.IsValid()")
+	// log.Println("Calling FuncRef.IsValid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -113,7 +110,7 @@ func (o *FuncRef) IsValid() gdnative.Bool {
 	Args: [{ false name String}], Returns: void
 */
 func (o *FuncRef) SetFunction(name gdnative.String) {
-	//log.Println("Calling FuncRef.SetFunction()")
+	// log.Println("Calling FuncRef.SetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -134,7 +131,7 @@ func (o *FuncRef) SetFunction(name gdnative.String) {
 	Args: [{ false instance Object}], Returns: void
 */
 func (o *FuncRef) SetInstance(instance ObjectImplementer) {
-	//log.Println("Calling FuncRef.SetInstance()")
+	// log.Println("Calling FuncRef.SetInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -154,7 +151,7 @@ func (o *FuncRef) SetInstance(instance ObjectImplementer) {
 // of the FuncRef class.
 type FuncRefImplementer interface {
 	ReferenceImplementer
-	CallFunc(args ...gdnative.Variant) gdnative.Variant
+	CallFunc(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	CallFuncv(argArray gdnative.Array) gdnative.Variant
 	IsValid() gdnative.Bool
 	SetFunction(name gdnative.String)

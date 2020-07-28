@@ -39,7 +39,7 @@ func (o *LightOccluder2D) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *LightOccluder2D) X_PolyChanged() {
-	//log.Println("Calling LightOccluder2D.X_PolyChanged()")
+	// log.Println("Calling LightOccluder2D.X_PolyChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *LightOccluder2D) X_PolyChanged() {
 	Args: [], Returns: int
 */
 func (o *LightOccluder2D) GetOccluderLightMask() gdnative.Int {
-	//log.Println("Calling LightOccluder2D.GetOccluderLightMask()")
+	// log.Println("Calling LightOccluder2D.GetOccluderLightMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *LightOccluder2D) GetOccluderLightMask() gdnative.Int {
 	Args: [], Returns: OccluderPolygon2D
 */
 func (o *LightOccluder2D) GetOccluderPolygon() OccluderPolygon2DImplementer {
-	//log.Println("Calling LightOccluder2D.GetOccluderPolygon()")
+	// log.Println("Calling LightOccluder2D.GetOccluderPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *LightOccluder2D) GetOccluderPolygon() OccluderPolygon2DImplementer {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *LightOccluder2D) SetOccluderLightMask(mask gdnative.Int) {
-	//log.Println("Calling LightOccluder2D.SetOccluderLightMask()")
+	// log.Println("Calling LightOccluder2D.SetOccluderLightMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -140,7 +140,7 @@ func (o *LightOccluder2D) SetOccluderLightMask(mask gdnative.Int) {
 	Args: [{ false polygon OccluderPolygon2D}], Returns: void
 */
 func (o *LightOccluder2D) SetOccluderPolygon(polygon OccluderPolygon2DImplementer) {
-	//log.Println("Calling LightOccluder2D.SetOccluderPolygon()")
+	// log.Println("Calling LightOccluder2D.SetOccluderPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

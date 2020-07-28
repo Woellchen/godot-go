@@ -39,7 +39,7 @@ func (o *KinematicCollision) BaseClass() string {
 	Args: [], Returns: Object
 */
 func (o *KinematicCollision) GetCollider() ObjectImplementer {
-	//log.Println("Calling KinematicCollision.GetCollider()")
+	// log.Println("Calling KinematicCollision.GetCollider()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *KinematicCollision) GetCollider() ObjectImplementer {
 	Args: [], Returns: int
 */
 func (o *KinematicCollision) GetColliderId() gdnative.Int {
-	//log.Println("Calling KinematicCollision.GetColliderId()")
+	// log.Println("Calling KinematicCollision.GetColliderId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *KinematicCollision) GetColliderId() gdnative.Int {
 	Args: [], Returns: Variant
 */
 func (o *KinematicCollision) GetColliderMetadata() gdnative.Variant {
-	//log.Println("Calling KinematicCollision.GetColliderMetadata()")
+	// log.Println("Calling KinematicCollision.GetColliderMetadata()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *KinematicCollision) GetColliderMetadata() gdnative.Variant {
 	Args: [], Returns: Object
 */
 func (o *KinematicCollision) GetColliderShape() ObjectImplementer {
-	//log.Println("Calling KinematicCollision.GetColliderShape()")
+	// log.Println("Calling KinematicCollision.GetColliderShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -159,7 +159,7 @@ func (o *KinematicCollision) GetColliderShape() ObjectImplementer {
 	Args: [], Returns: int
 */
 func (o *KinematicCollision) GetColliderShapeIndex() gdnative.Int {
-	//log.Println("Calling KinematicCollision.GetColliderShapeIndex()")
+	// log.Println("Calling KinematicCollision.GetColliderShapeIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -182,7 +182,7 @@ func (o *KinematicCollision) GetColliderShapeIndex() gdnative.Int {
 	Args: [], Returns: Vector3
 */
 func (o *KinematicCollision) GetColliderVelocity() gdnative.Vector3 {
-	//log.Println("Calling KinematicCollision.GetColliderVelocity()")
+	// log.Println("Calling KinematicCollision.GetColliderVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -205,7 +205,7 @@ func (o *KinematicCollision) GetColliderVelocity() gdnative.Vector3 {
 	Args: [], Returns: Object
 */
 func (o *KinematicCollision) GetLocalShape() ObjectImplementer {
-	//log.Println("Calling KinematicCollision.GetLocalShape()")
+	// log.Println("Calling KinematicCollision.GetLocalShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -242,7 +242,7 @@ func (o *KinematicCollision) GetLocalShape() ObjectImplementer {
 	Args: [], Returns: Vector3
 */
 func (o *KinematicCollision) GetNormal() gdnative.Vector3 {
-	//log.Println("Calling KinematicCollision.GetNormal()")
+	// log.Println("Calling KinematicCollision.GetNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -265,7 +265,7 @@ func (o *KinematicCollision) GetNormal() gdnative.Vector3 {
 	Args: [], Returns: Vector3
 */
 func (o *KinematicCollision) GetPosition() gdnative.Vector3 {
-	//log.Println("Calling KinematicCollision.GetPosition()")
+	// log.Println("Calling KinematicCollision.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -288,7 +288,7 @@ func (o *KinematicCollision) GetPosition() gdnative.Vector3 {
 	Args: [], Returns: Vector3
 */
 func (o *KinematicCollision) GetRemainder() gdnative.Vector3 {
-	//log.Println("Calling KinematicCollision.GetRemainder()")
+	// log.Println("Calling KinematicCollision.GetRemainder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -311,7 +311,7 @@ func (o *KinematicCollision) GetRemainder() gdnative.Vector3 {
 	Args: [], Returns: Vector3
 */
 func (o *KinematicCollision) GetTravel() gdnative.Vector3 {
-	//log.Println("Calling KinematicCollision.GetTravel()")
+	// log.Println("Calling KinematicCollision.GetTravel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

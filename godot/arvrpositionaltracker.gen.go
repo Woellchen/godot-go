@@ -48,7 +48,7 @@ func (o *ARVRPositionalTracker) BaseClass() string {
 	Args: [{ false joy_id int}], Returns: void
 */
 func (o *ARVRPositionalTracker) X_SetJoyId(joyId gdnative.Int) {
-	//log.Println("Calling ARVRPositionalTracker.X_SetJoyId()")
+	// log.Println("Calling ARVRPositionalTracker.X_SetJoyId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -69,7 +69,7 @@ func (o *ARVRPositionalTracker) X_SetJoyId(joyId gdnative.Int) {
 	Args: [{ false mesh Mesh}], Returns: void
 */
 func (o *ARVRPositionalTracker) X_SetMesh(mesh MeshImplementer) {
-	//log.Println("Calling ARVRPositionalTracker.X_SetMesh()")
+	// log.Println("Calling ARVRPositionalTracker.X_SetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -90,7 +90,7 @@ func (o *ARVRPositionalTracker) X_SetMesh(mesh MeshImplementer) {
 	Args: [{ false name String}], Returns: void
 */
 func (o *ARVRPositionalTracker) X_SetName(name gdnative.String) {
-	//log.Println("Calling ARVRPositionalTracker.X_SetName()")
+	// log.Println("Calling ARVRPositionalTracker.X_SetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -111,7 +111,7 @@ func (o *ARVRPositionalTracker) X_SetName(name gdnative.String) {
 	Args: [{ false orientation Basis}], Returns: void
 */
 func (o *ARVRPositionalTracker) X_SetOrientation(orientation gdnative.Basis) {
-	//log.Println("Calling ARVRPositionalTracker.X_SetOrientation()")
+	// log.Println("Calling ARVRPositionalTracker.X_SetOrientation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -132,7 +132,7 @@ func (o *ARVRPositionalTracker) X_SetOrientation(orientation gdnative.Basis) {
 	Args: [{ false rw_position Vector3}], Returns: void
 */
 func (o *ARVRPositionalTracker) X_SetRwPosition(rwPosition gdnative.Vector3) {
-	//log.Println("Calling ARVRPositionalTracker.X_SetRwPosition()")
+	// log.Println("Calling ARVRPositionalTracker.X_SetRwPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -153,7 +153,7 @@ func (o *ARVRPositionalTracker) X_SetRwPosition(rwPosition gdnative.Vector3) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *ARVRPositionalTracker) X_SetType(aType gdnative.Int) {
-	//log.Println("Calling ARVRPositionalTracker.X_SetType()")
+	// log.Println("Calling ARVRPositionalTracker.X_SetType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -174,7 +174,7 @@ func (o *ARVRPositionalTracker) X_SetType(aType gdnative.Int) {
 	Args: [], Returns: enum.ARVRPositionalTracker::TrackerHand
 */
 func (o *ARVRPositionalTracker) GetHand() ARVRPositionalTrackerTrackerHand {
-	//log.Println("Calling ARVRPositionalTracker.GetHand()")
+	// log.Println("Calling ARVRPositionalTracker.GetHand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -197,7 +197,7 @@ func (o *ARVRPositionalTracker) GetHand() ARVRPositionalTrackerTrackerHand {
 	Args: [], Returns: int
 */
 func (o *ARVRPositionalTracker) GetJoyId() gdnative.Int {
-	//log.Println("Calling ARVRPositionalTracker.GetJoyId()")
+	// log.Println("Calling ARVRPositionalTracker.GetJoyId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -220,7 +220,7 @@ func (o *ARVRPositionalTracker) GetJoyId() gdnative.Int {
 	Args: [], Returns: Mesh
 */
 func (o *ARVRPositionalTracker) GetMesh() MeshImplementer {
-	//log.Println("Calling ARVRPositionalTracker.GetMesh()")
+	// log.Println("Calling ARVRPositionalTracker.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -257,7 +257,7 @@ func (o *ARVRPositionalTracker) GetMesh() MeshImplementer {
 	Args: [], Returns: String
 */
 func (o *ARVRPositionalTracker) GetName() gdnative.String {
-	//log.Println("Calling ARVRPositionalTracker.GetName()")
+	// log.Println("Calling ARVRPositionalTracker.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -280,7 +280,7 @@ func (o *ARVRPositionalTracker) GetName() gdnative.String {
 	Args: [], Returns: Basis
 */
 func (o *ARVRPositionalTracker) GetOrientation() gdnative.Basis {
-	//log.Println("Calling ARVRPositionalTracker.GetOrientation()")
+	// log.Println("Calling ARVRPositionalTracker.GetOrientation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -303,7 +303,7 @@ func (o *ARVRPositionalTracker) GetOrientation() gdnative.Basis {
 	Args: [], Returns: Vector3
 */
 func (o *ARVRPositionalTracker) GetPosition() gdnative.Vector3 {
-	//log.Println("Calling ARVRPositionalTracker.GetPosition()")
+	// log.Println("Calling ARVRPositionalTracker.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -326,7 +326,7 @@ func (o *ARVRPositionalTracker) GetPosition() gdnative.Vector3 {
 	Args: [], Returns: float
 */
 func (o *ARVRPositionalTracker) GetRumble() gdnative.Real {
-	//log.Println("Calling ARVRPositionalTracker.GetRumble()")
+	// log.Println("Calling ARVRPositionalTracker.GetRumble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -349,7 +349,7 @@ func (o *ARVRPositionalTracker) GetRumble() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *ARVRPositionalTracker) GetTrackerId() gdnative.Int {
-	//log.Println("Calling ARVRPositionalTracker.GetTrackerId()")
+	// log.Println("Calling ARVRPositionalTracker.GetTrackerId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -372,7 +372,7 @@ func (o *ARVRPositionalTracker) GetTrackerId() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *ARVRPositionalTracker) GetTracksOrientation() gdnative.Bool {
-	//log.Println("Calling ARVRPositionalTracker.GetTracksOrientation()")
+	// log.Println("Calling ARVRPositionalTracker.GetTracksOrientation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -395,7 +395,7 @@ func (o *ARVRPositionalTracker) GetTracksOrientation() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ARVRPositionalTracker) GetTracksPosition() gdnative.Bool {
-	//log.Println("Calling ARVRPositionalTracker.GetTracksPosition()")
+	// log.Println("Calling ARVRPositionalTracker.GetTracksPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -418,7 +418,7 @@ func (o *ARVRPositionalTracker) GetTracksPosition() gdnative.Bool {
 	Args: [{ false adjust_by_reference_frame bool}], Returns: Transform
 */
 func (o *ARVRPositionalTracker) GetTransform(adjustByReferenceFrame gdnative.Bool) gdnative.Transform {
-	//log.Println("Calling ARVRPositionalTracker.GetTransform()")
+	// log.Println("Calling ARVRPositionalTracker.GetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -442,7 +442,7 @@ func (o *ARVRPositionalTracker) GetTransform(adjustByReferenceFrame gdnative.Boo
 	Args: [], Returns: enum.ARVRServer::TrackerType
 */
 func (o *ARVRPositionalTracker) GetType() ARVRServerTrackerType {
-	//log.Println("Calling ARVRPositionalTracker.GetType()")
+	// log.Println("Calling ARVRPositionalTracker.GetType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -465,7 +465,7 @@ func (o *ARVRPositionalTracker) GetType() ARVRServerTrackerType {
 	Args: [{ false rumble float}], Returns: void
 */
 func (o *ARVRPositionalTracker) SetRumble(rumble gdnative.Real) {
-	//log.Println("Calling ARVRPositionalTracker.SetRumble()")
+	// log.Println("Calling ARVRPositionalTracker.SetRumble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

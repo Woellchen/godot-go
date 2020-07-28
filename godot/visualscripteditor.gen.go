@@ -62,7 +62,7 @@ func (o *visualScriptEditor) BaseClass() string {
 */
 func (o *visualScriptEditor) AddCustomNode(name gdnative.String, category gdnative.String, script ScriptImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling _VisualScriptEditor.AddCustomNode()")
+	// log.Println("Calling _VisualScriptEditor.AddCustomNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -86,7 +86,7 @@ func (o *visualScriptEditor) AddCustomNode(name gdnative.String, category gdnati
 */
 func (o *visualScriptEditor) RemoveCustomNode(name gdnative.String, category gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _VisualScriptEditor.RemoveCustomNode()")
+	// log.Println("Calling _VisualScriptEditor.RemoveCustomNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

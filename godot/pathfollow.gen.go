@@ -50,7 +50,7 @@ func (o *PathFollow) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *PathFollow) GetCubicInterpolation() gdnative.Bool {
-	//log.Println("Calling PathFollow.GetCubicInterpolation()")
+	// log.Println("Calling PathFollow.GetCubicInterpolation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -73,7 +73,7 @@ func (o *PathFollow) GetCubicInterpolation() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *PathFollow) GetHOffset() gdnative.Real {
-	//log.Println("Calling PathFollow.GetHOffset()")
+	// log.Println("Calling PathFollow.GetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *PathFollow) GetHOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PathFollow) GetOffset() gdnative.Real {
-	//log.Println("Calling PathFollow.GetOffset()")
+	// log.Println("Calling PathFollow.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *PathFollow) GetOffset() gdnative.Real {
 	Args: [], Returns: enum.PathFollow::RotationMode
 */
 func (o *PathFollow) GetRotationMode() PathFollowRotationMode {
-	//log.Println("Calling PathFollow.GetRotationMode()")
+	// log.Println("Calling PathFollow.GetRotationMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *PathFollow) GetRotationMode() PathFollowRotationMode {
 	Args: [], Returns: float
 */
 func (o *PathFollow) GetUnitOffset() gdnative.Real {
-	//log.Println("Calling PathFollow.GetUnitOffset()")
+	// log.Println("Calling PathFollow.GetUnitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *PathFollow) GetUnitOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PathFollow) GetVOffset() gdnative.Real {
-	//log.Println("Calling PathFollow.GetVOffset()")
+	// log.Println("Calling PathFollow.GetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -188,7 +188,7 @@ func (o *PathFollow) GetVOffset() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *PathFollow) HasLoop() gdnative.Bool {
-	//log.Println("Calling PathFollow.HasLoop()")
+	// log.Println("Calling PathFollow.HasLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -211,7 +211,7 @@ func (o *PathFollow) HasLoop() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PathFollow) SetCubicInterpolation(enable gdnative.Bool) {
-	//log.Println("Calling PathFollow.SetCubicInterpolation()")
+	// log.Println("Calling PathFollow.SetCubicInterpolation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -232,7 +232,7 @@ func (o *PathFollow) SetCubicInterpolation(enable gdnative.Bool) {
 	Args: [{ false h_offset float}], Returns: void
 */
 func (o *PathFollow) SetHOffset(hOffset gdnative.Real) {
-	//log.Println("Calling PathFollow.SetHOffset()")
+	// log.Println("Calling PathFollow.SetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -253,7 +253,7 @@ func (o *PathFollow) SetHOffset(hOffset gdnative.Real) {
 	Args: [{ false loop bool}], Returns: void
 */
 func (o *PathFollow) SetLoop(loop gdnative.Bool) {
-	//log.Println("Calling PathFollow.SetLoop()")
+	// log.Println("Calling PathFollow.SetLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -274,7 +274,7 @@ func (o *PathFollow) SetLoop(loop gdnative.Bool) {
 	Args: [{ false offset float}], Returns: void
 */
 func (o *PathFollow) SetOffset(offset gdnative.Real) {
-	//log.Println("Calling PathFollow.SetOffset()")
+	// log.Println("Calling PathFollow.SetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -295,7 +295,7 @@ func (o *PathFollow) SetOffset(offset gdnative.Real) {
 	Args: [{ false rotation_mode int}], Returns: void
 */
 func (o *PathFollow) SetRotationMode(rotationMode gdnative.Int) {
-	//log.Println("Calling PathFollow.SetRotationMode()")
+	// log.Println("Calling PathFollow.SetRotationMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -316,7 +316,7 @@ func (o *PathFollow) SetRotationMode(rotationMode gdnative.Int) {
 	Args: [{ false unit_offset float}], Returns: void
 */
 func (o *PathFollow) SetUnitOffset(unitOffset gdnative.Real) {
-	//log.Println("Calling PathFollow.SetUnitOffset()")
+	// log.Println("Calling PathFollow.SetUnitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -337,7 +337,7 @@ func (o *PathFollow) SetUnitOffset(unitOffset gdnative.Real) {
 	Args: [{ false v_offset float}], Returns: void
 */
 func (o *PathFollow) SetVOffset(vOffset gdnative.Real) {
-	//log.Println("Calling PathFollow.SetVOffset()")
+	// log.Println("Calling PathFollow.SetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

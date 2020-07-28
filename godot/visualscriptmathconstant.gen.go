@@ -54,7 +54,7 @@ func (o *VisualScriptMathConstant) BaseClass() string {
 	Args: [], Returns: enum.VisualScriptMathConstant::MathConstant
 */
 func (o *VisualScriptMathConstant) GetMathConstant() VisualScriptMathConstantMathConstant {
-	//log.Println("Calling VisualScriptMathConstant.GetMathConstant()")
+	// log.Println("Calling VisualScriptMathConstant.GetMathConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -77,7 +77,7 @@ func (o *VisualScriptMathConstant) GetMathConstant() VisualScriptMathConstantMat
 	Args: [{ false which int}], Returns: void
 */
 func (o *VisualScriptMathConstant) SetMathConstant(which gdnative.Int) {
-	//log.Println("Calling VisualScriptMathConstant.SetMathConstant()")
+	// log.Println("Calling VisualScriptMathConstant.SetMathConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *JSONParseResult) BaseClass() string {
 	Args: [], Returns: enum.Error
 */
 func (o *JSONParseResult) GetError() gdnative.Error {
-	//log.Println("Calling JSONParseResult.GetError()")
+	// log.Println("Calling JSONParseResult.GetError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *JSONParseResult) GetError() gdnative.Error {
 	Args: [], Returns: int
 */
 func (o *JSONParseResult) GetErrorLine() gdnative.Int {
-	//log.Println("Calling JSONParseResult.GetErrorLine()")
+	// log.Println("Calling JSONParseResult.GetErrorLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *JSONParseResult) GetErrorLine() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *JSONParseResult) GetErrorString() gdnative.String {
-	//log.Println("Calling JSONParseResult.GetErrorString()")
+	// log.Println("Calling JSONParseResult.GetErrorString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *JSONParseResult) GetErrorString() gdnative.String {
 	Args: [], Returns: Variant
 */
 func (o *JSONParseResult) GetResult() gdnative.Variant {
-	//log.Println("Calling JSONParseResult.GetResult()")
+	// log.Println("Calling JSONParseResult.GetResult()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *JSONParseResult) GetResult() gdnative.Variant {
 	Args: [{ false error int}], Returns: void
 */
 func (o *JSONParseResult) SetError(error gdnative.Int) {
-	//log.Println("Calling JSONParseResult.SetError()")
+	// log.Println("Calling JSONParseResult.SetError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *JSONParseResult) SetError(error gdnative.Int) {
 	Args: [{ false error_line int}], Returns: void
 */
 func (o *JSONParseResult) SetErrorLine(errorLine gdnative.Int) {
-	//log.Println("Calling JSONParseResult.SetErrorLine()")
+	// log.Println("Calling JSONParseResult.SetErrorLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *JSONParseResult) SetErrorLine(errorLine gdnative.Int) {
 	Args: [{ false error_string String}], Returns: void
 */
 func (o *JSONParseResult) SetErrorString(errorString gdnative.String) {
-	//log.Println("Calling JSONParseResult.SetErrorString()")
+	// log.Println("Calling JSONParseResult.SetErrorString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *JSONParseResult) SetErrorString(errorString gdnative.String) {
 	Args: [{ false result Variant}], Returns: void
 */
 func (o *JSONParseResult) SetResult(result gdnative.Variant) {
-	//log.Println("Calling JSONParseResult.SetResult()")
+	// log.Println("Calling JSONParseResult.SetResult()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

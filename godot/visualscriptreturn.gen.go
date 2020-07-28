@@ -39,7 +39,7 @@ func (o *VisualScriptReturn) BaseClass() string {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptReturn) GetReturnType() gdnative.VariantType {
-	//log.Println("Calling VisualScriptReturn.GetReturnType()")
+	// log.Println("Calling VisualScriptReturn.GetReturnType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptReturn) GetReturnType() gdnative.VariantType {
 	Args: [], Returns: bool
 */
 func (o *VisualScriptReturn) IsReturnValueEnabled() gdnative.Bool {
-	//log.Println("Calling VisualScriptReturn.IsReturnValueEnabled()")
+	// log.Println("Calling VisualScriptReturn.IsReturnValueEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptReturn) IsReturnValueEnabled() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *VisualScriptReturn) SetEnableReturnValue(enable gdnative.Bool) {
-	//log.Println("Calling VisualScriptReturn.SetEnableReturnValue()")
+	// log.Println("Calling VisualScriptReturn.SetEnableReturnValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptReturn) SetEnableReturnValue(enable gdnative.Bool) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptReturn) SetReturnType(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptReturn.SetReturnType()")
+	// log.Println("Calling VisualScriptReturn.SetReturnType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

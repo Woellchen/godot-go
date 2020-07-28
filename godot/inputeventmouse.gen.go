@@ -39,7 +39,7 @@ func (o *InputEventMouse) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventMouse) GetButtonMask() gdnative.Int {
-	//log.Println("Calling InputEventMouse.GetButtonMask()")
+	// log.Println("Calling InputEventMouse.GetButtonMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventMouse) GetButtonMask() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventMouse) GetGlobalPosition() gdnative.Vector2 {
-	//log.Println("Calling InputEventMouse.GetGlobalPosition()")
+	// log.Println("Calling InputEventMouse.GetGlobalPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventMouse) GetGlobalPosition() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventMouse) GetPosition() gdnative.Vector2 {
-	//log.Println("Calling InputEventMouse.GetPosition()")
+	// log.Println("Calling InputEventMouse.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InputEventMouse) GetPosition() gdnative.Vector2 {
 	Args: [{ false button_mask int}], Returns: void
 */
 func (o *InputEventMouse) SetButtonMask(buttonMask gdnative.Int) {
-	//log.Println("Calling InputEventMouse.SetButtonMask()")
+	// log.Println("Calling InputEventMouse.SetButtonMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *InputEventMouse) SetButtonMask(buttonMask gdnative.Int) {
 	Args: [{ false global_position Vector2}], Returns: void
 */
 func (o *InputEventMouse) SetGlobalPosition(globalPosition gdnative.Vector2) {
-	//log.Println("Calling InputEventMouse.SetGlobalPosition()")
+	// log.Println("Calling InputEventMouse.SetGlobalPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *InputEventMouse) SetGlobalPosition(globalPosition gdnative.Vector2) {
 	Args: [{ false position Vector2}], Returns: void
 */
 func (o *InputEventMouse) SetPosition(position gdnative.Vector2) {
-	//log.Println("Calling InputEventMouse.SetPosition()")
+	// log.Println("Calling InputEventMouse.SetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

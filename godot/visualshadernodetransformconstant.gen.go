@@ -39,7 +39,7 @@ func (o *VisualShaderNodeTransformConstant) BaseClass() string {
 	Args: [], Returns: Transform
 */
 func (o *VisualShaderNodeTransformConstant) GetConstant() gdnative.Transform {
-	//log.Println("Calling VisualShaderNodeTransformConstant.GetConstant()")
+	// log.Println("Calling VisualShaderNodeTransformConstant.GetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeTransformConstant) GetConstant() gdnative.Transform {
 	Args: [{ false value Transform}], Returns: void
 */
 func (o *VisualShaderNodeTransformConstant) SetConstant(value gdnative.Transform) {
-	//log.Println("Calling VisualShaderNodeTransformConstant.SetConstant()")
+	// log.Println("Calling VisualShaderNodeTransformConstant.SetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

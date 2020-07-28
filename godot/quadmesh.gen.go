@@ -39,7 +39,7 @@ func (o *QuadMesh) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *QuadMesh) GetSize() gdnative.Vector2 {
-	//log.Println("Calling QuadMesh.GetSize()")
+	// log.Println("Calling QuadMesh.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *QuadMesh) GetSize() gdnative.Vector2 {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *QuadMesh) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling QuadMesh.SetSize()")
+	// log.Println("Calling QuadMesh.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

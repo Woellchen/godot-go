@@ -39,7 +39,7 @@ func (o *VideoPlayer) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *VideoPlayer) GetAudioTrack() gdnative.Int {
-	//log.Println("Calling VideoPlayer.GetAudioTrack()")
+	// log.Println("Calling VideoPlayer.GetAudioTrack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VideoPlayer) GetAudioTrack() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *VideoPlayer) GetBufferingMsec() gdnative.Int {
-	//log.Println("Calling VideoPlayer.GetBufferingMsec()")
+	// log.Println("Calling VideoPlayer.GetBufferingMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VideoPlayer) GetBufferingMsec() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *VideoPlayer) GetBus() gdnative.String {
-	//log.Println("Calling VideoPlayer.GetBus()")
+	// log.Println("Calling VideoPlayer.GetBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *VideoPlayer) GetBus() gdnative.String {
 	Args: [], Returns: VideoStream
 */
 func (o *VideoPlayer) GetStream() VideoStreamImplementer {
-	//log.Println("Calling VideoPlayer.GetStream()")
+	// log.Println("Calling VideoPlayer.GetStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *VideoPlayer) GetStream() VideoStreamImplementer {
 	Args: [], Returns: String
 */
 func (o *VideoPlayer) GetStreamName() gdnative.String {
-	//log.Println("Calling VideoPlayer.GetStreamName()")
+	// log.Println("Calling VideoPlayer.GetStreamName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *VideoPlayer) GetStreamName() gdnative.String {
 	Args: [], Returns: float
 */
 func (o *VideoPlayer) GetStreamPosition() gdnative.Real {
-	//log.Println("Calling VideoPlayer.GetStreamPosition()")
+	// log.Println("Calling VideoPlayer.GetStreamPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *VideoPlayer) GetStreamPosition() gdnative.Real {
 	Args: [], Returns: Texture
 */
 func (o *VideoPlayer) GetVideoTexture() TextureImplementer {
-	//log.Println("Calling VideoPlayer.GetVideoTexture()")
+	// log.Println("Calling VideoPlayer.GetVideoTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -228,7 +228,7 @@ func (o *VideoPlayer) GetVideoTexture() TextureImplementer {
 	Args: [], Returns: float
 */
 func (o *VideoPlayer) GetVolume() gdnative.Real {
-	//log.Println("Calling VideoPlayer.GetVolume()")
+	// log.Println("Calling VideoPlayer.GetVolume()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -251,7 +251,7 @@ func (o *VideoPlayer) GetVolume() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VideoPlayer) GetVolumeDb() gdnative.Real {
-	//log.Println("Calling VideoPlayer.GetVolumeDb()")
+	// log.Println("Calling VideoPlayer.GetVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -274,7 +274,7 @@ func (o *VideoPlayer) GetVolumeDb() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *VideoPlayer) HasAutoplay() gdnative.Bool {
-	//log.Println("Calling VideoPlayer.HasAutoplay()")
+	// log.Println("Calling VideoPlayer.HasAutoplay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -297,7 +297,7 @@ func (o *VideoPlayer) HasAutoplay() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *VideoPlayer) HasExpand() gdnative.Bool {
-	//log.Println("Calling VideoPlayer.HasExpand()")
+	// log.Println("Calling VideoPlayer.HasExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -320,7 +320,7 @@ func (o *VideoPlayer) HasExpand() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *VideoPlayer) IsPaused() gdnative.Bool {
-	//log.Println("Calling VideoPlayer.IsPaused()")
+	// log.Println("Calling VideoPlayer.IsPaused()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -343,7 +343,7 @@ func (o *VideoPlayer) IsPaused() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *VideoPlayer) IsPlaying() gdnative.Bool {
-	//log.Println("Calling VideoPlayer.IsPlaying()")
+	// log.Println("Calling VideoPlayer.IsPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -366,7 +366,7 @@ func (o *VideoPlayer) IsPlaying() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *VideoPlayer) Play() {
-	//log.Println("Calling VideoPlayer.Play()")
+	// log.Println("Calling VideoPlayer.Play()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -386,7 +386,7 @@ func (o *VideoPlayer) Play() {
 	Args: [{ false track int}], Returns: void
 */
 func (o *VideoPlayer) SetAudioTrack(track gdnative.Int) {
-	//log.Println("Calling VideoPlayer.SetAudioTrack()")
+	// log.Println("Calling VideoPlayer.SetAudioTrack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -407,7 +407,7 @@ func (o *VideoPlayer) SetAudioTrack(track gdnative.Int) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *VideoPlayer) SetAutoplay(enabled gdnative.Bool) {
-	//log.Println("Calling VideoPlayer.SetAutoplay()")
+	// log.Println("Calling VideoPlayer.SetAutoplay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -428,7 +428,7 @@ func (o *VideoPlayer) SetAutoplay(enabled gdnative.Bool) {
 	Args: [{ false msec int}], Returns: void
 */
 func (o *VideoPlayer) SetBufferingMsec(msec gdnative.Int) {
-	//log.Println("Calling VideoPlayer.SetBufferingMsec()")
+	// log.Println("Calling VideoPlayer.SetBufferingMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -449,7 +449,7 @@ func (o *VideoPlayer) SetBufferingMsec(msec gdnative.Int) {
 	Args: [{ false bus String}], Returns: void
 */
 func (o *VideoPlayer) SetBus(bus gdnative.String) {
-	//log.Println("Calling VideoPlayer.SetBus()")
+	// log.Println("Calling VideoPlayer.SetBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -470,7 +470,7 @@ func (o *VideoPlayer) SetBus(bus gdnative.String) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *VideoPlayer) SetExpand(enable gdnative.Bool) {
-	//log.Println("Calling VideoPlayer.SetExpand()")
+	// log.Println("Calling VideoPlayer.SetExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -491,7 +491,7 @@ func (o *VideoPlayer) SetExpand(enable gdnative.Bool) {
 	Args: [{ false paused bool}], Returns: void
 */
 func (o *VideoPlayer) SetPaused(paused gdnative.Bool) {
-	//log.Println("Calling VideoPlayer.SetPaused()")
+	// log.Println("Calling VideoPlayer.SetPaused()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -512,7 +512,7 @@ func (o *VideoPlayer) SetPaused(paused gdnative.Bool) {
 	Args: [{ false stream VideoStream}], Returns: void
 */
 func (o *VideoPlayer) SetStream(stream VideoStreamImplementer) {
-	//log.Println("Calling VideoPlayer.SetStream()")
+	// log.Println("Calling VideoPlayer.SetStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -533,7 +533,7 @@ func (o *VideoPlayer) SetStream(stream VideoStreamImplementer) {
 	Args: [{ false position float}], Returns: void
 */
 func (o *VideoPlayer) SetStreamPosition(position gdnative.Real) {
-	//log.Println("Calling VideoPlayer.SetStreamPosition()")
+	// log.Println("Calling VideoPlayer.SetStreamPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -554,7 +554,7 @@ func (o *VideoPlayer) SetStreamPosition(position gdnative.Real) {
 	Args: [{ false volume float}], Returns: void
 */
 func (o *VideoPlayer) SetVolume(volume gdnative.Real) {
-	//log.Println("Calling VideoPlayer.SetVolume()")
+	// log.Println("Calling VideoPlayer.SetVolume()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -575,7 +575,7 @@ func (o *VideoPlayer) SetVolume(volume gdnative.Real) {
 	Args: [{ false db float}], Returns: void
 */
 func (o *VideoPlayer) SetVolumeDb(db gdnative.Real) {
-	//log.Println("Calling VideoPlayer.SetVolumeDb()")
+	// log.Println("Calling VideoPlayer.SetVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -596,7 +596,7 @@ func (o *VideoPlayer) SetVolumeDb(db gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *VideoPlayer) Stop() {
-	//log.Println("Calling VideoPlayer.Stop()")
+	// log.Println("Calling VideoPlayer.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

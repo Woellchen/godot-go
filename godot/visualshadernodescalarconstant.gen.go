@@ -39,7 +39,7 @@ func (o *VisualShaderNodeScalarConstant) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *VisualShaderNodeScalarConstant) GetConstant() gdnative.Real {
-	//log.Println("Calling VisualShaderNodeScalarConstant.GetConstant()")
+	// log.Println("Calling VisualShaderNodeScalarConstant.GetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeScalarConstant) GetConstant() gdnative.Real {
 	Args: [{ false value float}], Returns: void
 */
 func (o *VisualShaderNodeScalarConstant) SetConstant(value gdnative.Real) {
-	//log.Println("Calling VisualShaderNodeScalarConstant.SetConstant()")
+	// log.Println("Calling VisualShaderNodeScalarConstant.SetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

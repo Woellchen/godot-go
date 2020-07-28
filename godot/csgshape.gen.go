@@ -48,7 +48,7 @@ func (o *CSGShape) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CSGShape) X_UpdateShape() {
-	//log.Println("Calling CSGShape.X_UpdateShape()")
+	// log.Println("Calling CSGShape.X_UpdateShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -68,7 +68,7 @@ func (o *CSGShape) X_UpdateShape() {
 	Args: [], Returns: int
 */
 func (o *CSGShape) GetCollisionLayer() gdnative.Int {
-	//log.Println("Calling CSGShape.GetCollisionLayer()")
+	// log.Println("Calling CSGShape.GetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -91,7 +91,7 @@ func (o *CSGShape) GetCollisionLayer() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *CSGShape) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling CSGShape.GetCollisionLayerBit()")
+	// log.Println("Calling CSGShape.GetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -115,7 +115,7 @@ func (o *CSGShape) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *CSGShape) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling CSGShape.GetCollisionMask()")
+	// log.Println("Calling CSGShape.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -138,7 +138,7 @@ func (o *CSGShape) GetCollisionMask() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *CSGShape) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling CSGShape.GetCollisionMaskBit()")
+	// log.Println("Calling CSGShape.GetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -162,7 +162,7 @@ func (o *CSGShape) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: Array
 */
 func (o *CSGShape) GetMeshes() gdnative.Array {
-	//log.Println("Calling CSGShape.GetMeshes()")
+	// log.Println("Calling CSGShape.GetMeshes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -185,7 +185,7 @@ func (o *CSGShape) GetMeshes() gdnative.Array {
 	Args: [], Returns: enum.CSGShape::Operation
 */
 func (o *CSGShape) GetOperation() CSGShapeOperation {
-	//log.Println("Calling CSGShape.GetOperation()")
+	// log.Println("Calling CSGShape.GetOperation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -208,7 +208,7 @@ func (o *CSGShape) GetOperation() CSGShapeOperation {
 	Args: [], Returns: float
 */
 func (o *CSGShape) GetSnap() gdnative.Real {
-	//log.Println("Calling CSGShape.GetSnap()")
+	// log.Println("Calling CSGShape.GetSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -231,7 +231,7 @@ func (o *CSGShape) GetSnap() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *CSGShape) IsCalculatingTangents() gdnative.Bool {
-	//log.Println("Calling CSGShape.IsCalculatingTangents()")
+	// log.Println("Calling CSGShape.IsCalculatingTangents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -254,7 +254,7 @@ func (o *CSGShape) IsCalculatingTangents() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CSGShape) IsRootShape() gdnative.Bool {
-	//log.Println("Calling CSGShape.IsRootShape()")
+	// log.Println("Calling CSGShape.IsRootShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -277,7 +277,7 @@ func (o *CSGShape) IsRootShape() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CSGShape) IsUsingCollision() gdnative.Bool {
-	//log.Println("Calling CSGShape.IsUsingCollision()")
+	// log.Println("Calling CSGShape.IsUsingCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -300,7 +300,7 @@ func (o *CSGShape) IsUsingCollision() gdnative.Bool {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *CSGShape) SetCalculateTangents(enabled gdnative.Bool) {
-	//log.Println("Calling CSGShape.SetCalculateTangents()")
+	// log.Println("Calling CSGShape.SetCalculateTangents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -321,7 +321,7 @@ func (o *CSGShape) SetCalculateTangents(enabled gdnative.Bool) {
 	Args: [{ false layer int}], Returns: void
 */
 func (o *CSGShape) SetCollisionLayer(layer gdnative.Int) {
-	//log.Println("Calling CSGShape.SetCollisionLayer()")
+	// log.Println("Calling CSGShape.SetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -342,7 +342,7 @@ func (o *CSGShape) SetCollisionLayer(layer gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *CSGShape) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling CSGShape.SetCollisionLayerBit()")
+	// log.Println("Calling CSGShape.SetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -364,7 +364,7 @@ func (o *CSGShape) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *CSGShape) SetCollisionMask(mask gdnative.Int) {
-	//log.Println("Calling CSGShape.SetCollisionMask()")
+	// log.Println("Calling CSGShape.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -385,7 +385,7 @@ func (o *CSGShape) SetCollisionMask(mask gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *CSGShape) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling CSGShape.SetCollisionMaskBit()")
+	// log.Println("Calling CSGShape.SetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -407,7 +407,7 @@ func (o *CSGShape) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
 	Args: [{ false operation int}], Returns: void
 */
 func (o *CSGShape) SetOperation(operation gdnative.Int) {
-	//log.Println("Calling CSGShape.SetOperation()")
+	// log.Println("Calling CSGShape.SetOperation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -428,7 +428,7 @@ func (o *CSGShape) SetOperation(operation gdnative.Int) {
 	Args: [{ false snap float}], Returns: void
 */
 func (o *CSGShape) SetSnap(snap gdnative.Real) {
-	//log.Println("Calling CSGShape.SetSnap()")
+	// log.Println("Calling CSGShape.SetSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -449,7 +449,7 @@ func (o *CSGShape) SetSnap(snap gdnative.Real) {
 	Args: [{ false operation bool}], Returns: void
 */
 func (o *CSGShape) SetUseCollision(operation gdnative.Bool) {
-	//log.Println("Calling CSGShape.SetUseCollision()")
+	// log.Println("Calling CSGShape.SetUseCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

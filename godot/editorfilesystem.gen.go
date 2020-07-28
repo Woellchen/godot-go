@@ -39,7 +39,7 @@ func (o *EditorFileSystem) BaseClass() string {
 	Args: [{ false path String}], Returns: String
 */
 func (o *EditorFileSystem) GetFileType(path gdnative.String) gdnative.String {
-	//log.Println("Calling EditorFileSystem.GetFileType()")
+	// log.Println("Calling EditorFileSystem.GetFileType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *EditorFileSystem) GetFileType(path gdnative.String) gdnative.String {
 	Args: [], Returns: EditorFileSystemDirectory
 */
 func (o *EditorFileSystem) GetFilesystem() EditorFileSystemDirectoryImplementer {
-	//log.Println("Calling EditorFileSystem.GetFilesystem()")
+	// log.Println("Calling EditorFileSystem.GetFilesystem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -100,7 +100,7 @@ func (o *EditorFileSystem) GetFilesystem() EditorFileSystemDirectoryImplementer 
 	Args: [{ false path String}], Returns: EditorFileSystemDirectory
 */
 func (o *EditorFileSystem) GetFilesystemPath(path gdnative.String) EditorFileSystemDirectoryImplementer {
-	//log.Println("Calling EditorFileSystem.GetFilesystemPath()")
+	// log.Println("Calling EditorFileSystem.GetFilesystemPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -138,7 +138,7 @@ func (o *EditorFileSystem) GetFilesystemPath(path gdnative.String) EditorFileSys
 	Args: [], Returns: float
 */
 func (o *EditorFileSystem) GetScanningProgress() gdnative.Real {
-	//log.Println("Calling EditorFileSystem.GetScanningProgress()")
+	// log.Println("Calling EditorFileSystem.GetScanningProgress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -161,7 +161,7 @@ func (o *EditorFileSystem) GetScanningProgress() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *EditorFileSystem) IsScanning() gdnative.Bool {
-	//log.Println("Calling EditorFileSystem.IsScanning()")
+	// log.Println("Calling EditorFileSystem.IsScanning()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -184,7 +184,7 @@ func (o *EditorFileSystem) IsScanning() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *EditorFileSystem) Scan() {
-	//log.Println("Calling EditorFileSystem.Scan()")
+	// log.Println("Calling EditorFileSystem.Scan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -204,7 +204,7 @@ func (o *EditorFileSystem) Scan() {
 	Args: [], Returns: void
 */
 func (o *EditorFileSystem) ScanSources() {
-	//log.Println("Calling EditorFileSystem.ScanSources()")
+	// log.Println("Calling EditorFileSystem.ScanSources()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -224,7 +224,7 @@ func (o *EditorFileSystem) ScanSources() {
 	Args: [{ false path String}], Returns: void
 */
 func (o *EditorFileSystem) UpdateFile(path gdnative.String) {
-	//log.Println("Calling EditorFileSystem.UpdateFile()")
+	// log.Println("Calling EditorFileSystem.UpdateFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -245,7 +245,7 @@ func (o *EditorFileSystem) UpdateFile(path gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *EditorFileSystem) UpdateScriptClasses() {
-	//log.Println("Calling EditorFileSystem.UpdateScriptClasses()")
+	// log.Println("Calling EditorFileSystem.UpdateScriptClasses()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

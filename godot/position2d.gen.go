@@ -39,7 +39,7 @@ func (o *Position2D) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *Position2D) X_GetGizmoExtents() gdnative.Real {
-	//log.Println("Calling Position2D.X_GetGizmoExtents()")
+	// log.Println("Calling Position2D.X_GetGizmoExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Position2D) X_GetGizmoExtents() gdnative.Real {
 	Args: [{ false extents float}], Returns: void
 */
 func (o *Position2D) X_SetGizmoExtents(extents gdnative.Real) {
-	//log.Println("Calling Position2D.X_SetGizmoExtents()")
+	// log.Println("Calling Position2D.X_SetGizmoExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

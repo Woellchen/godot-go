@@ -62,7 +62,7 @@ func (o *javaClassWrapper) BaseClass() string {
 */
 func (o *javaClassWrapper) Wrap(name gdnative.String) JavaClassImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling JavaClassWrapper.Wrap()")
+	// log.Println("Calling JavaClassWrapper.Wrap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

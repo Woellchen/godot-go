@@ -39,7 +39,7 @@ func (o *InputEventJoypadButton) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventJoypadButton) GetButtonIndex() gdnative.Int {
-	//log.Println("Calling InputEventJoypadButton.GetButtonIndex()")
+	// log.Println("Calling InputEventJoypadButton.GetButtonIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventJoypadButton) GetButtonIndex() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *InputEventJoypadButton) GetPressure() gdnative.Real {
-	//log.Println("Calling InputEventJoypadButton.GetPressure()")
+	// log.Println("Calling InputEventJoypadButton.GetPressure()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventJoypadButton) GetPressure() gdnative.Real {
 	Args: [{ false button_index int}], Returns: void
 */
 func (o *InputEventJoypadButton) SetButtonIndex(buttonIndex gdnative.Int) {
-	//log.Println("Calling InputEventJoypadButton.SetButtonIndex()")
+	// log.Println("Calling InputEventJoypadButton.SetButtonIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *InputEventJoypadButton) SetButtonIndex(buttonIndex gdnative.Int) {
 	Args: [{ false pressed bool}], Returns: void
 */
 func (o *InputEventJoypadButton) SetPressed(pressed gdnative.Bool) {
-	//log.Println("Calling InputEventJoypadButton.SetPressed()")
+	// log.Println("Calling InputEventJoypadButton.SetPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -127,7 +127,7 @@ func (o *InputEventJoypadButton) SetPressed(pressed gdnative.Bool) {
 	Args: [{ false pressure float}], Returns: void
 */
 func (o *InputEventJoypadButton) SetPressure(pressure gdnative.Real) {
-	//log.Println("Calling InputEventJoypadButton.SetPressure()")
+	// log.Println("Calling InputEventJoypadButton.SetPressure()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

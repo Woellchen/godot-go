@@ -39,7 +39,7 @@ func (o *AStar2D) BaseClass() string {
 	Args: [{ false from_id int} { false to_id int}], Returns: float
 */
 func (o *AStar2D) X_ComputeCost(fromId gdnative.Int, toId gdnative.Int) gdnative.Real {
-	//log.Println("Calling AStar2D.X_ComputeCost()")
+	// log.Println("Calling AStar2D.X_ComputeCost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -64,7 +64,7 @@ func (o *AStar2D) X_ComputeCost(fromId gdnative.Int, toId gdnative.Int) gdnative
 	Args: [{ false from_id int} { false to_id int}], Returns: float
 */
 func (o *AStar2D) X_EstimateCost(fromId gdnative.Int, toId gdnative.Int) gdnative.Real {
-	//log.Println("Calling AStar2D.X_EstimateCost()")
+	// log.Println("Calling AStar2D.X_EstimateCost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -89,7 +89,7 @@ func (o *AStar2D) X_EstimateCost(fromId gdnative.Int, toId gdnative.Int) gdnativ
 	Args: [{ false id int} { false position Vector2} {1 true weight_scale float}], Returns: void
 */
 func (o *AStar2D) AddPoint(id gdnative.Int, position gdnative.Vector2, weightScale gdnative.Real) {
-	//log.Println("Calling AStar2D.AddPoint()")
+	// log.Println("Calling AStar2D.AddPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -112,7 +112,7 @@ func (o *AStar2D) AddPoint(id gdnative.Int, position gdnative.Vector2, weightSca
 	Args: [{ false id int} { false to_id int}], Returns: bool
 */
 func (o *AStar2D) ArePointsConnected(id gdnative.Int, toId gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AStar2D.ArePointsConnected()")
+	// log.Println("Calling AStar2D.ArePointsConnected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -137,7 +137,7 @@ func (o *AStar2D) ArePointsConnected(id gdnative.Int, toId gdnative.Int) gdnativ
 	Args: [], Returns: void
 */
 func (o *AStar2D) Clear() {
-	//log.Println("Calling AStar2D.Clear()")
+	// log.Println("Calling AStar2D.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -157,7 +157,7 @@ func (o *AStar2D) Clear() {
 	Args: [{ false id int} { false to_id int} {True true bidirectional bool}], Returns: void
 */
 func (o *AStar2D) ConnectPoints(id gdnative.Int, toId gdnative.Int, bidirectional gdnative.Bool) {
-	//log.Println("Calling AStar2D.ConnectPoints()")
+	// log.Println("Calling AStar2D.ConnectPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -180,7 +180,7 @@ func (o *AStar2D) ConnectPoints(id gdnative.Int, toId gdnative.Int, bidirectiona
 	Args: [{ false id int} { false to_id int}], Returns: void
 */
 func (o *AStar2D) DisconnectPoints(id gdnative.Int, toId gdnative.Int) {
-	//log.Println("Calling AStar2D.DisconnectPoints()")
+	// log.Println("Calling AStar2D.DisconnectPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -202,7 +202,7 @@ func (o *AStar2D) DisconnectPoints(id gdnative.Int, toId gdnative.Int) {
 	Args: [], Returns: int
 */
 func (o *AStar2D) GetAvailablePointId() gdnative.Int {
-	//log.Println("Calling AStar2D.GetAvailablePointId()")
+	// log.Println("Calling AStar2D.GetAvailablePointId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -225,7 +225,7 @@ func (o *AStar2D) GetAvailablePointId() gdnative.Int {
 	Args: [{ false to_position Vector2} {False true include_disabled bool}], Returns: int
 */
 func (o *AStar2D) GetClosestPoint(toPosition gdnative.Vector2, includeDisabled gdnative.Bool) gdnative.Int {
-	//log.Println("Calling AStar2D.GetClosestPoint()")
+	// log.Println("Calling AStar2D.GetClosestPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -250,7 +250,7 @@ func (o *AStar2D) GetClosestPoint(toPosition gdnative.Vector2, includeDisabled g
 	Args: [{ false to_position Vector2}], Returns: Vector2
 */
 func (o *AStar2D) GetClosestPositionInSegment(toPosition gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling AStar2D.GetClosestPositionInSegment()")
+	// log.Println("Calling AStar2D.GetClosestPositionInSegment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -274,7 +274,7 @@ func (o *AStar2D) GetClosestPositionInSegment(toPosition gdnative.Vector2) gdnat
 	Args: [{ false from_id int} { false to_id int}], Returns: PoolIntArray
 */
 func (o *AStar2D) GetIdPath(fromId gdnative.Int, toId gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling AStar2D.GetIdPath()")
+	// log.Println("Calling AStar2D.GetIdPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -299,7 +299,7 @@ func (o *AStar2D) GetIdPath(fromId gdnative.Int, toId gdnative.Int) gdnative.Poo
 	Args: [], Returns: int
 */
 func (o *AStar2D) GetPointCapacity() gdnative.Int {
-	//log.Println("Calling AStar2D.GetPointCapacity()")
+	// log.Println("Calling AStar2D.GetPointCapacity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -322,7 +322,7 @@ func (o *AStar2D) GetPointCapacity() gdnative.Int {
 	Args: [{ false id int}], Returns: PoolIntArray
 */
 func (o *AStar2D) GetPointConnections(id gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling AStar2D.GetPointConnections()")
+	// log.Println("Calling AStar2D.GetPointConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -346,7 +346,7 @@ func (o *AStar2D) GetPointConnections(id gdnative.Int) gdnative.PoolIntArray {
 	Args: [], Returns: int
 */
 func (o *AStar2D) GetPointCount() gdnative.Int {
-	//log.Println("Calling AStar2D.GetPointCount()")
+	// log.Println("Calling AStar2D.GetPointCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -369,7 +369,7 @@ func (o *AStar2D) GetPointCount() gdnative.Int {
 	Args: [{ false from_id int} { false to_id int}], Returns: PoolVector2Array
 */
 func (o *AStar2D) GetPointPath(fromId gdnative.Int, toId gdnative.Int) gdnative.PoolVector2Array {
-	//log.Println("Calling AStar2D.GetPointPath()")
+	// log.Println("Calling AStar2D.GetPointPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -394,7 +394,7 @@ func (o *AStar2D) GetPointPath(fromId gdnative.Int, toId gdnative.Int) gdnative.
 	Args: [{ false id int}], Returns: Vector2
 */
 func (o *AStar2D) GetPointPosition(id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling AStar2D.GetPointPosition()")
+	// log.Println("Calling AStar2D.GetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -418,7 +418,7 @@ func (o *AStar2D) GetPointPosition(id gdnative.Int) gdnative.Vector2 {
 	Args: [{ false id int}], Returns: float
 */
 func (o *AStar2D) GetPointWeightScale(id gdnative.Int) gdnative.Real {
-	//log.Println("Calling AStar2D.GetPointWeightScale()")
+	// log.Println("Calling AStar2D.GetPointWeightScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -442,7 +442,7 @@ func (o *AStar2D) GetPointWeightScale(id gdnative.Int) gdnative.Real {
 	Args: [], Returns: Array
 */
 func (o *AStar2D) GetPoints() gdnative.Array {
-	//log.Println("Calling AStar2D.GetPoints()")
+	// log.Println("Calling AStar2D.GetPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -465,7 +465,7 @@ func (o *AStar2D) GetPoints() gdnative.Array {
 	Args: [{ false id int}], Returns: bool
 */
 func (o *AStar2D) HasPoint(id gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AStar2D.HasPoint()")
+	// log.Println("Calling AStar2D.HasPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -489,7 +489,7 @@ func (o *AStar2D) HasPoint(id gdnative.Int) gdnative.Bool {
 	Args: [{ false id int}], Returns: bool
 */
 func (o *AStar2D) IsPointDisabled(id gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AStar2D.IsPointDisabled()")
+	// log.Println("Calling AStar2D.IsPointDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -513,7 +513,7 @@ func (o *AStar2D) IsPointDisabled(id gdnative.Int) gdnative.Bool {
 	Args: [{ false id int}], Returns: void
 */
 func (o *AStar2D) RemovePoint(id gdnative.Int) {
-	//log.Println("Calling AStar2D.RemovePoint()")
+	// log.Println("Calling AStar2D.RemovePoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -534,7 +534,7 @@ func (o *AStar2D) RemovePoint(id gdnative.Int) {
 	Args: [{ false num_nodes int}], Returns: void
 */
 func (o *AStar2D) ReserveSpace(numNodes gdnative.Int) {
-	//log.Println("Calling AStar2D.ReserveSpace()")
+	// log.Println("Calling AStar2D.ReserveSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -555,7 +555,7 @@ func (o *AStar2D) ReserveSpace(numNodes gdnative.Int) {
 	Args: [{ false id int} {True true disabled bool}], Returns: void
 */
 func (o *AStar2D) SetPointDisabled(id gdnative.Int, disabled gdnative.Bool) {
-	//log.Println("Calling AStar2D.SetPointDisabled()")
+	// log.Println("Calling AStar2D.SetPointDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -577,7 +577,7 @@ func (o *AStar2D) SetPointDisabled(id gdnative.Int, disabled gdnative.Bool) {
 	Args: [{ false id int} { false position Vector2}], Returns: void
 */
 func (o *AStar2D) SetPointPosition(id gdnative.Int, position gdnative.Vector2) {
-	//log.Println("Calling AStar2D.SetPointPosition()")
+	// log.Println("Calling AStar2D.SetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -599,7 +599,7 @@ func (o *AStar2D) SetPointPosition(id gdnative.Int, position gdnative.Vector2) {
 	Args: [{ false id int} { false weight_scale float}], Returns: void
 */
 func (o *AStar2D) SetPointWeightScale(id gdnative.Int, weightScale gdnative.Real) {
-	//log.Println("Calling AStar2D.SetPointWeightScale()")
+	// log.Println("Calling AStar2D.SetPointWeightScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

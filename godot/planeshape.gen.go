@@ -39,7 +39,7 @@ func (o *PlaneShape) BaseClass() string {
 	Args: [], Returns: Plane
 */
 func (o *PlaneShape) GetPlane() gdnative.Plane {
-	//log.Println("Calling PlaneShape.GetPlane()")
+	// log.Println("Calling PlaneShape.GetPlane()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PlaneShape) GetPlane() gdnative.Plane {
 	Args: [{ false plane Plane}], Returns: void
 */
 func (o *PlaneShape) SetPlane(plane gdnative.Plane) {
-	//log.Println("Calling PlaneShape.SetPlane()")
+	// log.Println("Calling PlaneShape.SetPlane()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -51,7 +51,7 @@ func (o *PhysicalBone) BaseClass() string {
 	Args: [{ false arg0 Object}], Returns: void
 */
 func (o *PhysicalBone) X_DirectStateChanged(arg0 ObjectImplementer) {
-	//log.Println("Calling PhysicalBone.X_DirectStateChanged()")
+	// log.Println("Calling PhysicalBone.X_DirectStateChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -72,7 +72,7 @@ func (o *PhysicalBone) X_DirectStateChanged(arg0 ObjectImplementer) {
 	Args: [{ false impulse Vector3}], Returns: void
 */
 func (o *PhysicalBone) ApplyCentralImpulse(impulse gdnative.Vector3) {
-	//log.Println("Calling PhysicalBone.ApplyCentralImpulse()")
+	// log.Println("Calling PhysicalBone.ApplyCentralImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -93,7 +93,7 @@ func (o *PhysicalBone) ApplyCentralImpulse(impulse gdnative.Vector3) {
 	Args: [{ false position Vector3} { false impulse Vector3}], Returns: void
 */
 func (o *PhysicalBone) ApplyImpulse(position gdnative.Vector3, impulse gdnative.Vector3) {
-	//log.Println("Calling PhysicalBone.ApplyImpulse()")
+	// log.Println("Calling PhysicalBone.ApplyImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -115,7 +115,7 @@ func (o *PhysicalBone) ApplyImpulse(position gdnative.Vector3, impulse gdnative.
 	Args: [], Returns: Transform
 */
 func (o *PhysicalBone) GetBodyOffset() gdnative.Transform {
-	//log.Println("Calling PhysicalBone.GetBodyOffset()")
+	// log.Println("Calling PhysicalBone.GetBodyOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -138,7 +138,7 @@ func (o *PhysicalBone) GetBodyOffset() gdnative.Transform {
 	Args: [], Returns: int
 */
 func (o *PhysicalBone) GetBoneId() gdnative.Int {
-	//log.Println("Calling PhysicalBone.GetBoneId()")
+	// log.Println("Calling PhysicalBone.GetBoneId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -161,7 +161,7 @@ func (o *PhysicalBone) GetBoneId() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *PhysicalBone) GetBounce() gdnative.Real {
-	//log.Println("Calling PhysicalBone.GetBounce()")
+	// log.Println("Calling PhysicalBone.GetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -184,7 +184,7 @@ func (o *PhysicalBone) GetBounce() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PhysicalBone) GetFriction() gdnative.Real {
-	//log.Println("Calling PhysicalBone.GetFriction()")
+	// log.Println("Calling PhysicalBone.GetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -207,7 +207,7 @@ func (o *PhysicalBone) GetFriction() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PhysicalBone) GetGravityScale() gdnative.Real {
-	//log.Println("Calling PhysicalBone.GetGravityScale()")
+	// log.Println("Calling PhysicalBone.GetGravityScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -230,7 +230,7 @@ func (o *PhysicalBone) GetGravityScale() gdnative.Real {
 	Args: [], Returns: Transform
 */
 func (o *PhysicalBone) GetJointOffset() gdnative.Transform {
-	//log.Println("Calling PhysicalBone.GetJointOffset()")
+	// log.Println("Calling PhysicalBone.GetJointOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -253,7 +253,7 @@ func (o *PhysicalBone) GetJointOffset() gdnative.Transform {
 	Args: [], Returns: enum.PhysicalBone::JointType
 */
 func (o *PhysicalBone) GetJointType() PhysicalBoneJointType {
-	//log.Println("Calling PhysicalBone.GetJointType()")
+	// log.Println("Calling PhysicalBone.GetJointType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -276,7 +276,7 @@ func (o *PhysicalBone) GetJointType() PhysicalBoneJointType {
 	Args: [], Returns: float
 */
 func (o *PhysicalBone) GetMass() gdnative.Real {
-	//log.Println("Calling PhysicalBone.GetMass()")
+	// log.Println("Calling PhysicalBone.GetMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -299,7 +299,7 @@ func (o *PhysicalBone) GetMass() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *PhysicalBone) GetSimulatePhysics() gdnative.Bool {
-	//log.Println("Calling PhysicalBone.GetSimulatePhysics()")
+	// log.Println("Calling PhysicalBone.GetSimulatePhysics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -322,7 +322,7 @@ func (o *PhysicalBone) GetSimulatePhysics() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *PhysicalBone) GetWeight() gdnative.Real {
-	//log.Println("Calling PhysicalBone.GetWeight()")
+	// log.Println("Calling PhysicalBone.GetWeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -345,7 +345,7 @@ func (o *PhysicalBone) GetWeight() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *PhysicalBone) IsSimulatingPhysics() gdnative.Bool {
-	//log.Println("Calling PhysicalBone.IsSimulatingPhysics()")
+	// log.Println("Calling PhysicalBone.IsSimulatingPhysics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -368,7 +368,7 @@ func (o *PhysicalBone) IsSimulatingPhysics() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *PhysicalBone) IsStaticBody() gdnative.Bool {
-	//log.Println("Calling PhysicalBone.IsStaticBody()")
+	// log.Println("Calling PhysicalBone.IsStaticBody()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -391,7 +391,7 @@ func (o *PhysicalBone) IsStaticBody() gdnative.Bool {
 	Args: [{ false offset Transform}], Returns: void
 */
 func (o *PhysicalBone) SetBodyOffset(offset gdnative.Transform) {
-	//log.Println("Calling PhysicalBone.SetBodyOffset()")
+	// log.Println("Calling PhysicalBone.SetBodyOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -412,7 +412,7 @@ func (o *PhysicalBone) SetBodyOffset(offset gdnative.Transform) {
 	Args: [{ false bounce float}], Returns: void
 */
 func (o *PhysicalBone) SetBounce(bounce gdnative.Real) {
-	//log.Println("Calling PhysicalBone.SetBounce()")
+	// log.Println("Calling PhysicalBone.SetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -433,7 +433,7 @@ func (o *PhysicalBone) SetBounce(bounce gdnative.Real) {
 	Args: [{ false friction float}], Returns: void
 */
 func (o *PhysicalBone) SetFriction(friction gdnative.Real) {
-	//log.Println("Calling PhysicalBone.SetFriction()")
+	// log.Println("Calling PhysicalBone.SetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -454,7 +454,7 @@ func (o *PhysicalBone) SetFriction(friction gdnative.Real) {
 	Args: [{ false gravity_scale float}], Returns: void
 */
 func (o *PhysicalBone) SetGravityScale(gravityScale gdnative.Real) {
-	//log.Println("Calling PhysicalBone.SetGravityScale()")
+	// log.Println("Calling PhysicalBone.SetGravityScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -475,7 +475,7 @@ func (o *PhysicalBone) SetGravityScale(gravityScale gdnative.Real) {
 	Args: [{ false offset Transform}], Returns: void
 */
 func (o *PhysicalBone) SetJointOffset(offset gdnative.Transform) {
-	//log.Println("Calling PhysicalBone.SetJointOffset()")
+	// log.Println("Calling PhysicalBone.SetJointOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -496,7 +496,7 @@ func (o *PhysicalBone) SetJointOffset(offset gdnative.Transform) {
 	Args: [{ false joint_type int}], Returns: void
 */
 func (o *PhysicalBone) SetJointType(jointType gdnative.Int) {
-	//log.Println("Calling PhysicalBone.SetJointType()")
+	// log.Println("Calling PhysicalBone.SetJointType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -517,7 +517,7 @@ func (o *PhysicalBone) SetJointType(jointType gdnative.Int) {
 	Args: [{ false mass float}], Returns: void
 */
 func (o *PhysicalBone) SetMass(mass gdnative.Real) {
-	//log.Println("Calling PhysicalBone.SetMass()")
+	// log.Println("Calling PhysicalBone.SetMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -538,7 +538,7 @@ func (o *PhysicalBone) SetMass(mass gdnative.Real) {
 	Args: [{ false weight float}], Returns: void
 */
 func (o *PhysicalBone) SetWeight(weight gdnative.Real) {
-	//log.Println("Calling PhysicalBone.SetWeight()")
+	// log.Println("Calling PhysicalBone.SetWeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -70,7 +70,7 @@ func (o *ArrayMesh) BaseClass() string {
 	Args: [{ false name String}], Returns: void
 */
 func (o *ArrayMesh) AddBlendShape(name gdnative.String) {
-	//log.Println("Calling ArrayMesh.AddBlendShape()")
+	// log.Println("Calling ArrayMesh.AddBlendShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -91,7 +91,7 @@ func (o *ArrayMesh) AddBlendShape(name gdnative.String) {
 	Args: [{ false primitive int} { false arrays Array} {[] true blend_shapes Array} {97280 true compress_flags int}], Returns: void
 */
 func (o *ArrayMesh) AddSurfaceFromArrays(primitive gdnative.Int, arrays gdnative.Array, blendShapes gdnative.Array, compressFlags gdnative.Int) {
-	//log.Println("Calling ArrayMesh.AddSurfaceFromArrays()")
+	// log.Println("Calling ArrayMesh.AddSurfaceFromArrays()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -115,7 +115,7 @@ func (o *ArrayMesh) AddSurfaceFromArrays(primitive gdnative.Int, arrays gdnative
 	Args: [], Returns: void
 */
 func (o *ArrayMesh) ClearBlendShapes() {
-	//log.Println("Calling ArrayMesh.ClearBlendShapes()")
+	// log.Println("Calling ArrayMesh.ClearBlendShapes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -135,7 +135,7 @@ func (o *ArrayMesh) ClearBlendShapes() {
 	Args: [], Returns: int
 */
 func (o *ArrayMesh) GetBlendShapeCount() gdnative.Int {
-	//log.Println("Calling ArrayMesh.GetBlendShapeCount()")
+	// log.Println("Calling ArrayMesh.GetBlendShapeCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *ArrayMesh) GetBlendShapeCount() gdnative.Int {
 	Args: [], Returns: enum.Mesh::BlendShapeMode
 */
 func (o *ArrayMesh) GetBlendShapeMode() MeshBlendShapeMode {
-	//log.Println("Calling ArrayMesh.GetBlendShapeMode()")
+	// log.Println("Calling ArrayMesh.GetBlendShapeMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -181,7 +181,7 @@ func (o *ArrayMesh) GetBlendShapeMode() MeshBlendShapeMode {
 	Args: [{ false index int}], Returns: String
 */
 func (o *ArrayMesh) GetBlendShapeName(index gdnative.Int) gdnative.String {
-	//log.Println("Calling ArrayMesh.GetBlendShapeName()")
+	// log.Println("Calling ArrayMesh.GetBlendShapeName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -205,7 +205,7 @@ func (o *ArrayMesh) GetBlendShapeName(index gdnative.Int) gdnative.String {
 	Args: [], Returns: AABB
 */
 func (o *ArrayMesh) GetCustomAabb() gdnative.Aabb {
-	//log.Println("Calling ArrayMesh.GetCustomAabb()")
+	// log.Println("Calling ArrayMesh.GetCustomAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -228,7 +228,7 @@ func (o *ArrayMesh) GetCustomAabb() gdnative.Aabb {
 	Args: [{ false transform Transform} { false texel_size float}], Returns: enum.Error
 */
 func (o *ArrayMesh) LightmapUnwrap(transform gdnative.Transform, texelSize gdnative.Real) gdnative.Error {
-	//log.Println("Calling ArrayMesh.LightmapUnwrap()")
+	// log.Println("Calling ArrayMesh.LightmapUnwrap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -253,7 +253,7 @@ func (o *ArrayMesh) LightmapUnwrap(transform gdnative.Transform, texelSize gdnat
 	Args: [], Returns: void
 */
 func (o *ArrayMesh) RegenNormalmaps() {
-	//log.Println("Calling ArrayMesh.RegenNormalmaps()")
+	// log.Println("Calling ArrayMesh.RegenNormalmaps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -273,7 +273,7 @@ func (o *ArrayMesh) RegenNormalmaps() {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *ArrayMesh) SetBlendShapeMode(mode gdnative.Int) {
-	//log.Println("Calling ArrayMesh.SetBlendShapeMode()")
+	// log.Println("Calling ArrayMesh.SetBlendShapeMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -294,7 +294,7 @@ func (o *ArrayMesh) SetBlendShapeMode(mode gdnative.Int) {
 	Args: [{ false aabb AABB}], Returns: void
 */
 func (o *ArrayMesh) SetCustomAabb(aabb gdnative.Aabb) {
-	//log.Println("Calling ArrayMesh.SetCustomAabb()")
+	// log.Println("Calling ArrayMesh.SetCustomAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -315,7 +315,7 @@ func (o *ArrayMesh) SetCustomAabb(aabb gdnative.Aabb) {
 	Args: [{ false name String}], Returns: int
 */
 func (o *ArrayMesh) SurfaceFindByName(name gdnative.String) gdnative.Int {
-	//log.Println("Calling ArrayMesh.SurfaceFindByName()")
+	// log.Println("Calling ArrayMesh.SurfaceFindByName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -339,7 +339,7 @@ func (o *ArrayMesh) SurfaceFindByName(name gdnative.String) gdnative.Int {
 	Args: [{ false surf_idx int}], Returns: int
 */
 func (o *ArrayMesh) SurfaceGetArrayIndexLen(surfIdx gdnative.Int) gdnative.Int {
-	//log.Println("Calling ArrayMesh.SurfaceGetArrayIndexLen()")
+	// log.Println("Calling ArrayMesh.SurfaceGetArrayIndexLen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -363,7 +363,7 @@ func (o *ArrayMesh) SurfaceGetArrayIndexLen(surfIdx gdnative.Int) gdnative.Int {
 	Args: [{ false surf_idx int}], Returns: int
 */
 func (o *ArrayMesh) SurfaceGetArrayLen(surfIdx gdnative.Int) gdnative.Int {
-	//log.Println("Calling ArrayMesh.SurfaceGetArrayLen()")
+	// log.Println("Calling ArrayMesh.SurfaceGetArrayLen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -387,7 +387,7 @@ func (o *ArrayMesh) SurfaceGetArrayLen(surfIdx gdnative.Int) gdnative.Int {
 	Args: [{ false surf_idx int}], Returns: int
 */
 func (o *ArrayMesh) SurfaceGetFormat(surfIdx gdnative.Int) gdnative.Int {
-	//log.Println("Calling ArrayMesh.SurfaceGetFormat()")
+	// log.Println("Calling ArrayMesh.SurfaceGetFormat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -411,7 +411,7 @@ func (o *ArrayMesh) SurfaceGetFormat(surfIdx gdnative.Int) gdnative.Int {
 	Args: [{ false surf_idx int}], Returns: String
 */
 func (o *ArrayMesh) SurfaceGetName(surfIdx gdnative.Int) gdnative.String {
-	//log.Println("Calling ArrayMesh.SurfaceGetName()")
+	// log.Println("Calling ArrayMesh.SurfaceGetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -435,7 +435,7 @@ func (o *ArrayMesh) SurfaceGetName(surfIdx gdnative.Int) gdnative.String {
 	Args: [{ false surf_idx int}], Returns: enum.Mesh::PrimitiveType
 */
 func (o *ArrayMesh) SurfaceGetPrimitiveType(surfIdx gdnative.Int) MeshPrimitiveType {
-	//log.Println("Calling ArrayMesh.SurfaceGetPrimitiveType()")
+	// log.Println("Calling ArrayMesh.SurfaceGetPrimitiveType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -459,7 +459,7 @@ func (o *ArrayMesh) SurfaceGetPrimitiveType(surfIdx gdnative.Int) MeshPrimitiveT
 	Args: [{ false surf_idx int}], Returns: void
 */
 func (o *ArrayMesh) SurfaceRemove(surfIdx gdnative.Int) {
-	//log.Println("Calling ArrayMesh.SurfaceRemove()")
+	// log.Println("Calling ArrayMesh.SurfaceRemove()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -480,7 +480,7 @@ func (o *ArrayMesh) SurfaceRemove(surfIdx gdnative.Int) {
 	Args: [{ false surf_idx int} { false name String}], Returns: void
 */
 func (o *ArrayMesh) SurfaceSetName(surfIdx gdnative.Int, name gdnative.String) {
-	//log.Println("Calling ArrayMesh.SurfaceSetName()")
+	// log.Println("Calling ArrayMesh.SurfaceSetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -502,7 +502,7 @@ func (o *ArrayMesh) SurfaceSetName(surfIdx gdnative.Int, name gdnative.String) {
 	Args: [{ false surf_idx int} { false offset int} { false data PoolByteArray}], Returns: void
 */
 func (o *ArrayMesh) SurfaceUpdateRegion(surfIdx gdnative.Int, offset gdnative.Int, data gdnative.PoolByteArray) {
-	//log.Println("Calling ArrayMesh.SurfaceUpdateRegion()")
+	// log.Println("Calling ArrayMesh.SurfaceUpdateRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

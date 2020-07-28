@@ -39,7 +39,7 @@ func (o *CanvasLayer) BaseClass() string {
 	Args: [], Returns: RID
 */
 func (o *CanvasLayer) GetCanvas() gdnative.Rid {
-	//log.Println("Calling CanvasLayer.GetCanvas()")
+	// log.Println("Calling CanvasLayer.GetCanvas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CanvasLayer) GetCanvas() gdnative.Rid {
 	Args: [], Returns: Node
 */
 func (o *CanvasLayer) GetCustomViewport() NodeImplementer {
-	//log.Println("Calling CanvasLayer.GetCustomViewport()")
+	// log.Println("Calling CanvasLayer.GetCustomViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *CanvasLayer) GetCustomViewport() NodeImplementer {
 	Args: [], Returns: float
 */
 func (o *CanvasLayer) GetFollowViewportScale() gdnative.Real {
-	//log.Println("Calling CanvasLayer.GetFollowViewportScale()")
+	// log.Println("Calling CanvasLayer.GetFollowViewportScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *CanvasLayer) GetFollowViewportScale() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CanvasLayer) GetLayer() gdnative.Int {
-	//log.Println("Calling CanvasLayer.GetLayer()")
+	// log.Println("Calling CanvasLayer.GetLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *CanvasLayer) GetLayer() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasLayer) GetOffset() gdnative.Vector2 {
-	//log.Println("Calling CanvasLayer.GetOffset()")
+	// log.Println("Calling CanvasLayer.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *CanvasLayer) GetOffset() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *CanvasLayer) GetRotation() gdnative.Real {
-	//log.Println("Calling CanvasLayer.GetRotation()")
+	// log.Println("Calling CanvasLayer.GetRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *CanvasLayer) GetRotation() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CanvasLayer) GetRotationDegrees() gdnative.Real {
-	//log.Println("Calling CanvasLayer.GetRotationDegrees()")
+	// log.Println("Calling CanvasLayer.GetRotationDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -214,7 +214,7 @@ func (o *CanvasLayer) GetRotationDegrees() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasLayer) GetScale() gdnative.Vector2 {
-	//log.Println("Calling CanvasLayer.GetScale()")
+	// log.Println("Calling CanvasLayer.GetScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -237,7 +237,7 @@ func (o *CanvasLayer) GetScale() gdnative.Vector2 {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasLayer) GetTransform() gdnative.Transform2D {
-	//log.Println("Calling CanvasLayer.GetTransform()")
+	// log.Println("Calling CanvasLayer.GetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -260,7 +260,7 @@ func (o *CanvasLayer) GetTransform() gdnative.Transform2D {
 	Args: [], Returns: bool
 */
 func (o *CanvasLayer) IsFollowingViewport() gdnative.Bool {
-	//log.Println("Calling CanvasLayer.IsFollowingViewport()")
+	// log.Println("Calling CanvasLayer.IsFollowingViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -283,7 +283,7 @@ func (o *CanvasLayer) IsFollowingViewport() gdnative.Bool {
 	Args: [{ false viewport Node}], Returns: void
 */
 func (o *CanvasLayer) SetCustomViewport(viewport NodeImplementer) {
-	//log.Println("Calling CanvasLayer.SetCustomViewport()")
+	// log.Println("Calling CanvasLayer.SetCustomViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -304,7 +304,7 @@ func (o *CanvasLayer) SetCustomViewport(viewport NodeImplementer) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CanvasLayer) SetFollowViewport(enable gdnative.Bool) {
-	//log.Println("Calling CanvasLayer.SetFollowViewport()")
+	// log.Println("Calling CanvasLayer.SetFollowViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -325,7 +325,7 @@ func (o *CanvasLayer) SetFollowViewport(enable gdnative.Bool) {
 	Args: [{ false scale float}], Returns: void
 */
 func (o *CanvasLayer) SetFollowViewportScale(scale gdnative.Real) {
-	//log.Println("Calling CanvasLayer.SetFollowViewportScale()")
+	// log.Println("Calling CanvasLayer.SetFollowViewportScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -346,7 +346,7 @@ func (o *CanvasLayer) SetFollowViewportScale(scale gdnative.Real) {
 	Args: [{ false layer int}], Returns: void
 */
 func (o *CanvasLayer) SetLayer(layer gdnative.Int) {
-	//log.Println("Calling CanvasLayer.SetLayer()")
+	// log.Println("Calling CanvasLayer.SetLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -367,7 +367,7 @@ func (o *CanvasLayer) SetLayer(layer gdnative.Int) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *CanvasLayer) SetOffset(offset gdnative.Vector2) {
-	//log.Println("Calling CanvasLayer.SetOffset()")
+	// log.Println("Calling CanvasLayer.SetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -388,7 +388,7 @@ func (o *CanvasLayer) SetOffset(offset gdnative.Vector2) {
 	Args: [{ false radians float}], Returns: void
 */
 func (o *CanvasLayer) SetRotation(radians gdnative.Real) {
-	//log.Println("Calling CanvasLayer.SetRotation()")
+	// log.Println("Calling CanvasLayer.SetRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -409,7 +409,7 @@ func (o *CanvasLayer) SetRotation(radians gdnative.Real) {
 	Args: [{ false degrees float}], Returns: void
 */
 func (o *CanvasLayer) SetRotationDegrees(degrees gdnative.Real) {
-	//log.Println("Calling CanvasLayer.SetRotationDegrees()")
+	// log.Println("Calling CanvasLayer.SetRotationDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -430,7 +430,7 @@ func (o *CanvasLayer) SetRotationDegrees(degrees gdnative.Real) {
 	Args: [{ false scale Vector2}], Returns: void
 */
 func (o *CanvasLayer) SetScale(scale gdnative.Vector2) {
-	//log.Println("Calling CanvasLayer.SetScale()")
+	// log.Println("Calling CanvasLayer.SetScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -451,7 +451,7 @@ func (o *CanvasLayer) SetScale(scale gdnative.Vector2) {
 	Args: [{ false transform Transform2D}], Returns: void
 */
 func (o *CanvasLayer) SetTransform(transform gdnative.Transform2D) {
-	//log.Println("Calling CanvasLayer.SetTransform()")
+	// log.Println("Calling CanvasLayer.SetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *AudioEffectChorus) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectChorus) GetDry() gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetDry()")
+	// log.Println("Calling AudioEffectChorus.GetDry()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectChorus) GetDry() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *AudioEffectChorus) GetVoiceCount() gdnative.Int {
-	//log.Println("Calling AudioEffectChorus.GetVoiceCount()")
+	// log.Println("Calling AudioEffectChorus.GetVoiceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioEffectChorus) GetVoiceCount() gdnative.Int {
 	Args: [{ false voice_idx int}], Returns: float
 */
 func (o *AudioEffectChorus) GetVoiceCutoffHz(voiceIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetVoiceCutoffHz()")
+	// log.Println("Calling AudioEffectChorus.GetVoiceCutoffHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -109,7 +109,7 @@ func (o *AudioEffectChorus) GetVoiceCutoffHz(voiceIdx gdnative.Int) gdnative.Rea
 	Args: [{ false voice_idx int}], Returns: float
 */
 func (o *AudioEffectChorus) GetVoiceDelayMs(voiceIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetVoiceDelayMs()")
+	// log.Println("Calling AudioEffectChorus.GetVoiceDelayMs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -133,7 +133,7 @@ func (o *AudioEffectChorus) GetVoiceDelayMs(voiceIdx gdnative.Int) gdnative.Real
 	Args: [{ false voice_idx int}], Returns: float
 */
 func (o *AudioEffectChorus) GetVoiceDepthMs(voiceIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetVoiceDepthMs()")
+	// log.Println("Calling AudioEffectChorus.GetVoiceDepthMs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -157,7 +157,7 @@ func (o *AudioEffectChorus) GetVoiceDepthMs(voiceIdx gdnative.Int) gdnative.Real
 	Args: [{ false voice_idx int}], Returns: float
 */
 func (o *AudioEffectChorus) GetVoiceLevelDb(voiceIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetVoiceLevelDb()")
+	// log.Println("Calling AudioEffectChorus.GetVoiceLevelDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -181,7 +181,7 @@ func (o *AudioEffectChorus) GetVoiceLevelDb(voiceIdx gdnative.Int) gdnative.Real
 	Args: [{ false voice_idx int}], Returns: float
 */
 func (o *AudioEffectChorus) GetVoicePan(voiceIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetVoicePan()")
+	// log.Println("Calling AudioEffectChorus.GetVoicePan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -205,7 +205,7 @@ func (o *AudioEffectChorus) GetVoicePan(voiceIdx gdnative.Int) gdnative.Real {
 	Args: [{ false voice_idx int}], Returns: float
 */
 func (o *AudioEffectChorus) GetVoiceRateHz(voiceIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetVoiceRateHz()")
+	// log.Println("Calling AudioEffectChorus.GetVoiceRateHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -229,7 +229,7 @@ func (o *AudioEffectChorus) GetVoiceRateHz(voiceIdx gdnative.Int) gdnative.Real 
 	Args: [], Returns: float
 */
 func (o *AudioEffectChorus) GetWet() gdnative.Real {
-	//log.Println("Calling AudioEffectChorus.GetWet()")
+	// log.Println("Calling AudioEffectChorus.GetWet()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -252,7 +252,7 @@ func (o *AudioEffectChorus) GetWet() gdnative.Real {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectChorus) SetDry(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetDry()")
+	// log.Println("Calling AudioEffectChorus.SetDry()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -273,7 +273,7 @@ func (o *AudioEffectChorus) SetDry(amount gdnative.Real) {
 	Args: [{ false voices int}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoiceCount(voices gdnative.Int) {
-	//log.Println("Calling AudioEffectChorus.SetVoiceCount()")
+	// log.Println("Calling AudioEffectChorus.SetVoiceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -294,7 +294,7 @@ func (o *AudioEffectChorus) SetVoiceCount(voices gdnative.Int) {
 	Args: [{ false voice_idx int} { false cutoff_hz float}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoiceCutoffHz(voiceIdx gdnative.Int, cutoffHz gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetVoiceCutoffHz()")
+	// log.Println("Calling AudioEffectChorus.SetVoiceCutoffHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -316,7 +316,7 @@ func (o *AudioEffectChorus) SetVoiceCutoffHz(voiceIdx gdnative.Int, cutoffHz gdn
 	Args: [{ false voice_idx int} { false delay_ms float}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoiceDelayMs(voiceIdx gdnative.Int, delayMs gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetVoiceDelayMs()")
+	// log.Println("Calling AudioEffectChorus.SetVoiceDelayMs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -338,7 +338,7 @@ func (o *AudioEffectChorus) SetVoiceDelayMs(voiceIdx gdnative.Int, delayMs gdnat
 	Args: [{ false voice_idx int} { false depth_ms float}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoiceDepthMs(voiceIdx gdnative.Int, depthMs gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetVoiceDepthMs()")
+	// log.Println("Calling AudioEffectChorus.SetVoiceDepthMs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -360,7 +360,7 @@ func (o *AudioEffectChorus) SetVoiceDepthMs(voiceIdx gdnative.Int, depthMs gdnat
 	Args: [{ false voice_idx int} { false level_db float}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoiceLevelDb(voiceIdx gdnative.Int, levelDb gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetVoiceLevelDb()")
+	// log.Println("Calling AudioEffectChorus.SetVoiceLevelDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -382,7 +382,7 @@ func (o *AudioEffectChorus) SetVoiceLevelDb(voiceIdx gdnative.Int, levelDb gdnat
 	Args: [{ false voice_idx int} { false pan float}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoicePan(voiceIdx gdnative.Int, pan gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetVoicePan()")
+	// log.Println("Calling AudioEffectChorus.SetVoicePan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -404,7 +404,7 @@ func (o *AudioEffectChorus) SetVoicePan(voiceIdx gdnative.Int, pan gdnative.Real
 	Args: [{ false voice_idx int} { false rate_hz float}], Returns: void
 */
 func (o *AudioEffectChorus) SetVoiceRateHz(voiceIdx gdnative.Int, rateHz gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetVoiceRateHz()")
+	// log.Println("Calling AudioEffectChorus.SetVoiceRateHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -426,7 +426,7 @@ func (o *AudioEffectChorus) SetVoiceRateHz(voiceIdx gdnative.Int, rateHz gdnativ
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectChorus) SetWet(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectChorus.SetWet()")
+	// log.Println("Calling AudioEffectChorus.SetWet()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PacketPeerStream) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *PacketPeerStream) GetInputBufferMaxSize() gdnative.Int {
-	//log.Println("Calling PacketPeerStream.GetInputBufferMaxSize()")
+	// log.Println("Calling PacketPeerStream.GetInputBufferMaxSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PacketPeerStream) GetInputBufferMaxSize() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *PacketPeerStream) GetOutputBufferMaxSize() gdnative.Int {
-	//log.Println("Calling PacketPeerStream.GetOutputBufferMaxSize()")
+	// log.Println("Calling PacketPeerStream.GetOutputBufferMaxSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PacketPeerStream) GetOutputBufferMaxSize() gdnative.Int {
 	Args: [], Returns: StreamPeer
 */
 func (o *PacketPeerStream) GetStreamPeer() StreamPeerImplementer {
-	//log.Println("Calling PacketPeerStream.GetStreamPeer()")
+	// log.Println("Calling PacketPeerStream.GetStreamPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *PacketPeerStream) GetStreamPeer() StreamPeerImplementer {
 	Args: [{ false max_size_bytes int}], Returns: void
 */
 func (o *PacketPeerStream) SetInputBufferMaxSize(maxSizeBytes gdnative.Int) {
-	//log.Println("Calling PacketPeerStream.SetInputBufferMaxSize()")
+	// log.Println("Calling PacketPeerStream.SetInputBufferMaxSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -143,7 +143,7 @@ func (o *PacketPeerStream) SetInputBufferMaxSize(maxSizeBytes gdnative.Int) {
 	Args: [{ false max_size_bytes int}], Returns: void
 */
 func (o *PacketPeerStream) SetOutputBufferMaxSize(maxSizeBytes gdnative.Int) {
-	//log.Println("Calling PacketPeerStream.SetOutputBufferMaxSize()")
+	// log.Println("Calling PacketPeerStream.SetOutputBufferMaxSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -164,7 +164,7 @@ func (o *PacketPeerStream) SetOutputBufferMaxSize(maxSizeBytes gdnative.Int) {
 	Args: [{ false peer StreamPeer}], Returns: void
 */
 func (o *PacketPeerStream) SetStreamPeer(peer StreamPeerImplementer) {
-	//log.Println("Calling PacketPeerStream.SetStreamPeer()")
+	// log.Println("Calling PacketPeerStream.SetStreamPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

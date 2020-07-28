@@ -58,7 +58,7 @@ func (o *HTTPRequest) BaseClass() string {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *HTTPRequest) X_RedirectRequest(arg0 gdnative.String) {
-	//log.Println("Calling HTTPRequest.X_RedirectRequest()")
+	// log.Println("Calling HTTPRequest.X_RedirectRequest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -79,7 +79,7 @@ func (o *HTTPRequest) X_RedirectRequest(arg0 gdnative.String) {
 	Args: [{ false arg0 int} { false arg1 int} { false arg2 PoolStringArray} { false arg3 PoolByteArray}], Returns: void
 */
 func (o *HTTPRequest) X_RequestDone(arg0 gdnative.Int, arg1 gdnative.Int, arg2 gdnative.PoolStringArray, arg3 gdnative.PoolByteArray) {
-	//log.Println("Calling HTTPRequest.X_RequestDone()")
+	// log.Println("Calling HTTPRequest.X_RequestDone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -103,7 +103,7 @@ func (o *HTTPRequest) X_RequestDone(arg0 gdnative.Int, arg1 gdnative.Int, arg2 g
 	Args: [], Returns: void
 */
 func (o *HTTPRequest) X_Timeout() {
-	//log.Println("Calling HTTPRequest.X_Timeout()")
+	// log.Println("Calling HTTPRequest.X_Timeout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -123,7 +123,7 @@ func (o *HTTPRequest) X_Timeout() {
 	Args: [], Returns: void
 */
 func (o *HTTPRequest) CancelRequest() {
-	//log.Println("Calling HTTPRequest.CancelRequest()")
+	// log.Println("Calling HTTPRequest.CancelRequest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -143,7 +143,7 @@ func (o *HTTPRequest) CancelRequest() {
 	Args: [], Returns: int
 */
 func (o *HTTPRequest) GetBodySize() gdnative.Int {
-	//log.Println("Calling HTTPRequest.GetBodySize()")
+	// log.Println("Calling HTTPRequest.GetBodySize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -166,7 +166,7 @@ func (o *HTTPRequest) GetBodySize() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *HTTPRequest) GetBodySizeLimit() gdnative.Int {
-	//log.Println("Calling HTTPRequest.GetBodySizeLimit()")
+	// log.Println("Calling HTTPRequest.GetBodySizeLimit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -189,7 +189,7 @@ func (o *HTTPRequest) GetBodySizeLimit() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *HTTPRequest) GetDownloadChunkSize() gdnative.Int {
-	//log.Println("Calling HTTPRequest.GetDownloadChunkSize()")
+	// log.Println("Calling HTTPRequest.GetDownloadChunkSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -212,7 +212,7 @@ func (o *HTTPRequest) GetDownloadChunkSize() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *HTTPRequest) GetDownloadFile() gdnative.String {
-	//log.Println("Calling HTTPRequest.GetDownloadFile()")
+	// log.Println("Calling HTTPRequest.GetDownloadFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -235,7 +235,7 @@ func (o *HTTPRequest) GetDownloadFile() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *HTTPRequest) GetDownloadedBytes() gdnative.Int {
-	//log.Println("Calling HTTPRequest.GetDownloadedBytes()")
+	// log.Println("Calling HTTPRequest.GetDownloadedBytes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -258,7 +258,7 @@ func (o *HTTPRequest) GetDownloadedBytes() gdnative.Int {
 	Args: [], Returns: enum.HTTPClient::Status
 */
 func (o *HTTPRequest) GetHttpClientStatus() HTTPClientStatus {
-	//log.Println("Calling HTTPRequest.GetHttpClientStatus()")
+	// log.Println("Calling HTTPRequest.GetHttpClientStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -281,7 +281,7 @@ func (o *HTTPRequest) GetHttpClientStatus() HTTPClientStatus {
 	Args: [], Returns: int
 */
 func (o *HTTPRequest) GetMaxRedirects() gdnative.Int {
-	//log.Println("Calling HTTPRequest.GetMaxRedirects()")
+	// log.Println("Calling HTTPRequest.GetMaxRedirects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -304,7 +304,7 @@ func (o *HTTPRequest) GetMaxRedirects() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *HTTPRequest) GetTimeout() gdnative.Int {
-	//log.Println("Calling HTTPRequest.GetTimeout()")
+	// log.Println("Calling HTTPRequest.GetTimeout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -327,7 +327,7 @@ func (o *HTTPRequest) GetTimeout() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *HTTPRequest) IsUsingThreads() gdnative.Bool {
-	//log.Println("Calling HTTPRequest.IsUsingThreads()")
+	// log.Println("Calling HTTPRequest.IsUsingThreads()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -350,7 +350,7 @@ func (o *HTTPRequest) IsUsingThreads() gdnative.Bool {
 	Args: [{ false url String} {[] true custom_headers PoolStringArray} {True true ssl_validate_domain bool} {0 true method int} { true request_data String}], Returns: enum.Error
 */
 func (o *HTTPRequest) Request(url gdnative.String, customHeaders gdnative.PoolStringArray, sslValidateDomain gdnative.Bool, method gdnative.Int, requestData gdnative.String) gdnative.Error {
-	//log.Println("Calling HTTPRequest.Request()")
+	// log.Println("Calling HTTPRequest.Request()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -378,7 +378,7 @@ func (o *HTTPRequest) Request(url gdnative.String, customHeaders gdnative.PoolSt
 	Args: [{ false bytes int}], Returns: void
 */
 func (o *HTTPRequest) SetBodySizeLimit(bytes gdnative.Int) {
-	//log.Println("Calling HTTPRequest.SetBodySizeLimit()")
+	// log.Println("Calling HTTPRequest.SetBodySizeLimit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -399,7 +399,7 @@ func (o *HTTPRequest) SetBodySizeLimit(bytes gdnative.Int) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *HTTPRequest) SetDownloadChunkSize(arg0 gdnative.Int) {
-	//log.Println("Calling HTTPRequest.SetDownloadChunkSize()")
+	// log.Println("Calling HTTPRequest.SetDownloadChunkSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -420,7 +420,7 @@ func (o *HTTPRequest) SetDownloadChunkSize(arg0 gdnative.Int) {
 	Args: [{ false path String}], Returns: void
 */
 func (o *HTTPRequest) SetDownloadFile(path gdnative.String) {
-	//log.Println("Calling HTTPRequest.SetDownloadFile()")
+	// log.Println("Calling HTTPRequest.SetDownloadFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -441,7 +441,7 @@ func (o *HTTPRequest) SetDownloadFile(path gdnative.String) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *HTTPRequest) SetMaxRedirects(amount gdnative.Int) {
-	//log.Println("Calling HTTPRequest.SetMaxRedirects()")
+	// log.Println("Calling HTTPRequest.SetMaxRedirects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -462,7 +462,7 @@ func (o *HTTPRequest) SetMaxRedirects(amount gdnative.Int) {
 	Args: [{ false timeout int}], Returns: void
 */
 func (o *HTTPRequest) SetTimeout(timeout gdnative.Int) {
-	//log.Println("Calling HTTPRequest.SetTimeout()")
+	// log.Println("Calling HTTPRequest.SetTimeout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -483,7 +483,7 @@ func (o *HTTPRequest) SetTimeout(timeout gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *HTTPRequest) SetUseThreads(enable gdnative.Bool) {
-	//log.Println("Calling HTTPRequest.SetUseThreads()")
+	// log.Println("Calling HTTPRequest.SetUseThreads()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

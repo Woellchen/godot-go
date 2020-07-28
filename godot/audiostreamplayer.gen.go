@@ -48,7 +48,7 @@ func (o *AudioStreamPlayer) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *AudioStreamPlayer) X_BusLayoutChanged() {
-	//log.Println("Calling AudioStreamPlayer.X_BusLayoutChanged()")
+	// log.Println("Calling AudioStreamPlayer.X_BusLayoutChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -68,7 +68,7 @@ func (o *AudioStreamPlayer) X_BusLayoutChanged() {
 	Args: [], Returns: bool
 */
 func (o *AudioStreamPlayer) X_IsActive() gdnative.Bool {
-	//log.Println("Calling AudioStreamPlayer.X_IsActive()")
+	// log.Println("Calling AudioStreamPlayer.X_IsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -91,7 +91,7 @@ func (o *AudioStreamPlayer) X_IsActive() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AudioStreamPlayer) X_SetPlaying(enable gdnative.Bool) {
-	//log.Println("Calling AudioStreamPlayer.X_SetPlaying()")
+	// log.Println("Calling AudioStreamPlayer.X_SetPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -112,7 +112,7 @@ func (o *AudioStreamPlayer) X_SetPlaying(enable gdnative.Bool) {
 	Args: [], Returns: String
 */
 func (o *AudioStreamPlayer) GetBus() gdnative.String {
-	//log.Println("Calling AudioStreamPlayer.GetBus()")
+	// log.Println("Calling AudioStreamPlayer.GetBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -135,7 +135,7 @@ func (o *AudioStreamPlayer) GetBus() gdnative.String {
 	Args: [], Returns: enum.AudioStreamPlayer::MixTarget
 */
 func (o *AudioStreamPlayer) GetMixTarget() AudioStreamPlayerMixTarget {
-	//log.Println("Calling AudioStreamPlayer.GetMixTarget()")
+	// log.Println("Calling AudioStreamPlayer.GetMixTarget()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *AudioStreamPlayer) GetMixTarget() AudioStreamPlayerMixTarget {
 	Args: [], Returns: float
 */
 func (o *AudioStreamPlayer) GetPitchScale() gdnative.Real {
-	//log.Println("Calling AudioStreamPlayer.GetPitchScale()")
+	// log.Println("Calling AudioStreamPlayer.GetPitchScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -181,7 +181,7 @@ func (o *AudioStreamPlayer) GetPitchScale() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioStreamPlayer) GetPlaybackPosition() gdnative.Real {
-	//log.Println("Calling AudioStreamPlayer.GetPlaybackPosition()")
+	// log.Println("Calling AudioStreamPlayer.GetPlaybackPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -204,7 +204,7 @@ func (o *AudioStreamPlayer) GetPlaybackPosition() gdnative.Real {
 	Args: [], Returns: AudioStream
 */
 func (o *AudioStreamPlayer) GetStream() AudioStreamImplementer {
-	//log.Println("Calling AudioStreamPlayer.GetStream()")
+	// log.Println("Calling AudioStreamPlayer.GetStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -241,7 +241,7 @@ func (o *AudioStreamPlayer) GetStream() AudioStreamImplementer {
 	Args: [], Returns: bool
 */
 func (o *AudioStreamPlayer) GetStreamPaused() gdnative.Bool {
-	//log.Println("Calling AudioStreamPlayer.GetStreamPaused()")
+	// log.Println("Calling AudioStreamPlayer.GetStreamPaused()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -264,7 +264,7 @@ func (o *AudioStreamPlayer) GetStreamPaused() gdnative.Bool {
 	Args: [], Returns: AudioStreamPlayback
 */
 func (o *AudioStreamPlayer) GetStreamPlayback() AudioStreamPlaybackImplementer {
-	//log.Println("Calling AudioStreamPlayer.GetStreamPlayback()")
+	// log.Println("Calling AudioStreamPlayer.GetStreamPlayback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -301,7 +301,7 @@ func (o *AudioStreamPlayer) GetStreamPlayback() AudioStreamPlaybackImplementer {
 	Args: [], Returns: float
 */
 func (o *AudioStreamPlayer) GetVolumeDb() gdnative.Real {
-	//log.Println("Calling AudioStreamPlayer.GetVolumeDb()")
+	// log.Println("Calling AudioStreamPlayer.GetVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -324,7 +324,7 @@ func (o *AudioStreamPlayer) GetVolumeDb() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *AudioStreamPlayer) IsAutoplayEnabled() gdnative.Bool {
-	//log.Println("Calling AudioStreamPlayer.IsAutoplayEnabled()")
+	// log.Println("Calling AudioStreamPlayer.IsAutoplayEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -347,7 +347,7 @@ func (o *AudioStreamPlayer) IsAutoplayEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *AudioStreamPlayer) IsPlaying() gdnative.Bool {
-	//log.Println("Calling AudioStreamPlayer.IsPlaying()")
+	// log.Println("Calling AudioStreamPlayer.IsPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -370,7 +370,7 @@ func (o *AudioStreamPlayer) IsPlaying() gdnative.Bool {
 	Args: [{0 true from_position float}], Returns: void
 */
 func (o *AudioStreamPlayer) Play(fromPosition gdnative.Real) {
-	//log.Println("Calling AudioStreamPlayer.Play()")
+	// log.Println("Calling AudioStreamPlayer.Play()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -391,7 +391,7 @@ func (o *AudioStreamPlayer) Play(fromPosition gdnative.Real) {
 	Args: [{ false to_position float}], Returns: void
 */
 func (o *AudioStreamPlayer) Seek(toPosition gdnative.Real) {
-	//log.Println("Calling AudioStreamPlayer.Seek()")
+	// log.Println("Calling AudioStreamPlayer.Seek()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -412,7 +412,7 @@ func (o *AudioStreamPlayer) Seek(toPosition gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AudioStreamPlayer) SetAutoplay(enable gdnative.Bool) {
-	//log.Println("Calling AudioStreamPlayer.SetAutoplay()")
+	// log.Println("Calling AudioStreamPlayer.SetAutoplay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -433,7 +433,7 @@ func (o *AudioStreamPlayer) SetAutoplay(enable gdnative.Bool) {
 	Args: [{ false bus String}], Returns: void
 */
 func (o *AudioStreamPlayer) SetBus(bus gdnative.String) {
-	//log.Println("Calling AudioStreamPlayer.SetBus()")
+	// log.Println("Calling AudioStreamPlayer.SetBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -454,7 +454,7 @@ func (o *AudioStreamPlayer) SetBus(bus gdnative.String) {
 	Args: [{ false mix_target int}], Returns: void
 */
 func (o *AudioStreamPlayer) SetMixTarget(mixTarget gdnative.Int) {
-	//log.Println("Calling AudioStreamPlayer.SetMixTarget()")
+	// log.Println("Calling AudioStreamPlayer.SetMixTarget()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -475,7 +475,7 @@ func (o *AudioStreamPlayer) SetMixTarget(mixTarget gdnative.Int) {
 	Args: [{ false pitch_scale float}], Returns: void
 */
 func (o *AudioStreamPlayer) SetPitchScale(pitchScale gdnative.Real) {
-	//log.Println("Calling AudioStreamPlayer.SetPitchScale()")
+	// log.Println("Calling AudioStreamPlayer.SetPitchScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -496,7 +496,7 @@ func (o *AudioStreamPlayer) SetPitchScale(pitchScale gdnative.Real) {
 	Args: [{ false stream AudioStream}], Returns: void
 */
 func (o *AudioStreamPlayer) SetStream(stream AudioStreamImplementer) {
-	//log.Println("Calling AudioStreamPlayer.SetStream()")
+	// log.Println("Calling AudioStreamPlayer.SetStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -517,7 +517,7 @@ func (o *AudioStreamPlayer) SetStream(stream AudioStreamImplementer) {
 	Args: [{ false pause bool}], Returns: void
 */
 func (o *AudioStreamPlayer) SetStreamPaused(pause gdnative.Bool) {
-	//log.Println("Calling AudioStreamPlayer.SetStreamPaused()")
+	// log.Println("Calling AudioStreamPlayer.SetStreamPaused()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -538,7 +538,7 @@ func (o *AudioStreamPlayer) SetStreamPaused(pause gdnative.Bool) {
 	Args: [{ false volume_db float}], Returns: void
 */
 func (o *AudioStreamPlayer) SetVolumeDb(volumeDb gdnative.Real) {
-	//log.Println("Calling AudioStreamPlayer.SetVolumeDb()")
+	// log.Println("Calling AudioStreamPlayer.SetVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -559,7 +559,7 @@ func (o *AudioStreamPlayer) SetVolumeDb(volumeDb gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *AudioStreamPlayer) Stop() {
-	//log.Println("Calling AudioStreamPlayer.Stop()")
+	// log.Println("Calling AudioStreamPlayer.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

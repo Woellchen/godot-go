@@ -39,7 +39,7 @@ func (o *EditorSelection) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *EditorSelection) X_EmitChange() {
-	//log.Println("Calling EditorSelection.X_EmitChange()")
+	// log.Println("Calling EditorSelection.X_EmitChange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *EditorSelection) X_EmitChange() {
 	Args: [{ false arg0 Node}], Returns: void
 */
 func (o *EditorSelection) X_NodeRemoved(arg0 NodeImplementer) {
-	//log.Println("Calling EditorSelection.X_NodeRemoved()")
+	// log.Println("Calling EditorSelection.X_NodeRemoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *EditorSelection) X_NodeRemoved(arg0 NodeImplementer) {
 	Args: [{ false node Node}], Returns: void
 */
 func (o *EditorSelection) AddNode(node NodeImplementer) {
-	//log.Println("Calling EditorSelection.AddNode()")
+	// log.Println("Calling EditorSelection.AddNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *EditorSelection) AddNode(node NodeImplementer) {
 	Args: [], Returns: void
 */
 func (o *EditorSelection) Clear() {
-	//log.Println("Calling EditorSelection.Clear()")
+	// log.Println("Calling EditorSelection.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -121,7 +121,7 @@ func (o *EditorSelection) Clear() {
 	Args: [], Returns: Array
 */
 func (o *EditorSelection) GetSelectedNodes() gdnative.Array {
-	//log.Println("Calling EditorSelection.GetSelectedNodes()")
+	// log.Println("Calling EditorSelection.GetSelectedNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -144,7 +144,7 @@ func (o *EditorSelection) GetSelectedNodes() gdnative.Array {
 	Args: [], Returns: Array
 */
 func (o *EditorSelection) GetTransformableSelectedNodes() gdnative.Array {
-	//log.Println("Calling EditorSelection.GetTransformableSelectedNodes()")
+	// log.Println("Calling EditorSelection.GetTransformableSelectedNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -167,7 +167,7 @@ func (o *EditorSelection) GetTransformableSelectedNodes() gdnative.Array {
 	Args: [{ false node Node}], Returns: void
 */
 func (o *EditorSelection) RemoveNode(node NodeImplementer) {
-	//log.Println("Calling EditorSelection.RemoveNode()")
+	// log.Println("Calling EditorSelection.RemoveNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *LineShape2D) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *LineShape2D) GetD() gdnative.Real {
-	//log.Println("Calling LineShape2D.GetD()")
+	// log.Println("Calling LineShape2D.GetD()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *LineShape2D) GetD() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *LineShape2D) GetNormal() gdnative.Vector2 {
-	//log.Println("Calling LineShape2D.GetNormal()")
+	// log.Println("Calling LineShape2D.GetNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *LineShape2D) GetNormal() gdnative.Vector2 {
 	Args: [{ false d float}], Returns: void
 */
 func (o *LineShape2D) SetD(d gdnative.Real) {
-	//log.Println("Calling LineShape2D.SetD()")
+	// log.Println("Calling LineShape2D.SetD()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *LineShape2D) SetD(d gdnative.Real) {
 	Args: [{ false normal Vector2}], Returns: void
 */
 func (o *LineShape2D) SetNormal(normal gdnative.Vector2) {
-	//log.Println("Calling LineShape2D.SetNormal()")
+	// log.Println("Calling LineShape2D.SetNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

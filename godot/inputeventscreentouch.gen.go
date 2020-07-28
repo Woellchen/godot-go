@@ -39,7 +39,7 @@ func (o *InputEventScreenTouch) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventScreenTouch) GetIndex() gdnative.Int {
-	//log.Println("Calling InputEventScreenTouch.GetIndex()")
+	// log.Println("Calling InputEventScreenTouch.GetIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventScreenTouch) GetIndex() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventScreenTouch) GetPosition() gdnative.Vector2 {
-	//log.Println("Calling InputEventScreenTouch.GetPosition()")
+	// log.Println("Calling InputEventScreenTouch.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventScreenTouch) GetPosition() gdnative.Vector2 {
 	Args: [{ false index int}], Returns: void
 */
 func (o *InputEventScreenTouch) SetIndex(index gdnative.Int) {
-	//log.Println("Calling InputEventScreenTouch.SetIndex()")
+	// log.Println("Calling InputEventScreenTouch.SetIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *InputEventScreenTouch) SetIndex(index gdnative.Int) {
 	Args: [{ false position Vector2}], Returns: void
 */
 func (o *InputEventScreenTouch) SetPosition(position gdnative.Vector2) {
-	//log.Println("Calling InputEventScreenTouch.SetPosition()")
+	// log.Println("Calling InputEventScreenTouch.SetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -127,7 +127,7 @@ func (o *InputEventScreenTouch) SetPosition(position gdnative.Vector2) {
 	Args: [{ false pressed bool}], Returns: void
 */
 func (o *InputEventScreenTouch) SetPressed(pressed gdnative.Bool) {
-	//log.Println("Calling InputEventScreenTouch.SetPressed()")
+	// log.Println("Calling InputEventScreenTouch.SetPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

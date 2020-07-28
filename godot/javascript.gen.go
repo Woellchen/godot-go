@@ -62,7 +62,7 @@ func (o *javaScript) BaseClass() string {
 */
 func (o *javaScript) Eval(code gdnative.String, useGlobalExecutionContext gdnative.Bool) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling JavaScript.Eval()")
+	// log.Println("Calling JavaScript.Eval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

@@ -67,7 +67,7 @@ func (o *BakedLightmap) BaseClass() string {
 	Args: [{Null true from_node Node} {False true create_visual_debug bool}], Returns: enum.BakedLightmap::BakeError
 */
 func (o *BakedLightmap) Bake(fromNode NodeImplementer, createVisualDebug gdnative.Bool) BakedLightmapBakeError {
-	//log.Println("Calling BakedLightmap.Bake()")
+	// log.Println("Calling BakedLightmap.Bake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -92,7 +92,7 @@ func (o *BakedLightmap) Bake(fromNode NodeImplementer, createVisualDebug gdnativ
 	Args: [], Returns: void
 */
 func (o *BakedLightmap) DebugBake() {
-	//log.Println("Calling BakedLightmap.DebugBake()")
+	// log.Println("Calling BakedLightmap.DebugBake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -112,7 +112,7 @@ func (o *BakedLightmap) DebugBake() {
 	Args: [], Returns: float
 */
 func (o *BakedLightmap) GetBakeCellSize() gdnative.Real {
-	//log.Println("Calling BakedLightmap.GetBakeCellSize()")
+	// log.Println("Calling BakedLightmap.GetBakeCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -135,7 +135,7 @@ func (o *BakedLightmap) GetBakeCellSize() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *BakedLightmap) GetBakeDefaultTexelsPerUnit() gdnative.Real {
-	//log.Println("Calling BakedLightmap.GetBakeDefaultTexelsPerUnit()")
+	// log.Println("Calling BakedLightmap.GetBakeDefaultTexelsPerUnit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *BakedLightmap) GetBakeDefaultTexelsPerUnit() gdnative.Real {
 	Args: [], Returns: enum.BakedLightmap::BakeMode
 */
 func (o *BakedLightmap) GetBakeMode() BakedLightmapBakeMode {
-	//log.Println("Calling BakedLightmap.GetBakeMode()")
+	// log.Println("Calling BakedLightmap.GetBakeMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -181,7 +181,7 @@ func (o *BakedLightmap) GetBakeMode() BakedLightmapBakeMode {
 	Args: [], Returns: enum.BakedLightmap::BakeQuality
 */
 func (o *BakedLightmap) GetBakeQuality() BakedLightmapBakeQuality {
-	//log.Println("Calling BakedLightmap.GetBakeQuality()")
+	// log.Println("Calling BakedLightmap.GetBakeQuality()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -204,7 +204,7 @@ func (o *BakedLightmap) GetBakeQuality() BakedLightmapBakeQuality {
 	Args: [], Returns: float
 */
 func (o *BakedLightmap) GetCaptureCellSize() gdnative.Real {
-	//log.Println("Calling BakedLightmap.GetCaptureCellSize()")
+	// log.Println("Calling BakedLightmap.GetCaptureCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -227,7 +227,7 @@ func (o *BakedLightmap) GetCaptureCellSize() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *BakedLightmap) GetEnergy() gdnative.Real {
-	//log.Println("Calling BakedLightmap.GetEnergy()")
+	// log.Println("Calling BakedLightmap.GetEnergy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -250,7 +250,7 @@ func (o *BakedLightmap) GetEnergy() gdnative.Real {
 	Args: [], Returns: Vector3
 */
 func (o *BakedLightmap) GetExtents() gdnative.Vector3 {
-	//log.Println("Calling BakedLightmap.GetExtents()")
+	// log.Println("Calling BakedLightmap.GetExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -273,7 +273,7 @@ func (o *BakedLightmap) GetExtents() gdnative.Vector3 {
 	Args: [], Returns: String
 */
 func (o *BakedLightmap) GetImagePath() gdnative.String {
-	//log.Println("Calling BakedLightmap.GetImagePath()")
+	// log.Println("Calling BakedLightmap.GetImagePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -296,7 +296,7 @@ func (o *BakedLightmap) GetImagePath() gdnative.String {
 	Args: [], Returns: BakedLightmapData
 */
 func (o *BakedLightmap) GetLightData() BakedLightmapDataImplementer {
-	//log.Println("Calling BakedLightmap.GetLightData()")
+	// log.Println("Calling BakedLightmap.GetLightData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -333,7 +333,7 @@ func (o *BakedLightmap) GetLightData() BakedLightmapDataImplementer {
 	Args: [], Returns: float
 */
 func (o *BakedLightmap) GetPropagation() gdnative.Real {
-	//log.Println("Calling BakedLightmap.GetPropagation()")
+	// log.Println("Calling BakedLightmap.GetPropagation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -356,7 +356,7 @@ func (o *BakedLightmap) GetPropagation() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *BakedLightmap) IsHdr() gdnative.Bool {
-	//log.Println("Calling BakedLightmap.IsHdr()")
+	// log.Println("Calling BakedLightmap.IsHdr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -379,7 +379,7 @@ func (o *BakedLightmap) IsHdr() gdnative.Bool {
 	Args: [{ false bake_cell_size float}], Returns: void
 */
 func (o *BakedLightmap) SetBakeCellSize(bakeCellSize gdnative.Real) {
-	//log.Println("Calling BakedLightmap.SetBakeCellSize()")
+	// log.Println("Calling BakedLightmap.SetBakeCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -400,7 +400,7 @@ func (o *BakedLightmap) SetBakeCellSize(bakeCellSize gdnative.Real) {
 	Args: [{ false texels float}], Returns: void
 */
 func (o *BakedLightmap) SetBakeDefaultTexelsPerUnit(texels gdnative.Real) {
-	//log.Println("Calling BakedLightmap.SetBakeDefaultTexelsPerUnit()")
+	// log.Println("Calling BakedLightmap.SetBakeDefaultTexelsPerUnit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -421,7 +421,7 @@ func (o *BakedLightmap) SetBakeDefaultTexelsPerUnit(texels gdnative.Real) {
 	Args: [{ false bake_mode int}], Returns: void
 */
 func (o *BakedLightmap) SetBakeMode(bakeMode gdnative.Int) {
-	//log.Println("Calling BakedLightmap.SetBakeMode()")
+	// log.Println("Calling BakedLightmap.SetBakeMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -442,7 +442,7 @@ func (o *BakedLightmap) SetBakeMode(bakeMode gdnative.Int) {
 	Args: [{ false bake_quality int}], Returns: void
 */
 func (o *BakedLightmap) SetBakeQuality(bakeQuality gdnative.Int) {
-	//log.Println("Calling BakedLightmap.SetBakeQuality()")
+	// log.Println("Calling BakedLightmap.SetBakeQuality()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -463,7 +463,7 @@ func (o *BakedLightmap) SetBakeQuality(bakeQuality gdnative.Int) {
 	Args: [{ false capture_cell_size float}], Returns: void
 */
 func (o *BakedLightmap) SetCaptureCellSize(captureCellSize gdnative.Real) {
-	//log.Println("Calling BakedLightmap.SetCaptureCellSize()")
+	// log.Println("Calling BakedLightmap.SetCaptureCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -484,7 +484,7 @@ func (o *BakedLightmap) SetCaptureCellSize(captureCellSize gdnative.Real) {
 	Args: [{ false energy float}], Returns: void
 */
 func (o *BakedLightmap) SetEnergy(energy gdnative.Real) {
-	//log.Println("Calling BakedLightmap.SetEnergy()")
+	// log.Println("Calling BakedLightmap.SetEnergy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -505,7 +505,7 @@ func (o *BakedLightmap) SetEnergy(energy gdnative.Real) {
 	Args: [{ false extents Vector3}], Returns: void
 */
 func (o *BakedLightmap) SetExtents(extents gdnative.Vector3) {
-	//log.Println("Calling BakedLightmap.SetExtents()")
+	// log.Println("Calling BakedLightmap.SetExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -526,7 +526,7 @@ func (o *BakedLightmap) SetExtents(extents gdnative.Vector3) {
 	Args: [{ false hdr bool}], Returns: void
 */
 func (o *BakedLightmap) SetHdr(hdr gdnative.Bool) {
-	//log.Println("Calling BakedLightmap.SetHdr()")
+	// log.Println("Calling BakedLightmap.SetHdr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -547,7 +547,7 @@ func (o *BakedLightmap) SetHdr(hdr gdnative.Bool) {
 	Args: [{ false image_path String}], Returns: void
 */
 func (o *BakedLightmap) SetImagePath(imagePath gdnative.String) {
-	//log.Println("Calling BakedLightmap.SetImagePath()")
+	// log.Println("Calling BakedLightmap.SetImagePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -568,7 +568,7 @@ func (o *BakedLightmap) SetImagePath(imagePath gdnative.String) {
 	Args: [{ false data BakedLightmapData}], Returns: void
 */
 func (o *BakedLightmap) SetLightData(data BakedLightmapDataImplementer) {
-	//log.Println("Calling BakedLightmap.SetLightData()")
+	// log.Println("Calling BakedLightmap.SetLightData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -589,7 +589,7 @@ func (o *BakedLightmap) SetLightData(data BakedLightmapDataImplementer) {
 	Args: [{ false propagation float}], Returns: void
 */
 func (o *BakedLightmap) SetPropagation(propagation gdnative.Real) {
-	//log.Println("Calling BakedLightmap.SetPropagation()")
+	// log.Println("Calling BakedLightmap.SetPropagation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

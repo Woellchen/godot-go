@@ -39,7 +39,7 @@ func (o *CharFXTransform) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *CharFXTransform) GetAbsoluteIndex() gdnative.Int {
-	//log.Println("Calling CharFXTransform.GetAbsoluteIndex()")
+	// log.Println("Calling CharFXTransform.GetAbsoluteIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CharFXTransform) GetAbsoluteIndex() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *CharFXTransform) GetCharacter() gdnative.Int {
-	//log.Println("Calling CharFXTransform.GetCharacter()")
+	// log.Println("Calling CharFXTransform.GetCharacter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CharFXTransform) GetCharacter() gdnative.Int {
 	Args: [], Returns: Color
 */
 func (o *CharFXTransform) GetColor() gdnative.Color {
-	//log.Println("Calling CharFXTransform.GetColor()")
+	// log.Println("Calling CharFXTransform.GetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *CharFXTransform) GetColor() gdnative.Color {
 	Args: [], Returns: float
 */
 func (o *CharFXTransform) GetElapsedTime() gdnative.Real {
-	//log.Println("Calling CharFXTransform.GetElapsedTime()")
+	// log.Println("Calling CharFXTransform.GetElapsedTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *CharFXTransform) GetElapsedTime() gdnative.Real {
 	Args: [], Returns: Dictionary
 */
 func (o *CharFXTransform) GetEnvironment() gdnative.Dictionary {
-	//log.Println("Calling CharFXTransform.GetEnvironment()")
+	// log.Println("Calling CharFXTransform.GetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *CharFXTransform) GetEnvironment() gdnative.Dictionary {
 	Args: [], Returns: Vector2
 */
 func (o *CharFXTransform) GetOffset() gdnative.Vector2 {
-	//log.Println("Calling CharFXTransform.GetOffset()")
+	// log.Println("Calling CharFXTransform.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *CharFXTransform) GetOffset() gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *CharFXTransform) GetRelativeIndex() gdnative.Int {
-	//log.Println("Calling CharFXTransform.GetRelativeIndex()")
+	// log.Println("Calling CharFXTransform.GetRelativeIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *CharFXTransform) GetRelativeIndex() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CharFXTransform) IsVisible() gdnative.Bool {
-	//log.Println("Calling CharFXTransform.IsVisible()")
+	// log.Println("Calling CharFXTransform.IsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *CharFXTransform) IsVisible() gdnative.Bool {
 	Args: [{ false index int}], Returns: void
 */
 func (o *CharFXTransform) SetAbsoluteIndex(index gdnative.Int) {
-	//log.Println("Calling CharFXTransform.SetAbsoluteIndex()")
+	// log.Println("Calling CharFXTransform.SetAbsoluteIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *CharFXTransform) SetAbsoluteIndex(index gdnative.Int) {
 	Args: [{ false character int}], Returns: void
 */
 func (o *CharFXTransform) SetCharacter(character gdnative.Int) {
-	//log.Println("Calling CharFXTransform.SetCharacter()")
+	// log.Println("Calling CharFXTransform.SetCharacter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *CharFXTransform) SetCharacter(character gdnative.Int) {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *CharFXTransform) SetColor(color gdnative.Color) {
-	//log.Println("Calling CharFXTransform.SetColor()")
+	// log.Println("Calling CharFXTransform.SetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *CharFXTransform) SetColor(color gdnative.Color) {
 	Args: [{ false time float}], Returns: void
 */
 func (o *CharFXTransform) SetElapsedTime(time gdnative.Real) {
-	//log.Println("Calling CharFXTransform.SetElapsedTime()")
+	// log.Println("Calling CharFXTransform.SetElapsedTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -307,7 +307,7 @@ func (o *CharFXTransform) SetElapsedTime(time gdnative.Real) {
 	Args: [{ false environment Dictionary}], Returns: void
 */
 func (o *CharFXTransform) SetEnvironment(environment gdnative.Dictionary) {
-	//log.Println("Calling CharFXTransform.SetEnvironment()")
+	// log.Println("Calling CharFXTransform.SetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *CharFXTransform) SetEnvironment(environment gdnative.Dictionary) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *CharFXTransform) SetOffset(offset gdnative.Vector2) {
-	//log.Println("Calling CharFXTransform.SetOffset()")
+	// log.Println("Calling CharFXTransform.SetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -349,7 +349,7 @@ func (o *CharFXTransform) SetOffset(offset gdnative.Vector2) {
 	Args: [{ false index int}], Returns: void
 */
 func (o *CharFXTransform) SetRelativeIndex(index gdnative.Int) {
-	//log.Println("Calling CharFXTransform.SetRelativeIndex()")
+	// log.Println("Calling CharFXTransform.SetRelativeIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +370,7 @@ func (o *CharFXTransform) SetRelativeIndex(index gdnative.Int) {
 	Args: [{ false visibility bool}], Returns: void
 */
 func (o *CharFXTransform) SetVisibility(visibility gdnative.Bool) {
-	//log.Println("Calling CharFXTransform.SetVisibility()")
+	// log.Println("Calling CharFXTransform.SetVisibility()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

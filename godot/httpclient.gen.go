@@ -138,7 +138,7 @@ func (o *HTTPClient) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *HTTPClient) Close() {
-	//log.Println("Calling HTTPClient.Close()")
+	// log.Println("Calling HTTPClient.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *HTTPClient) Close() {
 	Args: [{ false host String} {-1 true port int} {False true use_ssl bool} {True true verify_host bool}], Returns: enum.Error
 */
 func (o *HTTPClient) ConnectToHost(host gdnative.String, port gdnative.Int, useSsl gdnative.Bool, verifyHost gdnative.Bool) gdnative.Error {
-	//log.Println("Calling HTTPClient.ConnectToHost()")
+	// log.Println("Calling HTTPClient.ConnectToHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -185,7 +185,7 @@ func (o *HTTPClient) ConnectToHost(host gdnative.String, port gdnative.Int, useS
 	Args: [], Returns: StreamPeer
 */
 func (o *HTTPClient) GetConnection() StreamPeerImplementer {
-	//log.Println("Calling HTTPClient.GetConnection()")
+	// log.Println("Calling HTTPClient.GetConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -222,7 +222,7 @@ func (o *HTTPClient) GetConnection() StreamPeerImplementer {
 	Args: [], Returns: int
 */
 func (o *HTTPClient) GetReadChunkSize() gdnative.Int {
-	//log.Println("Calling HTTPClient.GetReadChunkSize()")
+	// log.Println("Calling HTTPClient.GetReadChunkSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -245,7 +245,7 @@ func (o *HTTPClient) GetReadChunkSize() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *HTTPClient) GetResponseBodyLength() gdnative.Int {
-	//log.Println("Calling HTTPClient.GetResponseBodyLength()")
+	// log.Println("Calling HTTPClient.GetResponseBodyLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -268,7 +268,7 @@ func (o *HTTPClient) GetResponseBodyLength() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *HTTPClient) GetResponseCode() gdnative.Int {
-	//log.Println("Calling HTTPClient.GetResponseCode()")
+	// log.Println("Calling HTTPClient.GetResponseCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -291,7 +291,7 @@ func (o *HTTPClient) GetResponseCode() gdnative.Int {
 	Args: [], Returns: PoolStringArray
 */
 func (o *HTTPClient) GetResponseHeaders() gdnative.PoolStringArray {
-	//log.Println("Calling HTTPClient.GetResponseHeaders()")
+	// log.Println("Calling HTTPClient.GetResponseHeaders()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -314,7 +314,7 @@ func (o *HTTPClient) GetResponseHeaders() gdnative.PoolStringArray {
 	Args: [], Returns: Dictionary
 */
 func (o *HTTPClient) GetResponseHeadersAsDictionary() gdnative.Dictionary {
-	//log.Println("Calling HTTPClient.GetResponseHeadersAsDictionary()")
+	// log.Println("Calling HTTPClient.GetResponseHeadersAsDictionary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -337,7 +337,7 @@ func (o *HTTPClient) GetResponseHeadersAsDictionary() gdnative.Dictionary {
 	Args: [], Returns: enum.HTTPClient::Status
 */
 func (o *HTTPClient) GetStatus() HTTPClientStatus {
-	//log.Println("Calling HTTPClient.GetStatus()")
+	// log.Println("Calling HTTPClient.GetStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -360,7 +360,7 @@ func (o *HTTPClient) GetStatus() HTTPClientStatus {
 	Args: [], Returns: bool
 */
 func (o *HTTPClient) HasResponse() gdnative.Bool {
-	//log.Println("Calling HTTPClient.HasResponse()")
+	// log.Println("Calling HTTPClient.HasResponse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -383,7 +383,7 @@ func (o *HTTPClient) HasResponse() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *HTTPClient) IsBlockingModeEnabled() gdnative.Bool {
-	//log.Println("Calling HTTPClient.IsBlockingModeEnabled()")
+	// log.Println("Calling HTTPClient.IsBlockingModeEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -406,7 +406,7 @@ func (o *HTTPClient) IsBlockingModeEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *HTTPClient) IsResponseChunked() gdnative.Bool {
-	//log.Println("Calling HTTPClient.IsResponseChunked()")
+	// log.Println("Calling HTTPClient.IsResponseChunked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -429,7 +429,7 @@ func (o *HTTPClient) IsResponseChunked() gdnative.Bool {
 	Args: [], Returns: enum.Error
 */
 func (o *HTTPClient) Poll() gdnative.Error {
-	//log.Println("Calling HTTPClient.Poll()")
+	// log.Println("Calling HTTPClient.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -452,7 +452,7 @@ func (o *HTTPClient) Poll() gdnative.Error {
 	Args: [{ false fields Dictionary}], Returns: String
 */
 func (o *HTTPClient) QueryStringFromDict(fields gdnative.Dictionary) gdnative.String {
-	//log.Println("Calling HTTPClient.QueryStringFromDict()")
+	// log.Println("Calling HTTPClient.QueryStringFromDict()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -476,7 +476,7 @@ func (o *HTTPClient) QueryStringFromDict(fields gdnative.Dictionary) gdnative.St
 	Args: [], Returns: PoolByteArray
 */
 func (o *HTTPClient) ReadResponseBodyChunk() gdnative.PoolByteArray {
-	//log.Println("Calling HTTPClient.ReadResponseBodyChunk()")
+	// log.Println("Calling HTTPClient.ReadResponseBodyChunk()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -499,7 +499,7 @@ func (o *HTTPClient) ReadResponseBodyChunk() gdnative.PoolByteArray {
 	Args: [{ false method int} { false url String} { false headers PoolStringArray} { true body String}], Returns: enum.Error
 */
 func (o *HTTPClient) Request(method gdnative.Int, url gdnative.String, headers gdnative.PoolStringArray, body gdnative.String) gdnative.Error {
-	//log.Println("Calling HTTPClient.Request()")
+	// log.Println("Calling HTTPClient.Request()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -526,7 +526,7 @@ func (o *HTTPClient) Request(method gdnative.Int, url gdnative.String, headers g
 	Args: [{ false method int} { false url String} { false headers PoolStringArray} { false body PoolByteArray}], Returns: enum.Error
 */
 func (o *HTTPClient) RequestRaw(method gdnative.Int, url gdnative.String, headers gdnative.PoolStringArray, body gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling HTTPClient.RequestRaw()")
+	// log.Println("Calling HTTPClient.RequestRaw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -553,7 +553,7 @@ func (o *HTTPClient) RequestRaw(method gdnative.Int, url gdnative.String, header
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *HTTPClient) SetBlockingMode(enabled gdnative.Bool) {
-	//log.Println("Calling HTTPClient.SetBlockingMode()")
+	// log.Println("Calling HTTPClient.SetBlockingMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -574,7 +574,7 @@ func (o *HTTPClient) SetBlockingMode(enabled gdnative.Bool) {
 	Args: [{ false connection StreamPeer}], Returns: void
 */
 func (o *HTTPClient) SetConnection(connection StreamPeerImplementer) {
-	//log.Println("Calling HTTPClient.SetConnection()")
+	// log.Println("Calling HTTPClient.SetConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -595,7 +595,7 @@ func (o *HTTPClient) SetConnection(connection StreamPeerImplementer) {
 	Args: [{ false bytes int}], Returns: void
 */
 func (o *HTTPClient) SetReadChunkSize(bytes gdnative.Int) {
-	//log.Println("Calling HTTPClient.SetReadChunkSize()")
+	// log.Println("Calling HTTPClient.SetReadChunkSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

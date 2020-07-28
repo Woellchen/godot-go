@@ -39,7 +39,7 @@ func (o *Material) BaseClass() string {
 	Args: [], Returns: Material
 */
 func (o *Material) GetNextPass() MaterialImplementer {
-	//log.Println("Calling Material.GetNextPass()")
+	// log.Println("Calling Material.GetNextPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *Material) GetNextPass() MaterialImplementer {
 	Args: [], Returns: int
 */
 func (o *Material) GetRenderPriority() gdnative.Int {
-	//log.Println("Calling Material.GetRenderPriority()")
+	// log.Println("Calling Material.GetRenderPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *Material) GetRenderPriority() gdnative.Int {
 	Args: [{ false next_pass Material}], Returns: void
 */
 func (o *Material) SetNextPass(nextPass MaterialImplementer) {
-	//log.Println("Calling Material.SetNextPass()")
+	// log.Println("Calling Material.SetNextPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -120,7 +120,7 @@ func (o *Material) SetNextPass(nextPass MaterialImplementer) {
 	Args: [{ false priority int}], Returns: void
 */
 func (o *Material) SetRenderPriority(priority gdnative.Int) {
-	//log.Println("Calling Material.SetRenderPriority()")
+	// log.Println("Calling Material.SetRenderPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

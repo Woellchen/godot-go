@@ -39,7 +39,7 @@ func (o *EditorVCSInterface) BaseClass() string {
 	Args: [{ false msg String}], Returns: void
 */
 func (o *EditorVCSInterface) X_Commit(msg gdnative.String) {
-	//log.Println("Calling EditorVCSInterface.X_Commit()")
+	// log.Println("Calling EditorVCSInterface.X_Commit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *EditorVCSInterface) X_Commit(msg gdnative.String) {
 	Args: [{ false file_path String}], Returns: Array
 */
 func (o *EditorVCSInterface) X_GetFileDiff(filePath gdnative.String) gdnative.Array {
-	//log.Println("Calling EditorVCSInterface.X_GetFileDiff()")
+	// log.Println("Calling EditorVCSInterface.X_GetFileDiff()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -84,7 +84,7 @@ func (o *EditorVCSInterface) X_GetFileDiff(filePath gdnative.String) gdnative.Ar
 	Args: [], Returns: Dictionary
 */
 func (o *EditorVCSInterface) X_GetModifiedFilesData() gdnative.Dictionary {
-	//log.Println("Calling EditorVCSInterface.X_GetModifiedFilesData()")
+	// log.Println("Calling EditorVCSInterface.X_GetModifiedFilesData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -107,7 +107,7 @@ func (o *EditorVCSInterface) X_GetModifiedFilesData() gdnative.Dictionary {
 	Args: [], Returns: String
 */
 func (o *EditorVCSInterface) X_GetProjectName() gdnative.String {
-	//log.Println("Calling EditorVCSInterface.X_GetProjectName()")
+	// log.Println("Calling EditorVCSInterface.X_GetProjectName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -130,7 +130,7 @@ func (o *EditorVCSInterface) X_GetProjectName() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorVCSInterface) X_GetVcsName() gdnative.String {
-	//log.Println("Calling EditorVCSInterface.X_GetVcsName()")
+	// log.Println("Calling EditorVCSInterface.X_GetVcsName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -153,7 +153,7 @@ func (o *EditorVCSInterface) X_GetVcsName() gdnative.String {
 	Args: [{ false project_root_path String}], Returns: bool
 */
 func (o *EditorVCSInterface) X_Initialize(projectRootPath gdnative.String) gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.X_Initialize()")
+	// log.Println("Calling EditorVCSInterface.X_Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -177,7 +177,7 @@ func (o *EditorVCSInterface) X_Initialize(projectRootPath gdnative.String) gdnat
 	Args: [], Returns: bool
 */
 func (o *EditorVCSInterface) X_IsVcsInitialized() gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.X_IsVcsInitialized()")
+	// log.Println("Calling EditorVCSInterface.X_IsVcsInitialized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *EditorVCSInterface) X_IsVcsInitialized() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorVCSInterface) X_ShutDown() gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.X_ShutDown()")
+	// log.Println("Calling EditorVCSInterface.X_ShutDown()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *EditorVCSInterface) X_ShutDown() gdnative.Bool {
 	Args: [{ false file_path String}], Returns: void
 */
 func (o *EditorVCSInterface) X_StageFile(filePath gdnative.String) {
-	//log.Println("Calling EditorVCSInterface.X_StageFile()")
+	// log.Println("Calling EditorVCSInterface.X_StageFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *EditorVCSInterface) X_StageFile(filePath gdnative.String) {
 	Args: [{ false file_path String}], Returns: void
 */
 func (o *EditorVCSInterface) X_UnstageFile(filePath gdnative.String) {
-	//log.Println("Calling EditorVCSInterface.X_UnstageFile()")
+	// log.Println("Calling EditorVCSInterface.X_UnstageFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *EditorVCSInterface) X_UnstageFile(filePath gdnative.String) {
 	Args: [{ false msg String}], Returns: void
 */
 func (o *EditorVCSInterface) Commit(msg gdnative.String) {
-	//log.Println("Calling EditorVCSInterface.Commit()")
+	// log.Println("Calling EditorVCSInterface.Commit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *EditorVCSInterface) Commit(msg gdnative.String) {
 	Args: [{ false file_path String}], Returns: Array
 */
 func (o *EditorVCSInterface) GetFileDiff(filePath gdnative.String) gdnative.Array {
-	//log.Println("Calling EditorVCSInterface.GetFileDiff()")
+	// log.Println("Calling EditorVCSInterface.GetFileDiff()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -310,7 +310,7 @@ func (o *EditorVCSInterface) GetFileDiff(filePath gdnative.String) gdnative.Arra
 	Args: [], Returns: Dictionary
 */
 func (o *EditorVCSInterface) GetModifiedFilesData() gdnative.Dictionary {
-	//log.Println("Calling EditorVCSInterface.GetModifiedFilesData()")
+	// log.Println("Calling EditorVCSInterface.GetModifiedFilesData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -333,7 +333,7 @@ func (o *EditorVCSInterface) GetModifiedFilesData() gdnative.Dictionary {
 	Args: [], Returns: String
 */
 func (o *EditorVCSInterface) GetProjectName() gdnative.String {
-	//log.Println("Calling EditorVCSInterface.GetProjectName()")
+	// log.Println("Calling EditorVCSInterface.GetProjectName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -356,7 +356,7 @@ func (o *EditorVCSInterface) GetProjectName() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorVCSInterface) GetVcsName() gdnative.String {
-	//log.Println("Calling EditorVCSInterface.GetVcsName()")
+	// log.Println("Calling EditorVCSInterface.GetVcsName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -379,7 +379,7 @@ func (o *EditorVCSInterface) GetVcsName() gdnative.String {
 	Args: [{ false project_root_path String}], Returns: bool
 */
 func (o *EditorVCSInterface) Initialize(projectRootPath gdnative.String) gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.Initialize()")
+	// log.Println("Calling EditorVCSInterface.Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -403,7 +403,7 @@ func (o *EditorVCSInterface) Initialize(projectRootPath gdnative.String) gdnativ
 	Args: [], Returns: bool
 */
 func (o *EditorVCSInterface) IsAddonReady() gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.IsAddonReady()")
+	// log.Println("Calling EditorVCSInterface.IsAddonReady()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -426,7 +426,7 @@ func (o *EditorVCSInterface) IsAddonReady() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorVCSInterface) IsVcsInitialized() gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.IsVcsInitialized()")
+	// log.Println("Calling EditorVCSInterface.IsVcsInitialized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -449,7 +449,7 @@ func (o *EditorVCSInterface) IsVcsInitialized() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorVCSInterface) ShutDown() gdnative.Bool {
-	//log.Println("Calling EditorVCSInterface.ShutDown()")
+	// log.Println("Calling EditorVCSInterface.ShutDown()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -472,7 +472,7 @@ func (o *EditorVCSInterface) ShutDown() gdnative.Bool {
 	Args: [{ false file_path String}], Returns: void
 */
 func (o *EditorVCSInterface) StageFile(filePath gdnative.String) {
-	//log.Println("Calling EditorVCSInterface.StageFile()")
+	// log.Println("Calling EditorVCSInterface.StageFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -493,7 +493,7 @@ func (o *EditorVCSInterface) StageFile(filePath gdnative.String) {
 	Args: [{ false file_path String}], Returns: void
 */
 func (o *EditorVCSInterface) UnstageFile(filePath gdnative.String) {
-	//log.Println("Calling EditorVCSInterface.UnstageFile()")
+	// log.Println("Calling EditorVCSInterface.UnstageFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

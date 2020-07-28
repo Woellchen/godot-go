@@ -62,7 +62,7 @@ func (o *json) BaseClass() string {
 */
 func (o *json) Parse(json gdnative.String) JSONParseResultImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling _JSON.Parse()")
+	// log.Println("Calling _JSON.Parse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *json) Parse(json gdnative.String) JSONParseResultImplementer {
 */
 func (o *json) Print(value gdnative.Variant, indent gdnative.String, sortKeys gdnative.Bool) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _JSON.Print()")
+	// log.Println("Calling _JSON.Print()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

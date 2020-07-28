@@ -39,7 +39,7 @@ func (o *InputEventMIDI) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetChannel() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetChannel()")
+	// log.Println("Calling InputEventMIDI.GetChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventMIDI) GetChannel() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetControllerNumber() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetControllerNumber()")
+	// log.Println("Calling InputEventMIDI.GetControllerNumber()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventMIDI) GetControllerNumber() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetControllerValue() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetControllerValue()")
+	// log.Println("Calling InputEventMIDI.GetControllerValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InputEventMIDI) GetControllerValue() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetInstrument() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetInstrument()")
+	// log.Println("Calling InputEventMIDI.GetInstrument()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *InputEventMIDI) GetInstrument() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetMessage() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetMessage()")
+	// log.Println("Calling InputEventMIDI.GetMessage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *InputEventMIDI) GetMessage() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetPitch() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetPitch()")
+	// log.Println("Calling InputEventMIDI.GetPitch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *InputEventMIDI) GetPitch() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetPressure() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetPressure()")
+	// log.Println("Calling InputEventMIDI.GetPressure()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *InputEventMIDI) GetPressure() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventMIDI) GetVelocity() gdnative.Int {
-	//log.Println("Calling InputEventMIDI.GetVelocity()")
+	// log.Println("Calling InputEventMIDI.GetVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *InputEventMIDI) GetVelocity() gdnative.Int {
 	Args: [{ false channel int}], Returns: void
 */
 func (o *InputEventMIDI) SetChannel(channel gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetChannel()")
+	// log.Println("Calling InputEventMIDI.SetChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *InputEventMIDI) SetChannel(channel gdnative.Int) {
 	Args: [{ false controller_number int}], Returns: void
 */
 func (o *InputEventMIDI) SetControllerNumber(controllerNumber gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetControllerNumber()")
+	// log.Println("Calling InputEventMIDI.SetControllerNumber()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *InputEventMIDI) SetControllerNumber(controllerNumber gdnative.Int) {
 	Args: [{ false controller_value int}], Returns: void
 */
 func (o *InputEventMIDI) SetControllerValue(controllerValue gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetControllerValue()")
+	// log.Println("Calling InputEventMIDI.SetControllerValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *InputEventMIDI) SetControllerValue(controllerValue gdnative.Int) {
 	Args: [{ false instrument int}], Returns: void
 */
 func (o *InputEventMIDI) SetInstrument(instrument gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetInstrument()")
+	// log.Println("Calling InputEventMIDI.SetInstrument()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -307,7 +307,7 @@ func (o *InputEventMIDI) SetInstrument(instrument gdnative.Int) {
 	Args: [{ false message int}], Returns: void
 */
 func (o *InputEventMIDI) SetMessage(message gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetMessage()")
+	// log.Println("Calling InputEventMIDI.SetMessage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *InputEventMIDI) SetMessage(message gdnative.Int) {
 	Args: [{ false pitch int}], Returns: void
 */
 func (o *InputEventMIDI) SetPitch(pitch gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetPitch()")
+	// log.Println("Calling InputEventMIDI.SetPitch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -349,7 +349,7 @@ func (o *InputEventMIDI) SetPitch(pitch gdnative.Int) {
 	Args: [{ false pressure int}], Returns: void
 */
 func (o *InputEventMIDI) SetPressure(pressure gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetPressure()")
+	// log.Println("Calling InputEventMIDI.SetPressure()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +370,7 @@ func (o *InputEventMIDI) SetPressure(pressure gdnative.Int) {
 	Args: [{ false velocity int}], Returns: void
 */
 func (o *InputEventMIDI) SetVelocity(velocity gdnative.Int) {
-	//log.Println("Calling InputEventMIDI.SetVelocity()")
+	// log.Println("Calling InputEventMIDI.SetVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

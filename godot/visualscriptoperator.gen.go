@@ -39,7 +39,7 @@ func (o *VisualScriptOperator) BaseClass() string {
 	Args: [], Returns: enum.Variant::Operator
 */
 func (o *VisualScriptOperator) GetOperator() gdnative.VariantOperator {
-	//log.Println("Calling VisualScriptOperator.GetOperator()")
+	// log.Println("Calling VisualScriptOperator.GetOperator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptOperator) GetOperator() gdnative.VariantOperator {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptOperator) GetTyped() gdnative.VariantType {
-	//log.Println("Calling VisualScriptOperator.GetTyped()")
+	// log.Println("Calling VisualScriptOperator.GetTyped()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptOperator) GetTyped() gdnative.VariantType {
 	Args: [{ false op int}], Returns: void
 */
 func (o *VisualScriptOperator) SetOperator(op gdnative.Int) {
-	//log.Println("Calling VisualScriptOperator.SetOperator()")
+	// log.Println("Calling VisualScriptOperator.SetOperator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptOperator) SetOperator(op gdnative.Int) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptOperator) SetTyped(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptOperator.SetTyped()")
+	// log.Println("Calling VisualScriptOperator.SetTyped()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

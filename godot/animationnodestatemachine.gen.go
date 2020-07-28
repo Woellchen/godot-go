@@ -39,7 +39,7 @@ func (o *AnimationNodeStateMachine) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *AnimationNodeStateMachine) X_TreeChanged() {
-	//log.Println("Calling AnimationNodeStateMachine.X_TreeChanged()")
+	// log.Println("Calling AnimationNodeStateMachine.X_TreeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *AnimationNodeStateMachine) X_TreeChanged() {
 	Args: [{ false name String} { false node AnimationNode} {(0, 0) true position Vector2}], Returns: void
 */
 func (o *AnimationNodeStateMachine) AddNode(name gdnative.String, node AnimationNodeImplementer, position gdnative.Vector2) {
-	//log.Println("Calling AnimationNodeStateMachine.AddNode()")
+	// log.Println("Calling AnimationNodeStateMachine.AddNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -82,7 +82,7 @@ func (o *AnimationNodeStateMachine) AddNode(name gdnative.String, node Animation
 	Args: [{ false from String} { false to String} { false transition AnimationNodeStateMachineTransition}], Returns: void
 */
 func (o *AnimationNodeStateMachine) AddTransition(from gdnative.String, to gdnative.String, transition AnimationNodeStateMachineTransitionImplementer) {
-	//log.Println("Calling AnimationNodeStateMachine.AddTransition()")
+	// log.Println("Calling AnimationNodeStateMachine.AddTransition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -105,7 +105,7 @@ func (o *AnimationNodeStateMachine) AddTransition(from gdnative.String, to gdnat
 	Args: [], Returns: String
 */
 func (o *AnimationNodeStateMachine) GetEndNode() gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachine.GetEndNode()")
+	// log.Println("Calling AnimationNodeStateMachine.GetEndNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *AnimationNodeStateMachine) GetEndNode() gdnative.String {
 	Args: [], Returns: Vector2
 */
 func (o *AnimationNodeStateMachine) GetGraphOffset() gdnative.Vector2 {
-	//log.Println("Calling AnimationNodeStateMachine.GetGraphOffset()")
+	// log.Println("Calling AnimationNodeStateMachine.GetGraphOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *AnimationNodeStateMachine) GetGraphOffset() gdnative.Vector2 {
 	Args: [{ false name String}], Returns: AnimationNode
 */
 func (o *AnimationNodeStateMachine) GetNode(name gdnative.String) AnimationNodeImplementer {
-	//log.Println("Calling AnimationNodeStateMachine.GetNode()")
+	// log.Println("Calling AnimationNodeStateMachine.GetNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *AnimationNodeStateMachine) GetNode(name gdnative.String) AnimationNodeI
 	Args: [{ false node AnimationNode}], Returns: String
 */
 func (o *AnimationNodeStateMachine) GetNodeName(node AnimationNodeImplementer) gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachine.GetNodeName()")
+	// log.Println("Calling AnimationNodeStateMachine.GetNodeName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -213,7 +213,7 @@ func (o *AnimationNodeStateMachine) GetNodeName(node AnimationNodeImplementer) g
 	Args: [{ false name String}], Returns: Vector2
 */
 func (o *AnimationNodeStateMachine) GetNodePosition(name gdnative.String) gdnative.Vector2 {
-	//log.Println("Calling AnimationNodeStateMachine.GetNodePosition()")
+	// log.Println("Calling AnimationNodeStateMachine.GetNodePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -237,7 +237,7 @@ func (o *AnimationNodeStateMachine) GetNodePosition(name gdnative.String) gdnati
 	Args: [], Returns: String
 */
 func (o *AnimationNodeStateMachine) GetStartNode() gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachine.GetStartNode()")
+	// log.Println("Calling AnimationNodeStateMachine.GetStartNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -260,7 +260,7 @@ func (o *AnimationNodeStateMachine) GetStartNode() gdnative.String {
 	Args: [{ false idx int}], Returns: AnimationNodeStateMachineTransition
 */
 func (o *AnimationNodeStateMachine) GetTransition(idx gdnative.Int) AnimationNodeStateMachineTransitionImplementer {
-	//log.Println("Calling AnimationNodeStateMachine.GetTransition()")
+	// log.Println("Calling AnimationNodeStateMachine.GetTransition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -298,7 +298,7 @@ func (o *AnimationNodeStateMachine) GetTransition(idx gdnative.Int) AnimationNod
 	Args: [], Returns: int
 */
 func (o *AnimationNodeStateMachine) GetTransitionCount() gdnative.Int {
-	//log.Println("Calling AnimationNodeStateMachine.GetTransitionCount()")
+	// log.Println("Calling AnimationNodeStateMachine.GetTransitionCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -321,7 +321,7 @@ func (o *AnimationNodeStateMachine) GetTransitionCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *AnimationNodeStateMachine) GetTransitionFrom(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachine.GetTransitionFrom()")
+	// log.Println("Calling AnimationNodeStateMachine.GetTransitionFrom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -345,7 +345,7 @@ func (o *AnimationNodeStateMachine) GetTransitionFrom(idx gdnative.Int) gdnative
 	Args: [{ false idx int}], Returns: String
 */
 func (o *AnimationNodeStateMachine) GetTransitionTo(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachine.GetTransitionTo()")
+	// log.Println("Calling AnimationNodeStateMachine.GetTransitionTo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -369,7 +369,7 @@ func (o *AnimationNodeStateMachine) GetTransitionTo(idx gdnative.Int) gdnative.S
 	Args: [{ false name String}], Returns: bool
 */
 func (o *AnimationNodeStateMachine) HasNode(name gdnative.String) gdnative.Bool {
-	//log.Println("Calling AnimationNodeStateMachine.HasNode()")
+	// log.Println("Calling AnimationNodeStateMachine.HasNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -393,7 +393,7 @@ func (o *AnimationNodeStateMachine) HasNode(name gdnative.String) gdnative.Bool 
 	Args: [{ false from String} { false to String}], Returns: bool
 */
 func (o *AnimationNodeStateMachine) HasTransition(from gdnative.String, to gdnative.String) gdnative.Bool {
-	//log.Println("Calling AnimationNodeStateMachine.HasTransition()")
+	// log.Println("Calling AnimationNodeStateMachine.HasTransition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -418,7 +418,7 @@ func (o *AnimationNodeStateMachine) HasTransition(from gdnative.String, to gdnat
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNodeStateMachine) RemoveNode(name gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachine.RemoveNode()")
+	// log.Println("Calling AnimationNodeStateMachine.RemoveNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -439,7 +439,7 @@ func (o *AnimationNodeStateMachine) RemoveNode(name gdnative.String) {
 	Args: [{ false from String} { false to String}], Returns: void
 */
 func (o *AnimationNodeStateMachine) RemoveTransition(from gdnative.String, to gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachine.RemoveTransition()")
+	// log.Println("Calling AnimationNodeStateMachine.RemoveTransition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -461,7 +461,7 @@ func (o *AnimationNodeStateMachine) RemoveTransition(from gdnative.String, to gd
 	Args: [{ false idx int}], Returns: void
 */
 func (o *AnimationNodeStateMachine) RemoveTransitionByIndex(idx gdnative.Int) {
-	//log.Println("Calling AnimationNodeStateMachine.RemoveTransitionByIndex()")
+	// log.Println("Calling AnimationNodeStateMachine.RemoveTransitionByIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -482,7 +482,7 @@ func (o *AnimationNodeStateMachine) RemoveTransitionByIndex(idx gdnative.Int) {
 	Args: [{ false name String} { false new_name String}], Returns: void
 */
 func (o *AnimationNodeStateMachine) RenameNode(name gdnative.String, newName gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachine.RenameNode()")
+	// log.Println("Calling AnimationNodeStateMachine.RenameNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -504,7 +504,7 @@ func (o *AnimationNodeStateMachine) RenameNode(name gdnative.String, newName gdn
 	Args: [{ false name String} { false node AnimationNode}], Returns: void
 */
 func (o *AnimationNodeStateMachine) ReplaceNode(name gdnative.String, node AnimationNodeImplementer) {
-	//log.Println("Calling AnimationNodeStateMachine.ReplaceNode()")
+	// log.Println("Calling AnimationNodeStateMachine.ReplaceNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -526,7 +526,7 @@ func (o *AnimationNodeStateMachine) ReplaceNode(name gdnative.String, node Anima
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNodeStateMachine) SetEndNode(name gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachine.SetEndNode()")
+	// log.Println("Calling AnimationNodeStateMachine.SetEndNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -547,7 +547,7 @@ func (o *AnimationNodeStateMachine) SetEndNode(name gdnative.String) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *AnimationNodeStateMachine) SetGraphOffset(offset gdnative.Vector2) {
-	//log.Println("Calling AnimationNodeStateMachine.SetGraphOffset()")
+	// log.Println("Calling AnimationNodeStateMachine.SetGraphOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -568,7 +568,7 @@ func (o *AnimationNodeStateMachine) SetGraphOffset(offset gdnative.Vector2) {
 	Args: [{ false name String} { false position Vector2}], Returns: void
 */
 func (o *AnimationNodeStateMachine) SetNodePosition(name gdnative.String, position gdnative.Vector2) {
-	//log.Println("Calling AnimationNodeStateMachine.SetNodePosition()")
+	// log.Println("Calling AnimationNodeStateMachine.SetNodePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -590,7 +590,7 @@ func (o *AnimationNodeStateMachine) SetNodePosition(name gdnative.String, positi
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNodeStateMachine) SetStartNode(name gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachine.SetStartNode()")
+	// log.Println("Calling AnimationNodeStateMachine.SetStartNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

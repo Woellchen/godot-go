@@ -50,7 +50,7 @@ func (o *PacketPeerDTLS) BaseClass() string {
 	Args: [{ false packet_peer PacketPeerUDP} {True true validate_certs bool} { true for_hostname String} {[Object:null] true valid_certificate X509Certificate}], Returns: enum.Error
 */
 func (o *PacketPeerDTLS) ConnectToPeer(packetPeer PacketPeerUDPImplementer, validateCerts gdnative.Bool, forHostname gdnative.String, validCertificate X509CertificateImplementer) gdnative.Error {
-	//log.Println("Calling PacketPeerDTLS.ConnectToPeer()")
+	// log.Println("Calling PacketPeerDTLS.ConnectToPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -77,7 +77,7 @@ func (o *PacketPeerDTLS) ConnectToPeer(packetPeer PacketPeerUDPImplementer, vali
 	Args: [], Returns: void
 */
 func (o *PacketPeerDTLS) DisconnectFromPeer() {
-	//log.Println("Calling PacketPeerDTLS.DisconnectFromPeer()")
+	// log.Println("Calling PacketPeerDTLS.DisconnectFromPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -97,7 +97,7 @@ func (o *PacketPeerDTLS) DisconnectFromPeer() {
 	Args: [], Returns: enum.PacketPeerDTLS::Status
 */
 func (o *PacketPeerDTLS) GetStatus() PacketPeerDTLSStatus {
-	//log.Println("Calling PacketPeerDTLS.GetStatus()")
+	// log.Println("Calling PacketPeerDTLS.GetStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -120,7 +120,7 @@ func (o *PacketPeerDTLS) GetStatus() PacketPeerDTLSStatus {
 	Args: [], Returns: void
 */
 func (o *PacketPeerDTLS) Poll() {
-	//log.Println("Calling PacketPeerDTLS.Poll()")
+	// log.Println("Calling PacketPeerDTLS.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

@@ -39,7 +39,7 @@ func (o *NavigationPolygon) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *NavigationPolygon) X_GetOutlines() gdnative.Array {
-	//log.Println("Calling NavigationPolygon.X_GetOutlines()")
+	// log.Println("Calling NavigationPolygon.X_GetOutlines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *NavigationPolygon) X_GetOutlines() gdnative.Array {
 	Args: [], Returns: Array
 */
 func (o *NavigationPolygon) X_GetPolygons() gdnative.Array {
-	//log.Println("Calling NavigationPolygon.X_GetPolygons()")
+	// log.Println("Calling NavigationPolygon.X_GetPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *NavigationPolygon) X_GetPolygons() gdnative.Array {
 	Args: [{ false outlines Array}], Returns: void
 */
 func (o *NavigationPolygon) X_SetOutlines(outlines gdnative.Array) {
-	//log.Println("Calling NavigationPolygon.X_SetOutlines()")
+	// log.Println("Calling NavigationPolygon.X_SetOutlines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *NavigationPolygon) X_SetOutlines(outlines gdnative.Array) {
 	Args: [{ false polygons Array}], Returns: void
 */
 func (o *NavigationPolygon) X_SetPolygons(polygons gdnative.Array) {
-	//log.Println("Calling NavigationPolygon.X_SetPolygons()")
+	// log.Println("Calling NavigationPolygon.X_SetPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -127,7 +127,7 @@ func (o *NavigationPolygon) X_SetPolygons(polygons gdnative.Array) {
 	Args: [{ false outline PoolVector2Array}], Returns: void
 */
 func (o *NavigationPolygon) AddOutline(outline gdnative.PoolVector2Array) {
-	//log.Println("Calling NavigationPolygon.AddOutline()")
+	// log.Println("Calling NavigationPolygon.AddOutline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -148,7 +148,7 @@ func (o *NavigationPolygon) AddOutline(outline gdnative.PoolVector2Array) {
 	Args: [{ false outline PoolVector2Array} { false index int}], Returns: void
 */
 func (o *NavigationPolygon) AddOutlineAtIndex(outline gdnative.PoolVector2Array, index gdnative.Int) {
-	//log.Println("Calling NavigationPolygon.AddOutlineAtIndex()")
+	// log.Println("Calling NavigationPolygon.AddOutlineAtIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -170,7 +170,7 @@ func (o *NavigationPolygon) AddOutlineAtIndex(outline gdnative.PoolVector2Array,
 	Args: [{ false polygon PoolIntArray}], Returns: void
 */
 func (o *NavigationPolygon) AddPolygon(polygon gdnative.PoolIntArray) {
-	//log.Println("Calling NavigationPolygon.AddPolygon()")
+	// log.Println("Calling NavigationPolygon.AddPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -191,7 +191,7 @@ func (o *NavigationPolygon) AddPolygon(polygon gdnative.PoolIntArray) {
 	Args: [], Returns: void
 */
 func (o *NavigationPolygon) ClearOutlines() {
-	//log.Println("Calling NavigationPolygon.ClearOutlines()")
+	// log.Println("Calling NavigationPolygon.ClearOutlines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -211,7 +211,7 @@ func (o *NavigationPolygon) ClearOutlines() {
 	Args: [], Returns: void
 */
 func (o *NavigationPolygon) ClearPolygons() {
-	//log.Println("Calling NavigationPolygon.ClearPolygons()")
+	// log.Println("Calling NavigationPolygon.ClearPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -231,7 +231,7 @@ func (o *NavigationPolygon) ClearPolygons() {
 	Args: [{ false idx int}], Returns: PoolVector2Array
 */
 func (o *NavigationPolygon) GetOutline(idx gdnative.Int) gdnative.PoolVector2Array {
-	//log.Println("Calling NavigationPolygon.GetOutline()")
+	// log.Println("Calling NavigationPolygon.GetOutline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -255,7 +255,7 @@ func (o *NavigationPolygon) GetOutline(idx gdnative.Int) gdnative.PoolVector2Arr
 	Args: [], Returns: int
 */
 func (o *NavigationPolygon) GetOutlineCount() gdnative.Int {
-	//log.Println("Calling NavigationPolygon.GetOutlineCount()")
+	// log.Println("Calling NavigationPolygon.GetOutlineCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -278,7 +278,7 @@ func (o *NavigationPolygon) GetOutlineCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: PoolIntArray
 */
 func (o *NavigationPolygon) GetPolygon(idx gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling NavigationPolygon.GetPolygon()")
+	// log.Println("Calling NavigationPolygon.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -302,7 +302,7 @@ func (o *NavigationPolygon) GetPolygon(idx gdnative.Int) gdnative.PoolIntArray {
 	Args: [], Returns: int
 */
 func (o *NavigationPolygon) GetPolygonCount() gdnative.Int {
-	//log.Println("Calling NavigationPolygon.GetPolygonCount()")
+	// log.Println("Calling NavigationPolygon.GetPolygonCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -325,7 +325,7 @@ func (o *NavigationPolygon) GetPolygonCount() gdnative.Int {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *NavigationPolygon) GetVertices() gdnative.PoolVector2Array {
-	//log.Println("Calling NavigationPolygon.GetVertices()")
+	// log.Println("Calling NavigationPolygon.GetVertices()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -348,7 +348,7 @@ func (o *NavigationPolygon) GetVertices() gdnative.PoolVector2Array {
 	Args: [], Returns: void
 */
 func (o *NavigationPolygon) MakePolygonsFromOutlines() {
-	//log.Println("Calling NavigationPolygon.MakePolygonsFromOutlines()")
+	// log.Println("Calling NavigationPolygon.MakePolygonsFromOutlines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -368,7 +368,7 @@ func (o *NavigationPolygon) MakePolygonsFromOutlines() {
 	Args: [{ false idx int}], Returns: void
 */
 func (o *NavigationPolygon) RemoveOutline(idx gdnative.Int) {
-	//log.Println("Calling NavigationPolygon.RemoveOutline()")
+	// log.Println("Calling NavigationPolygon.RemoveOutline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -389,7 +389,7 @@ func (o *NavigationPolygon) RemoveOutline(idx gdnative.Int) {
 	Args: [{ false idx int} { false outline PoolVector2Array}], Returns: void
 */
 func (o *NavigationPolygon) SetOutline(idx gdnative.Int, outline gdnative.PoolVector2Array) {
-	//log.Println("Calling NavigationPolygon.SetOutline()")
+	// log.Println("Calling NavigationPolygon.SetOutline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -411,7 +411,7 @@ func (o *NavigationPolygon) SetOutline(idx gdnative.Int, outline gdnative.PoolVe
 	Args: [{ false vertices PoolVector2Array}], Returns: void
 */
 func (o *NavigationPolygon) SetVertices(vertices gdnative.PoolVector2Array) {
-	//log.Println("Calling NavigationPolygon.SetVertices()")
+	// log.Println("Calling NavigationPolygon.SetVertices()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

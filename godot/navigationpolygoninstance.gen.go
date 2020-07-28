@@ -39,7 +39,7 @@ func (o *NavigationPolygonInstance) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *NavigationPolygonInstance) X_NavpolyChanged() {
-	//log.Println("Calling NavigationPolygonInstance.X_NavpolyChanged()")
+	// log.Println("Calling NavigationPolygonInstance.X_NavpolyChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *NavigationPolygonInstance) X_NavpolyChanged() {
 	Args: [], Returns: NavigationPolygon
 */
 func (o *NavigationPolygonInstance) GetNavigationPolygon() NavigationPolygonImplementer {
-	//log.Println("Calling NavigationPolygonInstance.GetNavigationPolygon()")
+	// log.Println("Calling NavigationPolygonInstance.GetNavigationPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *NavigationPolygonInstance) GetNavigationPolygon() NavigationPolygonImpl
 	Args: [], Returns: bool
 */
 func (o *NavigationPolygonInstance) IsEnabled() gdnative.Bool {
-	//log.Println("Calling NavigationPolygonInstance.IsEnabled()")
+	// log.Println("Calling NavigationPolygonInstance.IsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *NavigationPolygonInstance) IsEnabled() gdnative.Bool {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *NavigationPolygonInstance) SetEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling NavigationPolygonInstance.SetEnabled()")
+	// log.Println("Calling NavigationPolygonInstance.SetEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -140,7 +140,7 @@ func (o *NavigationPolygonInstance) SetEnabled(enabled gdnative.Bool) {
 	Args: [{ false navpoly NavigationPolygon}], Returns: void
 */
 func (o *NavigationPolygonInstance) SetNavigationPolygon(navpoly NavigationPolygonImplementer) {
-	//log.Println("Calling NavigationPolygonInstance.SetNavigationPolygon()")
+	// log.Println("Calling NavigationPolygonInstance.SetNavigationPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

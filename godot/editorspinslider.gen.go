@@ -39,7 +39,7 @@ func (o *EditorSpinSlider) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *EditorSpinSlider) X_GrabberGuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling EditorSpinSlider.X_GrabberGuiInput()")
+	// log.Println("Calling EditorSpinSlider.X_GrabberGuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *EditorSpinSlider) X_GrabberGuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *EditorSpinSlider) X_GrabberMouseEntered() {
-	//log.Println("Calling EditorSpinSlider.X_GrabberMouseEntered()")
+	// log.Println("Calling EditorSpinSlider.X_GrabberMouseEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *EditorSpinSlider) X_GrabberMouseEntered() {
 	Args: [], Returns: void
 */
 func (o *EditorSpinSlider) X_GrabberMouseExited() {
-	//log.Println("Calling EditorSpinSlider.X_GrabberMouseExited()")
+	// log.Println("Calling EditorSpinSlider.X_GrabberMouseExited()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -100,7 +100,7 @@ func (o *EditorSpinSlider) X_GrabberMouseExited() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *EditorSpinSlider) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling EditorSpinSlider.X_GuiInput()")
+	// log.Println("Calling EditorSpinSlider.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -121,7 +121,7 @@ func (o *EditorSpinSlider) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *EditorSpinSlider) X_ValueFocusExited() {
-	//log.Println("Calling EditorSpinSlider.X_ValueFocusExited()")
+	// log.Println("Calling EditorSpinSlider.X_ValueFocusExited()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -141,7 +141,7 @@ func (o *EditorSpinSlider) X_ValueFocusExited() {
 	Args: [], Returns: void
 */
 func (o *EditorSpinSlider) X_ValueInputClosed() {
-	//log.Println("Calling EditorSpinSlider.X_ValueInputClosed()")
+	// log.Println("Calling EditorSpinSlider.X_ValueInputClosed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -161,7 +161,7 @@ func (o *EditorSpinSlider) X_ValueInputClosed() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *EditorSpinSlider) X_ValueInputEntered(arg0 gdnative.String) {
-	//log.Println("Calling EditorSpinSlider.X_ValueInputEntered()")
+	// log.Println("Calling EditorSpinSlider.X_ValueInputEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -182,7 +182,7 @@ func (o *EditorSpinSlider) X_ValueInputEntered(arg0 gdnative.String) {
 	Args: [], Returns: String
 */
 func (o *EditorSpinSlider) GetLabel() gdnative.String {
-	//log.Println("Calling EditorSpinSlider.GetLabel()")
+	// log.Println("Calling EditorSpinSlider.GetLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -205,7 +205,7 @@ func (o *EditorSpinSlider) GetLabel() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *EditorSpinSlider) IsFlat() gdnative.Bool {
-	//log.Println("Calling EditorSpinSlider.IsFlat()")
+	// log.Println("Calling EditorSpinSlider.IsFlat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -228,7 +228,7 @@ func (o *EditorSpinSlider) IsFlat() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorSpinSlider) IsReadOnly() gdnative.Bool {
-	//log.Println("Calling EditorSpinSlider.IsReadOnly()")
+	// log.Println("Calling EditorSpinSlider.IsReadOnly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -251,7 +251,7 @@ func (o *EditorSpinSlider) IsReadOnly() gdnative.Bool {
 	Args: [{ false flat bool}], Returns: void
 */
 func (o *EditorSpinSlider) SetFlat(flat gdnative.Bool) {
-	//log.Println("Calling EditorSpinSlider.SetFlat()")
+	// log.Println("Calling EditorSpinSlider.SetFlat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -272,7 +272,7 @@ func (o *EditorSpinSlider) SetFlat(flat gdnative.Bool) {
 	Args: [{ false label String}], Returns: void
 */
 func (o *EditorSpinSlider) SetLabel(label gdnative.String) {
-	//log.Println("Calling EditorSpinSlider.SetLabel()")
+	// log.Println("Calling EditorSpinSlider.SetLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -293,7 +293,7 @@ func (o *EditorSpinSlider) SetLabel(label gdnative.String) {
 	Args: [{ false read_only bool}], Returns: void
 */
 func (o *EditorSpinSlider) SetReadOnly(readOnly gdnative.Bool) {
-	//log.Println("Calling EditorSpinSlider.SetReadOnly()")
+	// log.Println("Calling EditorSpinSlider.SetReadOnly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

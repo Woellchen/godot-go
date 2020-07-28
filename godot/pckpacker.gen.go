@@ -39,7 +39,7 @@ func (o *PCKPacker) BaseClass() string {
 	Args: [{ false pck_path String} { false source_path String}], Returns: enum.Error
 */
 func (o *PCKPacker) AddFile(pckPath gdnative.String, sourcePath gdnative.String) gdnative.Error {
-	//log.Println("Calling PCKPacker.AddFile()")
+	// log.Println("Calling PCKPacker.AddFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -64,7 +64,7 @@ func (o *PCKPacker) AddFile(pckPath gdnative.String, sourcePath gdnative.String)
 	Args: [{False true verbose bool}], Returns: enum.Error
 */
 func (o *PCKPacker) Flush(verbose gdnative.Bool) gdnative.Error {
-	//log.Println("Calling PCKPacker.Flush()")
+	// log.Println("Calling PCKPacker.Flush()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -88,7 +88,7 @@ func (o *PCKPacker) Flush(verbose gdnative.Bool) gdnative.Error {
 	Args: [{ false pck_name String} {0 true alignment int}], Returns: enum.Error
 */
 func (o *PCKPacker) PckStart(pckName gdnative.String, alignment gdnative.Int) gdnative.Error {
-	//log.Println("Calling PCKPacker.PckStart()")
+	// log.Println("Calling PCKPacker.PckStart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

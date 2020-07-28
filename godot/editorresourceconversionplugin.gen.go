@@ -39,7 +39,7 @@ func (o *EditorResourceConversionPlugin) BaseClass() string {
 	Args: [{ false resource Resource}], Returns: Resource
 */
 func (o *EditorResourceConversionPlugin) X_Convert(resource ResourceImplementer) ResourceImplementer {
-	//log.Println("Calling EditorResourceConversionPlugin.X_Convert()")
+	// log.Println("Calling EditorResourceConversionPlugin.X_Convert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -77,7 +77,7 @@ func (o *EditorResourceConversionPlugin) X_Convert(resource ResourceImplementer)
 	Args: [], Returns: String
 */
 func (o *EditorResourceConversionPlugin) X_ConvertsTo() gdnative.String {
-	//log.Println("Calling EditorResourceConversionPlugin.X_ConvertsTo()")
+	// log.Println("Calling EditorResourceConversionPlugin.X_ConvertsTo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

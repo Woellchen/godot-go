@@ -48,7 +48,7 @@ func (o *NinePatchRect) BaseClass() string {
 	Args: [], Returns: enum.NinePatchRect::AxisStretchMode
 */
 func (o *NinePatchRect) GetHAxisStretchMode() NinePatchRectAxisStretchMode {
-	//log.Println("Calling NinePatchRect.GetHAxisStretchMode()")
+	// log.Println("Calling NinePatchRect.GetHAxisStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *NinePatchRect) GetHAxisStretchMode() NinePatchRectAxisStretchMode {
 	Args: [{ false margin int}], Returns: int
 */
 func (o *NinePatchRect) GetPatchMargin(margin gdnative.Int) gdnative.Int {
-	//log.Println("Calling NinePatchRect.GetPatchMargin()")
+	// log.Println("Calling NinePatchRect.GetPatchMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -95,7 +95,7 @@ func (o *NinePatchRect) GetPatchMargin(margin gdnative.Int) gdnative.Int {
 	Args: [], Returns: Rect2
 */
 func (o *NinePatchRect) GetRegionRect() gdnative.Rect2 {
-	//log.Println("Calling NinePatchRect.GetRegionRect()")
+	// log.Println("Calling NinePatchRect.GetRegionRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -118,7 +118,7 @@ func (o *NinePatchRect) GetRegionRect() gdnative.Rect2 {
 	Args: [], Returns: Texture
 */
 func (o *NinePatchRect) GetTexture() TextureImplementer {
-	//log.Println("Calling NinePatchRect.GetTexture()")
+	// log.Println("Calling NinePatchRect.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -155,7 +155,7 @@ func (o *NinePatchRect) GetTexture() TextureImplementer {
 	Args: [], Returns: enum.NinePatchRect::AxisStretchMode
 */
 func (o *NinePatchRect) GetVAxisStretchMode() NinePatchRectAxisStretchMode {
-	//log.Println("Calling NinePatchRect.GetVAxisStretchMode()")
+	// log.Println("Calling NinePatchRect.GetVAxisStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -178,7 +178,7 @@ func (o *NinePatchRect) GetVAxisStretchMode() NinePatchRectAxisStretchMode {
 	Args: [], Returns: bool
 */
 func (o *NinePatchRect) IsDrawCenterEnabled() gdnative.Bool {
-	//log.Println("Calling NinePatchRect.IsDrawCenterEnabled()")
+	// log.Println("Calling NinePatchRect.IsDrawCenterEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -201,7 +201,7 @@ func (o *NinePatchRect) IsDrawCenterEnabled() gdnative.Bool {
 	Args: [{ false draw_center bool}], Returns: void
 */
 func (o *NinePatchRect) SetDrawCenter(drawCenter gdnative.Bool) {
-	//log.Println("Calling NinePatchRect.SetDrawCenter()")
+	// log.Println("Calling NinePatchRect.SetDrawCenter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -222,7 +222,7 @@ func (o *NinePatchRect) SetDrawCenter(drawCenter gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *NinePatchRect) SetHAxisStretchMode(mode gdnative.Int) {
-	//log.Println("Calling NinePatchRect.SetHAxisStretchMode()")
+	// log.Println("Calling NinePatchRect.SetHAxisStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -243,7 +243,7 @@ func (o *NinePatchRect) SetHAxisStretchMode(mode gdnative.Int) {
 	Args: [{ false margin int} { false value int}], Returns: void
 */
 func (o *NinePatchRect) SetPatchMargin(margin gdnative.Int, value gdnative.Int) {
-	//log.Println("Calling NinePatchRect.SetPatchMargin()")
+	// log.Println("Calling NinePatchRect.SetPatchMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -265,7 +265,7 @@ func (o *NinePatchRect) SetPatchMargin(margin gdnative.Int, value gdnative.Int) 
 	Args: [{ false rect Rect2}], Returns: void
 */
 func (o *NinePatchRect) SetRegionRect(rect gdnative.Rect2) {
-	//log.Println("Calling NinePatchRect.SetRegionRect()")
+	// log.Println("Calling NinePatchRect.SetRegionRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *NinePatchRect) SetRegionRect(rect gdnative.Rect2) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *NinePatchRect) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling NinePatchRect.SetTexture()")
+	// log.Println("Calling NinePatchRect.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -307,7 +307,7 @@ func (o *NinePatchRect) SetTexture(texture TextureImplementer) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *NinePatchRect) SetVAxisStretchMode(mode gdnative.Int) {
-	//log.Println("Calling NinePatchRect.SetVAxisStretchMode()")
+	// log.Println("Calling NinePatchRect.SetVAxisStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

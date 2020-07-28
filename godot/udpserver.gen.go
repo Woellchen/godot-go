@@ -39,7 +39,7 @@ func (o *UDPServer) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *UDPServer) IsConnectionAvailable() gdnative.Bool {
-	//log.Println("Calling UDPServer.IsConnectionAvailable()")
+	// log.Println("Calling UDPServer.IsConnectionAvailable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *UDPServer) IsConnectionAvailable() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *UDPServer) IsListening() gdnative.Bool {
-	//log.Println("Calling UDPServer.IsListening()")
+	// log.Println("Calling UDPServer.IsListening()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *UDPServer) IsListening() gdnative.Bool {
 	Args: [{ false port int} {* true bind_address String}], Returns: enum.Error
 */
 func (o *UDPServer) Listen(port gdnative.Int, bindAddress gdnative.String) gdnative.Error {
-	//log.Println("Calling UDPServer.Listen()")
+	// log.Println("Calling UDPServer.Listen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -110,7 +110,7 @@ func (o *UDPServer) Listen(port gdnative.Int, bindAddress gdnative.String) gdnat
 	Args: [], Returns: void
 */
 func (o *UDPServer) Stop() {
-	//log.Println("Calling UDPServer.Stop()")
+	// log.Println("Calling UDPServer.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -130,7 +130,7 @@ func (o *UDPServer) Stop() {
 	Args: [], Returns: PacketPeerUDP
 */
 func (o *UDPServer) TakeConnection() PacketPeerUDPImplementer {
-	//log.Println("Calling UDPServer.TakeConnection()")
+	// log.Println("Calling UDPServer.TakeConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

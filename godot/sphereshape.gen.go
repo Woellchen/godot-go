@@ -39,7 +39,7 @@ func (o *SphereShape) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *SphereShape) GetRadius() gdnative.Real {
-	//log.Println("Calling SphereShape.GetRadius()")
+	// log.Println("Calling SphereShape.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *SphereShape) GetRadius() gdnative.Real {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *SphereShape) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling SphereShape.SetRadius()")
+	// log.Println("Calling SphereShape.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PackedDataContainerRef) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *PackedDataContainerRef) X_IsDictionary() gdnative.Bool {
-	//log.Println("Calling PackedDataContainerRef.X_IsDictionary()")
+	// log.Println("Calling PackedDataContainerRef.X_IsDictionary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PackedDataContainerRef) X_IsDictionary() gdnative.Bool {
 	Args: [{ false arg0 Variant}], Returns: Variant
 */
 func (o *PackedDataContainerRef) X_IterGet(arg0 gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling PackedDataContainerRef.X_IterGet()")
+	// log.Println("Calling PackedDataContainerRef.X_IterGet()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -86,7 +86,7 @@ func (o *PackedDataContainerRef) X_IterGet(arg0 gdnative.Variant) gdnative.Varia
 	Args: [{ false arg0 Array}], Returns: Variant
 */
 func (o *PackedDataContainerRef) X_IterInit(arg0 gdnative.Array) gdnative.Variant {
-	//log.Println("Calling PackedDataContainerRef.X_IterInit()")
+	// log.Println("Calling PackedDataContainerRef.X_IterInit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -110,7 +110,7 @@ func (o *PackedDataContainerRef) X_IterInit(arg0 gdnative.Array) gdnative.Varian
 	Args: [{ false arg0 Array}], Returns: Variant
 */
 func (o *PackedDataContainerRef) X_IterNext(arg0 gdnative.Array) gdnative.Variant {
-	//log.Println("Calling PackedDataContainerRef.X_IterNext()")
+	// log.Println("Calling PackedDataContainerRef.X_IterNext()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -134,7 +134,7 @@ func (o *PackedDataContainerRef) X_IterNext(arg0 gdnative.Array) gdnative.Varian
 	Args: [], Returns: int
 */
 func (o *PackedDataContainerRef) Size() gdnative.Int {
-	//log.Println("Calling PackedDataContainerRef.Size()")
+	// log.Println("Calling PackedDataContainerRef.Size()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

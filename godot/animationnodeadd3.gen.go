@@ -39,7 +39,7 @@ func (o *AnimationNodeAdd3) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *AnimationNodeAdd3) IsUsingSync() gdnative.Bool {
-	//log.Println("Calling AnimationNodeAdd3.IsUsingSync()")
+	// log.Println("Calling AnimationNodeAdd3.IsUsingSync()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AnimationNodeAdd3) IsUsingSync() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AnimationNodeAdd3) SetUseSync(enable gdnative.Bool) {
-	//log.Println("Calling AnimationNodeAdd3.SetUseSync()")
+	// log.Println("Calling AnimationNodeAdd3.SetUseSync()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

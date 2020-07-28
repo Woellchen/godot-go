@@ -39,7 +39,7 @@ func (o *AcceptDialog) BaseClass() string {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *AcceptDialog) X_BuiltinTextEntered(arg0 gdnative.String) {
-	//log.Println("Calling AcceptDialog.X_BuiltinTextEntered()")
+	// log.Println("Calling AcceptDialog.X_BuiltinTextEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *AcceptDialog) X_BuiltinTextEntered(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *AcceptDialog) X_CustomAction(arg0 gdnative.String) {
-	//log.Println("Calling AcceptDialog.X_CustomAction()")
+	// log.Println("Calling AcceptDialog.X_CustomAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -81,7 +81,7 @@ func (o *AcceptDialog) X_CustomAction(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *AcceptDialog) X_Ok() {
-	//log.Println("Calling AcceptDialog.X_Ok()")
+	// log.Println("Calling AcceptDialog.X_Ok()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -101,7 +101,7 @@ func (o *AcceptDialog) X_Ok() {
 	Args: [{ false text String} {False true right bool} { true action String}], Returns: Button
 */
 func (o *AcceptDialog) AddButton(text gdnative.String, right gdnative.Bool, action gdnative.String) ButtonImplementer {
-	//log.Println("Calling AcceptDialog.AddButton()")
+	// log.Println("Calling AcceptDialog.AddButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -141,7 +141,7 @@ func (o *AcceptDialog) AddButton(text gdnative.String, right gdnative.Bool, acti
 	Args: [{ false name String}], Returns: Button
 */
 func (o *AcceptDialog) AddCancel(name gdnative.String) ButtonImplementer {
-	//log.Println("Calling AcceptDialog.AddCancel()")
+	// log.Println("Calling AcceptDialog.AddCancel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *AcceptDialog) AddCancel(name gdnative.String) ButtonImplementer {
 	Args: [], Returns: bool
 */
 func (o *AcceptDialog) GetHideOnOk() gdnative.Bool {
-	//log.Println("Calling AcceptDialog.GetHideOnOk()")
+	// log.Println("Calling AcceptDialog.GetHideOnOk()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -202,7 +202,7 @@ func (o *AcceptDialog) GetHideOnOk() gdnative.Bool {
 	Args: [], Returns: Label
 */
 func (o *AcceptDialog) GetLabel() LabelImplementer {
-	//log.Println("Calling AcceptDialog.GetLabel()")
+	// log.Println("Calling AcceptDialog.GetLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -239,7 +239,7 @@ func (o *AcceptDialog) GetLabel() LabelImplementer {
 	Args: [], Returns: Button
 */
 func (o *AcceptDialog) GetOk() ButtonImplementer {
-	//log.Println("Calling AcceptDialog.GetOk()")
+	// log.Println("Calling AcceptDialog.GetOk()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -276,7 +276,7 @@ func (o *AcceptDialog) GetOk() ButtonImplementer {
 	Args: [], Returns: String
 */
 func (o *AcceptDialog) GetText() gdnative.String {
-	//log.Println("Calling AcceptDialog.GetText()")
+	// log.Println("Calling AcceptDialog.GetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -299,7 +299,7 @@ func (o *AcceptDialog) GetText() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *AcceptDialog) HasAutowrap() gdnative.Bool {
-	//log.Println("Calling AcceptDialog.HasAutowrap()")
+	// log.Println("Calling AcceptDialog.HasAutowrap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -322,7 +322,7 @@ func (o *AcceptDialog) HasAutowrap() gdnative.Bool {
 	Args: [{ false line_edit Node}], Returns: void
 */
 func (o *AcceptDialog) RegisterTextEnter(lineEdit NodeImplementer) {
-	//log.Println("Calling AcceptDialog.RegisterTextEnter()")
+	// log.Println("Calling AcceptDialog.RegisterTextEnter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -343,7 +343,7 @@ func (o *AcceptDialog) RegisterTextEnter(lineEdit NodeImplementer) {
 	Args: [{ false autowrap bool}], Returns: void
 */
 func (o *AcceptDialog) SetAutowrap(autowrap gdnative.Bool) {
-	//log.Println("Calling AcceptDialog.SetAutowrap()")
+	// log.Println("Calling AcceptDialog.SetAutowrap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -364,7 +364,7 @@ func (o *AcceptDialog) SetAutowrap(autowrap gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *AcceptDialog) SetHideOnOk(enabled gdnative.Bool) {
-	//log.Println("Calling AcceptDialog.SetHideOnOk()")
+	// log.Println("Calling AcceptDialog.SetHideOnOk()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -385,7 +385,7 @@ func (o *AcceptDialog) SetHideOnOk(enabled gdnative.Bool) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *AcceptDialog) SetText(text gdnative.String) {
-	//log.Println("Calling AcceptDialog.SetText()")
+	// log.Println("Calling AcceptDialog.SetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

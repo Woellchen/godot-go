@@ -49,7 +49,7 @@ func (o *VisualShaderNodeTransformMult) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeTransformMult::Operator
 */
 func (o *VisualShaderNodeTransformMult) GetOperator() VisualShaderNodeTransformMultOperator {
-	//log.Println("Calling VisualShaderNodeTransformMult.GetOperator()")
+	// log.Println("Calling VisualShaderNodeTransformMult.GetOperator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -72,7 +72,7 @@ func (o *VisualShaderNodeTransformMult) GetOperator() VisualShaderNodeTransformM
 	Args: [{ false op int}], Returns: void
 */
 func (o *VisualShaderNodeTransformMult) SetOperator(op gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeTransformMult.SetOperator()")
+	// log.Println("Calling VisualShaderNodeTransformMult.SetOperator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

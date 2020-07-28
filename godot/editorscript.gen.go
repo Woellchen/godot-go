@@ -39,7 +39,7 @@ func (o *EditorScript) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *EditorScript) X_Run() {
-	//log.Println("Calling EditorScript.X_Run()")
+	// log.Println("Calling EditorScript.X_Run()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *EditorScript) X_Run() {
 	Args: [{ false node Node}], Returns: void
 */
 func (o *EditorScript) AddRootNode(node NodeImplementer) {
-	//log.Println("Calling EditorScript.AddRootNode()")
+	// log.Println("Calling EditorScript.AddRootNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *EditorScript) AddRootNode(node NodeImplementer) {
 	Args: [], Returns: EditorInterface
 */
 func (o *EditorScript) GetEditorInterface() EditorInterfaceImplementer {
-	//log.Println("Calling EditorScript.GetEditorInterface()")
+	// log.Println("Calling EditorScript.GetEditorInterface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *EditorScript) GetEditorInterface() EditorInterfaceImplementer {
 	Args: [], Returns: Node
 */
 func (o *EditorScript) GetScene() NodeImplementer {
-	//log.Println("Calling EditorScript.GetScene()")
+	// log.Println("Calling EditorScript.GetScene()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

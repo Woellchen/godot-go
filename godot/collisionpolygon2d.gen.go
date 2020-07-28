@@ -47,7 +47,7 @@ func (o *CollisionPolygon2D) BaseClass() string {
 	Args: [], Returns: enum.CollisionPolygon2D::BuildMode
 */
 func (o *CollisionPolygon2D) GetBuildMode() CollisionPolygon2DBuildMode {
-	//log.Println("Calling CollisionPolygon2D.GetBuildMode()")
+	// log.Println("Calling CollisionPolygon2D.GetBuildMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -70,7 +70,7 @@ func (o *CollisionPolygon2D) GetBuildMode() CollisionPolygon2DBuildMode {
 	Args: [], Returns: float
 */
 func (o *CollisionPolygon2D) GetOneWayCollisionMargin() gdnative.Real {
-	//log.Println("Calling CollisionPolygon2D.GetOneWayCollisionMargin()")
+	// log.Println("Calling CollisionPolygon2D.GetOneWayCollisionMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -93,7 +93,7 @@ func (o *CollisionPolygon2D) GetOneWayCollisionMargin() gdnative.Real {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *CollisionPolygon2D) GetPolygon() gdnative.PoolVector2Array {
-	//log.Println("Calling CollisionPolygon2D.GetPolygon()")
+	// log.Println("Calling CollisionPolygon2D.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *CollisionPolygon2D) GetPolygon() gdnative.PoolVector2Array {
 	Args: [], Returns: bool
 */
 func (o *CollisionPolygon2D) IsDisabled() gdnative.Bool {
-	//log.Println("Calling CollisionPolygon2D.IsDisabled()")
+	// log.Println("Calling CollisionPolygon2D.IsDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *CollisionPolygon2D) IsDisabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CollisionPolygon2D) IsOneWayCollisionEnabled() gdnative.Bool {
-	//log.Println("Calling CollisionPolygon2D.IsOneWayCollisionEnabled()")
+	// log.Println("Calling CollisionPolygon2D.IsOneWayCollisionEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *CollisionPolygon2D) IsOneWayCollisionEnabled() gdnative.Bool {
 	Args: [{ false build_mode int}], Returns: void
 */
 func (o *CollisionPolygon2D) SetBuildMode(buildMode gdnative.Int) {
-	//log.Println("Calling CollisionPolygon2D.SetBuildMode()")
+	// log.Println("Calling CollisionPolygon2D.SetBuildMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -183,7 +183,7 @@ func (o *CollisionPolygon2D) SetBuildMode(buildMode gdnative.Int) {
 	Args: [{ false disabled bool}], Returns: void
 */
 func (o *CollisionPolygon2D) SetDisabled(disabled gdnative.Bool) {
-	//log.Println("Calling CollisionPolygon2D.SetDisabled()")
+	// log.Println("Calling CollisionPolygon2D.SetDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -204,7 +204,7 @@ func (o *CollisionPolygon2D) SetDisabled(disabled gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *CollisionPolygon2D) SetOneWayCollision(enabled gdnative.Bool) {
-	//log.Println("Calling CollisionPolygon2D.SetOneWayCollision()")
+	// log.Println("Calling CollisionPolygon2D.SetOneWayCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -225,7 +225,7 @@ func (o *CollisionPolygon2D) SetOneWayCollision(enabled gdnative.Bool) {
 	Args: [{ false margin float}], Returns: void
 */
 func (o *CollisionPolygon2D) SetOneWayCollisionMargin(margin gdnative.Real) {
-	//log.Println("Calling CollisionPolygon2D.SetOneWayCollisionMargin()")
+	// log.Println("Calling CollisionPolygon2D.SetOneWayCollisionMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -246,7 +246,7 @@ func (o *CollisionPolygon2D) SetOneWayCollisionMargin(margin gdnative.Real) {
 	Args: [{ false polygon PoolVector2Array}], Returns: void
 */
 func (o *CollisionPolygon2D) SetPolygon(polygon gdnative.PoolVector2Array) {
-	//log.Println("Calling CollisionPolygon2D.SetPolygon()")
+	// log.Println("Calling CollisionPolygon2D.SetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

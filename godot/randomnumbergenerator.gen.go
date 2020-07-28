@@ -39,7 +39,7 @@ func (o *RandomNumberGenerator) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *RandomNumberGenerator) GetSeed() gdnative.Int {
-	//log.Println("Calling RandomNumberGenerator.GetSeed()")
+	// log.Println("Calling RandomNumberGenerator.GetSeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *RandomNumberGenerator) GetSeed() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *RandomNumberGenerator) Randf() gdnative.Real {
-	//log.Println("Calling RandomNumberGenerator.Randf()")
+	// log.Println("Calling RandomNumberGenerator.Randf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *RandomNumberGenerator) Randf() gdnative.Real {
 	Args: [{ false from float} { false to float}], Returns: float
 */
 func (o *RandomNumberGenerator) RandfRange(from gdnative.Real, to gdnative.Real) gdnative.Real {
-	//log.Println("Calling RandomNumberGenerator.RandfRange()")
+	// log.Println("Calling RandomNumberGenerator.RandfRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -110,7 +110,7 @@ func (o *RandomNumberGenerator) RandfRange(from gdnative.Real, to gdnative.Real)
 	Args: [{0 true mean float} {1 true deviation float}], Returns: float
 */
 func (o *RandomNumberGenerator) Randfn(mean gdnative.Real, deviation gdnative.Real) gdnative.Real {
-	//log.Println("Calling RandomNumberGenerator.Randfn()")
+	// log.Println("Calling RandomNumberGenerator.Randfn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -135,7 +135,7 @@ func (o *RandomNumberGenerator) Randfn(mean gdnative.Real, deviation gdnative.Re
 	Args: [], Returns: int
 */
 func (o *RandomNumberGenerator) Randi() gdnative.Int {
-	//log.Println("Calling RandomNumberGenerator.Randi()")
+	// log.Println("Calling RandomNumberGenerator.Randi()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *RandomNumberGenerator) Randi() gdnative.Int {
 	Args: [{ false from int} { false to int}], Returns: int
 */
 func (o *RandomNumberGenerator) RandiRange(from gdnative.Int, to gdnative.Int) gdnative.Int {
-	//log.Println("Calling RandomNumberGenerator.RandiRange()")
+	// log.Println("Calling RandomNumberGenerator.RandiRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -183,7 +183,7 @@ func (o *RandomNumberGenerator) RandiRange(from gdnative.Int, to gdnative.Int) g
 	Args: [], Returns: void
 */
 func (o *RandomNumberGenerator) Randomize() {
-	//log.Println("Calling RandomNumberGenerator.Randomize()")
+	// log.Println("Calling RandomNumberGenerator.Randomize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -203,7 +203,7 @@ func (o *RandomNumberGenerator) Randomize() {
 	Args: [{ false seed int}], Returns: void
 */
 func (o *RandomNumberGenerator) SetSeed(seed gdnative.Int) {
-	//log.Println("Calling RandomNumberGenerator.SetSeed()")
+	// log.Println("Calling RandomNumberGenerator.SetSeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

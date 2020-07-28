@@ -70,7 +70,7 @@ func (o *ARVRInterface) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *ARVRInterface) GetAnchorDetectionIsEnabled() gdnative.Bool {
-	//log.Println("Calling ARVRInterface.GetAnchorDetectionIsEnabled()")
+	// log.Println("Calling ARVRInterface.GetAnchorDetectionIsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -93,7 +93,7 @@ func (o *ARVRInterface) GetAnchorDetectionIsEnabled() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *ARVRInterface) GetCameraFeedId() gdnative.Int {
-	//log.Println("Calling ARVRInterface.GetCameraFeedId()")
+	// log.Println("Calling ARVRInterface.GetCameraFeedId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *ARVRInterface) GetCameraFeedId() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *ARVRInterface) GetCapabilities() gdnative.Int {
-	//log.Println("Calling ARVRInterface.GetCapabilities()")
+	// log.Println("Calling ARVRInterface.GetCapabilities()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *ARVRInterface) GetCapabilities() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *ARVRInterface) GetName() gdnative.String {
-	//log.Println("Calling ARVRInterface.GetName()")
+	// log.Println("Calling ARVRInterface.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *ARVRInterface) GetName() gdnative.String {
 	Args: [], Returns: Vector2
 */
 func (o *ARVRInterface) GetRenderTargetsize() gdnative.Vector2 {
-	//log.Println("Calling ARVRInterface.GetRenderTargetsize()")
+	// log.Println("Calling ARVRInterface.GetRenderTargetsize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -185,7 +185,7 @@ func (o *ARVRInterface) GetRenderTargetsize() gdnative.Vector2 {
 	Args: [], Returns: enum.ARVRInterface::Tracking_status
 */
 func (o *ARVRInterface) GetTrackingStatus() ARVRInterfaceTracking_status {
-	//log.Println("Calling ARVRInterface.GetTrackingStatus()")
+	// log.Println("Calling ARVRInterface.GetTrackingStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -208,7 +208,7 @@ func (o *ARVRInterface) GetTrackingStatus() ARVRInterfaceTracking_status {
 	Args: [], Returns: bool
 */
 func (o *ARVRInterface) Initialize() gdnative.Bool {
-	//log.Println("Calling ARVRInterface.Initialize()")
+	// log.Println("Calling ARVRInterface.Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -231,7 +231,7 @@ func (o *ARVRInterface) Initialize() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ARVRInterface) IsInitialized() gdnative.Bool {
-	//log.Println("Calling ARVRInterface.IsInitialized()")
+	// log.Println("Calling ARVRInterface.IsInitialized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -254,7 +254,7 @@ func (o *ARVRInterface) IsInitialized() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ARVRInterface) IsPrimary() gdnative.Bool {
-	//log.Println("Calling ARVRInterface.IsPrimary()")
+	// log.Println("Calling ARVRInterface.IsPrimary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -277,7 +277,7 @@ func (o *ARVRInterface) IsPrimary() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ARVRInterface) IsStereo() gdnative.Bool {
-	//log.Println("Calling ARVRInterface.IsStereo()")
+	// log.Println("Calling ARVRInterface.IsStereo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -300,7 +300,7 @@ func (o *ARVRInterface) IsStereo() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ARVRInterface) SetAnchorDetectionIsEnabled(enable gdnative.Bool) {
-	//log.Println("Calling ARVRInterface.SetAnchorDetectionIsEnabled()")
+	// log.Println("Calling ARVRInterface.SetAnchorDetectionIsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -321,7 +321,7 @@ func (o *ARVRInterface) SetAnchorDetectionIsEnabled(enable gdnative.Bool) {
 	Args: [{ false initialized bool}], Returns: void
 */
 func (o *ARVRInterface) SetIsInitialized(initialized gdnative.Bool) {
-	//log.Println("Calling ARVRInterface.SetIsInitialized()")
+	// log.Println("Calling ARVRInterface.SetIsInitialized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -342,7 +342,7 @@ func (o *ARVRInterface) SetIsInitialized(initialized gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ARVRInterface) SetIsPrimary(enable gdnative.Bool) {
-	//log.Println("Calling ARVRInterface.SetIsPrimary()")
+	// log.Println("Calling ARVRInterface.SetIsPrimary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -363,7 +363,7 @@ func (o *ARVRInterface) SetIsPrimary(enable gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *ARVRInterface) Uninitialize() {
-	//log.Println("Calling ARVRInterface.Uninitialize()")
+	// log.Println("Calling ARVRInterface.Uninitialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

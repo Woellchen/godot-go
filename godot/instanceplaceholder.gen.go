@@ -39,7 +39,7 @@ func (o *InstancePlaceholder) BaseClass() string {
 	Args: [{False true replace bool} {Null true custom_scene PackedScene}], Returns: Node
 */
 func (o *InstancePlaceholder) CreateInstance(replace gdnative.Bool, customScene PackedSceneImplementer) NodeImplementer {
-	//log.Println("Calling InstancePlaceholder.CreateInstance()")
+	// log.Println("Calling InstancePlaceholder.CreateInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -78,7 +78,7 @@ func (o *InstancePlaceholder) CreateInstance(replace gdnative.Bool, customScene 
 	Args: [], Returns: String
 */
 func (o *InstancePlaceholder) GetInstancePath() gdnative.String {
-	//log.Println("Calling InstancePlaceholder.GetInstancePath()")
+	// log.Println("Calling InstancePlaceholder.GetInstancePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -101,7 +101,7 @@ func (o *InstancePlaceholder) GetInstancePath() gdnative.String {
 	Args: [{False true with_order bool}], Returns: Dictionary
 */
 func (o *InstancePlaceholder) GetStoredValues(withOrder gdnative.Bool) gdnative.Dictionary {
-	//log.Println("Calling InstancePlaceholder.GetStoredValues()")
+	// log.Println("Calling InstancePlaceholder.GetStoredValues()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *InstancePlaceholder) GetStoredValues(withOrder gdnative.Bool) gdnative.
 	Args: [{Null true custom_scene PackedScene}], Returns: void
 */
 func (o *InstancePlaceholder) ReplaceByInstance(customScene PackedSceneImplementer) {
-	//log.Println("Calling InstancePlaceholder.ReplaceByInstance()")
+	// log.Println("Calling InstancePlaceholder.ReplaceByInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

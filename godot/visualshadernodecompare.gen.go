@@ -69,7 +69,7 @@ func (o *VisualShaderNodeCompare) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeCompare::ComparisonType
 */
 func (o *VisualShaderNodeCompare) GetComparisonType() VisualShaderNodeCompareComparisonType {
-	//log.Println("Calling VisualShaderNodeCompare.GetComparisonType()")
+	// log.Println("Calling VisualShaderNodeCompare.GetComparisonType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -92,7 +92,7 @@ func (o *VisualShaderNodeCompare) GetComparisonType() VisualShaderNodeCompareCom
 	Args: [], Returns: enum.VisualShaderNodeCompare::Condition
 */
 func (o *VisualShaderNodeCompare) GetCondition() VisualShaderNodeCompareCondition {
-	//log.Println("Calling VisualShaderNodeCompare.GetCondition()")
+	// log.Println("Calling VisualShaderNodeCompare.GetCondition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -115,7 +115,7 @@ func (o *VisualShaderNodeCompare) GetCondition() VisualShaderNodeCompareConditio
 	Args: [], Returns: enum.VisualShaderNodeCompare::Function
 */
 func (o *VisualShaderNodeCompare) GetFunction() VisualShaderNodeCompareFunction {
-	//log.Println("Calling VisualShaderNodeCompare.GetFunction()")
+	// log.Println("Calling VisualShaderNodeCompare.GetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -138,7 +138,7 @@ func (o *VisualShaderNodeCompare) GetFunction() VisualShaderNodeCompareFunction 
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualShaderNodeCompare) SetComparisonType(aType gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeCompare.SetComparisonType()")
+	// log.Println("Calling VisualShaderNodeCompare.SetComparisonType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -159,7 +159,7 @@ func (o *VisualShaderNodeCompare) SetComparisonType(aType gdnative.Int) {
 	Args: [{ false condition int}], Returns: void
 */
 func (o *VisualShaderNodeCompare) SetCondition(condition gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeCompare.SetCondition()")
+	// log.Println("Calling VisualShaderNodeCompare.SetCondition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -180,7 +180,7 @@ func (o *VisualShaderNodeCompare) SetCondition(condition gdnative.Int) {
 	Args: [{ false func int}], Returns: void
 */
 func (o *VisualShaderNodeCompare) SetFunction(function gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeCompare.SetFunction()")
+	// log.Println("Calling VisualShaderNodeCompare.SetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

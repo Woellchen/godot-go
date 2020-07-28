@@ -39,7 +39,7 @@ func (o *ButtonGroup) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *ButtonGroup) GetButtons() gdnative.Array {
-	//log.Println("Calling ButtonGroup.GetButtons()")
+	// log.Println("Calling ButtonGroup.GetButtons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ButtonGroup) GetButtons() gdnative.Array {
 	Args: [], Returns: BaseButton
 */
 func (o *ButtonGroup) GetPressedButton() BaseButtonImplementer {
-	//log.Println("Calling ButtonGroup.GetPressedButton()")
+	// log.Println("Calling ButtonGroup.GetPressedButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

@@ -39,7 +39,7 @@ func (o *ColorPickerButton) BaseClass() string {
 	Args: [{ false arg0 Color}], Returns: void
 */
 func (o *ColorPickerButton) X_ColorChanged(arg0 gdnative.Color) {
-	//log.Println("Calling ColorPickerButton.X_ColorChanged()")
+	// log.Println("Calling ColorPickerButton.X_ColorChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *ColorPickerButton) X_ColorChanged(arg0 gdnative.Color) {
 	Args: [], Returns: void
 */
 func (o *ColorPickerButton) X_ModalClosed() {
-	//log.Println("Calling ColorPickerButton.X_ModalClosed()")
+	// log.Println("Calling ColorPickerButton.X_ModalClosed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *ColorPickerButton) X_ModalClosed() {
 	Args: [], Returns: Color
 */
 func (o *ColorPickerButton) GetPickColor() gdnative.Color {
-	//log.Println("Calling ColorPickerButton.GetPickColor()")
+	// log.Println("Calling ColorPickerButton.GetPickColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *ColorPickerButton) GetPickColor() gdnative.Color {
 	Args: [], Returns: ColorPicker
 */
 func (o *ColorPickerButton) GetPicker() ColorPickerImplementer {
-	//log.Println("Calling ColorPickerButton.GetPicker()")
+	// log.Println("Calling ColorPickerButton.GetPicker()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *ColorPickerButton) GetPicker() ColorPickerImplementer {
 	Args: [], Returns: PopupPanel
 */
 func (o *ColorPickerButton) GetPopup() PopupPanelImplementer {
-	//log.Println("Calling ColorPickerButton.GetPopup()")
+	// log.Println("Calling ColorPickerButton.GetPopup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *ColorPickerButton) GetPopup() PopupPanelImplementer {
 	Args: [], Returns: bool
 */
 func (o *ColorPickerButton) IsEditingAlpha() gdnative.Bool {
-	//log.Println("Calling ColorPickerButton.IsEditingAlpha()")
+	// log.Println("Calling ColorPickerButton.IsEditingAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *ColorPickerButton) IsEditingAlpha() gdnative.Bool {
 	Args: [{ false show bool}], Returns: void
 */
 func (o *ColorPickerButton) SetEditAlpha(show gdnative.Bool) {
-	//log.Println("Calling ColorPickerButton.SetEditAlpha()")
+	// log.Println("Calling ColorPickerButton.SetEditAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -221,7 +221,7 @@ func (o *ColorPickerButton) SetEditAlpha(show gdnative.Bool) {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ColorPickerButton) SetPickColor(color gdnative.Color) {
-	//log.Println("Calling ColorPickerButton.SetPickColor()")
+	// log.Println("Calling ColorPickerButton.SetPickColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *LargeTexture) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *LargeTexture) X_GetData() gdnative.Array {
-	//log.Println("Calling LargeTexture.X_GetData()")
+	// log.Println("Calling LargeTexture.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *LargeTexture) X_GetData() gdnative.Array {
 	Args: [{ false data Array}], Returns: void
 */
 func (o *LargeTexture) X_SetData(data gdnative.Array) {
-	//log.Println("Calling LargeTexture.X_SetData()")
+	// log.Println("Calling LargeTexture.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *LargeTexture) X_SetData(data gdnative.Array) {
 	Args: [{ false ofs Vector2} { false texture Texture}], Returns: int
 */
 func (o *LargeTexture) AddPiece(ofs gdnative.Vector2, texture TextureImplementer) gdnative.Int {
-	//log.Println("Calling LargeTexture.AddPiece()")
+	// log.Println("Calling LargeTexture.AddPiece()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -108,7 +108,7 @@ func (o *LargeTexture) AddPiece(ofs gdnative.Vector2, texture TextureImplementer
 	Args: [], Returns: void
 */
 func (o *LargeTexture) Clear() {
-	//log.Println("Calling LargeTexture.Clear()")
+	// log.Println("Calling LargeTexture.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *LargeTexture) Clear() {
 	Args: [], Returns: int
 */
 func (o *LargeTexture) GetPieceCount() gdnative.Int {
-	//log.Println("Calling LargeTexture.GetPieceCount()")
+	// log.Println("Calling LargeTexture.GetPieceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *LargeTexture) GetPieceCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: Vector2
 */
 func (o *LargeTexture) GetPieceOffset(idx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling LargeTexture.GetPieceOffset()")
+	// log.Println("Calling LargeTexture.GetPieceOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *LargeTexture) GetPieceOffset(idx gdnative.Int) gdnative.Vector2 {
 	Args: [{ false idx int}], Returns: Texture
 */
 func (o *LargeTexture) GetPieceTexture(idx gdnative.Int) TextureImplementer {
-	//log.Println("Calling LargeTexture.GetPieceTexture()")
+	// log.Println("Calling LargeTexture.GetPieceTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -213,7 +213,7 @@ func (o *LargeTexture) GetPieceTexture(idx gdnative.Int) TextureImplementer {
 	Args: [{ false idx int} { false ofs Vector2}], Returns: void
 */
 func (o *LargeTexture) SetPieceOffset(idx gdnative.Int, ofs gdnative.Vector2) {
-	//log.Println("Calling LargeTexture.SetPieceOffset()")
+	// log.Println("Calling LargeTexture.SetPieceOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -235,7 +235,7 @@ func (o *LargeTexture) SetPieceOffset(idx gdnative.Int, ofs gdnative.Vector2) {
 	Args: [{ false idx int} { false texture Texture}], Returns: void
 */
 func (o *LargeTexture) SetPieceTexture(idx gdnative.Int, texture TextureImplementer) {
-	//log.Println("Calling LargeTexture.SetPieceTexture()")
+	// log.Println("Calling LargeTexture.SetPieceTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -257,7 +257,7 @@ func (o *LargeTexture) SetPieceTexture(idx gdnative.Int, texture TextureImplemen
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *LargeTexture) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling LargeTexture.SetSize()")
+	// log.Println("Calling LargeTexture.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

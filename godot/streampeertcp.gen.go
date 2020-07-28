@@ -49,7 +49,7 @@ func (o *StreamPeerTCP) BaseClass() string {
 	Args: [{ false host String} { false port int}], Returns: enum.Error
 */
 func (o *StreamPeerTCP) ConnectToHost(host gdnative.String, port gdnative.Int) gdnative.Error {
-	//log.Println("Calling StreamPeerTCP.ConnectToHost()")
+	// log.Println("Calling StreamPeerTCP.ConnectToHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -74,7 +74,7 @@ func (o *StreamPeerTCP) ConnectToHost(host gdnative.String, port gdnative.Int) g
 	Args: [], Returns: void
 */
 func (o *StreamPeerTCP) DisconnectFromHost() {
-	//log.Println("Calling StreamPeerTCP.DisconnectFromHost()")
+	// log.Println("Calling StreamPeerTCP.DisconnectFromHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *StreamPeerTCP) DisconnectFromHost() {
 	Args: [], Returns: String
 */
 func (o *StreamPeerTCP) GetConnectedHost() gdnative.String {
-	//log.Println("Calling StreamPeerTCP.GetConnectedHost()")
+	// log.Println("Calling StreamPeerTCP.GetConnectedHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *StreamPeerTCP) GetConnectedHost() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *StreamPeerTCP) GetConnectedPort() gdnative.Int {
-	//log.Println("Calling StreamPeerTCP.GetConnectedPort()")
+	// log.Println("Calling StreamPeerTCP.GetConnectedPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *StreamPeerTCP) GetConnectedPort() gdnative.Int {
 	Args: [], Returns: enum.StreamPeerTCP::Status
 */
 func (o *StreamPeerTCP) GetStatus() StreamPeerTCPStatus {
-	//log.Println("Calling StreamPeerTCP.GetStatus()")
+	// log.Println("Calling StreamPeerTCP.GetStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *StreamPeerTCP) GetStatus() StreamPeerTCPStatus {
 	Args: [], Returns: bool
 */
 func (o *StreamPeerTCP) IsConnectedToHost() gdnative.Bool {
-	//log.Println("Calling StreamPeerTCP.IsConnectedToHost()")
+	// log.Println("Calling StreamPeerTCP.IsConnectedToHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *StreamPeerTCP) IsConnectedToHost() gdnative.Bool {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *StreamPeerTCP) SetNoDelay(enabled gdnative.Bool) {
-	//log.Println("Calling StreamPeerTCP.SetNoDelay()")
+	// log.Println("Calling StreamPeerTCP.SetNoDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

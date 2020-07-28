@@ -39,7 +39,7 @@ func (o *AudioStreamOGGVorbis) BaseClass() string {
 	Args: [], Returns: PoolByteArray
 */
 func (o *AudioStreamOGGVorbis) GetData() gdnative.PoolByteArray {
-	//log.Println("Calling AudioStreamOGGVorbis.GetData()")
+	// log.Println("Calling AudioStreamOGGVorbis.GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioStreamOGGVorbis) GetData() gdnative.PoolByteArray {
 	Args: [], Returns: float
 */
 func (o *AudioStreamOGGVorbis) GetLoopOffset() gdnative.Real {
-	//log.Println("Calling AudioStreamOGGVorbis.GetLoopOffset()")
+	// log.Println("Calling AudioStreamOGGVorbis.GetLoopOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioStreamOGGVorbis) GetLoopOffset() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *AudioStreamOGGVorbis) HasLoop() gdnative.Bool {
-	//log.Println("Calling AudioStreamOGGVorbis.HasLoop()")
+	// log.Println("Calling AudioStreamOGGVorbis.HasLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AudioStreamOGGVorbis) HasLoop() gdnative.Bool {
 	Args: [{ false data PoolByteArray}], Returns: void
 */
 func (o *AudioStreamOGGVorbis) SetData(data gdnative.PoolByteArray) {
-	//log.Println("Calling AudioStreamOGGVorbis.SetData()")
+	// log.Println("Calling AudioStreamOGGVorbis.SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *AudioStreamOGGVorbis) SetData(data gdnative.PoolByteArray) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AudioStreamOGGVorbis) SetLoop(enable gdnative.Bool) {
-	//log.Println("Calling AudioStreamOGGVorbis.SetLoop()")
+	// log.Println("Calling AudioStreamOGGVorbis.SetLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *AudioStreamOGGVorbis) SetLoop(enable gdnative.Bool) {
 	Args: [{ false seconds float}], Returns: void
 */
 func (o *AudioStreamOGGVorbis) SetLoopOffset(seconds gdnative.Real) {
-	//log.Println("Calling AudioStreamOGGVorbis.SetLoopOffset()")
+	// log.Println("Calling AudioStreamOGGVorbis.SetLoopOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

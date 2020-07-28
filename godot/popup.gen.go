@@ -39,7 +39,7 @@ func (o *Popup) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *Popup) IsExclusive() gdnative.Bool {
-	//log.Println("Calling Popup.IsExclusive()")
+	// log.Println("Calling Popup.IsExclusive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Popup) IsExclusive() gdnative.Bool {
 	Args: [{(0, 0, 0, 0) true bounds Rect2}], Returns: void
 */
 func (o *Popup) PopupMethod(bounds gdnative.Rect2) {
-	//log.Println("Calling Popup.PopupMethod()")
+	// log.Println("Calling Popup.PopupMethod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *Popup) PopupMethod(bounds gdnative.Rect2) {
 	Args: [{(0, 0) true size Vector2}], Returns: void
 */
 func (o *Popup) PopupCentered(size gdnative.Vector2) {
-	//log.Println("Calling Popup.PopupCentered()")
+	// log.Println("Calling Popup.PopupCentered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *Popup) PopupCentered(size gdnative.Vector2) {
 	Args: [{(0, 0) true size Vector2} {0.75 true fallback_ratio float}], Returns: void
 */
 func (o *Popup) PopupCenteredClamped(size gdnative.Vector2, fallbackRatio gdnative.Real) {
-	//log.Println("Calling Popup.PopupCenteredClamped()")
+	// log.Println("Calling Popup.PopupCenteredClamped()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -126,7 +126,7 @@ func (o *Popup) PopupCenteredClamped(size gdnative.Vector2, fallbackRatio gdnati
 	Args: [{(0, 0) true minsize Vector2}], Returns: void
 */
 func (o *Popup) PopupCenteredMinsize(minsize gdnative.Vector2) {
-	//log.Println("Calling Popup.PopupCenteredMinsize()")
+	// log.Println("Calling Popup.PopupCenteredMinsize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -147,7 +147,7 @@ func (o *Popup) PopupCenteredMinsize(minsize gdnative.Vector2) {
 	Args: [{0.75 true ratio float}], Returns: void
 */
 func (o *Popup) PopupCenteredRatio(ratio gdnative.Real) {
-	//log.Println("Calling Popup.PopupCenteredRatio()")
+	// log.Println("Calling Popup.PopupCenteredRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -168,7 +168,7 @@ func (o *Popup) PopupCenteredRatio(ratio gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *Popup) SetAsMinsize() {
-	//log.Println("Calling Popup.SetAsMinsize()")
+	// log.Println("Calling Popup.SetAsMinsize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -188,7 +188,7 @@ func (o *Popup) SetAsMinsize() {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Popup) SetExclusive(enable gdnative.Bool) {
-	//log.Println("Calling Popup.SetExclusive()")
+	// log.Println("Calling Popup.SetExclusive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *CurveTexture) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CurveTexture) X_Update() {
-	//log.Println("Calling CurveTexture.X_Update()")
+	// log.Println("Calling CurveTexture.X_Update()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *CurveTexture) X_Update() {
 	Args: [], Returns: Curve
 */
 func (o *CurveTexture) GetCurve() CurveImplementer {
-	//log.Println("Calling CurveTexture.GetCurve()")
+	// log.Println("Calling CurveTexture.GetCurve()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *CurveTexture) GetCurve() CurveImplementer {
 	Args: [{ false curve Curve}], Returns: void
 */
 func (o *CurveTexture) SetCurve(curve CurveImplementer) {
-	//log.Println("Calling CurveTexture.SetCurve()")
+	// log.Println("Calling CurveTexture.SetCurve()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -117,7 +117,7 @@ func (o *CurveTexture) SetCurve(curve CurveImplementer) {
 	Args: [{ false width int}], Returns: void
 */
 func (o *CurveTexture) SetWidth(width gdnative.Int) {
-	//log.Println("Calling CurveTexture.SetWidth()")
+	// log.Println("Calling CurveTexture.SetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

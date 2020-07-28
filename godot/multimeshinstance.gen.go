@@ -39,7 +39,7 @@ func (o *MultiMeshInstance) BaseClass() string {
 	Args: [], Returns: MultiMesh
 */
 func (o *MultiMeshInstance) GetMultimesh() MultiMeshImplementer {
-	//log.Println("Calling MultiMeshInstance.GetMultimesh()")
+	// log.Println("Calling MultiMeshInstance.GetMultimesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *MultiMeshInstance) GetMultimesh() MultiMeshImplementer {
 	Args: [{ false multimesh MultiMesh}], Returns: void
 */
 func (o *MultiMeshInstance) SetMultimesh(multimesh MultiMeshImplementer) {
-	//log.Println("Calling MultiMeshInstance.SetMultimesh()")
+	// log.Println("Calling MultiMeshInstance.SetMultimesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

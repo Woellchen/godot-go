@@ -39,7 +39,7 @@ func (o *ARVROrigin) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *ARVROrigin) GetWorldScale() gdnative.Real {
-	//log.Println("Calling ARVROrigin.GetWorldScale()")
+	// log.Println("Calling ARVROrigin.GetWorldScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ARVROrigin) GetWorldScale() gdnative.Real {
 	Args: [{ false world_scale float}], Returns: void
 */
 func (o *ARVROrigin) SetWorldScale(worldScale gdnative.Real) {
-	//log.Println("Calling ARVROrigin.SetWorldScale()")
+	// log.Println("Calling ARVROrigin.SetWorldScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *Navigation2D) BaseClass() string {
 	Args: [{ false to_point Vector2}], Returns: Vector2
 */
 func (o *Navigation2D) GetClosestPoint(toPoint gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling Navigation2D.GetClosestPoint()")
+	// log.Println("Calling Navigation2D.GetClosestPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *Navigation2D) GetClosestPoint(toPoint gdnative.Vector2) gdnative.Vector
 	Args: [{ false to_point Vector2}], Returns: Object
 */
 func (o *Navigation2D) GetClosestPointOwner(toPoint gdnative.Vector2) ObjectImplementer {
-	//log.Println("Calling Navigation2D.GetClosestPointOwner()")
+	// log.Println("Calling Navigation2D.GetClosestPointOwner()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *Navigation2D) GetClosestPointOwner(toPoint gdnative.Vector2) ObjectImpl
 	Args: [{ false start Vector2} { false end Vector2} {True true optimize bool}], Returns: PoolVector2Array
 */
 func (o *Navigation2D) GetSimplePath(start gdnative.Vector2, end gdnative.Vector2, optimize gdnative.Bool) gdnative.PoolVector2Array {
-	//log.Println("Calling Navigation2D.GetSimplePath()")
+	// log.Println("Calling Navigation2D.GetSimplePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -127,7 +127,7 @@ func (o *Navigation2D) GetSimplePath(start gdnative.Vector2, end gdnative.Vector
 	Args: [{ false mesh NavigationPolygon} { false xform Transform2D} {Null true owner Object}], Returns: int
 */
 func (o *Navigation2D) NavpolyAdd(mesh NavigationPolygonImplementer, xform gdnative.Transform2D, owner ObjectImplementer) gdnative.Int {
-	//log.Println("Calling Navigation2D.NavpolyAdd()")
+	// log.Println("Calling Navigation2D.NavpolyAdd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -153,7 +153,7 @@ func (o *Navigation2D) NavpolyAdd(mesh NavigationPolygonImplementer, xform gdnat
 	Args: [{ false id int}], Returns: void
 */
 func (o *Navigation2D) NavpolyRemove(id gdnative.Int) {
-	//log.Println("Calling Navigation2D.NavpolyRemove()")
+	// log.Println("Calling Navigation2D.NavpolyRemove()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -174,7 +174,7 @@ func (o *Navigation2D) NavpolyRemove(id gdnative.Int) {
 	Args: [{ false id int} { false xform Transform2D}], Returns: void
 */
 func (o *Navigation2D) NavpolySetTransform(id gdnative.Int, xform gdnative.Transform2D) {
-	//log.Println("Calling Navigation2D.NavpolySetTransform()")
+	// log.Println("Calling Navigation2D.NavpolySetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

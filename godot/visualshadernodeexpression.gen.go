@@ -39,7 +39,7 @@ func (o *VisualShaderNodeExpression) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeExpression) GetExpression() gdnative.String {
-	//log.Println("Calling VisualShaderNodeExpression.GetExpression()")
+	// log.Println("Calling VisualShaderNodeExpression.GetExpression()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeExpression) GetExpression() gdnative.String {
 	Args: [{ false expression String}], Returns: void
 */
 func (o *VisualShaderNodeExpression) SetExpression(expression gdnative.String) {
-	//log.Println("Calling VisualShaderNodeExpression.SetExpression()")
+	// log.Println("Calling VisualShaderNodeExpression.SetExpression()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

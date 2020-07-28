@@ -39,7 +39,7 @@ func (o *Listener) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Listener) ClearCurrent() {
-	//log.Println("Calling Listener.ClearCurrent()")
+	// log.Println("Calling Listener.ClearCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *Listener) ClearCurrent() {
 	Args: [], Returns: Transform
 */
 func (o *Listener) GetListenerTransform() gdnative.Transform {
-	//log.Println("Calling Listener.GetListenerTransform()")
+	// log.Println("Calling Listener.GetListenerTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *Listener) GetListenerTransform() gdnative.Transform {
 	Args: [], Returns: bool
 */
 func (o *Listener) IsCurrent() gdnative.Bool {
-	//log.Println("Calling Listener.IsCurrent()")
+	// log.Println("Calling Listener.IsCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *Listener) IsCurrent() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *Listener) MakeCurrent() {
-	//log.Println("Calling Listener.MakeCurrent()")
+	// log.Println("Calling Listener.MakeCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

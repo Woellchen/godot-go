@@ -55,7 +55,7 @@ func (o *VisualShaderNodeScalarOp) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeScalarOp::Operator
 */
 func (o *VisualShaderNodeScalarOp) GetOperator() VisualShaderNodeScalarOpOperator {
-	//log.Println("Calling VisualShaderNodeScalarOp.GetOperator()")
+	// log.Println("Calling VisualShaderNodeScalarOp.GetOperator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -78,7 +78,7 @@ func (o *VisualShaderNodeScalarOp) GetOperator() VisualShaderNodeScalarOpOperato
 	Args: [{ false op int}], Returns: void
 */
 func (o *VisualShaderNodeScalarOp) SetOperator(op gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeScalarOp.SetOperator()")
+	// log.Println("Calling VisualShaderNodeScalarOp.SetOperator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

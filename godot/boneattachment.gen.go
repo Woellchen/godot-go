@@ -39,7 +39,7 @@ func (o *BoneAttachment) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *BoneAttachment) GetBoneName() gdnative.String {
-	//log.Println("Calling BoneAttachment.GetBoneName()")
+	// log.Println("Calling BoneAttachment.GetBoneName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *BoneAttachment) GetBoneName() gdnative.String {
 	Args: [{ false bone_name String}], Returns: void
 */
 func (o *BoneAttachment) SetBoneName(boneName gdnative.String) {
-	//log.Println("Calling BoneAttachment.SetBoneName()")
+	// log.Println("Calling BoneAttachment.SetBoneName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

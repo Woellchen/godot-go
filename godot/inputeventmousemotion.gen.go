@@ -39,7 +39,7 @@ func (o *InputEventMouseMotion) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *InputEventMouseMotion) GetPressure() gdnative.Real {
-	//log.Println("Calling InputEventMouseMotion.GetPressure()")
+	// log.Println("Calling InputEventMouseMotion.GetPressure()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventMouseMotion) GetPressure() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventMouseMotion) GetRelative() gdnative.Vector2 {
-	//log.Println("Calling InputEventMouseMotion.GetRelative()")
+	// log.Println("Calling InputEventMouseMotion.GetRelative()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventMouseMotion) GetRelative() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventMouseMotion) GetSpeed() gdnative.Vector2 {
-	//log.Println("Calling InputEventMouseMotion.GetSpeed()")
+	// log.Println("Calling InputEventMouseMotion.GetSpeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InputEventMouseMotion) GetSpeed() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventMouseMotion) GetTilt() gdnative.Vector2 {
-	//log.Println("Calling InputEventMouseMotion.GetTilt()")
+	// log.Println("Calling InputEventMouseMotion.GetTilt()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *InputEventMouseMotion) GetTilt() gdnative.Vector2 {
 	Args: [{ false pressure float}], Returns: void
 */
 func (o *InputEventMouseMotion) SetPressure(pressure gdnative.Real) {
-	//log.Println("Calling InputEventMouseMotion.SetPressure()")
+	// log.Println("Calling InputEventMouseMotion.SetPressure()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *InputEventMouseMotion) SetPressure(pressure gdnative.Real) {
 	Args: [{ false relative Vector2}], Returns: void
 */
 func (o *InputEventMouseMotion) SetRelative(relative gdnative.Vector2) {
-	//log.Println("Calling InputEventMouseMotion.SetRelative()")
+	// log.Println("Calling InputEventMouseMotion.SetRelative()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *InputEventMouseMotion) SetRelative(relative gdnative.Vector2) {
 	Args: [{ false speed Vector2}], Returns: void
 */
 func (o *InputEventMouseMotion) SetSpeed(speed gdnative.Vector2) {
-	//log.Println("Calling InputEventMouseMotion.SetSpeed()")
+	// log.Println("Calling InputEventMouseMotion.SetSpeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *InputEventMouseMotion) SetSpeed(speed gdnative.Vector2) {
 	Args: [{ false tilt Vector2}], Returns: void
 */
 func (o *InputEventMouseMotion) SetTilt(tilt gdnative.Vector2) {
-	//log.Println("Calling InputEventMouseMotion.SetTilt()")
+	// log.Println("Calling InputEventMouseMotion.SetTilt()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *World) BaseClass() string {
 	Args: [], Returns: PhysicsDirectSpaceState
 */
 func (o *World) GetDirectSpaceState() PhysicsDirectSpaceStateImplementer {
-	//log.Println("Calling World.GetDirectSpaceState()")
+	// log.Println("Calling World.GetDirectSpaceState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *World) GetDirectSpaceState() PhysicsDirectSpaceStateImplementer {
 	Args: [], Returns: Environment
 */
 func (o *World) GetEnvironment() EnvironmentImplementer {
-	//log.Println("Calling World.GetEnvironment()")
+	// log.Println("Calling World.GetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -113,7 +113,7 @@ func (o *World) GetEnvironment() EnvironmentImplementer {
 	Args: [], Returns: Environment
 */
 func (o *World) GetFallbackEnvironment() EnvironmentImplementer {
-	//log.Println("Calling World.GetFallbackEnvironment()")
+	// log.Println("Calling World.GetFallbackEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *World) GetFallbackEnvironment() EnvironmentImplementer {
 	Args: [], Returns: RID
 */
 func (o *World) GetScenario() gdnative.Rid {
-	//log.Println("Calling World.GetScenario()")
+	// log.Println("Calling World.GetScenario()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -173,7 +173,7 @@ func (o *World) GetScenario() gdnative.Rid {
 	Args: [], Returns: RID
 */
 func (o *World) GetSpace() gdnative.Rid {
-	//log.Println("Calling World.GetSpace()")
+	// log.Println("Calling World.GetSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *World) GetSpace() gdnative.Rid {
 	Args: [{ false env Environment}], Returns: void
 */
 func (o *World) SetEnvironment(env EnvironmentImplementer) {
-	//log.Println("Calling World.SetEnvironment()")
+	// log.Println("Calling World.SetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *World) SetEnvironment(env EnvironmentImplementer) {
 	Args: [{ false env Environment}], Returns: void
 */
 func (o *World) SetFallbackEnvironment(env EnvironmentImplementer) {
-	//log.Println("Calling World.SetFallbackEnvironment()")
+	// log.Println("Calling World.SetFallbackEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

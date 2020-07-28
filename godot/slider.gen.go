@@ -39,7 +39,7 @@ func (o *Slider) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *Slider) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling Slider.X_GuiInput()")
+	// log.Println("Calling Slider.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *Slider) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: int
 */
 func (o *Slider) GetTicks() gdnative.Int {
-	//log.Println("Calling Slider.GetTicks()")
+	// log.Println("Calling Slider.GetTicks()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -83,7 +83,7 @@ func (o *Slider) GetTicks() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Slider) GetTicksOnBorders() gdnative.Bool {
-	//log.Println("Calling Slider.GetTicksOnBorders()")
+	// log.Println("Calling Slider.GetTicksOnBorders()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -106,7 +106,7 @@ func (o *Slider) GetTicksOnBorders() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Slider) IsEditable() gdnative.Bool {
-	//log.Println("Calling Slider.IsEditable()")
+	// log.Println("Calling Slider.IsEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *Slider) IsEditable() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Slider) IsScrollable() gdnative.Bool {
-	//log.Println("Calling Slider.IsScrollable()")
+	// log.Println("Calling Slider.IsScrollable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -152,7 +152,7 @@ func (o *Slider) IsScrollable() gdnative.Bool {
 	Args: [{ false editable bool}], Returns: void
 */
 func (o *Slider) SetEditable(editable gdnative.Bool) {
-	//log.Println("Calling Slider.SetEditable()")
+	// log.Println("Calling Slider.SetEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *Slider) SetEditable(editable gdnative.Bool) {
 	Args: [{ false scrollable bool}], Returns: void
 */
 func (o *Slider) SetScrollable(scrollable gdnative.Bool) {
-	//log.Println("Calling Slider.SetScrollable()")
+	// log.Println("Calling Slider.SetScrollable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *Slider) SetScrollable(scrollable gdnative.Bool) {
 	Args: [{ false count int}], Returns: void
 */
 func (o *Slider) SetTicks(count gdnative.Int) {
-	//log.Println("Calling Slider.SetTicks()")
+	// log.Println("Calling Slider.SetTicks()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -215,7 +215,7 @@ func (o *Slider) SetTicks(count gdnative.Int) {
 	Args: [{ false ticks_on_border bool}], Returns: void
 */
 func (o *Slider) SetTicksOnBorders(ticksOnBorder gdnative.Bool) {
-	//log.Println("Calling Slider.SetTicksOnBorders()")
+	// log.Println("Calling Slider.SetTicksOnBorders()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

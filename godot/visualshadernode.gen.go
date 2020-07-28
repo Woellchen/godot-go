@@ -51,7 +51,7 @@ func (o *VisualShaderNode) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *VisualShaderNode) GetDefaultInputValues() gdnative.Array {
-	//log.Println("Calling VisualShaderNode.GetDefaultInputValues()")
+	// log.Println("Calling VisualShaderNode.GetDefaultInputValues()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -74,7 +74,7 @@ func (o *VisualShaderNode) GetDefaultInputValues() gdnative.Array {
 	Args: [{ false port int}], Returns: Variant
 */
 func (o *VisualShaderNode) GetInputPortDefaultValue(port gdnative.Int) gdnative.Variant {
-	//log.Println("Calling VisualShaderNode.GetInputPortDefaultValue()")
+	// log.Println("Calling VisualShaderNode.GetInputPortDefaultValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -98,7 +98,7 @@ func (o *VisualShaderNode) GetInputPortDefaultValue(port gdnative.Int) gdnative.
 	Args: [], Returns: int
 */
 func (o *VisualShaderNode) GetOutputPortForPreview() gdnative.Int {
-	//log.Println("Calling VisualShaderNode.GetOutputPortForPreview()")
+	// log.Println("Calling VisualShaderNode.GetOutputPortForPreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -121,7 +121,7 @@ func (o *VisualShaderNode) GetOutputPortForPreview() gdnative.Int {
 	Args: [{ false values Array}], Returns: void
 */
 func (o *VisualShaderNode) SetDefaultInputValues(values gdnative.Array) {
-	//log.Println("Calling VisualShaderNode.SetDefaultInputValues()")
+	// log.Println("Calling VisualShaderNode.SetDefaultInputValues()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -142,7 +142,7 @@ func (o *VisualShaderNode) SetDefaultInputValues(values gdnative.Array) {
 	Args: [{ false port int} { false value Variant}], Returns: void
 */
 func (o *VisualShaderNode) SetInputPortDefaultValue(port gdnative.Int, value gdnative.Variant) {
-	//log.Println("Calling VisualShaderNode.SetInputPortDefaultValue()")
+	// log.Println("Calling VisualShaderNode.SetInputPortDefaultValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -164,7 +164,7 @@ func (o *VisualShaderNode) SetInputPortDefaultValue(port gdnative.Int, value gdn
 	Args: [{ false port int}], Returns: void
 */
 func (o *VisualShaderNode) SetOutputPortForPreview(port gdnative.Int) {
-	//log.Println("Calling VisualShaderNode.SetOutputPortForPreview()")
+	// log.Println("Calling VisualShaderNode.SetOutputPortForPreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

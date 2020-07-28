@@ -39,7 +39,7 @@ func (o *CollisionShape2D) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CollisionShape2D) X_ShapeChanged() {
-	//log.Println("Calling CollisionShape2D.X_ShapeChanged()")
+	// log.Println("Calling CollisionShape2D.X_ShapeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *CollisionShape2D) X_ShapeChanged() {
 	Args: [], Returns: float
 */
 func (o *CollisionShape2D) GetOneWayCollisionMargin() gdnative.Real {
-	//log.Println("Calling CollisionShape2D.GetOneWayCollisionMargin()")
+	// log.Println("Calling CollisionShape2D.GetOneWayCollisionMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *CollisionShape2D) GetOneWayCollisionMargin() gdnative.Real {
 	Args: [], Returns: Shape2D
 */
 func (o *CollisionShape2D) GetShape() Shape2DImplementer {
-	//log.Println("Calling CollisionShape2D.GetShape()")
+	// log.Println("Calling CollisionShape2D.GetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *CollisionShape2D) GetShape() Shape2DImplementer {
 	Args: [], Returns: bool
 */
 func (o *CollisionShape2D) IsDisabled() gdnative.Bool {
-	//log.Println("Calling CollisionShape2D.IsDisabled()")
+	// log.Println("Calling CollisionShape2D.IsDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *CollisionShape2D) IsDisabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CollisionShape2D) IsOneWayCollisionEnabled() gdnative.Bool {
-	//log.Println("Calling CollisionShape2D.IsOneWayCollisionEnabled()")
+	// log.Println("Calling CollisionShape2D.IsOneWayCollisionEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *CollisionShape2D) IsOneWayCollisionEnabled() gdnative.Bool {
 	Args: [{ false disabled bool}], Returns: void
 */
 func (o *CollisionShape2D) SetDisabled(disabled gdnative.Bool) {
-	//log.Println("Calling CollisionShape2D.SetDisabled()")
+	// log.Println("Calling CollisionShape2D.SetDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -186,7 +186,7 @@ func (o *CollisionShape2D) SetDisabled(disabled gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *CollisionShape2D) SetOneWayCollision(enabled gdnative.Bool) {
-	//log.Println("Calling CollisionShape2D.SetOneWayCollision()")
+	// log.Println("Calling CollisionShape2D.SetOneWayCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -207,7 +207,7 @@ func (o *CollisionShape2D) SetOneWayCollision(enabled gdnative.Bool) {
 	Args: [{ false margin float}], Returns: void
 */
 func (o *CollisionShape2D) SetOneWayCollisionMargin(margin gdnative.Real) {
-	//log.Println("Calling CollisionShape2D.SetOneWayCollisionMargin()")
+	// log.Println("Calling CollisionShape2D.SetOneWayCollisionMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -228,7 +228,7 @@ func (o *CollisionShape2D) SetOneWayCollisionMargin(margin gdnative.Real) {
 	Args: [{ false shape Shape2D}], Returns: void
 */
 func (o *CollisionShape2D) SetShape(shape Shape2DImplementer) {
-	//log.Println("Calling CollisionShape2D.SetShape()")
+	// log.Println("Calling CollisionShape2D.SetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

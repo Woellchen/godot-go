@@ -1,6 +1,8 @@
 package godot
 
 import (
+	"reflect"
+
 	"github.com/Woellchen/godot-go/gdnative"
 )
 
@@ -58,7 +60,7 @@ func (o *Object) GetBaseObject() gdnative.Object {
 	Args: [{ false property String}], Returns: Variant
 */
 func (o *Object) X_Get(property gdnative.String) gdnative.Variant {
-	//log.Println("Calling Object.X_Get()")
+	// log.Println("Calling Object.X_Get()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -82,7 +84,7 @@ func (o *Object) X_Get(property gdnative.String) gdnative.Variant {
 	Args: [], Returns: Array
 */
 func (o *Object) X_GetPropertyList() gdnative.Array {
-	//log.Println("Calling Object.X_GetPropertyList()")
+	// log.Println("Calling Object.X_GetPropertyList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +107,7 @@ func (o *Object) X_GetPropertyList() gdnative.Array {
 	Args: [], Returns: void
 */
 func (o *Object) X_Init() {
-	//log.Println("Calling Object.X_Init()")
+	// log.Println("Calling Object.X_Init()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -125,7 +127,7 @@ func (o *Object) X_Init() {
 	Args: [{ false what int}], Returns: void
 */
 func (o *Object) X_Notification(what gdnative.Int) {
-	//log.Println("Calling Object.X_Notification()")
+	// log.Println("Calling Object.X_Notification()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +148,7 @@ func (o *Object) X_Notification(what gdnative.Int) {
 	Args: [{ false property String} { false value Variant}], Returns: bool
 */
 func (o *Object) X_Set(property gdnative.String, value gdnative.Variant) gdnative.Bool {
-	//log.Println("Calling Object.X_Set()")
+	// log.Println("Calling Object.X_Set()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -171,7 +173,7 @@ func (o *Object) X_Set(property gdnative.String, value gdnative.Variant) gdnativ
 	Args: [], Returns: String
 */
 func (o *Object) X_ToString() gdnative.String {
-	//log.Println("Calling Object.X_ToString()")
+	// log.Println("Calling Object.X_ToString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -194,7 +196,7 @@ func (o *Object) X_ToString() gdnative.String {
 	Args: [{ false signal String} {[] true arguments Array}], Returns: void
 */
 func (o *Object) AddUserSignal(signal gdnative.String, arguments gdnative.Array) {
-	//log.Println("Calling Object.AddUserSignal()")
+	// log.Println("Calling Object.AddUserSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -215,15 +217,15 @@ func (o *Object) AddUserSignal(signal gdnative.String, arguments gdnative.Array)
         Calls the [code]method[/code] on the object and returns the result. This method supports a variable number of arguments, so parameters are passed as a comma separated list. Example: [codeblock] call("set", "position", Vector2(42.0, 0.0)) [/codeblock]
 	Args: [{ false method String}], Returns: Variant
 */
-func (o *Object) Call(method gdnative.String, args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling Object.Call()")
+func (o *Object) Call(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling Object.Call()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 1+len(args), 1+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 1+len(args), 1+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+1] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+1] = arg
 	}
 
 	// Get the method bind
@@ -231,27 +233,24 @@ func (o *Object) Call(method gdnative.String, args ...gdnative.Variant) gdnative
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
         Calls the [code]method[/code] on the object during idle time. This method supports a variable number of arguments, so parameters are passed as a comma separated list. Example: [codeblock] call_deferred("set", "position", Vector2(42.0, 0.0)) [/codeblock]
 	Args: [{ false method String}], Returns: void
 */
-func (o *Object) CallDeferred(method gdnative.String, args ...gdnative.Variant) {
-	//log.Println("Calling Object.CallDeferred()")
+func (o *Object) CallDeferred(method gdnative.String, args ...gdnative.Variant) gdnative.VariantCallError {
+	// log.Println("Calling Object.CallDeferred()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 1+len(args), 1+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 1+len(args), 1+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+1] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+1] = arg
 	}
 
 	// Get the method bind
@@ -259,9 +258,9 @@ func (o *Object) CallDeferred(method gdnative.String, args ...gdnative.Variant) 
 
 	// Call the parent method.
 	// void
-	retPtr := gdnative.NewEmptyVoid()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	_, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
+	return err
 }
 
 /*
@@ -269,7 +268,7 @@ func (o *Object) CallDeferred(method gdnative.String, args ...gdnative.Variant) 
 	Args: [{ false method String} { false arg_array Array}], Returns: Variant
 */
 func (o *Object) Callv(method gdnative.String, argArray gdnative.Array) gdnative.Variant {
-	//log.Println("Calling Object.Callv()")
+	// log.Println("Calling Object.Callv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -294,7 +293,7 @@ func (o *Object) Callv(method gdnative.String, argArray gdnative.Array) gdnative
 	Args: [], Returns: bool
 */
 func (o *Object) CanTranslateMessages() gdnative.Bool {
-	//log.Println("Calling Object.CanTranslateMessages()")
+	// log.Println("Calling Object.CanTranslateMessages()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -317,7 +316,7 @@ func (o *Object) CanTranslateMessages() gdnative.Bool {
 	Args: [{ false signal String} { false target Object} { false method String} {[] true binds Array} {0 true flags int}], Returns: enum.Error
 */
 func (o *Object) Connect(signal gdnative.String, target ObjectImplementer, method gdnative.String, binds gdnative.Array, flags gdnative.Int) gdnative.Error {
-	//log.Println("Calling Object.Connect()")
+	// log.Println("Calling Object.Connect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -345,7 +344,7 @@ func (o *Object) Connect(signal gdnative.String, target ObjectImplementer, metho
 	Args: [{ false signal String} { false target Object} { false method String}], Returns: void
 */
 func (o *Object) Disconnect(signal gdnative.String, target ObjectImplementer, method gdnative.String) {
-	//log.Println("Calling Object.Disconnect()")
+	// log.Println("Calling Object.Disconnect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -367,15 +366,15 @@ func (o *Object) Disconnect(signal gdnative.String, target ObjectImplementer, me
         Emits the given [code]signal[/code]. The signal must exist, so it should be a built-in signal of this class or one of its parent classes, or a user-defined signal. This method supports a variable number of arguments, so parameters are passed as a comma separated list. Example: [codeblock] emit_signal("hit", weapon_type, damage) emit_signal("game_over") [/codeblock]
 	Args: [{ false signal String}], Returns: void
 */
-func (o *Object) EmitSignal(signal gdnative.String, args ...gdnative.Variant) {
-	//log.Println("Calling Object.EmitSignal()")
+func (o *Object) EmitSignal(signal gdnative.String, args ...gdnative.Variant) gdnative.VariantCallError {
+	// log.Println("Calling Object.EmitSignal()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 1+len(args), 1+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromString(signal)
+	arguments := make([]gdnative.Variant, 1+len(args), 1+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(signal))
 
 	for i, arg := range args {
-		ptrArguments[i+1] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+1] = arg
 	}
 
 	// Get the method bind
@@ -383,9 +382,9 @@ func (o *Object) EmitSignal(signal gdnative.String, args ...gdnative.Variant) {
 
 	// Call the parent method.
 	// void
-	retPtr := gdnative.NewEmptyVoid()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	_, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
+	return err
 }
 
 /*
@@ -393,7 +392,7 @@ func (o *Object) EmitSignal(signal gdnative.String, args ...gdnative.Variant) {
 	Args: [], Returns: void
 */
 func (o *Object) Free() {
-	//log.Println("Calling Object.Free()")
+	// log.Println("Calling Object.Free()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -413,7 +412,7 @@ func (o *Object) Free() {
 	Args: [{ false property String}], Returns: Variant
 */
 func (o *Object) Get(property gdnative.String) gdnative.Variant {
-	//log.Println("Calling Object.Get()")
+	// log.Println("Calling Object.Get()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -437,7 +436,7 @@ func (o *Object) Get(property gdnative.String) gdnative.Variant {
 	Args: [], Returns: String
 */
 func (o *Object) GetClass() gdnative.String {
-	//log.Println("Calling Object.GetClass()")
+	// log.Println("Calling Object.GetClass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -460,7 +459,7 @@ func (o *Object) GetClass() gdnative.String {
 	Args: [], Returns: Array
 */
 func (o *Object) GetIncomingConnections() gdnative.Array {
-	//log.Println("Calling Object.GetIncomingConnections()")
+	// log.Println("Calling Object.GetIncomingConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -483,7 +482,7 @@ func (o *Object) GetIncomingConnections() gdnative.Array {
 	Args: [{ false property NodePath}], Returns: Variant
 */
 func (o *Object) GetIndexed(property gdnative.NodePath) gdnative.Variant {
-	//log.Println("Calling Object.GetIndexed()")
+	// log.Println("Calling Object.GetIndexed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -507,7 +506,7 @@ func (o *Object) GetIndexed(property gdnative.NodePath) gdnative.Variant {
 	Args: [], Returns: int
 */
 func (o *Object) GetInstanceId() gdnative.Int {
-	//log.Println("Calling Object.GetInstanceId()")
+	// log.Println("Calling Object.GetInstanceId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -530,7 +529,7 @@ func (o *Object) GetInstanceId() gdnative.Int {
 	Args: [{ false name String}], Returns: Variant
 */
 func (o *Object) GetMeta(name gdnative.String) gdnative.Variant {
-	//log.Println("Calling Object.GetMeta()")
+	// log.Println("Calling Object.GetMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -554,7 +553,7 @@ func (o *Object) GetMeta(name gdnative.String) gdnative.Variant {
 	Args: [], Returns: PoolStringArray
 */
 func (o *Object) GetMetaList() gdnative.PoolStringArray {
-	//log.Println("Calling Object.GetMetaList()")
+	// log.Println("Calling Object.GetMetaList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -577,7 +576,7 @@ func (o *Object) GetMetaList() gdnative.PoolStringArray {
 	Args: [], Returns: Array
 */
 func (o *Object) GetMethodList() gdnative.Array {
-	//log.Println("Calling Object.GetMethodList()")
+	// log.Println("Calling Object.GetMethodList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -600,7 +599,7 @@ func (o *Object) GetMethodList() gdnative.Array {
 	Args: [], Returns: Array
 */
 func (o *Object) GetPropertyList() gdnative.Array {
-	//log.Println("Calling Object.GetPropertyList()")
+	// log.Println("Calling Object.GetPropertyList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -623,7 +622,7 @@ func (o *Object) GetPropertyList() gdnative.Array {
 	Args: [], Returns: Reference
 */
 func (o *Object) GetScript() ReferenceImplementer {
-	//log.Println("Calling Object.GetScript()")
+	// log.Println("Calling Object.GetScript()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -660,7 +659,7 @@ func (o *Object) GetScript() ReferenceImplementer {
 	Args: [{ false signal String}], Returns: Array
 */
 func (o *Object) GetSignalConnectionList(signal gdnative.String) gdnative.Array {
-	//log.Println("Calling Object.GetSignalConnectionList()")
+	// log.Println("Calling Object.GetSignalConnectionList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -684,7 +683,7 @@ func (o *Object) GetSignalConnectionList(signal gdnative.String) gdnative.Array 
 	Args: [], Returns: Array
 */
 func (o *Object) GetSignalList() gdnative.Array {
-	//log.Println("Calling Object.GetSignalList()")
+	// log.Println("Calling Object.GetSignalList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -707,7 +706,7 @@ func (o *Object) GetSignalList() gdnative.Array {
 	Args: [{ false name String}], Returns: bool
 */
 func (o *Object) HasMeta(name gdnative.String) gdnative.Bool {
-	//log.Println("Calling Object.HasMeta()")
+	// log.Println("Calling Object.HasMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -731,7 +730,7 @@ func (o *Object) HasMeta(name gdnative.String) gdnative.Bool {
 	Args: [{ false method String}], Returns: bool
 */
 func (o *Object) HasMethod(method gdnative.String) gdnative.Bool {
-	//log.Println("Calling Object.HasMethod()")
+	// log.Println("Calling Object.HasMethod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -755,7 +754,7 @@ func (o *Object) HasMethod(method gdnative.String) gdnative.Bool {
 	Args: [{ false signal String}], Returns: bool
 */
 func (o *Object) HasSignal(signal gdnative.String) gdnative.Bool {
-	//log.Println("Calling Object.HasSignal()")
+	// log.Println("Calling Object.HasSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -779,7 +778,7 @@ func (o *Object) HasSignal(signal gdnative.String) gdnative.Bool {
 	Args: [{ false signal String}], Returns: bool
 */
 func (o *Object) HasUserSignal(signal gdnative.String) gdnative.Bool {
-	//log.Println("Calling Object.HasUserSignal()")
+	// log.Println("Calling Object.HasUserSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -803,7 +802,7 @@ func (o *Object) HasUserSignal(signal gdnative.String) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Object) IsBlockingSignals() gdnative.Bool {
-	//log.Println("Calling Object.IsBlockingSignals()")
+	// log.Println("Calling Object.IsBlockingSignals()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -826,7 +825,7 @@ func (o *Object) IsBlockingSignals() gdnative.Bool {
 	Args: [{ false class String}], Returns: bool
 */
 func (o *Object) IsClass(class gdnative.String) gdnative.Bool {
-	//log.Println("Calling Object.IsClass()")
+	// log.Println("Calling Object.IsClass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -850,7 +849,7 @@ func (o *Object) IsClass(class gdnative.String) gdnative.Bool {
 	Args: [{ false signal String} { false target Object} { false method String}], Returns: bool
 */
 func (o *Object) IsConnected(signal gdnative.String, target ObjectImplementer, method gdnative.String) gdnative.Bool {
-	//log.Println("Calling Object.IsConnected()")
+	// log.Println("Calling Object.IsConnected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -876,7 +875,7 @@ func (o *Object) IsConnected(signal gdnative.String, target ObjectImplementer, m
 	Args: [], Returns: bool
 */
 func (o *Object) IsQueuedForDeletion() gdnative.Bool {
-	//log.Println("Calling Object.IsQueuedForDeletion()")
+	// log.Println("Calling Object.IsQueuedForDeletion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -899,7 +898,7 @@ func (o *Object) IsQueuedForDeletion() gdnative.Bool {
 	Args: [{ false what int} {False true reversed bool}], Returns: void
 */
 func (o *Object) Notification(what gdnative.Int, reversed gdnative.Bool) {
-	//log.Println("Calling Object.Notification()")
+	// log.Println("Calling Object.Notification()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -921,7 +920,7 @@ func (o *Object) Notification(what gdnative.Int, reversed gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *Object) PropertyListChangedNotify() {
-	//log.Println("Calling Object.PropertyListChangedNotify()")
+	// log.Println("Calling Object.PropertyListChangedNotify()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -941,7 +940,7 @@ func (o *Object) PropertyListChangedNotify() {
 	Args: [{ false name String}], Returns: void
 */
 func (o *Object) RemoveMeta(name gdnative.String) {
-	//log.Println("Calling Object.RemoveMeta()")
+	// log.Println("Calling Object.RemoveMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -962,7 +961,7 @@ func (o *Object) RemoveMeta(name gdnative.String) {
 	Args: [{ false property String} { false value Variant}], Returns: void
 */
 func (o *Object) Set(property gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Object.Set()")
+	// log.Println("Calling Object.Set()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -984,7 +983,7 @@ func (o *Object) Set(property gdnative.String, value gdnative.Variant) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Object) SetBlockSignals(enable gdnative.Bool) {
-	//log.Println("Calling Object.SetBlockSignals()")
+	// log.Println("Calling Object.SetBlockSignals()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1005,7 +1004,7 @@ func (o *Object) SetBlockSignals(enable gdnative.Bool) {
 	Args: [{ false property String} { false value Variant}], Returns: void
 */
 func (o *Object) SetDeferred(property gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Object.SetDeferred()")
+	// log.Println("Calling Object.SetDeferred()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1027,7 +1026,7 @@ func (o *Object) SetDeferred(property gdnative.String, value gdnative.Variant) {
 	Args: [{ false property NodePath} { false value Variant}], Returns: void
 */
 func (o *Object) SetIndexed(property gdnative.NodePath, value gdnative.Variant) {
-	//log.Println("Calling Object.SetIndexed()")
+	// log.Println("Calling Object.SetIndexed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1049,7 +1048,7 @@ func (o *Object) SetIndexed(property gdnative.NodePath, value gdnative.Variant) 
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Object) SetMessageTranslation(enable gdnative.Bool) {
-	//log.Println("Calling Object.SetMessageTranslation()")
+	// log.Println("Calling Object.SetMessageTranslation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1070,7 +1069,7 @@ func (o *Object) SetMessageTranslation(enable gdnative.Bool) {
 	Args: [{ false name String} { false value Variant}], Returns: void
 */
 func (o *Object) SetMeta(name gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Object.SetMeta()")
+	// log.Println("Calling Object.SetMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1092,7 +1091,7 @@ func (o *Object) SetMeta(name gdnative.String, value gdnative.Variant) {
 	Args: [{ false script Reference}], Returns: void
 */
 func (o *Object) SetScript(script ReferenceImplementer) {
-	//log.Println("Calling Object.SetScript()")
+	// log.Println("Calling Object.SetScript()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1113,7 +1112,7 @@ func (o *Object) SetScript(script ReferenceImplementer) {
 	Args: [], Returns: String
 */
 func (o *Object) ToString() gdnative.String {
-	//log.Println("Calling Object.ToString()")
+	// log.Println("Calling Object.ToString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1136,7 +1135,7 @@ func (o *Object) ToString() gdnative.String {
 	Args: [{ false message String}], Returns: String
 */
 func (o *Object) Tr(message gdnative.String) gdnative.String {
-	//log.Println("Calling Object.Tr()")
+	// log.Println("Calling Object.Tr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1166,12 +1165,12 @@ type ObjectImplementer interface {
 	X_Set(property gdnative.String, value gdnative.Variant) gdnative.Bool
 	X_ToString() gdnative.String
 	AddUserSignal(signal gdnative.String, arguments gdnative.Array)
-	Call(method gdnative.String, args ...gdnative.Variant) gdnative.Variant
-	CallDeferred(method gdnative.String, args ...gdnative.Variant)
+	Call(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
+	CallDeferred(method gdnative.String, args ...gdnative.Variant) gdnative.VariantCallError
 	Callv(method gdnative.String, argArray gdnative.Array) gdnative.Variant
 	CanTranslateMessages() gdnative.Bool
 	Disconnect(signal gdnative.String, target ObjectImplementer, method gdnative.String)
-	EmitSignal(signal gdnative.String, args ...gdnative.Variant)
+	EmitSignal(signal gdnative.String, args ...gdnative.Variant) gdnative.VariantCallError
 	Free()
 	Get(property gdnative.String) gdnative.Variant
 	GetClass() gdnative.String

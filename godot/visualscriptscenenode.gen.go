@@ -39,7 +39,7 @@ func (o *VisualScriptSceneNode) BaseClass() string {
 	Args: [], Returns: NodePath
 */
 func (o *VisualScriptSceneNode) GetNodePath() gdnative.NodePath {
-	//log.Println("Calling VisualScriptSceneNode.GetNodePath()")
+	// log.Println("Calling VisualScriptSceneNode.GetNodePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptSceneNode) GetNodePath() gdnative.NodePath {
 	Args: [{ false path NodePath}], Returns: void
 */
 func (o *VisualScriptSceneNode) SetNodePath(path gdnative.NodePath) {
-	//log.Println("Calling VisualScriptSceneNode.SetNodePath()")
+	// log.Println("Calling VisualScriptSceneNode.SetNodePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

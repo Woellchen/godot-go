@@ -39,7 +39,7 @@ func (o *VehicleBody) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *VehicleBody) GetBrake() gdnative.Real {
-	//log.Println("Calling VehicleBody.GetBrake()")
+	// log.Println("Calling VehicleBody.GetBrake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VehicleBody) GetBrake() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleBody) GetEngineForce() gdnative.Real {
-	//log.Println("Calling VehicleBody.GetEngineForce()")
+	// log.Println("Calling VehicleBody.GetEngineForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VehicleBody) GetEngineForce() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleBody) GetSteering() gdnative.Real {
-	//log.Println("Calling VehicleBody.GetSteering()")
+	// log.Println("Calling VehicleBody.GetSteering()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *VehicleBody) GetSteering() gdnative.Real {
 	Args: [{ false brake float}], Returns: void
 */
 func (o *VehicleBody) SetBrake(brake gdnative.Real) {
-	//log.Println("Calling VehicleBody.SetBrake()")
+	// log.Println("Calling VehicleBody.SetBrake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *VehicleBody) SetBrake(brake gdnative.Real) {
 	Args: [{ false engine_force float}], Returns: void
 */
 func (o *VehicleBody) SetEngineForce(engineForce gdnative.Real) {
-	//log.Println("Calling VehicleBody.SetEngineForce()")
+	// log.Println("Calling VehicleBody.SetEngineForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *VehicleBody) SetEngineForce(engineForce gdnative.Real) {
 	Args: [{ false steering float}], Returns: void
 */
 func (o *VehicleBody) SetSteering(steering gdnative.Real) {
-	//log.Println("Calling VehicleBody.SetSteering()")
+	// log.Println("Calling VehicleBody.SetSteering()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

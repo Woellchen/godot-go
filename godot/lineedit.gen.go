@@ -63,7 +63,7 @@ func (o *LineEdit) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *LineEdit) X_EditorSettingsChanged() {
-	//log.Println("Calling LineEdit.X_EditorSettingsChanged()")
+	// log.Println("Calling LineEdit.X_EditorSettingsChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -83,7 +83,7 @@ func (o *LineEdit) X_EditorSettingsChanged() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *LineEdit) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling LineEdit.X_GuiInput()")
+	// log.Println("Calling LineEdit.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *LineEdit) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *LineEdit) X_TextChanged() {
-	//log.Println("Calling LineEdit.X_TextChanged()")
+	// log.Println("Calling LineEdit.X_TextChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -124,7 +124,7 @@ func (o *LineEdit) X_TextChanged() {
 	Args: [], Returns: void
 */
 func (o *LineEdit) X_ToggleDrawCaret() {
-	//log.Println("Calling LineEdit.X_ToggleDrawCaret()")
+	// log.Println("Calling LineEdit.X_ToggleDrawCaret()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -144,7 +144,7 @@ func (o *LineEdit) X_ToggleDrawCaret() {
 	Args: [{ false text String}], Returns: void
 */
 func (o *LineEdit) AppendAtCursor(text gdnative.String) {
-	//log.Println("Calling LineEdit.AppendAtCursor()")
+	// log.Println("Calling LineEdit.AppendAtCursor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -165,7 +165,7 @@ func (o *LineEdit) AppendAtCursor(text gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *LineEdit) Clear() {
-	//log.Println("Calling LineEdit.Clear()")
+	// log.Println("Calling LineEdit.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -185,7 +185,7 @@ func (o *LineEdit) Clear() {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) CursorGetBlinkEnabled() gdnative.Bool {
-	//log.Println("Calling LineEdit.CursorGetBlinkEnabled()")
+	// log.Println("Calling LineEdit.CursorGetBlinkEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -208,7 +208,7 @@ func (o *LineEdit) CursorGetBlinkEnabled() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *LineEdit) CursorGetBlinkSpeed() gdnative.Real {
-	//log.Println("Calling LineEdit.CursorGetBlinkSpeed()")
+	// log.Println("Calling LineEdit.CursorGetBlinkSpeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -231,7 +231,7 @@ func (o *LineEdit) CursorGetBlinkSpeed() gdnative.Real {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *LineEdit) CursorSetBlinkEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling LineEdit.CursorSetBlinkEnabled()")
+	// log.Println("Calling LineEdit.CursorSetBlinkEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -252,7 +252,7 @@ func (o *LineEdit) CursorSetBlinkEnabled(enabled gdnative.Bool) {
 	Args: [{ false blink_speed float}], Returns: void
 */
 func (o *LineEdit) CursorSetBlinkSpeed(blinkSpeed gdnative.Real) {
-	//log.Println("Calling LineEdit.CursorSetBlinkSpeed()")
+	// log.Println("Calling LineEdit.CursorSetBlinkSpeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -273,7 +273,7 @@ func (o *LineEdit) CursorSetBlinkSpeed(blinkSpeed gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *LineEdit) DeleteCharAtCursor() {
-	//log.Println("Calling LineEdit.DeleteCharAtCursor()")
+	// log.Println("Calling LineEdit.DeleteCharAtCursor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -293,7 +293,7 @@ func (o *LineEdit) DeleteCharAtCursor() {
 	Args: [{ false from_column int} { false to_column int}], Returns: void
 */
 func (o *LineEdit) DeleteText(fromColumn gdnative.Int, toColumn gdnative.Int) {
-	//log.Println("Calling LineEdit.DeleteText()")
+	// log.Println("Calling LineEdit.DeleteText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -315,7 +315,7 @@ func (o *LineEdit) DeleteText(fromColumn gdnative.Int, toColumn gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *LineEdit) Deselect() {
-	//log.Println("Calling LineEdit.Deselect()")
+	// log.Println("Calling LineEdit.Deselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -335,7 +335,7 @@ func (o *LineEdit) Deselect() {
 	Args: [], Returns: enum.LineEdit::Align
 */
 func (o *LineEdit) GetAlign() LineEditAlign {
-	//log.Println("Calling LineEdit.GetAlign()")
+	// log.Println("Calling LineEdit.GetAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -358,7 +358,7 @@ func (o *LineEdit) GetAlign() LineEditAlign {
 	Args: [], Returns: int
 */
 func (o *LineEdit) GetCursorPosition() gdnative.Int {
-	//log.Println("Calling LineEdit.GetCursorPosition()")
+	// log.Println("Calling LineEdit.GetCursorPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -381,7 +381,7 @@ func (o *LineEdit) GetCursorPosition() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) GetExpandToTextLength() gdnative.Bool {
-	//log.Println("Calling LineEdit.GetExpandToTextLength()")
+	// log.Println("Calling LineEdit.GetExpandToTextLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -404,7 +404,7 @@ func (o *LineEdit) GetExpandToTextLength() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *LineEdit) GetMaxLength() gdnative.Int {
-	//log.Println("Calling LineEdit.GetMaxLength()")
+	// log.Println("Calling LineEdit.GetMaxLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -427,7 +427,7 @@ func (o *LineEdit) GetMaxLength() gdnative.Int {
 	Args: [], Returns: PopupMenu
 */
 func (o *LineEdit) GetMenu() PopupMenuImplementer {
-	//log.Println("Calling LineEdit.GetMenu()")
+	// log.Println("Calling LineEdit.GetMenu()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -464,7 +464,7 @@ func (o *LineEdit) GetMenu() PopupMenuImplementer {
 	Args: [], Returns: String
 */
 func (o *LineEdit) GetPlaceholder() gdnative.String {
-	//log.Println("Calling LineEdit.GetPlaceholder()")
+	// log.Println("Calling LineEdit.GetPlaceholder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -487,7 +487,7 @@ func (o *LineEdit) GetPlaceholder() gdnative.String {
 	Args: [], Returns: float
 */
 func (o *LineEdit) GetPlaceholderAlpha() gdnative.Real {
-	//log.Println("Calling LineEdit.GetPlaceholderAlpha()")
+	// log.Println("Calling LineEdit.GetPlaceholderAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -510,7 +510,7 @@ func (o *LineEdit) GetPlaceholderAlpha() gdnative.Real {
 	Args: [], Returns: Texture
 */
 func (o *LineEdit) GetRightIcon() TextureImplementer {
-	//log.Println("Calling LineEdit.GetRightIcon()")
+	// log.Println("Calling LineEdit.GetRightIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -547,7 +547,7 @@ func (o *LineEdit) GetRightIcon() TextureImplementer {
 	Args: [], Returns: String
 */
 func (o *LineEdit) GetSecretCharacter() gdnative.String {
-	//log.Println("Calling LineEdit.GetSecretCharacter()")
+	// log.Println("Calling LineEdit.GetSecretCharacter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -570,7 +570,7 @@ func (o *LineEdit) GetSecretCharacter() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *LineEdit) GetText() gdnative.String {
-	//log.Println("Calling LineEdit.GetText()")
+	// log.Println("Calling LineEdit.GetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -593,7 +593,7 @@ func (o *LineEdit) GetText() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) IsClearButtonEnabled() gdnative.Bool {
-	//log.Println("Calling LineEdit.IsClearButtonEnabled()")
+	// log.Println("Calling LineEdit.IsClearButtonEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -616,7 +616,7 @@ func (o *LineEdit) IsClearButtonEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) IsContextMenuEnabled() gdnative.Bool {
-	//log.Println("Calling LineEdit.IsContextMenuEnabled()")
+	// log.Println("Calling LineEdit.IsContextMenuEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -639,7 +639,7 @@ func (o *LineEdit) IsContextMenuEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) IsEditable() gdnative.Bool {
-	//log.Println("Calling LineEdit.IsEditable()")
+	// log.Println("Calling LineEdit.IsEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -662,7 +662,7 @@ func (o *LineEdit) IsEditable() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) IsSecret() gdnative.Bool {
-	//log.Println("Calling LineEdit.IsSecret()")
+	// log.Println("Calling LineEdit.IsSecret()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -685,7 +685,7 @@ func (o *LineEdit) IsSecret() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) IsSelectingEnabled() gdnative.Bool {
-	//log.Println("Calling LineEdit.IsSelectingEnabled()")
+	// log.Println("Calling LineEdit.IsSelectingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -708,7 +708,7 @@ func (o *LineEdit) IsSelectingEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *LineEdit) IsShortcutKeysEnabled() gdnative.Bool {
-	//log.Println("Calling LineEdit.IsShortcutKeysEnabled()")
+	// log.Println("Calling LineEdit.IsShortcutKeysEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -731,7 +731,7 @@ func (o *LineEdit) IsShortcutKeysEnabled() gdnative.Bool {
 	Args: [{ false option int}], Returns: void
 */
 func (o *LineEdit) MenuOption(option gdnative.Int) {
-	//log.Println("Calling LineEdit.MenuOption()")
+	// log.Println("Calling LineEdit.MenuOption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -752,7 +752,7 @@ func (o *LineEdit) MenuOption(option gdnative.Int) {
 	Args: [{0 true from int} {-1 true to int}], Returns: void
 */
 func (o *LineEdit) Select(from gdnative.Int, to gdnative.Int) {
-	//log.Println("Calling LineEdit.Select()")
+	// log.Println("Calling LineEdit.Select()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -774,7 +774,7 @@ func (o *LineEdit) Select(from gdnative.Int, to gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *LineEdit) SelectAll() {
-	//log.Println("Calling LineEdit.SelectAll()")
+	// log.Println("Calling LineEdit.SelectAll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -794,7 +794,7 @@ func (o *LineEdit) SelectAll() {
 	Args: [{ false align int}], Returns: void
 */
 func (o *LineEdit) SetAlign(align gdnative.Int) {
-	//log.Println("Calling LineEdit.SetAlign()")
+	// log.Println("Calling LineEdit.SetAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -815,7 +815,7 @@ func (o *LineEdit) SetAlign(align gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *LineEdit) SetClearButtonEnabled(enable gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetClearButtonEnabled()")
+	// log.Println("Calling LineEdit.SetClearButtonEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -836,7 +836,7 @@ func (o *LineEdit) SetClearButtonEnabled(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *LineEdit) SetContextMenuEnabled(enable gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetContextMenuEnabled()")
+	// log.Println("Calling LineEdit.SetContextMenuEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -857,7 +857,7 @@ func (o *LineEdit) SetContextMenuEnabled(enable gdnative.Bool) {
 	Args: [{ false position int}], Returns: void
 */
 func (o *LineEdit) SetCursorPosition(position gdnative.Int) {
-	//log.Println("Calling LineEdit.SetCursorPosition()")
+	// log.Println("Calling LineEdit.SetCursorPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -878,7 +878,7 @@ func (o *LineEdit) SetCursorPosition(position gdnative.Int) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *LineEdit) SetEditable(enabled gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetEditable()")
+	// log.Println("Calling LineEdit.SetEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -899,7 +899,7 @@ func (o *LineEdit) SetEditable(enabled gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *LineEdit) SetExpandToTextLength(enabled gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetExpandToTextLength()")
+	// log.Println("Calling LineEdit.SetExpandToTextLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -920,7 +920,7 @@ func (o *LineEdit) SetExpandToTextLength(enabled gdnative.Bool) {
 	Args: [{ false chars int}], Returns: void
 */
 func (o *LineEdit) SetMaxLength(chars gdnative.Int) {
-	//log.Println("Calling LineEdit.SetMaxLength()")
+	// log.Println("Calling LineEdit.SetMaxLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -941,7 +941,7 @@ func (o *LineEdit) SetMaxLength(chars gdnative.Int) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *LineEdit) SetPlaceholder(text gdnative.String) {
-	//log.Println("Calling LineEdit.SetPlaceholder()")
+	// log.Println("Calling LineEdit.SetPlaceholder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -962,7 +962,7 @@ func (o *LineEdit) SetPlaceholder(text gdnative.String) {
 	Args: [{ false alpha float}], Returns: void
 */
 func (o *LineEdit) SetPlaceholderAlpha(alpha gdnative.Real) {
-	//log.Println("Calling LineEdit.SetPlaceholderAlpha()")
+	// log.Println("Calling LineEdit.SetPlaceholderAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -983,7 +983,7 @@ func (o *LineEdit) SetPlaceholderAlpha(alpha gdnative.Real) {
 	Args: [{ false icon Texture}], Returns: void
 */
 func (o *LineEdit) SetRightIcon(icon TextureImplementer) {
-	//log.Println("Calling LineEdit.SetRightIcon()")
+	// log.Println("Calling LineEdit.SetRightIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1004,7 +1004,7 @@ func (o *LineEdit) SetRightIcon(icon TextureImplementer) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *LineEdit) SetSecret(enabled gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetSecret()")
+	// log.Println("Calling LineEdit.SetSecret()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1025,7 +1025,7 @@ func (o *LineEdit) SetSecret(enabled gdnative.Bool) {
 	Args: [{ false character String}], Returns: void
 */
 func (o *LineEdit) SetSecretCharacter(character gdnative.String) {
-	//log.Println("Calling LineEdit.SetSecretCharacter()")
+	// log.Println("Calling LineEdit.SetSecretCharacter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1046,7 +1046,7 @@ func (o *LineEdit) SetSecretCharacter(character gdnative.String) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *LineEdit) SetSelectingEnabled(enable gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetSelectingEnabled()")
+	// log.Println("Calling LineEdit.SetSelectingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1067,7 +1067,7 @@ func (o *LineEdit) SetSelectingEnabled(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *LineEdit) SetShortcutKeysEnabled(enable gdnative.Bool) {
-	//log.Println("Calling LineEdit.SetShortcutKeysEnabled()")
+	// log.Println("Calling LineEdit.SetShortcutKeysEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1088,7 +1088,7 @@ func (o *LineEdit) SetShortcutKeysEnabled(enable gdnative.Bool) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *LineEdit) SetText(text gdnative.String) {
-	//log.Println("Calling LineEdit.SetText()")
+	// log.Println("Calling LineEdit.SetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *EditorInspector) BaseClass() string {
 	Args: [{ false arg0 Object} { false arg1 String}], Returns: void
 */
 func (o *EditorInspector) X_EditRequestChange(arg0 ObjectImplementer, arg1 gdnative.String) {
-	//log.Println("Calling EditorInspector.X_EditRequestChange()")
+	// log.Println("Calling EditorInspector.X_EditRequestChange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *EditorInspector) X_EditRequestChange(arg0 ObjectImplementer, arg1 gdnat
 	Args: [], Returns: void
 */
 func (o *EditorInspector) X_FeatureProfileChanged() {
-	//log.Println("Calling EditorInspector.X_FeatureProfileChanged()")
+	// log.Println("Calling EditorInspector.X_FeatureProfileChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -81,7 +81,7 @@ func (o *EditorInspector) X_FeatureProfileChanged() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *EditorInspector) X_FilterChanged(arg0 gdnative.String) {
-	//log.Println("Calling EditorInspector.X_FilterChanged()")
+	// log.Println("Calling EditorInspector.X_FilterChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -102,7 +102,7 @@ func (o *EditorInspector) X_FilterChanged(arg0 gdnative.String) {
 	Args: [{ false arg0 PoolStringArray} { false arg1 Array}], Returns: void
 */
 func (o *EditorInspector) X_MultiplePropertiesChanged(arg0 gdnative.PoolStringArray, arg1 gdnative.Array) {
-	//log.Println("Calling EditorInspector.X_MultiplePropertiesChanged()")
+	// log.Println("Calling EditorInspector.X_MultiplePropertiesChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -124,7 +124,7 @@ func (o *EditorInspector) X_MultiplePropertiesChanged(arg0 gdnative.PoolStringAr
 	Args: [{ false arg0 Node}], Returns: void
 */
 func (o *EditorInspector) X_NodeRemoved(arg0 NodeImplementer) {
-	//log.Println("Calling EditorInspector.X_NodeRemoved()")
+	// log.Println("Calling EditorInspector.X_NodeRemoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -145,7 +145,7 @@ func (o *EditorInspector) X_NodeRemoved(arg0 NodeImplementer) {
 	Args: [{ false arg0 String} { false arg1 int}], Returns: void
 */
 func (o *EditorInspector) X_ObjectIdSelected(arg0 gdnative.String, arg1 gdnative.Int) {
-	//log.Println("Calling EditorInspector.X_ObjectIdSelected()")
+	// log.Println("Calling EditorInspector.X_ObjectIdSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -167,7 +167,7 @@ func (o *EditorInspector) X_ObjectIdSelected(arg0 gdnative.String, arg1 gdnative
 	Args: [{ false arg0 String} { false arg1 Variant} { true arg2 String} {False true arg3 bool}], Returns: void
 */
 func (o *EditorInspector) X_PropertyChanged(arg0 gdnative.String, arg1 gdnative.Variant, arg2 gdnative.String, arg3 gdnative.Bool) {
-	//log.Println("Calling EditorInspector.X_PropertyChanged()")
+	// log.Println("Calling EditorInspector.X_PropertyChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -191,7 +191,7 @@ func (o *EditorInspector) X_PropertyChanged(arg0 gdnative.String, arg1 gdnative.
 	Args: [{ false arg0 String} { false arg1 Variant} { false arg2 String} { false arg3 bool}], Returns: void
 */
 func (o *EditorInspector) X_PropertyChangedUpdateAll(arg0 gdnative.String, arg1 gdnative.Variant, arg2 gdnative.String, arg3 gdnative.Bool) {
-	//log.Println("Calling EditorInspector.X_PropertyChangedUpdateAll()")
+	// log.Println("Calling EditorInspector.X_PropertyChangedUpdateAll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -215,7 +215,7 @@ func (o *EditorInspector) X_PropertyChangedUpdateAll(arg0 gdnative.String, arg1 
 	Args: [{ false arg0 String} { false arg1 bool}], Returns: void
 */
 func (o *EditorInspector) X_PropertyChecked(arg0 gdnative.String, arg1 gdnative.Bool) {
-	//log.Println("Calling EditorInspector.X_PropertyChecked()")
+	// log.Println("Calling EditorInspector.X_PropertyChecked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -237,7 +237,7 @@ func (o *EditorInspector) X_PropertyChecked(arg0 gdnative.String, arg1 gdnative.
 	Args: [{ false arg0 String} { false arg1 bool}], Returns: void
 */
 func (o *EditorInspector) X_PropertyKeyed(arg0 gdnative.String, arg1 gdnative.Bool) {
-	//log.Println("Calling EditorInspector.X_PropertyKeyed()")
+	// log.Println("Calling EditorInspector.X_PropertyKeyed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -259,7 +259,7 @@ func (o *EditorInspector) X_PropertyKeyed(arg0 gdnative.String, arg1 gdnative.Bo
 	Args: [{ false arg0 String} { false arg1 Variant} { false arg2 bool}], Returns: void
 */
 func (o *EditorInspector) X_PropertyKeyedWithValue(arg0 gdnative.String, arg1 gdnative.Variant, arg2 gdnative.Bool) {
-	//log.Println("Calling EditorInspector.X_PropertyKeyedWithValue()")
+	// log.Println("Calling EditorInspector.X_PropertyKeyedWithValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -282,7 +282,7 @@ func (o *EditorInspector) X_PropertyKeyedWithValue(arg0 gdnative.String, arg1 gd
 	Args: [{ false arg0 String} { false arg1 int}], Returns: void
 */
 func (o *EditorInspector) X_PropertySelected(arg0 gdnative.String, arg1 gdnative.Int) {
-	//log.Println("Calling EditorInspector.X_PropertySelected()")
+	// log.Println("Calling EditorInspector.X_PropertySelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -304,7 +304,7 @@ func (o *EditorInspector) X_PropertySelected(arg0 gdnative.String, arg1 gdnative
 	Args: [{ false arg0 String} { false arg1 Resource}], Returns: void
 */
 func (o *EditorInspector) X_ResourceSelected(arg0 gdnative.String, arg1 ResourceImplementer) {
-	//log.Println("Calling EditorInspector.X_ResourceSelected()")
+	// log.Println("Calling EditorInspector.X_ResourceSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -326,7 +326,7 @@ func (o *EditorInspector) X_ResourceSelected(arg0 gdnative.String, arg1 Resource
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *EditorInspector) X_VscrollChanged(arg0 gdnative.Real) {
-	//log.Println("Calling EditorInspector.X_VscrollChanged()")
+	// log.Println("Calling EditorInspector.X_VscrollChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -347,7 +347,7 @@ func (o *EditorInspector) X_VscrollChanged(arg0 gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *EditorInspector) Refresh() {
-	//log.Println("Calling EditorInspector.Refresh()")
+	// log.Println("Calling EditorInspector.Refresh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

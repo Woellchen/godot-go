@@ -72,7 +72,7 @@ func (o *TileSet) BaseClass() string {
 	Args: [{ false atlastile_id int} { false tilemap Object} { false tile_location Vector2}], Returns: Vector2
 */
 func (o *TileSet) X_ForwardAtlasSubtileSelection(atlastileId gdnative.Int, tilemap ObjectImplementer, tileLocation gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling TileSet.X_ForwardAtlasSubtileSelection()")
+	// log.Println("Calling TileSet.X_ForwardAtlasSubtileSelection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -98,7 +98,7 @@ func (o *TileSet) X_ForwardAtlasSubtileSelection(atlastileId gdnative.Int, tilem
 	Args: [{ false autotile_id int} { false bitmask int} { false tilemap Object} { false tile_location Vector2}], Returns: Vector2
 */
 func (o *TileSet) X_ForwardSubtileSelection(autotileId gdnative.Int, bitmask gdnative.Int, tilemap ObjectImplementer, tileLocation gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling TileSet.X_ForwardSubtileSelection()")
+	// log.Println("Calling TileSet.X_ForwardSubtileSelection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -125,7 +125,7 @@ func (o *TileSet) X_ForwardSubtileSelection(autotileId gdnative.Int, bitmask gdn
 	Args: [{ false drawn_id int} { false neighbor_id int}], Returns: bool
 */
 func (o *TileSet) X_IsTileBound(drawnId gdnative.Int, neighborId gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TileSet.X_IsTileBound()")
+	// log.Println("Calling TileSet.X_IsTileBound()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -150,7 +150,7 @@ func (o *TileSet) X_IsTileBound(drawnId gdnative.Int, neighborId gdnative.Int) g
 	Args: [{ false id int}], Returns: void
 */
 func (o *TileSet) AutotileClearBitmaskMap(id gdnative.Int) {
-	//log.Println("Calling TileSet.AutotileClearBitmaskMap()")
+	// log.Println("Calling TileSet.AutotileClearBitmaskMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *TileSet) AutotileClearBitmaskMap(id gdnative.Int) {
 	Args: [{ false id int} { false coord Vector2}], Returns: int
 */
 func (o *TileSet) AutotileGetBitmask(id gdnative.Int, coord gdnative.Vector2) gdnative.Int {
-	//log.Println("Calling TileSet.AutotileGetBitmask()")
+	// log.Println("Calling TileSet.AutotileGetBitmask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -196,7 +196,7 @@ func (o *TileSet) AutotileGetBitmask(id gdnative.Int, coord gdnative.Vector2) gd
 	Args: [{ false id int}], Returns: enum.TileSet::BitmaskMode
 */
 func (o *TileSet) AutotileGetBitmaskMode(id gdnative.Int) TileSetBitmaskMode {
-	//log.Println("Calling TileSet.AutotileGetBitmaskMode()")
+	// log.Println("Calling TileSet.AutotileGetBitmaskMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -220,7 +220,7 @@ func (o *TileSet) AutotileGetBitmaskMode(id gdnative.Int) TileSetBitmaskMode {
 	Args: [{ false id int}], Returns: Vector2
 */
 func (o *TileSet) AutotileGetIconCoordinate(id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling TileSet.AutotileGetIconCoordinate()")
+	// log.Println("Calling TileSet.AutotileGetIconCoordinate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *TileSet) AutotileGetIconCoordinate(id gdnative.Int) gdnative.Vector2 {
 	Args: [{ false id int} { false coord Vector2}], Returns: OccluderPolygon2D
 */
 func (o *TileSet) AutotileGetLightOccluder(id gdnative.Int, coord gdnative.Vector2) OccluderPolygon2DImplementer {
-	//log.Println("Calling TileSet.AutotileGetLightOccluder()")
+	// log.Println("Calling TileSet.AutotileGetLightOccluder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -283,7 +283,7 @@ func (o *TileSet) AutotileGetLightOccluder(id gdnative.Int, coord gdnative.Vecto
 	Args: [{ false id int} { false coord Vector2}], Returns: NavigationPolygon
 */
 func (o *TileSet) AutotileGetNavigationPolygon(id gdnative.Int, coord gdnative.Vector2) NavigationPolygonImplementer {
-	//log.Println("Calling TileSet.AutotileGetNavigationPolygon()")
+	// log.Println("Calling TileSet.AutotileGetNavigationPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -322,7 +322,7 @@ func (o *TileSet) AutotileGetNavigationPolygon(id gdnative.Int, coord gdnative.V
 	Args: [{ false id int}], Returns: Vector2
 */
 func (o *TileSet) AutotileGetSize(id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling TileSet.AutotileGetSize()")
+	// log.Println("Calling TileSet.AutotileGetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -346,7 +346,7 @@ func (o *TileSet) AutotileGetSize(id gdnative.Int) gdnative.Vector2 {
 	Args: [{ false id int}], Returns: int
 */
 func (o *TileSet) AutotileGetSpacing(id gdnative.Int) gdnative.Int {
-	//log.Println("Calling TileSet.AutotileGetSpacing()")
+	// log.Println("Calling TileSet.AutotileGetSpacing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +370,7 @@ func (o *TileSet) AutotileGetSpacing(id gdnative.Int) gdnative.Int {
 	Args: [{ false id int} { false coord Vector2}], Returns: int
 */
 func (o *TileSet) AutotileGetSubtilePriority(id gdnative.Int, coord gdnative.Vector2) gdnative.Int {
-	//log.Println("Calling TileSet.AutotileGetSubtilePriority()")
+	// log.Println("Calling TileSet.AutotileGetSubtilePriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -395,7 +395,7 @@ func (o *TileSet) AutotileGetSubtilePriority(id gdnative.Int, coord gdnative.Vec
 	Args: [{ false id int} { false coord Vector2}], Returns: int
 */
 func (o *TileSet) AutotileGetZIndex(id gdnative.Int, coord gdnative.Vector2) gdnative.Int {
-	//log.Println("Calling TileSet.AutotileGetZIndex()")
+	// log.Println("Calling TileSet.AutotileGetZIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -420,7 +420,7 @@ func (o *TileSet) AutotileGetZIndex(id gdnative.Int, coord gdnative.Vector2) gdn
 	Args: [{ false id int} { false bitmask Vector2} { false flag int}], Returns: void
 */
 func (o *TileSet) AutotileSetBitmask(id gdnative.Int, bitmask gdnative.Vector2, flag gdnative.Int) {
-	//log.Println("Calling TileSet.AutotileSetBitmask()")
+	// log.Println("Calling TileSet.AutotileSetBitmask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -443,7 +443,7 @@ func (o *TileSet) AutotileSetBitmask(id gdnative.Int, bitmask gdnative.Vector2, 
 	Args: [{ false id int} { false mode int}], Returns: void
 */
 func (o *TileSet) AutotileSetBitmaskMode(id gdnative.Int, mode gdnative.Int) {
-	//log.Println("Calling TileSet.AutotileSetBitmaskMode()")
+	// log.Println("Calling TileSet.AutotileSetBitmaskMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -465,7 +465,7 @@ func (o *TileSet) AutotileSetBitmaskMode(id gdnative.Int, mode gdnative.Int) {
 	Args: [{ false id int} { false coord Vector2}], Returns: void
 */
 func (o *TileSet) AutotileSetIconCoordinate(id gdnative.Int, coord gdnative.Vector2) {
-	//log.Println("Calling TileSet.AutotileSetIconCoordinate()")
+	// log.Println("Calling TileSet.AutotileSetIconCoordinate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -487,7 +487,7 @@ func (o *TileSet) AutotileSetIconCoordinate(id gdnative.Int, coord gdnative.Vect
 	Args: [{ false id int} { false light_occluder OccluderPolygon2D} { false coord Vector2}], Returns: void
 */
 func (o *TileSet) AutotileSetLightOccluder(id gdnative.Int, lightOccluder OccluderPolygon2DImplementer, coord gdnative.Vector2) {
-	//log.Println("Calling TileSet.AutotileSetLightOccluder()")
+	// log.Println("Calling TileSet.AutotileSetLightOccluder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -510,7 +510,7 @@ func (o *TileSet) AutotileSetLightOccluder(id gdnative.Int, lightOccluder Occlud
 	Args: [{ false id int} { false navigation_polygon NavigationPolygon} { false coord Vector2}], Returns: void
 */
 func (o *TileSet) AutotileSetNavigationPolygon(id gdnative.Int, navigationPolygon NavigationPolygonImplementer, coord gdnative.Vector2) {
-	//log.Println("Calling TileSet.AutotileSetNavigationPolygon()")
+	// log.Println("Calling TileSet.AutotileSetNavigationPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -533,7 +533,7 @@ func (o *TileSet) AutotileSetNavigationPolygon(id gdnative.Int, navigationPolygo
 	Args: [{ false id int} { false size Vector2}], Returns: void
 */
 func (o *TileSet) AutotileSetSize(id gdnative.Int, size gdnative.Vector2) {
-	//log.Println("Calling TileSet.AutotileSetSize()")
+	// log.Println("Calling TileSet.AutotileSetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -555,7 +555,7 @@ func (o *TileSet) AutotileSetSize(id gdnative.Int, size gdnative.Vector2) {
 	Args: [{ false id int} { false spacing int}], Returns: void
 */
 func (o *TileSet) AutotileSetSpacing(id gdnative.Int, spacing gdnative.Int) {
-	//log.Println("Calling TileSet.AutotileSetSpacing()")
+	// log.Println("Calling TileSet.AutotileSetSpacing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -577,7 +577,7 @@ func (o *TileSet) AutotileSetSpacing(id gdnative.Int, spacing gdnative.Int) {
 	Args: [{ false id int} { false coord Vector2} { false priority int}], Returns: void
 */
 func (o *TileSet) AutotileSetSubtilePriority(id gdnative.Int, coord gdnative.Vector2, priority gdnative.Int) {
-	//log.Println("Calling TileSet.AutotileSetSubtilePriority()")
+	// log.Println("Calling TileSet.AutotileSetSubtilePriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -600,7 +600,7 @@ func (o *TileSet) AutotileSetSubtilePriority(id gdnative.Int, coord gdnative.Vec
 	Args: [{ false id int} { false coord Vector2} { false z_index int}], Returns: void
 */
 func (o *TileSet) AutotileSetZIndex(id gdnative.Int, coord gdnative.Vector2, zIndex gdnative.Int) {
-	//log.Println("Calling TileSet.AutotileSetZIndex()")
+	// log.Println("Calling TileSet.AutotileSetZIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -623,7 +623,7 @@ func (o *TileSet) AutotileSetZIndex(id gdnative.Int, coord gdnative.Vector2, zIn
 	Args: [], Returns: void
 */
 func (o *TileSet) Clear() {
-	//log.Println("Calling TileSet.Clear()")
+	// log.Println("Calling TileSet.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -643,7 +643,7 @@ func (o *TileSet) Clear() {
 	Args: [{ false id int}], Returns: void
 */
 func (o *TileSet) CreateTile(id gdnative.Int) {
-	//log.Println("Calling TileSet.CreateTile()")
+	// log.Println("Calling TileSet.CreateTile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -664,7 +664,7 @@ func (o *TileSet) CreateTile(id gdnative.Int) {
 	Args: [{ false name String}], Returns: int
 */
 func (o *TileSet) FindTileByName(name gdnative.String) gdnative.Int {
-	//log.Println("Calling TileSet.FindTileByName()")
+	// log.Println("Calling TileSet.FindTileByName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -688,7 +688,7 @@ func (o *TileSet) FindTileByName(name gdnative.String) gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *TileSet) GetLastUnusedTileId() gdnative.Int {
-	//log.Println("Calling TileSet.GetLastUnusedTileId()")
+	// log.Println("Calling TileSet.GetLastUnusedTileId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -711,7 +711,7 @@ func (o *TileSet) GetLastUnusedTileId() gdnative.Int {
 	Args: [], Returns: Array
 */
 func (o *TileSet) GetTilesIds() gdnative.Array {
-	//log.Println("Calling TileSet.GetTilesIds()")
+	// log.Println("Calling TileSet.GetTilesIds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -734,7 +734,7 @@ func (o *TileSet) GetTilesIds() gdnative.Array {
 	Args: [{ false id int}], Returns: void
 */
 func (o *TileSet) RemoveTile(id gdnative.Int) {
-	//log.Println("Calling TileSet.RemoveTile()")
+	// log.Println("Calling TileSet.RemoveTile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -755,7 +755,7 @@ func (o *TileSet) RemoveTile(id gdnative.Int) {
 	Args: [{ false id int} { false shape Shape2D} { false shape_transform Transform2D} {False true one_way bool} {(0, 0) true autotile_coord Vector2}], Returns: void
 */
 func (o *TileSet) TileAddShape(id gdnative.Int, shape Shape2DImplementer, shapeTransform gdnative.Transform2D, oneWay gdnative.Bool, autotileCoord gdnative.Vector2) {
-	//log.Println("Calling TileSet.TileAddShape()")
+	// log.Println("Calling TileSet.TileAddShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -780,7 +780,7 @@ func (o *TileSet) TileAddShape(id gdnative.Int, shape Shape2DImplementer, shapeT
 	Args: [{ false id int}], Returns: OccluderPolygon2D
 */
 func (o *TileSet) TileGetLightOccluder(id gdnative.Int) OccluderPolygon2DImplementer {
-	//log.Println("Calling TileSet.TileGetLightOccluder()")
+	// log.Println("Calling TileSet.TileGetLightOccluder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -818,7 +818,7 @@ func (o *TileSet) TileGetLightOccluder(id gdnative.Int) OccluderPolygon2DImpleme
 	Args: [{ false id int}], Returns: ShaderMaterial
 */
 func (o *TileSet) TileGetMaterial(id gdnative.Int) ShaderMaterialImplementer {
-	//log.Println("Calling TileSet.TileGetMaterial()")
+	// log.Println("Calling TileSet.TileGetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -856,7 +856,7 @@ func (o *TileSet) TileGetMaterial(id gdnative.Int) ShaderMaterialImplementer {
 	Args: [{ false id int}], Returns: Color
 */
 func (o *TileSet) TileGetModulate(id gdnative.Int) gdnative.Color {
-	//log.Println("Calling TileSet.TileGetModulate()")
+	// log.Println("Calling TileSet.TileGetModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -880,7 +880,7 @@ func (o *TileSet) TileGetModulate(id gdnative.Int) gdnative.Color {
 	Args: [{ false id int}], Returns: String
 */
 func (o *TileSet) TileGetName(id gdnative.Int) gdnative.String {
-	//log.Println("Calling TileSet.TileGetName()")
+	// log.Println("Calling TileSet.TileGetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -904,7 +904,7 @@ func (o *TileSet) TileGetName(id gdnative.Int) gdnative.String {
 	Args: [{ false id int}], Returns: NavigationPolygon
 */
 func (o *TileSet) TileGetNavigationPolygon(id gdnative.Int) NavigationPolygonImplementer {
-	//log.Println("Calling TileSet.TileGetNavigationPolygon()")
+	// log.Println("Calling TileSet.TileGetNavigationPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -942,7 +942,7 @@ func (o *TileSet) TileGetNavigationPolygon(id gdnative.Int) NavigationPolygonImp
 	Args: [{ false id int}], Returns: Vector2
 */
 func (o *TileSet) TileGetNavigationPolygonOffset(id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling TileSet.TileGetNavigationPolygonOffset()")
+	// log.Println("Calling TileSet.TileGetNavigationPolygonOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -966,7 +966,7 @@ func (o *TileSet) TileGetNavigationPolygonOffset(id gdnative.Int) gdnative.Vecto
 	Args: [{ false id int}], Returns: Texture
 */
 func (o *TileSet) TileGetNormalMap(id gdnative.Int) TextureImplementer {
-	//log.Println("Calling TileSet.TileGetNormalMap()")
+	// log.Println("Calling TileSet.TileGetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1004,7 +1004,7 @@ func (o *TileSet) TileGetNormalMap(id gdnative.Int) TextureImplementer {
 	Args: [{ false id int}], Returns: Vector2
 */
 func (o *TileSet) TileGetOccluderOffset(id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling TileSet.TileGetOccluderOffset()")
+	// log.Println("Calling TileSet.TileGetOccluderOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1028,7 +1028,7 @@ func (o *TileSet) TileGetOccluderOffset(id gdnative.Int) gdnative.Vector2 {
 	Args: [{ false id int}], Returns: Rect2
 */
 func (o *TileSet) TileGetRegion(id gdnative.Int) gdnative.Rect2 {
-	//log.Println("Calling TileSet.TileGetRegion()")
+	// log.Println("Calling TileSet.TileGetRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1052,7 +1052,7 @@ func (o *TileSet) TileGetRegion(id gdnative.Int) gdnative.Rect2 {
 	Args: [{ false id int} { false shape_id int}], Returns: Shape2D
 */
 func (o *TileSet) TileGetShape(id gdnative.Int, shapeId gdnative.Int) Shape2DImplementer {
-	//log.Println("Calling TileSet.TileGetShape()")
+	// log.Println("Calling TileSet.TileGetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1091,7 +1091,7 @@ func (o *TileSet) TileGetShape(id gdnative.Int, shapeId gdnative.Int) Shape2DImp
 	Args: [{ false id int}], Returns: int
 */
 func (o *TileSet) TileGetShapeCount(id gdnative.Int) gdnative.Int {
-	//log.Println("Calling TileSet.TileGetShapeCount()")
+	// log.Println("Calling TileSet.TileGetShapeCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1115,7 +1115,7 @@ func (o *TileSet) TileGetShapeCount(id gdnative.Int) gdnative.Int {
 	Args: [{ false id int} { false shape_id int}], Returns: Vector2
 */
 func (o *TileSet) TileGetShapeOffset(id gdnative.Int, shapeId gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling TileSet.TileGetShapeOffset()")
+	// log.Println("Calling TileSet.TileGetShapeOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1140,7 +1140,7 @@ func (o *TileSet) TileGetShapeOffset(id gdnative.Int, shapeId gdnative.Int) gdna
 	Args: [{ false id int} { false shape_id int}], Returns: bool
 */
 func (o *TileSet) TileGetShapeOneWay(id gdnative.Int, shapeId gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TileSet.TileGetShapeOneWay()")
+	// log.Println("Calling TileSet.TileGetShapeOneWay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1165,7 +1165,7 @@ func (o *TileSet) TileGetShapeOneWay(id gdnative.Int, shapeId gdnative.Int) gdna
 	Args: [{ false id int} { false shape_id int}], Returns: float
 */
 func (o *TileSet) TileGetShapeOneWayMargin(id gdnative.Int, shapeId gdnative.Int) gdnative.Real {
-	//log.Println("Calling TileSet.TileGetShapeOneWayMargin()")
+	// log.Println("Calling TileSet.TileGetShapeOneWayMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1190,7 +1190,7 @@ func (o *TileSet) TileGetShapeOneWayMargin(id gdnative.Int, shapeId gdnative.Int
 	Args: [{ false id int} { false shape_id int}], Returns: Transform2D
 */
 func (o *TileSet) TileGetShapeTransform(id gdnative.Int, shapeId gdnative.Int) gdnative.Transform2D {
-	//log.Println("Calling TileSet.TileGetShapeTransform()")
+	// log.Println("Calling TileSet.TileGetShapeTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1215,7 +1215,7 @@ func (o *TileSet) TileGetShapeTransform(id gdnative.Int, shapeId gdnative.Int) g
 	Args: [{ false id int}], Returns: Array
 */
 func (o *TileSet) TileGetShapes(id gdnative.Int) gdnative.Array {
-	//log.Println("Calling TileSet.TileGetShapes()")
+	// log.Println("Calling TileSet.TileGetShapes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1239,7 +1239,7 @@ func (o *TileSet) TileGetShapes(id gdnative.Int) gdnative.Array {
 	Args: [{ false id int}], Returns: Texture
 */
 func (o *TileSet) TileGetTexture(id gdnative.Int) TextureImplementer {
-	//log.Println("Calling TileSet.TileGetTexture()")
+	// log.Println("Calling TileSet.TileGetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1277,7 +1277,7 @@ func (o *TileSet) TileGetTexture(id gdnative.Int) TextureImplementer {
 	Args: [{ false id int}], Returns: Vector2
 */
 func (o *TileSet) TileGetTextureOffset(id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling TileSet.TileGetTextureOffset()")
+	// log.Println("Calling TileSet.TileGetTextureOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1301,7 +1301,7 @@ func (o *TileSet) TileGetTextureOffset(id gdnative.Int) gdnative.Vector2 {
 	Args: [{ false id int}], Returns: enum.TileSet::TileMode
 */
 func (o *TileSet) TileGetTileMode(id gdnative.Int) TileSetTileMode {
-	//log.Println("Calling TileSet.TileGetTileMode()")
+	// log.Println("Calling TileSet.TileGetTileMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1325,7 +1325,7 @@ func (o *TileSet) TileGetTileMode(id gdnative.Int) TileSetTileMode {
 	Args: [{ false id int}], Returns: int
 */
 func (o *TileSet) TileGetZIndex(id gdnative.Int) gdnative.Int {
-	//log.Println("Calling TileSet.TileGetZIndex()")
+	// log.Println("Calling TileSet.TileGetZIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1349,7 +1349,7 @@ func (o *TileSet) TileGetZIndex(id gdnative.Int) gdnative.Int {
 	Args: [{ false id int} { false light_occluder OccluderPolygon2D}], Returns: void
 */
 func (o *TileSet) TileSetLightOccluder(id gdnative.Int, lightOccluder OccluderPolygon2DImplementer) {
-	//log.Println("Calling TileSet.TileSetLightOccluder()")
+	// log.Println("Calling TileSet.TileSetLightOccluder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1371,7 +1371,7 @@ func (o *TileSet) TileSetLightOccluder(id gdnative.Int, lightOccluder OccluderPo
 	Args: [{ false id int} { false material ShaderMaterial}], Returns: void
 */
 func (o *TileSet) TileSetMaterial(id gdnative.Int, material ShaderMaterialImplementer) {
-	//log.Println("Calling TileSet.TileSetMaterial()")
+	// log.Println("Calling TileSet.TileSetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1393,7 +1393,7 @@ func (o *TileSet) TileSetMaterial(id gdnative.Int, material ShaderMaterialImplem
 	Args: [{ false id int} { false color Color}], Returns: void
 */
 func (o *TileSet) TileSetModulate(id gdnative.Int, color gdnative.Color) {
-	//log.Println("Calling TileSet.TileSetModulate()")
+	// log.Println("Calling TileSet.TileSetModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1415,7 +1415,7 @@ func (o *TileSet) TileSetModulate(id gdnative.Int, color gdnative.Color) {
 	Args: [{ false id int} { false name String}], Returns: void
 */
 func (o *TileSet) TileSetName(id gdnative.Int, name gdnative.String) {
-	//log.Println("Calling TileSet.TileSetName()")
+	// log.Println("Calling TileSet.TileSetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1437,7 +1437,7 @@ func (o *TileSet) TileSetName(id gdnative.Int, name gdnative.String) {
 	Args: [{ false id int} { false navigation_polygon NavigationPolygon}], Returns: void
 */
 func (o *TileSet) TileSetNavigationPolygon(id gdnative.Int, navigationPolygon NavigationPolygonImplementer) {
-	//log.Println("Calling TileSet.TileSetNavigationPolygon()")
+	// log.Println("Calling TileSet.TileSetNavigationPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1459,7 +1459,7 @@ func (o *TileSet) TileSetNavigationPolygon(id gdnative.Int, navigationPolygon Na
 	Args: [{ false id int} { false navigation_polygon_offset Vector2}], Returns: void
 */
 func (o *TileSet) TileSetNavigationPolygonOffset(id gdnative.Int, navigationPolygonOffset gdnative.Vector2) {
-	//log.Println("Calling TileSet.TileSetNavigationPolygonOffset()")
+	// log.Println("Calling TileSet.TileSetNavigationPolygonOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1481,7 +1481,7 @@ func (o *TileSet) TileSetNavigationPolygonOffset(id gdnative.Int, navigationPoly
 	Args: [{ false id int} { false normal_map Texture}], Returns: void
 */
 func (o *TileSet) TileSetNormalMap(id gdnative.Int, normalMap TextureImplementer) {
-	//log.Println("Calling TileSet.TileSetNormalMap()")
+	// log.Println("Calling TileSet.TileSetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1503,7 +1503,7 @@ func (o *TileSet) TileSetNormalMap(id gdnative.Int, normalMap TextureImplementer
 	Args: [{ false id int} { false occluder_offset Vector2}], Returns: void
 */
 func (o *TileSet) TileSetOccluderOffset(id gdnative.Int, occluderOffset gdnative.Vector2) {
-	//log.Println("Calling TileSet.TileSetOccluderOffset()")
+	// log.Println("Calling TileSet.TileSetOccluderOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1525,7 +1525,7 @@ func (o *TileSet) TileSetOccluderOffset(id gdnative.Int, occluderOffset gdnative
 	Args: [{ false id int} { false region Rect2}], Returns: void
 */
 func (o *TileSet) TileSetRegion(id gdnative.Int, region gdnative.Rect2) {
-	//log.Println("Calling TileSet.TileSetRegion()")
+	// log.Println("Calling TileSet.TileSetRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1547,7 +1547,7 @@ func (o *TileSet) TileSetRegion(id gdnative.Int, region gdnative.Rect2) {
 	Args: [{ false id int} { false shape_id int} { false shape Shape2D}], Returns: void
 */
 func (o *TileSet) TileSetShape(id gdnative.Int, shapeId gdnative.Int, shape Shape2DImplementer) {
-	//log.Println("Calling TileSet.TileSetShape()")
+	// log.Println("Calling TileSet.TileSetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1570,7 +1570,7 @@ func (o *TileSet) TileSetShape(id gdnative.Int, shapeId gdnative.Int, shape Shap
 	Args: [{ false id int} { false shape_id int} { false shape_offset Vector2}], Returns: void
 */
 func (o *TileSet) TileSetShapeOffset(id gdnative.Int, shapeId gdnative.Int, shapeOffset gdnative.Vector2) {
-	//log.Println("Calling TileSet.TileSetShapeOffset()")
+	// log.Println("Calling TileSet.TileSetShapeOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1593,7 +1593,7 @@ func (o *TileSet) TileSetShapeOffset(id gdnative.Int, shapeId gdnative.Int, shap
 	Args: [{ false id int} { false shape_id int} { false one_way bool}], Returns: void
 */
 func (o *TileSet) TileSetShapeOneWay(id gdnative.Int, shapeId gdnative.Int, oneWay gdnative.Bool) {
-	//log.Println("Calling TileSet.TileSetShapeOneWay()")
+	// log.Println("Calling TileSet.TileSetShapeOneWay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1616,7 +1616,7 @@ func (o *TileSet) TileSetShapeOneWay(id gdnative.Int, shapeId gdnative.Int, oneW
 	Args: [{ false id int} { false shape_id int} { false one_way float}], Returns: void
 */
 func (o *TileSet) TileSetShapeOneWayMargin(id gdnative.Int, shapeId gdnative.Int, oneWay gdnative.Real) {
-	//log.Println("Calling TileSet.TileSetShapeOneWayMargin()")
+	// log.Println("Calling TileSet.TileSetShapeOneWayMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1639,7 +1639,7 @@ func (o *TileSet) TileSetShapeOneWayMargin(id gdnative.Int, shapeId gdnative.Int
 	Args: [{ false id int} { false shape_id int} { false shape_transform Transform2D}], Returns: void
 */
 func (o *TileSet) TileSetShapeTransform(id gdnative.Int, shapeId gdnative.Int, shapeTransform gdnative.Transform2D) {
-	//log.Println("Calling TileSet.TileSetShapeTransform()")
+	// log.Println("Calling TileSet.TileSetShapeTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1662,7 +1662,7 @@ func (o *TileSet) TileSetShapeTransform(id gdnative.Int, shapeId gdnative.Int, s
 	Args: [{ false id int} { false shapes Array}], Returns: void
 */
 func (o *TileSet) TileSetShapes(id gdnative.Int, shapes gdnative.Array) {
-	//log.Println("Calling TileSet.TileSetShapes()")
+	// log.Println("Calling TileSet.TileSetShapes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1684,7 +1684,7 @@ func (o *TileSet) TileSetShapes(id gdnative.Int, shapes gdnative.Array) {
 	Args: [{ false id int} { false texture Texture}], Returns: void
 */
 func (o *TileSet) TileSetTexture(id gdnative.Int, texture TextureImplementer) {
-	//log.Println("Calling TileSet.TileSetTexture()")
+	// log.Println("Calling TileSet.TileSetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1706,7 +1706,7 @@ func (o *TileSet) TileSetTexture(id gdnative.Int, texture TextureImplementer) {
 	Args: [{ false id int} { false texture_offset Vector2}], Returns: void
 */
 func (o *TileSet) TileSetTextureOffset(id gdnative.Int, textureOffset gdnative.Vector2) {
-	//log.Println("Calling TileSet.TileSetTextureOffset()")
+	// log.Println("Calling TileSet.TileSetTextureOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1728,7 +1728,7 @@ func (o *TileSet) TileSetTextureOffset(id gdnative.Int, textureOffset gdnative.V
 	Args: [{ false id int} { false tilemode int}], Returns: void
 */
 func (o *TileSet) TileSetTileMode(id gdnative.Int, tilemode gdnative.Int) {
-	//log.Println("Calling TileSet.TileSetTileMode()")
+	// log.Println("Calling TileSet.TileSetTileMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1750,7 +1750,7 @@ func (o *TileSet) TileSetTileMode(id gdnative.Int, tilemode gdnative.Int) {
 	Args: [{ false id int} { false z_index int}], Returns: void
 */
 func (o *TileSet) TileSetZIndex(id gdnative.Int, zIndex gdnative.Int) {
-	//log.Println("Calling TileSet.TileSetZIndex()")
+	// log.Println("Calling TileSet.TileSetZIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

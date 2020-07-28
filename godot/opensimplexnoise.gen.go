@@ -39,7 +39,7 @@ func (o *OpenSimplexNoise) BaseClass() string {
 	Args: [{ false width int} { false height int}], Returns: Image
 */
 func (o *OpenSimplexNoise) GetImage(width gdnative.Int, height gdnative.Int) ImageImplementer {
-	//log.Println("Calling OpenSimplexNoise.GetImage()")
+	// log.Println("Calling OpenSimplexNoise.GetImage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -78,7 +78,7 @@ func (o *OpenSimplexNoise) GetImage(width gdnative.Int, height gdnative.Int) Ima
 	Args: [], Returns: float
 */
 func (o *OpenSimplexNoise) GetLacunarity() gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetLacunarity()")
+	// log.Println("Calling OpenSimplexNoise.GetLacunarity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -101,7 +101,7 @@ func (o *OpenSimplexNoise) GetLacunarity() gdnative.Real {
 	Args: [{ false x float}], Returns: float
 */
 func (o *OpenSimplexNoise) GetNoise1D(x gdnative.Real) gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetNoise1D()")
+	// log.Println("Calling OpenSimplexNoise.GetNoise1D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *OpenSimplexNoise) GetNoise1D(x gdnative.Real) gdnative.Real {
 	Args: [{ false x float} { false y float}], Returns: float
 */
 func (o *OpenSimplexNoise) GetNoise2D(x gdnative.Real, y gdnative.Real) gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetNoise2D()")
+	// log.Println("Calling OpenSimplexNoise.GetNoise2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -150,7 +150,7 @@ func (o *OpenSimplexNoise) GetNoise2D(x gdnative.Real, y gdnative.Real) gdnative
 	Args: [{ false pos Vector2}], Returns: float
 */
 func (o *OpenSimplexNoise) GetNoise2Dv(pos gdnative.Vector2) gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetNoise2Dv()")
+	// log.Println("Calling OpenSimplexNoise.GetNoise2Dv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -174,7 +174,7 @@ func (o *OpenSimplexNoise) GetNoise2Dv(pos gdnative.Vector2) gdnative.Real {
 	Args: [{ false x float} { false y float} { false z float}], Returns: float
 */
 func (o *OpenSimplexNoise) GetNoise3D(x gdnative.Real, y gdnative.Real, z gdnative.Real) gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetNoise3D()")
+	// log.Println("Calling OpenSimplexNoise.GetNoise3D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -200,7 +200,7 @@ func (o *OpenSimplexNoise) GetNoise3D(x gdnative.Real, y gdnative.Real, z gdnati
 	Args: [{ false pos Vector3}], Returns: float
 */
 func (o *OpenSimplexNoise) GetNoise3Dv(pos gdnative.Vector3) gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetNoise3Dv()")
+	// log.Println("Calling OpenSimplexNoise.GetNoise3Dv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -224,7 +224,7 @@ func (o *OpenSimplexNoise) GetNoise3Dv(pos gdnative.Vector3) gdnative.Real {
 	Args: [{ false x float} { false y float} { false z float} { false w float}], Returns: float
 */
 func (o *OpenSimplexNoise) GetNoise4D(x gdnative.Real, y gdnative.Real, z gdnative.Real, w gdnative.Real) gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetNoise4D()")
+	// log.Println("Calling OpenSimplexNoise.GetNoise4D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -251,7 +251,7 @@ func (o *OpenSimplexNoise) GetNoise4D(x gdnative.Real, y gdnative.Real, z gdnati
 	Args: [], Returns: int
 */
 func (o *OpenSimplexNoise) GetOctaves() gdnative.Int {
-	//log.Println("Calling OpenSimplexNoise.GetOctaves()")
+	// log.Println("Calling OpenSimplexNoise.GetOctaves()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -274,7 +274,7 @@ func (o *OpenSimplexNoise) GetOctaves() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *OpenSimplexNoise) GetPeriod() gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetPeriod()")
+	// log.Println("Calling OpenSimplexNoise.GetPeriod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -297,7 +297,7 @@ func (o *OpenSimplexNoise) GetPeriod() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *OpenSimplexNoise) GetPersistence() gdnative.Real {
-	//log.Println("Calling OpenSimplexNoise.GetPersistence()")
+	// log.Println("Calling OpenSimplexNoise.GetPersistence()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -320,7 +320,7 @@ func (o *OpenSimplexNoise) GetPersistence() gdnative.Real {
 	Args: [{ false size int}], Returns: Image
 */
 func (o *OpenSimplexNoise) GetSeamlessImage(size gdnative.Int) ImageImplementer {
-	//log.Println("Calling OpenSimplexNoise.GetSeamlessImage()")
+	// log.Println("Calling OpenSimplexNoise.GetSeamlessImage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -358,7 +358,7 @@ func (o *OpenSimplexNoise) GetSeamlessImage(size gdnative.Int) ImageImplementer 
 	Args: [], Returns: int
 */
 func (o *OpenSimplexNoise) GetSeed() gdnative.Int {
-	//log.Println("Calling OpenSimplexNoise.GetSeed()")
+	// log.Println("Calling OpenSimplexNoise.GetSeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -381,7 +381,7 @@ func (o *OpenSimplexNoise) GetSeed() gdnative.Int {
 	Args: [{ false lacunarity float}], Returns: void
 */
 func (o *OpenSimplexNoise) SetLacunarity(lacunarity gdnative.Real) {
-	//log.Println("Calling OpenSimplexNoise.SetLacunarity()")
+	// log.Println("Calling OpenSimplexNoise.SetLacunarity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -402,7 +402,7 @@ func (o *OpenSimplexNoise) SetLacunarity(lacunarity gdnative.Real) {
 	Args: [{ false octave_count int}], Returns: void
 */
 func (o *OpenSimplexNoise) SetOctaves(octaveCount gdnative.Int) {
-	//log.Println("Calling OpenSimplexNoise.SetOctaves()")
+	// log.Println("Calling OpenSimplexNoise.SetOctaves()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -423,7 +423,7 @@ func (o *OpenSimplexNoise) SetOctaves(octaveCount gdnative.Int) {
 	Args: [{ false period float}], Returns: void
 */
 func (o *OpenSimplexNoise) SetPeriod(period gdnative.Real) {
-	//log.Println("Calling OpenSimplexNoise.SetPeriod()")
+	// log.Println("Calling OpenSimplexNoise.SetPeriod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -444,7 +444,7 @@ func (o *OpenSimplexNoise) SetPeriod(period gdnative.Real) {
 	Args: [{ false persistence float}], Returns: void
 */
 func (o *OpenSimplexNoise) SetPersistence(persistence gdnative.Real) {
-	//log.Println("Calling OpenSimplexNoise.SetPersistence()")
+	// log.Println("Calling OpenSimplexNoise.SetPersistence()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -465,7 +465,7 @@ func (o *OpenSimplexNoise) SetPersistence(persistence gdnative.Real) {
 	Args: [{ false seed int}], Returns: void
 */
 func (o *OpenSimplexNoise) SetSeed(seed gdnative.Int) {
-	//log.Println("Calling OpenSimplexNoise.SetSeed()")
+	// log.Println("Calling OpenSimplexNoise.SetSeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

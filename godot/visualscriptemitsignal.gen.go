@@ -39,7 +39,7 @@ func (o *VisualScriptEmitSignal) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptEmitSignal) GetSignal() gdnative.String {
-	//log.Println("Calling VisualScriptEmitSignal.GetSignal()")
+	// log.Println("Calling VisualScriptEmitSignal.GetSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptEmitSignal) GetSignal() gdnative.String {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualScriptEmitSignal) SetSignal(name gdnative.String) {
-	//log.Println("Calling VisualScriptEmitSignal.SetSignal()")
+	// log.Println("Calling VisualScriptEmitSignal.SetSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

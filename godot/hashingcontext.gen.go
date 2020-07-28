@@ -48,7 +48,7 @@ func (o *HashingContext) BaseClass() string {
 	Args: [], Returns: PoolByteArray
 */
 func (o *HashingContext) Finish() gdnative.PoolByteArray {
-	//log.Println("Calling HashingContext.Finish()")
+	// log.Println("Calling HashingContext.Finish()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *HashingContext) Finish() gdnative.PoolByteArray {
 	Args: [{ false type int}], Returns: enum.Error
 */
 func (o *HashingContext) Start(aType gdnative.Int) gdnative.Error {
-	//log.Println("Calling HashingContext.Start()")
+	// log.Println("Calling HashingContext.Start()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -95,7 +95,7 @@ func (o *HashingContext) Start(aType gdnative.Int) gdnative.Error {
 	Args: [{ false chunk PoolByteArray}], Returns: enum.Error
 */
 func (o *HashingContext) Update(chunk gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling HashingContext.Update()")
+	// log.Println("Calling HashingContext.Update()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

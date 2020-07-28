@@ -48,7 +48,7 @@ func (o *VisualScriptCustomNode) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptCustomNode) X_GetCaption() gdnative.String {
-	//log.Println("Calling VisualScriptCustomNode.X_GetCaption()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetCaption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *VisualScriptCustomNode) X_GetCaption() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *VisualScriptCustomNode) X_GetCategory() gdnative.String {
-	//log.Println("Calling VisualScriptCustomNode.X_GetCategory()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetCategory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *VisualScriptCustomNode) X_GetCategory() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *VisualScriptCustomNode) X_GetInputValuePortCount() gdnative.Int {
-	//log.Println("Calling VisualScriptCustomNode.X_GetInputValuePortCount()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetInputValuePortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *VisualScriptCustomNode) X_GetInputValuePortCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *VisualScriptCustomNode) X_GetInputValuePortName(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualScriptCustomNode.X_GetInputValuePortName()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetInputValuePortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -141,7 +141,7 @@ func (o *VisualScriptCustomNode) X_GetInputValuePortName(idx gdnative.Int) gdnat
 	Args: [{ false idx int}], Returns: int
 */
 func (o *VisualScriptCustomNode) X_GetInputValuePortType(idx gdnative.Int) gdnative.Int {
-	//log.Println("Calling VisualScriptCustomNode.X_GetInputValuePortType()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetInputValuePortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -165,7 +165,7 @@ func (o *VisualScriptCustomNode) X_GetInputValuePortType(idx gdnative.Int) gdnat
 	Args: [], Returns: int
 */
 func (o *VisualScriptCustomNode) X_GetOutputSequencePortCount() gdnative.Int {
-	//log.Println("Calling VisualScriptCustomNode.X_GetOutputSequencePortCount()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetOutputSequencePortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -188,7 +188,7 @@ func (o *VisualScriptCustomNode) X_GetOutputSequencePortCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *VisualScriptCustomNode) X_GetOutputSequencePortText(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualScriptCustomNode.X_GetOutputSequencePortText()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetOutputSequencePortText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -212,7 +212,7 @@ func (o *VisualScriptCustomNode) X_GetOutputSequencePortText(idx gdnative.Int) g
 	Args: [], Returns: int
 */
 func (o *VisualScriptCustomNode) X_GetOutputValuePortCount() gdnative.Int {
-	//log.Println("Calling VisualScriptCustomNode.X_GetOutputValuePortCount()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetOutputValuePortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -235,7 +235,7 @@ func (o *VisualScriptCustomNode) X_GetOutputValuePortCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *VisualScriptCustomNode) X_GetOutputValuePortName(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualScriptCustomNode.X_GetOutputValuePortName()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetOutputValuePortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -259,7 +259,7 @@ func (o *VisualScriptCustomNode) X_GetOutputValuePortName(idx gdnative.Int) gdna
 	Args: [{ false idx int}], Returns: int
 */
 func (o *VisualScriptCustomNode) X_GetOutputValuePortType(idx gdnative.Int) gdnative.Int {
-	//log.Println("Calling VisualScriptCustomNode.X_GetOutputValuePortType()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetOutputValuePortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -283,7 +283,7 @@ func (o *VisualScriptCustomNode) X_GetOutputValuePortType(idx gdnative.Int) gdna
 	Args: [], Returns: String
 */
 func (o *VisualScriptCustomNode) X_GetText() gdnative.String {
-	//log.Println("Calling VisualScriptCustomNode.X_GetText()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -306,7 +306,7 @@ func (o *VisualScriptCustomNode) X_GetText() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *VisualScriptCustomNode) X_GetWorkingMemorySize() gdnative.Int {
-	//log.Println("Calling VisualScriptCustomNode.X_GetWorkingMemorySize()")
+	// log.Println("Calling VisualScriptCustomNode.X_GetWorkingMemorySize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -329,7 +329,7 @@ func (o *VisualScriptCustomNode) X_GetWorkingMemorySize() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *VisualScriptCustomNode) X_HasInputSequencePort() gdnative.Bool {
-	//log.Println("Calling VisualScriptCustomNode.X_HasInputSequencePort()")
+	// log.Println("Calling VisualScriptCustomNode.X_HasInputSequencePort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -352,7 +352,7 @@ func (o *VisualScriptCustomNode) X_HasInputSequencePort() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *VisualScriptCustomNode) X_ScriptChanged() {
-	//log.Println("Calling VisualScriptCustomNode.X_ScriptChanged()")
+	// log.Println("Calling VisualScriptCustomNode.X_ScriptChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -372,7 +372,7 @@ func (o *VisualScriptCustomNode) X_ScriptChanged() {
 	Args: [{ false inputs Array} { false outputs Array} { false start_mode int} { false working_mem Array}], Returns: Variant
 */
 func (o *VisualScriptCustomNode) X_Step(inputs gdnative.Array, outputs gdnative.Array, startMode gdnative.Int, workingMem gdnative.Array) gdnative.Variant {
-	//log.Println("Calling VisualScriptCustomNode.X_Step()")
+	// log.Println("Calling VisualScriptCustomNode.X_Step()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)

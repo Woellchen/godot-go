@@ -51,7 +51,7 @@ func (o *AudioEffectSpectrumAnalyzer) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectSpectrumAnalyzer) GetBufferLength() gdnative.Real {
-	//log.Println("Calling AudioEffectSpectrumAnalyzer.GetBufferLength()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzer.GetBufferLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -74,7 +74,7 @@ func (o *AudioEffectSpectrumAnalyzer) GetBufferLength() gdnative.Real {
 	Args: [], Returns: enum.AudioEffectSpectrumAnalyzer::FFT_Size
 */
 func (o *AudioEffectSpectrumAnalyzer) GetFftSize() AudioEffectSpectrumAnalyzerFFT_Size {
-	//log.Println("Calling AudioEffectSpectrumAnalyzer.GetFftSize()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzer.GetFftSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -97,7 +97,7 @@ func (o *AudioEffectSpectrumAnalyzer) GetFftSize() AudioEffectSpectrumAnalyzerFF
 	Args: [], Returns: float
 */
 func (o *AudioEffectSpectrumAnalyzer) GetTapBackPos() gdnative.Real {
-	//log.Println("Calling AudioEffectSpectrumAnalyzer.GetTapBackPos()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzer.GetTapBackPos()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -120,7 +120,7 @@ func (o *AudioEffectSpectrumAnalyzer) GetTapBackPos() gdnative.Real {
 	Args: [{ false seconds float}], Returns: void
 */
 func (o *AudioEffectSpectrumAnalyzer) SetBufferLength(seconds gdnative.Real) {
-	//log.Println("Calling AudioEffectSpectrumAnalyzer.SetBufferLength()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzer.SetBufferLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -141,7 +141,7 @@ func (o *AudioEffectSpectrumAnalyzer) SetBufferLength(seconds gdnative.Real) {
 	Args: [{ false size int}], Returns: void
 */
 func (o *AudioEffectSpectrumAnalyzer) SetFftSize(size gdnative.Int) {
-	//log.Println("Calling AudioEffectSpectrumAnalyzer.SetFftSize()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzer.SetFftSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -162,7 +162,7 @@ func (o *AudioEffectSpectrumAnalyzer) SetFftSize(size gdnative.Int) {
 	Args: [{ false seconds float}], Returns: void
 */
 func (o *AudioEffectSpectrumAnalyzer) SetTapBackPos(seconds gdnative.Real) {
-	//log.Println("Calling AudioEffectSpectrumAnalyzer.SetTapBackPos()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzer.SetTapBackPos()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

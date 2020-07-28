@@ -39,7 +39,7 @@ func (o *PhysicsShapeQueryParameters) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *PhysicsShapeQueryParameters) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling PhysicsShapeQueryParameters.GetCollisionMask()")
+	// log.Println("Calling PhysicsShapeQueryParameters.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PhysicsShapeQueryParameters) GetCollisionMask() gdnative.Int {
 	Args: [], Returns: Array
 */
 func (o *PhysicsShapeQueryParameters) GetExclude() gdnative.Array {
-	//log.Println("Calling PhysicsShapeQueryParameters.GetExclude()")
+	// log.Println("Calling PhysicsShapeQueryParameters.GetExclude()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PhysicsShapeQueryParameters) GetExclude() gdnative.Array {
 	Args: [], Returns: float
 */
 func (o *PhysicsShapeQueryParameters) GetMargin() gdnative.Real {
-	//log.Println("Calling PhysicsShapeQueryParameters.GetMargin()")
+	// log.Println("Calling PhysicsShapeQueryParameters.GetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *PhysicsShapeQueryParameters) GetMargin() gdnative.Real {
 	Args: [], Returns: RID
 */
 func (o *PhysicsShapeQueryParameters) GetShapeRid() gdnative.Rid {
-	//log.Println("Calling PhysicsShapeQueryParameters.GetShapeRid()")
+	// log.Println("Calling PhysicsShapeQueryParameters.GetShapeRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *PhysicsShapeQueryParameters) GetShapeRid() gdnative.Rid {
 	Args: [], Returns: Transform
 */
 func (o *PhysicsShapeQueryParameters) GetTransform() gdnative.Transform {
-	//log.Println("Calling PhysicsShapeQueryParameters.GetTransform()")
+	// log.Println("Calling PhysicsShapeQueryParameters.GetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *PhysicsShapeQueryParameters) GetTransform() gdnative.Transform {
 	Args: [], Returns: bool
 */
 func (o *PhysicsShapeQueryParameters) IsCollideWithAreasEnabled() gdnative.Bool {
-	//log.Println("Calling PhysicsShapeQueryParameters.IsCollideWithAreasEnabled()")
+	// log.Println("Calling PhysicsShapeQueryParameters.IsCollideWithAreasEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *PhysicsShapeQueryParameters) IsCollideWithAreasEnabled() gdnative.Bool 
 	Args: [], Returns: bool
 */
 func (o *PhysicsShapeQueryParameters) IsCollideWithBodiesEnabled() gdnative.Bool {
-	//log.Println("Calling PhysicsShapeQueryParameters.IsCollideWithBodiesEnabled()")
+	// log.Println("Calling PhysicsShapeQueryParameters.IsCollideWithBodiesEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *PhysicsShapeQueryParameters) IsCollideWithBodiesEnabled() gdnative.Bool
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetCollideWithAreas(enable gdnative.Bool) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetCollideWithAreas()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetCollideWithAreas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -221,7 +221,7 @@ func (o *PhysicsShapeQueryParameters) SetCollideWithAreas(enable gdnative.Bool) 
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetCollideWithBodies(enable gdnative.Bool) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetCollideWithBodies()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetCollideWithBodies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -242,7 +242,7 @@ func (o *PhysicsShapeQueryParameters) SetCollideWithBodies(enable gdnative.Bool)
 	Args: [{ false collision_mask int}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetCollisionMask(collisionMask gdnative.Int) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetCollisionMask()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -263,7 +263,7 @@ func (o *PhysicsShapeQueryParameters) SetCollisionMask(collisionMask gdnative.In
 	Args: [{ false exclude Array}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetExclude(exclude gdnative.Array) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetExclude()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetExclude()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -284,7 +284,7 @@ func (o *PhysicsShapeQueryParameters) SetExclude(exclude gdnative.Array) {
 	Args: [{ false margin float}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetMargin(margin gdnative.Real) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetMargin()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -305,7 +305,7 @@ func (o *PhysicsShapeQueryParameters) SetMargin(margin gdnative.Real) {
 	Args: [{ false shape Resource}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetShape(shape ResourceImplementer) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetShape()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -326,7 +326,7 @@ func (o *PhysicsShapeQueryParameters) SetShape(shape ResourceImplementer) {
 	Args: [{ false shape RID}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetShapeRid(shape gdnative.Rid) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetShapeRid()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetShapeRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -347,7 +347,7 @@ func (o *PhysicsShapeQueryParameters) SetShapeRid(shape gdnative.Rid) {
 	Args: [{ false transform Transform}], Returns: void
 */
 func (o *PhysicsShapeQueryParameters) SetTransform(transform gdnative.Transform) {
-	//log.Println("Calling PhysicsShapeQueryParameters.SetTransform()")
+	// log.Println("Calling PhysicsShapeQueryParameters.SetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

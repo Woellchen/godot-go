@@ -55,7 +55,7 @@ func (o *Camera2D) BaseClass() string {
 	Args: [{ false arg0 Object}], Returns: void
 */
 func (o *Camera2D) X_MakeCurrent(arg0 ObjectImplementer) {
-	//log.Println("Calling Camera2D.X_MakeCurrent()")
+	// log.Println("Calling Camera2D.X_MakeCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -76,7 +76,7 @@ func (o *Camera2D) X_MakeCurrent(arg0 ObjectImplementer) {
 	Args: [{ false current bool}], Returns: void
 */
 func (o *Camera2D) X_SetCurrent(current gdnative.Bool) {
-	//log.Println("Calling Camera2D.X_SetCurrent()")
+	// log.Println("Calling Camera2D.X_SetCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -97,7 +97,7 @@ func (o *Camera2D) X_SetCurrent(current gdnative.Bool) {
 	Args: [{ false follow_smoothing float}], Returns: void
 */
 func (o *Camera2D) X_SetOldSmoothing(followSmoothing gdnative.Real) {
-	//log.Println("Calling Camera2D.X_SetOldSmoothing()")
+	// log.Println("Calling Camera2D.X_SetOldSmoothing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -118,7 +118,7 @@ func (o *Camera2D) X_SetOldSmoothing(followSmoothing gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *Camera2D) X_UpdateScroll() {
-	//log.Println("Calling Camera2D.X_UpdateScroll()")
+	// log.Println("Calling Camera2D.X_UpdateScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -138,7 +138,7 @@ func (o *Camera2D) X_UpdateScroll() {
 	Args: [], Returns: void
 */
 func (o *Camera2D) Align() {
-	//log.Println("Calling Camera2D.Align()")
+	// log.Println("Calling Camera2D.Align()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *Camera2D) Align() {
 	Args: [], Returns: void
 */
 func (o *Camera2D) ClearCurrent() {
-	//log.Println("Calling Camera2D.ClearCurrent()")
+	// log.Println("Calling Camera2D.ClearCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -178,7 +178,7 @@ func (o *Camera2D) ClearCurrent() {
 	Args: [], Returns: void
 */
 func (o *Camera2D) ForceUpdateScroll() {
-	//log.Println("Calling Camera2D.ForceUpdateScroll()")
+	// log.Println("Calling Camera2D.ForceUpdateScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -198,7 +198,7 @@ func (o *Camera2D) ForceUpdateScroll() {
 	Args: [], Returns: enum.Camera2D::AnchorMode
 */
 func (o *Camera2D) GetAnchorMode() Camera2DAnchorMode {
-	//log.Println("Calling Camera2D.GetAnchorMode()")
+	// log.Println("Calling Camera2D.GetAnchorMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -221,7 +221,7 @@ func (o *Camera2D) GetAnchorMode() Camera2DAnchorMode {
 	Args: [], Returns: Vector2
 */
 func (o *Camera2D) GetCameraPosition() gdnative.Vector2 {
-	//log.Println("Calling Camera2D.GetCameraPosition()")
+	// log.Println("Calling Camera2D.GetCameraPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -244,7 +244,7 @@ func (o *Camera2D) GetCameraPosition() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *Camera2D) GetCameraScreenCenter() gdnative.Vector2 {
-	//log.Println("Calling Camera2D.GetCameraScreenCenter()")
+	// log.Println("Calling Camera2D.GetCameraScreenCenter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -267,7 +267,7 @@ func (o *Camera2D) GetCameraScreenCenter() gdnative.Vector2 {
 	Args: [], Returns: Node
 */
 func (o *Camera2D) GetCustomViewport() NodeImplementer {
-	//log.Println("Calling Camera2D.GetCustomViewport()")
+	// log.Println("Calling Camera2D.GetCustomViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -304,7 +304,7 @@ func (o *Camera2D) GetCustomViewport() NodeImplementer {
 	Args: [{ false margin int}], Returns: float
 */
 func (o *Camera2D) GetDragMargin(margin gdnative.Int) gdnative.Real {
-	//log.Println("Calling Camera2D.GetDragMargin()")
+	// log.Println("Calling Camera2D.GetDragMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *Camera2D) GetDragMargin(margin gdnative.Int) gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Camera2D) GetFollowSmoothing() gdnative.Real {
-	//log.Println("Calling Camera2D.GetFollowSmoothing()")
+	// log.Println("Calling Camera2D.GetFollowSmoothing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -351,7 +351,7 @@ func (o *Camera2D) GetFollowSmoothing() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Camera2D) GetHOffset() gdnative.Real {
-	//log.Println("Calling Camera2D.GetHOffset()")
+	// log.Println("Calling Camera2D.GetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -374,7 +374,7 @@ func (o *Camera2D) GetHOffset() gdnative.Real {
 	Args: [{ false margin int}], Returns: int
 */
 func (o *Camera2D) GetLimit(margin gdnative.Int) gdnative.Int {
-	//log.Println("Calling Camera2D.GetLimit()")
+	// log.Println("Calling Camera2D.GetLimit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -398,7 +398,7 @@ func (o *Camera2D) GetLimit(margin gdnative.Int) gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *Camera2D) GetOffset() gdnative.Vector2 {
-	//log.Println("Calling Camera2D.GetOffset()")
+	// log.Println("Calling Camera2D.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -421,7 +421,7 @@ func (o *Camera2D) GetOffset() gdnative.Vector2 {
 	Args: [], Returns: enum.Camera2D::Camera2DProcessMode
 */
 func (o *Camera2D) GetProcessMode() Camera2DCamera2DProcessMode {
-	//log.Println("Calling Camera2D.GetProcessMode()")
+	// log.Println("Calling Camera2D.GetProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -444,7 +444,7 @@ func (o *Camera2D) GetProcessMode() Camera2DCamera2DProcessMode {
 	Args: [], Returns: float
 */
 func (o *Camera2D) GetVOffset() gdnative.Real {
-	//log.Println("Calling Camera2D.GetVOffset()")
+	// log.Println("Calling Camera2D.GetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -467,7 +467,7 @@ func (o *Camera2D) GetVOffset() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *Camera2D) GetZoom() gdnative.Vector2 {
-	//log.Println("Calling Camera2D.GetZoom()")
+	// log.Println("Calling Camera2D.GetZoom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -490,7 +490,7 @@ func (o *Camera2D) GetZoom() gdnative.Vector2 {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsCurrent() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsCurrent()")
+	// log.Println("Calling Camera2D.IsCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -513,7 +513,7 @@ func (o *Camera2D) IsCurrent() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsFollowSmoothingEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsFollowSmoothingEnabled()")
+	// log.Println("Calling Camera2D.IsFollowSmoothingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -536,7 +536,7 @@ func (o *Camera2D) IsFollowSmoothingEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsHDragEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsHDragEnabled()")
+	// log.Println("Calling Camera2D.IsHDragEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -559,7 +559,7 @@ func (o *Camera2D) IsHDragEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsLimitDrawingEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsLimitDrawingEnabled()")
+	// log.Println("Calling Camera2D.IsLimitDrawingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -582,7 +582,7 @@ func (o *Camera2D) IsLimitDrawingEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsLimitSmoothingEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsLimitSmoothingEnabled()")
+	// log.Println("Calling Camera2D.IsLimitSmoothingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -605,7 +605,7 @@ func (o *Camera2D) IsLimitSmoothingEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsMarginDrawingEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsMarginDrawingEnabled()")
+	// log.Println("Calling Camera2D.IsMarginDrawingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -628,7 +628,7 @@ func (o *Camera2D) IsMarginDrawingEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsRotating() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsRotating()")
+	// log.Println("Calling Camera2D.IsRotating()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -651,7 +651,7 @@ func (o *Camera2D) IsRotating() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsScreenDrawingEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsScreenDrawingEnabled()")
+	// log.Println("Calling Camera2D.IsScreenDrawingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -674,7 +674,7 @@ func (o *Camera2D) IsScreenDrawingEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Camera2D) IsVDragEnabled() gdnative.Bool {
-	//log.Println("Calling Camera2D.IsVDragEnabled()")
+	// log.Println("Calling Camera2D.IsVDragEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -697,7 +697,7 @@ func (o *Camera2D) IsVDragEnabled() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *Camera2D) MakeCurrent() {
-	//log.Println("Calling Camera2D.MakeCurrent()")
+	// log.Println("Calling Camera2D.MakeCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -717,7 +717,7 @@ func (o *Camera2D) MakeCurrent() {
 	Args: [], Returns: void
 */
 func (o *Camera2D) ResetSmoothing() {
-	//log.Println("Calling Camera2D.ResetSmoothing()")
+	// log.Println("Calling Camera2D.ResetSmoothing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -737,7 +737,7 @@ func (o *Camera2D) ResetSmoothing() {
 	Args: [{ false anchor_mode int}], Returns: void
 */
 func (o *Camera2D) SetAnchorMode(anchorMode gdnative.Int) {
-	//log.Println("Calling Camera2D.SetAnchorMode()")
+	// log.Println("Calling Camera2D.SetAnchorMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -758,7 +758,7 @@ func (o *Camera2D) SetAnchorMode(anchorMode gdnative.Int) {
 	Args: [{ false viewport Node}], Returns: void
 */
 func (o *Camera2D) SetCustomViewport(viewport NodeImplementer) {
-	//log.Println("Calling Camera2D.SetCustomViewport()")
+	// log.Println("Calling Camera2D.SetCustomViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -779,7 +779,7 @@ func (o *Camera2D) SetCustomViewport(viewport NodeImplementer) {
 	Args: [{ false margin int} { false drag_margin float}], Returns: void
 */
 func (o *Camera2D) SetDragMargin(margin gdnative.Int, dragMargin gdnative.Real) {
-	//log.Println("Calling Camera2D.SetDragMargin()")
+	// log.Println("Calling Camera2D.SetDragMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -801,7 +801,7 @@ func (o *Camera2D) SetDragMargin(margin gdnative.Int, dragMargin gdnative.Real) 
 	Args: [{ false follow_smoothing bool}], Returns: void
 */
 func (o *Camera2D) SetEnableFollowSmoothing(followSmoothing gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetEnableFollowSmoothing()")
+	// log.Println("Calling Camera2D.SetEnableFollowSmoothing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -822,7 +822,7 @@ func (o *Camera2D) SetEnableFollowSmoothing(followSmoothing gdnative.Bool) {
 	Args: [{ false follow_smoothing float}], Returns: void
 */
 func (o *Camera2D) SetFollowSmoothing(followSmoothing gdnative.Real) {
-	//log.Println("Calling Camera2D.SetFollowSmoothing()")
+	// log.Println("Calling Camera2D.SetFollowSmoothing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -843,7 +843,7 @@ func (o *Camera2D) SetFollowSmoothing(followSmoothing gdnative.Real) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *Camera2D) SetHDragEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetHDragEnabled()")
+	// log.Println("Calling Camera2D.SetHDragEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -864,7 +864,7 @@ func (o *Camera2D) SetHDragEnabled(enabled gdnative.Bool) {
 	Args: [{ false ofs float}], Returns: void
 */
 func (o *Camera2D) SetHOffset(ofs gdnative.Real) {
-	//log.Println("Calling Camera2D.SetHOffset()")
+	// log.Println("Calling Camera2D.SetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -885,7 +885,7 @@ func (o *Camera2D) SetHOffset(ofs gdnative.Real) {
 	Args: [{ false margin int} { false limit int}], Returns: void
 */
 func (o *Camera2D) SetLimit(margin gdnative.Int, limit gdnative.Int) {
-	//log.Println("Calling Camera2D.SetLimit()")
+	// log.Println("Calling Camera2D.SetLimit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -907,7 +907,7 @@ func (o *Camera2D) SetLimit(margin gdnative.Int, limit gdnative.Int) {
 	Args: [{ false limit_drawing_enabled bool}], Returns: void
 */
 func (o *Camera2D) SetLimitDrawingEnabled(limitDrawingEnabled gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetLimitDrawingEnabled()")
+	// log.Println("Calling Camera2D.SetLimitDrawingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -928,7 +928,7 @@ func (o *Camera2D) SetLimitDrawingEnabled(limitDrawingEnabled gdnative.Bool) {
 	Args: [{ false limit_smoothing_enabled bool}], Returns: void
 */
 func (o *Camera2D) SetLimitSmoothingEnabled(limitSmoothingEnabled gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetLimitSmoothingEnabled()")
+	// log.Println("Calling Camera2D.SetLimitSmoothingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -949,7 +949,7 @@ func (o *Camera2D) SetLimitSmoothingEnabled(limitSmoothingEnabled gdnative.Bool)
 	Args: [{ false margin_drawing_enabled bool}], Returns: void
 */
 func (o *Camera2D) SetMarginDrawingEnabled(marginDrawingEnabled gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetMarginDrawingEnabled()")
+	// log.Println("Calling Camera2D.SetMarginDrawingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -970,7 +970,7 @@ func (o *Camera2D) SetMarginDrawingEnabled(marginDrawingEnabled gdnative.Bool) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *Camera2D) SetOffset(offset gdnative.Vector2) {
-	//log.Println("Calling Camera2D.SetOffset()")
+	// log.Println("Calling Camera2D.SetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -991,7 +991,7 @@ func (o *Camera2D) SetOffset(offset gdnative.Vector2) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Camera2D) SetProcessMode(mode gdnative.Int) {
-	//log.Println("Calling Camera2D.SetProcessMode()")
+	// log.Println("Calling Camera2D.SetProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1012,7 +1012,7 @@ func (o *Camera2D) SetProcessMode(mode gdnative.Int) {
 	Args: [{ false rotating bool}], Returns: void
 */
 func (o *Camera2D) SetRotating(rotating gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetRotating()")
+	// log.Println("Calling Camera2D.SetRotating()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1033,7 +1033,7 @@ func (o *Camera2D) SetRotating(rotating gdnative.Bool) {
 	Args: [{ false screen_drawing_enabled bool}], Returns: void
 */
 func (o *Camera2D) SetScreenDrawingEnabled(screenDrawingEnabled gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetScreenDrawingEnabled()")
+	// log.Println("Calling Camera2D.SetScreenDrawingEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1054,7 +1054,7 @@ func (o *Camera2D) SetScreenDrawingEnabled(screenDrawingEnabled gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *Camera2D) SetVDragEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling Camera2D.SetVDragEnabled()")
+	// log.Println("Calling Camera2D.SetVDragEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1075,7 +1075,7 @@ func (o *Camera2D) SetVDragEnabled(enabled gdnative.Bool) {
 	Args: [{ false ofs float}], Returns: void
 */
 func (o *Camera2D) SetVOffset(ofs gdnative.Real) {
-	//log.Println("Calling Camera2D.SetVOffset()")
+	// log.Println("Calling Camera2D.SetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1096,7 +1096,7 @@ func (o *Camera2D) SetVOffset(ofs gdnative.Real) {
 	Args: [{ false zoom Vector2}], Returns: void
 */
 func (o *Camera2D) SetZoom(zoom gdnative.Vector2) {
-	//log.Println("Calling Camera2D.SetZoom()")
+	// log.Println("Calling Camera2D.SetZoom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -52,7 +52,7 @@ func (o *VisibilityEnabler2D) BaseClass() string {
 	Args: [{ false arg0 Node}], Returns: void
 */
 func (o *VisibilityEnabler2D) X_NodeRemoved(arg0 NodeImplementer) {
-	//log.Println("Calling VisibilityEnabler2D.X_NodeRemoved()")
+	// log.Println("Calling VisibilityEnabler2D.X_NodeRemoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -73,7 +73,7 @@ func (o *VisibilityEnabler2D) X_NodeRemoved(arg0 NodeImplementer) {
 	Args: [{ false enabler int}], Returns: bool
 */
 func (o *VisibilityEnabler2D) IsEnablerEnabled(enabler gdnative.Int) gdnative.Bool {
-	//log.Println("Calling VisibilityEnabler2D.IsEnablerEnabled()")
+	// log.Println("Calling VisibilityEnabler2D.IsEnablerEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -97,7 +97,7 @@ func (o *VisibilityEnabler2D) IsEnablerEnabled(enabler gdnative.Int) gdnative.Bo
 	Args: [{ false enabler int} { false enabled bool}], Returns: void
 */
 func (o *VisibilityEnabler2D) SetEnabler(enabler gdnative.Int, enabled gdnative.Bool) {
-	//log.Println("Calling VisibilityEnabler2D.SetEnabler()")
+	// log.Println("Calling VisibilityEnabler2D.SetEnabler()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

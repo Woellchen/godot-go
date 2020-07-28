@@ -39,7 +39,7 @@ func (o *PhysicsBody2D) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *PhysicsBody2D) X_GetLayers() gdnative.Int {
-	//log.Println("Calling PhysicsBody2D.X_GetLayers()")
+	// log.Println("Calling PhysicsBody2D.X_GetLayers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PhysicsBody2D) X_GetLayers() gdnative.Int {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *PhysicsBody2D) X_SetLayers(mask gdnative.Int) {
-	//log.Println("Calling PhysicsBody2D.X_SetLayers()")
+	// log.Println("Calling PhysicsBody2D.X_SetLayers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *PhysicsBody2D) X_SetLayers(mask gdnative.Int) {
 	Args: [{ false body Node}], Returns: void
 */
 func (o *PhysicsBody2D) AddCollisionExceptionWith(body NodeImplementer) {
-	//log.Println("Calling PhysicsBody2D.AddCollisionExceptionWith()")
+	// log.Println("Calling PhysicsBody2D.AddCollisionExceptionWith()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *PhysicsBody2D) AddCollisionExceptionWith(body NodeImplementer) {
 	Args: [], Returns: Array
 */
 func (o *PhysicsBody2D) GetCollisionExceptions() gdnative.Array {
-	//log.Println("Calling PhysicsBody2D.GetCollisionExceptions()")
+	// log.Println("Calling PhysicsBody2D.GetCollisionExceptions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -127,7 +127,7 @@ func (o *PhysicsBody2D) GetCollisionExceptions() gdnative.Array {
 	Args: [], Returns: int
 */
 func (o *PhysicsBody2D) GetCollisionLayer() gdnative.Int {
-	//log.Println("Calling PhysicsBody2D.GetCollisionLayer()")
+	// log.Println("Calling PhysicsBody2D.GetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *PhysicsBody2D) GetCollisionLayer() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *PhysicsBody2D) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling PhysicsBody2D.GetCollisionLayerBit()")
+	// log.Println("Calling PhysicsBody2D.GetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -174,7 +174,7 @@ func (o *PhysicsBody2D) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *PhysicsBody2D) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling PhysicsBody2D.GetCollisionMask()")
+	// log.Println("Calling PhysicsBody2D.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -197,7 +197,7 @@ func (o *PhysicsBody2D) GetCollisionMask() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *PhysicsBody2D) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling PhysicsBody2D.GetCollisionMaskBit()")
+	// log.Println("Calling PhysicsBody2D.GetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -221,7 +221,7 @@ func (o *PhysicsBody2D) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 	Args: [{ false body Node}], Returns: void
 */
 func (o *PhysicsBody2D) RemoveCollisionExceptionWith(body NodeImplementer) {
-	//log.Println("Calling PhysicsBody2D.RemoveCollisionExceptionWith()")
+	// log.Println("Calling PhysicsBody2D.RemoveCollisionExceptionWith()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -242,7 +242,7 @@ func (o *PhysicsBody2D) RemoveCollisionExceptionWith(body NodeImplementer) {
 	Args: [{ false layer int}], Returns: void
 */
 func (o *PhysicsBody2D) SetCollisionLayer(layer gdnative.Int) {
-	//log.Println("Calling PhysicsBody2D.SetCollisionLayer()")
+	// log.Println("Calling PhysicsBody2D.SetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -263,7 +263,7 @@ func (o *PhysicsBody2D) SetCollisionLayer(layer gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *PhysicsBody2D) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling PhysicsBody2D.SetCollisionLayerBit()")
+	// log.Println("Calling PhysicsBody2D.SetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -285,7 +285,7 @@ func (o *PhysicsBody2D) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bo
 	Args: [{ false mask int}], Returns: void
 */
 func (o *PhysicsBody2D) SetCollisionMask(mask gdnative.Int) {
-	//log.Println("Calling PhysicsBody2D.SetCollisionMask()")
+	// log.Println("Calling PhysicsBody2D.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -306,7 +306,7 @@ func (o *PhysicsBody2D) SetCollisionMask(mask gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *PhysicsBody2D) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling PhysicsBody2D.SetCollisionMaskBit()")
+	// log.Println("Calling PhysicsBody2D.SetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

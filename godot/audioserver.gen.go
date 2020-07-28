@@ -72,7 +72,7 @@ func (o *audioServer) BaseClass() string {
 */
 func (o *audioServer) AddBus(atPosition gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.AddBus()")
+	// log.Println("Calling AudioServer.AddBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -94,7 +94,7 @@ func (o *audioServer) AddBus(atPosition gdnative.Int) {
 */
 func (o *audioServer) AddBusEffect(busIdx gdnative.Int, effect AudioEffectImplementer, atPosition gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.AddBusEffect()")
+	// log.Println("Calling AudioServer.AddBusEffect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -118,7 +118,7 @@ func (o *audioServer) AddBusEffect(busIdx gdnative.Int, effect AudioEffectImplem
 */
 func (o *audioServer) CaptureGetDevice() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.CaptureGetDevice()")
+	// log.Println("Calling AudioServer.CaptureGetDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *audioServer) CaptureGetDevice() gdnative.String {
 */
 func (o *audioServer) CaptureGetDeviceList() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.CaptureGetDeviceList()")
+	// log.Println("Calling AudioServer.CaptureGetDeviceList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -166,7 +166,7 @@ func (o *audioServer) CaptureGetDeviceList() gdnative.Array {
 */
 func (o *audioServer) CaptureSetDevice(name gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.CaptureSetDevice()")
+	// log.Println("Calling AudioServer.CaptureSetDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -188,7 +188,7 @@ func (o *audioServer) CaptureSetDevice(name gdnative.String) {
 */
 func (o *audioServer) GenerateBusLayout() AudioBusLayoutImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GenerateBusLayout()")
+	// log.Println("Calling AudioServer.GenerateBusLayout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -226,7 +226,7 @@ func (o *audioServer) GenerateBusLayout() AudioBusLayoutImplementer {
 */
 func (o *audioServer) GetBusChannels(busIdx gdnative.Int) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusChannels()")
+	// log.Println("Calling AudioServer.GetBusChannels()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -251,7 +251,7 @@ func (o *audioServer) GetBusChannels(busIdx gdnative.Int) gdnative.Int {
 */
 func (o *audioServer) GetBusCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusCount()")
+	// log.Println("Calling AudioServer.GetBusCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -275,7 +275,7 @@ func (o *audioServer) GetBusCount() gdnative.Int {
 */
 func (o *audioServer) GetBusEffect(busIdx gdnative.Int, effectIdx gdnative.Int) AudioEffectImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusEffect()")
+	// log.Println("Calling AudioServer.GetBusEffect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -315,7 +315,7 @@ func (o *audioServer) GetBusEffect(busIdx gdnative.Int, effectIdx gdnative.Int) 
 */
 func (o *audioServer) GetBusEffectCount(busIdx gdnative.Int) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusEffectCount()")
+	// log.Println("Calling AudioServer.GetBusEffectCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -340,7 +340,7 @@ func (o *audioServer) GetBusEffectCount(busIdx gdnative.Int) gdnative.Int {
 */
 func (o *audioServer) GetBusEffectInstance(busIdx gdnative.Int, effectIdx gdnative.Int, channel gdnative.Int) AudioEffectInstanceImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusEffectInstance()")
+	// log.Println("Calling AudioServer.GetBusEffectInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -381,7 +381,7 @@ func (o *audioServer) GetBusEffectInstance(busIdx gdnative.Int, effectIdx gdnati
 */
 func (o *audioServer) GetBusIndex(busName gdnative.String) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusIndex()")
+	// log.Println("Calling AudioServer.GetBusIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -406,7 +406,7 @@ func (o *audioServer) GetBusIndex(busName gdnative.String) gdnative.Int {
 */
 func (o *audioServer) GetBusName(busIdx gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusName()")
+	// log.Println("Calling AudioServer.GetBusName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -431,7 +431,7 @@ func (o *audioServer) GetBusName(busIdx gdnative.Int) gdnative.String {
 */
 func (o *audioServer) GetBusPeakVolumeLeftDb(busIdx gdnative.Int, channel gdnative.Int) gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusPeakVolumeLeftDb()")
+	// log.Println("Calling AudioServer.GetBusPeakVolumeLeftDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -457,7 +457,7 @@ func (o *audioServer) GetBusPeakVolumeLeftDb(busIdx gdnative.Int, channel gdnati
 */
 func (o *audioServer) GetBusPeakVolumeRightDb(busIdx gdnative.Int, channel gdnative.Int) gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusPeakVolumeRightDb()")
+	// log.Println("Calling AudioServer.GetBusPeakVolumeRightDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -483,7 +483,7 @@ func (o *audioServer) GetBusPeakVolumeRightDb(busIdx gdnative.Int, channel gdnat
 */
 func (o *audioServer) GetBusSend(busIdx gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusSend()")
+	// log.Println("Calling AudioServer.GetBusSend()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -508,7 +508,7 @@ func (o *audioServer) GetBusSend(busIdx gdnative.Int) gdnative.String {
 */
 func (o *audioServer) GetBusVolumeDb(busIdx gdnative.Int) gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetBusVolumeDb()")
+	// log.Println("Calling AudioServer.GetBusVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -533,7 +533,7 @@ func (o *audioServer) GetBusVolumeDb(busIdx gdnative.Int) gdnative.Real {
 */
 func (o *audioServer) GetDevice() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetDevice()")
+	// log.Println("Calling AudioServer.GetDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -557,7 +557,7 @@ func (o *audioServer) GetDevice() gdnative.String {
 */
 func (o *audioServer) GetDeviceList() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetDeviceList()")
+	// log.Println("Calling AudioServer.GetDeviceList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -581,7 +581,7 @@ func (o *audioServer) GetDeviceList() gdnative.Array {
 */
 func (o *audioServer) GetGlobalRateScale() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetGlobalRateScale()")
+	// log.Println("Calling AudioServer.GetGlobalRateScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -605,7 +605,7 @@ func (o *audioServer) GetGlobalRateScale() gdnative.Real {
 */
 func (o *audioServer) GetMixRate() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetMixRate()")
+	// log.Println("Calling AudioServer.GetMixRate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -629,7 +629,7 @@ func (o *audioServer) GetMixRate() gdnative.Real {
 */
 func (o *audioServer) GetOutputLatency() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetOutputLatency()")
+	// log.Println("Calling AudioServer.GetOutputLatency()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -653,7 +653,7 @@ func (o *audioServer) GetOutputLatency() gdnative.Real {
 */
 func (o *audioServer) GetSpeakerMode() AudioServerSpeakerMode {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetSpeakerMode()")
+	// log.Println("Calling AudioServer.GetSpeakerMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -677,7 +677,7 @@ func (o *audioServer) GetSpeakerMode() AudioServerSpeakerMode {
 */
 func (o *audioServer) GetTimeSinceLastMix() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetTimeSinceLastMix()")
+	// log.Println("Calling AudioServer.GetTimeSinceLastMix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -701,7 +701,7 @@ func (o *audioServer) GetTimeSinceLastMix() gdnative.Real {
 */
 func (o *audioServer) GetTimeToNextMix() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.GetTimeToNextMix()")
+	// log.Println("Calling AudioServer.GetTimeToNextMix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -725,7 +725,7 @@ func (o *audioServer) GetTimeToNextMix() gdnative.Real {
 */
 func (o *audioServer) IsBusBypassingEffects(busIdx gdnative.Int) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.IsBusBypassingEffects()")
+	// log.Println("Calling AudioServer.IsBusBypassingEffects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -750,7 +750,7 @@ func (o *audioServer) IsBusBypassingEffects(busIdx gdnative.Int) gdnative.Bool {
 */
 func (o *audioServer) IsBusEffectEnabled(busIdx gdnative.Int, effectIdx gdnative.Int) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.IsBusEffectEnabled()")
+	// log.Println("Calling AudioServer.IsBusEffectEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -776,7 +776,7 @@ func (o *audioServer) IsBusEffectEnabled(busIdx gdnative.Int, effectIdx gdnative
 */
 func (o *audioServer) IsBusMute(busIdx gdnative.Int) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.IsBusMute()")
+	// log.Println("Calling AudioServer.IsBusMute()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -801,7 +801,7 @@ func (o *audioServer) IsBusMute(busIdx gdnative.Int) gdnative.Bool {
 */
 func (o *audioServer) IsBusSolo(busIdx gdnative.Int) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.IsBusSolo()")
+	// log.Println("Calling AudioServer.IsBusSolo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -826,7 +826,7 @@ func (o *audioServer) IsBusSolo(busIdx gdnative.Int) gdnative.Bool {
 */
 func (o *audioServer) Lock() {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.Lock()")
+	// log.Println("Calling AudioServer.Lock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -847,7 +847,7 @@ func (o *audioServer) Lock() {
 */
 func (o *audioServer) MoveBus(index gdnative.Int, toIndex gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.MoveBus()")
+	// log.Println("Calling AudioServer.MoveBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -870,7 +870,7 @@ func (o *audioServer) MoveBus(index gdnative.Int, toIndex gdnative.Int) {
 */
 func (o *audioServer) RemoveBus(index gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.RemoveBus()")
+	// log.Println("Calling AudioServer.RemoveBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -892,7 +892,7 @@ func (o *audioServer) RemoveBus(index gdnative.Int) {
 */
 func (o *audioServer) RemoveBusEffect(busIdx gdnative.Int, effectIdx gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.RemoveBusEffect()")
+	// log.Println("Calling AudioServer.RemoveBusEffect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -915,7 +915,7 @@ func (o *audioServer) RemoveBusEffect(busIdx gdnative.Int, effectIdx gdnative.In
 */
 func (o *audioServer) SetBusBypassEffects(busIdx gdnative.Int, enable gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusBypassEffects()")
+	// log.Println("Calling AudioServer.SetBusBypassEffects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -938,7 +938,7 @@ func (o *audioServer) SetBusBypassEffects(busIdx gdnative.Int, enable gdnative.B
 */
 func (o *audioServer) SetBusCount(amount gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusCount()")
+	// log.Println("Calling AudioServer.SetBusCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -960,7 +960,7 @@ func (o *audioServer) SetBusCount(amount gdnative.Int) {
 */
 func (o *audioServer) SetBusEffectEnabled(busIdx gdnative.Int, effectIdx gdnative.Int, enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusEffectEnabled()")
+	// log.Println("Calling AudioServer.SetBusEffectEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -984,7 +984,7 @@ func (o *audioServer) SetBusEffectEnabled(busIdx gdnative.Int, effectIdx gdnativ
 */
 func (o *audioServer) SetBusLayout(busLayout AudioBusLayoutImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusLayout()")
+	// log.Println("Calling AudioServer.SetBusLayout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1006,7 +1006,7 @@ func (o *audioServer) SetBusLayout(busLayout AudioBusLayoutImplementer) {
 */
 func (o *audioServer) SetBusMute(busIdx gdnative.Int, enable gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusMute()")
+	// log.Println("Calling AudioServer.SetBusMute()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1029,7 +1029,7 @@ func (o *audioServer) SetBusMute(busIdx gdnative.Int, enable gdnative.Bool) {
 */
 func (o *audioServer) SetBusName(busIdx gdnative.Int, name gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusName()")
+	// log.Println("Calling AudioServer.SetBusName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1052,7 +1052,7 @@ func (o *audioServer) SetBusName(busIdx gdnative.Int, name gdnative.String) {
 */
 func (o *audioServer) SetBusSend(busIdx gdnative.Int, send gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusSend()")
+	// log.Println("Calling AudioServer.SetBusSend()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1075,7 +1075,7 @@ func (o *audioServer) SetBusSend(busIdx gdnative.Int, send gdnative.String) {
 */
 func (o *audioServer) SetBusSolo(busIdx gdnative.Int, enable gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusSolo()")
+	// log.Println("Calling AudioServer.SetBusSolo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1098,7 +1098,7 @@ func (o *audioServer) SetBusSolo(busIdx gdnative.Int, enable gdnative.Bool) {
 */
 func (o *audioServer) SetBusVolumeDb(busIdx gdnative.Int, volumeDb gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetBusVolumeDb()")
+	// log.Println("Calling AudioServer.SetBusVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1121,7 +1121,7 @@ func (o *audioServer) SetBusVolumeDb(busIdx gdnative.Int, volumeDb gdnative.Real
 */
 func (o *audioServer) SetDevice(device gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetDevice()")
+	// log.Println("Calling AudioServer.SetDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1143,7 +1143,7 @@ func (o *audioServer) SetDevice(device gdnative.String) {
 */
 func (o *audioServer) SetGlobalRateScale(scale gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SetGlobalRateScale()")
+	// log.Println("Calling AudioServer.SetGlobalRateScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1165,7 +1165,7 @@ func (o *audioServer) SetGlobalRateScale(scale gdnative.Real) {
 */
 func (o *audioServer) SwapBusEffects(busIdx gdnative.Int, effectIdx gdnative.Int, byEffectIdx gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.SwapBusEffects()")
+	// log.Println("Calling AudioServer.SwapBusEffects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1189,7 +1189,7 @@ func (o *audioServer) SwapBusEffects(busIdx gdnative.Int, effectIdx gdnative.Int
 */
 func (o *audioServer) Unlock() {
 	o.ensureSingleton()
-	//log.Println("Calling AudioServer.Unlock()")
+	// log.Println("Calling AudioServer.Unlock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

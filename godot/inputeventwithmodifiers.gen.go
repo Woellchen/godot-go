@@ -39,7 +39,7 @@ func (o *InputEventWithModifiers) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *InputEventWithModifiers) GetAlt() gdnative.Bool {
-	//log.Println("Calling InputEventWithModifiers.GetAlt()")
+	// log.Println("Calling InputEventWithModifiers.GetAlt()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventWithModifiers) GetAlt() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *InputEventWithModifiers) GetCommand() gdnative.Bool {
-	//log.Println("Calling InputEventWithModifiers.GetCommand()")
+	// log.Println("Calling InputEventWithModifiers.GetCommand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventWithModifiers) GetCommand() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *InputEventWithModifiers) GetControl() gdnative.Bool {
-	//log.Println("Calling InputEventWithModifiers.GetControl()")
+	// log.Println("Calling InputEventWithModifiers.GetControl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InputEventWithModifiers) GetControl() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *InputEventWithModifiers) GetMetakey() gdnative.Bool {
-	//log.Println("Calling InputEventWithModifiers.GetMetakey()")
+	// log.Println("Calling InputEventWithModifiers.GetMetakey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *InputEventWithModifiers) GetMetakey() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *InputEventWithModifiers) GetShift() gdnative.Bool {
-	//log.Println("Calling InputEventWithModifiers.GetShift()")
+	// log.Println("Calling InputEventWithModifiers.GetShift()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *InputEventWithModifiers) GetShift() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *InputEventWithModifiers) SetAlt(enable gdnative.Bool) {
-	//log.Println("Calling InputEventWithModifiers.SetAlt()")
+	// log.Println("Calling InputEventWithModifiers.SetAlt()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *InputEventWithModifiers) SetAlt(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *InputEventWithModifiers) SetCommand(enable gdnative.Bool) {
-	//log.Println("Calling InputEventWithModifiers.SetCommand()")
+	// log.Println("Calling InputEventWithModifiers.SetCommand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -196,7 +196,7 @@ func (o *InputEventWithModifiers) SetCommand(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *InputEventWithModifiers) SetControl(enable gdnative.Bool) {
-	//log.Println("Calling InputEventWithModifiers.SetControl()")
+	// log.Println("Calling InputEventWithModifiers.SetControl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *InputEventWithModifiers) SetControl(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *InputEventWithModifiers) SetMetakey(enable gdnative.Bool) {
-	//log.Println("Calling InputEventWithModifiers.SetMetakey()")
+	// log.Println("Calling InputEventWithModifiers.SetMetakey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *InputEventWithModifiers) SetMetakey(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *InputEventWithModifiers) SetShift(enable gdnative.Bool) {
-	//log.Println("Calling InputEventWithModifiers.SetShift()")
+	// log.Println("Calling InputEventWithModifiers.SetShift()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

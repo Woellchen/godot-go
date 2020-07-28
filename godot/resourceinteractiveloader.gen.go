@@ -39,7 +39,7 @@ func (o *ResourceInteractiveLoader) BaseClass() string {
 	Args: [], Returns: Resource
 */
 func (o *ResourceInteractiveLoader) GetResource() ResourceImplementer {
-	//log.Println("Calling ResourceInteractiveLoader.GetResource()")
+	// log.Println("Calling ResourceInteractiveLoader.GetResource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *ResourceInteractiveLoader) GetResource() ResourceImplementer {
 	Args: [], Returns: int
 */
 func (o *ResourceInteractiveLoader) GetStage() gdnative.Int {
-	//log.Println("Calling ResourceInteractiveLoader.GetStage()")
+	// log.Println("Calling ResourceInteractiveLoader.GetStage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *ResourceInteractiveLoader) GetStage() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *ResourceInteractiveLoader) GetStageCount() gdnative.Int {
-	//log.Println("Calling ResourceInteractiveLoader.GetStageCount()")
+	// log.Println("Calling ResourceInteractiveLoader.GetStageCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *ResourceInteractiveLoader) GetStageCount() gdnative.Int {
 	Args: [], Returns: enum.Error
 */
 func (o *ResourceInteractiveLoader) Poll() gdnative.Error {
-	//log.Println("Calling ResourceInteractiveLoader.Poll()")
+	// log.Println("Calling ResourceInteractiveLoader.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *ResourceInteractiveLoader) Poll() gdnative.Error {
 	Args: [], Returns: enum.Error
 */
 func (o *ResourceInteractiveLoader) Wait() gdnative.Error {
-	//log.Println("Calling ResourceInteractiveLoader.Wait()")
+	// log.Println("Calling ResourceInteractiveLoader.Wait()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

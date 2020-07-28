@@ -54,7 +54,7 @@ func (o *TextureProgress) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *TextureProgress) GetFillDegrees() gdnative.Real {
-	//log.Println("Calling TextureProgress.GetFillDegrees()")
+	// log.Println("Calling TextureProgress.GetFillDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -77,7 +77,7 @@ func (o *TextureProgress) GetFillDegrees() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *TextureProgress) GetFillMode() gdnative.Int {
-	//log.Println("Calling TextureProgress.GetFillMode()")
+	// log.Println("Calling TextureProgress.GetFillMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -100,7 +100,7 @@ func (o *TextureProgress) GetFillMode() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *TextureProgress) GetNinePatchStretch() gdnative.Bool {
-	//log.Println("Calling TextureProgress.GetNinePatchStretch()")
+	// log.Println("Calling TextureProgress.GetNinePatchStretch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -123,7 +123,7 @@ func (o *TextureProgress) GetNinePatchStretch() gdnative.Bool {
 	Args: [], Returns: Texture
 */
 func (o *TextureProgress) GetOverTexture() TextureImplementer {
-	//log.Println("Calling TextureProgress.GetOverTexture()")
+	// log.Println("Calling TextureProgress.GetOverTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -160,7 +160,7 @@ func (o *TextureProgress) GetOverTexture() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TextureProgress) GetProgressTexture() TextureImplementer {
-	//log.Println("Calling TextureProgress.GetProgressTexture()")
+	// log.Println("Calling TextureProgress.GetProgressTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -197,7 +197,7 @@ func (o *TextureProgress) GetProgressTexture() TextureImplementer {
 	Args: [], Returns: Vector2
 */
 func (o *TextureProgress) GetRadialCenterOffset() gdnative.Vector2 {
-	//log.Println("Calling TextureProgress.GetRadialCenterOffset()")
+	// log.Println("Calling TextureProgress.GetRadialCenterOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -220,7 +220,7 @@ func (o *TextureProgress) GetRadialCenterOffset() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *TextureProgress) GetRadialInitialAngle() gdnative.Real {
-	//log.Println("Calling TextureProgress.GetRadialInitialAngle()")
+	// log.Println("Calling TextureProgress.GetRadialInitialAngle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -243,7 +243,7 @@ func (o *TextureProgress) GetRadialInitialAngle() gdnative.Real {
 	Args: [{ false margin int}], Returns: int
 */
 func (o *TextureProgress) GetStretchMargin(margin gdnative.Int) gdnative.Int {
-	//log.Println("Calling TextureProgress.GetStretchMargin()")
+	// log.Println("Calling TextureProgress.GetStretchMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -267,7 +267,7 @@ func (o *TextureProgress) GetStretchMargin(margin gdnative.Int) gdnative.Int {
 	Args: [], Returns: Color
 */
 func (o *TextureProgress) GetTintOver() gdnative.Color {
-	//log.Println("Calling TextureProgress.GetTintOver()")
+	// log.Println("Calling TextureProgress.GetTintOver()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -290,7 +290,7 @@ func (o *TextureProgress) GetTintOver() gdnative.Color {
 	Args: [], Returns: Color
 */
 func (o *TextureProgress) GetTintProgress() gdnative.Color {
-	//log.Println("Calling TextureProgress.GetTintProgress()")
+	// log.Println("Calling TextureProgress.GetTintProgress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -313,7 +313,7 @@ func (o *TextureProgress) GetTintProgress() gdnative.Color {
 	Args: [], Returns: Color
 */
 func (o *TextureProgress) GetTintUnder() gdnative.Color {
-	//log.Println("Calling TextureProgress.GetTintUnder()")
+	// log.Println("Calling TextureProgress.GetTintUnder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -336,7 +336,7 @@ func (o *TextureProgress) GetTintUnder() gdnative.Color {
 	Args: [], Returns: Texture
 */
 func (o *TextureProgress) GetUnderTexture() TextureImplementer {
-	//log.Println("Calling TextureProgress.GetUnderTexture()")
+	// log.Println("Calling TextureProgress.GetUnderTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -373,7 +373,7 @@ func (o *TextureProgress) GetUnderTexture() TextureImplementer {
 	Args: [{ false mode float}], Returns: void
 */
 func (o *TextureProgress) SetFillDegrees(mode gdnative.Real) {
-	//log.Println("Calling TextureProgress.SetFillDegrees()")
+	// log.Println("Calling TextureProgress.SetFillDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -394,7 +394,7 @@ func (o *TextureProgress) SetFillDegrees(mode gdnative.Real) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *TextureProgress) SetFillMode(mode gdnative.Int) {
-	//log.Println("Calling TextureProgress.SetFillMode()")
+	// log.Println("Calling TextureProgress.SetFillMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -415,7 +415,7 @@ func (o *TextureProgress) SetFillMode(mode gdnative.Int) {
 	Args: [{ false stretch bool}], Returns: void
 */
 func (o *TextureProgress) SetNinePatchStretch(stretch gdnative.Bool) {
-	//log.Println("Calling TextureProgress.SetNinePatchStretch()")
+	// log.Println("Calling TextureProgress.SetNinePatchStretch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -436,7 +436,7 @@ func (o *TextureProgress) SetNinePatchStretch(stretch gdnative.Bool) {
 	Args: [{ false tex Texture}], Returns: void
 */
 func (o *TextureProgress) SetOverTexture(tex TextureImplementer) {
-	//log.Println("Calling TextureProgress.SetOverTexture()")
+	// log.Println("Calling TextureProgress.SetOverTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -457,7 +457,7 @@ func (o *TextureProgress) SetOverTexture(tex TextureImplementer) {
 	Args: [{ false tex Texture}], Returns: void
 */
 func (o *TextureProgress) SetProgressTexture(tex TextureImplementer) {
-	//log.Println("Calling TextureProgress.SetProgressTexture()")
+	// log.Println("Calling TextureProgress.SetProgressTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -478,7 +478,7 @@ func (o *TextureProgress) SetProgressTexture(tex TextureImplementer) {
 	Args: [{ false mode Vector2}], Returns: void
 */
 func (o *TextureProgress) SetRadialCenterOffset(mode gdnative.Vector2) {
-	//log.Println("Calling TextureProgress.SetRadialCenterOffset()")
+	// log.Println("Calling TextureProgress.SetRadialCenterOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -499,7 +499,7 @@ func (o *TextureProgress) SetRadialCenterOffset(mode gdnative.Vector2) {
 	Args: [{ false mode float}], Returns: void
 */
 func (o *TextureProgress) SetRadialInitialAngle(mode gdnative.Real) {
-	//log.Println("Calling TextureProgress.SetRadialInitialAngle()")
+	// log.Println("Calling TextureProgress.SetRadialInitialAngle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -520,7 +520,7 @@ func (o *TextureProgress) SetRadialInitialAngle(mode gdnative.Real) {
 	Args: [{ false margin int} { false value int}], Returns: void
 */
 func (o *TextureProgress) SetStretchMargin(margin gdnative.Int, value gdnative.Int) {
-	//log.Println("Calling TextureProgress.SetStretchMargin()")
+	// log.Println("Calling TextureProgress.SetStretchMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -542,7 +542,7 @@ func (o *TextureProgress) SetStretchMargin(margin gdnative.Int, value gdnative.I
 	Args: [{ false tint Color}], Returns: void
 */
 func (o *TextureProgress) SetTintOver(tint gdnative.Color) {
-	//log.Println("Calling TextureProgress.SetTintOver()")
+	// log.Println("Calling TextureProgress.SetTintOver()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -563,7 +563,7 @@ func (o *TextureProgress) SetTintOver(tint gdnative.Color) {
 	Args: [{ false tint Color}], Returns: void
 */
 func (o *TextureProgress) SetTintProgress(tint gdnative.Color) {
-	//log.Println("Calling TextureProgress.SetTintProgress()")
+	// log.Println("Calling TextureProgress.SetTintProgress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -584,7 +584,7 @@ func (o *TextureProgress) SetTintProgress(tint gdnative.Color) {
 	Args: [{ false tint Color}], Returns: void
 */
 func (o *TextureProgress) SetTintUnder(tint gdnative.Color) {
-	//log.Println("Calling TextureProgress.SetTintUnder()")
+	// log.Println("Calling TextureProgress.SetTintUnder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -605,7 +605,7 @@ func (o *TextureProgress) SetTintUnder(tint gdnative.Color) {
 	Args: [{ false tex Texture}], Returns: void
 */
 func (o *TextureProgress) SetUnderTexture(tex TextureImplementer) {
-	//log.Println("Calling TextureProgress.SetUnderTexture()")
+	// log.Println("Calling TextureProgress.SetUnderTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *DTLSServer) BaseClass() string {
 	Args: [{ false key CryptoKey} { false certificate X509Certificate} {[Object:null] true chain X509Certificate}], Returns: enum.Error
 */
 func (o *DTLSServer) Setup(key CryptoKeyImplementer, certificate X509CertificateImplementer, chain X509CertificateImplementer) gdnative.Error {
-	//log.Println("Calling DTLSServer.Setup()")
+	// log.Println("Calling DTLSServer.Setup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -65,7 +65,7 @@ func (o *DTLSServer) Setup(key CryptoKeyImplementer, certificate X509Certificate
 	Args: [{ false udp_peer PacketPeerUDP}], Returns: PacketPeerDTLS
 */
 func (o *DTLSServer) TakeConnection(udpPeer PacketPeerUDPImplementer) PacketPeerDTLSImplementer {
-	//log.Println("Calling DTLSServer.TakeConnection()")
+	// log.Println("Calling DTLSServer.TakeConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

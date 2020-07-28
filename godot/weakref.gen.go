@@ -39,7 +39,7 @@ func (o *WeakRef) BaseClass() string {
 	Args: [], Returns: Variant
 */
 func (o *WeakRef) GetRef() gdnative.Variant {
-	//log.Println("Calling WeakRef.GetRef()")
+	// log.Println("Calling WeakRef.GetRef()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

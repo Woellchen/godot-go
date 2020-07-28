@@ -47,7 +47,7 @@ func (o *Particles2D) BaseClass() string {
 	Args: [], Returns: Rect2
 */
 func (o *Particles2D) CaptureRect() gdnative.Rect2 {
-	//log.Println("Calling Particles2D.CaptureRect()")
+	// log.Println("Calling Particles2D.CaptureRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -70,7 +70,7 @@ func (o *Particles2D) CaptureRect() gdnative.Rect2 {
 	Args: [], Returns: int
 */
 func (o *Particles2D) GetAmount() gdnative.Int {
-	//log.Println("Calling Particles2D.GetAmount()")
+	// log.Println("Calling Particles2D.GetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -93,7 +93,7 @@ func (o *Particles2D) GetAmount() gdnative.Int {
 	Args: [], Returns: enum.Particles2D::DrawOrder
 */
 func (o *Particles2D) GetDrawOrder() Particles2DDrawOrder {
-	//log.Println("Calling Particles2D.GetDrawOrder()")
+	// log.Println("Calling Particles2D.GetDrawOrder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *Particles2D) GetDrawOrder() Particles2DDrawOrder {
 	Args: [], Returns: float
 */
 func (o *Particles2D) GetExplosivenessRatio() gdnative.Real {
-	//log.Println("Calling Particles2D.GetExplosivenessRatio()")
+	// log.Println("Calling Particles2D.GetExplosivenessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *Particles2D) GetExplosivenessRatio() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *Particles2D) GetFixedFps() gdnative.Int {
-	//log.Println("Calling Particles2D.GetFixedFps()")
+	// log.Println("Calling Particles2D.GetFixedFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *Particles2D) GetFixedFps() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Particles2D) GetFractionalDelta() gdnative.Bool {
-	//log.Println("Calling Particles2D.GetFractionalDelta()")
+	// log.Println("Calling Particles2D.GetFractionalDelta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -185,7 +185,7 @@ func (o *Particles2D) GetFractionalDelta() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *Particles2D) GetLifetime() gdnative.Real {
-	//log.Println("Calling Particles2D.GetLifetime()")
+	// log.Println("Calling Particles2D.GetLifetime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -208,7 +208,7 @@ func (o *Particles2D) GetLifetime() gdnative.Real {
 	Args: [], Returns: Texture
 */
 func (o *Particles2D) GetNormalMap() TextureImplementer {
-	//log.Println("Calling Particles2D.GetNormalMap()")
+	// log.Println("Calling Particles2D.GetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -245,7 +245,7 @@ func (o *Particles2D) GetNormalMap() TextureImplementer {
 	Args: [], Returns: bool
 */
 func (o *Particles2D) GetOneShot() gdnative.Bool {
-	//log.Println("Calling Particles2D.GetOneShot()")
+	// log.Println("Calling Particles2D.GetOneShot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -268,7 +268,7 @@ func (o *Particles2D) GetOneShot() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *Particles2D) GetPreProcessTime() gdnative.Real {
-	//log.Println("Calling Particles2D.GetPreProcessTime()")
+	// log.Println("Calling Particles2D.GetPreProcessTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -291,7 +291,7 @@ func (o *Particles2D) GetPreProcessTime() gdnative.Real {
 	Args: [], Returns: Material
 */
 func (o *Particles2D) GetProcessMaterial() MaterialImplementer {
-	//log.Println("Calling Particles2D.GetProcessMaterial()")
+	// log.Println("Calling Particles2D.GetProcessMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -328,7 +328,7 @@ func (o *Particles2D) GetProcessMaterial() MaterialImplementer {
 	Args: [], Returns: float
 */
 func (o *Particles2D) GetRandomnessRatio() gdnative.Real {
-	//log.Println("Calling Particles2D.GetRandomnessRatio()")
+	// log.Println("Calling Particles2D.GetRandomnessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -351,7 +351,7 @@ func (o *Particles2D) GetRandomnessRatio() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Particles2D) GetSpeedScale() gdnative.Real {
-	//log.Println("Calling Particles2D.GetSpeedScale()")
+	// log.Println("Calling Particles2D.GetSpeedScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -374,7 +374,7 @@ func (o *Particles2D) GetSpeedScale() gdnative.Real {
 	Args: [], Returns: Texture
 */
 func (o *Particles2D) GetTexture() TextureImplementer {
-	//log.Println("Calling Particles2D.GetTexture()")
+	// log.Println("Calling Particles2D.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -411,7 +411,7 @@ func (o *Particles2D) GetTexture() TextureImplementer {
 	Args: [], Returns: bool
 */
 func (o *Particles2D) GetUseLocalCoordinates() gdnative.Bool {
-	//log.Println("Calling Particles2D.GetUseLocalCoordinates()")
+	// log.Println("Calling Particles2D.GetUseLocalCoordinates()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -434,7 +434,7 @@ func (o *Particles2D) GetUseLocalCoordinates() gdnative.Bool {
 	Args: [], Returns: Rect2
 */
 func (o *Particles2D) GetVisibilityRect() gdnative.Rect2 {
-	//log.Println("Calling Particles2D.GetVisibilityRect()")
+	// log.Println("Calling Particles2D.GetVisibilityRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -457,7 +457,7 @@ func (o *Particles2D) GetVisibilityRect() gdnative.Rect2 {
 	Args: [], Returns: bool
 */
 func (o *Particles2D) IsEmitting() gdnative.Bool {
-	//log.Println("Calling Particles2D.IsEmitting()")
+	// log.Println("Calling Particles2D.IsEmitting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -480,7 +480,7 @@ func (o *Particles2D) IsEmitting() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *Particles2D) Restart() {
-	//log.Println("Calling Particles2D.Restart()")
+	// log.Println("Calling Particles2D.Restart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -500,7 +500,7 @@ func (o *Particles2D) Restart() {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *Particles2D) SetAmount(amount gdnative.Int) {
-	//log.Println("Calling Particles2D.SetAmount()")
+	// log.Println("Calling Particles2D.SetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -521,7 +521,7 @@ func (o *Particles2D) SetAmount(amount gdnative.Int) {
 	Args: [{ false order int}], Returns: void
 */
 func (o *Particles2D) SetDrawOrder(order gdnative.Int) {
-	//log.Println("Calling Particles2D.SetDrawOrder()")
+	// log.Println("Calling Particles2D.SetDrawOrder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -542,7 +542,7 @@ func (o *Particles2D) SetDrawOrder(order gdnative.Int) {
 	Args: [{ false emitting bool}], Returns: void
 */
 func (o *Particles2D) SetEmitting(emitting gdnative.Bool) {
-	//log.Println("Calling Particles2D.SetEmitting()")
+	// log.Println("Calling Particles2D.SetEmitting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -563,7 +563,7 @@ func (o *Particles2D) SetEmitting(emitting gdnative.Bool) {
 	Args: [{ false ratio float}], Returns: void
 */
 func (o *Particles2D) SetExplosivenessRatio(ratio gdnative.Real) {
-	//log.Println("Calling Particles2D.SetExplosivenessRatio()")
+	// log.Println("Calling Particles2D.SetExplosivenessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -584,7 +584,7 @@ func (o *Particles2D) SetExplosivenessRatio(ratio gdnative.Real) {
 	Args: [{ false fps int}], Returns: void
 */
 func (o *Particles2D) SetFixedFps(fps gdnative.Int) {
-	//log.Println("Calling Particles2D.SetFixedFps()")
+	// log.Println("Calling Particles2D.SetFixedFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -605,7 +605,7 @@ func (o *Particles2D) SetFixedFps(fps gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Particles2D) SetFractionalDelta(enable gdnative.Bool) {
-	//log.Println("Calling Particles2D.SetFractionalDelta()")
+	// log.Println("Calling Particles2D.SetFractionalDelta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -626,7 +626,7 @@ func (o *Particles2D) SetFractionalDelta(enable gdnative.Bool) {
 	Args: [{ false secs float}], Returns: void
 */
 func (o *Particles2D) SetLifetime(secs gdnative.Real) {
-	//log.Println("Calling Particles2D.SetLifetime()")
+	// log.Println("Calling Particles2D.SetLifetime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -647,7 +647,7 @@ func (o *Particles2D) SetLifetime(secs gdnative.Real) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *Particles2D) SetNormalMap(texture TextureImplementer) {
-	//log.Println("Calling Particles2D.SetNormalMap()")
+	// log.Println("Calling Particles2D.SetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -668,7 +668,7 @@ func (o *Particles2D) SetNormalMap(texture TextureImplementer) {
 	Args: [{ false secs bool}], Returns: void
 */
 func (o *Particles2D) SetOneShot(secs gdnative.Bool) {
-	//log.Println("Calling Particles2D.SetOneShot()")
+	// log.Println("Calling Particles2D.SetOneShot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -689,7 +689,7 @@ func (o *Particles2D) SetOneShot(secs gdnative.Bool) {
 	Args: [{ false secs float}], Returns: void
 */
 func (o *Particles2D) SetPreProcessTime(secs gdnative.Real) {
-	//log.Println("Calling Particles2D.SetPreProcessTime()")
+	// log.Println("Calling Particles2D.SetPreProcessTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -710,7 +710,7 @@ func (o *Particles2D) SetPreProcessTime(secs gdnative.Real) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *Particles2D) SetProcessMaterial(material MaterialImplementer) {
-	//log.Println("Calling Particles2D.SetProcessMaterial()")
+	// log.Println("Calling Particles2D.SetProcessMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -731,7 +731,7 @@ func (o *Particles2D) SetProcessMaterial(material MaterialImplementer) {
 	Args: [{ false ratio float}], Returns: void
 */
 func (o *Particles2D) SetRandomnessRatio(ratio gdnative.Real) {
-	//log.Println("Calling Particles2D.SetRandomnessRatio()")
+	// log.Println("Calling Particles2D.SetRandomnessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -752,7 +752,7 @@ func (o *Particles2D) SetRandomnessRatio(ratio gdnative.Real) {
 	Args: [{ false scale float}], Returns: void
 */
 func (o *Particles2D) SetSpeedScale(scale gdnative.Real) {
-	//log.Println("Calling Particles2D.SetSpeedScale()")
+	// log.Println("Calling Particles2D.SetSpeedScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -773,7 +773,7 @@ func (o *Particles2D) SetSpeedScale(scale gdnative.Real) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *Particles2D) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling Particles2D.SetTexture()")
+	// log.Println("Calling Particles2D.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -794,7 +794,7 @@ func (o *Particles2D) SetTexture(texture TextureImplementer) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Particles2D) SetUseLocalCoordinates(enable gdnative.Bool) {
-	//log.Println("Calling Particles2D.SetUseLocalCoordinates()")
+	// log.Println("Calling Particles2D.SetUseLocalCoordinates()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -815,7 +815,7 @@ func (o *Particles2D) SetUseLocalCoordinates(enable gdnative.Bool) {
 	Args: [{ false visibility_rect Rect2}], Returns: void
 */
 func (o *Particles2D) SetVisibilityRect(visibilityRect gdnative.Rect2) {
-	//log.Println("Calling Particles2D.SetVisibilityRect()")
+	// log.Println("Calling Particles2D.SetVisibilityRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

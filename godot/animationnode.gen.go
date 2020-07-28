@@ -49,7 +49,7 @@ func (o *AnimationNode) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *AnimationNode) X_GetFilters() gdnative.Array {
-	//log.Println("Calling AnimationNode.X_GetFilters()")
+	// log.Println("Calling AnimationNode.X_GetFilters()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -72,7 +72,7 @@ func (o *AnimationNode) X_GetFilters() gdnative.Array {
 	Args: [{ false filters Array}], Returns: void
 */
 func (o *AnimationNode) X_SetFilters(filters gdnative.Array) {
-	//log.Println("Calling AnimationNode.X_SetFilters()")
+	// log.Println("Calling AnimationNode.X_SetFilters()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -93,7 +93,7 @@ func (o *AnimationNode) X_SetFilters(filters gdnative.Array) {
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNode) AddInput(name gdnative.String) {
-	//log.Println("Calling AnimationNode.AddInput()")
+	// log.Println("Calling AnimationNode.AddInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -114,7 +114,7 @@ func (o *AnimationNode) AddInput(name gdnative.String) {
 	Args: [{ false animation String} { false time float} { false delta float} { false seeked bool} { false blend float}], Returns: void
 */
 func (o *AnimationNode) BlendAnimation(animation gdnative.String, time gdnative.Real, delta gdnative.Real, seeked gdnative.Bool, blend gdnative.Real) {
-	//log.Println("Calling AnimationNode.BlendAnimation()")
+	// log.Println("Calling AnimationNode.BlendAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -139,7 +139,7 @@ func (o *AnimationNode) BlendAnimation(animation gdnative.String, time gdnative.
 	Args: [{ false input_index int} { false time float} { false seek bool} { false blend float} {0 true filter int} {True true optimize bool}], Returns: float
 */
 func (o *AnimationNode) BlendInput(inputIndex gdnative.Int, time gdnative.Real, seek gdnative.Bool, blend gdnative.Real, filter gdnative.Int, optimize gdnative.Bool) gdnative.Real {
-	//log.Println("Calling AnimationNode.BlendInput()")
+	// log.Println("Calling AnimationNode.BlendInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -168,7 +168,7 @@ func (o *AnimationNode) BlendInput(inputIndex gdnative.Int, time gdnative.Real, 
 	Args: [{ false name String} { false node AnimationNode} { false time float} { false seek bool} { false blend float} {0 true filter int} {True true optimize bool}], Returns: float
 */
 func (o *AnimationNode) BlendNode(name gdnative.String, node AnimationNodeImplementer, time gdnative.Real, seek gdnative.Bool, blend gdnative.Real, filter gdnative.Int, optimize gdnative.Bool) gdnative.Real {
-	//log.Println("Calling AnimationNode.BlendNode()")
+	// log.Println("Calling AnimationNode.BlendNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 7, 7)
@@ -198,7 +198,7 @@ func (o *AnimationNode) BlendNode(name gdnative.String, node AnimationNodeImplem
 	Args: [], Returns: String
 */
 func (o *AnimationNode) GetCaption() gdnative.String {
-	//log.Println("Calling AnimationNode.GetCaption()")
+	// log.Println("Calling AnimationNode.GetCaption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -221,7 +221,7 @@ func (o *AnimationNode) GetCaption() gdnative.String {
 	Args: [{ false name String}], Returns: Object
 */
 func (o *AnimationNode) GetChildByName(name gdnative.String) ObjectImplementer {
-	//log.Println("Calling AnimationNode.GetChildByName()")
+	// log.Println("Calling AnimationNode.GetChildByName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -259,7 +259,7 @@ func (o *AnimationNode) GetChildByName(name gdnative.String) ObjectImplementer {
 	Args: [], Returns: Dictionary
 */
 func (o *AnimationNode) GetChildNodes() gdnative.Dictionary {
-	//log.Println("Calling AnimationNode.GetChildNodes()")
+	// log.Println("Calling AnimationNode.GetChildNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -282,7 +282,7 @@ func (o *AnimationNode) GetChildNodes() gdnative.Dictionary {
 	Args: [], Returns: int
 */
 func (o *AnimationNode) GetInputCount() gdnative.Int {
-	//log.Println("Calling AnimationNode.GetInputCount()")
+	// log.Println("Calling AnimationNode.GetInputCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -305,7 +305,7 @@ func (o *AnimationNode) GetInputCount() gdnative.Int {
 	Args: [{ false input int}], Returns: String
 */
 func (o *AnimationNode) GetInputName(input gdnative.Int) gdnative.String {
-	//log.Println("Calling AnimationNode.GetInputName()")
+	// log.Println("Calling AnimationNode.GetInputName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -329,7 +329,7 @@ func (o *AnimationNode) GetInputName(input gdnative.Int) gdnative.String {
 	Args: [{ false name String}], Returns: Variant
 */
 func (o *AnimationNode) GetParameter(name gdnative.String) gdnative.Variant {
-	//log.Println("Calling AnimationNode.GetParameter()")
+	// log.Println("Calling AnimationNode.GetParameter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -353,7 +353,7 @@ func (o *AnimationNode) GetParameter(name gdnative.String) gdnative.Variant {
 	Args: [{ false name String}], Returns: Variant
 */
 func (o *AnimationNode) GetParameterDefaultValue(name gdnative.String) gdnative.Variant {
-	//log.Println("Calling AnimationNode.GetParameterDefaultValue()")
+	// log.Println("Calling AnimationNode.GetParameterDefaultValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -377,7 +377,7 @@ func (o *AnimationNode) GetParameterDefaultValue(name gdnative.String) gdnative.
 	Args: [], Returns: Array
 */
 func (o *AnimationNode) GetParameterList() gdnative.Array {
-	//log.Println("Calling AnimationNode.GetParameterList()")
+	// log.Println("Calling AnimationNode.GetParameterList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -400,7 +400,7 @@ func (o *AnimationNode) GetParameterList() gdnative.Array {
 	Args: [], Returns: String
 */
 func (o *AnimationNode) HasFilter() gdnative.String {
-	//log.Println("Calling AnimationNode.HasFilter()")
+	// log.Println("Calling AnimationNode.HasFilter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -423,7 +423,7 @@ func (o *AnimationNode) HasFilter() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *AnimationNode) IsFilterEnabled() gdnative.Bool {
-	//log.Println("Calling AnimationNode.IsFilterEnabled()")
+	// log.Println("Calling AnimationNode.IsFilterEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -446,7 +446,7 @@ func (o *AnimationNode) IsFilterEnabled() gdnative.Bool {
 	Args: [{ false path NodePath}], Returns: bool
 */
 func (o *AnimationNode) IsPathFiltered(path gdnative.NodePath) gdnative.Bool {
-	//log.Println("Calling AnimationNode.IsPathFiltered()")
+	// log.Println("Calling AnimationNode.IsPathFiltered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -470,7 +470,7 @@ func (o *AnimationNode) IsPathFiltered(path gdnative.NodePath) gdnative.Bool {
 	Args: [{ false time float} { false seek bool}], Returns: void
 */
 func (o *AnimationNode) Process(time gdnative.Real, seek gdnative.Bool) {
-	//log.Println("Calling AnimationNode.Process()")
+	// log.Println("Calling AnimationNode.Process()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -492,7 +492,7 @@ func (o *AnimationNode) Process(time gdnative.Real, seek gdnative.Bool) {
 	Args: [{ false index int}], Returns: void
 */
 func (o *AnimationNode) RemoveInput(index gdnative.Int) {
-	//log.Println("Calling AnimationNode.RemoveInput()")
+	// log.Println("Calling AnimationNode.RemoveInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -513,7 +513,7 @@ func (o *AnimationNode) RemoveInput(index gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AnimationNode) SetFilterEnabled(enable gdnative.Bool) {
-	//log.Println("Calling AnimationNode.SetFilterEnabled()")
+	// log.Println("Calling AnimationNode.SetFilterEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -534,7 +534,7 @@ func (o *AnimationNode) SetFilterEnabled(enable gdnative.Bool) {
 	Args: [{ false path NodePath} { false enable bool}], Returns: void
 */
 func (o *AnimationNode) SetFilterPath(path gdnative.NodePath, enable gdnative.Bool) {
-	//log.Println("Calling AnimationNode.SetFilterPath()")
+	// log.Println("Calling AnimationNode.SetFilterPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -556,7 +556,7 @@ func (o *AnimationNode) SetFilterPath(path gdnative.NodePath, enable gdnative.Bo
 	Args: [{ false name String} { false value Variant}], Returns: void
 */
 func (o *AnimationNode) SetParameter(name gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling AnimationNode.SetParameter()")
+	// log.Println("Calling AnimationNode.SetParameter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

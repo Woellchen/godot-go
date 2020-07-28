@@ -39,7 +39,7 @@ func (o *Expression) BaseClass() string {
 	Args: [{[] true inputs Array} {Null true base_instance Object} {True true show_error bool}], Returns: Variant
 */
 func (o *Expression) Execute(inputs gdnative.Array, baseInstance ObjectImplementer, showError gdnative.Bool) gdnative.Variant {
-	//log.Println("Calling Expression.Execute()")
+	// log.Println("Calling Expression.Execute()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -65,7 +65,7 @@ func (o *Expression) Execute(inputs gdnative.Array, baseInstance ObjectImplement
 	Args: [], Returns: String
 */
 func (o *Expression) GetErrorText() gdnative.String {
-	//log.Println("Calling Expression.GetErrorText()")
+	// log.Println("Calling Expression.GetErrorText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -88,7 +88,7 @@ func (o *Expression) GetErrorText() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *Expression) HasExecuteFailed() gdnative.Bool {
-	//log.Println("Calling Expression.HasExecuteFailed()")
+	// log.Println("Calling Expression.HasExecuteFailed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -111,7 +111,7 @@ func (o *Expression) HasExecuteFailed() gdnative.Bool {
 	Args: [{ false expression String} {[] true input_names PoolStringArray}], Returns: enum.Error
 */
 func (o *Expression) Parse(expression gdnative.String, inputNames gdnative.PoolStringArray) gdnative.Error {
-	//log.Println("Calling Expression.Parse()")
+	// log.Println("Calling Expression.Parse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

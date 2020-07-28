@@ -39,7 +39,7 @@ func (o *NavigationMeshInstance) BaseClass() string {
 	Args: [], Returns: NavigationMesh
 */
 func (o *NavigationMeshInstance) GetNavigationMesh() NavigationMeshImplementer {
-	//log.Println("Calling NavigationMeshInstance.GetNavigationMesh()")
+	// log.Println("Calling NavigationMeshInstance.GetNavigationMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *NavigationMeshInstance) GetNavigationMesh() NavigationMeshImplementer {
 	Args: [], Returns: bool
 */
 func (o *NavigationMeshInstance) IsEnabled() gdnative.Bool {
-	//log.Println("Calling NavigationMeshInstance.IsEnabled()")
+	// log.Println("Calling NavigationMeshInstance.IsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *NavigationMeshInstance) IsEnabled() gdnative.Bool {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *NavigationMeshInstance) SetEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling NavigationMeshInstance.SetEnabled()")
+	// log.Println("Calling NavigationMeshInstance.SetEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -120,7 +120,7 @@ func (o *NavigationMeshInstance) SetEnabled(enabled gdnative.Bool) {
 	Args: [{ false navmesh NavigationMesh}], Returns: void
 */
 func (o *NavigationMeshInstance) SetNavigationMesh(navmesh NavigationMeshImplementer) {
-	//log.Println("Calling NavigationMeshInstance.SetNavigationMesh()")
+	// log.Println("Calling NavigationMeshInstance.SetNavigationMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *GDScript) BaseClass() string {
 	Args: [], Returns: PoolByteArray
 */
 func (o *GDScript) GetAsByteCode() gdnative.PoolByteArray {
-	//log.Println("Calling GDScript.GetAsByteCode()")
+	// log.Println("Calling GDScript.GetAsByteCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -61,14 +61,14 @@ func (o *GDScript) GetAsByteCode() gdnative.PoolByteArray {
         Undocumented
 	Args: [], Returns: Variant
 */
-func (o *GDScript) New(args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling GDScript.New()")
+func (o *GDScript) New(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling GDScript.New()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 0+len(args), 0+len(args))
+	arguments := make([]gdnative.Variant, 0+len(args), 0+len(args))
 
 	for i, arg := range args {
-		ptrArguments[i+0] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+0] = arg
 	}
 
 	// Get the method bind
@@ -76,12 +76,9 @@ func (o *GDScript) New(args ...gdnative.Variant) gdnative.Variant {
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 // GDScriptImplementer is an interface that implements the methods
@@ -89,5 +86,5 @@ func (o *GDScript) New(args ...gdnative.Variant) gdnative.Variant {
 type GDScriptImplementer interface {
 	ScriptImplementer
 	GetAsByteCode() gdnative.PoolByteArray
-	New(args ...gdnative.Variant) gdnative.Variant
+	New(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 }

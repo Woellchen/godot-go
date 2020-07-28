@@ -38,14 +38,14 @@ func (o *GDScriptFunctionState) BaseClass() string {
         Undocumented
 	Args: [], Returns: Variant
 */
-func (o *GDScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling GDScriptFunctionState.X_SignalCallback()")
+func (o *GDScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling GDScriptFunctionState.X_SignalCallback()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 0+len(args), 0+len(args))
+	arguments := make([]gdnative.Variant, 0+len(args), 0+len(args))
 
 	for i, arg := range args {
-		ptrArguments[i+0] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+0] = arg
 	}
 
 	// Get the method bind
@@ -53,12 +53,9 @@ func (o *GDScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) gdnat
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -66,7 +63,7 @@ func (o *GDScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) gdnat
 	Args: [{False true extended_check bool}], Returns: bool
 */
 func (o *GDScriptFunctionState) IsValid(extendedCheck gdnative.Bool) gdnative.Bool {
-	//log.Println("Calling GDScriptFunctionState.IsValid()")
+	// log.Println("Calling GDScriptFunctionState.IsValid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -90,7 +87,7 @@ func (o *GDScriptFunctionState) IsValid(extendedCheck gdnative.Bool) gdnative.Bo
 	Args: [{Null true arg Variant}], Returns: Variant
 */
 func (o *GDScriptFunctionState) Resume(arg gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling GDScriptFunctionState.Resume()")
+	// log.Println("Calling GDScriptFunctionState.Resume()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -113,7 +110,7 @@ func (o *GDScriptFunctionState) Resume(arg gdnative.Variant) gdnative.Variant {
 // of the GDScriptFunctionState class.
 type GDScriptFunctionStateImplementer interface {
 	ReferenceImplementer
-	X_SignalCallback(args ...gdnative.Variant) gdnative.Variant
+	X_SignalCallback(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	IsValid(extendedCheck gdnative.Bool) gdnative.Bool
 	Resume(arg gdnative.Variant) gdnative.Variant
 }

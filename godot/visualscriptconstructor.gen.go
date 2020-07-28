@@ -39,7 +39,7 @@ func (o *VisualScriptConstructor) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *VisualScriptConstructor) GetConstructor() gdnative.Dictionary {
-	//log.Println("Calling VisualScriptConstructor.GetConstructor()")
+	// log.Println("Calling VisualScriptConstructor.GetConstructor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptConstructor) GetConstructor() gdnative.Dictionary {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptConstructor) GetConstructorType() gdnative.VariantType {
-	//log.Println("Calling VisualScriptConstructor.GetConstructorType()")
+	// log.Println("Calling VisualScriptConstructor.GetConstructorType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptConstructor) GetConstructorType() gdnative.VariantType {
 	Args: [{ false constructor Dictionary}], Returns: void
 */
 func (o *VisualScriptConstructor) SetConstructor(constructor gdnative.Dictionary) {
-	//log.Println("Calling VisualScriptConstructor.SetConstructor()")
+	// log.Println("Calling VisualScriptConstructor.SetConstructor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptConstructor) SetConstructor(constructor gdnative.Dictionary
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptConstructor) SetConstructorType(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptConstructor.SetConstructorType()")
+	// log.Println("Calling VisualScriptConstructor.SetConstructorType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

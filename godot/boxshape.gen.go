@@ -39,7 +39,7 @@ func (o *BoxShape) BaseClass() string {
 	Args: [], Returns: Vector3
 */
 func (o *BoxShape) GetExtents() gdnative.Vector3 {
-	//log.Println("Calling BoxShape.GetExtents()")
+	// log.Println("Calling BoxShape.GetExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *BoxShape) GetExtents() gdnative.Vector3 {
 	Args: [{ false extents Vector3}], Returns: void
 */
 func (o *BoxShape) SetExtents(extents gdnative.Vector3) {
-	//log.Println("Calling BoxShape.SetExtents()")
+	// log.Println("Calling BoxShape.SetExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

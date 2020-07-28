@@ -56,7 +56,7 @@ func (o *DirectionalLight) BaseClass() string {
 	Args: [], Returns: enum.DirectionalLight::ShadowDepthRange
 */
 func (o *DirectionalLight) GetShadowDepthRange() DirectionalLightShadowDepthRange {
-	//log.Println("Calling DirectionalLight.GetShadowDepthRange()")
+	// log.Println("Calling DirectionalLight.GetShadowDepthRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *DirectionalLight) GetShadowDepthRange() DirectionalLightShadowDepthRang
 	Args: [], Returns: enum.DirectionalLight::ShadowMode
 */
 func (o *DirectionalLight) GetShadowMode() DirectionalLightShadowMode {
-	//log.Println("Calling DirectionalLight.GetShadowMode()")
+	// log.Println("Calling DirectionalLight.GetShadowMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -102,7 +102,7 @@ func (o *DirectionalLight) GetShadowMode() DirectionalLightShadowMode {
 	Args: [], Returns: bool
 */
 func (o *DirectionalLight) IsBlendSplitsEnabled() gdnative.Bool {
-	//log.Println("Calling DirectionalLight.IsBlendSplitsEnabled()")
+	// log.Println("Calling DirectionalLight.IsBlendSplitsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -125,7 +125,7 @@ func (o *DirectionalLight) IsBlendSplitsEnabled() gdnative.Bool {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *DirectionalLight) SetBlendSplits(enabled gdnative.Bool) {
-	//log.Println("Calling DirectionalLight.SetBlendSplits()")
+	// log.Println("Calling DirectionalLight.SetBlendSplits()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +146,7 @@ func (o *DirectionalLight) SetBlendSplits(enabled gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *DirectionalLight) SetShadowDepthRange(mode gdnative.Int) {
-	//log.Println("Calling DirectionalLight.SetShadowDepthRange()")
+	// log.Println("Calling DirectionalLight.SetShadowDepthRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -167,7 +167,7 @@ func (o *DirectionalLight) SetShadowDepthRange(mode gdnative.Int) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *DirectionalLight) SetShadowMode(mode gdnative.Int) {
-	//log.Println("Calling DirectionalLight.SetShadowMode()")
+	// log.Println("Calling DirectionalLight.SetShadowMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

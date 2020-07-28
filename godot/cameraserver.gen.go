@@ -72,7 +72,7 @@ func (o *cameraServer) BaseClass() string {
 */
 func (o *cameraServer) AddFeed(feed CameraFeedImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling CameraServer.AddFeed()")
+	// log.Println("Calling CameraServer.AddFeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -94,7 +94,7 @@ func (o *cameraServer) AddFeed(feed CameraFeedImplementer) {
 */
 func (o *cameraServer) Feeds() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling CameraServer.Feeds()")
+	// log.Println("Calling CameraServer.Feeds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -118,7 +118,7 @@ func (o *cameraServer) Feeds() gdnative.Array {
 */
 func (o *cameraServer) GetFeed(index gdnative.Int) CameraFeedImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling CameraServer.GetFeed()")
+	// log.Println("Calling CameraServer.GetFeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -157,7 +157,7 @@ func (o *cameraServer) GetFeed(index gdnative.Int) CameraFeedImplementer {
 */
 func (o *cameraServer) GetFeedCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling CameraServer.GetFeedCount()")
+	// log.Println("Calling CameraServer.GetFeedCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -181,7 +181,7 @@ func (o *cameraServer) GetFeedCount() gdnative.Int {
 */
 func (o *cameraServer) RemoveFeed(feed CameraFeedImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling CameraServer.RemoveFeed()")
+	// log.Println("Calling CameraServer.RemoveFeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

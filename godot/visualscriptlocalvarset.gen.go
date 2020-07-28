@@ -39,7 +39,7 @@ func (o *VisualScriptLocalVarSet) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptLocalVarSet) GetVarName() gdnative.String {
-	//log.Println("Calling VisualScriptLocalVarSet.GetVarName()")
+	// log.Println("Calling VisualScriptLocalVarSet.GetVarName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptLocalVarSet) GetVarName() gdnative.String {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptLocalVarSet) GetVarType() gdnative.VariantType {
-	//log.Println("Calling VisualScriptLocalVarSet.GetVarType()")
+	// log.Println("Calling VisualScriptLocalVarSet.GetVarType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptLocalVarSet) GetVarType() gdnative.VariantType {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualScriptLocalVarSet) SetVarName(name gdnative.String) {
-	//log.Println("Calling VisualScriptLocalVarSet.SetVarName()")
+	// log.Println("Calling VisualScriptLocalVarSet.SetVarName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptLocalVarSet) SetVarName(name gdnative.String) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptLocalVarSet) SetVarType(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptLocalVarSet.SetVarType()")
+	// log.Println("Calling VisualScriptLocalVarSet.SetVarType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *RemoteTransform2D) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *RemoteTransform2D) ForceUpdateCache() {
-	//log.Println("Calling RemoteTransform2D.ForceUpdateCache()")
+	// log.Println("Calling RemoteTransform2D.ForceUpdateCache()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *RemoteTransform2D) ForceUpdateCache() {
 	Args: [], Returns: NodePath
 */
 func (o *RemoteTransform2D) GetRemoteNode() gdnative.NodePath {
-	//log.Println("Calling RemoteTransform2D.GetRemoteNode()")
+	// log.Println("Calling RemoteTransform2D.GetRemoteNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *RemoteTransform2D) GetRemoteNode() gdnative.NodePath {
 	Args: [], Returns: bool
 */
 func (o *RemoteTransform2D) GetUpdatePosition() gdnative.Bool {
-	//log.Println("Calling RemoteTransform2D.GetUpdatePosition()")
+	// log.Println("Calling RemoteTransform2D.GetUpdatePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *RemoteTransform2D) GetUpdatePosition() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RemoteTransform2D) GetUpdateRotation() gdnative.Bool {
-	//log.Println("Calling RemoteTransform2D.GetUpdateRotation()")
+	// log.Println("Calling RemoteTransform2D.GetUpdateRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *RemoteTransform2D) GetUpdateRotation() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RemoteTransform2D) GetUpdateScale() gdnative.Bool {
-	//log.Println("Calling RemoteTransform2D.GetUpdateScale()")
+	// log.Println("Calling RemoteTransform2D.GetUpdateScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *RemoteTransform2D) GetUpdateScale() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RemoteTransform2D) GetUseGlobalCoordinates() gdnative.Bool {
-	//log.Println("Calling RemoteTransform2D.GetUseGlobalCoordinates()")
+	// log.Println("Calling RemoteTransform2D.GetUseGlobalCoordinates()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -174,7 +174,7 @@ func (o *RemoteTransform2D) GetUseGlobalCoordinates() gdnative.Bool {
 	Args: [{ false path NodePath}], Returns: void
 */
 func (o *RemoteTransform2D) SetRemoteNode(path gdnative.NodePath) {
-	//log.Println("Calling RemoteTransform2D.SetRemoteNode()")
+	// log.Println("Calling RemoteTransform2D.SetRemoteNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -195,7 +195,7 @@ func (o *RemoteTransform2D) SetRemoteNode(path gdnative.NodePath) {
 	Args: [{ false update_remote_position bool}], Returns: void
 */
 func (o *RemoteTransform2D) SetUpdatePosition(updateRemotePosition gdnative.Bool) {
-	//log.Println("Calling RemoteTransform2D.SetUpdatePosition()")
+	// log.Println("Calling RemoteTransform2D.SetUpdatePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -216,7 +216,7 @@ func (o *RemoteTransform2D) SetUpdatePosition(updateRemotePosition gdnative.Bool
 	Args: [{ false update_remote_rotation bool}], Returns: void
 */
 func (o *RemoteTransform2D) SetUpdateRotation(updateRemoteRotation gdnative.Bool) {
-	//log.Println("Calling RemoteTransform2D.SetUpdateRotation()")
+	// log.Println("Calling RemoteTransform2D.SetUpdateRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -237,7 +237,7 @@ func (o *RemoteTransform2D) SetUpdateRotation(updateRemoteRotation gdnative.Bool
 	Args: [{ false update_remote_scale bool}], Returns: void
 */
 func (o *RemoteTransform2D) SetUpdateScale(updateRemoteScale gdnative.Bool) {
-	//log.Println("Calling RemoteTransform2D.SetUpdateScale()")
+	// log.Println("Calling RemoteTransform2D.SetUpdateScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -258,7 +258,7 @@ func (o *RemoteTransform2D) SetUpdateScale(updateRemoteScale gdnative.Bool) {
 	Args: [{ false use_global_coordinates bool}], Returns: void
 */
 func (o *RemoteTransform2D) SetUseGlobalCoordinates(useGlobalCoordinates gdnative.Bool) {
-	//log.Println("Calling RemoteTransform2D.SetUseGlobalCoordinates()")
+	// log.Println("Calling RemoteTransform2D.SetUseGlobalCoordinates()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -49,7 +49,7 @@ func (o *DynamicFont) BaseClass() string {
 	Args: [{ false data DynamicFontData}], Returns: void
 */
 func (o *DynamicFont) AddFallback(data DynamicFontDataImplementer) {
-	//log.Println("Calling DynamicFont.AddFallback()")
+	// log.Println("Calling DynamicFont.AddFallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -70,7 +70,7 @@ func (o *DynamicFont) AddFallback(data DynamicFontDataImplementer) {
 	Args: [{ false idx int}], Returns: DynamicFontData
 */
 func (o *DynamicFont) GetFallback(idx gdnative.Int) DynamicFontDataImplementer {
-	//log.Println("Calling DynamicFont.GetFallback()")
+	// log.Println("Calling DynamicFont.GetFallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -108,7 +108,7 @@ func (o *DynamicFont) GetFallback(idx gdnative.Int) DynamicFontDataImplementer {
 	Args: [], Returns: int
 */
 func (o *DynamicFont) GetFallbackCount() gdnative.Int {
-	//log.Println("Calling DynamicFont.GetFallbackCount()")
+	// log.Println("Calling DynamicFont.GetFallbackCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *DynamicFont) GetFallbackCount() gdnative.Int {
 	Args: [], Returns: DynamicFontData
 */
 func (o *DynamicFont) GetFontData() DynamicFontDataImplementer {
-	//log.Println("Calling DynamicFont.GetFontData()")
+	// log.Println("Calling DynamicFont.GetFontData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *DynamicFont) GetFontData() DynamicFontDataImplementer {
 	Args: [], Returns: Color
 */
 func (o *DynamicFont) GetOutlineColor() gdnative.Color {
-	//log.Println("Calling DynamicFont.GetOutlineColor()")
+	// log.Println("Calling DynamicFont.GetOutlineColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *DynamicFont) GetOutlineColor() gdnative.Color {
 	Args: [], Returns: int
 */
 func (o *DynamicFont) GetOutlineSize() gdnative.Int {
-	//log.Println("Calling DynamicFont.GetOutlineSize()")
+	// log.Println("Calling DynamicFont.GetOutlineSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -214,7 +214,7 @@ func (o *DynamicFont) GetOutlineSize() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *DynamicFont) GetSize() gdnative.Int {
-	//log.Println("Calling DynamicFont.GetSize()")
+	// log.Println("Calling DynamicFont.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -237,7 +237,7 @@ func (o *DynamicFont) GetSize() gdnative.Int {
 	Args: [{ false type int}], Returns: int
 */
 func (o *DynamicFont) GetSpacing(aType gdnative.Int) gdnative.Int {
-	//log.Println("Calling DynamicFont.GetSpacing()")
+	// log.Println("Calling DynamicFont.GetSpacing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -261,7 +261,7 @@ func (o *DynamicFont) GetSpacing(aType gdnative.Int) gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *DynamicFont) GetUseFilter() gdnative.Bool {
-	//log.Println("Calling DynamicFont.GetUseFilter()")
+	// log.Println("Calling DynamicFont.GetUseFilter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -284,7 +284,7 @@ func (o *DynamicFont) GetUseFilter() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *DynamicFont) GetUseMipmaps() gdnative.Bool {
-	//log.Println("Calling DynamicFont.GetUseMipmaps()")
+	// log.Println("Calling DynamicFont.GetUseMipmaps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -307,7 +307,7 @@ func (o *DynamicFont) GetUseMipmaps() gdnative.Bool {
 	Args: [{ false idx int}], Returns: void
 */
 func (o *DynamicFont) RemoveFallback(idx gdnative.Int) {
-	//log.Println("Calling DynamicFont.RemoveFallback()")
+	// log.Println("Calling DynamicFont.RemoveFallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *DynamicFont) RemoveFallback(idx gdnative.Int) {
 	Args: [{ false idx int} { false data DynamicFontData}], Returns: void
 */
 func (o *DynamicFont) SetFallback(idx gdnative.Int, data DynamicFontDataImplementer) {
-	//log.Println("Calling DynamicFont.SetFallback()")
+	// log.Println("Calling DynamicFont.SetFallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -350,7 +350,7 @@ func (o *DynamicFont) SetFallback(idx gdnative.Int, data DynamicFontDataImplemen
 	Args: [{ false data DynamicFontData}], Returns: void
 */
 func (o *DynamicFont) SetFontData(data DynamicFontDataImplementer) {
-	//log.Println("Calling DynamicFont.SetFontData()")
+	// log.Println("Calling DynamicFont.SetFontData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -371,7 +371,7 @@ func (o *DynamicFont) SetFontData(data DynamicFontDataImplementer) {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *DynamicFont) SetOutlineColor(color gdnative.Color) {
-	//log.Println("Calling DynamicFont.SetOutlineColor()")
+	// log.Println("Calling DynamicFont.SetOutlineColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -392,7 +392,7 @@ func (o *DynamicFont) SetOutlineColor(color gdnative.Color) {
 	Args: [{ false size int}], Returns: void
 */
 func (o *DynamicFont) SetOutlineSize(size gdnative.Int) {
-	//log.Println("Calling DynamicFont.SetOutlineSize()")
+	// log.Println("Calling DynamicFont.SetOutlineSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -413,7 +413,7 @@ func (o *DynamicFont) SetOutlineSize(size gdnative.Int) {
 	Args: [{ false data int}], Returns: void
 */
 func (o *DynamicFont) SetSize(data gdnative.Int) {
-	//log.Println("Calling DynamicFont.SetSize()")
+	// log.Println("Calling DynamicFont.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -434,7 +434,7 @@ func (o *DynamicFont) SetSize(data gdnative.Int) {
 	Args: [{ false type int} { false value int}], Returns: void
 */
 func (o *DynamicFont) SetSpacing(aType gdnative.Int, value gdnative.Int) {
-	//log.Println("Calling DynamicFont.SetSpacing()")
+	// log.Println("Calling DynamicFont.SetSpacing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -456,7 +456,7 @@ func (o *DynamicFont) SetSpacing(aType gdnative.Int, value gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *DynamicFont) SetUseFilter(enable gdnative.Bool) {
-	//log.Println("Calling DynamicFont.SetUseFilter()")
+	// log.Println("Calling DynamicFont.SetUseFilter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -477,7 +477,7 @@ func (o *DynamicFont) SetUseFilter(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *DynamicFont) SetUseMipmaps(enable gdnative.Bool) {
-	//log.Println("Calling DynamicFont.SetUseMipmaps()")
+	// log.Println("Calling DynamicFont.SetUseMipmaps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

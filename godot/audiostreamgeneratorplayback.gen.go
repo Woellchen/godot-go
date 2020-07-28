@@ -39,7 +39,7 @@ func (o *AudioStreamGeneratorPlayback) BaseClass() string {
 	Args: [{ false amount int}], Returns: bool
 */
 func (o *AudioStreamGeneratorPlayback) CanPushBuffer(amount gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AudioStreamGeneratorPlayback.CanPushBuffer()")
+	// log.Println("Calling AudioStreamGeneratorPlayback.CanPushBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *AudioStreamGeneratorPlayback) CanPushBuffer(amount gdnative.Int) gdnati
 	Args: [], Returns: void
 */
 func (o *AudioStreamGeneratorPlayback) ClearBuffer() {
-	//log.Println("Calling AudioStreamGeneratorPlayback.ClearBuffer()")
+	// log.Println("Calling AudioStreamGeneratorPlayback.ClearBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -83,7 +83,7 @@ func (o *AudioStreamGeneratorPlayback) ClearBuffer() {
 	Args: [], Returns: int
 */
 func (o *AudioStreamGeneratorPlayback) GetFramesAvailable() gdnative.Int {
-	//log.Println("Calling AudioStreamGeneratorPlayback.GetFramesAvailable()")
+	// log.Println("Calling AudioStreamGeneratorPlayback.GetFramesAvailable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -106,7 +106,7 @@ func (o *AudioStreamGeneratorPlayback) GetFramesAvailable() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *AudioStreamGeneratorPlayback) GetSkips() gdnative.Int {
-	//log.Println("Calling AudioStreamGeneratorPlayback.GetSkips()")
+	// log.Println("Calling AudioStreamGeneratorPlayback.GetSkips()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *AudioStreamGeneratorPlayback) GetSkips() gdnative.Int {
 	Args: [{ false frames PoolVector2Array}], Returns: bool
 */
 func (o *AudioStreamGeneratorPlayback) PushBuffer(frames gdnative.PoolVector2Array) gdnative.Bool {
-	//log.Println("Calling AudioStreamGeneratorPlayback.PushBuffer()")
+	// log.Println("Calling AudioStreamGeneratorPlayback.PushBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -153,7 +153,7 @@ func (o *AudioStreamGeneratorPlayback) PushBuffer(frames gdnative.PoolVector2Arr
 	Args: [{ false frame Vector2}], Returns: bool
 */
 func (o *AudioStreamGeneratorPlayback) PushFrame(frame gdnative.Vector2) gdnative.Bool {
-	//log.Println("Calling AudioStreamGeneratorPlayback.PushFrame()")
+	// log.Println("Calling AudioStreamGeneratorPlayback.PushFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

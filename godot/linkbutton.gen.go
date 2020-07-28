@@ -48,7 +48,7 @@ func (o *LinkButton) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *LinkButton) GetText() gdnative.String {
-	//log.Println("Calling LinkButton.GetText()")
+	// log.Println("Calling LinkButton.GetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *LinkButton) GetText() gdnative.String {
 	Args: [], Returns: enum.LinkButton::UnderlineMode
 */
 func (o *LinkButton) GetUnderlineMode() LinkButtonUnderlineMode {
-	//log.Println("Calling LinkButton.GetUnderlineMode()")
+	// log.Println("Calling LinkButton.GetUnderlineMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *LinkButton) GetUnderlineMode() LinkButtonUnderlineMode {
 	Args: [{ false text String}], Returns: void
 */
 func (o *LinkButton) SetText(text gdnative.String) {
-	//log.Println("Calling LinkButton.SetText()")
+	// log.Println("Calling LinkButton.SetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -115,7 +115,7 @@ func (o *LinkButton) SetText(text gdnative.String) {
 	Args: [{ false underline_mode int}], Returns: void
 */
 func (o *LinkButton) SetUnderlineMode(underlineMode gdnative.Int) {
-	//log.Println("Calling LinkButton.SetUnderlineMode()")
+	// log.Println("Calling LinkButton.SetUnderlineMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

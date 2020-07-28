@@ -39,7 +39,7 @@ func (o *SkinReference) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *SkinReference) X_SkinChanged() {
-	//log.Println("Calling SkinReference.X_SkinChanged()")
+	// log.Println("Calling SkinReference.X_SkinChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *SkinReference) X_SkinChanged() {
 	Args: [], Returns: RID
 */
 func (o *SkinReference) GetSkeleton() gdnative.Rid {
-	//log.Println("Calling SkinReference.GetSkeleton()")
+	// log.Println("Calling SkinReference.GetSkeleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *SkinReference) GetSkeleton() gdnative.Rid {
 	Args: [], Returns: Skin
 */
 func (o *SkinReference) GetSkin() SkinImplementer {
-	//log.Println("Calling SkinReference.GetSkin()")
+	// log.Println("Calling SkinReference.GetSkin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

@@ -39,7 +39,7 @@ func (o *VisualScriptSubCall) BaseClass() string {
 	Args: [{ false arguments Variant}], Returns: Variant
 */
 func (o *VisualScriptSubCall) X_Subcall(arguments gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling VisualScriptSubCall.X_Subcall()")
+	// log.Println("Calling VisualScriptSubCall.X_Subcall()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

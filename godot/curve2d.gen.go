@@ -39,7 +39,7 @@ func (o *Curve2D) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *Curve2D) X_GetData() gdnative.Dictionary {
-	//log.Println("Calling Curve2D.X_GetData()")
+	// log.Println("Calling Curve2D.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Curve2D) X_GetData() gdnative.Dictionary {
 	Args: [{ false arg0 Dictionary}], Returns: void
 */
 func (o *Curve2D) X_SetData(arg0 gdnative.Dictionary) {
-	//log.Println("Calling Curve2D.X_SetData()")
+	// log.Println("Calling Curve2D.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *Curve2D) X_SetData(arg0 gdnative.Dictionary) {
 	Args: [{ false position Vector2} {(0, 0) true in Vector2} {(0, 0) true out Vector2} {-1 true at_position int}], Returns: void
 */
 func (o *Curve2D) AddPoint(position gdnative.Vector2, in gdnative.Vector2, out gdnative.Vector2, atPosition gdnative.Int) {
-	//log.Println("Calling Curve2D.AddPoint()")
+	// log.Println("Calling Curve2D.AddPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -107,7 +107,7 @@ func (o *Curve2D) AddPoint(position gdnative.Vector2, in gdnative.Vector2, out g
 	Args: [], Returns: void
 */
 func (o *Curve2D) ClearPoints() {
-	//log.Println("Calling Curve2D.ClearPoints()")
+	// log.Println("Calling Curve2D.ClearPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -127,7 +127,7 @@ func (o *Curve2D) ClearPoints() {
 	Args: [], Returns: float
 */
 func (o *Curve2D) GetBakeInterval() gdnative.Real {
-	//log.Println("Calling Curve2D.GetBakeInterval()")
+	// log.Println("Calling Curve2D.GetBakeInterval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *Curve2D) GetBakeInterval() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Curve2D) GetBakedLength() gdnative.Real {
-	//log.Println("Calling Curve2D.GetBakedLength()")
+	// log.Println("Calling Curve2D.GetBakedLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -173,7 +173,7 @@ func (o *Curve2D) GetBakedLength() gdnative.Real {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *Curve2D) GetBakedPoints() gdnative.PoolVector2Array {
-	//log.Println("Calling Curve2D.GetBakedPoints()")
+	// log.Println("Calling Curve2D.GetBakedPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *Curve2D) GetBakedPoints() gdnative.PoolVector2Array {
 	Args: [{ false to_point Vector2}], Returns: float
 */
 func (o *Curve2D) GetClosestOffset(toPoint gdnative.Vector2) gdnative.Real {
-	//log.Println("Calling Curve2D.GetClosestOffset()")
+	// log.Println("Calling Curve2D.GetClosestOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -220,7 +220,7 @@ func (o *Curve2D) GetClosestOffset(toPoint gdnative.Vector2) gdnative.Real {
 	Args: [{ false to_point Vector2}], Returns: Vector2
 */
 func (o *Curve2D) GetClosestPoint(toPoint gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.GetClosestPoint()")
+	// log.Println("Calling Curve2D.GetClosestPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *Curve2D) GetClosestPoint(toPoint gdnative.Vector2) gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *Curve2D) GetPointCount() gdnative.Int {
-	//log.Println("Calling Curve2D.GetPointCount()")
+	// log.Println("Calling Curve2D.GetPointCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -267,7 +267,7 @@ func (o *Curve2D) GetPointCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: Vector2
 */
 func (o *Curve2D) GetPointIn(idx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.GetPointIn()")
+	// log.Println("Calling Curve2D.GetPointIn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -291,7 +291,7 @@ func (o *Curve2D) GetPointIn(idx gdnative.Int) gdnative.Vector2 {
 	Args: [{ false idx int}], Returns: Vector2
 */
 func (o *Curve2D) GetPointOut(idx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.GetPointOut()")
+	// log.Println("Calling Curve2D.GetPointOut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -315,7 +315,7 @@ func (o *Curve2D) GetPointOut(idx gdnative.Int) gdnative.Vector2 {
 	Args: [{ false idx int}], Returns: Vector2
 */
 func (o *Curve2D) GetPointPosition(idx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.GetPointPosition()")
+	// log.Println("Calling Curve2D.GetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -339,7 +339,7 @@ func (o *Curve2D) GetPointPosition(idx gdnative.Int) gdnative.Vector2 {
 	Args: [{ false idx int} { false t float}], Returns: Vector2
 */
 func (o *Curve2D) Interpolate(idx gdnative.Int, t gdnative.Real) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.Interpolate()")
+	// log.Println("Calling Curve2D.Interpolate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -364,7 +364,7 @@ func (o *Curve2D) Interpolate(idx gdnative.Int, t gdnative.Real) gdnative.Vector
 	Args: [{ false offset float} {False true cubic bool}], Returns: Vector2
 */
 func (o *Curve2D) InterpolateBaked(offset gdnative.Real, cubic gdnative.Bool) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.InterpolateBaked()")
+	// log.Println("Calling Curve2D.InterpolateBaked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -389,7 +389,7 @@ func (o *Curve2D) InterpolateBaked(offset gdnative.Real, cubic gdnative.Bool) gd
 	Args: [{ false fofs float}], Returns: Vector2
 */
 func (o *Curve2D) Interpolatef(fofs gdnative.Real) gdnative.Vector2 {
-	//log.Println("Calling Curve2D.Interpolatef()")
+	// log.Println("Calling Curve2D.Interpolatef()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -413,7 +413,7 @@ func (o *Curve2D) Interpolatef(fofs gdnative.Real) gdnative.Vector2 {
 	Args: [{ false idx int}], Returns: void
 */
 func (o *Curve2D) RemovePoint(idx gdnative.Int) {
-	//log.Println("Calling Curve2D.RemovePoint()")
+	// log.Println("Calling Curve2D.RemovePoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -434,7 +434,7 @@ func (o *Curve2D) RemovePoint(idx gdnative.Int) {
 	Args: [{ false distance float}], Returns: void
 */
 func (o *Curve2D) SetBakeInterval(distance gdnative.Real) {
-	//log.Println("Calling Curve2D.SetBakeInterval()")
+	// log.Println("Calling Curve2D.SetBakeInterval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -455,7 +455,7 @@ func (o *Curve2D) SetBakeInterval(distance gdnative.Real) {
 	Args: [{ false idx int} { false position Vector2}], Returns: void
 */
 func (o *Curve2D) SetPointIn(idx gdnative.Int, position gdnative.Vector2) {
-	//log.Println("Calling Curve2D.SetPointIn()")
+	// log.Println("Calling Curve2D.SetPointIn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -477,7 +477,7 @@ func (o *Curve2D) SetPointIn(idx gdnative.Int, position gdnative.Vector2) {
 	Args: [{ false idx int} { false position Vector2}], Returns: void
 */
 func (o *Curve2D) SetPointOut(idx gdnative.Int, position gdnative.Vector2) {
-	//log.Println("Calling Curve2D.SetPointOut()")
+	// log.Println("Calling Curve2D.SetPointOut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -499,7 +499,7 @@ func (o *Curve2D) SetPointOut(idx gdnative.Int, position gdnative.Vector2) {
 	Args: [{ false idx int} { false position Vector2}], Returns: void
 */
 func (o *Curve2D) SetPointPosition(idx gdnative.Int, position gdnative.Vector2) {
-	//log.Println("Calling Curve2D.SetPointPosition()")
+	// log.Println("Calling Curve2D.SetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -521,7 +521,7 @@ func (o *Curve2D) SetPointPosition(idx gdnative.Int, position gdnative.Vector2) 
 	Args: [{5 true max_stages int} {4 true tolerance_degrees float}], Returns: PoolVector2Array
 */
 func (o *Curve2D) Tessellate(maxStages gdnative.Int, toleranceDegrees gdnative.Real) gdnative.PoolVector2Array {
-	//log.Println("Calling Curve2D.Tessellate()")
+	// log.Println("Calling Curve2D.Tessellate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

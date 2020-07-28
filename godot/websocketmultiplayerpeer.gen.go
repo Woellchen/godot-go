@@ -39,7 +39,7 @@ func (o *WebSocketMultiplayerPeer) BaseClass() string {
 	Args: [{ false peer_id int}], Returns: WebSocketPeer
 */
 func (o *WebSocketMultiplayerPeer) GetPeer(peerId gdnative.Int) WebSocketPeerImplementer {
-	//log.Println("Calling WebSocketMultiplayerPeer.GetPeer()")
+	// log.Println("Calling WebSocketMultiplayerPeer.GetPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -77,7 +77,7 @@ func (o *WebSocketMultiplayerPeer) GetPeer(peerId gdnative.Int) WebSocketPeerImp
 	Args: [{ false input_buffer_size_kb int} { false input_max_packets int} { false output_buffer_size_kb int} { false output_max_packets int}], Returns: enum.Error
 */
 func (o *WebSocketMultiplayerPeer) SetBuffers(inputBufferSizeKb gdnative.Int, inputMaxPackets gdnative.Int, outputBufferSizeKb gdnative.Int, outputMaxPackets gdnative.Int) gdnative.Error {
-	//log.Println("Calling WebSocketMultiplayerPeer.SetBuffers()")
+	// log.Println("Calling WebSocketMultiplayerPeer.SetBuffers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)

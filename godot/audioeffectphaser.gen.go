@@ -39,7 +39,7 @@ func (o *AudioEffectPhaser) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPhaser) GetDepth() gdnative.Real {
-	//log.Println("Calling AudioEffectPhaser.GetDepth()")
+	// log.Println("Calling AudioEffectPhaser.GetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectPhaser) GetDepth() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPhaser) GetFeedback() gdnative.Real {
-	//log.Println("Calling AudioEffectPhaser.GetFeedback()")
+	// log.Println("Calling AudioEffectPhaser.GetFeedback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioEffectPhaser) GetFeedback() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPhaser) GetRangeMaxHz() gdnative.Real {
-	//log.Println("Calling AudioEffectPhaser.GetRangeMaxHz()")
+	// log.Println("Calling AudioEffectPhaser.GetRangeMaxHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AudioEffectPhaser) GetRangeMaxHz() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPhaser) GetRangeMinHz() gdnative.Real {
-	//log.Println("Calling AudioEffectPhaser.GetRangeMinHz()")
+	// log.Println("Calling AudioEffectPhaser.GetRangeMinHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *AudioEffectPhaser) GetRangeMinHz() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPhaser) GetRateHz() gdnative.Real {
-	//log.Println("Calling AudioEffectPhaser.GetRateHz()")
+	// log.Println("Calling AudioEffectPhaser.GetRateHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *AudioEffectPhaser) GetRateHz() gdnative.Real {
 	Args: [{ false depth float}], Returns: void
 */
 func (o *AudioEffectPhaser) SetDepth(depth gdnative.Real) {
-	//log.Println("Calling AudioEffectPhaser.SetDepth()")
+	// log.Println("Calling AudioEffectPhaser.SetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *AudioEffectPhaser) SetDepth(depth gdnative.Real) {
 	Args: [{ false fbk float}], Returns: void
 */
 func (o *AudioEffectPhaser) SetFeedback(fbk gdnative.Real) {
-	//log.Println("Calling AudioEffectPhaser.SetFeedback()")
+	// log.Println("Calling AudioEffectPhaser.SetFeedback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -196,7 +196,7 @@ func (o *AudioEffectPhaser) SetFeedback(fbk gdnative.Real) {
 	Args: [{ false hz float}], Returns: void
 */
 func (o *AudioEffectPhaser) SetRangeMaxHz(hz gdnative.Real) {
-	//log.Println("Calling AudioEffectPhaser.SetRangeMaxHz()")
+	// log.Println("Calling AudioEffectPhaser.SetRangeMaxHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *AudioEffectPhaser) SetRangeMaxHz(hz gdnative.Real) {
 	Args: [{ false hz float}], Returns: void
 */
 func (o *AudioEffectPhaser) SetRangeMinHz(hz gdnative.Real) {
-	//log.Println("Calling AudioEffectPhaser.SetRangeMinHz()")
+	// log.Println("Calling AudioEffectPhaser.SetRangeMinHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *AudioEffectPhaser) SetRangeMinHz(hz gdnative.Real) {
 	Args: [{ false hz float}], Returns: void
 */
 func (o *AudioEffectPhaser) SetRateHz(hz gdnative.Real) {
-	//log.Println("Calling AudioEffectPhaser.SetRateHz()")
+	// log.Println("Calling AudioEffectPhaser.SetRateHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

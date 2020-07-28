@@ -39,7 +39,7 @@ func (o *Container) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Container) X_ChildMinsizeChanged() {
-	//log.Println("Calling Container.X_ChildMinsizeChanged()")
+	// log.Println("Calling Container.X_ChildMinsizeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *Container) X_ChildMinsizeChanged() {
 	Args: [], Returns: void
 */
 func (o *Container) X_SortChildren() {
-	//log.Println("Calling Container.X_SortChildren()")
+	// log.Println("Calling Container.X_SortChildren()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *Container) X_SortChildren() {
 	Args: [{ false child Control} { false rect Rect2}], Returns: void
 */
 func (o *Container) FitChildInRect(child ControlImplementer, rect gdnative.Rect2) {
-	//log.Println("Calling Container.FitChildInRect()")
+	// log.Println("Calling Container.FitChildInRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -101,7 +101,7 @@ func (o *Container) FitChildInRect(child ControlImplementer, rect gdnative.Rect2
 	Args: [], Returns: void
 */
 func (o *Container) QueueSort() {
-	//log.Println("Calling Container.QueueSort()")
+	// log.Println("Calling Container.QueueSort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

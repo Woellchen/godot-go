@@ -39,7 +39,7 @@ func (o *VisualScriptDeconstruct) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *VisualScriptDeconstruct) X_GetElemCache() gdnative.Array {
-	//log.Println("Calling VisualScriptDeconstruct.X_GetElemCache()")
+	// log.Println("Calling VisualScriptDeconstruct.X_GetElemCache()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptDeconstruct) X_GetElemCache() gdnative.Array {
 	Args: [{ false _cache Array}], Returns: void
 */
 func (o *VisualScriptDeconstruct) X_SetElemCache(cache gdnative.Array) {
-	//log.Println("Calling VisualScriptDeconstruct.X_SetElemCache()")
+	// log.Println("Calling VisualScriptDeconstruct.X_SetElemCache()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *VisualScriptDeconstruct) X_SetElemCache(cache gdnative.Array) {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptDeconstruct) GetDeconstructType() gdnative.VariantType {
-	//log.Println("Calling VisualScriptDeconstruct.GetDeconstructType()")
+	// log.Println("Calling VisualScriptDeconstruct.GetDeconstructType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -106,7 +106,7 @@ func (o *VisualScriptDeconstruct) GetDeconstructType() gdnative.VariantType {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptDeconstruct) SetDeconstructType(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptDeconstruct.SetDeconstructType()")
+	// log.Println("Calling VisualScriptDeconstruct.SetDeconstructType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

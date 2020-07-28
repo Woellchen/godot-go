@@ -54,7 +54,7 @@ func (o *MultiplayerAPI) BaseClass() string {
 	Args: [{ false id int}], Returns: void
 */
 func (o *MultiplayerAPI) X_AddPeer(id gdnative.Int) {
-	//log.Println("Calling MultiplayerAPI.X_AddPeer()")
+	// log.Println("Calling MultiplayerAPI.X_AddPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -75,7 +75,7 @@ func (o *MultiplayerAPI) X_AddPeer(id gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *MultiplayerAPI) X_ConnectedToServer() {
-	//log.Println("Calling MultiplayerAPI.X_ConnectedToServer()")
+	// log.Println("Calling MultiplayerAPI.X_ConnectedToServer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -95,7 +95,7 @@ func (o *MultiplayerAPI) X_ConnectedToServer() {
 	Args: [], Returns: void
 */
 func (o *MultiplayerAPI) X_ConnectionFailed() {
-	//log.Println("Calling MultiplayerAPI.X_ConnectionFailed()")
+	// log.Println("Calling MultiplayerAPI.X_ConnectionFailed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -115,7 +115,7 @@ func (o *MultiplayerAPI) X_ConnectionFailed() {
 	Args: [{ false id int}], Returns: void
 */
 func (o *MultiplayerAPI) X_DelPeer(id gdnative.Int) {
-	//log.Println("Calling MultiplayerAPI.X_DelPeer()")
+	// log.Println("Calling MultiplayerAPI.X_DelPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -136,7 +136,7 @@ func (o *MultiplayerAPI) X_DelPeer(id gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *MultiplayerAPI) X_ServerDisconnected() {
-	//log.Println("Calling MultiplayerAPI.X_ServerDisconnected()")
+	// log.Println("Calling MultiplayerAPI.X_ServerDisconnected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -156,7 +156,7 @@ func (o *MultiplayerAPI) X_ServerDisconnected() {
 	Args: [], Returns: void
 */
 func (o *MultiplayerAPI) Clear() {
-	//log.Println("Calling MultiplayerAPI.Clear()")
+	// log.Println("Calling MultiplayerAPI.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -176,7 +176,7 @@ func (o *MultiplayerAPI) Clear() {
 	Args: [], Returns: PoolIntArray
 */
 func (o *MultiplayerAPI) GetNetworkConnectedPeers() gdnative.PoolIntArray {
-	//log.Println("Calling MultiplayerAPI.GetNetworkConnectedPeers()")
+	// log.Println("Calling MultiplayerAPI.GetNetworkConnectedPeers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -199,7 +199,7 @@ func (o *MultiplayerAPI) GetNetworkConnectedPeers() gdnative.PoolIntArray {
 	Args: [], Returns: NetworkedMultiplayerPeer
 */
 func (o *MultiplayerAPI) GetNetworkPeer() NetworkedMultiplayerPeerImplementer {
-	//log.Println("Calling MultiplayerAPI.GetNetworkPeer()")
+	// log.Println("Calling MultiplayerAPI.GetNetworkPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -236,7 +236,7 @@ func (o *MultiplayerAPI) GetNetworkPeer() NetworkedMultiplayerPeerImplementer {
 	Args: [], Returns: int
 */
 func (o *MultiplayerAPI) GetNetworkUniqueId() gdnative.Int {
-	//log.Println("Calling MultiplayerAPI.GetNetworkUniqueId()")
+	// log.Println("Calling MultiplayerAPI.GetNetworkUniqueId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -259,7 +259,7 @@ func (o *MultiplayerAPI) GetNetworkUniqueId() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *MultiplayerAPI) GetRpcSenderId() gdnative.Int {
-	//log.Println("Calling MultiplayerAPI.GetRpcSenderId()")
+	// log.Println("Calling MultiplayerAPI.GetRpcSenderId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -282,7 +282,7 @@ func (o *MultiplayerAPI) GetRpcSenderId() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *MultiplayerAPI) HasNetworkPeer() gdnative.Bool {
-	//log.Println("Calling MultiplayerAPI.HasNetworkPeer()")
+	// log.Println("Calling MultiplayerAPI.HasNetworkPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -305,7 +305,7 @@ func (o *MultiplayerAPI) HasNetworkPeer() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *MultiplayerAPI) IsNetworkServer() gdnative.Bool {
-	//log.Println("Calling MultiplayerAPI.IsNetworkServer()")
+	// log.Println("Calling MultiplayerAPI.IsNetworkServer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -328,7 +328,7 @@ func (o *MultiplayerAPI) IsNetworkServer() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *MultiplayerAPI) IsObjectDecodingAllowed() gdnative.Bool {
-	//log.Println("Calling MultiplayerAPI.IsObjectDecodingAllowed()")
+	// log.Println("Calling MultiplayerAPI.IsObjectDecodingAllowed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -351,7 +351,7 @@ func (o *MultiplayerAPI) IsObjectDecodingAllowed() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *MultiplayerAPI) IsRefusingNewNetworkConnections() gdnative.Bool {
-	//log.Println("Calling MultiplayerAPI.IsRefusingNewNetworkConnections()")
+	// log.Println("Calling MultiplayerAPI.IsRefusingNewNetworkConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -374,7 +374,7 @@ func (o *MultiplayerAPI) IsRefusingNewNetworkConnections() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *MultiplayerAPI) Poll() {
-	//log.Println("Calling MultiplayerAPI.Poll()")
+	// log.Println("Calling MultiplayerAPI.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -394,7 +394,7 @@ func (o *MultiplayerAPI) Poll() {
 	Args: [{ false bytes PoolByteArray} {0 true id int} {2 true mode int}], Returns: enum.Error
 */
 func (o *MultiplayerAPI) SendBytes(bytes gdnative.PoolByteArray, id gdnative.Int, mode gdnative.Int) gdnative.Error {
-	//log.Println("Calling MultiplayerAPI.SendBytes()")
+	// log.Println("Calling MultiplayerAPI.SendBytes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -420,7 +420,7 @@ func (o *MultiplayerAPI) SendBytes(bytes gdnative.PoolByteArray, id gdnative.Int
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *MultiplayerAPI) SetAllowObjectDecoding(enable gdnative.Bool) {
-	//log.Println("Calling MultiplayerAPI.SetAllowObjectDecoding()")
+	// log.Println("Calling MultiplayerAPI.SetAllowObjectDecoding()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -441,7 +441,7 @@ func (o *MultiplayerAPI) SetAllowObjectDecoding(enable gdnative.Bool) {
 	Args: [{ false peer NetworkedMultiplayerPeer}], Returns: void
 */
 func (o *MultiplayerAPI) SetNetworkPeer(peer NetworkedMultiplayerPeerImplementer) {
-	//log.Println("Calling MultiplayerAPI.SetNetworkPeer()")
+	// log.Println("Calling MultiplayerAPI.SetNetworkPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -462,7 +462,7 @@ func (o *MultiplayerAPI) SetNetworkPeer(peer NetworkedMultiplayerPeerImplementer
 	Args: [{ false refuse bool}], Returns: void
 */
 func (o *MultiplayerAPI) SetRefuseNewNetworkConnections(refuse gdnative.Bool) {
-	//log.Println("Calling MultiplayerAPI.SetRefuseNewNetworkConnections()")
+	// log.Println("Calling MultiplayerAPI.SetRefuseNewNetworkConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -483,7 +483,7 @@ func (o *MultiplayerAPI) SetRefuseNewNetworkConnections(refuse gdnative.Bool) {
 	Args: [{ false node Node}], Returns: void
 */
 func (o *MultiplayerAPI) SetRootNode(node NodeImplementer) {
-	//log.Println("Calling MultiplayerAPI.SetRootNode()")
+	// log.Println("Calling MultiplayerAPI.SetRootNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

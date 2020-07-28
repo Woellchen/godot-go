@@ -39,7 +39,7 @@ func (o *CSGCylinder) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CSGCylinder) GetHeight() gdnative.Real {
-	//log.Println("Calling CSGCylinder.GetHeight()")
+	// log.Println("Calling CSGCylinder.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CSGCylinder) GetHeight() gdnative.Real {
 	Args: [], Returns: Material
 */
 func (o *CSGCylinder) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CSGCylinder.GetMaterial()")
+	// log.Println("Calling CSGCylinder.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *CSGCylinder) GetMaterial() MaterialImplementer {
 	Args: [], Returns: float
 */
 func (o *CSGCylinder) GetRadius() gdnative.Real {
-	//log.Println("Calling CSGCylinder.GetRadius()")
+	// log.Println("Calling CSGCylinder.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *CSGCylinder) GetRadius() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CSGCylinder) GetSides() gdnative.Int {
-	//log.Println("Calling CSGCylinder.GetSides()")
+	// log.Println("Calling CSGCylinder.GetSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *CSGCylinder) GetSides() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CSGCylinder) GetSmoothFaces() gdnative.Bool {
-	//log.Println("Calling CSGCylinder.GetSmoothFaces()")
+	// log.Println("Calling CSGCylinder.GetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *CSGCylinder) GetSmoothFaces() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CSGCylinder) IsCone() gdnative.Bool {
-	//log.Println("Calling CSGCylinder.IsCone()")
+	// log.Println("Calling CSGCylinder.IsCone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *CSGCylinder) IsCone() gdnative.Bool {
 	Args: [{ false cone bool}], Returns: void
 */
 func (o *CSGCylinder) SetCone(cone gdnative.Bool) {
-	//log.Println("Calling CSGCylinder.SetCone()")
+	// log.Println("Calling CSGCylinder.SetCone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -212,7 +212,7 @@ func (o *CSGCylinder) SetCone(cone gdnative.Bool) {
 	Args: [{ false height float}], Returns: void
 */
 func (o *CSGCylinder) SetHeight(height gdnative.Real) {
-	//log.Println("Calling CSGCylinder.SetHeight()")
+	// log.Println("Calling CSGCylinder.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -233,7 +233,7 @@ func (o *CSGCylinder) SetHeight(height gdnative.Real) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CSGCylinder) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CSGCylinder.SetMaterial()")
+	// log.Println("Calling CSGCylinder.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -254,7 +254,7 @@ func (o *CSGCylinder) SetMaterial(material MaterialImplementer) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CSGCylinder) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling CSGCylinder.SetRadius()")
+	// log.Println("Calling CSGCylinder.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -275,7 +275,7 @@ func (o *CSGCylinder) SetRadius(radius gdnative.Real) {
 	Args: [{ false sides int}], Returns: void
 */
 func (o *CSGCylinder) SetSides(sides gdnative.Int) {
-	//log.Println("Calling CSGCylinder.SetSides()")
+	// log.Println("Calling CSGCylinder.SetSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -296,7 +296,7 @@ func (o *CSGCylinder) SetSides(sides gdnative.Int) {
 	Args: [{ false smooth_faces bool}], Returns: void
 */
 func (o *CSGCylinder) SetSmoothFaces(smoothFaces gdnative.Bool) {
-	//log.Println("Calling CSGCylinder.SetSmoothFaces()")
+	// log.Println("Calling CSGCylinder.SetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

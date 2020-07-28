@@ -39,7 +39,7 @@ func (o *EditorFileSystemDirectory) BaseClass() string {
 	Args: [{ false name String}], Returns: int
 */
 func (o *EditorFileSystemDirectory) FindDirIndex(name gdnative.String) gdnative.Int {
-	//log.Println("Calling EditorFileSystemDirectory.FindDirIndex()")
+	// log.Println("Calling EditorFileSystemDirectory.FindDirIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *EditorFileSystemDirectory) FindDirIndex(name gdnative.String) gdnative.
 	Args: [{ false name String}], Returns: int
 */
 func (o *EditorFileSystemDirectory) FindFileIndex(name gdnative.String) gdnative.Int {
-	//log.Println("Calling EditorFileSystemDirectory.FindFileIndex()")
+	// log.Println("Calling EditorFileSystemDirectory.FindFileIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -87,7 +87,7 @@ func (o *EditorFileSystemDirectory) FindFileIndex(name gdnative.String) gdnative
 	Args: [{ false idx int}], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetFile(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetFile()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -111,7 +111,7 @@ func (o *EditorFileSystemDirectory) GetFile(idx gdnative.Int) gdnative.String {
 	Args: [], Returns: int
 */
 func (o *EditorFileSystemDirectory) GetFileCount() gdnative.Int {
-	//log.Println("Calling EditorFileSystemDirectory.GetFileCount()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFileCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -134,7 +134,7 @@ func (o *EditorFileSystemDirectory) GetFileCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: bool
 */
 func (o *EditorFileSystemDirectory) GetFileImportIsValid(idx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling EditorFileSystemDirectory.GetFileImportIsValid()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFileImportIsValid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -158,7 +158,7 @@ func (o *EditorFileSystemDirectory) GetFileImportIsValid(idx gdnative.Int) gdnat
 	Args: [{ false idx int}], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetFilePath(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetFilePath()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFilePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -182,7 +182,7 @@ func (o *EditorFileSystemDirectory) GetFilePath(idx gdnative.Int) gdnative.Strin
 	Args: [{ false idx int}], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetFileScriptClassExtends(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetFileScriptClassExtends()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFileScriptClassExtends()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -206,7 +206,7 @@ func (o *EditorFileSystemDirectory) GetFileScriptClassExtends(idx gdnative.Int) 
 	Args: [{ false idx int}], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetFileScriptClassName(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetFileScriptClassName()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFileScriptClassName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -230,7 +230,7 @@ func (o *EditorFileSystemDirectory) GetFileScriptClassName(idx gdnative.Int) gdn
 	Args: [{ false idx int}], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetFileType(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetFileType()")
+	// log.Println("Calling EditorFileSystemDirectory.GetFileType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -254,7 +254,7 @@ func (o *EditorFileSystemDirectory) GetFileType(idx gdnative.Int) gdnative.Strin
 	Args: [], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetName() gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetName()")
+	// log.Println("Calling EditorFileSystemDirectory.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -277,7 +277,7 @@ func (o *EditorFileSystemDirectory) GetName() gdnative.String {
 	Args: [], Returns: EditorFileSystemDirectory
 */
 func (o *EditorFileSystemDirectory) GetParent() EditorFileSystemDirectoryImplementer {
-	//log.Println("Calling EditorFileSystemDirectory.GetParent()")
+	// log.Println("Calling EditorFileSystemDirectory.GetParent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -314,7 +314,7 @@ func (o *EditorFileSystemDirectory) GetParent() EditorFileSystemDirectoryImpleme
 	Args: [], Returns: String
 */
 func (o *EditorFileSystemDirectory) GetPath() gdnative.String {
-	//log.Println("Calling EditorFileSystemDirectory.GetPath()")
+	// log.Println("Calling EditorFileSystemDirectory.GetPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -337,7 +337,7 @@ func (o *EditorFileSystemDirectory) GetPath() gdnative.String {
 	Args: [{ false idx int}], Returns: EditorFileSystemDirectory
 */
 func (o *EditorFileSystemDirectory) GetSubdir(idx gdnative.Int) EditorFileSystemDirectoryImplementer {
-	//log.Println("Calling EditorFileSystemDirectory.GetSubdir()")
+	// log.Println("Calling EditorFileSystemDirectory.GetSubdir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -375,7 +375,7 @@ func (o *EditorFileSystemDirectory) GetSubdir(idx gdnative.Int) EditorFileSystem
 	Args: [], Returns: int
 */
 func (o *EditorFileSystemDirectory) GetSubdirCount() gdnative.Int {
-	//log.Println("Calling EditorFileSystemDirectory.GetSubdirCount()")
+	// log.Println("Calling EditorFileSystemDirectory.GetSubdirCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

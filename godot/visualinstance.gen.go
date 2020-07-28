@@ -39,7 +39,7 @@ func (o *VisualInstance) BaseClass() string {
 	Args: [], Returns: RID
 */
 func (o *VisualInstance) X_GetVisualInstanceRid() gdnative.Rid {
-	//log.Println("Calling VisualInstance.X_GetVisualInstanceRid()")
+	// log.Println("Calling VisualInstance.X_GetVisualInstanceRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualInstance) X_GetVisualInstanceRid() gdnative.Rid {
 	Args: [], Returns: AABB
 */
 func (o *VisualInstance) GetAabb() gdnative.Aabb {
-	//log.Println("Calling VisualInstance.GetAabb()")
+	// log.Println("Calling VisualInstance.GetAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualInstance) GetAabb() gdnative.Aabb {
 	Args: [], Returns: RID
 */
 func (o *VisualInstance) GetBase() gdnative.Rid {
-	//log.Println("Calling VisualInstance.GetBase()")
+	// log.Println("Calling VisualInstance.GetBase()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *VisualInstance) GetBase() gdnative.Rid {
 	Args: [], Returns: RID
 */
 func (o *VisualInstance) GetInstance() gdnative.Rid {
-	//log.Println("Calling VisualInstance.GetInstance()")
+	// log.Println("Calling VisualInstance.GetInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *VisualInstance) GetInstance() gdnative.Rid {
 	Args: [], Returns: int
 */
 func (o *VisualInstance) GetLayerMask() gdnative.Int {
-	//log.Println("Calling VisualInstance.GetLayerMask()")
+	// log.Println("Calling VisualInstance.GetLayerMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *VisualInstance) GetLayerMask() gdnative.Int {
 	Args: [{ false layer int}], Returns: bool
 */
 func (o *VisualInstance) GetLayerMaskBit(layer gdnative.Int) gdnative.Bool {
-	//log.Println("Calling VisualInstance.GetLayerMaskBit()")
+	// log.Println("Calling VisualInstance.GetLayerMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -178,7 +178,7 @@ func (o *VisualInstance) GetLayerMaskBit(layer gdnative.Int) gdnative.Bool {
 	Args: [], Returns: AABB
 */
 func (o *VisualInstance) GetTransformedAabb() gdnative.Aabb {
-	//log.Println("Calling VisualInstance.GetTransformedAabb()")
+	// log.Println("Calling VisualInstance.GetTransformedAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -201,7 +201,7 @@ func (o *VisualInstance) GetTransformedAabb() gdnative.Aabb {
 	Args: [{ false base RID}], Returns: void
 */
 func (o *VisualInstance) SetBase(base gdnative.Rid) {
-	//log.Println("Calling VisualInstance.SetBase()")
+	// log.Println("Calling VisualInstance.SetBase()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -222,7 +222,7 @@ func (o *VisualInstance) SetBase(base gdnative.Rid) {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *VisualInstance) SetLayerMask(mask gdnative.Int) {
-	//log.Println("Calling VisualInstance.SetLayerMask()")
+	// log.Println("Calling VisualInstance.SetLayerMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -243,7 +243,7 @@ func (o *VisualInstance) SetLayerMask(mask gdnative.Int) {
 	Args: [{ false layer int} { false enabled bool}], Returns: void
 */
 func (o *VisualInstance) SetLayerMaskBit(layer gdnative.Int, enabled gdnative.Bool) {
-	//log.Println("Calling VisualInstance.SetLayerMaskBit()")
+	// log.Println("Calling VisualInstance.SetLayerMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

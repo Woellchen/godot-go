@@ -39,7 +39,7 @@ func (o *ResourceFormatLoader) BaseClass() string {
 	Args: [{ false path String} { false add_types String}], Returns: void
 */
 func (o *ResourceFormatLoader) GetDependencies(path gdnative.String, addTypes gdnative.String) {
-	//log.Println("Calling ResourceFormatLoader.GetDependencies()")
+	// log.Println("Calling ResourceFormatLoader.GetDependencies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *ResourceFormatLoader) GetDependencies(path gdnative.String, addTypes gd
 	Args: [], Returns: PoolStringArray
 */
 func (o *ResourceFormatLoader) GetRecognizedExtensions() gdnative.PoolStringArray {
-	//log.Println("Calling ResourceFormatLoader.GetRecognizedExtensions()")
+	// log.Println("Calling ResourceFormatLoader.GetRecognizedExtensions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -84,7 +84,7 @@ func (o *ResourceFormatLoader) GetRecognizedExtensions() gdnative.PoolStringArra
 	Args: [{ false path String}], Returns: String
 */
 func (o *ResourceFormatLoader) GetResourceType(path gdnative.String) gdnative.String {
-	//log.Println("Calling ResourceFormatLoader.GetResourceType()")
+	// log.Println("Calling ResourceFormatLoader.GetResourceType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -108,7 +108,7 @@ func (o *ResourceFormatLoader) GetResourceType(path gdnative.String) gdnative.St
 	Args: [{ false typename String}], Returns: bool
 */
 func (o *ResourceFormatLoader) HandlesType(typename gdnative.String) gdnative.Bool {
-	//log.Println("Calling ResourceFormatLoader.HandlesType()")
+	// log.Println("Calling ResourceFormatLoader.HandlesType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -132,7 +132,7 @@ func (o *ResourceFormatLoader) HandlesType(typename gdnative.String) gdnative.Bo
 	Args: [{ false path String} { false original_path String}], Returns: Variant
 */
 func (o *ResourceFormatLoader) Load(path gdnative.String, originalPath gdnative.String) gdnative.Variant {
-	//log.Println("Calling ResourceFormatLoader.Load()")
+	// log.Println("Calling ResourceFormatLoader.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -157,7 +157,7 @@ func (o *ResourceFormatLoader) Load(path gdnative.String, originalPath gdnative.
 	Args: [{ false path String} { false renames String}], Returns: int
 */
 func (o *ResourceFormatLoader) RenameDependencies(path gdnative.String, renames gdnative.String) gdnative.Int {
-	//log.Println("Calling ResourceFormatLoader.RenameDependencies()")
+	// log.Println("Calling ResourceFormatLoader.RenameDependencies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

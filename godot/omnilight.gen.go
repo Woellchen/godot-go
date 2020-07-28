@@ -55,7 +55,7 @@ func (o *OmniLight) BaseClass() string {
 	Args: [], Returns: enum.OmniLight::ShadowDetail
 */
 func (o *OmniLight) GetShadowDetail() OmniLightShadowDetail {
-	//log.Println("Calling OmniLight.GetShadowDetail()")
+	// log.Println("Calling OmniLight.GetShadowDetail()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -78,7 +78,7 @@ func (o *OmniLight) GetShadowDetail() OmniLightShadowDetail {
 	Args: [], Returns: enum.OmniLight::ShadowMode
 */
 func (o *OmniLight) GetShadowMode() OmniLightShadowMode {
-	//log.Println("Calling OmniLight.GetShadowMode()")
+	// log.Println("Calling OmniLight.GetShadowMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -101,7 +101,7 @@ func (o *OmniLight) GetShadowMode() OmniLightShadowMode {
 	Args: [{ false detail int}], Returns: void
 */
 func (o *OmniLight) SetShadowDetail(detail gdnative.Int) {
-	//log.Println("Calling OmniLight.SetShadowDetail()")
+	// log.Println("Calling OmniLight.SetShadowDetail()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -122,7 +122,7 @@ func (o *OmniLight) SetShadowDetail(detail gdnative.Int) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *OmniLight) SetShadowMode(mode gdnative.Int) {
-	//log.Println("Calling OmniLight.SetShadowMode()")
+	// log.Println("Calling OmniLight.SetShadowMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

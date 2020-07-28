@@ -39,7 +39,7 @@ func (o *VisualScriptConstant) BaseClass() string {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptConstant) GetConstantType() gdnative.VariantType {
-	//log.Println("Calling VisualScriptConstant.GetConstantType()")
+	// log.Println("Calling VisualScriptConstant.GetConstantType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptConstant) GetConstantType() gdnative.VariantType {
 	Args: [], Returns: Variant
 */
 func (o *VisualScriptConstant) GetConstantValue() gdnative.Variant {
-	//log.Println("Calling VisualScriptConstant.GetConstantValue()")
+	// log.Println("Calling VisualScriptConstant.GetConstantValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptConstant) GetConstantValue() gdnative.Variant {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptConstant) SetConstantType(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptConstant.SetConstantType()")
+	// log.Println("Calling VisualScriptConstant.SetConstantType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptConstant) SetConstantType(aType gdnative.Int) {
 	Args: [{ false value Variant}], Returns: void
 */
 func (o *VisualScriptConstant) SetConstantValue(value gdnative.Variant) {
-	//log.Println("Calling VisualScriptConstant.SetConstantValue()")
+	// log.Println("Calling VisualScriptConstant.SetConstantValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *AudioStreamRandomPitch) BaseClass() string {
 	Args: [], Returns: AudioStream
 */
 func (o *AudioStreamRandomPitch) GetAudioStream() AudioStreamImplementer {
-	//log.Println("Calling AudioStreamRandomPitch.GetAudioStream()")
+	// log.Println("Calling AudioStreamRandomPitch.GetAudioStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *AudioStreamRandomPitch) GetAudioStream() AudioStreamImplementer {
 	Args: [], Returns: float
 */
 func (o *AudioStreamRandomPitch) GetRandomPitch() gdnative.Real {
-	//log.Println("Calling AudioStreamRandomPitch.GetRandomPitch()")
+	// log.Println("Calling AudioStreamRandomPitch.GetRandomPitch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *AudioStreamRandomPitch) GetRandomPitch() gdnative.Real {
 	Args: [{ false stream AudioStream}], Returns: void
 */
 func (o *AudioStreamRandomPitch) SetAudioStream(stream AudioStreamImplementer) {
-	//log.Println("Calling AudioStreamRandomPitch.SetAudioStream()")
+	// log.Println("Calling AudioStreamRandomPitch.SetAudioStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -120,7 +120,7 @@ func (o *AudioStreamRandomPitch) SetAudioStream(stream AudioStreamImplementer) {
 	Args: [{ false scale float}], Returns: void
 */
 func (o *AudioStreamRandomPitch) SetRandomPitch(scale gdnative.Real) {
-	//log.Println("Calling AudioStreamRandomPitch.SetRandomPitch()")
+	// log.Println("Calling AudioStreamRandomPitch.SetRandomPitch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

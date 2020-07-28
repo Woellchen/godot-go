@@ -50,7 +50,7 @@ func (o *AudioEffectDistortion) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectDistortion) GetDrive() gdnative.Real {
-	//log.Println("Calling AudioEffectDistortion.GetDrive()")
+	// log.Println("Calling AudioEffectDistortion.GetDrive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -73,7 +73,7 @@ func (o *AudioEffectDistortion) GetDrive() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectDistortion) GetKeepHfHz() gdnative.Real {
-	//log.Println("Calling AudioEffectDistortion.GetKeepHfHz()")
+	// log.Println("Calling AudioEffectDistortion.GetKeepHfHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *AudioEffectDistortion) GetKeepHfHz() gdnative.Real {
 	Args: [], Returns: enum.AudioEffectDistortion::Mode
 */
 func (o *AudioEffectDistortion) GetMode() AudioEffectDistortionMode {
-	//log.Println("Calling AudioEffectDistortion.GetMode()")
+	// log.Println("Calling AudioEffectDistortion.GetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *AudioEffectDistortion) GetMode() AudioEffectDistortionMode {
 	Args: [], Returns: float
 */
 func (o *AudioEffectDistortion) GetPostGain() gdnative.Real {
-	//log.Println("Calling AudioEffectDistortion.GetPostGain()")
+	// log.Println("Calling AudioEffectDistortion.GetPostGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *AudioEffectDistortion) GetPostGain() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectDistortion) GetPreGain() gdnative.Real {
-	//log.Println("Calling AudioEffectDistortion.GetPreGain()")
+	// log.Println("Calling AudioEffectDistortion.GetPreGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *AudioEffectDistortion) GetPreGain() gdnative.Real {
 	Args: [{ false drive float}], Returns: void
 */
 func (o *AudioEffectDistortion) SetDrive(drive gdnative.Real) {
-	//log.Println("Calling AudioEffectDistortion.SetDrive()")
+	// log.Println("Calling AudioEffectDistortion.SetDrive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -186,7 +186,7 @@ func (o *AudioEffectDistortion) SetDrive(drive gdnative.Real) {
 	Args: [{ false keep_hf_hz float}], Returns: void
 */
 func (o *AudioEffectDistortion) SetKeepHfHz(keepHfHz gdnative.Real) {
-	//log.Println("Calling AudioEffectDistortion.SetKeepHfHz()")
+	// log.Println("Calling AudioEffectDistortion.SetKeepHfHz()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -207,7 +207,7 @@ func (o *AudioEffectDistortion) SetKeepHfHz(keepHfHz gdnative.Real) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *AudioEffectDistortion) SetMode(mode gdnative.Int) {
-	//log.Println("Calling AudioEffectDistortion.SetMode()")
+	// log.Println("Calling AudioEffectDistortion.SetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -228,7 +228,7 @@ func (o *AudioEffectDistortion) SetMode(mode gdnative.Int) {
 	Args: [{ false post_gain float}], Returns: void
 */
 func (o *AudioEffectDistortion) SetPostGain(postGain gdnative.Real) {
-	//log.Println("Calling AudioEffectDistortion.SetPostGain()")
+	// log.Println("Calling AudioEffectDistortion.SetPostGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -249,7 +249,7 @@ func (o *AudioEffectDistortion) SetPostGain(postGain gdnative.Real) {
 	Args: [{ false pre_gain float}], Returns: void
 */
 func (o *AudioEffectDistortion) SetPreGain(preGain gdnative.Real) {
-	//log.Println("Calling AudioEffectDistortion.SetPreGain()")
+	// log.Println("Calling AudioEffectDistortion.SetPreGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

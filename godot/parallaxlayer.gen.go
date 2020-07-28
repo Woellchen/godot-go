@@ -39,7 +39,7 @@ func (o *ParallaxLayer) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *ParallaxLayer) GetMirroring() gdnative.Vector2 {
-	//log.Println("Calling ParallaxLayer.GetMirroring()")
+	// log.Println("Calling ParallaxLayer.GetMirroring()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ParallaxLayer) GetMirroring() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *ParallaxLayer) GetMotionOffset() gdnative.Vector2 {
-	//log.Println("Calling ParallaxLayer.GetMotionOffset()")
+	// log.Println("Calling ParallaxLayer.GetMotionOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *ParallaxLayer) GetMotionOffset() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *ParallaxLayer) GetMotionScale() gdnative.Vector2 {
-	//log.Println("Calling ParallaxLayer.GetMotionScale()")
+	// log.Println("Calling ParallaxLayer.GetMotionScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *ParallaxLayer) GetMotionScale() gdnative.Vector2 {
 	Args: [{ false mirror Vector2}], Returns: void
 */
 func (o *ParallaxLayer) SetMirroring(mirror gdnative.Vector2) {
-	//log.Println("Calling ParallaxLayer.SetMirroring()")
+	// log.Println("Calling ParallaxLayer.SetMirroring()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *ParallaxLayer) SetMirroring(mirror gdnative.Vector2) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *ParallaxLayer) SetMotionOffset(offset gdnative.Vector2) {
-	//log.Println("Calling ParallaxLayer.SetMotionOffset()")
+	// log.Println("Calling ParallaxLayer.SetMotionOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *ParallaxLayer) SetMotionOffset(offset gdnative.Vector2) {
 	Args: [{ false scale Vector2}], Returns: void
 */
 func (o *ParallaxLayer) SetMotionScale(scale gdnative.Vector2) {
-	//log.Println("Calling ParallaxLayer.SetMotionScale()")
+	// log.Println("Calling ParallaxLayer.SetMotionScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

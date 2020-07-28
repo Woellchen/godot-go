@@ -39,7 +39,7 @@ func (o *VisualScriptLists) BaseClass() string {
 	Args: [{ false type int} { false name String} { false index int}], Returns: void
 */
 func (o *VisualScriptLists) AddInputDataPort(aType gdnative.Int, name gdnative.String, index gdnative.Int) {
-	//log.Println("Calling VisualScriptLists.AddInputDataPort()")
+	// log.Println("Calling VisualScriptLists.AddInputDataPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -62,7 +62,7 @@ func (o *VisualScriptLists) AddInputDataPort(aType gdnative.Int, name gdnative.S
 	Args: [{ false type int} { false name String} { false index int}], Returns: void
 */
 func (o *VisualScriptLists) AddOutputDataPort(aType gdnative.Int, name gdnative.String, index gdnative.Int) {
-	//log.Println("Calling VisualScriptLists.AddOutputDataPort()")
+	// log.Println("Calling VisualScriptLists.AddOutputDataPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -85,7 +85,7 @@ func (o *VisualScriptLists) AddOutputDataPort(aType gdnative.Int, name gdnative.
 	Args: [{ false index int}], Returns: void
 */
 func (o *VisualScriptLists) RemoveInputDataPort(index gdnative.Int) {
-	//log.Println("Calling VisualScriptLists.RemoveInputDataPort()")
+	// log.Println("Calling VisualScriptLists.RemoveInputDataPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptLists) RemoveInputDataPort(index gdnative.Int) {
 	Args: [{ false index int}], Returns: void
 */
 func (o *VisualScriptLists) RemoveOutputDataPort(index gdnative.Int) {
-	//log.Println("Calling VisualScriptLists.RemoveOutputDataPort()")
+	// log.Println("Calling VisualScriptLists.RemoveOutputDataPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -127,7 +127,7 @@ func (o *VisualScriptLists) RemoveOutputDataPort(index gdnative.Int) {
 	Args: [{ false index int} { false name String}], Returns: void
 */
 func (o *VisualScriptLists) SetInputDataPortName(index gdnative.Int, name gdnative.String) {
-	//log.Println("Calling VisualScriptLists.SetInputDataPortName()")
+	// log.Println("Calling VisualScriptLists.SetInputDataPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -149,7 +149,7 @@ func (o *VisualScriptLists) SetInputDataPortName(index gdnative.Int, name gdnati
 	Args: [{ false index int} { false type int}], Returns: void
 */
 func (o *VisualScriptLists) SetInputDataPortType(index gdnative.Int, aType gdnative.Int) {
-	//log.Println("Calling VisualScriptLists.SetInputDataPortType()")
+	// log.Println("Calling VisualScriptLists.SetInputDataPortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -171,7 +171,7 @@ func (o *VisualScriptLists) SetInputDataPortType(index gdnative.Int, aType gdnat
 	Args: [{ false index int} { false name String}], Returns: void
 */
 func (o *VisualScriptLists) SetOutputDataPortName(index gdnative.Int, name gdnative.String) {
-	//log.Println("Calling VisualScriptLists.SetOutputDataPortName()")
+	// log.Println("Calling VisualScriptLists.SetOutputDataPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -193,7 +193,7 @@ func (o *VisualScriptLists) SetOutputDataPortName(index gdnative.Int, name gdnat
 	Args: [{ false index int} { false type int}], Returns: void
 */
 func (o *VisualScriptLists) SetOutputDataPortType(index gdnative.Int, aType gdnative.Int) {
-	//log.Println("Calling VisualScriptLists.SetOutputDataPortType()")
+	// log.Println("Calling VisualScriptLists.SetOutputDataPortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

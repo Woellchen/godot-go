@@ -39,7 +39,7 @@ func (o *X509Certificate) BaseClass() string {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *X509Certificate) Load(path gdnative.String) gdnative.Error {
-	//log.Println("Calling X509Certificate.Load()")
+	// log.Println("Calling X509Certificate.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *X509Certificate) Load(path gdnative.String) gdnative.Error {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *X509Certificate) Save(path gdnative.String) gdnative.Error {
-	//log.Println("Calling X509Certificate.Save()")
+	// log.Println("Calling X509Certificate.Save()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *ImmediateGeometry) BaseClass() string {
 	Args: [{ false lats int} { false lons int} { false radius float} {True true add_uv bool}], Returns: void
 */
 func (o *ImmediateGeometry) AddSphere(lats gdnative.Int, lons gdnative.Int, radius gdnative.Real, addUv gdnative.Bool) {
-	//log.Println("Calling ImmediateGeometry.AddSphere()")
+	// log.Println("Calling ImmediateGeometry.AddSphere()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -63,7 +63,7 @@ func (o *ImmediateGeometry) AddSphere(lats gdnative.Int, lons gdnative.Int, radi
 	Args: [{ false position Vector3}], Returns: void
 */
 func (o *ImmediateGeometry) AddVertex(position gdnative.Vector3) {
-	//log.Println("Calling ImmediateGeometry.AddVertex()")
+	// log.Println("Calling ImmediateGeometry.AddVertex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -84,7 +84,7 @@ func (o *ImmediateGeometry) AddVertex(position gdnative.Vector3) {
 	Args: [{ false primitive int} {[Object:null] true texture Texture}], Returns: void
 */
 func (o *ImmediateGeometry) Begin(primitive gdnative.Int, texture TextureImplementer) {
-	//log.Println("Calling ImmediateGeometry.Begin()")
+	// log.Println("Calling ImmediateGeometry.Begin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -106,7 +106,7 @@ func (o *ImmediateGeometry) Begin(primitive gdnative.Int, texture TextureImpleme
 	Args: [], Returns: void
 */
 func (o *ImmediateGeometry) Clear() {
-	//log.Println("Calling ImmediateGeometry.Clear()")
+	// log.Println("Calling ImmediateGeometry.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *ImmediateGeometry) Clear() {
 	Args: [], Returns: void
 */
 func (o *ImmediateGeometry) End() {
-	//log.Println("Calling ImmediateGeometry.End()")
+	// log.Println("Calling ImmediateGeometry.End()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -146,7 +146,7 @@ func (o *ImmediateGeometry) End() {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ImmediateGeometry) SetColor(color gdnative.Color) {
-	//log.Println("Calling ImmediateGeometry.SetColor()")
+	// log.Println("Calling ImmediateGeometry.SetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -167,7 +167,7 @@ func (o *ImmediateGeometry) SetColor(color gdnative.Color) {
 	Args: [{ false normal Vector3}], Returns: void
 */
 func (o *ImmediateGeometry) SetNormal(normal gdnative.Vector3) {
-	//log.Println("Calling ImmediateGeometry.SetNormal()")
+	// log.Println("Calling ImmediateGeometry.SetNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -188,7 +188,7 @@ func (o *ImmediateGeometry) SetNormal(normal gdnative.Vector3) {
 	Args: [{ false tangent Plane}], Returns: void
 */
 func (o *ImmediateGeometry) SetTangent(tangent gdnative.Plane) {
-	//log.Println("Calling ImmediateGeometry.SetTangent()")
+	// log.Println("Calling ImmediateGeometry.SetTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -209,7 +209,7 @@ func (o *ImmediateGeometry) SetTangent(tangent gdnative.Plane) {
 	Args: [{ false uv Vector2}], Returns: void
 */
 func (o *ImmediateGeometry) SetUv(uv gdnative.Vector2) {
-	//log.Println("Calling ImmediateGeometry.SetUv()")
+	// log.Println("Calling ImmediateGeometry.SetUv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -230,7 +230,7 @@ func (o *ImmediateGeometry) SetUv(uv gdnative.Vector2) {
 	Args: [{ false uv Vector2}], Returns: void
 */
 func (o *ImmediateGeometry) SetUv2(uv gdnative.Vector2) {
-	//log.Println("Calling ImmediateGeometry.SetUv2()")
+	// log.Println("Calling ImmediateGeometry.SetUv2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

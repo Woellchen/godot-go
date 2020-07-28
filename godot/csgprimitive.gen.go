@@ -39,7 +39,7 @@ func (o *CSGPrimitive) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *CSGPrimitive) IsInvertingFaces() gdnative.Bool {
-	//log.Println("Calling CSGPrimitive.IsInvertingFaces()")
+	// log.Println("Calling CSGPrimitive.IsInvertingFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CSGPrimitive) IsInvertingFaces() gdnative.Bool {
 	Args: [{ false invert_faces bool}], Returns: void
 */
 func (o *CSGPrimitive) SetInvertFaces(invertFaces gdnative.Bool) {
-	//log.Println("Calling CSGPrimitive.SetInvertFaces()")
+	// log.Println("Calling CSGPrimitive.SetInvertFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

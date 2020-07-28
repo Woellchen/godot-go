@@ -50,7 +50,7 @@ func (o *JSONRPC) BaseClass() string {
 	Args: [{ false method String} { false params Variant}], Returns: Dictionary
 */
 func (o *JSONRPC) MakeNotification(method gdnative.String, params gdnative.Variant) gdnative.Dictionary {
-	//log.Println("Calling JSONRPC.MakeNotification()")
+	// log.Println("Calling JSONRPC.MakeNotification()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -75,7 +75,7 @@ func (o *JSONRPC) MakeNotification(method gdnative.String, params gdnative.Varia
 	Args: [{ false method String} { false params Variant} { false id Variant}], Returns: Dictionary
 */
 func (o *JSONRPC) MakeRequest(method gdnative.String, params gdnative.Variant, id gdnative.Variant) gdnative.Dictionary {
-	//log.Println("Calling JSONRPC.MakeRequest()")
+	// log.Println("Calling JSONRPC.MakeRequest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -101,7 +101,7 @@ func (o *JSONRPC) MakeRequest(method gdnative.String, params gdnative.Variant, i
 	Args: [{ false result Variant} { false id Variant}], Returns: Dictionary
 */
 func (o *JSONRPC) MakeResponse(result gdnative.Variant, id gdnative.Variant) gdnative.Dictionary {
-	//log.Println("Calling JSONRPC.MakeResponse()")
+	// log.Println("Calling JSONRPC.MakeResponse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -126,7 +126,7 @@ func (o *JSONRPC) MakeResponse(result gdnative.Variant, id gdnative.Variant) gdn
 	Args: [{ false code int} { false message String} {Null true id Variant}], Returns: Dictionary
 */
 func (o *JSONRPC) MakeResponseError(code gdnative.Int, message gdnative.String, id gdnative.Variant) gdnative.Dictionary {
-	//log.Println("Calling JSONRPC.MakeResponseError()")
+	// log.Println("Calling JSONRPC.MakeResponseError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -152,7 +152,7 @@ func (o *JSONRPC) MakeResponseError(code gdnative.Int, message gdnative.String, 
 	Args: [{ false action Variant} {False true recurse bool}], Returns: Variant
 */
 func (o *JSONRPC) ProcessAction(action gdnative.Variant, recurse gdnative.Bool) gdnative.Variant {
-	//log.Println("Calling JSONRPC.ProcessAction()")
+	// log.Println("Calling JSONRPC.ProcessAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -177,7 +177,7 @@ func (o *JSONRPC) ProcessAction(action gdnative.Variant, recurse gdnative.Bool) 
 	Args: [{ false action String}], Returns: String
 */
 func (o *JSONRPC) ProcessString(action gdnative.String) gdnative.String {
-	//log.Println("Calling JSONRPC.ProcessString()")
+	// log.Println("Calling JSONRPC.ProcessString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -201,7 +201,7 @@ func (o *JSONRPC) ProcessString(action gdnative.String) gdnative.String {
 	Args: [{ false scope String} { false target Object}], Returns: void
 */
 func (o *JSONRPC) SetScope(scope gdnative.String, target ObjectImplementer) {
-	//log.Println("Calling JSONRPC.SetScope()")
+	// log.Println("Calling JSONRPC.SetScope()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

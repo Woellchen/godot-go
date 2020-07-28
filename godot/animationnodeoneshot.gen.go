@@ -47,7 +47,7 @@ func (o *AnimationNodeOneShot) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeOneShot) GetAutorestartDelay() gdnative.Real {
-	//log.Println("Calling AnimationNodeOneShot.GetAutorestartDelay()")
+	// log.Println("Calling AnimationNodeOneShot.GetAutorestartDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -70,7 +70,7 @@ func (o *AnimationNodeOneShot) GetAutorestartDelay() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeOneShot) GetAutorestartRandomDelay() gdnative.Real {
-	//log.Println("Calling AnimationNodeOneShot.GetAutorestartRandomDelay()")
+	// log.Println("Calling AnimationNodeOneShot.GetAutorestartRandomDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -93,7 +93,7 @@ func (o *AnimationNodeOneShot) GetAutorestartRandomDelay() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeOneShot) GetFadeinTime() gdnative.Real {
-	//log.Println("Calling AnimationNodeOneShot.GetFadeinTime()")
+	// log.Println("Calling AnimationNodeOneShot.GetFadeinTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *AnimationNodeOneShot) GetFadeinTime() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeOneShot) GetFadeoutTime() gdnative.Real {
-	//log.Println("Calling AnimationNodeOneShot.GetFadeoutTime()")
+	// log.Println("Calling AnimationNodeOneShot.GetFadeoutTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *AnimationNodeOneShot) GetFadeoutTime() gdnative.Real {
 	Args: [], Returns: enum.AnimationNodeOneShot::MixMode
 */
 func (o *AnimationNodeOneShot) GetMixMode() AnimationNodeOneShotMixMode {
-	//log.Println("Calling AnimationNodeOneShot.GetMixMode()")
+	// log.Println("Calling AnimationNodeOneShot.GetMixMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *AnimationNodeOneShot) GetMixMode() AnimationNodeOneShotMixMode {
 	Args: [], Returns: bool
 */
 func (o *AnimationNodeOneShot) HasAutorestart() gdnative.Bool {
-	//log.Println("Calling AnimationNodeOneShot.HasAutorestart()")
+	// log.Println("Calling AnimationNodeOneShot.HasAutorestart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -185,7 +185,7 @@ func (o *AnimationNodeOneShot) HasAutorestart() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *AnimationNodeOneShot) IsUsingSync() gdnative.Bool {
-	//log.Println("Calling AnimationNodeOneShot.IsUsingSync()")
+	// log.Println("Calling AnimationNodeOneShot.IsUsingSync()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -208,7 +208,7 @@ func (o *AnimationNodeOneShot) IsUsingSync() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetAutorestart(enable gdnative.Bool) {
-	//log.Println("Calling AnimationNodeOneShot.SetAutorestart()")
+	// log.Println("Calling AnimationNodeOneShot.SetAutorestart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -229,7 +229,7 @@ func (o *AnimationNodeOneShot) SetAutorestart(enable gdnative.Bool) {
 	Args: [{ false enable float}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetAutorestartDelay(enable gdnative.Real) {
-	//log.Println("Calling AnimationNodeOneShot.SetAutorestartDelay()")
+	// log.Println("Calling AnimationNodeOneShot.SetAutorestartDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -250,7 +250,7 @@ func (o *AnimationNodeOneShot) SetAutorestartDelay(enable gdnative.Real) {
 	Args: [{ false enable float}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetAutorestartRandomDelay(enable gdnative.Real) {
-	//log.Println("Calling AnimationNodeOneShot.SetAutorestartRandomDelay()")
+	// log.Println("Calling AnimationNodeOneShot.SetAutorestartRandomDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -271,7 +271,7 @@ func (o *AnimationNodeOneShot) SetAutorestartRandomDelay(enable gdnative.Real) {
 	Args: [{ false time float}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetFadeinTime(time gdnative.Real) {
-	//log.Println("Calling AnimationNodeOneShot.SetFadeinTime()")
+	// log.Println("Calling AnimationNodeOneShot.SetFadeinTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -292,7 +292,7 @@ func (o *AnimationNodeOneShot) SetFadeinTime(time gdnative.Real) {
 	Args: [{ false time float}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetFadeoutTime(time gdnative.Real) {
-	//log.Println("Calling AnimationNodeOneShot.SetFadeoutTime()")
+	// log.Println("Calling AnimationNodeOneShot.SetFadeoutTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -313,7 +313,7 @@ func (o *AnimationNodeOneShot) SetFadeoutTime(time gdnative.Real) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetMixMode(mode gdnative.Int) {
-	//log.Println("Calling AnimationNodeOneShot.SetMixMode()")
+	// log.Println("Calling AnimationNodeOneShot.SetMixMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -334,7 +334,7 @@ func (o *AnimationNodeOneShot) SetMixMode(mode gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AnimationNodeOneShot) SetUseSync(enable gdnative.Bool) {
-	//log.Println("Calling AnimationNodeOneShot.SetUseSync()")
+	// log.Println("Calling AnimationNodeOneShot.SetUseSync()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

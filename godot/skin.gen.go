@@ -39,7 +39,7 @@ func (o *Skin) BaseClass() string {
 	Args: [{ false bone int} { false pose Transform}], Returns: void
 */
 func (o *Skin) AddBind(bone gdnative.Int, pose gdnative.Transform) {
-	//log.Println("Calling Skin.AddBind()")
+	// log.Println("Calling Skin.AddBind()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *Skin) AddBind(bone gdnative.Int, pose gdnative.Transform) {
 	Args: [], Returns: void
 */
 func (o *Skin) ClearBinds() {
-	//log.Println("Calling Skin.ClearBinds()")
+	// log.Println("Calling Skin.ClearBinds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -81,7 +81,7 @@ func (o *Skin) ClearBinds() {
 	Args: [{ false bind_index int}], Returns: int
 */
 func (o *Skin) GetBindBone(bindIndex gdnative.Int) gdnative.Int {
-	//log.Println("Calling Skin.GetBindBone()")
+	// log.Println("Calling Skin.GetBindBone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -105,7 +105,7 @@ func (o *Skin) GetBindBone(bindIndex gdnative.Int) gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *Skin) GetBindCount() gdnative.Int {
-	//log.Println("Calling Skin.GetBindCount()")
+	// log.Println("Calling Skin.GetBindCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *Skin) GetBindCount() gdnative.Int {
 	Args: [{ false bind_index int}], Returns: String
 */
 func (o *Skin) GetBindName(bindIndex gdnative.Int) gdnative.String {
-	//log.Println("Calling Skin.GetBindName()")
+	// log.Println("Calling Skin.GetBindName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *Skin) GetBindName(bindIndex gdnative.Int) gdnative.String {
 	Args: [{ false bind_index int}], Returns: Transform
 */
 func (o *Skin) GetBindPose(bindIndex gdnative.Int) gdnative.Transform {
-	//log.Println("Calling Skin.GetBindPose()")
+	// log.Println("Calling Skin.GetBindPose()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -176,7 +176,7 @@ func (o *Skin) GetBindPose(bindIndex gdnative.Int) gdnative.Transform {
 	Args: [{ false bind_index int} { false bone int}], Returns: void
 */
 func (o *Skin) SetBindBone(bindIndex gdnative.Int, bone gdnative.Int) {
-	//log.Println("Calling Skin.SetBindBone()")
+	// log.Println("Calling Skin.SetBindBone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -198,7 +198,7 @@ func (o *Skin) SetBindBone(bindIndex gdnative.Int, bone gdnative.Int) {
 	Args: [{ false bind_count int}], Returns: void
 */
 func (o *Skin) SetBindCount(bindCount gdnative.Int) {
-	//log.Println("Calling Skin.SetBindCount()")
+	// log.Println("Calling Skin.SetBindCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -219,7 +219,7 @@ func (o *Skin) SetBindCount(bindCount gdnative.Int) {
 	Args: [{ false bind_index int} { false name String}], Returns: void
 */
 func (o *Skin) SetBindName(bindIndex gdnative.Int, name gdnative.String) {
-	//log.Println("Calling Skin.SetBindName()")
+	// log.Println("Calling Skin.SetBindName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -241,7 +241,7 @@ func (o *Skin) SetBindName(bindIndex gdnative.Int, name gdnative.String) {
 	Args: [{ false bind_index int} { false pose Transform}], Returns: void
 */
 func (o *Skin) SetBindPose(bindIndex gdnative.Int, pose gdnative.Transform) {
-	//log.Println("Calling Skin.SetBindPose()")
+	// log.Println("Calling Skin.SetBindPose()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

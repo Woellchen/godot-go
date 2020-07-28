@@ -48,7 +48,7 @@ func (o *Thread) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *Thread) GetId() gdnative.String {
-	//log.Println("Calling _Thread.GetId()")
+	// log.Println("Calling _Thread.GetId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *Thread) GetId() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *Thread) IsActive() gdnative.Bool {
-	//log.Println("Calling _Thread.IsActive()")
+	// log.Println("Calling _Thread.IsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *Thread) IsActive() gdnative.Bool {
 	Args: [{ false instance Object} { false method String} {Null true userdata Variant} {1 true priority int}], Returns: enum.Error
 */
 func (o *Thread) Start(instance ObjectImplementer, method gdnative.String, userdata gdnative.Variant, priority gdnative.Int) gdnative.Error {
-	//log.Println("Calling _Thread.Start()")
+	// log.Println("Calling _Thread.Start()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -121,7 +121,7 @@ func (o *Thread) Start(instance ObjectImplementer, method gdnative.String, userd
 	Args: [], Returns: Variant
 */
 func (o *Thread) WaitToFinish() gdnative.Variant {
-	//log.Println("Calling _Thread.WaitToFinish()")
+	// log.Println("Calling _Thread.WaitToFinish()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

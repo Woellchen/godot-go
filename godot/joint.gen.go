@@ -39,7 +39,7 @@ func (o *Joint) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *Joint) GetExcludeNodesFromCollision() gdnative.Bool {
-	//log.Println("Calling Joint.GetExcludeNodesFromCollision()")
+	// log.Println("Calling Joint.GetExcludeNodesFromCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Joint) GetExcludeNodesFromCollision() gdnative.Bool {
 	Args: [], Returns: NodePath
 */
 func (o *Joint) GetNodeA() gdnative.NodePath {
-	//log.Println("Calling Joint.GetNodeA()")
+	// log.Println("Calling Joint.GetNodeA()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *Joint) GetNodeA() gdnative.NodePath {
 	Args: [], Returns: NodePath
 */
 func (o *Joint) GetNodeB() gdnative.NodePath {
-	//log.Println("Calling Joint.GetNodeB()")
+	// log.Println("Calling Joint.GetNodeB()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *Joint) GetNodeB() gdnative.NodePath {
 	Args: [], Returns: int
 */
 func (o *Joint) GetSolverPriority() gdnative.Int {
-	//log.Println("Calling Joint.GetSolverPriority()")
+	// log.Println("Calling Joint.GetSolverPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *Joint) GetSolverPriority() gdnative.Int {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Joint) SetExcludeNodesFromCollision(enable gdnative.Bool) {
-	//log.Println("Calling Joint.SetExcludeNodesFromCollision()")
+	// log.Println("Calling Joint.SetExcludeNodesFromCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *Joint) SetExcludeNodesFromCollision(enable gdnative.Bool) {
 	Args: [{ false node NodePath}], Returns: void
 */
 func (o *Joint) SetNodeA(node gdnative.NodePath) {
-	//log.Println("Calling Joint.SetNodeA()")
+	// log.Println("Calling Joint.SetNodeA()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *Joint) SetNodeA(node gdnative.NodePath) {
 	Args: [{ false node NodePath}], Returns: void
 */
 func (o *Joint) SetNodeB(node gdnative.NodePath) {
-	//log.Println("Calling Joint.SetNodeB()")
+	// log.Println("Calling Joint.SetNodeB()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *Joint) SetNodeB(node gdnative.NodePath) {
 	Args: [{ false priority int}], Returns: void
 */
 func (o *Joint) SetSolverPriority(priority gdnative.Int) {
-	//log.Println("Calling Joint.SetSolverPriority()")
+	// log.Println("Calling Joint.SetSolverPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

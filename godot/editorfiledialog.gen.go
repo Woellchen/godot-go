@@ -67,7 +67,7 @@ func (o *EditorFileDialog) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_ActionPressed() {
-	//log.Println("Calling EditorFileDialog.X_ActionPressed()")
+	// log.Println("Calling EditorFileDialog.X_ActionPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -87,7 +87,7 @@ func (o *EditorFileDialog) X_ActionPressed() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_CancelPressed() {
-	//log.Println("Calling EditorFileDialog.X_CancelPressed()")
+	// log.Println("Calling EditorFileDialog.X_CancelPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -107,7 +107,7 @@ func (o *EditorFileDialog) X_CancelPressed() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *EditorFileDialog) X_DirEntered(arg0 gdnative.String) {
-	//log.Println("Calling EditorFileDialog.X_DirEntered()")
+	// log.Println("Calling EditorFileDialog.X_DirEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -128,7 +128,7 @@ func (o *EditorFileDialog) X_DirEntered(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_FavoriteMoveDown() {
-	//log.Println("Calling EditorFileDialog.X_FavoriteMoveDown()")
+	// log.Println("Calling EditorFileDialog.X_FavoriteMoveDown()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -148,7 +148,7 @@ func (o *EditorFileDialog) X_FavoriteMoveDown() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_FavoriteMoveUp() {
-	//log.Println("Calling EditorFileDialog.X_FavoriteMoveUp()")
+	// log.Println("Calling EditorFileDialog.X_FavoriteMoveUp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *EditorFileDialog) X_FavoriteMoveUp() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_FavoritePressed() {
-	//log.Println("Calling EditorFileDialog.X_FavoritePressed()")
+	// log.Println("Calling EditorFileDialog.X_FavoritePressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -188,7 +188,7 @@ func (o *EditorFileDialog) X_FavoritePressed() {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_FavoriteSelected(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_FavoriteSelected()")
+	// log.Println("Calling EditorFileDialog.X_FavoriteSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -209,7 +209,7 @@ func (o *EditorFileDialog) X_FavoriteSelected(arg0 gdnative.Int) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *EditorFileDialog) X_FileEntered(arg0 gdnative.String) {
-	//log.Println("Calling EditorFileDialog.X_FileEntered()")
+	// log.Println("Calling EditorFileDialog.X_FileEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -230,7 +230,7 @@ func (o *EditorFileDialog) X_FileEntered(arg0 gdnative.String) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_FilterSelected(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_FilterSelected()")
+	// log.Println("Calling EditorFileDialog.X_FilterSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -251,7 +251,7 @@ func (o *EditorFileDialog) X_FilterSelected(arg0 gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_GoBack() {
-	//log.Println("Calling EditorFileDialog.X_GoBack()")
+	// log.Println("Calling EditorFileDialog.X_GoBack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -271,7 +271,7 @@ func (o *EditorFileDialog) X_GoBack() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_GoForward() {
-	//log.Println("Calling EditorFileDialog.X_GoForward()")
+	// log.Println("Calling EditorFileDialog.X_GoForward()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -291,7 +291,7 @@ func (o *EditorFileDialog) X_GoForward() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_GoUp() {
-	//log.Println("Calling EditorFileDialog.X_GoUp()")
+	// log.Println("Calling EditorFileDialog.X_GoUp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -311,7 +311,7 @@ func (o *EditorFileDialog) X_GoUp() {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_ItemDbSelected(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_ItemDbSelected()")
+	// log.Println("Calling EditorFileDialog.X_ItemDbSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -332,7 +332,7 @@ func (o *EditorFileDialog) X_ItemDbSelected(arg0 gdnative.Int) {
 	Args: [{ false arg0 int} { false arg1 Vector2}], Returns: void
 */
 func (o *EditorFileDialog) X_ItemListItemRmbSelected(arg0 gdnative.Int, arg1 gdnative.Vector2) {
-	//log.Println("Calling EditorFileDialog.X_ItemListItemRmbSelected()")
+	// log.Println("Calling EditorFileDialog.X_ItemListItemRmbSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -354,7 +354,7 @@ func (o *EditorFileDialog) X_ItemListItemRmbSelected(arg0 gdnative.Int, arg1 gdn
 	Args: [{ false arg0 Vector2}], Returns: void
 */
 func (o *EditorFileDialog) X_ItemListRmbClicked(arg0 gdnative.Vector2) {
-	//log.Println("Calling EditorFileDialog.X_ItemListRmbClicked()")
+	// log.Println("Calling EditorFileDialog.X_ItemListRmbClicked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -375,7 +375,7 @@ func (o *EditorFileDialog) X_ItemListRmbClicked(arg0 gdnative.Vector2) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_ItemMenuIdPressed(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_ItemMenuIdPressed()")
+	// log.Println("Calling EditorFileDialog.X_ItemMenuIdPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -396,7 +396,7 @@ func (o *EditorFileDialog) X_ItemMenuIdPressed(arg0 gdnative.Int) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_ItemSelected(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_ItemSelected()")
+	// log.Println("Calling EditorFileDialog.X_ItemSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -417,7 +417,7 @@ func (o *EditorFileDialog) X_ItemSelected(arg0 gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_ItemsClearSelection() {
-	//log.Println("Calling EditorFileDialog.X_ItemsClearSelection()")
+	// log.Println("Calling EditorFileDialog.X_ItemsClearSelection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -437,7 +437,7 @@ func (o *EditorFileDialog) X_ItemsClearSelection() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_MakeDir() {
-	//log.Println("Calling EditorFileDialog.X_MakeDir()")
+	// log.Println("Calling EditorFileDialog.X_MakeDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -457,7 +457,7 @@ func (o *EditorFileDialog) X_MakeDir() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_MakeDirConfirm() {
-	//log.Println("Calling EditorFileDialog.X_MakeDirConfirm()")
+	// log.Println("Calling EditorFileDialog.X_MakeDirConfirm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -477,7 +477,7 @@ func (o *EditorFileDialog) X_MakeDirConfirm() {
 	Args: [{ false arg0 int} { false arg1 bool}], Returns: void
 */
 func (o *EditorFileDialog) X_MultiSelected(arg0 gdnative.Int, arg1 gdnative.Bool) {
-	//log.Println("Calling EditorFileDialog.X_MultiSelected()")
+	// log.Println("Calling EditorFileDialog.X_MultiSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -499,7 +499,7 @@ func (o *EditorFileDialog) X_MultiSelected(arg0 gdnative.Int, arg1 gdnative.Bool
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_RecentSelected(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_RecentSelected()")
+	// log.Println("Calling EditorFileDialog.X_RecentSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -520,7 +520,7 @@ func (o *EditorFileDialog) X_RecentSelected(arg0 gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_SaveConfirmPressed() {
-	//log.Println("Calling EditorFileDialog.X_SaveConfirmPressed()")
+	// log.Println("Calling EditorFileDialog.X_SaveConfirmPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -540,7 +540,7 @@ func (o *EditorFileDialog) X_SaveConfirmPressed() {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorFileDialog) X_SelectDrive(arg0 gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.X_SelectDrive()")
+	// log.Println("Calling EditorFileDialog.X_SelectDrive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -561,7 +561,7 @@ func (o *EditorFileDialog) X_SelectDrive(arg0 gdnative.Int) {
 	Args: [{ false arg0 String} { false arg1 Texture} { false arg2 Texture} { false arg3 Variant}], Returns: void
 */
 func (o *EditorFileDialog) X_ThumbnailDone(arg0 gdnative.String, arg1 TextureImplementer, arg2 TextureImplementer, arg3 gdnative.Variant) {
-	//log.Println("Calling EditorFileDialog.X_ThumbnailDone()")
+	// log.Println("Calling EditorFileDialog.X_ThumbnailDone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -585,7 +585,7 @@ func (o *EditorFileDialog) X_ThumbnailDone(arg0 gdnative.String, arg1 TextureImp
 	Args: [{ false arg0 String} { false arg1 Texture} { false arg2 Texture} { false arg3 Variant}], Returns: void
 */
 func (o *EditorFileDialog) X_ThumbnailResult(arg0 gdnative.String, arg1 TextureImplementer, arg2 TextureImplementer, arg3 gdnative.Variant) {
-	//log.Println("Calling EditorFileDialog.X_ThumbnailResult()")
+	// log.Println("Calling EditorFileDialog.X_ThumbnailResult()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -609,7 +609,7 @@ func (o *EditorFileDialog) X_ThumbnailResult(arg0 gdnative.String, arg1 TextureI
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *EditorFileDialog) X_UnhandledInput(arg0 InputEventImplementer) {
-	//log.Println("Calling EditorFileDialog.X_UnhandledInput()")
+	// log.Println("Calling EditorFileDialog.X_UnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -630,7 +630,7 @@ func (o *EditorFileDialog) X_UnhandledInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_UpdateDir() {
-	//log.Println("Calling EditorFileDialog.X_UpdateDir()")
+	// log.Println("Calling EditorFileDialog.X_UpdateDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -650,7 +650,7 @@ func (o *EditorFileDialog) X_UpdateDir() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_UpdateFileList() {
-	//log.Println("Calling EditorFileDialog.X_UpdateFileList()")
+	// log.Println("Calling EditorFileDialog.X_UpdateFileList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -670,7 +670,7 @@ func (o *EditorFileDialog) X_UpdateFileList() {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) X_UpdateFileName() {
-	//log.Println("Calling EditorFileDialog.X_UpdateFileName()")
+	// log.Println("Calling EditorFileDialog.X_UpdateFileName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -690,7 +690,7 @@ func (o *EditorFileDialog) X_UpdateFileName() {
 	Args: [{ false filter String}], Returns: void
 */
 func (o *EditorFileDialog) AddFilter(filter gdnative.String) {
-	//log.Println("Calling EditorFileDialog.AddFilter()")
+	// log.Println("Calling EditorFileDialog.AddFilter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -711,7 +711,7 @@ func (o *EditorFileDialog) AddFilter(filter gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) ClearFilters() {
-	//log.Println("Calling EditorFileDialog.ClearFilters()")
+	// log.Println("Calling EditorFileDialog.ClearFilters()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -731,7 +731,7 @@ func (o *EditorFileDialog) ClearFilters() {
 	Args: [], Returns: enum.EditorFileDialog::Access
 */
 func (o *EditorFileDialog) GetAccess() EditorFileDialogAccess {
-	//log.Println("Calling EditorFileDialog.GetAccess()")
+	// log.Println("Calling EditorFileDialog.GetAccess()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -754,7 +754,7 @@ func (o *EditorFileDialog) GetAccess() EditorFileDialogAccess {
 	Args: [], Returns: String
 */
 func (o *EditorFileDialog) GetCurrentDir() gdnative.String {
-	//log.Println("Calling EditorFileDialog.GetCurrentDir()")
+	// log.Println("Calling EditorFileDialog.GetCurrentDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -777,7 +777,7 @@ func (o *EditorFileDialog) GetCurrentDir() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorFileDialog) GetCurrentFile() gdnative.String {
-	//log.Println("Calling EditorFileDialog.GetCurrentFile()")
+	// log.Println("Calling EditorFileDialog.GetCurrentFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -800,7 +800,7 @@ func (o *EditorFileDialog) GetCurrentFile() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorFileDialog) GetCurrentPath() gdnative.String {
-	//log.Println("Calling EditorFileDialog.GetCurrentPath()")
+	// log.Println("Calling EditorFileDialog.GetCurrentPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -823,7 +823,7 @@ func (o *EditorFileDialog) GetCurrentPath() gdnative.String {
 	Args: [], Returns: enum.EditorFileDialog::DisplayMode
 */
 func (o *EditorFileDialog) GetDisplayMode() EditorFileDialogDisplayMode {
-	//log.Println("Calling EditorFileDialog.GetDisplayMode()")
+	// log.Println("Calling EditorFileDialog.GetDisplayMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -846,7 +846,7 @@ func (o *EditorFileDialog) GetDisplayMode() EditorFileDialogDisplayMode {
 	Args: [], Returns: enum.EditorFileDialog::Mode
 */
 func (o *EditorFileDialog) GetMode() EditorFileDialogMode {
-	//log.Println("Calling EditorFileDialog.GetMode()")
+	// log.Println("Calling EditorFileDialog.GetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -869,7 +869,7 @@ func (o *EditorFileDialog) GetMode() EditorFileDialogMode {
 	Args: [], Returns: VBoxContainer
 */
 func (o *EditorFileDialog) GetVbox() VBoxContainerImplementer {
-	//log.Println("Calling EditorFileDialog.GetVbox()")
+	// log.Println("Calling EditorFileDialog.GetVbox()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -906,7 +906,7 @@ func (o *EditorFileDialog) GetVbox() VBoxContainerImplementer {
 	Args: [], Returns: void
 */
 func (o *EditorFileDialog) Invalidate() {
-	//log.Println("Calling EditorFileDialog.Invalidate()")
+	// log.Println("Calling EditorFileDialog.Invalidate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -926,7 +926,7 @@ func (o *EditorFileDialog) Invalidate() {
 	Args: [], Returns: bool
 */
 func (o *EditorFileDialog) IsOverwriteWarningDisabled() gdnative.Bool {
-	//log.Println("Calling EditorFileDialog.IsOverwriteWarningDisabled()")
+	// log.Println("Calling EditorFileDialog.IsOverwriteWarningDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -949,7 +949,7 @@ func (o *EditorFileDialog) IsOverwriteWarningDisabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorFileDialog) IsShowingHiddenFiles() gdnative.Bool {
-	//log.Println("Calling EditorFileDialog.IsShowingHiddenFiles()")
+	// log.Println("Calling EditorFileDialog.IsShowingHiddenFiles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -972,7 +972,7 @@ func (o *EditorFileDialog) IsShowingHiddenFiles() gdnative.Bool {
 	Args: [{ false access int}], Returns: void
 */
 func (o *EditorFileDialog) SetAccess(access gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.SetAccess()")
+	// log.Println("Calling EditorFileDialog.SetAccess()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -993,7 +993,7 @@ func (o *EditorFileDialog) SetAccess(access gdnative.Int) {
 	Args: [{ false dir String}], Returns: void
 */
 func (o *EditorFileDialog) SetCurrentDir(dir gdnative.String) {
-	//log.Println("Calling EditorFileDialog.SetCurrentDir()")
+	// log.Println("Calling EditorFileDialog.SetCurrentDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1014,7 +1014,7 @@ func (o *EditorFileDialog) SetCurrentDir(dir gdnative.String) {
 	Args: [{ false file String}], Returns: void
 */
 func (o *EditorFileDialog) SetCurrentFile(file gdnative.String) {
-	//log.Println("Calling EditorFileDialog.SetCurrentFile()")
+	// log.Println("Calling EditorFileDialog.SetCurrentFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1035,7 +1035,7 @@ func (o *EditorFileDialog) SetCurrentFile(file gdnative.String) {
 	Args: [{ false path String}], Returns: void
 */
 func (o *EditorFileDialog) SetCurrentPath(path gdnative.String) {
-	//log.Println("Calling EditorFileDialog.SetCurrentPath()")
+	// log.Println("Calling EditorFileDialog.SetCurrentPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1056,7 +1056,7 @@ func (o *EditorFileDialog) SetCurrentPath(path gdnative.String) {
 	Args: [{ false disable bool}], Returns: void
 */
 func (o *EditorFileDialog) SetDisableOverwriteWarning(disable gdnative.Bool) {
-	//log.Println("Calling EditorFileDialog.SetDisableOverwriteWarning()")
+	// log.Println("Calling EditorFileDialog.SetDisableOverwriteWarning()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1077,7 +1077,7 @@ func (o *EditorFileDialog) SetDisableOverwriteWarning(disable gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *EditorFileDialog) SetDisplayMode(mode gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.SetDisplayMode()")
+	// log.Println("Calling EditorFileDialog.SetDisplayMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1098,7 +1098,7 @@ func (o *EditorFileDialog) SetDisplayMode(mode gdnative.Int) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *EditorFileDialog) SetMode(mode gdnative.Int) {
-	//log.Println("Calling EditorFileDialog.SetMode()")
+	// log.Println("Calling EditorFileDialog.SetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1119,7 +1119,7 @@ func (o *EditorFileDialog) SetMode(mode gdnative.Int) {
 	Args: [{ false show bool}], Returns: void
 */
 func (o *EditorFileDialog) SetShowHiddenFiles(show gdnative.Bool) {
-	//log.Println("Calling EditorFileDialog.SetShowHiddenFiles()")
+	// log.Println("Calling EditorFileDialog.SetShowHiddenFiles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

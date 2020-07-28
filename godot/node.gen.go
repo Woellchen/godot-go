@@ -1,6 +1,8 @@
 package godot
 
 import (
+	"reflect"
+
 	"github.com/Woellchen/godot-go/gdnative"
 )
 
@@ -58,7 +60,7 @@ func (o *Node) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Node) X_EnterTree() {
-	//log.Println("Calling Node.X_EnterTree()")
+	// log.Println("Calling Node.X_EnterTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -78,7 +80,7 @@ func (o *Node) X_EnterTree() {
 	Args: [], Returns: void
 */
 func (o *Node) X_ExitTree() {
-	//log.Println("Calling Node.X_ExitTree()")
+	// log.Println("Calling Node.X_ExitTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -98,7 +100,7 @@ func (o *Node) X_ExitTree() {
 	Args: [], Returns: String
 */
 func (o *Node) X_GetConfigurationWarning() gdnative.String {
-	//log.Println("Calling Node.X_GetConfigurationWarning()")
+	// log.Println("Calling Node.X_GetConfigurationWarning()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -121,7 +123,7 @@ func (o *Node) X_GetConfigurationWarning() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *Node) X_GetEditorDescription() gdnative.String {
-	//log.Println("Calling Node.X_GetEditorDescription()")
+	// log.Println("Calling Node.X_GetEditorDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -144,7 +146,7 @@ func (o *Node) X_GetEditorDescription() gdnative.String {
 	Args: [], Returns: NodePath
 */
 func (o *Node) X_GetImportPath() gdnative.NodePath {
-	//log.Println("Calling Node.X_GetImportPath()")
+	// log.Println("Calling Node.X_GetImportPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -167,7 +169,7 @@ func (o *Node) X_GetImportPath() gdnative.NodePath {
 	Args: [{ false event InputEvent}], Returns: void
 */
 func (o *Node) X_Input(event InputEventImplementer) {
-	//log.Println("Calling Node.X_Input()")
+	// log.Println("Calling Node.X_Input()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -188,7 +190,7 @@ func (o *Node) X_Input(event InputEventImplementer) {
 	Args: [{ false delta float}], Returns: void
 */
 func (o *Node) X_PhysicsProcess(delta gdnative.Real) {
-	//log.Println("Calling Node.X_PhysicsProcess()")
+	// log.Println("Calling Node.X_PhysicsProcess()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -209,7 +211,7 @@ func (o *Node) X_PhysicsProcess(delta gdnative.Real) {
 	Args: [{ false delta float}], Returns: void
 */
 func (o *Node) X_Process(delta gdnative.Real) {
-	//log.Println("Calling Node.X_Process()")
+	// log.Println("Calling Node.X_Process()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -230,7 +232,7 @@ func (o *Node) X_Process(delta gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *Node) X_Ready() {
-	//log.Println("Calling Node.X_Ready()")
+	// log.Println("Calling Node.X_Ready()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -250,7 +252,7 @@ func (o *Node) X_Ready() {
 	Args: [{ false editor_description String}], Returns: void
 */
 func (o *Node) X_SetEditorDescription(editorDescription gdnative.String) {
-	//log.Println("Calling Node.X_SetEditorDescription()")
+	// log.Println("Calling Node.X_SetEditorDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -271,7 +273,7 @@ func (o *Node) X_SetEditorDescription(editorDescription gdnative.String) {
 	Args: [{ false import_path NodePath}], Returns: void
 */
 func (o *Node) X_SetImportPath(importPath gdnative.NodePath) {
-	//log.Println("Calling Node.X_SetImportPath()")
+	// log.Println("Calling Node.X_SetImportPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -292,7 +294,7 @@ func (o *Node) X_SetImportPath(importPath gdnative.NodePath) {
 	Args: [{ false event InputEvent}], Returns: void
 */
 func (o *Node) X_UnhandledInput(event InputEventImplementer) {
-	//log.Println("Calling Node.X_UnhandledInput()")
+	// log.Println("Calling Node.X_UnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -313,7 +315,7 @@ func (o *Node) X_UnhandledInput(event InputEventImplementer) {
 	Args: [{ false event InputEventKey}], Returns: void
 */
 func (o *Node) X_UnhandledKeyInput(event InputEventKeyImplementer) {
-	//log.Println("Calling Node.X_UnhandledKeyInput()")
+	// log.Println("Calling Node.X_UnhandledKeyInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -334,7 +336,7 @@ func (o *Node) X_UnhandledKeyInput(event InputEventKeyImplementer) {
 	Args: [{ false node Node} {False true legible_unique_name bool}], Returns: void
 */
 func (o *Node) AddChild(node NodeImplementer, legibleUniqueName gdnative.Bool) {
-	//log.Println("Calling Node.AddChild()")
+	// log.Println("Calling Node.AddChild()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -356,7 +358,7 @@ func (o *Node) AddChild(node NodeImplementer, legibleUniqueName gdnative.Bool) {
 	Args: [{ false node Node} { false child_node Node} {False true legible_unique_name bool}], Returns: void
 */
 func (o *Node) AddChildBelowNode(node NodeImplementer, childNode NodeImplementer, legibleUniqueName gdnative.Bool) {
-	//log.Println("Calling Node.AddChildBelowNode()")
+	// log.Println("Calling Node.AddChildBelowNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -379,7 +381,7 @@ func (o *Node) AddChildBelowNode(node NodeImplementer, childNode NodeImplementer
 	Args: [{ false group String} {False true persistent bool}], Returns: void
 */
 func (o *Node) AddToGroup(group gdnative.String, persistent gdnative.Bool) {
-	//log.Println("Calling Node.AddToGroup()")
+	// log.Println("Calling Node.AddToGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -401,7 +403,7 @@ func (o *Node) AddToGroup(group gdnative.String, persistent gdnative.Bool) {
 	Args: [], Returns: bool
 */
 func (o *Node) CanProcess() gdnative.Bool {
-	//log.Println("Calling Node.CanProcess()")
+	// log.Println("Calling Node.CanProcess()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -424,7 +426,7 @@ func (o *Node) CanProcess() gdnative.Bool {
 	Args: [{15 true flags int}], Returns: Node
 */
 func (o *Node) Duplicate(flags gdnative.Int) NodeImplementer {
-	//log.Println("Calling Node.Duplicate()")
+	// log.Println("Calling Node.Duplicate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -462,7 +464,7 @@ func (o *Node) Duplicate(flags gdnative.Int) NodeImplementer {
 	Args: [{ false mask String} {True true recursive bool} {True true owned bool}], Returns: Node
 */
 func (o *Node) FindNode(mask gdnative.String, recursive gdnative.Bool, owned gdnative.Bool) NodeImplementer {
-	//log.Println("Calling Node.FindNode()")
+	// log.Println("Calling Node.FindNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -502,7 +504,7 @@ func (o *Node) FindNode(mask gdnative.String, recursive gdnative.Bool, owned gdn
 	Args: [{ false mask String}], Returns: Node
 */
 func (o *Node) FindParent(mask gdnative.String) NodeImplementer {
-	//log.Println("Calling Node.FindParent()")
+	// log.Println("Calling Node.FindParent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -540,7 +542,7 @@ func (o *Node) FindParent(mask gdnative.String) NodeImplementer {
 	Args: [{ false idx int}], Returns: Node
 */
 func (o *Node) GetChild(idx gdnative.Int) NodeImplementer {
-	//log.Println("Calling Node.GetChild()")
+	// log.Println("Calling Node.GetChild()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -578,7 +580,7 @@ func (o *Node) GetChild(idx gdnative.Int) NodeImplementer {
 	Args: [], Returns: int
 */
 func (o *Node) GetChildCount() gdnative.Int {
-	//log.Println("Calling Node.GetChildCount()")
+	// log.Println("Calling Node.GetChildCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -601,7 +603,7 @@ func (o *Node) GetChildCount() gdnative.Int {
 	Args: [], Returns: Array
 */
 func (o *Node) GetChildren() gdnative.Array {
-	//log.Println("Calling Node.GetChildren()")
+	// log.Println("Calling Node.GetChildren()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -624,7 +626,7 @@ func (o *Node) GetChildren() gdnative.Array {
 	Args: [], Returns: MultiplayerAPI
 */
 func (o *Node) GetCustomMultiplayer() MultiplayerAPIImplementer {
-	//log.Println("Calling Node.GetCustomMultiplayer()")
+	// log.Println("Calling Node.GetCustomMultiplayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -661,7 +663,7 @@ func (o *Node) GetCustomMultiplayer() MultiplayerAPIImplementer {
 	Args: [], Returns: String
 */
 func (o *Node) GetFilename() gdnative.String {
-	//log.Println("Calling Node.GetFilename()")
+	// log.Println("Calling Node.GetFilename()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -684,7 +686,7 @@ func (o *Node) GetFilename() gdnative.String {
 	Args: [], Returns: Array
 */
 func (o *Node) GetGroups() gdnative.Array {
-	//log.Println("Calling Node.GetGroups()")
+	// log.Println("Calling Node.GetGroups()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -707,7 +709,7 @@ func (o *Node) GetGroups() gdnative.Array {
 	Args: [], Returns: int
 */
 func (o *Node) GetIndex() gdnative.Int {
-	//log.Println("Calling Node.GetIndex()")
+	// log.Println("Calling Node.GetIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -730,7 +732,7 @@ func (o *Node) GetIndex() gdnative.Int {
 	Args: [], Returns: MultiplayerAPI
 */
 func (o *Node) GetMultiplayer() MultiplayerAPIImplementer {
-	//log.Println("Calling Node.GetMultiplayer()")
+	// log.Println("Calling Node.GetMultiplayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -767,7 +769,7 @@ func (o *Node) GetMultiplayer() MultiplayerAPIImplementer {
 	Args: [], Returns: String
 */
 func (o *Node) GetName() gdnative.String {
-	//log.Println("Calling Node.GetName()")
+	// log.Println("Calling Node.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -790,7 +792,7 @@ func (o *Node) GetName() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *Node) GetNetworkMaster() gdnative.Int {
-	//log.Println("Calling Node.GetNetworkMaster()")
+	// log.Println("Calling Node.GetNetworkMaster()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -813,7 +815,7 @@ func (o *Node) GetNetworkMaster() gdnative.Int {
 	Args: [{ false path NodePath}], Returns: Node
 */
 func (o *Node) GetNode(path gdnative.NodePath) NodeImplementer {
-	//log.Println("Calling Node.GetNode()")
+	// log.Println("Calling Node.GetNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -851,7 +853,7 @@ func (o *Node) GetNode(path gdnative.NodePath) NodeImplementer {
 	Args: [{ false path NodePath}], Returns: Array
 */
 func (o *Node) GetNodeAndResource(path gdnative.NodePath) gdnative.Array {
-	//log.Println("Calling Node.GetNodeAndResource()")
+	// log.Println("Calling Node.GetNodeAndResource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -875,7 +877,7 @@ func (o *Node) GetNodeAndResource(path gdnative.NodePath) gdnative.Array {
 	Args: [{ false path NodePath}], Returns: Node
 */
 func (o *Node) GetNodeOrNull(path gdnative.NodePath) NodeImplementer {
-	//log.Println("Calling Node.GetNodeOrNull()")
+	// log.Println("Calling Node.GetNodeOrNull()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -913,7 +915,7 @@ func (o *Node) GetNodeOrNull(path gdnative.NodePath) NodeImplementer {
 	Args: [], Returns: Node
 */
 func (o *Node) GetOwner() NodeImplementer {
-	//log.Println("Calling Node.GetOwner()")
+	// log.Println("Calling Node.GetOwner()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -950,7 +952,7 @@ func (o *Node) GetOwner() NodeImplementer {
 	Args: [], Returns: Node
 */
 func (o *Node) GetParent() NodeImplementer {
-	//log.Println("Calling Node.GetParent()")
+	// log.Println("Calling Node.GetParent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -987,7 +989,7 @@ func (o *Node) GetParent() NodeImplementer {
 	Args: [], Returns: NodePath
 */
 func (o *Node) GetPath() gdnative.NodePath {
-	//log.Println("Calling Node.GetPath()")
+	// log.Println("Calling Node.GetPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1010,7 +1012,7 @@ func (o *Node) GetPath() gdnative.NodePath {
 	Args: [{ false node Node}], Returns: NodePath
 */
 func (o *Node) GetPathTo(node NodeImplementer) gdnative.NodePath {
-	//log.Println("Calling Node.GetPathTo()")
+	// log.Println("Calling Node.GetPathTo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1034,7 +1036,7 @@ func (o *Node) GetPathTo(node NodeImplementer) gdnative.NodePath {
 	Args: [], Returns: enum.Node::PauseMode
 */
 func (o *Node) GetPauseMode() NodePauseMode {
-	//log.Println("Calling Node.GetPauseMode()")
+	// log.Println("Calling Node.GetPauseMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1057,7 +1059,7 @@ func (o *Node) GetPauseMode() NodePauseMode {
 	Args: [], Returns: float
 */
 func (o *Node) GetPhysicsProcessDeltaTime() gdnative.Real {
-	//log.Println("Calling Node.GetPhysicsProcessDeltaTime()")
+	// log.Println("Calling Node.GetPhysicsProcessDeltaTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1080,7 +1082,7 @@ func (o *Node) GetPhysicsProcessDeltaTime() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *Node) GetPositionInParent() gdnative.Int {
-	//log.Println("Calling Node.GetPositionInParent()")
+	// log.Println("Calling Node.GetPositionInParent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1103,7 +1105,7 @@ func (o *Node) GetPositionInParent() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *Node) GetProcessDeltaTime() gdnative.Real {
-	//log.Println("Calling Node.GetProcessDeltaTime()")
+	// log.Println("Calling Node.GetProcessDeltaTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1126,7 +1128,7 @@ func (o *Node) GetProcessDeltaTime() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *Node) GetProcessPriority() gdnative.Int {
-	//log.Println("Calling Node.GetProcessPriority()")
+	// log.Println("Calling Node.GetProcessPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1149,7 +1151,7 @@ func (o *Node) GetProcessPriority() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Node) GetSceneInstanceLoadPlaceholder() gdnative.Bool {
-	//log.Println("Calling Node.GetSceneInstanceLoadPlaceholder()")
+	// log.Println("Calling Node.GetSceneInstanceLoadPlaceholder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1172,7 +1174,7 @@ func (o *Node) GetSceneInstanceLoadPlaceholder() gdnative.Bool {
 	Args: [], Returns: SceneTree
 */
 func (o *Node) GetTree() SceneTreeImplementer {
-	//log.Println("Calling Node.GetTree()")
+	// log.Println("Calling Node.GetTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1209,7 +1211,7 @@ func (o *Node) GetTree() SceneTreeImplementer {
 	Args: [], Returns: Viewport
 */
 func (o *Node) GetViewport() ViewportImplementer {
-	//log.Println("Calling Node.GetViewport()")
+	// log.Println("Calling Node.GetViewport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1246,7 +1248,7 @@ func (o *Node) GetViewport() ViewportImplementer {
 	Args: [{ false path NodePath}], Returns: bool
 */
 func (o *Node) HasNode(path gdnative.NodePath) gdnative.Bool {
-	//log.Println("Calling Node.HasNode()")
+	// log.Println("Calling Node.HasNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1270,7 +1272,7 @@ func (o *Node) HasNode(path gdnative.NodePath) gdnative.Bool {
 	Args: [{ false path NodePath}], Returns: bool
 */
 func (o *Node) HasNodeAndResource(path gdnative.NodePath) gdnative.Bool {
-	//log.Println("Calling Node.HasNodeAndResource()")
+	// log.Println("Calling Node.HasNodeAndResource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1294,7 +1296,7 @@ func (o *Node) HasNodeAndResource(path gdnative.NodePath) gdnative.Bool {
 	Args: [{ false node Node}], Returns: bool
 */
 func (o *Node) IsAParentOf(node NodeImplementer) gdnative.Bool {
-	//log.Println("Calling Node.IsAParentOf()")
+	// log.Println("Calling Node.IsAParentOf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1318,7 +1320,7 @@ func (o *Node) IsAParentOf(node NodeImplementer) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsDisplayedFolded() gdnative.Bool {
-	//log.Println("Calling Node.IsDisplayedFolded()")
+	// log.Println("Calling Node.IsDisplayedFolded()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1341,7 +1343,7 @@ func (o *Node) IsDisplayedFolded() gdnative.Bool {
 	Args: [{ false node Node}], Returns: bool
 */
 func (o *Node) IsGreaterThan(node NodeImplementer) gdnative.Bool {
-	//log.Println("Calling Node.IsGreaterThan()")
+	// log.Println("Calling Node.IsGreaterThan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1365,7 +1367,7 @@ func (o *Node) IsGreaterThan(node NodeImplementer) gdnative.Bool {
 	Args: [{ false group String}], Returns: bool
 */
 func (o *Node) IsInGroup(group gdnative.String) gdnative.Bool {
-	//log.Println("Calling Node.IsInGroup()")
+	// log.Println("Calling Node.IsInGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1389,7 +1391,7 @@ func (o *Node) IsInGroup(group gdnative.String) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsInsideTree() gdnative.Bool {
-	//log.Println("Calling Node.IsInsideTree()")
+	// log.Println("Calling Node.IsInsideTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1412,7 +1414,7 @@ func (o *Node) IsInsideTree() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsNetworkMaster() gdnative.Bool {
-	//log.Println("Calling Node.IsNetworkMaster()")
+	// log.Println("Calling Node.IsNetworkMaster()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1435,7 +1437,7 @@ func (o *Node) IsNetworkMaster() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsPhysicsProcessing() gdnative.Bool {
-	//log.Println("Calling Node.IsPhysicsProcessing()")
+	// log.Println("Calling Node.IsPhysicsProcessing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1458,7 +1460,7 @@ func (o *Node) IsPhysicsProcessing() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsPhysicsProcessingInternal() gdnative.Bool {
-	//log.Println("Calling Node.IsPhysicsProcessingInternal()")
+	// log.Println("Calling Node.IsPhysicsProcessingInternal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1481,7 +1483,7 @@ func (o *Node) IsPhysicsProcessingInternal() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsProcessing() gdnative.Bool {
-	//log.Println("Calling Node.IsProcessing()")
+	// log.Println("Calling Node.IsProcessing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1504,7 +1506,7 @@ func (o *Node) IsProcessing() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsProcessingInput() gdnative.Bool {
-	//log.Println("Calling Node.IsProcessingInput()")
+	// log.Println("Calling Node.IsProcessingInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1527,7 +1529,7 @@ func (o *Node) IsProcessingInput() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsProcessingInternal() gdnative.Bool {
-	//log.Println("Calling Node.IsProcessingInternal()")
+	// log.Println("Calling Node.IsProcessingInternal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1550,7 +1552,7 @@ func (o *Node) IsProcessingInternal() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsProcessingUnhandledInput() gdnative.Bool {
-	//log.Println("Calling Node.IsProcessingUnhandledInput()")
+	// log.Println("Calling Node.IsProcessingUnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1573,7 +1575,7 @@ func (o *Node) IsProcessingUnhandledInput() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Node) IsProcessingUnhandledKeyInput() gdnative.Bool {
-	//log.Println("Calling Node.IsProcessingUnhandledKeyInput()")
+	// log.Println("Calling Node.IsProcessingUnhandledKeyInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1596,7 +1598,7 @@ func (o *Node) IsProcessingUnhandledKeyInput() gdnative.Bool {
 	Args: [{ false child_node Node} { false to_position int}], Returns: void
 */
 func (o *Node) MoveChild(childNode NodeImplementer, toPosition gdnative.Int) {
-	//log.Println("Calling Node.MoveChild()")
+	// log.Println("Calling Node.MoveChild()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1618,7 +1620,7 @@ func (o *Node) MoveChild(childNode NodeImplementer, toPosition gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *Node) PrintStrayNodes() {
-	//log.Println("Calling Node.PrintStrayNodes()")
+	// log.Println("Calling Node.PrintStrayNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1638,7 +1640,7 @@ func (o *Node) PrintStrayNodes() {
 	Args: [], Returns: void
 */
 func (o *Node) PrintTree() {
-	//log.Println("Calling Node.PrintTree()")
+	// log.Println("Calling Node.PrintTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1658,7 +1660,7 @@ func (o *Node) PrintTree() {
 	Args: [], Returns: void
 */
 func (o *Node) PrintTreePretty() {
-	//log.Println("Calling Node.PrintTreePretty()")
+	// log.Println("Calling Node.PrintTreePretty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1678,7 +1680,7 @@ func (o *Node) PrintTreePretty() {
 	Args: [{ false method String} {[] true args Array} {False true parent_first bool}], Returns: void
 */
 func (o *Node) PropagateCall(method gdnative.String, args gdnative.Array, parentFirst gdnative.Bool) {
-	//log.Println("Calling Node.PropagateCall()")
+	// log.Println("Calling Node.PropagateCall()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1701,7 +1703,7 @@ func (o *Node) PropagateCall(method gdnative.String, args gdnative.Array, parent
 	Args: [{ false what int}], Returns: void
 */
 func (o *Node) PropagateNotification(what gdnative.Int) {
-	//log.Println("Calling Node.PropagateNotification()")
+	// log.Println("Calling Node.PropagateNotification()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1722,7 +1724,7 @@ func (o *Node) PropagateNotification(what gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *Node) QueueFree() {
-	//log.Println("Calling Node.QueueFree()")
+	// log.Println("Calling Node.QueueFree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1742,7 +1744,7 @@ func (o *Node) QueueFree() {
 	Args: [], Returns: void
 */
 func (o *Node) Raise() {
-	//log.Println("Calling Node.Raise()")
+	// log.Println("Calling Node.Raise()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1762,7 +1764,7 @@ func (o *Node) Raise() {
 	Args: [], Returns: void
 */
 func (o *Node) RemoveAndSkip() {
-	//log.Println("Calling Node.RemoveAndSkip()")
+	// log.Println("Calling Node.RemoveAndSkip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1782,7 +1784,7 @@ func (o *Node) RemoveAndSkip() {
 	Args: [{ false node Node}], Returns: void
 */
 func (o *Node) RemoveChild(node NodeImplementer) {
-	//log.Println("Calling Node.RemoveChild()")
+	// log.Println("Calling Node.RemoveChild()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1803,7 +1805,7 @@ func (o *Node) RemoveChild(node NodeImplementer) {
 	Args: [{ false group String}], Returns: void
 */
 func (o *Node) RemoveFromGroup(group gdnative.String) {
-	//log.Println("Calling Node.RemoveFromGroup()")
+	// log.Println("Calling Node.RemoveFromGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1824,7 +1826,7 @@ func (o *Node) RemoveFromGroup(group gdnative.String) {
 	Args: [{ false node Node} {False true keep_data bool}], Returns: void
 */
 func (o *Node) ReplaceBy(node NodeImplementer, keepData gdnative.Bool) {
-	//log.Println("Calling Node.ReplaceBy()")
+	// log.Println("Calling Node.ReplaceBy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1846,7 +1848,7 @@ func (o *Node) ReplaceBy(node NodeImplementer, keepData gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *Node) RequestReady() {
-	//log.Println("Calling Node.RequestReady()")
+	// log.Println("Calling Node.RequestReady()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1865,15 +1867,15 @@ func (o *Node) RequestReady() {
         Sends a remote procedure call request for the given [code]method[/code] to peers on the network (and locally), optionally sending all additional arguments as arguments to the method called by the RPC. The call request will only be received by nodes with the same [NodePath], including the exact same node name. Behaviour depends on the RPC configuration for the given method, see [method rpc_config]. Methods are not exposed to RPCs by default. See also [method rset] and [method rset_config] for properties. Returns an empty [Variant]. [b]Note:[/b] You can only safely use RPCs on clients after you received the [code]connected_to_server[/code] signal from the [SceneTree]. You also need to keep track of the connection state, either by the [SceneTree] signals like [code]server_disconnected[/code] or by checking [code]SceneTree.network_peer.get_connection_status() == CONNECTION_CONNECTED[/code].
 	Args: [{ false method String}], Returns: Variant
 */
-func (o *Node) Rpc(method gdnative.String, args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling Node.Rpc()")
+func (o *Node) Rpc(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling Node.Rpc()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 1+len(args), 1+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 1+len(args), 1+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+1] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+1] = arg
 	}
 
 	// Get the method bind
@@ -1881,12 +1883,9 @@ func (o *Node) Rpc(method gdnative.String, args ...gdnative.Variant) gdnative.Va
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -1894,7 +1893,7 @@ func (o *Node) Rpc(method gdnative.String, args ...gdnative.Variant) gdnative.Va
 	Args: [{ false method String} { false mode int}], Returns: void
 */
 func (o *Node) RpcConfig(method gdnative.String, mode gdnative.Int) {
-	//log.Println("Calling Node.RpcConfig()")
+	// log.Println("Calling Node.RpcConfig()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1915,16 +1914,16 @@ func (o *Node) RpcConfig(method gdnative.String, mode gdnative.Int) {
         Sends a [method rpc] to a specific peer identified by [code]peer_id[/code] (see [method NetworkedMultiplayerPeer.set_target_peer]). Returns an empty [Variant].
 	Args: [{ false peer_id int} { false method String}], Returns: Variant
 */
-func (o *Node) RpcId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling Node.RpcId()")
+func (o *Node) RpcId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling Node.RpcId()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 2+len(args), 2+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromInt(peerId)
-	ptrArguments[1] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 2+len(args), 2+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(peerId))
+	arguments[1] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+2] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+2] = arg
 	}
 
 	// Get the method bind
@@ -1932,27 +1931,24 @@ func (o *Node) RpcId(peerId gdnative.Int, method gdnative.String, args ...gdnati
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
         Sends a [method rpc] using an unreliable protocol. Returns an empty [Variant].
 	Args: [{ false method String}], Returns: Variant
 */
-func (o *Node) RpcUnreliable(method gdnative.String, args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling Node.RpcUnreliable()")
+func (o *Node) RpcUnreliable(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling Node.RpcUnreliable()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 1+len(args), 1+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 1+len(args), 1+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+1] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+1] = arg
 	}
 
 	// Get the method bind
@@ -1960,28 +1956,25 @@ func (o *Node) RpcUnreliable(method gdnative.String, args ...gdnative.Variant) g
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
         Sends a [method rpc] to a specific peer identified by [code]peer_id[/code] using an unreliable protocol (see [method NetworkedMultiplayerPeer.set_target_peer]). Returns an empty [Variant].
 	Args: [{ false peer_id int} { false method String}], Returns: Variant
 */
-func (o *Node) RpcUnreliableId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling Node.RpcUnreliableId()")
+func (o *Node) RpcUnreliableId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling Node.RpcUnreliableId()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 2+len(args), 2+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromInt(peerId)
-	ptrArguments[1] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 2+len(args), 2+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(peerId))
+	arguments[1] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+2] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+2] = arg
 	}
 
 	// Get the method bind
@@ -1989,12 +1982,9 @@ func (o *Node) RpcUnreliableId(peerId gdnative.Int, method gdnative.String, args
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -2002,7 +1992,7 @@ func (o *Node) RpcUnreliableId(peerId gdnative.Int, method gdnative.String, args
 	Args: [{ false property String} { false value Variant}], Returns: void
 */
 func (o *Node) Rset(property gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Node.Rset()")
+	// log.Println("Calling Node.Rset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -2024,7 +2014,7 @@ func (o *Node) Rset(property gdnative.String, value gdnative.Variant) {
 	Args: [{ false property String} { false mode int}], Returns: void
 */
 func (o *Node) RsetConfig(property gdnative.String, mode gdnative.Int) {
-	//log.Println("Calling Node.RsetConfig()")
+	// log.Println("Calling Node.RsetConfig()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -2046,7 +2036,7 @@ func (o *Node) RsetConfig(property gdnative.String, mode gdnative.Int) {
 	Args: [{ false peer_id int} { false property String} { false value Variant}], Returns: void
 */
 func (o *Node) RsetId(peerId gdnative.Int, property gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Node.RsetId()")
+	// log.Println("Calling Node.RsetId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -2069,7 +2059,7 @@ func (o *Node) RsetId(peerId gdnative.Int, property gdnative.String, value gdnat
 	Args: [{ false property String} { false value Variant}], Returns: void
 */
 func (o *Node) RsetUnreliable(property gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Node.RsetUnreliable()")
+	// log.Println("Calling Node.RsetUnreliable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -2091,7 +2081,7 @@ func (o *Node) RsetUnreliable(property gdnative.String, value gdnative.Variant) 
 	Args: [{ false peer_id int} { false property String} { false value Variant}], Returns: void
 */
 func (o *Node) RsetUnreliableId(peerId gdnative.Int, property gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling Node.RsetUnreliableId()")
+	// log.Println("Calling Node.RsetUnreliableId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -2114,7 +2104,7 @@ func (o *Node) RsetUnreliableId(peerId gdnative.Int, property gdnative.String, v
 	Args: [{ false api MultiplayerAPI}], Returns: void
 */
 func (o *Node) SetCustomMultiplayer(api MultiplayerAPIImplementer) {
-	//log.Println("Calling Node.SetCustomMultiplayer()")
+	// log.Println("Calling Node.SetCustomMultiplayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2135,7 +2125,7 @@ func (o *Node) SetCustomMultiplayer(api MultiplayerAPIImplementer) {
 	Args: [{ false fold bool}], Returns: void
 */
 func (o *Node) SetDisplayFolded(fold gdnative.Bool) {
-	//log.Println("Calling Node.SetDisplayFolded()")
+	// log.Println("Calling Node.SetDisplayFolded()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2156,7 +2146,7 @@ func (o *Node) SetDisplayFolded(fold gdnative.Bool) {
 	Args: [{ false filename String}], Returns: void
 */
 func (o *Node) SetFilename(filename gdnative.String) {
-	//log.Println("Calling Node.SetFilename()")
+	// log.Println("Calling Node.SetFilename()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2177,7 +2167,7 @@ func (o *Node) SetFilename(filename gdnative.String) {
 	Args: [{ false name String}], Returns: void
 */
 func (o *Node) SetName(name gdnative.String) {
-	//log.Println("Calling Node.SetName()")
+	// log.Println("Calling Node.SetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2198,7 +2188,7 @@ func (o *Node) SetName(name gdnative.String) {
 	Args: [{ false id int} {True true recursive bool}], Returns: void
 */
 func (o *Node) SetNetworkMaster(id gdnative.Int, recursive gdnative.Bool) {
-	//log.Println("Calling Node.SetNetworkMaster()")
+	// log.Println("Calling Node.SetNetworkMaster()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -2220,7 +2210,7 @@ func (o *Node) SetNetworkMaster(id gdnative.Int, recursive gdnative.Bool) {
 	Args: [{ false owner Node}], Returns: void
 */
 func (o *Node) SetOwner(owner NodeImplementer) {
-	//log.Println("Calling Node.SetOwner()")
+	// log.Println("Calling Node.SetOwner()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2241,7 +2231,7 @@ func (o *Node) SetOwner(owner NodeImplementer) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Node) SetPauseMode(mode gdnative.Int) {
-	//log.Println("Calling Node.SetPauseMode()")
+	// log.Println("Calling Node.SetPauseMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2262,7 +2252,7 @@ func (o *Node) SetPauseMode(mode gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetPhysicsProcess(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetPhysicsProcess()")
+	// log.Println("Calling Node.SetPhysicsProcess()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2283,7 +2273,7 @@ func (o *Node) SetPhysicsProcess(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetPhysicsProcessInternal(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetPhysicsProcessInternal()")
+	// log.Println("Calling Node.SetPhysicsProcessInternal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2304,7 +2294,7 @@ func (o *Node) SetPhysicsProcessInternal(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetProcess(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetProcess()")
+	// log.Println("Calling Node.SetProcess()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2325,7 +2315,7 @@ func (o *Node) SetProcess(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetProcessInput(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetProcessInput()")
+	// log.Println("Calling Node.SetProcessInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2346,7 +2336,7 @@ func (o *Node) SetProcessInput(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetProcessInternal(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetProcessInternal()")
+	// log.Println("Calling Node.SetProcessInternal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2367,7 +2357,7 @@ func (o *Node) SetProcessInternal(enable gdnative.Bool) {
 	Args: [{ false priority int}], Returns: void
 */
 func (o *Node) SetProcessPriority(priority gdnative.Int) {
-	//log.Println("Calling Node.SetProcessPriority()")
+	// log.Println("Calling Node.SetProcessPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2388,7 +2378,7 @@ func (o *Node) SetProcessPriority(priority gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetProcessUnhandledInput(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetProcessUnhandledInput()")
+	// log.Println("Calling Node.SetProcessUnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2409,7 +2399,7 @@ func (o *Node) SetProcessUnhandledInput(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Node) SetProcessUnhandledKeyInput(enable gdnative.Bool) {
-	//log.Println("Calling Node.SetProcessUnhandledKeyInput()")
+	// log.Println("Calling Node.SetProcessUnhandledKeyInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2430,7 +2420,7 @@ func (o *Node) SetProcessUnhandledKeyInput(enable gdnative.Bool) {
 	Args: [{ false load_placeholder bool}], Returns: void
 */
 func (o *Node) SetSceneInstanceLoadPlaceholder(loadPlaceholder gdnative.Bool) {
-	//log.Println("Calling Node.SetSceneInstanceLoadPlaceholder()")
+	// log.Println("Calling Node.SetSceneInstanceLoadPlaceholder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2451,7 +2441,7 @@ func (o *Node) SetSceneInstanceLoadPlaceholder(loadPlaceholder gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *Node) UpdateConfigurationWarning() {
-	//log.Println("Calling Node.UpdateConfigurationWarning()")
+	// log.Println("Calling Node.UpdateConfigurationWarning()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2542,11 +2532,11 @@ type NodeImplementer interface {
 	RemoveFromGroup(group gdnative.String)
 	ReplaceBy(node NodeImplementer, keepData gdnative.Bool)
 	RequestReady()
-	Rpc(method gdnative.String, args ...gdnative.Variant) gdnative.Variant
+	Rpc(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	RpcConfig(method gdnative.String, mode gdnative.Int)
-	RpcId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) gdnative.Variant
-	RpcUnreliable(method gdnative.String, args ...gdnative.Variant) gdnative.Variant
-	RpcUnreliableId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) gdnative.Variant
+	RpcId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
+	RpcUnreliable(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
+	RpcUnreliableId(peerId gdnative.Int, method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	Rset(property gdnative.String, value gdnative.Variant)
 	RsetConfig(property gdnative.String, mode gdnative.Int)
 	RsetId(peerId gdnative.Int, property gdnative.String, value gdnative.Variant)

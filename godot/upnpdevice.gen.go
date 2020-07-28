@@ -55,7 +55,7 @@ func (o *UPNPDevice) BaseClass() string {
 	Args: [{ false port int} {0 true port_internal int} { true desc String} {UDP true proto String} {0 true duration int}], Returns: int
 */
 func (o *UPNPDevice) AddPortMapping(port gdnative.Int, portInternal gdnative.Int, desc gdnative.String, proto gdnative.String, duration gdnative.Int) gdnative.Int {
-	//log.Println("Calling UPNPDevice.AddPortMapping()")
+	// log.Println("Calling UPNPDevice.AddPortMapping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -83,7 +83,7 @@ func (o *UPNPDevice) AddPortMapping(port gdnative.Int, portInternal gdnative.Int
 	Args: [{ false port int} {UDP true proto String}], Returns: int
 */
 func (o *UPNPDevice) DeletePortMapping(port gdnative.Int, proto gdnative.String) gdnative.Int {
-	//log.Println("Calling UPNPDevice.DeletePortMapping()")
+	// log.Println("Calling UPNPDevice.DeletePortMapping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -108,7 +108,7 @@ func (o *UPNPDevice) DeletePortMapping(port gdnative.Int, proto gdnative.String)
 	Args: [], Returns: String
 */
 func (o *UPNPDevice) GetDescriptionUrl() gdnative.String {
-	//log.Println("Calling UPNPDevice.GetDescriptionUrl()")
+	// log.Println("Calling UPNPDevice.GetDescriptionUrl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *UPNPDevice) GetDescriptionUrl() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *UPNPDevice) GetIgdControlUrl() gdnative.String {
-	//log.Println("Calling UPNPDevice.GetIgdControlUrl()")
+	// log.Println("Calling UPNPDevice.GetIgdControlUrl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *UPNPDevice) GetIgdControlUrl() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *UPNPDevice) GetIgdOurAddr() gdnative.String {
-	//log.Println("Calling UPNPDevice.GetIgdOurAddr()")
+	// log.Println("Calling UPNPDevice.GetIgdOurAddr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *UPNPDevice) GetIgdOurAddr() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *UPNPDevice) GetIgdServiceType() gdnative.String {
-	//log.Println("Calling UPNPDevice.GetIgdServiceType()")
+	// log.Println("Calling UPNPDevice.GetIgdServiceType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *UPNPDevice) GetIgdServiceType() gdnative.String {
 	Args: [], Returns: enum.UPNPDevice::IGDStatus
 */
 func (o *UPNPDevice) GetIgdStatus() UPNPDeviceIGDStatus {
-	//log.Println("Calling UPNPDevice.GetIgdStatus()")
+	// log.Println("Calling UPNPDevice.GetIgdStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *UPNPDevice) GetIgdStatus() UPNPDeviceIGDStatus {
 	Args: [], Returns: String
 */
 func (o *UPNPDevice) GetServiceType() gdnative.String {
-	//log.Println("Calling UPNPDevice.GetServiceType()")
+	// log.Println("Calling UPNPDevice.GetServiceType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -246,7 +246,7 @@ func (o *UPNPDevice) GetServiceType() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *UPNPDevice) IsValidGateway() gdnative.Bool {
-	//log.Println("Calling UPNPDevice.IsValidGateway()")
+	// log.Println("Calling UPNPDevice.IsValidGateway()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -269,7 +269,7 @@ func (o *UPNPDevice) IsValidGateway() gdnative.Bool {
 	Args: [], Returns: String
 */
 func (o *UPNPDevice) QueryExternalAddress() gdnative.String {
-	//log.Println("Calling UPNPDevice.QueryExternalAddress()")
+	// log.Println("Calling UPNPDevice.QueryExternalAddress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -292,7 +292,7 @@ func (o *UPNPDevice) QueryExternalAddress() gdnative.String {
 	Args: [{ false url String}], Returns: void
 */
 func (o *UPNPDevice) SetDescriptionUrl(url gdnative.String) {
-	//log.Println("Calling UPNPDevice.SetDescriptionUrl()")
+	// log.Println("Calling UPNPDevice.SetDescriptionUrl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -313,7 +313,7 @@ func (o *UPNPDevice) SetDescriptionUrl(url gdnative.String) {
 	Args: [{ false url String}], Returns: void
 */
 func (o *UPNPDevice) SetIgdControlUrl(url gdnative.String) {
-	//log.Println("Calling UPNPDevice.SetIgdControlUrl()")
+	// log.Println("Calling UPNPDevice.SetIgdControlUrl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -334,7 +334,7 @@ func (o *UPNPDevice) SetIgdControlUrl(url gdnative.String) {
 	Args: [{ false addr String}], Returns: void
 */
 func (o *UPNPDevice) SetIgdOurAddr(addr gdnative.String) {
-	//log.Println("Calling UPNPDevice.SetIgdOurAddr()")
+	// log.Println("Calling UPNPDevice.SetIgdOurAddr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -355,7 +355,7 @@ func (o *UPNPDevice) SetIgdOurAddr(addr gdnative.String) {
 	Args: [{ false type String}], Returns: void
 */
 func (o *UPNPDevice) SetIgdServiceType(aType gdnative.String) {
-	//log.Println("Calling UPNPDevice.SetIgdServiceType()")
+	// log.Println("Calling UPNPDevice.SetIgdServiceType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -376,7 +376,7 @@ func (o *UPNPDevice) SetIgdServiceType(aType gdnative.String) {
 	Args: [{ false status int}], Returns: void
 */
 func (o *UPNPDevice) SetIgdStatus(status gdnative.Int) {
-	//log.Println("Calling UPNPDevice.SetIgdStatus()")
+	// log.Println("Calling UPNPDevice.SetIgdStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -397,7 +397,7 @@ func (o *UPNPDevice) SetIgdStatus(status gdnative.Int) {
 	Args: [{ false type String}], Returns: void
 */
 func (o *UPNPDevice) SetServiceType(aType gdnative.String) {
-	//log.Println("Calling UPNPDevice.SetServiceType()")
+	// log.Println("Calling UPNPDevice.SetServiceType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

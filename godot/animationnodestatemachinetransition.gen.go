@@ -48,7 +48,7 @@ func (o *AnimationNodeStateMachineTransition) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *AnimationNodeStateMachineTransition) GetAdvanceCondition() gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachineTransition.GetAdvanceCondition()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.GetAdvanceCondition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *AnimationNodeStateMachineTransition) GetAdvanceCondition() gdnative.Str
 	Args: [], Returns: int
 */
 func (o *AnimationNodeStateMachineTransition) GetPriority() gdnative.Int {
-	//log.Println("Calling AnimationNodeStateMachineTransition.GetPriority()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.GetPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *AnimationNodeStateMachineTransition) GetPriority() gdnative.Int {
 	Args: [], Returns: enum.AnimationNodeStateMachineTransition::SwitchMode
 */
 func (o *AnimationNodeStateMachineTransition) GetSwitchMode() AnimationNodeStateMachineTransitionSwitchMode {
-	//log.Println("Calling AnimationNodeStateMachineTransition.GetSwitchMode()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.GetSwitchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *AnimationNodeStateMachineTransition) GetSwitchMode() AnimationNodeState
 	Args: [], Returns: float
 */
 func (o *AnimationNodeStateMachineTransition) GetXfadeTime() gdnative.Real {
-	//log.Println("Calling AnimationNodeStateMachineTransition.GetXfadeTime()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.GetXfadeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *AnimationNodeStateMachineTransition) GetXfadeTime() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *AnimationNodeStateMachineTransition) HasAutoAdvance() gdnative.Bool {
-	//log.Println("Calling AnimationNodeStateMachineTransition.HasAutoAdvance()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.HasAutoAdvance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *AnimationNodeStateMachineTransition) HasAutoAdvance() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *AnimationNodeStateMachineTransition) IsDisabled() gdnative.Bool {
-	//log.Println("Calling AnimationNodeStateMachineTransition.IsDisabled()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.IsDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *AnimationNodeStateMachineTransition) IsDisabled() gdnative.Bool {
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNodeStateMachineTransition) SetAdvanceCondition(name gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachineTransition.SetAdvanceCondition()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.SetAdvanceCondition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -207,7 +207,7 @@ func (o *AnimationNodeStateMachineTransition) SetAdvanceCondition(name gdnative.
 	Args: [{ false auto_advance bool}], Returns: void
 */
 func (o *AnimationNodeStateMachineTransition) SetAutoAdvance(autoAdvance gdnative.Bool) {
-	//log.Println("Calling AnimationNodeStateMachineTransition.SetAutoAdvance()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.SetAutoAdvance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -228,7 +228,7 @@ func (o *AnimationNodeStateMachineTransition) SetAutoAdvance(autoAdvance gdnativ
 	Args: [{ false disabled bool}], Returns: void
 */
 func (o *AnimationNodeStateMachineTransition) SetDisabled(disabled gdnative.Bool) {
-	//log.Println("Calling AnimationNodeStateMachineTransition.SetDisabled()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.SetDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -249,7 +249,7 @@ func (o *AnimationNodeStateMachineTransition) SetDisabled(disabled gdnative.Bool
 	Args: [{ false priority int}], Returns: void
 */
 func (o *AnimationNodeStateMachineTransition) SetPriority(priority gdnative.Int) {
-	//log.Println("Calling AnimationNodeStateMachineTransition.SetPriority()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.SetPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -270,7 +270,7 @@ func (o *AnimationNodeStateMachineTransition) SetPriority(priority gdnative.Int)
 	Args: [{ false mode int}], Returns: void
 */
 func (o *AnimationNodeStateMachineTransition) SetSwitchMode(mode gdnative.Int) {
-	//log.Println("Calling AnimationNodeStateMachineTransition.SetSwitchMode()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.SetSwitchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -291,7 +291,7 @@ func (o *AnimationNodeStateMachineTransition) SetSwitchMode(mode gdnative.Int) {
 	Args: [{ false secs float}], Returns: void
 */
 func (o *AnimationNodeStateMachineTransition) SetXfadeTime(secs gdnative.Real) {
-	//log.Println("Calling AnimationNodeStateMachineTransition.SetXfadeTime()")
+	// log.Println("Calling AnimationNodeStateMachineTransition.SetXfadeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

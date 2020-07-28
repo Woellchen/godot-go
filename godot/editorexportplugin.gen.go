@@ -39,7 +39,7 @@ func (o *EditorExportPlugin) BaseClass() string {
 	Args: [{ false features PoolStringArray} { false is_debug bool} { false path String} { false flags int}], Returns: void
 */
 func (o *EditorExportPlugin) X_ExportBegin(features gdnative.PoolStringArray, isDebug gdnative.Bool, path gdnative.String, flags gdnative.Int) {
-	//log.Println("Calling EditorExportPlugin.X_ExportBegin()")
+	// log.Println("Calling EditorExportPlugin.X_ExportBegin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -63,7 +63,7 @@ func (o *EditorExportPlugin) X_ExportBegin(features gdnative.PoolStringArray, is
 	Args: [], Returns: void
 */
 func (o *EditorExportPlugin) X_ExportEnd() {
-	//log.Println("Calling EditorExportPlugin.X_ExportEnd()")
+	// log.Println("Calling EditorExportPlugin.X_ExportEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -83,7 +83,7 @@ func (o *EditorExportPlugin) X_ExportEnd() {
 	Args: [{ false path String} { false type String} { false features PoolStringArray}], Returns: void
 */
 func (o *EditorExportPlugin) X_ExportFile(path gdnative.String, aType gdnative.String, features gdnative.PoolStringArray) {
-	//log.Println("Calling EditorExportPlugin.X_ExportFile()")
+	// log.Println("Calling EditorExportPlugin.X_ExportFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -106,7 +106,7 @@ func (o *EditorExportPlugin) X_ExportFile(path gdnative.String, aType gdnative.S
 	Args: [{ false path String} { false file PoolByteArray} { false remap bool}], Returns: void
 */
 func (o *EditorExportPlugin) AddFile(path gdnative.String, file gdnative.PoolByteArray, remap gdnative.Bool) {
-	//log.Println("Calling EditorExportPlugin.AddFile()")
+	// log.Println("Calling EditorExportPlugin.AddFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -129,7 +129,7 @@ func (o *EditorExportPlugin) AddFile(path gdnative.String, file gdnative.PoolByt
 	Args: [{ false path String}], Returns: void
 */
 func (o *EditorExportPlugin) AddIosBundleFile(path gdnative.String) {
-	//log.Println("Calling EditorExportPlugin.AddIosBundleFile()")
+	// log.Println("Calling EditorExportPlugin.AddIosBundleFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *EditorExportPlugin) AddIosBundleFile(path gdnative.String) {
 	Args: [{ false code String}], Returns: void
 */
 func (o *EditorExportPlugin) AddIosCppCode(code gdnative.String) {
-	//log.Println("Calling EditorExportPlugin.AddIosCppCode()")
+	// log.Println("Calling EditorExportPlugin.AddIosCppCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *EditorExportPlugin) AddIosCppCode(code gdnative.String) {
 	Args: [{ false path String}], Returns: void
 */
 func (o *EditorExportPlugin) AddIosFramework(path gdnative.String) {
-	//log.Println("Calling EditorExportPlugin.AddIosFramework()")
+	// log.Println("Calling EditorExportPlugin.AddIosFramework()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -192,7 +192,7 @@ func (o *EditorExportPlugin) AddIosFramework(path gdnative.String) {
 	Args: [{ false flags String}], Returns: void
 */
 func (o *EditorExportPlugin) AddIosLinkerFlags(flags gdnative.String) {
-	//log.Println("Calling EditorExportPlugin.AddIosLinkerFlags()")
+	// log.Println("Calling EditorExportPlugin.AddIosLinkerFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -213,7 +213,7 @@ func (o *EditorExportPlugin) AddIosLinkerFlags(flags gdnative.String) {
 	Args: [{ false plist_content String}], Returns: void
 */
 func (o *EditorExportPlugin) AddIosPlistContent(plistContent gdnative.String) {
-	//log.Println("Calling EditorExportPlugin.AddIosPlistContent()")
+	// log.Println("Calling EditorExportPlugin.AddIosPlistContent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -234,7 +234,7 @@ func (o *EditorExportPlugin) AddIosPlistContent(plistContent gdnative.String) {
 	Args: [{ false path String}], Returns: void
 */
 func (o *EditorExportPlugin) AddIosProjectStaticLib(path gdnative.String) {
-	//log.Println("Calling EditorExportPlugin.AddIosProjectStaticLib()")
+	// log.Println("Calling EditorExportPlugin.AddIosProjectStaticLib()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -255,7 +255,7 @@ func (o *EditorExportPlugin) AddIosProjectStaticLib(path gdnative.String) {
 	Args: [{ false path String} { false tags PoolStringArray}], Returns: void
 */
 func (o *EditorExportPlugin) AddSharedObject(path gdnative.String, tags gdnative.PoolStringArray) {
-	//log.Println("Calling EditorExportPlugin.AddSharedObject()")
+	// log.Println("Calling EditorExportPlugin.AddSharedObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -277,7 +277,7 @@ func (o *EditorExportPlugin) AddSharedObject(path gdnative.String, tags gdnative
 	Args: [], Returns: void
 */
 func (o *EditorExportPlugin) Skip() {
-	//log.Println("Calling EditorExportPlugin.Skip()")
+	// log.Println("Calling EditorExportPlugin.Skip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

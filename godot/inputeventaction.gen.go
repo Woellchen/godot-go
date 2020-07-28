@@ -39,7 +39,7 @@ func (o *InputEventAction) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *InputEventAction) GetAction() gdnative.String {
-	//log.Println("Calling InputEventAction.GetAction()")
+	// log.Println("Calling InputEventAction.GetAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventAction) GetAction() gdnative.String {
 	Args: [], Returns: float
 */
 func (o *InputEventAction) GetStrength() gdnative.Real {
-	//log.Println("Calling InputEventAction.GetStrength()")
+	// log.Println("Calling InputEventAction.GetStrength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventAction) GetStrength() gdnative.Real {
 	Args: [{ false action String}], Returns: void
 */
 func (o *InputEventAction) SetAction(action gdnative.String) {
-	//log.Println("Calling InputEventAction.SetAction()")
+	// log.Println("Calling InputEventAction.SetAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *InputEventAction) SetAction(action gdnative.String) {
 	Args: [{ false pressed bool}], Returns: void
 */
 func (o *InputEventAction) SetPressed(pressed gdnative.Bool) {
-	//log.Println("Calling InputEventAction.SetPressed()")
+	// log.Println("Calling InputEventAction.SetPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -127,7 +127,7 @@ func (o *InputEventAction) SetPressed(pressed gdnative.Bool) {
 	Args: [{ false strength float}], Returns: void
 */
 func (o *InputEventAction) SetStrength(strength gdnative.Real) {
-	//log.Println("Calling InputEventAction.SetStrength()")
+	// log.Println("Calling InputEventAction.SetStrength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

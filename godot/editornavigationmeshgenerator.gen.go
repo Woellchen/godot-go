@@ -39,7 +39,7 @@ func (o *EditorNavigationMeshGenerator) BaseClass() string {
 	Args: [{ false nav_mesh NavigationMesh} { false root_node Node}], Returns: void
 */
 func (o *EditorNavigationMeshGenerator) Bake(navMesh NavigationMeshImplementer, rootNode NodeImplementer) {
-	//log.Println("Calling EditorNavigationMeshGenerator.Bake()")
+	// log.Println("Calling EditorNavigationMeshGenerator.Bake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *EditorNavigationMeshGenerator) Bake(navMesh NavigationMeshImplementer, 
 	Args: [{ false nav_mesh NavigationMesh}], Returns: void
 */
 func (o *EditorNavigationMeshGenerator) Clear(navMesh NavigationMeshImplementer) {
-	//log.Println("Calling EditorNavigationMeshGenerator.Clear()")
+	// log.Println("Calling EditorNavigationMeshGenerator.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

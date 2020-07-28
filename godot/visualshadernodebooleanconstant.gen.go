@@ -39,7 +39,7 @@ func (o *VisualShaderNodeBooleanConstant) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *VisualShaderNodeBooleanConstant) GetConstant() gdnative.Bool {
-	//log.Println("Calling VisualShaderNodeBooleanConstant.GetConstant()")
+	// log.Println("Calling VisualShaderNodeBooleanConstant.GetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeBooleanConstant) GetConstant() gdnative.Bool {
 	Args: [{ false value bool}], Returns: void
 */
 func (o *VisualShaderNodeBooleanConstant) SetConstant(value gdnative.Bool) {
-	//log.Println("Calling VisualShaderNodeBooleanConstant.SetConstant()")
+	// log.Println("Calling VisualShaderNodeBooleanConstant.SetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

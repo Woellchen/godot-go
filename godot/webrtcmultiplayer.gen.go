@@ -39,7 +39,7 @@ func (o *WebRTCMultiplayer) BaseClass() string {
 	Args: [{ false peer WebRTCPeerConnection} { false peer_id int} {1 true unreliable_lifetime int}], Returns: enum.Error
 */
 func (o *WebRTCMultiplayer) AddPeer(peer WebRTCPeerConnectionImplementer, peerId gdnative.Int, unreliableLifetime gdnative.Int) gdnative.Error {
-	//log.Println("Calling WebRTCMultiplayer.AddPeer()")
+	// log.Println("Calling WebRTCMultiplayer.AddPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -65,7 +65,7 @@ func (o *WebRTCMultiplayer) AddPeer(peer WebRTCPeerConnectionImplementer, peerId
 	Args: [], Returns: void
 */
 func (o *WebRTCMultiplayer) Close() {
-	//log.Println("Calling WebRTCMultiplayer.Close()")
+	// log.Println("Calling WebRTCMultiplayer.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *WebRTCMultiplayer) Close() {
 	Args: [{ false peer_id int}], Returns: Dictionary
 */
 func (o *WebRTCMultiplayer) GetPeer(peerId gdnative.Int) gdnative.Dictionary {
-	//log.Println("Calling WebRTCMultiplayer.GetPeer()")
+	// log.Println("Calling WebRTCMultiplayer.GetPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -109,7 +109,7 @@ func (o *WebRTCMultiplayer) GetPeer(peerId gdnative.Int) gdnative.Dictionary {
 	Args: [], Returns: Dictionary
 */
 func (o *WebRTCMultiplayer) GetPeers() gdnative.Dictionary {
-	//log.Println("Calling WebRTCMultiplayer.GetPeers()")
+	// log.Println("Calling WebRTCMultiplayer.GetPeers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -132,7 +132,7 @@ func (o *WebRTCMultiplayer) GetPeers() gdnative.Dictionary {
 	Args: [{ false peer_id int}], Returns: bool
 */
 func (o *WebRTCMultiplayer) HasPeer(peerId gdnative.Int) gdnative.Bool {
-	//log.Println("Calling WebRTCMultiplayer.HasPeer()")
+	// log.Println("Calling WebRTCMultiplayer.HasPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -156,7 +156,7 @@ func (o *WebRTCMultiplayer) HasPeer(peerId gdnative.Int) gdnative.Bool {
 	Args: [{ false peer_id int} {False true server_compatibility bool}], Returns: enum.Error
 */
 func (o *WebRTCMultiplayer) Initialize(peerId gdnative.Int, serverCompatibility gdnative.Bool) gdnative.Error {
-	//log.Println("Calling WebRTCMultiplayer.Initialize()")
+	// log.Println("Calling WebRTCMultiplayer.Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -181,7 +181,7 @@ func (o *WebRTCMultiplayer) Initialize(peerId gdnative.Int, serverCompatibility 
 	Args: [{ false peer_id int}], Returns: void
 */
 func (o *WebRTCMultiplayer) RemovePeer(peerId gdnative.Int) {
-	//log.Println("Calling WebRTCMultiplayer.RemovePeer()")
+	// log.Println("Calling WebRTCMultiplayer.RemovePeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

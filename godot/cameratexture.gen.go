@@ -39,7 +39,7 @@ func (o *CameraTexture) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *CameraTexture) GetCameraActive() gdnative.Bool {
-	//log.Println("Calling CameraTexture.GetCameraActive()")
+	// log.Println("Calling CameraTexture.GetCameraActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CameraTexture) GetCameraActive() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *CameraTexture) GetCameraFeedId() gdnative.Int {
-	//log.Println("Calling CameraTexture.GetCameraFeedId()")
+	// log.Println("Calling CameraTexture.GetCameraFeedId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CameraTexture) GetCameraFeedId() gdnative.Int {
 	Args: [], Returns: enum.CameraServer::FeedImage
 */
 func (o *CameraTexture) GetWhichFeed() CameraServerFeedImage {
-	//log.Println("Calling CameraTexture.GetWhichFeed()")
+	// log.Println("Calling CameraTexture.GetWhichFeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *CameraTexture) GetWhichFeed() CameraServerFeedImage {
 	Args: [{ false active bool}], Returns: void
 */
 func (o *CameraTexture) SetCameraActive(active gdnative.Bool) {
-	//log.Println("Calling CameraTexture.SetCameraActive()")
+	// log.Println("Calling CameraTexture.SetCameraActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *CameraTexture) SetCameraActive(active gdnative.Bool) {
 	Args: [{ false feed_id int}], Returns: void
 */
 func (o *CameraTexture) SetCameraFeedId(feedId gdnative.Int) {
-	//log.Println("Calling CameraTexture.SetCameraFeedId()")
+	// log.Println("Calling CameraTexture.SetCameraFeedId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *CameraTexture) SetCameraFeedId(feedId gdnative.Int) {
 	Args: [{ false which_feed int}], Returns: void
 */
 func (o *CameraTexture) SetWhichFeed(whichFeed gdnative.Int) {
-	//log.Println("Calling CameraTexture.SetWhichFeed()")
+	// log.Println("Calling CameraTexture.SetWhichFeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

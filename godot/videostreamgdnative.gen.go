@@ -39,7 +39,7 @@ func (o *VideoStreamGDNative) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VideoStreamGDNative) GetFile() gdnative.String {
-	//log.Println("Calling VideoStreamGDNative.GetFile()")
+	// log.Println("Calling VideoStreamGDNative.GetFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VideoStreamGDNative) GetFile() gdnative.String {
 	Args: [{ false file String}], Returns: void
 */
 func (o *VideoStreamGDNative) SetFile(file gdnative.String) {
-	//log.Println("Calling VideoStreamGDNative.SetFile()")
+	// log.Println("Calling VideoStreamGDNative.SetFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

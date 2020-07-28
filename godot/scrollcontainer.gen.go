@@ -39,7 +39,7 @@ func (o *ScrollContainer) BaseClass() string {
 	Args: [{ false arg0 Control}], Returns: void
 */
 func (o *ScrollContainer) X_EnsureFocusedVisible(arg0 ControlImplementer) {
-	//log.Println("Calling ScrollContainer.X_EnsureFocusedVisible()")
+	// log.Println("Calling ScrollContainer.X_EnsureFocusedVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *ScrollContainer) X_EnsureFocusedVisible(arg0 ControlImplementer) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ScrollContainer) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ScrollContainer.X_GuiInput()")
+	// log.Println("Calling ScrollContainer.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -81,7 +81,7 @@ func (o *ScrollContainer) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *ScrollContainer) X_ScrollMoved(arg0 gdnative.Real) {
-	//log.Println("Calling ScrollContainer.X_ScrollMoved()")
+	// log.Println("Calling ScrollContainer.X_ScrollMoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -102,7 +102,7 @@ func (o *ScrollContainer) X_ScrollMoved(arg0 gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *ScrollContainer) X_UpdateScrollbarPosition() {
-	//log.Println("Calling ScrollContainer.X_UpdateScrollbarPosition()")
+	// log.Println("Calling ScrollContainer.X_UpdateScrollbarPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *ScrollContainer) X_UpdateScrollbarPosition() {
 	Args: [], Returns: int
 */
 func (o *ScrollContainer) GetDeadzone() gdnative.Int {
-	//log.Println("Calling ScrollContainer.GetDeadzone()")
+	// log.Println("Calling ScrollContainer.GetDeadzone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *ScrollContainer) GetDeadzone() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *ScrollContainer) GetHScroll() gdnative.Int {
-	//log.Println("Calling ScrollContainer.GetHScroll()")
+	// log.Println("Calling ScrollContainer.GetHScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *ScrollContainer) GetHScroll() gdnative.Int {
 	Args: [], Returns: HScrollBar
 */
 func (o *ScrollContainer) GetHScrollbar() HScrollBarImplementer {
-	//log.Println("Calling ScrollContainer.GetHScrollbar()")
+	// log.Println("Calling ScrollContainer.GetHScrollbar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -205,7 +205,7 @@ func (o *ScrollContainer) GetHScrollbar() HScrollBarImplementer {
 	Args: [], Returns: int
 */
 func (o *ScrollContainer) GetVScroll() gdnative.Int {
-	//log.Println("Calling ScrollContainer.GetVScroll()")
+	// log.Println("Calling ScrollContainer.GetVScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -228,7 +228,7 @@ func (o *ScrollContainer) GetVScroll() gdnative.Int {
 	Args: [], Returns: VScrollBar
 */
 func (o *ScrollContainer) GetVScrollbar() VScrollBarImplementer {
-	//log.Println("Calling ScrollContainer.GetVScrollbar()")
+	// log.Println("Calling ScrollContainer.GetVScrollbar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -265,7 +265,7 @@ func (o *ScrollContainer) GetVScrollbar() VScrollBarImplementer {
 	Args: [], Returns: bool
 */
 func (o *ScrollContainer) IsFollowingFocus() gdnative.Bool {
-	//log.Println("Calling ScrollContainer.IsFollowingFocus()")
+	// log.Println("Calling ScrollContainer.IsFollowingFocus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -288,7 +288,7 @@ func (o *ScrollContainer) IsFollowingFocus() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ScrollContainer) IsHScrollEnabled() gdnative.Bool {
-	//log.Println("Calling ScrollContainer.IsHScrollEnabled()")
+	// log.Println("Calling ScrollContainer.IsHScrollEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -311,7 +311,7 @@ func (o *ScrollContainer) IsHScrollEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ScrollContainer) IsVScrollEnabled() gdnative.Bool {
-	//log.Println("Calling ScrollContainer.IsVScrollEnabled()")
+	// log.Println("Calling ScrollContainer.IsVScrollEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -334,7 +334,7 @@ func (o *ScrollContainer) IsVScrollEnabled() gdnative.Bool {
 	Args: [{ false deadzone int}], Returns: void
 */
 func (o *ScrollContainer) SetDeadzone(deadzone gdnative.Int) {
-	//log.Println("Calling ScrollContainer.SetDeadzone()")
+	// log.Println("Calling ScrollContainer.SetDeadzone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -355,7 +355,7 @@ func (o *ScrollContainer) SetDeadzone(deadzone gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ScrollContainer) SetEnableHScroll(enable gdnative.Bool) {
-	//log.Println("Calling ScrollContainer.SetEnableHScroll()")
+	// log.Println("Calling ScrollContainer.SetEnableHScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -376,7 +376,7 @@ func (o *ScrollContainer) SetEnableHScroll(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ScrollContainer) SetEnableVScroll(enable gdnative.Bool) {
-	//log.Println("Calling ScrollContainer.SetEnableVScroll()")
+	// log.Println("Calling ScrollContainer.SetEnableVScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -397,7 +397,7 @@ func (o *ScrollContainer) SetEnableVScroll(enable gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *ScrollContainer) SetFollowFocus(enabled gdnative.Bool) {
-	//log.Println("Calling ScrollContainer.SetFollowFocus()")
+	// log.Println("Calling ScrollContainer.SetFollowFocus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -418,7 +418,7 @@ func (o *ScrollContainer) SetFollowFocus(enabled gdnative.Bool) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *ScrollContainer) SetHScroll(value gdnative.Int) {
-	//log.Println("Calling ScrollContainer.SetHScroll()")
+	// log.Println("Calling ScrollContainer.SetHScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -439,7 +439,7 @@ func (o *ScrollContainer) SetHScroll(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *ScrollContainer) SetVScroll(value gdnative.Int) {
-	//log.Println("Calling ScrollContainer.SetVScroll()")
+	// log.Println("Calling ScrollContainer.SetVScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

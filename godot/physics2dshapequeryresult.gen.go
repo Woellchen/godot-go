@@ -39,7 +39,7 @@ func (o *Physics2DShapeQueryResult) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *Physics2DShapeQueryResult) GetResultCount() gdnative.Int {
-	//log.Println("Calling Physics2DShapeQueryResult.GetResultCount()")
+	// log.Println("Calling Physics2DShapeQueryResult.GetResultCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Physics2DShapeQueryResult) GetResultCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: Object
 */
 func (o *Physics2DShapeQueryResult) GetResultObject(idx gdnative.Int) ObjectImplementer {
-	//log.Println("Calling Physics2DShapeQueryResult.GetResultObject()")
+	// log.Println("Calling Physics2DShapeQueryResult.GetResultObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -100,7 +100,7 @@ func (o *Physics2DShapeQueryResult) GetResultObject(idx gdnative.Int) ObjectImpl
 	Args: [{ false idx int}], Returns: int
 */
 func (o *Physics2DShapeQueryResult) GetResultObjectId(idx gdnative.Int) gdnative.Int {
-	//log.Println("Calling Physics2DShapeQueryResult.GetResultObjectId()")
+	// log.Println("Calling Physics2DShapeQueryResult.GetResultObjectId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -124,7 +124,7 @@ func (o *Physics2DShapeQueryResult) GetResultObjectId(idx gdnative.Int) gdnative
 	Args: [{ false idx int}], Returns: int
 */
 func (o *Physics2DShapeQueryResult) GetResultObjectShape(idx gdnative.Int) gdnative.Int {
-	//log.Println("Calling Physics2DShapeQueryResult.GetResultObjectShape()")
+	// log.Println("Calling Physics2DShapeQueryResult.GetResultObjectShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -148,7 +148,7 @@ func (o *Physics2DShapeQueryResult) GetResultObjectShape(idx gdnative.Int) gdnat
 	Args: [{ false idx int}], Returns: RID
 */
 func (o *Physics2DShapeQueryResult) GetResultRid(idx gdnative.Int) gdnative.Rid {
-	//log.Println("Calling Physics2DShapeQueryResult.GetResultRid()")
+	// log.Println("Calling Physics2DShapeQueryResult.GetResultRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

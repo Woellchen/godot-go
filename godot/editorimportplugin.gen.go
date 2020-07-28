@@ -39,7 +39,7 @@ func (o *EditorImportPlugin) BaseClass() string {
 	Args: [{ false preset int}], Returns: Array
 */
 func (o *EditorImportPlugin) GetImportOptions(preset gdnative.Int) gdnative.Array {
-	//log.Println("Calling EditorImportPlugin.GetImportOptions()")
+	// log.Println("Calling EditorImportPlugin.GetImportOptions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *EditorImportPlugin) GetImportOptions(preset gdnative.Int) gdnative.Arra
 	Args: [], Returns: int
 */
 func (o *EditorImportPlugin) GetImportOrder() gdnative.Int {
-	//log.Println("Calling EditorImportPlugin.GetImportOrder()")
+	// log.Println("Calling EditorImportPlugin.GetImportOrder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -86,7 +86,7 @@ func (o *EditorImportPlugin) GetImportOrder() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *EditorImportPlugin) GetImporterName() gdnative.String {
-	//log.Println("Calling EditorImportPlugin.GetImporterName()")
+	// log.Println("Calling EditorImportPlugin.GetImporterName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *EditorImportPlugin) GetImporterName() gdnative.String {
 	Args: [{ false option String} { false options Dictionary}], Returns: bool
 */
 func (o *EditorImportPlugin) GetOptionVisibility(option gdnative.String, options gdnative.Dictionary) gdnative.Bool {
-	//log.Println("Calling EditorImportPlugin.GetOptionVisibility()")
+	// log.Println("Calling EditorImportPlugin.GetOptionVisibility()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -134,7 +134,7 @@ func (o *EditorImportPlugin) GetOptionVisibility(option gdnative.String, options
 	Args: [], Returns: int
 */
 func (o *EditorImportPlugin) GetPresetCount() gdnative.Int {
-	//log.Println("Calling EditorImportPlugin.GetPresetCount()")
+	// log.Println("Calling EditorImportPlugin.GetPresetCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -157,7 +157,7 @@ func (o *EditorImportPlugin) GetPresetCount() gdnative.Int {
 	Args: [{ false preset int}], Returns: String
 */
 func (o *EditorImportPlugin) GetPresetName(preset gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorImportPlugin.GetPresetName()")
+	// log.Println("Calling EditorImportPlugin.GetPresetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -181,7 +181,7 @@ func (o *EditorImportPlugin) GetPresetName(preset gdnative.Int) gdnative.String 
 	Args: [], Returns: float
 */
 func (o *EditorImportPlugin) GetPriority() gdnative.Real {
-	//log.Println("Calling EditorImportPlugin.GetPriority()")
+	// log.Println("Calling EditorImportPlugin.GetPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -204,7 +204,7 @@ func (o *EditorImportPlugin) GetPriority() gdnative.Real {
 	Args: [], Returns: Array
 */
 func (o *EditorImportPlugin) GetRecognizedExtensions() gdnative.Array {
-	//log.Println("Calling EditorImportPlugin.GetRecognizedExtensions()")
+	// log.Println("Calling EditorImportPlugin.GetRecognizedExtensions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -227,7 +227,7 @@ func (o *EditorImportPlugin) GetRecognizedExtensions() gdnative.Array {
 	Args: [], Returns: String
 */
 func (o *EditorImportPlugin) GetResourceType() gdnative.String {
-	//log.Println("Calling EditorImportPlugin.GetResourceType()")
+	// log.Println("Calling EditorImportPlugin.GetResourceType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -250,7 +250,7 @@ func (o *EditorImportPlugin) GetResourceType() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorImportPlugin) GetSaveExtension() gdnative.String {
-	//log.Println("Calling EditorImportPlugin.GetSaveExtension()")
+	// log.Println("Calling EditorImportPlugin.GetSaveExtension()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -273,7 +273,7 @@ func (o *EditorImportPlugin) GetSaveExtension() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorImportPlugin) GetVisibleName() gdnative.String {
-	//log.Println("Calling EditorImportPlugin.GetVisibleName()")
+	// log.Println("Calling EditorImportPlugin.GetVisibleName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -296,7 +296,7 @@ func (o *EditorImportPlugin) GetVisibleName() gdnative.String {
 	Args: [{ false source_file String} { false save_path String} { false options Dictionary} { false platform_variants Array} { false gen_files Array}], Returns: int
 */
 func (o *EditorImportPlugin) Import(sourceFile gdnative.String, savePath gdnative.String, options gdnative.Dictionary, platformVariants gdnative.Array, genFiles gdnative.Array) gdnative.Int {
-	//log.Println("Calling EditorImportPlugin.Import()")
+	// log.Println("Calling EditorImportPlugin.Import()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)

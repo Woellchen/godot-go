@@ -58,7 +58,7 @@ func (o *GeometryInstance) BaseClass() string {
 	Args: [], Returns: enum.GeometryInstance::ShadowCastingSetting
 */
 func (o *GeometryInstance) GetCastShadowsSetting() GeometryInstanceShadowCastingSetting {
-	//log.Println("Calling GeometryInstance.GetCastShadowsSetting()")
+	// log.Println("Calling GeometryInstance.GetCastShadowsSetting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -81,7 +81,7 @@ func (o *GeometryInstance) GetCastShadowsSetting() GeometryInstanceShadowCasting
 	Args: [], Returns: float
 */
 func (o *GeometryInstance) GetExtraCullMargin() gdnative.Real {
-	//log.Println("Calling GeometryInstance.GetExtraCullMargin()")
+	// log.Println("Calling GeometryInstance.GetExtraCullMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -104,7 +104,7 @@ func (o *GeometryInstance) GetExtraCullMargin() gdnative.Real {
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *GeometryInstance) GetFlag(flag gdnative.Int) gdnative.Bool {
-	//log.Println("Calling GeometryInstance.GetFlag()")
+	// log.Println("Calling GeometryInstance.GetFlag()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -128,7 +128,7 @@ func (o *GeometryInstance) GetFlag(flag gdnative.Int) gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *GeometryInstance) GetLodMaxDistance() gdnative.Real {
-	//log.Println("Calling GeometryInstance.GetLodMaxDistance()")
+	// log.Println("Calling GeometryInstance.GetLodMaxDistance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *GeometryInstance) GetLodMaxDistance() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *GeometryInstance) GetLodMaxHysteresis() gdnative.Real {
-	//log.Println("Calling GeometryInstance.GetLodMaxHysteresis()")
+	// log.Println("Calling GeometryInstance.GetLodMaxHysteresis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -174,7 +174,7 @@ func (o *GeometryInstance) GetLodMaxHysteresis() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *GeometryInstance) GetLodMinDistance() gdnative.Real {
-	//log.Println("Calling GeometryInstance.GetLodMinDistance()")
+	// log.Println("Calling GeometryInstance.GetLodMinDistance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -197,7 +197,7 @@ func (o *GeometryInstance) GetLodMinDistance() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *GeometryInstance) GetLodMinHysteresis() gdnative.Real {
-	//log.Println("Calling GeometryInstance.GetLodMinHysteresis()")
+	// log.Println("Calling GeometryInstance.GetLodMinHysteresis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -220,7 +220,7 @@ func (o *GeometryInstance) GetLodMinHysteresis() gdnative.Real {
 	Args: [], Returns: Material
 */
 func (o *GeometryInstance) GetMaterialOverride() MaterialImplementer {
-	//log.Println("Calling GeometryInstance.GetMaterialOverride()")
+	// log.Println("Calling GeometryInstance.GetMaterialOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -257,7 +257,7 @@ func (o *GeometryInstance) GetMaterialOverride() MaterialImplementer {
 	Args: [{ false shadow_casting_setting int}], Returns: void
 */
 func (o *GeometryInstance) SetCastShadowsSetting(shadowCastingSetting gdnative.Int) {
-	//log.Println("Calling GeometryInstance.SetCastShadowsSetting()")
+	// log.Println("Calling GeometryInstance.SetCastShadowsSetting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -278,7 +278,7 @@ func (o *GeometryInstance) SetCastShadowsSetting(shadowCastingSetting gdnative.I
 	Args: [{ false aabb AABB}], Returns: void
 */
 func (o *GeometryInstance) SetCustomAabb(aabb gdnative.Aabb) {
-	//log.Println("Calling GeometryInstance.SetCustomAabb()")
+	// log.Println("Calling GeometryInstance.SetCustomAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -299,7 +299,7 @@ func (o *GeometryInstance) SetCustomAabb(aabb gdnative.Aabb) {
 	Args: [{ false margin float}], Returns: void
 */
 func (o *GeometryInstance) SetExtraCullMargin(margin gdnative.Real) {
-	//log.Println("Calling GeometryInstance.SetExtraCullMargin()")
+	// log.Println("Calling GeometryInstance.SetExtraCullMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -320,7 +320,7 @@ func (o *GeometryInstance) SetExtraCullMargin(margin gdnative.Real) {
 	Args: [{ false flag int} { false value bool}], Returns: void
 */
 func (o *GeometryInstance) SetFlag(flag gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling GeometryInstance.SetFlag()")
+	// log.Println("Calling GeometryInstance.SetFlag()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -342,7 +342,7 @@ func (o *GeometryInstance) SetFlag(flag gdnative.Int, value gdnative.Bool) {
 	Args: [{ false mode float}], Returns: void
 */
 func (o *GeometryInstance) SetLodMaxDistance(mode gdnative.Real) {
-	//log.Println("Calling GeometryInstance.SetLodMaxDistance()")
+	// log.Println("Calling GeometryInstance.SetLodMaxDistance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -363,7 +363,7 @@ func (o *GeometryInstance) SetLodMaxDistance(mode gdnative.Real) {
 	Args: [{ false mode float}], Returns: void
 */
 func (o *GeometryInstance) SetLodMaxHysteresis(mode gdnative.Real) {
-	//log.Println("Calling GeometryInstance.SetLodMaxHysteresis()")
+	// log.Println("Calling GeometryInstance.SetLodMaxHysteresis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -384,7 +384,7 @@ func (o *GeometryInstance) SetLodMaxHysteresis(mode gdnative.Real) {
 	Args: [{ false mode float}], Returns: void
 */
 func (o *GeometryInstance) SetLodMinDistance(mode gdnative.Real) {
-	//log.Println("Calling GeometryInstance.SetLodMinDistance()")
+	// log.Println("Calling GeometryInstance.SetLodMinDistance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -405,7 +405,7 @@ func (o *GeometryInstance) SetLodMinDistance(mode gdnative.Real) {
 	Args: [{ false mode float}], Returns: void
 */
 func (o *GeometryInstance) SetLodMinHysteresis(mode gdnative.Real) {
-	//log.Println("Calling GeometryInstance.SetLodMinHysteresis()")
+	// log.Println("Calling GeometryInstance.SetLodMinHysteresis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -426,7 +426,7 @@ func (o *GeometryInstance) SetLodMinHysteresis(mode gdnative.Real) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *GeometryInstance) SetMaterialOverride(material MaterialImplementer) {
-	//log.Println("Calling GeometryInstance.SetMaterialOverride()")
+	// log.Println("Calling GeometryInstance.SetMaterialOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

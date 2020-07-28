@@ -48,7 +48,7 @@ func (o *TabContainer) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *TabContainer) X_ChildRenamedCallback() {
-	//log.Println("Calling TabContainer.X_ChildRenamedCallback()")
+	// log.Println("Calling TabContainer.X_ChildRenamedCallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -68,7 +68,7 @@ func (o *TabContainer) X_ChildRenamedCallback() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *TabContainer) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling TabContainer.X_GuiInput()")
+	// log.Println("Calling TabContainer.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -89,7 +89,7 @@ func (o *TabContainer) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *TabContainer) X_OnMouseExited() {
-	//log.Println("Calling TabContainer.X_OnMouseExited()")
+	// log.Println("Calling TabContainer.X_OnMouseExited()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *TabContainer) X_OnMouseExited() {
 	Args: [], Returns: void
 */
 func (o *TabContainer) X_OnThemeChanged() {
-	//log.Println("Calling TabContainer.X_OnThemeChanged()")
+	// log.Println("Calling TabContainer.X_OnThemeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *TabContainer) X_OnThemeChanged() {
 	Args: [], Returns: void
 */
 func (o *TabContainer) X_UpdateCurrentTab() {
-	//log.Println("Calling TabContainer.X_UpdateCurrentTab()")
+	// log.Println("Calling TabContainer.X_UpdateCurrentTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *TabContainer) X_UpdateCurrentTab() {
 	Args: [], Returns: bool
 */
 func (o *TabContainer) AreTabsVisible() gdnative.Bool {
-	//log.Println("Calling TabContainer.AreTabsVisible()")
+	// log.Println("Calling TabContainer.AreTabsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -172,7 +172,7 @@ func (o *TabContainer) AreTabsVisible() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *TabContainer) GetCurrentTab() gdnative.Int {
-	//log.Println("Calling TabContainer.GetCurrentTab()")
+	// log.Println("Calling TabContainer.GetCurrentTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -195,7 +195,7 @@ func (o *TabContainer) GetCurrentTab() gdnative.Int {
 	Args: [], Returns: Control
 */
 func (o *TabContainer) GetCurrentTabControl() ControlImplementer {
-	//log.Println("Calling TabContainer.GetCurrentTabControl()")
+	// log.Println("Calling TabContainer.GetCurrentTabControl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -232,7 +232,7 @@ func (o *TabContainer) GetCurrentTabControl() ControlImplementer {
 	Args: [], Returns: bool
 */
 func (o *TabContainer) GetDragToRearrangeEnabled() gdnative.Bool {
-	//log.Println("Calling TabContainer.GetDragToRearrangeEnabled()")
+	// log.Println("Calling TabContainer.GetDragToRearrangeEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -255,7 +255,7 @@ func (o *TabContainer) GetDragToRearrangeEnabled() gdnative.Bool {
 	Args: [], Returns: Popup
 */
 func (o *TabContainer) GetPopup() PopupImplementer {
-	//log.Println("Calling TabContainer.GetPopup()")
+	// log.Println("Calling TabContainer.GetPopup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -292,7 +292,7 @@ func (o *TabContainer) GetPopup() PopupImplementer {
 	Args: [], Returns: int
 */
 func (o *TabContainer) GetPreviousTab() gdnative.Int {
-	//log.Println("Calling TabContainer.GetPreviousTab()")
+	// log.Println("Calling TabContainer.GetPreviousTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -315,7 +315,7 @@ func (o *TabContainer) GetPreviousTab() gdnative.Int {
 	Args: [], Returns: enum.TabContainer::TabAlign
 */
 func (o *TabContainer) GetTabAlign() TabContainerTabAlign {
-	//log.Println("Calling TabContainer.GetTabAlign()")
+	// log.Println("Calling TabContainer.GetTabAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -338,7 +338,7 @@ func (o *TabContainer) GetTabAlign() TabContainerTabAlign {
 	Args: [{ false tab_idx int}], Returns: Control
 */
 func (o *TabContainer) GetTabControl(tabIdx gdnative.Int) ControlImplementer {
-	//log.Println("Calling TabContainer.GetTabControl()")
+	// log.Println("Calling TabContainer.GetTabControl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -376,7 +376,7 @@ func (o *TabContainer) GetTabControl(tabIdx gdnative.Int) ControlImplementer {
 	Args: [], Returns: int
 */
 func (o *TabContainer) GetTabCount() gdnative.Int {
-	//log.Println("Calling TabContainer.GetTabCount()")
+	// log.Println("Calling TabContainer.GetTabCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -399,7 +399,7 @@ func (o *TabContainer) GetTabCount() gdnative.Int {
 	Args: [{ false tab_idx int}], Returns: bool
 */
 func (o *TabContainer) GetTabDisabled(tabIdx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TabContainer.GetTabDisabled()")
+	// log.Println("Calling TabContainer.GetTabDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -423,7 +423,7 @@ func (o *TabContainer) GetTabDisabled(tabIdx gdnative.Int) gdnative.Bool {
 	Args: [{ false tab_idx int}], Returns: Texture
 */
 func (o *TabContainer) GetTabIcon(tabIdx gdnative.Int) TextureImplementer {
-	//log.Println("Calling TabContainer.GetTabIcon()")
+	// log.Println("Calling TabContainer.GetTabIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -461,7 +461,7 @@ func (o *TabContainer) GetTabIcon(tabIdx gdnative.Int) TextureImplementer {
 	Args: [{ false tab_idx int}], Returns: String
 */
 func (o *TabContainer) GetTabTitle(tabIdx gdnative.Int) gdnative.String {
-	//log.Println("Calling TabContainer.GetTabTitle()")
+	// log.Println("Calling TabContainer.GetTabTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -485,7 +485,7 @@ func (o *TabContainer) GetTabTitle(tabIdx gdnative.Int) gdnative.String {
 	Args: [], Returns: int
 */
 func (o *TabContainer) GetTabsRearrangeGroup() gdnative.Int {
-	//log.Println("Calling TabContainer.GetTabsRearrangeGroup()")
+	// log.Println("Calling TabContainer.GetTabsRearrangeGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -508,7 +508,7 @@ func (o *TabContainer) GetTabsRearrangeGroup() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *TabContainer) GetUseHiddenTabsForMinSize() gdnative.Bool {
-	//log.Println("Calling TabContainer.GetUseHiddenTabsForMinSize()")
+	// log.Println("Calling TabContainer.GetUseHiddenTabsForMinSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -531,7 +531,7 @@ func (o *TabContainer) GetUseHiddenTabsForMinSize() gdnative.Bool {
 	Args: [{ false tab_idx int}], Returns: void
 */
 func (o *TabContainer) SetCurrentTab(tabIdx gdnative.Int) {
-	//log.Println("Calling TabContainer.SetCurrentTab()")
+	// log.Println("Calling TabContainer.SetCurrentTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -552,7 +552,7 @@ func (o *TabContainer) SetCurrentTab(tabIdx gdnative.Int) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *TabContainer) SetDragToRearrangeEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling TabContainer.SetDragToRearrangeEnabled()")
+	// log.Println("Calling TabContainer.SetDragToRearrangeEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -573,7 +573,7 @@ func (o *TabContainer) SetDragToRearrangeEnabled(enabled gdnative.Bool) {
 	Args: [{ false popup Node}], Returns: void
 */
 func (o *TabContainer) SetPopup(popup NodeImplementer) {
-	//log.Println("Calling TabContainer.SetPopup()")
+	// log.Println("Calling TabContainer.SetPopup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -594,7 +594,7 @@ func (o *TabContainer) SetPopup(popup NodeImplementer) {
 	Args: [{ false align int}], Returns: void
 */
 func (o *TabContainer) SetTabAlign(align gdnative.Int) {
-	//log.Println("Calling TabContainer.SetTabAlign()")
+	// log.Println("Calling TabContainer.SetTabAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -615,7 +615,7 @@ func (o *TabContainer) SetTabAlign(align gdnative.Int) {
 	Args: [{ false tab_idx int} { false disabled bool}], Returns: void
 */
 func (o *TabContainer) SetTabDisabled(tabIdx gdnative.Int, disabled gdnative.Bool) {
-	//log.Println("Calling TabContainer.SetTabDisabled()")
+	// log.Println("Calling TabContainer.SetTabDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -637,7 +637,7 @@ func (o *TabContainer) SetTabDisabled(tabIdx gdnative.Int, disabled gdnative.Boo
 	Args: [{ false tab_idx int} { false icon Texture}], Returns: void
 */
 func (o *TabContainer) SetTabIcon(tabIdx gdnative.Int, icon TextureImplementer) {
-	//log.Println("Calling TabContainer.SetTabIcon()")
+	// log.Println("Calling TabContainer.SetTabIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -659,7 +659,7 @@ func (o *TabContainer) SetTabIcon(tabIdx gdnative.Int, icon TextureImplementer) 
 	Args: [{ false tab_idx int} { false title String}], Returns: void
 */
 func (o *TabContainer) SetTabTitle(tabIdx gdnative.Int, title gdnative.String) {
-	//log.Println("Calling TabContainer.SetTabTitle()")
+	// log.Println("Calling TabContainer.SetTabTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -681,7 +681,7 @@ func (o *TabContainer) SetTabTitle(tabIdx gdnative.Int, title gdnative.String) {
 	Args: [{ false group_id int}], Returns: void
 */
 func (o *TabContainer) SetTabsRearrangeGroup(groupId gdnative.Int) {
-	//log.Println("Calling TabContainer.SetTabsRearrangeGroup()")
+	// log.Println("Calling TabContainer.SetTabsRearrangeGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -702,7 +702,7 @@ func (o *TabContainer) SetTabsRearrangeGroup(groupId gdnative.Int) {
 	Args: [{ false visible bool}], Returns: void
 */
 func (o *TabContainer) SetTabsVisible(visible gdnative.Bool) {
-	//log.Println("Calling TabContainer.SetTabsVisible()")
+	// log.Println("Calling TabContainer.SetTabsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -723,7 +723,7 @@ func (o *TabContainer) SetTabsVisible(visible gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *TabContainer) SetUseHiddenTabsForMinSize(enabled gdnative.Bool) {
-	//log.Println("Calling TabContainer.SetUseHiddenTabsForMinSize()")
+	// log.Println("Calling TabContainer.SetUseHiddenTabsForMinSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

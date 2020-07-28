@@ -39,7 +39,7 @@ func (o *SoftBody) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *SoftBody) X_DrawSoftMesh() {
-	//log.Println("Calling SoftBody.X_DrawSoftMesh()")
+	// log.Println("Calling SoftBody.X_DrawSoftMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *SoftBody) X_DrawSoftMesh() {
 	Args: [{ false body Node}], Returns: void
 */
 func (o *SoftBody) AddCollisionExceptionWith(body NodeImplementer) {
-	//log.Println("Calling SoftBody.AddCollisionExceptionWith()")
+	// log.Println("Calling SoftBody.AddCollisionExceptionWith()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *SoftBody) AddCollisionExceptionWith(body NodeImplementer) {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetAreaAngularStiffness() gdnative.Real {
-	//log.Println("Calling SoftBody.GetAreaAngularStiffness()")
+	// log.Println("Calling SoftBody.GetAreaAngularStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *SoftBody) GetAreaAngularStiffness() gdnative.Real {
 	Args: [], Returns: Array
 */
 func (o *SoftBody) GetCollisionExceptions() gdnative.Array {
-	//log.Println("Calling SoftBody.GetCollisionExceptions()")
+	// log.Println("Calling SoftBody.GetCollisionExceptions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *SoftBody) GetCollisionExceptions() gdnative.Array {
 	Args: [], Returns: int
 */
 func (o *SoftBody) GetCollisionLayer() gdnative.Int {
-	//log.Println("Calling SoftBody.GetCollisionLayer()")
+	// log.Println("Calling SoftBody.GetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *SoftBody) GetCollisionLayer() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *SoftBody) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling SoftBody.GetCollisionLayerBit()")
+	// log.Println("Calling SoftBody.GetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *SoftBody) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *SoftBody) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling SoftBody.GetCollisionMask()")
+	// log.Println("Calling SoftBody.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *SoftBody) GetCollisionMask() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *SoftBody) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling SoftBody.GetCollisionMaskBit()")
+	// log.Println("Calling SoftBody.GetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -220,7 +220,7 @@ func (o *SoftBody) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetDampingCoefficient() gdnative.Real {
-	//log.Println("Calling SoftBody.GetDampingCoefficient()")
+	// log.Println("Calling SoftBody.GetDampingCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -243,7 +243,7 @@ func (o *SoftBody) GetDampingCoefficient() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetDragCoefficient() gdnative.Real {
-	//log.Println("Calling SoftBody.GetDragCoefficient()")
+	// log.Println("Calling SoftBody.GetDragCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -266,7 +266,7 @@ func (o *SoftBody) GetDragCoefficient() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetLinearStiffness() gdnative.Real {
-	//log.Println("Calling SoftBody.GetLinearStiffness()")
+	// log.Println("Calling SoftBody.GetLinearStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -289,7 +289,7 @@ func (o *SoftBody) GetLinearStiffness() gdnative.Real {
 	Args: [], Returns: NodePath
 */
 func (o *SoftBody) GetParentCollisionIgnore() gdnative.NodePath {
-	//log.Println("Calling SoftBody.GetParentCollisionIgnore()")
+	// log.Println("Calling SoftBody.GetParentCollisionIgnore()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -312,7 +312,7 @@ func (o *SoftBody) GetParentCollisionIgnore() gdnative.NodePath {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetPoseMatchingCoefficient() gdnative.Real {
-	//log.Println("Calling SoftBody.GetPoseMatchingCoefficient()")
+	// log.Println("Calling SoftBody.GetPoseMatchingCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -335,7 +335,7 @@ func (o *SoftBody) GetPoseMatchingCoefficient() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetPressureCoefficient() gdnative.Real {
-	//log.Println("Calling SoftBody.GetPressureCoefficient()")
+	// log.Println("Calling SoftBody.GetPressureCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -358,7 +358,7 @@ func (o *SoftBody) GetPressureCoefficient() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *SoftBody) GetSimulationPrecision() gdnative.Int {
-	//log.Println("Calling SoftBody.GetSimulationPrecision()")
+	// log.Println("Calling SoftBody.GetSimulationPrecision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -381,7 +381,7 @@ func (o *SoftBody) GetSimulationPrecision() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetTotalMass() gdnative.Real {
-	//log.Println("Calling SoftBody.GetTotalMass()")
+	// log.Println("Calling SoftBody.GetTotalMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -404,7 +404,7 @@ func (o *SoftBody) GetTotalMass() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SoftBody) GetVolumeStiffness() gdnative.Real {
-	//log.Println("Calling SoftBody.GetVolumeStiffness()")
+	// log.Println("Calling SoftBody.GetVolumeStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -427,7 +427,7 @@ func (o *SoftBody) GetVolumeStiffness() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *SoftBody) IsRayPickable() gdnative.Bool {
-	//log.Println("Calling SoftBody.IsRayPickable()")
+	// log.Println("Calling SoftBody.IsRayPickable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -450,7 +450,7 @@ func (o *SoftBody) IsRayPickable() gdnative.Bool {
 	Args: [{ false body Node}], Returns: void
 */
 func (o *SoftBody) RemoveCollisionExceptionWith(body NodeImplementer) {
-	//log.Println("Calling SoftBody.RemoveCollisionExceptionWith()")
+	// log.Println("Calling SoftBody.RemoveCollisionExceptionWith()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -471,7 +471,7 @@ func (o *SoftBody) RemoveCollisionExceptionWith(body NodeImplementer) {
 	Args: [{ false areaAngular_stiffness float}], Returns: void
 */
 func (o *SoftBody) SetAreaAngularStiffness(areaAngularStiffness gdnative.Real) {
-	//log.Println("Calling SoftBody.SetAreaAngularStiffness()")
+	// log.Println("Calling SoftBody.SetAreaAngularStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -492,7 +492,7 @@ func (o *SoftBody) SetAreaAngularStiffness(areaAngularStiffness gdnative.Real) {
 	Args: [{ false collision_layer int}], Returns: void
 */
 func (o *SoftBody) SetCollisionLayer(collisionLayer gdnative.Int) {
-	//log.Println("Calling SoftBody.SetCollisionLayer()")
+	// log.Println("Calling SoftBody.SetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -513,7 +513,7 @@ func (o *SoftBody) SetCollisionLayer(collisionLayer gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *SoftBody) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling SoftBody.SetCollisionLayerBit()")
+	// log.Println("Calling SoftBody.SetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -535,7 +535,7 @@ func (o *SoftBody) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
 	Args: [{ false collision_mask int}], Returns: void
 */
 func (o *SoftBody) SetCollisionMask(collisionMask gdnative.Int) {
-	//log.Println("Calling SoftBody.SetCollisionMask()")
+	// log.Println("Calling SoftBody.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -556,7 +556,7 @@ func (o *SoftBody) SetCollisionMask(collisionMask gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *SoftBody) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling SoftBody.SetCollisionMaskBit()")
+	// log.Println("Calling SoftBody.SetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -578,7 +578,7 @@ func (o *SoftBody) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
 	Args: [{ false damping_coefficient float}], Returns: void
 */
 func (o *SoftBody) SetDampingCoefficient(dampingCoefficient gdnative.Real) {
-	//log.Println("Calling SoftBody.SetDampingCoefficient()")
+	// log.Println("Calling SoftBody.SetDampingCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -599,7 +599,7 @@ func (o *SoftBody) SetDampingCoefficient(dampingCoefficient gdnative.Real) {
 	Args: [{ false drag_coefficient float}], Returns: void
 */
 func (o *SoftBody) SetDragCoefficient(dragCoefficient gdnative.Real) {
-	//log.Println("Calling SoftBody.SetDragCoefficient()")
+	// log.Println("Calling SoftBody.SetDragCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -620,7 +620,7 @@ func (o *SoftBody) SetDragCoefficient(dragCoefficient gdnative.Real) {
 	Args: [{ false linear_stiffness float}], Returns: void
 */
 func (o *SoftBody) SetLinearStiffness(linearStiffness gdnative.Real) {
-	//log.Println("Calling SoftBody.SetLinearStiffness()")
+	// log.Println("Calling SoftBody.SetLinearStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -641,7 +641,7 @@ func (o *SoftBody) SetLinearStiffness(linearStiffness gdnative.Real) {
 	Args: [{ false parent_collision_ignore NodePath}], Returns: void
 */
 func (o *SoftBody) SetParentCollisionIgnore(parentCollisionIgnore gdnative.NodePath) {
-	//log.Println("Calling SoftBody.SetParentCollisionIgnore()")
+	// log.Println("Calling SoftBody.SetParentCollisionIgnore()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -662,7 +662,7 @@ func (o *SoftBody) SetParentCollisionIgnore(parentCollisionIgnore gdnative.NodeP
 	Args: [{ false pose_matching_coefficient float}], Returns: void
 */
 func (o *SoftBody) SetPoseMatchingCoefficient(poseMatchingCoefficient gdnative.Real) {
-	//log.Println("Calling SoftBody.SetPoseMatchingCoefficient()")
+	// log.Println("Calling SoftBody.SetPoseMatchingCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -683,7 +683,7 @@ func (o *SoftBody) SetPoseMatchingCoefficient(poseMatchingCoefficient gdnative.R
 	Args: [{ false pressure_coefficient float}], Returns: void
 */
 func (o *SoftBody) SetPressureCoefficient(pressureCoefficient gdnative.Real) {
-	//log.Println("Calling SoftBody.SetPressureCoefficient()")
+	// log.Println("Calling SoftBody.SetPressureCoefficient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -704,7 +704,7 @@ func (o *SoftBody) SetPressureCoefficient(pressureCoefficient gdnative.Real) {
 	Args: [{ false ray_pickable bool}], Returns: void
 */
 func (o *SoftBody) SetRayPickable(rayPickable gdnative.Bool) {
-	//log.Println("Calling SoftBody.SetRayPickable()")
+	// log.Println("Calling SoftBody.SetRayPickable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -725,7 +725,7 @@ func (o *SoftBody) SetRayPickable(rayPickable gdnative.Bool) {
 	Args: [{ false simulation_precision int}], Returns: void
 */
 func (o *SoftBody) SetSimulationPrecision(simulationPrecision gdnative.Int) {
-	//log.Println("Calling SoftBody.SetSimulationPrecision()")
+	// log.Println("Calling SoftBody.SetSimulationPrecision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -746,7 +746,7 @@ func (o *SoftBody) SetSimulationPrecision(simulationPrecision gdnative.Int) {
 	Args: [{ false mass float}], Returns: void
 */
 func (o *SoftBody) SetTotalMass(mass gdnative.Real) {
-	//log.Println("Calling SoftBody.SetTotalMass()")
+	// log.Println("Calling SoftBody.SetTotalMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -767,7 +767,7 @@ func (o *SoftBody) SetTotalMass(mass gdnative.Real) {
 	Args: [{ false volume_stiffness float}], Returns: void
 */
 func (o *SoftBody) SetVolumeStiffness(volumeStiffness gdnative.Real) {
-	//log.Println("Calling SoftBody.SetVolumeStiffness()")
+	// log.Println("Calling SoftBody.SetVolumeStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

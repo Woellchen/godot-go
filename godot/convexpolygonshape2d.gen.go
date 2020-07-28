@@ -39,7 +39,7 @@ func (o *ConvexPolygonShape2D) BaseClass() string {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *ConvexPolygonShape2D) GetPoints() gdnative.PoolVector2Array {
-	//log.Println("Calling ConvexPolygonShape2D.GetPoints()")
+	// log.Println("Calling ConvexPolygonShape2D.GetPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ConvexPolygonShape2D) GetPoints() gdnative.PoolVector2Array {
 	Args: [{ false point_cloud PoolVector2Array}], Returns: void
 */
 func (o *ConvexPolygonShape2D) SetPointCloud(pointCloud gdnative.PoolVector2Array) {
-	//log.Println("Calling ConvexPolygonShape2D.SetPointCloud()")
+	// log.Println("Calling ConvexPolygonShape2D.SetPointCloud()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *ConvexPolygonShape2D) SetPointCloud(pointCloud gdnative.PoolVector2Arra
 	Args: [{ false points PoolVector2Array}], Returns: void
 */
 func (o *ConvexPolygonShape2D) SetPoints(points gdnative.PoolVector2Array) {
-	//log.Println("Calling ConvexPolygonShape2D.SetPoints()")
+	// log.Println("Calling ConvexPolygonShape2D.SetPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

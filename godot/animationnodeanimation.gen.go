@@ -39,7 +39,7 @@ func (o *AnimationNodeAnimation) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *AnimationNodeAnimation) GetAnimation() gdnative.String {
-	//log.Println("Calling AnimationNodeAnimation.GetAnimation()")
+	// log.Println("Calling AnimationNodeAnimation.GetAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AnimationNodeAnimation) GetAnimation() gdnative.String {
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNodeAnimation) SetAnimation(name gdnative.String) {
-	//log.Println("Calling AnimationNodeAnimation.SetAnimation()")
+	// log.Println("Calling AnimationNodeAnimation.SetAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

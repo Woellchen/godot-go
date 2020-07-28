@@ -39,7 +39,7 @@ func (o *AnimationNodeStateMachinePlayback) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *AnimationNodeStateMachinePlayback) GetCurrentNode() gdnative.String {
-	//log.Println("Calling AnimationNodeStateMachinePlayback.GetCurrentNode()")
+	// log.Println("Calling AnimationNodeStateMachinePlayback.GetCurrentNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AnimationNodeStateMachinePlayback) GetCurrentNode() gdnative.String {
 	Args: [], Returns: PoolStringArray
 */
 func (o *AnimationNodeStateMachinePlayback) GetTravelPath() gdnative.PoolStringArray {
-	//log.Println("Calling AnimationNodeStateMachinePlayback.GetTravelPath()")
+	// log.Println("Calling AnimationNodeStateMachinePlayback.GetTravelPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AnimationNodeStateMachinePlayback) GetTravelPath() gdnative.PoolStringA
 	Args: [], Returns: bool
 */
 func (o *AnimationNodeStateMachinePlayback) IsPlaying() gdnative.Bool {
-	//log.Println("Calling AnimationNodeStateMachinePlayback.IsPlaying()")
+	// log.Println("Calling AnimationNodeStateMachinePlayback.IsPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AnimationNodeStateMachinePlayback) IsPlaying() gdnative.Bool {
 	Args: [{ false node String}], Returns: void
 */
 func (o *AnimationNodeStateMachinePlayback) Start(node gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachinePlayback.Start()")
+	// log.Println("Calling AnimationNodeStateMachinePlayback.Start()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *AnimationNodeStateMachinePlayback) Start(node gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *AnimationNodeStateMachinePlayback) Stop() {
-	//log.Println("Calling AnimationNodeStateMachinePlayback.Stop()")
+	// log.Println("Calling AnimationNodeStateMachinePlayback.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *AnimationNodeStateMachinePlayback) Stop() {
 	Args: [{ false to_node String}], Returns: void
 */
 func (o *AnimationNodeStateMachinePlayback) Travel(toNode gdnative.String) {
-	//log.Println("Calling AnimationNodeStateMachinePlayback.Travel()")
+	// log.Println("Calling AnimationNodeStateMachinePlayback.Travel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

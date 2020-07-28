@@ -39,7 +39,7 @@ func (o *VisualShaderNodeInput) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeInput) GetInputName() gdnative.String {
-	//log.Println("Calling VisualShaderNodeInput.GetInputName()")
+	// log.Println("Calling VisualShaderNodeInput.GetInputName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeInput) GetInputName() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeInput) GetInputRealName() gdnative.String {
-	//log.Println("Calling VisualShaderNodeInput.GetInputRealName()")
+	// log.Println("Calling VisualShaderNodeInput.GetInputRealName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualShaderNodeInput) GetInputRealName() gdnative.String {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualShaderNodeInput) SetInputName(name gdnative.String) {
-	//log.Println("Calling VisualShaderNodeInput.SetInputName()")
+	// log.Println("Calling VisualShaderNodeInput.SetInputName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

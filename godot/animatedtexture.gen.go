@@ -39,7 +39,7 @@ func (o *AnimatedTexture) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *AnimatedTexture) X_UpdateProxy() {
-	//log.Println("Calling AnimatedTexture.X_UpdateProxy()")
+	// log.Println("Calling AnimatedTexture.X_UpdateProxy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *AnimatedTexture) X_UpdateProxy() {
 	Args: [], Returns: int
 */
 func (o *AnimatedTexture) GetCurrentFrame() gdnative.Int {
-	//log.Println("Calling AnimatedTexture.GetCurrentFrame()")
+	// log.Println("Calling AnimatedTexture.GetCurrentFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *AnimatedTexture) GetCurrentFrame() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *AnimatedTexture) GetFps() gdnative.Real {
-	//log.Println("Calling AnimatedTexture.GetFps()")
+	// log.Println("Calling AnimatedTexture.GetFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *AnimatedTexture) GetFps() gdnative.Real {
 	Args: [{ false frame int}], Returns: float
 */
 func (o *AnimatedTexture) GetFrameDelay(frame gdnative.Int) gdnative.Real {
-	//log.Println("Calling AnimatedTexture.GetFrameDelay()")
+	// log.Println("Calling AnimatedTexture.GetFrameDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *AnimatedTexture) GetFrameDelay(frame gdnative.Int) gdnative.Real {
 	Args: [{ false frame int}], Returns: Texture
 */
 func (o *AnimatedTexture) GetFrameTexture(frame gdnative.Int) TextureImplementer {
-	//log.Println("Calling AnimatedTexture.GetFrameTexture()")
+	// log.Println("Calling AnimatedTexture.GetFrameTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -167,7 +167,7 @@ func (o *AnimatedTexture) GetFrameTexture(frame gdnative.Int) TextureImplementer
 	Args: [], Returns: int
 */
 func (o *AnimatedTexture) GetFrames() gdnative.Int {
-	//log.Println("Calling AnimatedTexture.GetFrames()")
+	// log.Println("Calling AnimatedTexture.GetFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -190,7 +190,7 @@ func (o *AnimatedTexture) GetFrames() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *AnimatedTexture) GetOneshot() gdnative.Bool {
-	//log.Println("Calling AnimatedTexture.GetOneshot()")
+	// log.Println("Calling AnimatedTexture.GetOneshot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -213,7 +213,7 @@ func (o *AnimatedTexture) GetOneshot() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *AnimatedTexture) GetPause() gdnative.Bool {
-	//log.Println("Calling AnimatedTexture.GetPause()")
+	// log.Println("Calling AnimatedTexture.GetPause()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -236,7 +236,7 @@ func (o *AnimatedTexture) GetPause() gdnative.Bool {
 	Args: [{ false frame int}], Returns: void
 */
 func (o *AnimatedTexture) SetCurrentFrame(frame gdnative.Int) {
-	//log.Println("Calling AnimatedTexture.SetCurrentFrame()")
+	// log.Println("Calling AnimatedTexture.SetCurrentFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -257,7 +257,7 @@ func (o *AnimatedTexture) SetCurrentFrame(frame gdnative.Int) {
 	Args: [{ false fps float}], Returns: void
 */
 func (o *AnimatedTexture) SetFps(fps gdnative.Real) {
-	//log.Println("Calling AnimatedTexture.SetFps()")
+	// log.Println("Calling AnimatedTexture.SetFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -278,7 +278,7 @@ func (o *AnimatedTexture) SetFps(fps gdnative.Real) {
 	Args: [{ false frame int} { false delay float}], Returns: void
 */
 func (o *AnimatedTexture) SetFrameDelay(frame gdnative.Int, delay gdnative.Real) {
-	//log.Println("Calling AnimatedTexture.SetFrameDelay()")
+	// log.Println("Calling AnimatedTexture.SetFrameDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -300,7 +300,7 @@ func (o *AnimatedTexture) SetFrameDelay(frame gdnative.Int, delay gdnative.Real)
 	Args: [{ false frame int} { false texture Texture}], Returns: void
 */
 func (o *AnimatedTexture) SetFrameTexture(frame gdnative.Int, texture TextureImplementer) {
-	//log.Println("Calling AnimatedTexture.SetFrameTexture()")
+	// log.Println("Calling AnimatedTexture.SetFrameTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -322,7 +322,7 @@ func (o *AnimatedTexture) SetFrameTexture(frame gdnative.Int, texture TextureImp
 	Args: [{ false frames int}], Returns: void
 */
 func (o *AnimatedTexture) SetFrames(frames gdnative.Int) {
-	//log.Println("Calling AnimatedTexture.SetFrames()")
+	// log.Println("Calling AnimatedTexture.SetFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -343,7 +343,7 @@ func (o *AnimatedTexture) SetFrames(frames gdnative.Int) {
 	Args: [{ false oneshot bool}], Returns: void
 */
 func (o *AnimatedTexture) SetOneshot(oneshot gdnative.Bool) {
-	//log.Println("Calling AnimatedTexture.SetOneshot()")
+	// log.Println("Calling AnimatedTexture.SetOneshot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -364,7 +364,7 @@ func (o *AnimatedTexture) SetOneshot(oneshot gdnative.Bool) {
 	Args: [{ false pause bool}], Returns: void
 */
 func (o *AnimatedTexture) SetPause(pause gdnative.Bool) {
-	//log.Println("Calling AnimatedTexture.SetPause()")
+	// log.Println("Calling AnimatedTexture.SetPause()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

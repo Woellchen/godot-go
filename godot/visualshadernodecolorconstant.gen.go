@@ -39,7 +39,7 @@ func (o *VisualShaderNodeColorConstant) BaseClass() string {
 	Args: [], Returns: Color
 */
 func (o *VisualShaderNodeColorConstant) GetConstant() gdnative.Color {
-	//log.Println("Calling VisualShaderNodeColorConstant.GetConstant()")
+	// log.Println("Calling VisualShaderNodeColorConstant.GetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeColorConstant) GetConstant() gdnative.Color {
 	Args: [{ false value Color}], Returns: void
 */
 func (o *VisualShaderNodeColorConstant) SetConstant(value gdnative.Color) {
-	//log.Println("Calling VisualShaderNodeColorConstant.SetConstant()")
+	// log.Println("Calling VisualShaderNodeColorConstant.SetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

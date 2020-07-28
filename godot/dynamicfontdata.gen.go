@@ -48,7 +48,7 @@ func (o *DynamicFontData) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *DynamicFontData) GetFontPath() gdnative.String {
-	//log.Println("Calling DynamicFontData.GetFontPath()")
+	// log.Println("Calling DynamicFontData.GetFontPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *DynamicFontData) GetFontPath() gdnative.String {
 	Args: [], Returns: enum.DynamicFontData::Hinting
 */
 func (o *DynamicFontData) GetHinting() DynamicFontDataHinting {
-	//log.Println("Calling DynamicFontData.GetHinting()")
+	// log.Println("Calling DynamicFontData.GetHinting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *DynamicFontData) GetHinting() DynamicFontDataHinting {
 	Args: [], Returns: bool
 */
 func (o *DynamicFontData) IsAntialiased() gdnative.Bool {
-	//log.Println("Calling DynamicFontData.IsAntialiased()")
+	// log.Println("Calling DynamicFontData.IsAntialiased()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *DynamicFontData) IsAntialiased() gdnative.Bool {
 	Args: [{ false antialiased bool}], Returns: void
 */
 func (o *DynamicFontData) SetAntialiased(antialiased gdnative.Bool) {
-	//log.Println("Calling DynamicFontData.SetAntialiased()")
+	// log.Println("Calling DynamicFontData.SetAntialiased()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -138,7 +138,7 @@ func (o *DynamicFontData) SetAntialiased(antialiased gdnative.Bool) {
 	Args: [{ false path String}], Returns: void
 */
 func (o *DynamicFontData) SetFontPath(path gdnative.String) {
-	//log.Println("Calling DynamicFontData.SetFontPath()")
+	// log.Println("Calling DynamicFontData.SetFontPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -159,7 +159,7 @@ func (o *DynamicFontData) SetFontPath(path gdnative.String) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *DynamicFontData) SetHinting(mode gdnative.Int) {
-	//log.Println("Calling DynamicFontData.SetHinting()")
+	// log.Println("Calling DynamicFontData.SetHinting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

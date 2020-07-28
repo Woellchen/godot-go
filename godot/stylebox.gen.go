@@ -39,7 +39,7 @@ func (o *StyleBox) BaseClass() string {
 	Args: [{ false canvas_item RID} { false rect Rect2}], Returns: void
 */
 func (o *StyleBox) Draw(canvasItem gdnative.Rid, rect gdnative.Rect2) {
-	//log.Println("Calling StyleBox.Draw()")
+	// log.Println("Calling StyleBox.Draw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *StyleBox) Draw(canvasItem gdnative.Rid, rect gdnative.Rect2) {
 	Args: [], Returns: Vector2
 */
 func (o *StyleBox) GetCenterSize() gdnative.Vector2 {
-	//log.Println("Calling StyleBox.GetCenterSize()")
+	// log.Println("Calling StyleBox.GetCenterSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -84,7 +84,7 @@ func (o *StyleBox) GetCenterSize() gdnative.Vector2 {
 	Args: [], Returns: CanvasItem
 */
 func (o *StyleBox) GetCurrentItemDrawn() CanvasItemImplementer {
-	//log.Println("Calling StyleBox.GetCurrentItemDrawn()")
+	// log.Println("Calling StyleBox.GetCurrentItemDrawn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -121,7 +121,7 @@ func (o *StyleBox) GetCurrentItemDrawn() CanvasItemImplementer {
 	Args: [{ false margin int}], Returns: float
 */
 func (o *StyleBox) GetDefaultMargin(margin gdnative.Int) gdnative.Real {
-	//log.Println("Calling StyleBox.GetDefaultMargin()")
+	// log.Println("Calling StyleBox.GetDefaultMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -145,7 +145,7 @@ func (o *StyleBox) GetDefaultMargin(margin gdnative.Int) gdnative.Real {
 	Args: [{ false margin int}], Returns: float
 */
 func (o *StyleBox) GetMargin(margin gdnative.Int) gdnative.Real {
-	//log.Println("Calling StyleBox.GetMargin()")
+	// log.Println("Calling StyleBox.GetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -169,7 +169,7 @@ func (o *StyleBox) GetMargin(margin gdnative.Int) gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *StyleBox) GetMinimumSize() gdnative.Vector2 {
-	//log.Println("Calling StyleBox.GetMinimumSize()")
+	// log.Println("Calling StyleBox.GetMinimumSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -192,7 +192,7 @@ func (o *StyleBox) GetMinimumSize() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *StyleBox) GetOffset() gdnative.Vector2 {
-	//log.Println("Calling StyleBox.GetOffset()")
+	// log.Println("Calling StyleBox.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -215,7 +215,7 @@ func (o *StyleBox) GetOffset() gdnative.Vector2 {
 	Args: [{ false margin int} { false offset float}], Returns: void
 */
 func (o *StyleBox) SetDefaultMargin(margin gdnative.Int, offset gdnative.Real) {
-	//log.Println("Calling StyleBox.SetDefaultMargin()")
+	// log.Println("Calling StyleBox.SetDefaultMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -237,7 +237,7 @@ func (o *StyleBox) SetDefaultMargin(margin gdnative.Int, offset gdnative.Real) {
 	Args: [{ false point Vector2} { false rect Rect2}], Returns: bool
 */
 func (o *StyleBox) TestMask(point gdnative.Vector2, rect gdnative.Rect2) gdnative.Bool {
-	//log.Println("Calling StyleBox.TestMask()")
+	// log.Println("Calling StyleBox.TestMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

@@ -68,7 +68,7 @@ func (o *SliderJoint) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *SliderJoint) X_GetLowerLimitAngular() gdnative.Real {
-	//log.Println("Calling SliderJoint.X_GetLowerLimitAngular()")
+	// log.Println("Calling SliderJoint.X_GetLowerLimitAngular()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -91,7 +91,7 @@ func (o *SliderJoint) X_GetLowerLimitAngular() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SliderJoint) X_GetUpperLimitAngular() gdnative.Real {
-	//log.Println("Calling SliderJoint.X_GetUpperLimitAngular()")
+	// log.Println("Calling SliderJoint.X_GetUpperLimitAngular()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -114,7 +114,7 @@ func (o *SliderJoint) X_GetUpperLimitAngular() gdnative.Real {
 	Args: [{ false lower_limit_angular float}], Returns: void
 */
 func (o *SliderJoint) X_SetLowerLimitAngular(lowerLimitAngular gdnative.Real) {
-	//log.Println("Calling SliderJoint.X_SetLowerLimitAngular()")
+	// log.Println("Calling SliderJoint.X_SetLowerLimitAngular()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -135,7 +135,7 @@ func (o *SliderJoint) X_SetLowerLimitAngular(lowerLimitAngular gdnative.Real) {
 	Args: [{ false upper_limit_angular float}], Returns: void
 */
 func (o *SliderJoint) X_SetUpperLimitAngular(upperLimitAngular gdnative.Real) {
-	//log.Println("Calling SliderJoint.X_SetUpperLimitAngular()")
+	// log.Println("Calling SliderJoint.X_SetUpperLimitAngular()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -156,7 +156,7 @@ func (o *SliderJoint) X_SetUpperLimitAngular(upperLimitAngular gdnative.Real) {
 	Args: [{ false param int}], Returns: float
 */
 func (o *SliderJoint) GetParam(param gdnative.Int) gdnative.Real {
-	//log.Println("Calling SliderJoint.GetParam()")
+	// log.Println("Calling SliderJoint.GetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -180,7 +180,7 @@ func (o *SliderJoint) GetParam(param gdnative.Int) gdnative.Real {
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *SliderJoint) SetParam(param gdnative.Int, value gdnative.Real) {
-	//log.Println("Calling SliderJoint.SetParam()")
+	// log.Println("Calling SliderJoint.SetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

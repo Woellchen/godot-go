@@ -39,7 +39,7 @@ func (o *EditorSceneImporter) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *EditorSceneImporter) X_GetExtensions() gdnative.Array {
-	//log.Println("Calling EditorSceneImporter.X_GetExtensions()")
+	// log.Println("Calling EditorSceneImporter.X_GetExtensions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *EditorSceneImporter) X_GetExtensions() gdnative.Array {
 	Args: [], Returns: int
 */
 func (o *EditorSceneImporter) X_GetImportFlags() gdnative.Int {
-	//log.Println("Calling EditorSceneImporter.X_GetImportFlags()")
+	// log.Println("Calling EditorSceneImporter.X_GetImportFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *EditorSceneImporter) X_GetImportFlags() gdnative.Int {
 	Args: [{ false path String} { false flags int} { false bake_fps int}], Returns: Animation
 */
 func (o *EditorSceneImporter) X_ImportAnimation(path gdnative.String, flags gdnative.Int, bakeFps gdnative.Int) AnimationImplementer {
-	//log.Println("Calling EditorSceneImporter.X_ImportAnimation()")
+	// log.Println("Calling EditorSceneImporter.X_ImportAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -125,7 +125,7 @@ func (o *EditorSceneImporter) X_ImportAnimation(path gdnative.String, flags gdna
 	Args: [{ false path String} { false flags int} { false bake_fps int}], Returns: Node
 */
 func (o *EditorSceneImporter) X_ImportScene(path gdnative.String, flags gdnative.Int, bakeFps gdnative.Int) NodeImplementer {
-	//log.Println("Calling EditorSceneImporter.X_ImportScene()")
+	// log.Println("Calling EditorSceneImporter.X_ImportScene()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -165,7 +165,7 @@ func (o *EditorSceneImporter) X_ImportScene(path gdnative.String, flags gdnative
 	Args: [{ false path String} { false flags int} { false bake_fps int}], Returns: Animation
 */
 func (o *EditorSceneImporter) ImportAnimationFromOtherImporter(path gdnative.String, flags gdnative.Int, bakeFps gdnative.Int) AnimationImplementer {
-	//log.Println("Calling EditorSceneImporter.ImportAnimationFromOtherImporter()")
+	// log.Println("Calling EditorSceneImporter.ImportAnimationFromOtherImporter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -205,7 +205,7 @@ func (o *EditorSceneImporter) ImportAnimationFromOtherImporter(path gdnative.Str
 	Args: [{ false path String} { false flags int} { false bake_fps int}], Returns: Node
 */
 func (o *EditorSceneImporter) ImportSceneFromOtherImporter(path gdnative.String, flags gdnative.Int, bakeFps gdnative.Int) NodeImplementer {
-	//log.Println("Calling EditorSceneImporter.ImportSceneFromOtherImporter()")
+	// log.Println("Calling EditorSceneImporter.ImportSceneFromOtherImporter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

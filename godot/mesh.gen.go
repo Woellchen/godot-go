@@ -104,7 +104,7 @@ func (o *Mesh) BaseClass() string {
 	Args: [], Returns: Shape
 */
 func (o *Mesh) CreateConvexShape() ShapeImplementer {
-	//log.Println("Calling Mesh.CreateConvexShape()")
+	// log.Println("Calling Mesh.CreateConvexShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -141,7 +141,7 @@ func (o *Mesh) CreateConvexShape() ShapeImplementer {
 	Args: [{ false margin float}], Returns: Mesh
 */
 func (o *Mesh) CreateOutline(margin gdnative.Real) MeshImplementer {
-	//log.Println("Calling Mesh.CreateOutline()")
+	// log.Println("Calling Mesh.CreateOutline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *Mesh) CreateOutline(margin gdnative.Real) MeshImplementer {
 	Args: [], Returns: Shape
 */
 func (o *Mesh) CreateTrimeshShape() ShapeImplementer {
-	//log.Println("Calling Mesh.CreateTrimeshShape()")
+	// log.Println("Calling Mesh.CreateTrimeshShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -216,7 +216,7 @@ func (o *Mesh) CreateTrimeshShape() ShapeImplementer {
 	Args: [], Returns: TriangleMesh
 */
 func (o *Mesh) GenerateTriangleMesh() TriangleMeshImplementer {
-	//log.Println("Calling Mesh.GenerateTriangleMesh()")
+	// log.Println("Calling Mesh.GenerateTriangleMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -253,7 +253,7 @@ func (o *Mesh) GenerateTriangleMesh() TriangleMeshImplementer {
 	Args: [], Returns: AABB
 */
 func (o *Mesh) GetAabb() gdnative.Aabb {
-	//log.Println("Calling Mesh.GetAabb()")
+	// log.Println("Calling Mesh.GetAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -276,7 +276,7 @@ func (o *Mesh) GetAabb() gdnative.Aabb {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *Mesh) GetFaces() gdnative.PoolVector3Array {
-	//log.Println("Calling Mesh.GetFaces()")
+	// log.Println("Calling Mesh.GetFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -299,7 +299,7 @@ func (o *Mesh) GetFaces() gdnative.PoolVector3Array {
 	Args: [], Returns: Vector2
 */
 func (o *Mesh) GetLightmapSizeHint() gdnative.Vector2 {
-	//log.Println("Calling Mesh.GetLightmapSizeHint()")
+	// log.Println("Calling Mesh.GetLightmapSizeHint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -322,7 +322,7 @@ func (o *Mesh) GetLightmapSizeHint() gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *Mesh) GetSurfaceCount() gdnative.Int {
-	//log.Println("Calling Mesh.GetSurfaceCount()")
+	// log.Println("Calling Mesh.GetSurfaceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -345,7 +345,7 @@ func (o *Mesh) GetSurfaceCount() gdnative.Int {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *Mesh) SetLightmapSizeHint(size gdnative.Vector2) {
-	//log.Println("Calling Mesh.SetLightmapSizeHint()")
+	// log.Println("Calling Mesh.SetLightmapSizeHint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -366,7 +366,7 @@ func (o *Mesh) SetLightmapSizeHint(size gdnative.Vector2) {
 	Args: [{ false surf_idx int}], Returns: Array
 */
 func (o *Mesh) SurfaceGetArrays(surfIdx gdnative.Int) gdnative.Array {
-	//log.Println("Calling Mesh.SurfaceGetArrays()")
+	// log.Println("Calling Mesh.SurfaceGetArrays()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -390,7 +390,7 @@ func (o *Mesh) SurfaceGetArrays(surfIdx gdnative.Int) gdnative.Array {
 	Args: [{ false surf_idx int}], Returns: Array
 */
 func (o *Mesh) SurfaceGetBlendShapeArrays(surfIdx gdnative.Int) gdnative.Array {
-	//log.Println("Calling Mesh.SurfaceGetBlendShapeArrays()")
+	// log.Println("Calling Mesh.SurfaceGetBlendShapeArrays()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -414,7 +414,7 @@ func (o *Mesh) SurfaceGetBlendShapeArrays(surfIdx gdnative.Int) gdnative.Array {
 	Args: [{ false surf_idx int}], Returns: Material
 */
 func (o *Mesh) SurfaceGetMaterial(surfIdx gdnative.Int) MaterialImplementer {
-	//log.Println("Calling Mesh.SurfaceGetMaterial()")
+	// log.Println("Calling Mesh.SurfaceGetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -452,7 +452,7 @@ func (o *Mesh) SurfaceGetMaterial(surfIdx gdnative.Int) MaterialImplementer {
 	Args: [{ false surf_idx int} { false material Material}], Returns: void
 */
 func (o *Mesh) SurfaceSetMaterial(surfIdx gdnative.Int, material MaterialImplementer) {
-	//log.Println("Calling Mesh.SurfaceSetMaterial()")
+	// log.Println("Calling Mesh.SurfaceSetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

@@ -39,7 +39,7 @@ func (o *AudioEffectLimiter) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectLimiter) GetCeilingDb() gdnative.Real {
-	//log.Println("Calling AudioEffectLimiter.GetCeilingDb()")
+	// log.Println("Calling AudioEffectLimiter.GetCeilingDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectLimiter) GetCeilingDb() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectLimiter) GetSoftClipDb() gdnative.Real {
-	//log.Println("Calling AudioEffectLimiter.GetSoftClipDb()")
+	// log.Println("Calling AudioEffectLimiter.GetSoftClipDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioEffectLimiter) GetSoftClipDb() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectLimiter) GetSoftClipRatio() gdnative.Real {
-	//log.Println("Calling AudioEffectLimiter.GetSoftClipRatio()")
+	// log.Println("Calling AudioEffectLimiter.GetSoftClipRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AudioEffectLimiter) GetSoftClipRatio() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectLimiter) GetThresholdDb() gdnative.Real {
-	//log.Println("Calling AudioEffectLimiter.GetThresholdDb()")
+	// log.Println("Calling AudioEffectLimiter.GetThresholdDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *AudioEffectLimiter) GetThresholdDb() gdnative.Real {
 	Args: [{ false ceiling float}], Returns: void
 */
 func (o *AudioEffectLimiter) SetCeilingDb(ceiling gdnative.Real) {
-	//log.Println("Calling AudioEffectLimiter.SetCeilingDb()")
+	// log.Println("Calling AudioEffectLimiter.SetCeilingDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *AudioEffectLimiter) SetCeilingDb(ceiling gdnative.Real) {
 	Args: [{ false soft_clip float}], Returns: void
 */
 func (o *AudioEffectLimiter) SetSoftClipDb(softClip gdnative.Real) {
-	//log.Println("Calling AudioEffectLimiter.SetSoftClipDb()")
+	// log.Println("Calling AudioEffectLimiter.SetSoftClipDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *AudioEffectLimiter) SetSoftClipDb(softClip gdnative.Real) {
 	Args: [{ false soft_clip float}], Returns: void
 */
 func (o *AudioEffectLimiter) SetSoftClipRatio(softClip gdnative.Real) {
-	//log.Println("Calling AudioEffectLimiter.SetSoftClipRatio()")
+	// log.Println("Calling AudioEffectLimiter.SetSoftClipRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *AudioEffectLimiter) SetSoftClipRatio(softClip gdnative.Real) {
 	Args: [{ false threshold float}], Returns: void
 */
 func (o *AudioEffectLimiter) SetThresholdDb(threshold gdnative.Real) {
-	//log.Println("Calling AudioEffectLimiter.SetThresholdDb()")
+	// log.Println("Calling AudioEffectLimiter.SetThresholdDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

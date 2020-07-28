@@ -39,7 +39,7 @@ func (o *ConcavePolygonShape) BaseClass() string {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *ConcavePolygonShape) GetFaces() gdnative.PoolVector3Array {
-	//log.Println("Calling ConcavePolygonShape.GetFaces()")
+	// log.Println("Calling ConcavePolygonShape.GetFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ConcavePolygonShape) GetFaces() gdnative.PoolVector3Array {
 	Args: [{ false faces PoolVector3Array}], Returns: void
 */
 func (o *ConcavePolygonShape) SetFaces(faces gdnative.PoolVector3Array) {
-	//log.Println("Calling ConcavePolygonShape.SetFaces()")
+	// log.Println("Calling ConcavePolygonShape.SetFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

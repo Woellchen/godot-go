@@ -118,7 +118,7 @@ func (o *Viewport) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Viewport) X_GuiRemoveFocus() {
-	//log.Println("Calling Viewport.X_GuiRemoveFocus()")
+	// log.Println("Calling Viewport.X_GuiRemoveFocus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -138,7 +138,7 @@ func (o *Viewport) X_GuiRemoveFocus() {
 	Args: [], Returns: void
 */
 func (o *Viewport) X_GuiShowTooltip() {
-	//log.Println("Calling Viewport.X_GuiShowTooltip()")
+	// log.Println("Calling Viewport.X_GuiShowTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *Viewport) X_GuiShowTooltip() {
 	Args: [], Returns: void
 */
 func (o *Viewport) X_OwnWorldChanged() {
-	//log.Println("Calling Viewport.X_OwnWorldChanged()")
+	// log.Println("Calling Viewport.X_OwnWorldChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -178,7 +178,7 @@ func (o *Viewport) X_OwnWorldChanged() {
 	Args: [], Returns: void
 */
 func (o *Viewport) X_PostGuiGrabClickFocus() {
-	//log.Println("Calling Viewport.X_PostGuiGrabClickFocus()")
+	// log.Println("Calling Viewport.X_PostGuiGrabClickFocus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -198,7 +198,7 @@ func (o *Viewport) X_PostGuiGrabClickFocus() {
 	Args: [], Returns: void
 */
 func (o *Viewport) X_SubwindowVisibilityChanged() {
-	//log.Println("Calling Viewport.X_SubwindowVisibilityChanged()")
+	// log.Println("Calling Viewport.X_SubwindowVisibilityChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -218,7 +218,7 @@ func (o *Viewport) X_SubwindowVisibilityChanged() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *Viewport) X_VpInput(arg0 InputEventImplementer) {
-	//log.Println("Calling Viewport.X_VpInput()")
+	// log.Println("Calling Viewport.X_VpInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -239,7 +239,7 @@ func (o *Viewport) X_VpInput(arg0 InputEventImplementer) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *Viewport) X_VpInputText(text gdnative.String) {
-	//log.Println("Calling Viewport.X_VpInputText()")
+	// log.Println("Calling Viewport.X_VpInputText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -260,7 +260,7 @@ func (o *Viewport) X_VpInputText(text gdnative.String) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *Viewport) X_VpUnhandledInput(arg0 InputEventImplementer) {
-	//log.Println("Calling Viewport.X_VpUnhandledInput()")
+	// log.Println("Calling Viewport.X_VpUnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -281,7 +281,7 @@ func (o *Viewport) X_VpUnhandledInput(arg0 InputEventImplementer) {
 	Args: [], Returns: World
 */
 func (o *Viewport) FindWorld() WorldImplementer {
-	//log.Println("Calling Viewport.FindWorld()")
+	// log.Println("Calling Viewport.FindWorld()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -318,7 +318,7 @@ func (o *Viewport) FindWorld() WorldImplementer {
 	Args: [], Returns: World2D
 */
 func (o *Viewport) FindWorld2D() World2DImplementer {
-	//log.Println("Calling Viewport.FindWorld2D()")
+	// log.Println("Calling Viewport.FindWorld2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -355,7 +355,7 @@ func (o *Viewport) FindWorld2D() World2DImplementer {
 	Args: [], Returns: Camera
 */
 func (o *Viewport) GetCamera() CameraImplementer {
-	//log.Println("Calling Viewport.GetCamera()")
+	// log.Println("Calling Viewport.GetCamera()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -392,7 +392,7 @@ func (o *Viewport) GetCamera() CameraImplementer {
 	Args: [], Returns: Transform2D
 */
 func (o *Viewport) GetCanvasTransform() gdnative.Transform2D {
-	//log.Println("Calling Viewport.GetCanvasTransform()")
+	// log.Println("Calling Viewport.GetCanvasTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -415,7 +415,7 @@ func (o *Viewport) GetCanvasTransform() gdnative.Transform2D {
 	Args: [], Returns: enum.Viewport::ClearMode
 */
 func (o *Viewport) GetClearMode() ViewportClearMode {
-	//log.Println("Calling Viewport.GetClearMode()")
+	// log.Println("Calling Viewport.GetClearMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -438,7 +438,7 @@ func (o *Viewport) GetClearMode() ViewportClearMode {
 	Args: [], Returns: enum.Viewport::DebugDraw
 */
 func (o *Viewport) GetDebugDraw() ViewportDebugDraw {
-	//log.Println("Calling Viewport.GetDebugDraw()")
+	// log.Println("Calling Viewport.GetDebugDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -461,7 +461,7 @@ func (o *Viewport) GetDebugDraw() ViewportDebugDraw {
 	Args: [], Returns: Transform2D
 */
 func (o *Viewport) GetFinalTransform() gdnative.Transform2D {
-	//log.Println("Calling Viewport.GetFinalTransform()")
+	// log.Println("Calling Viewport.GetFinalTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -484,7 +484,7 @@ func (o *Viewport) GetFinalTransform() gdnative.Transform2D {
 	Args: [], Returns: Transform2D
 */
 func (o *Viewport) GetGlobalCanvasTransform() gdnative.Transform2D {
-	//log.Println("Calling Viewport.GetGlobalCanvasTransform()")
+	// log.Println("Calling Viewport.GetGlobalCanvasTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -507,7 +507,7 @@ func (o *Viewport) GetGlobalCanvasTransform() gdnative.Transform2D {
 	Args: [], Returns: bool
 */
 func (o *Viewport) GetHdr() gdnative.Bool {
-	//log.Println("Calling Viewport.GetHdr()")
+	// log.Println("Calling Viewport.GetHdr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -530,7 +530,7 @@ func (o *Viewport) GetHdr() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) GetKeep3DLinear() gdnative.Bool {
-	//log.Println("Calling Viewport.GetKeep3DLinear()")
+	// log.Println("Calling Viewport.GetKeep3DLinear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -553,7 +553,7 @@ func (o *Viewport) GetKeep3DLinear() gdnative.Bool {
 	Args: [], Returns: Control
 */
 func (o *Viewport) GetModalStackTop() ControlImplementer {
-	//log.Println("Calling Viewport.GetModalStackTop()")
+	// log.Println("Calling Viewport.GetModalStackTop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -590,7 +590,7 @@ func (o *Viewport) GetModalStackTop() ControlImplementer {
 	Args: [], Returns: Vector2
 */
 func (o *Viewport) GetMousePosition() gdnative.Vector2 {
-	//log.Println("Calling Viewport.GetMousePosition()")
+	// log.Println("Calling Viewport.GetMousePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -613,7 +613,7 @@ func (o *Viewport) GetMousePosition() gdnative.Vector2 {
 	Args: [], Returns: enum.Viewport::MSAA
 */
 func (o *Viewport) GetMsaa() ViewportMSAA {
-	//log.Println("Calling Viewport.GetMsaa()")
+	// log.Println("Calling Viewport.GetMsaa()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -636,7 +636,7 @@ func (o *Viewport) GetMsaa() ViewportMSAA {
 	Args: [], Returns: bool
 */
 func (o *Viewport) GetPhysicsObjectPicking() gdnative.Bool {
-	//log.Println("Calling Viewport.GetPhysicsObjectPicking()")
+	// log.Println("Calling Viewport.GetPhysicsObjectPicking()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -659,7 +659,7 @@ func (o *Viewport) GetPhysicsObjectPicking() gdnative.Bool {
 	Args: [{ false info int}], Returns: int
 */
 func (o *Viewport) GetRenderInfo(info gdnative.Int) gdnative.Int {
-	//log.Println("Calling Viewport.GetRenderInfo()")
+	// log.Println("Calling Viewport.GetRenderInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -683,7 +683,7 @@ func (o *Viewport) GetRenderInfo(info gdnative.Int) gdnative.Int {
 	Args: [{ false quadrant int}], Returns: enum.Viewport::ShadowAtlasQuadrantSubdiv
 */
 func (o *Viewport) GetShadowAtlasQuadrantSubdiv(quadrant gdnative.Int) ViewportShadowAtlasQuadrantSubdiv {
-	//log.Println("Calling Viewport.GetShadowAtlasQuadrantSubdiv()")
+	// log.Println("Calling Viewport.GetShadowAtlasQuadrantSubdiv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -707,7 +707,7 @@ func (o *Viewport) GetShadowAtlasQuadrantSubdiv(quadrant gdnative.Int) ViewportS
 	Args: [], Returns: int
 */
 func (o *Viewport) GetShadowAtlasSize() gdnative.Int {
-	//log.Println("Calling Viewport.GetShadowAtlasSize()")
+	// log.Println("Calling Viewport.GetShadowAtlasSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -730,7 +730,7 @@ func (o *Viewport) GetShadowAtlasSize() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *Viewport) GetSize() gdnative.Vector2 {
-	//log.Println("Calling Viewport.GetSize()")
+	// log.Println("Calling Viewport.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -753,7 +753,7 @@ func (o *Viewport) GetSize() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *Viewport) GetSizeOverride() gdnative.Vector2 {
-	//log.Println("Calling Viewport.GetSizeOverride()")
+	// log.Println("Calling Viewport.GetSizeOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -776,7 +776,7 @@ func (o *Viewport) GetSizeOverride() gdnative.Vector2 {
 	Args: [], Returns: ViewportTexture
 */
 func (o *Viewport) GetTexture() ViewportTextureImplementer {
-	//log.Println("Calling Viewport.GetTexture()")
+	// log.Println("Calling Viewport.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -813,7 +813,7 @@ func (o *Viewport) GetTexture() ViewportTextureImplementer {
 	Args: [], Returns: enum.Viewport::UpdateMode
 */
 func (o *Viewport) GetUpdateMode() ViewportUpdateMode {
-	//log.Println("Calling Viewport.GetUpdateMode()")
+	// log.Println("Calling Viewport.GetUpdateMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -836,7 +836,7 @@ func (o *Viewport) GetUpdateMode() ViewportUpdateMode {
 	Args: [], Returns: enum.Viewport::Usage
 */
 func (o *Viewport) GetUsage() ViewportUsage {
-	//log.Println("Calling Viewport.GetUsage()")
+	// log.Println("Calling Viewport.GetUsage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -859,7 +859,7 @@ func (o *Viewport) GetUsage() ViewportUsage {
 	Args: [], Returns: bool
 */
 func (o *Viewport) GetVflip() gdnative.Bool {
-	//log.Println("Calling Viewport.GetVflip()")
+	// log.Println("Calling Viewport.GetVflip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -882,7 +882,7 @@ func (o *Viewport) GetVflip() gdnative.Bool {
 	Args: [], Returns: RID
 */
 func (o *Viewport) GetViewportRid() gdnative.Rid {
-	//log.Println("Calling Viewport.GetViewportRid()")
+	// log.Println("Calling Viewport.GetViewportRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -905,7 +905,7 @@ func (o *Viewport) GetViewportRid() gdnative.Rid {
 	Args: [], Returns: Rect2
 */
 func (o *Viewport) GetVisibleRect() gdnative.Rect2 {
-	//log.Println("Calling Viewport.GetVisibleRect()")
+	// log.Println("Calling Viewport.GetVisibleRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -928,7 +928,7 @@ func (o *Viewport) GetVisibleRect() gdnative.Rect2 {
 	Args: [], Returns: World
 */
 func (o *Viewport) GetWorld() WorldImplementer {
-	//log.Println("Calling Viewport.GetWorld()")
+	// log.Println("Calling Viewport.GetWorld()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -965,7 +965,7 @@ func (o *Viewport) GetWorld() WorldImplementer {
 	Args: [], Returns: World2D
 */
 func (o *Viewport) GetWorld2D() World2DImplementer {
-	//log.Println("Calling Viewport.GetWorld2D()")
+	// log.Println("Calling Viewport.GetWorld2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1002,7 +1002,7 @@ func (o *Viewport) GetWorld2D() World2DImplementer {
 	Args: [], Returns: Variant
 */
 func (o *Viewport) GuiGetDragData() gdnative.Variant {
-	//log.Println("Calling Viewport.GuiGetDragData()")
+	// log.Println("Calling Viewport.GuiGetDragData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1025,7 +1025,7 @@ func (o *Viewport) GuiGetDragData() gdnative.Variant {
 	Args: [], Returns: bool
 */
 func (o *Viewport) GuiHasModalStack() gdnative.Bool {
-	//log.Println("Calling Viewport.GuiHasModalStack()")
+	// log.Println("Calling Viewport.GuiHasModalStack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1048,7 +1048,7 @@ func (o *Viewport) GuiHasModalStack() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) GuiIsDragging() gdnative.Bool {
-	//log.Println("Calling Viewport.GuiIsDragging()")
+	// log.Println("Calling Viewport.GuiIsDragging()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1071,7 +1071,7 @@ func (o *Viewport) GuiIsDragging() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) HasTransparentBackground() gdnative.Bool {
-	//log.Println("Calling Viewport.HasTransparentBackground()")
+	// log.Println("Calling Viewport.HasTransparentBackground()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1094,7 +1094,7 @@ func (o *Viewport) HasTransparentBackground() gdnative.Bool {
 	Args: [{ false local_event InputEvent}], Returns: void
 */
 func (o *Viewport) InputMethod(localEvent InputEventImplementer) {
-	//log.Println("Calling Viewport.InputMethod()")
+	// log.Println("Calling Viewport.InputMethod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1115,7 +1115,7 @@ func (o *Viewport) InputMethod(localEvent InputEventImplementer) {
 	Args: [], Returns: bool
 */
 func (o *Viewport) Is3DDisabled() gdnative.Bool {
-	//log.Println("Calling Viewport.Is3DDisabled()")
+	// log.Println("Calling Viewport.Is3DDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1138,7 +1138,7 @@ func (o *Viewport) Is3DDisabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsAudioListener() gdnative.Bool {
-	//log.Println("Calling Viewport.IsAudioListener()")
+	// log.Println("Calling Viewport.IsAudioListener()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1161,7 +1161,7 @@ func (o *Viewport) IsAudioListener() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsAudioListener2D() gdnative.Bool {
-	//log.Println("Calling Viewport.IsAudioListener2D()")
+	// log.Println("Calling Viewport.IsAudioListener2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1184,7 +1184,7 @@ func (o *Viewport) IsAudioListener2D() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsHandlingInputLocally() gdnative.Bool {
-	//log.Println("Calling Viewport.IsHandlingInputLocally()")
+	// log.Println("Calling Viewport.IsHandlingInputLocally()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1207,7 +1207,7 @@ func (o *Viewport) IsHandlingInputLocally() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsInputDisabled() gdnative.Bool {
-	//log.Println("Calling Viewport.IsInputDisabled()")
+	// log.Println("Calling Viewport.IsInputDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1230,7 +1230,7 @@ func (o *Viewport) IsInputDisabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsInputHandled() gdnative.Bool {
-	//log.Println("Calling Viewport.IsInputHandled()")
+	// log.Println("Calling Viewport.IsInputHandled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1253,7 +1253,7 @@ func (o *Viewport) IsInputHandled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsSizeOverrideEnabled() gdnative.Bool {
-	//log.Println("Calling Viewport.IsSizeOverrideEnabled()")
+	// log.Println("Calling Viewport.IsSizeOverrideEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1276,7 +1276,7 @@ func (o *Viewport) IsSizeOverrideEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsSizeOverrideStretchEnabled() gdnative.Bool {
-	//log.Println("Calling Viewport.IsSizeOverrideStretchEnabled()")
+	// log.Println("Calling Viewport.IsSizeOverrideStretchEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1299,7 +1299,7 @@ func (o *Viewport) IsSizeOverrideStretchEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsSnapControlsToPixelsEnabled() gdnative.Bool {
-	//log.Println("Calling Viewport.IsSnapControlsToPixelsEnabled()")
+	// log.Println("Calling Viewport.IsSnapControlsToPixelsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1322,7 +1322,7 @@ func (o *Viewport) IsSnapControlsToPixelsEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsUsingOwnWorld() gdnative.Bool {
-	//log.Println("Calling Viewport.IsUsingOwnWorld()")
+	// log.Println("Calling Viewport.IsUsingOwnWorld()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1345,7 +1345,7 @@ func (o *Viewport) IsUsingOwnWorld() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Viewport) IsUsingRenderDirectToScreen() gdnative.Bool {
-	//log.Println("Calling Viewport.IsUsingRenderDirectToScreen()")
+	// log.Println("Calling Viewport.IsUsingRenderDirectToScreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1368,7 +1368,7 @@ func (o *Viewport) IsUsingRenderDirectToScreen() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetAsAudioListener(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetAsAudioListener()")
+	// log.Println("Calling Viewport.SetAsAudioListener()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1389,7 +1389,7 @@ func (o *Viewport) SetAsAudioListener(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetAsAudioListener2D(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetAsAudioListener2D()")
+	// log.Println("Calling Viewport.SetAsAudioListener2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1410,7 +1410,7 @@ func (o *Viewport) SetAsAudioListener2D(enable gdnative.Bool) {
 	Args: [{ false rect Rect2}], Returns: void
 */
 func (o *Viewport) SetAttachToScreenRect(rect gdnative.Rect2) {
-	//log.Println("Calling Viewport.SetAttachToScreenRect()")
+	// log.Println("Calling Viewport.SetAttachToScreenRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1431,7 +1431,7 @@ func (o *Viewport) SetAttachToScreenRect(rect gdnative.Rect2) {
 	Args: [{ false xform Transform2D}], Returns: void
 */
 func (o *Viewport) SetCanvasTransform(xform gdnative.Transform2D) {
-	//log.Println("Calling Viewport.SetCanvasTransform()")
+	// log.Println("Calling Viewport.SetCanvasTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1452,7 +1452,7 @@ func (o *Viewport) SetCanvasTransform(xform gdnative.Transform2D) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Viewport) SetClearMode(mode gdnative.Int) {
-	//log.Println("Calling Viewport.SetClearMode()")
+	// log.Println("Calling Viewport.SetClearMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1473,7 +1473,7 @@ func (o *Viewport) SetClearMode(mode gdnative.Int) {
 	Args: [{ false debug_draw int}], Returns: void
 */
 func (o *Viewport) SetDebugDraw(debugDraw gdnative.Int) {
-	//log.Println("Calling Viewport.SetDebugDraw()")
+	// log.Println("Calling Viewport.SetDebugDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1494,7 +1494,7 @@ func (o *Viewport) SetDebugDraw(debugDraw gdnative.Int) {
 	Args: [{ false disable bool}], Returns: void
 */
 func (o *Viewport) SetDisable3D(disable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetDisable3D()")
+	// log.Println("Calling Viewport.SetDisable3D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1515,7 +1515,7 @@ func (o *Viewport) SetDisable3D(disable gdnative.Bool) {
 	Args: [{ false disable bool}], Returns: void
 */
 func (o *Viewport) SetDisableInput(disable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetDisableInput()")
+	// log.Println("Calling Viewport.SetDisableInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1536,7 +1536,7 @@ func (o *Viewport) SetDisableInput(disable gdnative.Bool) {
 	Args: [{ false xform Transform2D}], Returns: void
 */
 func (o *Viewport) SetGlobalCanvasTransform(xform gdnative.Transform2D) {
-	//log.Println("Calling Viewport.SetGlobalCanvasTransform()")
+	// log.Println("Calling Viewport.SetGlobalCanvasTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1557,7 +1557,7 @@ func (o *Viewport) SetGlobalCanvasTransform(xform gdnative.Transform2D) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetHandleInputLocally(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetHandleInputLocally()")
+	// log.Println("Calling Viewport.SetHandleInputLocally()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1578,7 +1578,7 @@ func (o *Viewport) SetHandleInputLocally(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetHdr(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetHdr()")
+	// log.Println("Calling Viewport.SetHdr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1599,7 +1599,7 @@ func (o *Viewport) SetHdr(enable gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *Viewport) SetInputAsHandled() {
-	//log.Println("Calling Viewport.SetInputAsHandled()")
+	// log.Println("Calling Viewport.SetInputAsHandled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1619,7 +1619,7 @@ func (o *Viewport) SetInputAsHandled() {
 	Args: [{ false keep_3d_linear bool}], Returns: void
 */
 func (o *Viewport) SetKeep3DLinear(keep3DLinear gdnative.Bool) {
-	//log.Println("Calling Viewport.SetKeep3DLinear()")
+	// log.Println("Calling Viewport.SetKeep3DLinear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1640,7 +1640,7 @@ func (o *Viewport) SetKeep3DLinear(keep3DLinear gdnative.Bool) {
 	Args: [{ false msaa int}], Returns: void
 */
 func (o *Viewport) SetMsaa(msaa gdnative.Int) {
-	//log.Println("Calling Viewport.SetMsaa()")
+	// log.Println("Calling Viewport.SetMsaa()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1661,7 +1661,7 @@ func (o *Viewport) SetMsaa(msaa gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetPhysicsObjectPicking(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetPhysicsObjectPicking()")
+	// log.Println("Calling Viewport.SetPhysicsObjectPicking()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1682,7 +1682,7 @@ func (o *Viewport) SetPhysicsObjectPicking(enable gdnative.Bool) {
 	Args: [{ false quadrant int} { false subdiv int}], Returns: void
 */
 func (o *Viewport) SetShadowAtlasQuadrantSubdiv(quadrant gdnative.Int, subdiv gdnative.Int) {
-	//log.Println("Calling Viewport.SetShadowAtlasQuadrantSubdiv()")
+	// log.Println("Calling Viewport.SetShadowAtlasQuadrantSubdiv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1704,7 +1704,7 @@ func (o *Viewport) SetShadowAtlasQuadrantSubdiv(quadrant gdnative.Int, subdiv gd
 	Args: [{ false size int}], Returns: void
 */
 func (o *Viewport) SetShadowAtlasSize(size gdnative.Int) {
-	//log.Println("Calling Viewport.SetShadowAtlasSize()")
+	// log.Println("Calling Viewport.SetShadowAtlasSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1725,7 +1725,7 @@ func (o *Viewport) SetShadowAtlasSize(size gdnative.Int) {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *Viewport) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling Viewport.SetSize()")
+	// log.Println("Calling Viewport.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1746,7 +1746,7 @@ func (o *Viewport) SetSize(size gdnative.Vector2) {
 	Args: [{ false enable bool} {(-1, -1) true size Vector2} {(0, 0) true margin Vector2}], Returns: void
 */
 func (o *Viewport) SetSizeOverride(enable gdnative.Bool, size gdnative.Vector2, margin gdnative.Vector2) {
-	//log.Println("Calling Viewport.SetSizeOverride()")
+	// log.Println("Calling Viewport.SetSizeOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1769,7 +1769,7 @@ func (o *Viewport) SetSizeOverride(enable gdnative.Bool, size gdnative.Vector2, 
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *Viewport) SetSizeOverrideStretch(enabled gdnative.Bool) {
-	//log.Println("Calling Viewport.SetSizeOverrideStretch()")
+	// log.Println("Calling Viewport.SetSizeOverrideStretch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1790,7 +1790,7 @@ func (o *Viewport) SetSizeOverrideStretch(enabled gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *Viewport) SetSnapControlsToPixels(enabled gdnative.Bool) {
-	//log.Println("Calling Viewport.SetSnapControlsToPixels()")
+	// log.Println("Calling Viewport.SetSnapControlsToPixels()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1811,7 +1811,7 @@ func (o *Viewport) SetSnapControlsToPixels(enabled gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetTransparentBackground(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetTransparentBackground()")
+	// log.Println("Calling Viewport.SetTransparentBackground()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1832,7 +1832,7 @@ func (o *Viewport) SetTransparentBackground(enable gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Viewport) SetUpdateMode(mode gdnative.Int) {
-	//log.Println("Calling Viewport.SetUpdateMode()")
+	// log.Println("Calling Viewport.SetUpdateMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1853,7 +1853,7 @@ func (o *Viewport) SetUpdateMode(mode gdnative.Int) {
 	Args: [{ false usage int}], Returns: void
 */
 func (o *Viewport) SetUsage(usage gdnative.Int) {
-	//log.Println("Calling Viewport.SetUsage()")
+	// log.Println("Calling Viewport.SetUsage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1874,7 +1874,7 @@ func (o *Viewport) SetUsage(usage gdnative.Int) {
 	Args: [{ false use bool}], Returns: void
 */
 func (o *Viewport) SetUseArvr(use gdnative.Bool) {
-	//log.Println("Calling Viewport.SetUseArvr()")
+	// log.Println("Calling Viewport.SetUseArvr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1895,7 +1895,7 @@ func (o *Viewport) SetUseArvr(use gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetUseOwnWorld(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetUseOwnWorld()")
+	// log.Println("Calling Viewport.SetUseOwnWorld()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1916,7 +1916,7 @@ func (o *Viewport) SetUseOwnWorld(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetUseRenderDirectToScreen(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetUseRenderDirectToScreen()")
+	// log.Println("Calling Viewport.SetUseRenderDirectToScreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1937,7 +1937,7 @@ func (o *Viewport) SetUseRenderDirectToScreen(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Viewport) SetVflip(enable gdnative.Bool) {
-	//log.Println("Calling Viewport.SetVflip()")
+	// log.Println("Calling Viewport.SetVflip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1958,7 +1958,7 @@ func (o *Viewport) SetVflip(enable gdnative.Bool) {
 	Args: [{ false world World}], Returns: void
 */
 func (o *Viewport) SetWorld(world WorldImplementer) {
-	//log.Println("Calling Viewport.SetWorld()")
+	// log.Println("Calling Viewport.SetWorld()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1979,7 +1979,7 @@ func (o *Viewport) SetWorld(world WorldImplementer) {
 	Args: [{ false world_2d World2D}], Returns: void
 */
 func (o *Viewport) SetWorld2D(world2D World2DImplementer) {
-	//log.Println("Calling Viewport.SetWorld2D()")
+	// log.Println("Calling Viewport.SetWorld2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2000,7 +2000,7 @@ func (o *Viewport) SetWorld2D(world2D World2DImplementer) {
 	Args: [{ false local_event InputEvent}], Returns: void
 */
 func (o *Viewport) UnhandledInput(localEvent InputEventImplementer) {
-	//log.Println("Calling Viewport.UnhandledInput()")
+	// log.Println("Calling Viewport.UnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2021,7 +2021,7 @@ func (o *Viewport) UnhandledInput(localEvent InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *Viewport) UpdateWorlds() {
-	//log.Println("Calling Viewport.UpdateWorlds()")
+	// log.Println("Calling Viewport.UpdateWorlds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2041,7 +2041,7 @@ func (o *Viewport) UpdateWorlds() {
 	Args: [], Returns: bool
 */
 func (o *Viewport) UseArvr() gdnative.Bool {
-	//log.Println("Calling Viewport.UseArvr()")
+	// log.Println("Calling Viewport.UseArvr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2064,7 +2064,7 @@ func (o *Viewport) UseArvr() gdnative.Bool {
 	Args: [{ false to_position Vector2}], Returns: void
 */
 func (o *Viewport) WarpMouse(toPosition gdnative.Vector2) {
-	//log.Println("Calling Viewport.WarpMouse()")
+	// log.Println("Calling Viewport.WarpMouse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

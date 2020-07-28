@@ -48,7 +48,7 @@ func (o *VisualScriptYield) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *VisualScriptYield) GetWaitTime() gdnative.Real {
-	//log.Println("Calling VisualScriptYield.GetWaitTime()")
+	// log.Println("Calling VisualScriptYield.GetWaitTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *VisualScriptYield) GetWaitTime() gdnative.Real {
 	Args: [], Returns: enum.VisualScriptYield::YieldMode
 */
 func (o *VisualScriptYield) GetYieldMode() VisualScriptYieldYieldMode {
-	//log.Println("Calling VisualScriptYield.GetYieldMode()")
+	// log.Println("Calling VisualScriptYield.GetYieldMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *VisualScriptYield) GetYieldMode() VisualScriptYieldYieldMode {
 	Args: [{ false sec float}], Returns: void
 */
 func (o *VisualScriptYield) SetWaitTime(sec gdnative.Real) {
-	//log.Println("Calling VisualScriptYield.SetWaitTime()")
+	// log.Println("Calling VisualScriptYield.SetWaitTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -115,7 +115,7 @@ func (o *VisualScriptYield) SetWaitTime(sec gdnative.Real) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *VisualScriptYield) SetYieldMode(mode gdnative.Int) {
-	//log.Println("Calling VisualScriptYield.SetYieldMode()")
+	// log.Println("Calling VisualScriptYield.SetYieldMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

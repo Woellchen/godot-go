@@ -39,7 +39,7 @@ func (o *AudioEffectPanner) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPanner) GetPan() gdnative.Real {
-	//log.Println("Calling AudioEffectPanner.GetPan()")
+	// log.Println("Calling AudioEffectPanner.GetPan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectPanner) GetPan() gdnative.Real {
 	Args: [{ false cpanume float}], Returns: void
 */
 func (o *AudioEffectPanner) SetPan(cpanume gdnative.Real) {
-	//log.Println("Calling AudioEffectPanner.SetPan()")
+	// log.Println("Calling AudioEffectPanner.SetPan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

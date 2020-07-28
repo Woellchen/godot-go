@@ -51,7 +51,7 @@ func (o *CanvasItem) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CanvasItem) X_Draw() {
-	//log.Println("Calling CanvasItem.X_Draw()")
+	// log.Println("Calling CanvasItem.X_Draw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *CanvasItem) X_Draw() {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasItem) X_EditGetPivot() gdnative.Vector2 {
-	//log.Println("Calling CanvasItem.X_EditGetPivot()")
+	// log.Println("Calling CanvasItem.X_EditGetPivot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *CanvasItem) X_EditGetPivot() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasItem) X_EditGetPosition() gdnative.Vector2 {
-	//log.Println("Calling CanvasItem.X_EditGetPosition()")
+	// log.Println("Calling CanvasItem.X_EditGetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *CanvasItem) X_EditGetPosition() gdnative.Vector2 {
 	Args: [], Returns: Rect2
 */
 func (o *CanvasItem) X_EditGetRect() gdnative.Rect2 {
-	//log.Println("Calling CanvasItem.X_EditGetRect()")
+	// log.Println("Calling CanvasItem.X_EditGetRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *CanvasItem) X_EditGetRect() gdnative.Rect2 {
 	Args: [], Returns: float
 */
 func (o *CanvasItem) X_EditGetRotation() gdnative.Real {
-	//log.Println("Calling CanvasItem.X_EditGetRotation()")
+	// log.Println("Calling CanvasItem.X_EditGetRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *CanvasItem) X_EditGetRotation() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasItem) X_EditGetScale() gdnative.Vector2 {
-	//log.Println("Calling CanvasItem.X_EditGetScale()")
+	// log.Println("Calling CanvasItem.X_EditGetScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *CanvasItem) X_EditGetScale() gdnative.Vector2 {
 	Args: [], Returns: Dictionary
 */
 func (o *CanvasItem) X_EditGetState() gdnative.Dictionary {
-	//log.Println("Calling CanvasItem.X_EditGetState()")
+	// log.Println("Calling CanvasItem.X_EditGetState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -209,7 +209,7 @@ func (o *CanvasItem) X_EditGetState() gdnative.Dictionary {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasItem) X_EditGetTransform() gdnative.Transform2D {
-	//log.Println("Calling CanvasItem.X_EditGetTransform()")
+	// log.Println("Calling CanvasItem.X_EditGetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -232,7 +232,7 @@ func (o *CanvasItem) X_EditGetTransform() gdnative.Transform2D {
 	Args: [{ false pivot Vector2}], Returns: void
 */
 func (o *CanvasItem) X_EditSetPivot(pivot gdnative.Vector2) {
-	//log.Println("Calling CanvasItem.X_EditSetPivot()")
+	// log.Println("Calling CanvasItem.X_EditSetPivot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -253,7 +253,7 @@ func (o *CanvasItem) X_EditSetPivot(pivot gdnative.Vector2) {
 	Args: [{ false position Vector2}], Returns: void
 */
 func (o *CanvasItem) X_EditSetPosition(position gdnative.Vector2) {
-	//log.Println("Calling CanvasItem.X_EditSetPosition()")
+	// log.Println("Calling CanvasItem.X_EditSetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -274,7 +274,7 @@ func (o *CanvasItem) X_EditSetPosition(position gdnative.Vector2) {
 	Args: [{ false rect Rect2}], Returns: void
 */
 func (o *CanvasItem) X_EditSetRect(rect gdnative.Rect2) {
-	//log.Println("Calling CanvasItem.X_EditSetRect()")
+	// log.Println("Calling CanvasItem.X_EditSetRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -295,7 +295,7 @@ func (o *CanvasItem) X_EditSetRect(rect gdnative.Rect2) {
 	Args: [{ false degrees float}], Returns: void
 */
 func (o *CanvasItem) X_EditSetRotation(degrees gdnative.Real) {
-	//log.Println("Calling CanvasItem.X_EditSetRotation()")
+	// log.Println("Calling CanvasItem.X_EditSetRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -316,7 +316,7 @@ func (o *CanvasItem) X_EditSetRotation(degrees gdnative.Real) {
 	Args: [{ false scale Vector2}], Returns: void
 */
 func (o *CanvasItem) X_EditSetScale(scale gdnative.Vector2) {
-	//log.Println("Calling CanvasItem.X_EditSetScale()")
+	// log.Println("Calling CanvasItem.X_EditSetScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -337,7 +337,7 @@ func (o *CanvasItem) X_EditSetScale(scale gdnative.Vector2) {
 	Args: [{ false state Dictionary}], Returns: void
 */
 func (o *CanvasItem) X_EditSetState(state gdnative.Dictionary) {
-	//log.Println("Calling CanvasItem.X_EditSetState()")
+	// log.Println("Calling CanvasItem.X_EditSetState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -358,7 +358,7 @@ func (o *CanvasItem) X_EditSetState(state gdnative.Dictionary) {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) X_EditUsePivot() gdnative.Bool {
-	//log.Println("Calling CanvasItem.X_EditUsePivot()")
+	// log.Println("Calling CanvasItem.X_EditUsePivot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -381,7 +381,7 @@ func (o *CanvasItem) X_EditUsePivot() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) X_EditUseRect() gdnative.Bool {
-	//log.Println("Calling CanvasItem.X_EditUseRect()")
+	// log.Println("Calling CanvasItem.X_EditUseRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -404,7 +404,7 @@ func (o *CanvasItem) X_EditUseRect() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) X_EditUseRotation() gdnative.Bool {
-	//log.Println("Calling CanvasItem.X_EditUseRotation()")
+	// log.Println("Calling CanvasItem.X_EditUseRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -427,7 +427,7 @@ func (o *CanvasItem) X_EditUseRotation() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) X_IsOnTop() gdnative.Bool {
-	//log.Println("Calling CanvasItem.X_IsOnTop()")
+	// log.Println("Calling CanvasItem.X_IsOnTop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -450,7 +450,7 @@ func (o *CanvasItem) X_IsOnTop() gdnative.Bool {
 	Args: [{ false on_top bool}], Returns: void
 */
 func (o *CanvasItem) X_SetOnTop(onTop gdnative.Bool) {
-	//log.Println("Calling CanvasItem.X_SetOnTop()")
+	// log.Println("Calling CanvasItem.X_SetOnTop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -471,7 +471,7 @@ func (o *CanvasItem) X_SetOnTop(onTop gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *CanvasItem) X_ToplevelRaiseSelf() {
-	//log.Println("Calling CanvasItem.X_ToplevelRaiseSelf()")
+	// log.Println("Calling CanvasItem.X_ToplevelRaiseSelf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -491,7 +491,7 @@ func (o *CanvasItem) X_ToplevelRaiseSelf() {
 	Args: [], Returns: void
 */
 func (o *CanvasItem) X_UpdateCallback() {
-	//log.Println("Calling CanvasItem.X_UpdateCallback()")
+	// log.Println("Calling CanvasItem.X_UpdateCallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -511,7 +511,7 @@ func (o *CanvasItem) X_UpdateCallback() {
 	Args: [{ false center Vector2} { false radius float} { false start_angle float} { false end_angle float} { false point_count int} { false color Color} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawArc(center gdnative.Vector2, radius gdnative.Real, startAngle gdnative.Real, endAngle gdnative.Real, pointCount gdnative.Int, color gdnative.Color, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawArc()")
+	// log.Println("Calling CanvasItem.DrawArc()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 8, 8)
@@ -539,7 +539,7 @@ func (o *CanvasItem) DrawArc(center gdnative.Vector2, radius gdnative.Real, star
 	Args: [{ false font Font} { false position Vector2} { false char String} { false next String} {1,1,1,1 true modulate Color}], Returns: float
 */
 func (o *CanvasItem) DrawChar(font FontImplementer, position gdnative.Vector2, char gdnative.String, next gdnative.String, modulate gdnative.Color) gdnative.Real {
-	//log.Println("Calling CanvasItem.DrawChar()")
+	// log.Println("Calling CanvasItem.DrawChar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -567,7 +567,7 @@ func (o *CanvasItem) DrawChar(font FontImplementer, position gdnative.Vector2, c
 	Args: [{ false position Vector2} { false radius float} { false color Color}], Returns: void
 */
 func (o *CanvasItem) DrawCircle(position gdnative.Vector2, radius gdnative.Real, color gdnative.Color) {
-	//log.Println("Calling CanvasItem.DrawCircle()")
+	// log.Println("Calling CanvasItem.DrawCircle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -590,7 +590,7 @@ func (o *CanvasItem) DrawCircle(position gdnative.Vector2, radius gdnative.Real,
 	Args: [{ false points PoolVector2Array} { false color Color} {[] true uvs PoolVector2Array} {Null true texture Texture} {Null true normal_map Texture} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawColoredPolygon(points gdnative.PoolVector2Array, color gdnative.Color, uvs gdnative.PoolVector2Array, texture TextureImplementer, normalMap TextureImplementer, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawColoredPolygon()")
+	// log.Println("Calling CanvasItem.DrawColoredPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -616,7 +616,7 @@ func (o *CanvasItem) DrawColoredPolygon(points gdnative.PoolVector2Array, color 
 	Args: [{ false from Vector2} { false to Vector2} { false color Color} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawLine(from gdnative.Vector2, to gdnative.Vector2, color gdnative.Color, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawLine()")
+	// log.Println("Calling CanvasItem.DrawLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -641,7 +641,7 @@ func (o *CanvasItem) DrawLine(from gdnative.Vector2, to gdnative.Vector2, color 
 	Args: [{ false mesh Mesh} { false texture Texture} {[Object:null] true normal_map Texture} {((1, 0), (0, 1), (0, 0)) true transform Transform2D} {1,1,1,1 true modulate Color}], Returns: void
 */
 func (o *CanvasItem) DrawMesh(mesh MeshImplementer, texture TextureImplementer, normalMap TextureImplementer, transform gdnative.Transform2D, modulate gdnative.Color) {
-	//log.Println("Calling CanvasItem.DrawMesh()")
+	// log.Println("Calling CanvasItem.DrawMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -666,7 +666,7 @@ func (o *CanvasItem) DrawMesh(mesh MeshImplementer, texture TextureImplementer, 
 	Args: [{ false points PoolVector2Array} { false color Color} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawMultiline(points gdnative.PoolVector2Array, color gdnative.Color, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawMultiline()")
+	// log.Println("Calling CanvasItem.DrawMultiline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -690,7 +690,7 @@ func (o *CanvasItem) DrawMultiline(points gdnative.PoolVector2Array, color gdnat
 	Args: [{ false points PoolVector2Array} { false colors PoolColorArray} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawMultilineColors(points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawMultilineColors()")
+	// log.Println("Calling CanvasItem.DrawMultilineColors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -714,7 +714,7 @@ func (o *CanvasItem) DrawMultilineColors(points gdnative.PoolVector2Array, color
 	Args: [{ false multimesh MultiMesh} { false texture Texture} {[Object:null] true normal_map Texture}], Returns: void
 */
 func (o *CanvasItem) DrawMultimesh(multimesh MultiMeshImplementer, texture TextureImplementer, normalMap TextureImplementer) {
-	//log.Println("Calling CanvasItem.DrawMultimesh()")
+	// log.Println("Calling CanvasItem.DrawMultimesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -737,7 +737,7 @@ func (o *CanvasItem) DrawMultimesh(multimesh MultiMeshImplementer, texture Textu
 	Args: [{ false points PoolVector2Array} { false colors PoolColorArray} {[] true uvs PoolVector2Array} {Null true texture Texture} {Null true normal_map Texture} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawPolygon(points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, uvs gdnative.PoolVector2Array, texture TextureImplementer, normalMap TextureImplementer, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawPolygon()")
+	// log.Println("Calling CanvasItem.DrawPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -763,7 +763,7 @@ func (o *CanvasItem) DrawPolygon(points gdnative.PoolVector2Array, colors gdnati
 	Args: [{ false points PoolVector2Array} { false color Color} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawPolyline(points gdnative.PoolVector2Array, color gdnative.Color, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawPolyline()")
+	// log.Println("Calling CanvasItem.DrawPolyline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -787,7 +787,7 @@ func (o *CanvasItem) DrawPolyline(points gdnative.PoolVector2Array, color gdnati
 	Args: [{ false points PoolVector2Array} { false colors PoolColorArray} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawPolylineColors(points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawPolylineColors()")
+	// log.Println("Calling CanvasItem.DrawPolylineColors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -811,7 +811,7 @@ func (o *CanvasItem) DrawPolylineColors(points gdnative.PoolVector2Array, colors
 	Args: [{ false points PoolVector2Array} { false colors PoolColorArray} { false uvs PoolVector2Array} {Null true texture Texture} {1 true width float} {Null true normal_map Texture}], Returns: void
 */
 func (o *CanvasItem) DrawPrimitive(points gdnative.PoolVector2Array, colors gdnative.PoolColorArray, uvs gdnative.PoolVector2Array, texture TextureImplementer, width gdnative.Real, normalMap TextureImplementer) {
-	//log.Println("Calling CanvasItem.DrawPrimitive()")
+	// log.Println("Calling CanvasItem.DrawPrimitive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -837,7 +837,7 @@ func (o *CanvasItem) DrawPrimitive(points gdnative.PoolVector2Array, colors gdna
 	Args: [{ false rect Rect2} { false color Color} {True true filled bool} {1 true width float} {False true antialiased bool}], Returns: void
 */
 func (o *CanvasItem) DrawRect(rect gdnative.Rect2, color gdnative.Color, filled gdnative.Bool, width gdnative.Real, antialiased gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawRect()")
+	// log.Println("Calling CanvasItem.DrawRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -862,7 +862,7 @@ func (o *CanvasItem) DrawRect(rect gdnative.Rect2, color gdnative.Color, filled 
 	Args: [{ false position Vector2} { false rotation float} { false scale Vector2}], Returns: void
 */
 func (o *CanvasItem) DrawSetTransform(position gdnative.Vector2, rotation gdnative.Real, scale gdnative.Vector2) {
-	//log.Println("Calling CanvasItem.DrawSetTransform()")
+	// log.Println("Calling CanvasItem.DrawSetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -885,7 +885,7 @@ func (o *CanvasItem) DrawSetTransform(position gdnative.Vector2, rotation gdnati
 	Args: [{ false xform Transform2D}], Returns: void
 */
 func (o *CanvasItem) DrawSetTransformMatrix(xform gdnative.Transform2D) {
-	//log.Println("Calling CanvasItem.DrawSetTransformMatrix()")
+	// log.Println("Calling CanvasItem.DrawSetTransformMatrix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -906,7 +906,7 @@ func (o *CanvasItem) DrawSetTransformMatrix(xform gdnative.Transform2D) {
 	Args: [{ false font Font} { false position Vector2} { false text String} {1,1,1,1 true modulate Color} {-1 true clip_w int}], Returns: void
 */
 func (o *CanvasItem) DrawString(font FontImplementer, position gdnative.Vector2, text gdnative.String, modulate gdnative.Color, clipW gdnative.Int) {
-	//log.Println("Calling CanvasItem.DrawString()")
+	// log.Println("Calling CanvasItem.DrawString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -931,7 +931,7 @@ func (o *CanvasItem) DrawString(font FontImplementer, position gdnative.Vector2,
 	Args: [{ false style_box StyleBox} { false rect Rect2}], Returns: void
 */
 func (o *CanvasItem) DrawStyleBox(styleBox StyleBoxImplementer, rect gdnative.Rect2) {
-	//log.Println("Calling CanvasItem.DrawStyleBox()")
+	// log.Println("Calling CanvasItem.DrawStyleBox()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -953,7 +953,7 @@ func (o *CanvasItem) DrawStyleBox(styleBox StyleBoxImplementer, rect gdnative.Re
 	Args: [{ false texture Texture} { false position Vector2} {1,1,1,1 true modulate Color} {Null true normal_map Texture}], Returns: void
 */
 func (o *CanvasItem) DrawTexture(texture TextureImplementer, position gdnative.Vector2, modulate gdnative.Color, normalMap TextureImplementer) {
-	//log.Println("Calling CanvasItem.DrawTexture()")
+	// log.Println("Calling CanvasItem.DrawTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -977,7 +977,7 @@ func (o *CanvasItem) DrawTexture(texture TextureImplementer, position gdnative.V
 	Args: [{ false texture Texture} { false rect Rect2} { false tile bool} {1,1,1,1 true modulate Color} {False true transpose bool} {Null true normal_map Texture}], Returns: void
 */
 func (o *CanvasItem) DrawTextureRect(texture TextureImplementer, rect gdnative.Rect2, tile gdnative.Bool, modulate gdnative.Color, transpose gdnative.Bool, normalMap TextureImplementer) {
-	//log.Println("Calling CanvasItem.DrawTextureRect()")
+	// log.Println("Calling CanvasItem.DrawTextureRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -1003,7 +1003,7 @@ func (o *CanvasItem) DrawTextureRect(texture TextureImplementer, rect gdnative.R
 	Args: [{ false texture Texture} { false rect Rect2} { false src_rect Rect2} {1,1,1,1 true modulate Color} {False true transpose bool} {Null true normal_map Texture} {True true clip_uv bool}], Returns: void
 */
 func (o *CanvasItem) DrawTextureRectRegion(texture TextureImplementer, rect gdnative.Rect2, srcRect gdnative.Rect2, modulate gdnative.Color, transpose gdnative.Bool, normalMap TextureImplementer, clipUv gdnative.Bool) {
-	//log.Println("Calling CanvasItem.DrawTextureRectRegion()")
+	// log.Println("Calling CanvasItem.DrawTextureRectRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 7, 7)
@@ -1030,7 +1030,7 @@ func (o *CanvasItem) DrawTextureRectRegion(texture TextureImplementer, rect gdna
 	Args: [], Returns: void
 */
 func (o *CanvasItem) ForceUpdateTransform() {
-	//log.Println("Calling CanvasItem.ForceUpdateTransform()")
+	// log.Println("Calling CanvasItem.ForceUpdateTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1050,7 +1050,7 @@ func (o *CanvasItem) ForceUpdateTransform() {
 	Args: [], Returns: RID
 */
 func (o *CanvasItem) GetCanvas() gdnative.Rid {
-	//log.Println("Calling CanvasItem.GetCanvas()")
+	// log.Println("Calling CanvasItem.GetCanvas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1073,7 +1073,7 @@ func (o *CanvasItem) GetCanvas() gdnative.Rid {
 	Args: [], Returns: RID
 */
 func (o *CanvasItem) GetCanvasItem() gdnative.Rid {
-	//log.Println("Calling CanvasItem.GetCanvasItem()")
+	// log.Println("Calling CanvasItem.GetCanvasItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1096,7 +1096,7 @@ func (o *CanvasItem) GetCanvasItem() gdnative.Rid {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasItem) GetCanvasTransform() gdnative.Transform2D {
-	//log.Println("Calling CanvasItem.GetCanvasTransform()")
+	// log.Println("Calling CanvasItem.GetCanvasTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1119,7 +1119,7 @@ func (o *CanvasItem) GetCanvasTransform() gdnative.Transform2D {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasItem) GetGlobalMousePosition() gdnative.Vector2 {
-	//log.Println("Calling CanvasItem.GetGlobalMousePosition()")
+	// log.Println("Calling CanvasItem.GetGlobalMousePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1142,7 +1142,7 @@ func (o *CanvasItem) GetGlobalMousePosition() gdnative.Vector2 {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasItem) GetGlobalTransform() gdnative.Transform2D {
-	//log.Println("Calling CanvasItem.GetGlobalTransform()")
+	// log.Println("Calling CanvasItem.GetGlobalTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1165,7 +1165,7 @@ func (o *CanvasItem) GetGlobalTransform() gdnative.Transform2D {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasItem) GetGlobalTransformWithCanvas() gdnative.Transform2D {
-	//log.Println("Calling CanvasItem.GetGlobalTransformWithCanvas()")
+	// log.Println("Calling CanvasItem.GetGlobalTransformWithCanvas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1188,7 +1188,7 @@ func (o *CanvasItem) GetGlobalTransformWithCanvas() gdnative.Transform2D {
 	Args: [], Returns: int
 */
 func (o *CanvasItem) GetLightMask() gdnative.Int {
-	//log.Println("Calling CanvasItem.GetLightMask()")
+	// log.Println("Calling CanvasItem.GetLightMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1211,7 +1211,7 @@ func (o *CanvasItem) GetLightMask() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *CanvasItem) GetLocalMousePosition() gdnative.Vector2 {
-	//log.Println("Calling CanvasItem.GetLocalMousePosition()")
+	// log.Println("Calling CanvasItem.GetLocalMousePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1234,7 +1234,7 @@ func (o *CanvasItem) GetLocalMousePosition() gdnative.Vector2 {
 	Args: [], Returns: Material
 */
 func (o *CanvasItem) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CanvasItem.GetMaterial()")
+	// log.Println("Calling CanvasItem.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1271,7 +1271,7 @@ func (o *CanvasItem) GetMaterial() MaterialImplementer {
 	Args: [], Returns: Color
 */
 func (o *CanvasItem) GetModulate() gdnative.Color {
-	//log.Println("Calling CanvasItem.GetModulate()")
+	// log.Println("Calling CanvasItem.GetModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1294,7 +1294,7 @@ func (o *CanvasItem) GetModulate() gdnative.Color {
 	Args: [], Returns: Color
 */
 func (o *CanvasItem) GetSelfModulate() gdnative.Color {
-	//log.Println("Calling CanvasItem.GetSelfModulate()")
+	// log.Println("Calling CanvasItem.GetSelfModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1317,7 +1317,7 @@ func (o *CanvasItem) GetSelfModulate() gdnative.Color {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasItem) GetTransform() gdnative.Transform2D {
-	//log.Println("Calling CanvasItem.GetTransform()")
+	// log.Println("Calling CanvasItem.GetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1340,7 +1340,7 @@ func (o *CanvasItem) GetTransform() gdnative.Transform2D {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) GetUseParentMaterial() gdnative.Bool {
-	//log.Println("Calling CanvasItem.GetUseParentMaterial()")
+	// log.Println("Calling CanvasItem.GetUseParentMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1363,7 +1363,7 @@ func (o *CanvasItem) GetUseParentMaterial() gdnative.Bool {
 	Args: [], Returns: Rect2
 */
 func (o *CanvasItem) GetViewportRect() gdnative.Rect2 {
-	//log.Println("Calling CanvasItem.GetViewportRect()")
+	// log.Println("Calling CanvasItem.GetViewportRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1386,7 +1386,7 @@ func (o *CanvasItem) GetViewportRect() gdnative.Rect2 {
 	Args: [], Returns: Transform2D
 */
 func (o *CanvasItem) GetViewportTransform() gdnative.Transform2D {
-	//log.Println("Calling CanvasItem.GetViewportTransform()")
+	// log.Println("Calling CanvasItem.GetViewportTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1409,7 +1409,7 @@ func (o *CanvasItem) GetViewportTransform() gdnative.Transform2D {
 	Args: [], Returns: World2D
 */
 func (o *CanvasItem) GetWorld2D() World2DImplementer {
-	//log.Println("Calling CanvasItem.GetWorld2D()")
+	// log.Println("Calling CanvasItem.GetWorld2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1446,7 +1446,7 @@ func (o *CanvasItem) GetWorld2D() World2DImplementer {
 	Args: [], Returns: void
 */
 func (o *CanvasItem) Hide() {
-	//log.Println("Calling CanvasItem.Hide()")
+	// log.Println("Calling CanvasItem.Hide()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1466,7 +1466,7 @@ func (o *CanvasItem) Hide() {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) IsDrawBehindParentEnabled() gdnative.Bool {
-	//log.Println("Calling CanvasItem.IsDrawBehindParentEnabled()")
+	// log.Println("Calling CanvasItem.IsDrawBehindParentEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1489,7 +1489,7 @@ func (o *CanvasItem) IsDrawBehindParentEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) IsLocalTransformNotificationEnabled() gdnative.Bool {
-	//log.Println("Calling CanvasItem.IsLocalTransformNotificationEnabled()")
+	// log.Println("Calling CanvasItem.IsLocalTransformNotificationEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1512,7 +1512,7 @@ func (o *CanvasItem) IsLocalTransformNotificationEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) IsSetAsToplevel() gdnative.Bool {
-	//log.Println("Calling CanvasItem.IsSetAsToplevel()")
+	// log.Println("Calling CanvasItem.IsSetAsToplevel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1535,7 +1535,7 @@ func (o *CanvasItem) IsSetAsToplevel() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) IsTransformNotificationEnabled() gdnative.Bool {
-	//log.Println("Calling CanvasItem.IsTransformNotificationEnabled()")
+	// log.Println("Calling CanvasItem.IsTransformNotificationEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1558,7 +1558,7 @@ func (o *CanvasItem) IsTransformNotificationEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) IsVisible() gdnative.Bool {
-	//log.Println("Calling CanvasItem.IsVisible()")
+	// log.Println("Calling CanvasItem.IsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1581,7 +1581,7 @@ func (o *CanvasItem) IsVisible() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CanvasItem) IsVisibleInTree() gdnative.Bool {
-	//log.Println("Calling CanvasItem.IsVisibleInTree()")
+	// log.Println("Calling CanvasItem.IsVisibleInTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1604,7 +1604,7 @@ func (o *CanvasItem) IsVisibleInTree() gdnative.Bool {
 	Args: [{ false screen_point Vector2}], Returns: Vector2
 */
 func (o *CanvasItem) MakeCanvasPositionLocal(screenPoint gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling CanvasItem.MakeCanvasPositionLocal()")
+	// log.Println("Calling CanvasItem.MakeCanvasPositionLocal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1628,7 +1628,7 @@ func (o *CanvasItem) MakeCanvasPositionLocal(screenPoint gdnative.Vector2) gdnat
 	Args: [{ false event InputEvent}], Returns: InputEvent
 */
 func (o *CanvasItem) MakeInputLocal(event InputEventImplementer) InputEventImplementer {
-	//log.Println("Calling CanvasItem.MakeInputLocal()")
+	// log.Println("Calling CanvasItem.MakeInputLocal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1666,7 +1666,7 @@ func (o *CanvasItem) MakeInputLocal(event InputEventImplementer) InputEventImple
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CanvasItem) SetAsToplevel(enable gdnative.Bool) {
-	//log.Println("Calling CanvasItem.SetAsToplevel()")
+	// log.Println("Calling CanvasItem.SetAsToplevel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1687,7 +1687,7 @@ func (o *CanvasItem) SetAsToplevel(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CanvasItem) SetDrawBehindParent(enable gdnative.Bool) {
-	//log.Println("Calling CanvasItem.SetDrawBehindParent()")
+	// log.Println("Calling CanvasItem.SetDrawBehindParent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1708,7 +1708,7 @@ func (o *CanvasItem) SetDrawBehindParent(enable gdnative.Bool) {
 	Args: [{ false light_mask int}], Returns: void
 */
 func (o *CanvasItem) SetLightMask(lightMask gdnative.Int) {
-	//log.Println("Calling CanvasItem.SetLightMask()")
+	// log.Println("Calling CanvasItem.SetLightMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1729,7 +1729,7 @@ func (o *CanvasItem) SetLightMask(lightMask gdnative.Int) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CanvasItem) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CanvasItem.SetMaterial()")
+	// log.Println("Calling CanvasItem.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1750,7 +1750,7 @@ func (o *CanvasItem) SetMaterial(material MaterialImplementer) {
 	Args: [{ false modulate Color}], Returns: void
 */
 func (o *CanvasItem) SetModulate(modulate gdnative.Color) {
-	//log.Println("Calling CanvasItem.SetModulate()")
+	// log.Println("Calling CanvasItem.SetModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1771,7 +1771,7 @@ func (o *CanvasItem) SetModulate(modulate gdnative.Color) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CanvasItem) SetNotifyLocalTransform(enable gdnative.Bool) {
-	//log.Println("Calling CanvasItem.SetNotifyLocalTransform()")
+	// log.Println("Calling CanvasItem.SetNotifyLocalTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1792,7 +1792,7 @@ func (o *CanvasItem) SetNotifyLocalTransform(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CanvasItem) SetNotifyTransform(enable gdnative.Bool) {
-	//log.Println("Calling CanvasItem.SetNotifyTransform()")
+	// log.Println("Calling CanvasItem.SetNotifyTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1813,7 +1813,7 @@ func (o *CanvasItem) SetNotifyTransform(enable gdnative.Bool) {
 	Args: [{ false self_modulate Color}], Returns: void
 */
 func (o *CanvasItem) SetSelfModulate(selfModulate gdnative.Color) {
-	//log.Println("Calling CanvasItem.SetSelfModulate()")
+	// log.Println("Calling CanvasItem.SetSelfModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1834,7 +1834,7 @@ func (o *CanvasItem) SetSelfModulate(selfModulate gdnative.Color) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CanvasItem) SetUseParentMaterial(enable gdnative.Bool) {
-	//log.Println("Calling CanvasItem.SetUseParentMaterial()")
+	// log.Println("Calling CanvasItem.SetUseParentMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1855,7 +1855,7 @@ func (o *CanvasItem) SetUseParentMaterial(enable gdnative.Bool) {
 	Args: [{ false visible bool}], Returns: void
 */
 func (o *CanvasItem) SetVisible(visible gdnative.Bool) {
-	//log.Println("Calling CanvasItem.SetVisible()")
+	// log.Println("Calling CanvasItem.SetVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1876,7 +1876,7 @@ func (o *CanvasItem) SetVisible(visible gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *CanvasItem) Show() {
-	//log.Println("Calling CanvasItem.Show()")
+	// log.Println("Calling CanvasItem.Show()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1896,7 +1896,7 @@ func (o *CanvasItem) Show() {
 	Args: [], Returns: void
 */
 func (o *CanvasItem) Update() {
-	//log.Println("Calling CanvasItem.Update()")
+	// log.Println("Calling CanvasItem.Update()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

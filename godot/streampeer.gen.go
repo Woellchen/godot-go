@@ -39,7 +39,7 @@ func (o *StreamPeer) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) Get16() gdnative.Int {
-	//log.Println("Calling StreamPeer.Get16()")
+	// log.Println("Calling StreamPeer.Get16()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *StreamPeer) Get16() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) Get32() gdnative.Int {
-	//log.Println("Calling StreamPeer.Get32()")
+	// log.Println("Calling StreamPeer.Get32()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *StreamPeer) Get32() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) Get64() gdnative.Int {
-	//log.Println("Calling StreamPeer.Get64()")
+	// log.Println("Calling StreamPeer.Get64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *StreamPeer) Get64() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) Get8() gdnative.Int {
-	//log.Println("Calling StreamPeer.Get8()")
+	// log.Println("Calling StreamPeer.Get8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *StreamPeer) Get8() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) GetAvailableBytes() gdnative.Int {
-	//log.Println("Calling StreamPeer.GetAvailableBytes()")
+	// log.Println("Calling StreamPeer.GetAvailableBytes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *StreamPeer) GetAvailableBytes() gdnative.Int {
 	Args: [{ false bytes int}], Returns: Array
 */
 func (o *StreamPeer) GetData(bytes gdnative.Int) gdnative.Array {
-	//log.Println("Calling StreamPeer.GetData()")
+	// log.Println("Calling StreamPeer.GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -178,7 +178,7 @@ func (o *StreamPeer) GetData(bytes gdnative.Int) gdnative.Array {
 	Args: [], Returns: float
 */
 func (o *StreamPeer) GetDouble() gdnative.Real {
-	//log.Println("Calling StreamPeer.GetDouble()")
+	// log.Println("Calling StreamPeer.GetDouble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -201,7 +201,7 @@ func (o *StreamPeer) GetDouble() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *StreamPeer) GetFloat() gdnative.Real {
-	//log.Println("Calling StreamPeer.GetFloat()")
+	// log.Println("Calling StreamPeer.GetFloat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -224,7 +224,7 @@ func (o *StreamPeer) GetFloat() gdnative.Real {
 	Args: [{ false bytes int}], Returns: Array
 */
 func (o *StreamPeer) GetPartialData(bytes gdnative.Int) gdnative.Array {
-	//log.Println("Calling StreamPeer.GetPartialData()")
+	// log.Println("Calling StreamPeer.GetPartialData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -248,7 +248,7 @@ func (o *StreamPeer) GetPartialData(bytes gdnative.Int) gdnative.Array {
 	Args: [{-1 true bytes int}], Returns: String
 */
 func (o *StreamPeer) GetString(bytes gdnative.Int) gdnative.String {
-	//log.Println("Calling StreamPeer.GetString()")
+	// log.Println("Calling StreamPeer.GetString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -272,7 +272,7 @@ func (o *StreamPeer) GetString(bytes gdnative.Int) gdnative.String {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) GetU16() gdnative.Int {
-	//log.Println("Calling StreamPeer.GetU16()")
+	// log.Println("Calling StreamPeer.GetU16()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -295,7 +295,7 @@ func (o *StreamPeer) GetU16() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) GetU32() gdnative.Int {
-	//log.Println("Calling StreamPeer.GetU32()")
+	// log.Println("Calling StreamPeer.GetU32()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -318,7 +318,7 @@ func (o *StreamPeer) GetU32() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) GetU64() gdnative.Int {
-	//log.Println("Calling StreamPeer.GetU64()")
+	// log.Println("Calling StreamPeer.GetU64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -341,7 +341,7 @@ func (o *StreamPeer) GetU64() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeer) GetU8() gdnative.Int {
-	//log.Println("Calling StreamPeer.GetU8()")
+	// log.Println("Calling StreamPeer.GetU8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -364,7 +364,7 @@ func (o *StreamPeer) GetU8() gdnative.Int {
 	Args: [{-1 true bytes int}], Returns: String
 */
 func (o *StreamPeer) GetUtf8String(bytes gdnative.Int) gdnative.String {
-	//log.Println("Calling StreamPeer.GetUtf8String()")
+	// log.Println("Calling StreamPeer.GetUtf8String()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -388,7 +388,7 @@ func (o *StreamPeer) GetUtf8String(bytes gdnative.Int) gdnative.String {
 	Args: [{False true allow_objects bool}], Returns: Variant
 */
 func (o *StreamPeer) GetVar(allowObjects gdnative.Bool) gdnative.Variant {
-	//log.Println("Calling StreamPeer.GetVar()")
+	// log.Println("Calling StreamPeer.GetVar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -412,7 +412,7 @@ func (o *StreamPeer) GetVar(allowObjects gdnative.Bool) gdnative.Variant {
 	Args: [], Returns: bool
 */
 func (o *StreamPeer) IsBigEndianEnabled() gdnative.Bool {
-	//log.Println("Calling StreamPeer.IsBigEndianEnabled()")
+	// log.Println("Calling StreamPeer.IsBigEndianEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -435,7 +435,7 @@ func (o *StreamPeer) IsBigEndianEnabled() gdnative.Bool {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) Put16(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.Put16()")
+	// log.Println("Calling StreamPeer.Put16()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -456,7 +456,7 @@ func (o *StreamPeer) Put16(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) Put32(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.Put32()")
+	// log.Println("Calling StreamPeer.Put32()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -477,7 +477,7 @@ func (o *StreamPeer) Put32(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) Put64(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.Put64()")
+	// log.Println("Calling StreamPeer.Put64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -498,7 +498,7 @@ func (o *StreamPeer) Put64(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) Put8(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.Put8()")
+	// log.Println("Calling StreamPeer.Put8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -519,7 +519,7 @@ func (o *StreamPeer) Put8(value gdnative.Int) {
 	Args: [{ false data PoolByteArray}], Returns: enum.Error
 */
 func (o *StreamPeer) PutData(data gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling StreamPeer.PutData()")
+	// log.Println("Calling StreamPeer.PutData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -543,7 +543,7 @@ func (o *StreamPeer) PutData(data gdnative.PoolByteArray) gdnative.Error {
 	Args: [{ false value float}], Returns: void
 */
 func (o *StreamPeer) PutDouble(value gdnative.Real) {
-	//log.Println("Calling StreamPeer.PutDouble()")
+	// log.Println("Calling StreamPeer.PutDouble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -564,7 +564,7 @@ func (o *StreamPeer) PutDouble(value gdnative.Real) {
 	Args: [{ false value float}], Returns: void
 */
 func (o *StreamPeer) PutFloat(value gdnative.Real) {
-	//log.Println("Calling StreamPeer.PutFloat()")
+	// log.Println("Calling StreamPeer.PutFloat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -585,7 +585,7 @@ func (o *StreamPeer) PutFloat(value gdnative.Real) {
 	Args: [{ false data PoolByteArray}], Returns: Array
 */
 func (o *StreamPeer) PutPartialData(data gdnative.PoolByteArray) gdnative.Array {
-	//log.Println("Calling StreamPeer.PutPartialData()")
+	// log.Println("Calling StreamPeer.PutPartialData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -609,7 +609,7 @@ func (o *StreamPeer) PutPartialData(data gdnative.PoolByteArray) gdnative.Array 
 	Args: [{ false value String}], Returns: void
 */
 func (o *StreamPeer) PutString(value gdnative.String) {
-	//log.Println("Calling StreamPeer.PutString()")
+	// log.Println("Calling StreamPeer.PutString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -630,7 +630,7 @@ func (o *StreamPeer) PutString(value gdnative.String) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) PutU16(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.PutU16()")
+	// log.Println("Calling StreamPeer.PutU16()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -651,7 +651,7 @@ func (o *StreamPeer) PutU16(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) PutU32(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.PutU32()")
+	// log.Println("Calling StreamPeer.PutU32()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -672,7 +672,7 @@ func (o *StreamPeer) PutU32(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) PutU64(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.PutU64()")
+	// log.Println("Calling StreamPeer.PutU64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -693,7 +693,7 @@ func (o *StreamPeer) PutU64(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *StreamPeer) PutU8(value gdnative.Int) {
-	//log.Println("Calling StreamPeer.PutU8()")
+	// log.Println("Calling StreamPeer.PutU8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -714,7 +714,7 @@ func (o *StreamPeer) PutU8(value gdnative.Int) {
 	Args: [{ false value String}], Returns: void
 */
 func (o *StreamPeer) PutUtf8String(value gdnative.String) {
-	//log.Println("Calling StreamPeer.PutUtf8String()")
+	// log.Println("Calling StreamPeer.PutUtf8String()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -735,7 +735,7 @@ func (o *StreamPeer) PutUtf8String(value gdnative.String) {
 	Args: [{ false value Variant} {False true full_objects bool}], Returns: void
 */
 func (o *StreamPeer) PutVar(value gdnative.Variant, fullObjects gdnative.Bool) {
-	//log.Println("Calling StreamPeer.PutVar()")
+	// log.Println("Calling StreamPeer.PutVar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -757,7 +757,7 @@ func (o *StreamPeer) PutVar(value gdnative.Variant, fullObjects gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *StreamPeer) SetBigEndian(enable gdnative.Bool) {
-	//log.Println("Calling StreamPeer.SetBigEndian()")
+	// log.Println("Calling StreamPeer.SetBigEndian()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

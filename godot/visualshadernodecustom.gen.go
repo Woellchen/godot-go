@@ -39,7 +39,7 @@ func (o *VisualShaderNodeCustom) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetCategory() gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetCategory()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetCategory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeCustom) X_GetCategory() gdnative.String {
 	Args: [{ false input_vars Array} { false output_vars Array} { false mode int} { false type int}], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetCode(inputVars gdnative.Array, outputVars gdnative.Array, mode gdnative.Int, aType gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetCode()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -89,7 +89,7 @@ func (o *VisualShaderNodeCustom) X_GetCode(inputVars gdnative.Array, outputVars 
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetDescription() gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetDescription()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -112,7 +112,7 @@ func (o *VisualShaderNodeCustom) X_GetDescription() gdnative.String {
 	Args: [{ false mode int}], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetGlobalCode(mode gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetGlobalCode()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetGlobalCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -136,7 +136,7 @@ func (o *VisualShaderNodeCustom) X_GetGlobalCode(mode gdnative.Int) gdnative.Str
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeCustom) X_GetInputPortCount() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetInputPortCount()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetInputPortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -159,7 +159,7 @@ func (o *VisualShaderNodeCustom) X_GetInputPortCount() gdnative.Int {
 	Args: [{ false port int}], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetInputPortName(port gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetInputPortName()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetInputPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -183,7 +183,7 @@ func (o *VisualShaderNodeCustom) X_GetInputPortName(port gdnative.Int) gdnative.
 	Args: [{ false port int}], Returns: int
 */
 func (o *VisualShaderNodeCustom) X_GetInputPortType(port gdnative.Int) gdnative.Int {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetInputPortType()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetInputPortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -207,7 +207,7 @@ func (o *VisualShaderNodeCustom) X_GetInputPortType(port gdnative.Int) gdnative.
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetName() gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetName()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -230,7 +230,7 @@ func (o *VisualShaderNodeCustom) X_GetName() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeCustom) X_GetOutputPortCount() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetOutputPortCount()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetOutputPortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -253,7 +253,7 @@ func (o *VisualShaderNodeCustom) X_GetOutputPortCount() gdnative.Int {
 	Args: [{ false port int}], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetOutputPortName(port gdnative.Int) gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetOutputPortName()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetOutputPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -277,7 +277,7 @@ func (o *VisualShaderNodeCustom) X_GetOutputPortName(port gdnative.Int) gdnative
 	Args: [{ false port int}], Returns: int
 */
 func (o *VisualShaderNodeCustom) X_GetOutputPortType(port gdnative.Int) gdnative.Int {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetOutputPortType()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetOutputPortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -301,7 +301,7 @@ func (o *VisualShaderNodeCustom) X_GetOutputPortType(port gdnative.Int) gdnative
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeCustom) X_GetReturnIconType() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetReturnIconType()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetReturnIconType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -324,7 +324,7 @@ func (o *VisualShaderNodeCustom) X_GetReturnIconType() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeCustom) X_GetSubcategory() gdnative.String {
-	//log.Println("Calling VisualShaderNodeCustom.X_GetSubcategory()")
+	// log.Println("Calling VisualShaderNodeCustom.X_GetSubcategory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

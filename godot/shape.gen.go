@@ -39,7 +39,7 @@ func (o *Shape) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *Shape) GetMargin() gdnative.Real {
-	//log.Println("Calling Shape.GetMargin()")
+	// log.Println("Calling Shape.GetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Shape) GetMargin() gdnative.Real {
 	Args: [{ false margin float}], Returns: void
 */
 func (o *Shape) SetMargin(margin gdnative.Real) {
-	//log.Println("Calling Shape.SetMargin()")
+	// log.Println("Calling Shape.SetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

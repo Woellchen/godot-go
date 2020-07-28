@@ -39,7 +39,7 @@ func (o *VisualScriptNode) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *VisualScriptNode) X_GetDefaultInputValues() gdnative.Array {
-	//log.Println("Calling VisualScriptNode.X_GetDefaultInputValues()")
+	// log.Println("Calling VisualScriptNode.X_GetDefaultInputValues()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptNode) X_GetDefaultInputValues() gdnative.Array {
 	Args: [{ false values Array}], Returns: void
 */
 func (o *VisualScriptNode) X_SetDefaultInputValues(values gdnative.Array) {
-	//log.Println("Calling VisualScriptNode.X_SetDefaultInputValues()")
+	// log.Println("Calling VisualScriptNode.X_SetDefaultInputValues()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *VisualScriptNode) X_SetDefaultInputValues(values gdnative.Array) {
 	Args: [{ false port_idx int}], Returns: Variant
 */
 func (o *VisualScriptNode) GetDefaultInputValue(portIdx gdnative.Int) gdnative.Variant {
-	//log.Println("Calling VisualScriptNode.GetDefaultInputValue()")
+	// log.Println("Calling VisualScriptNode.GetDefaultInputValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -107,7 +107,7 @@ func (o *VisualScriptNode) GetDefaultInputValue(portIdx gdnative.Int) gdnative.V
 	Args: [], Returns: VisualScript
 */
 func (o *VisualScriptNode) GetVisualScript() VisualScriptImplementer {
-	//log.Println("Calling VisualScriptNode.GetVisualScript()")
+	// log.Println("Calling VisualScriptNode.GetVisualScript()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -144,7 +144,7 @@ func (o *VisualScriptNode) GetVisualScript() VisualScriptImplementer {
 	Args: [], Returns: void
 */
 func (o *VisualScriptNode) PortsChangedNotify() {
-	//log.Println("Calling VisualScriptNode.PortsChangedNotify()")
+	// log.Println("Calling VisualScriptNode.PortsChangedNotify()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -164,7 +164,7 @@ func (o *VisualScriptNode) PortsChangedNotify() {
 	Args: [{ false port_idx int} { false value Variant}], Returns: void
 */
 func (o *VisualScriptNode) SetDefaultInputValue(portIdx gdnative.Int, value gdnative.Variant) {
-	//log.Println("Calling VisualScriptNode.SetDefaultInputValue()")
+	// log.Println("Calling VisualScriptNode.SetDefaultInputValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

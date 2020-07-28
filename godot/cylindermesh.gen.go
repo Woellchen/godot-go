@@ -39,7 +39,7 @@ func (o *CylinderMesh) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CylinderMesh) GetBottomRadius() gdnative.Real {
-	//log.Println("Calling CylinderMesh.GetBottomRadius()")
+	// log.Println("Calling CylinderMesh.GetBottomRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CylinderMesh) GetBottomRadius() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CylinderMesh) GetHeight() gdnative.Real {
-	//log.Println("Calling CylinderMesh.GetHeight()")
+	// log.Println("Calling CylinderMesh.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CylinderMesh) GetHeight() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CylinderMesh) GetRadialSegments() gdnative.Int {
-	//log.Println("Calling CylinderMesh.GetRadialSegments()")
+	// log.Println("Calling CylinderMesh.GetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *CylinderMesh) GetRadialSegments() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *CylinderMesh) GetRings() gdnative.Int {
-	//log.Println("Calling CylinderMesh.GetRings()")
+	// log.Println("Calling CylinderMesh.GetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *CylinderMesh) GetRings() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *CylinderMesh) GetTopRadius() gdnative.Real {
-	//log.Println("Calling CylinderMesh.GetTopRadius()")
+	// log.Println("Calling CylinderMesh.GetTopRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *CylinderMesh) GetTopRadius() gdnative.Real {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CylinderMesh) SetBottomRadius(radius gdnative.Real) {
-	//log.Println("Calling CylinderMesh.SetBottomRadius()")
+	// log.Println("Calling CylinderMesh.SetBottomRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *CylinderMesh) SetBottomRadius(radius gdnative.Real) {
 	Args: [{ false height float}], Returns: void
 */
 func (o *CylinderMesh) SetHeight(height gdnative.Real) {
-	//log.Println("Calling CylinderMesh.SetHeight()")
+	// log.Println("Calling CylinderMesh.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -196,7 +196,7 @@ func (o *CylinderMesh) SetHeight(height gdnative.Real) {
 	Args: [{ false segments int}], Returns: void
 */
 func (o *CylinderMesh) SetRadialSegments(segments gdnative.Int) {
-	//log.Println("Calling CylinderMesh.SetRadialSegments()")
+	// log.Println("Calling CylinderMesh.SetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *CylinderMesh) SetRadialSegments(segments gdnative.Int) {
 	Args: [{ false rings int}], Returns: void
 */
 func (o *CylinderMesh) SetRings(rings gdnative.Int) {
-	//log.Println("Calling CylinderMesh.SetRings()")
+	// log.Println("Calling CylinderMesh.SetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *CylinderMesh) SetRings(rings gdnative.Int) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CylinderMesh) SetTopRadius(radius gdnative.Real) {
-	//log.Println("Calling CylinderMesh.SetTopRadius()")
+	// log.Println("Calling CylinderMesh.SetTopRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

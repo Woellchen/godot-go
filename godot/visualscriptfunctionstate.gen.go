@@ -38,14 +38,14 @@ func (o *VisualScriptFunctionState) BaseClass() string {
         Undocumented
 	Args: [], Returns: Variant
 */
-func (o *VisualScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling VisualScriptFunctionState.X_SignalCallback()")
+func (o *VisualScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling VisualScriptFunctionState.X_SignalCallback()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 0+len(args), 0+len(args))
+	arguments := make([]gdnative.Variant, 0+len(args), 0+len(args))
 
 	for i, arg := range args {
-		ptrArguments[i+0] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+0] = arg
 	}
 
 	// Get the method bind
@@ -53,12 +53,9 @@ func (o *VisualScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) g
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -66,7 +63,7 @@ func (o *VisualScriptFunctionState) X_SignalCallback(args ...gdnative.Variant) g
 	Args: [{ false obj Object} { false signals String} { false args Array}], Returns: void
 */
 func (o *VisualScriptFunctionState) ConnectToSignal(obj ObjectImplementer, signals gdnative.String, args gdnative.Array) {
-	//log.Println("Calling VisualScriptFunctionState.ConnectToSignal()")
+	// log.Println("Calling VisualScriptFunctionState.ConnectToSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -89,7 +86,7 @@ func (o *VisualScriptFunctionState) ConnectToSignal(obj ObjectImplementer, signa
 	Args: [], Returns: bool
 */
 func (o *VisualScriptFunctionState) IsValid() gdnative.Bool {
-	//log.Println("Calling VisualScriptFunctionState.IsValid()")
+	// log.Println("Calling VisualScriptFunctionState.IsValid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -112,7 +109,7 @@ func (o *VisualScriptFunctionState) IsValid() gdnative.Bool {
 	Args: [{Null true args Array}], Returns: Variant
 */
 func (o *VisualScriptFunctionState) Resume(args gdnative.Array) gdnative.Variant {
-	//log.Println("Calling VisualScriptFunctionState.Resume()")
+	// log.Println("Calling VisualScriptFunctionState.Resume()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -135,7 +132,7 @@ func (o *VisualScriptFunctionState) Resume(args gdnative.Array) gdnative.Variant
 // of the VisualScriptFunctionState class.
 type VisualScriptFunctionStateImplementer interface {
 	ReferenceImplementer
-	X_SignalCallback(args ...gdnative.Variant) gdnative.Variant
+	X_SignalCallback(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	ConnectToSignal(obj ObjectImplementer, signals gdnative.String, args gdnative.Array)
 	IsValid() gdnative.Bool
 	Resume(args gdnative.Array) gdnative.Variant

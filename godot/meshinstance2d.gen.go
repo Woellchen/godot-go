@@ -39,7 +39,7 @@ func (o *MeshInstance2D) BaseClass() string {
 	Args: [], Returns: Mesh
 */
 func (o *MeshInstance2D) GetMesh() MeshImplementer {
-	//log.Println("Calling MeshInstance2D.GetMesh()")
+	// log.Println("Calling MeshInstance2D.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *MeshInstance2D) GetMesh() MeshImplementer {
 	Args: [], Returns: Texture
 */
 func (o *MeshInstance2D) GetNormalMap() TextureImplementer {
-	//log.Println("Calling MeshInstance2D.GetNormalMap()")
+	// log.Println("Calling MeshInstance2D.GetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -113,7 +113,7 @@ func (o *MeshInstance2D) GetNormalMap() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *MeshInstance2D) GetTexture() TextureImplementer {
-	//log.Println("Calling MeshInstance2D.GetTexture()")
+	// log.Println("Calling MeshInstance2D.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *MeshInstance2D) GetTexture() TextureImplementer {
 	Args: [{ false mesh Mesh}], Returns: void
 */
 func (o *MeshInstance2D) SetMesh(mesh MeshImplementer) {
-	//log.Println("Calling MeshInstance2D.SetMesh()")
+	// log.Println("Calling MeshInstance2D.SetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *MeshInstance2D) SetMesh(mesh MeshImplementer) {
 	Args: [{ false normal_map Texture}], Returns: void
 */
 func (o *MeshInstance2D) SetNormalMap(normalMap TextureImplementer) {
-	//log.Println("Calling MeshInstance2D.SetNormalMap()")
+	// log.Println("Calling MeshInstance2D.SetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -192,7 +192,7 @@ func (o *MeshInstance2D) SetNormalMap(normalMap TextureImplementer) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *MeshInstance2D) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling MeshInstance2D.SetTexture()")
+	// log.Println("Calling MeshInstance2D.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

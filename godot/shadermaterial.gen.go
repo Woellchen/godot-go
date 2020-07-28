@@ -39,7 +39,7 @@ func (o *ShaderMaterial) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *ShaderMaterial) X_ShaderChanged() {
-	//log.Println("Calling ShaderMaterial.X_ShaderChanged()")
+	// log.Println("Calling ShaderMaterial.X_ShaderChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *ShaderMaterial) X_ShaderChanged() {
 	Args: [], Returns: Shader
 */
 func (o *ShaderMaterial) GetShader() ShaderImplementer {
-	//log.Println("Calling ShaderMaterial.GetShader()")
+	// log.Println("Calling ShaderMaterial.GetShader()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *ShaderMaterial) GetShader() ShaderImplementer {
 	Args: [{ false param String}], Returns: Variant
 */
 func (o *ShaderMaterial) GetShaderParam(param gdnative.String) gdnative.Variant {
-	//log.Println("Calling ShaderMaterial.GetShaderParam()")
+	// log.Println("Calling ShaderMaterial.GetShaderParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -120,7 +120,7 @@ func (o *ShaderMaterial) GetShaderParam(param gdnative.String) gdnative.Variant 
 	Args: [{ false name String}], Returns: bool
 */
 func (o *ShaderMaterial) PropertyCanRevert(name gdnative.String) gdnative.Bool {
-	//log.Println("Calling ShaderMaterial.PropertyCanRevert()")
+	// log.Println("Calling ShaderMaterial.PropertyCanRevert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -144,7 +144,7 @@ func (o *ShaderMaterial) PropertyCanRevert(name gdnative.String) gdnative.Bool {
 	Args: [{ false name String}], Returns: Variant
 */
 func (o *ShaderMaterial) PropertyGetRevert(name gdnative.String) gdnative.Variant {
-	//log.Println("Calling ShaderMaterial.PropertyGetRevert()")
+	// log.Println("Calling ShaderMaterial.PropertyGetRevert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -168,7 +168,7 @@ func (o *ShaderMaterial) PropertyGetRevert(name gdnative.String) gdnative.Varian
 	Args: [{ false shader Shader}], Returns: void
 */
 func (o *ShaderMaterial) SetShader(shader ShaderImplementer) {
-	//log.Println("Calling ShaderMaterial.SetShader()")
+	// log.Println("Calling ShaderMaterial.SetShader()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *ShaderMaterial) SetShader(shader ShaderImplementer) {
 	Args: [{ false param String} { false value Variant}], Returns: void
 */
 func (o *ShaderMaterial) SetShaderParam(param gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling ShaderMaterial.SetShaderParam()")
+	// log.Println("Calling ShaderMaterial.SetShaderParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

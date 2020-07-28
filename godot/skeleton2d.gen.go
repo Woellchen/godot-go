@@ -39,7 +39,7 @@ func (o *Skeleton2D) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Skeleton2D) X_UpdateBoneSetup() {
-	//log.Println("Calling Skeleton2D.X_UpdateBoneSetup()")
+	// log.Println("Calling Skeleton2D.X_UpdateBoneSetup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *Skeleton2D) X_UpdateBoneSetup() {
 	Args: [], Returns: void
 */
 func (o *Skeleton2D) X_UpdateTransform() {
-	//log.Println("Calling Skeleton2D.X_UpdateTransform()")
+	// log.Println("Calling Skeleton2D.X_UpdateTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *Skeleton2D) X_UpdateTransform() {
 	Args: [{ false idx int}], Returns: Bone2D
 */
 func (o *Skeleton2D) GetBone(idx gdnative.Int) Bone2DImplementer {
-	//log.Println("Calling Skeleton2D.GetBone()")
+	// log.Println("Calling Skeleton2D.GetBone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -117,7 +117,7 @@ func (o *Skeleton2D) GetBone(idx gdnative.Int) Bone2DImplementer {
 	Args: [], Returns: int
 */
 func (o *Skeleton2D) GetBoneCount() gdnative.Int {
-	//log.Println("Calling Skeleton2D.GetBoneCount()")
+	// log.Println("Calling Skeleton2D.GetBoneCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *Skeleton2D) GetBoneCount() gdnative.Int {
 	Args: [], Returns: RID
 */
 func (o *Skeleton2D) GetSkeleton() gdnative.Rid {
-	//log.Println("Calling Skeleton2D.GetSkeleton()")
+	// log.Println("Calling Skeleton2D.GetSkeleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

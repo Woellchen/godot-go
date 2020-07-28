@@ -39,7 +39,7 @@ func (o *AnimatedSprite3D) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *AnimatedSprite3D) X_IsPlaying() gdnative.Bool {
-	//log.Println("Calling AnimatedSprite3D.X_IsPlaying()")
+	// log.Println("Calling AnimatedSprite3D.X_IsPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AnimatedSprite3D) X_IsPlaying() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *AnimatedSprite3D) X_ResChanged() {
-	//log.Println("Calling AnimatedSprite3D.X_ResChanged()")
+	// log.Println("Calling AnimatedSprite3D.X_ResChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *AnimatedSprite3D) X_ResChanged() {
 	Args: [{ false playing bool}], Returns: void
 */
 func (o *AnimatedSprite3D) X_SetPlaying(playing gdnative.Bool) {
-	//log.Println("Calling AnimatedSprite3D.X_SetPlaying()")
+	// log.Println("Calling AnimatedSprite3D.X_SetPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -103,7 +103,7 @@ func (o *AnimatedSprite3D) X_SetPlaying(playing gdnative.Bool) {
 	Args: [], Returns: String
 */
 func (o *AnimatedSprite3D) GetAnimation() gdnative.String {
-	//log.Println("Calling AnimatedSprite3D.GetAnimation()")
+	// log.Println("Calling AnimatedSprite3D.GetAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *AnimatedSprite3D) GetAnimation() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *AnimatedSprite3D) GetFrame() gdnative.Int {
-	//log.Println("Calling AnimatedSprite3D.GetFrame()")
+	// log.Println("Calling AnimatedSprite3D.GetFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *AnimatedSprite3D) GetFrame() gdnative.Int {
 	Args: [], Returns: SpriteFrames
 */
 func (o *AnimatedSprite3D) GetSpriteFrames() SpriteFramesImplementer {
-	//log.Println("Calling AnimatedSprite3D.GetSpriteFrames()")
+	// log.Println("Calling AnimatedSprite3D.GetSpriteFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *AnimatedSprite3D) GetSpriteFrames() SpriteFramesImplementer {
 	Args: [], Returns: bool
 */
 func (o *AnimatedSprite3D) IsPlaying() gdnative.Bool {
-	//log.Println("Calling AnimatedSprite3D.IsPlaying()")
+	// log.Println("Calling AnimatedSprite3D.IsPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -209,7 +209,7 @@ func (o *AnimatedSprite3D) IsPlaying() gdnative.Bool {
 	Args: [{ true anim String}], Returns: void
 */
 func (o *AnimatedSprite3D) Play(anim gdnative.String) {
-	//log.Println("Calling AnimatedSprite3D.Play()")
+	// log.Println("Calling AnimatedSprite3D.Play()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -230,7 +230,7 @@ func (o *AnimatedSprite3D) Play(anim gdnative.String) {
 	Args: [{ false animation String}], Returns: void
 */
 func (o *AnimatedSprite3D) SetAnimation(animation gdnative.String) {
-	//log.Println("Calling AnimatedSprite3D.SetAnimation()")
+	// log.Println("Calling AnimatedSprite3D.SetAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -251,7 +251,7 @@ func (o *AnimatedSprite3D) SetAnimation(animation gdnative.String) {
 	Args: [{ false frame int}], Returns: void
 */
 func (o *AnimatedSprite3D) SetFrame(frame gdnative.Int) {
-	//log.Println("Calling AnimatedSprite3D.SetFrame()")
+	// log.Println("Calling AnimatedSprite3D.SetFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -272,7 +272,7 @@ func (o *AnimatedSprite3D) SetFrame(frame gdnative.Int) {
 	Args: [{ false sprite_frames SpriteFrames}], Returns: void
 */
 func (o *AnimatedSprite3D) SetSpriteFrames(spriteFrames SpriteFramesImplementer) {
-	//log.Println("Calling AnimatedSprite3D.SetSpriteFrames()")
+	// log.Println("Calling AnimatedSprite3D.SetSpriteFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -293,7 +293,7 @@ func (o *AnimatedSprite3D) SetSpriteFrames(spriteFrames SpriteFramesImplementer)
 	Args: [], Returns: void
 */
 func (o *AnimatedSprite3D) Stop() {
-	//log.Println("Calling AnimatedSprite3D.Stop()")
+	// log.Println("Calling AnimatedSprite3D.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

@@ -39,7 +39,7 @@ func (o *GrooveJoint2D) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *GrooveJoint2D) GetInitialOffset() gdnative.Real {
-	//log.Println("Calling GrooveJoint2D.GetInitialOffset()")
+	// log.Println("Calling GrooveJoint2D.GetInitialOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *GrooveJoint2D) GetInitialOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *GrooveJoint2D) GetLength() gdnative.Real {
-	//log.Println("Calling GrooveJoint2D.GetLength()")
+	// log.Println("Calling GrooveJoint2D.GetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *GrooveJoint2D) GetLength() gdnative.Real {
 	Args: [{ false offset float}], Returns: void
 */
 func (o *GrooveJoint2D) SetInitialOffset(offset gdnative.Real) {
-	//log.Println("Calling GrooveJoint2D.SetInitialOffset()")
+	// log.Println("Calling GrooveJoint2D.SetInitialOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *GrooveJoint2D) SetInitialOffset(offset gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *GrooveJoint2D) SetLength(length gdnative.Real) {
-	//log.Println("Calling GrooveJoint2D.SetLength()")
+	// log.Println("Calling GrooveJoint2D.SetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -100,7 +100,7 @@ func (o *performance) BaseClass() string {
 */
 func (o *performance) GetMonitor(monitor gdnative.Int) gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling Performance.GetMonitor()")
+	// log.Println("Calling Performance.GetMonitor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

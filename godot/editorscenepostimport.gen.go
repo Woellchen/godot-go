@@ -39,7 +39,7 @@ func (o *EditorScenePostImport) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *EditorScenePostImport) GetSourceFile() gdnative.String {
-	//log.Println("Calling EditorScenePostImport.GetSourceFile()")
+	// log.Println("Calling EditorScenePostImport.GetSourceFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *EditorScenePostImport) GetSourceFile() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorScenePostImport) GetSourceFolder() gdnative.String {
-	//log.Println("Calling EditorScenePostImport.GetSourceFolder()")
+	// log.Println("Calling EditorScenePostImport.GetSourceFolder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *EditorScenePostImport) GetSourceFolder() gdnative.String {
 	Args: [{ false scene Object}], Returns: Object
 */
 func (o *EditorScenePostImport) PostImport(scene ObjectImplementer) ObjectImplementer {
-	//log.Println("Calling EditorScenePostImport.PostImport()")
+	// log.Println("Calling EditorScenePostImport.PostImport()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

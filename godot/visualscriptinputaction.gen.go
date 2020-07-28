@@ -49,7 +49,7 @@ func (o *VisualScriptInputAction) BaseClass() string {
 	Args: [], Returns: enum.VisualScriptInputAction::Mode
 */
 func (o *VisualScriptInputAction) GetActionMode() VisualScriptInputActionMode {
-	//log.Println("Calling VisualScriptInputAction.GetActionMode()")
+	// log.Println("Calling VisualScriptInputAction.GetActionMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -72,7 +72,7 @@ func (o *VisualScriptInputAction) GetActionMode() VisualScriptInputActionMode {
 	Args: [], Returns: String
 */
 func (o *VisualScriptInputAction) GetActionName() gdnative.String {
-	//log.Println("Calling VisualScriptInputAction.GetActionName()")
+	// log.Println("Calling VisualScriptInputAction.GetActionName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -95,7 +95,7 @@ func (o *VisualScriptInputAction) GetActionName() gdnative.String {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *VisualScriptInputAction) SetActionMode(mode gdnative.Int) {
-	//log.Println("Calling VisualScriptInputAction.SetActionMode()")
+	// log.Println("Calling VisualScriptInputAction.SetActionMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -116,7 +116,7 @@ func (o *VisualScriptInputAction) SetActionMode(mode gdnative.Int) {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualScriptInputAction) SetActionName(name gdnative.String) {
-	//log.Println("Calling VisualScriptInputAction.SetActionName()")
+	// log.Println("Calling VisualScriptInputAction.SetActionName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

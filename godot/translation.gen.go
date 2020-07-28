@@ -39,7 +39,7 @@ func (o *Translation) BaseClass() string {
 	Args: [], Returns: PoolStringArray
 */
 func (o *Translation) X_GetMessages() gdnative.PoolStringArray {
-	//log.Println("Calling Translation.X_GetMessages()")
+	// log.Println("Calling Translation.X_GetMessages()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Translation) X_GetMessages() gdnative.PoolStringArray {
 	Args: [{ false arg0 PoolStringArray}], Returns: void
 */
 func (o *Translation) X_SetMessages(arg0 gdnative.PoolStringArray) {
-	//log.Println("Calling Translation.X_SetMessages()")
+	// log.Println("Calling Translation.X_SetMessages()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *Translation) X_SetMessages(arg0 gdnative.PoolStringArray) {
 	Args: [{ false src_message String} { false xlated_message String}], Returns: void
 */
 func (o *Translation) AddMessage(srcMessage gdnative.String, xlatedMessage gdnative.String) {
-	//log.Println("Calling Translation.AddMessage()")
+	// log.Println("Calling Translation.AddMessage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -105,7 +105,7 @@ func (o *Translation) AddMessage(srcMessage gdnative.String, xlatedMessage gdnat
 	Args: [{ false src_message String}], Returns: void
 */
 func (o *Translation) EraseMessage(srcMessage gdnative.String) {
-	//log.Println("Calling Translation.EraseMessage()")
+	// log.Println("Calling Translation.EraseMessage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -126,7 +126,7 @@ func (o *Translation) EraseMessage(srcMessage gdnative.String) {
 	Args: [], Returns: String
 */
 func (o *Translation) GetLocale() gdnative.String {
-	//log.Println("Calling Translation.GetLocale()")
+	// log.Println("Calling Translation.GetLocale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *Translation) GetLocale() gdnative.String {
 	Args: [{ false src_message String}], Returns: String
 */
 func (o *Translation) GetMessage(srcMessage gdnative.String) gdnative.String {
-	//log.Println("Calling Translation.GetMessage()")
+	// log.Println("Calling Translation.GetMessage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *Translation) GetMessage(srcMessage gdnative.String) gdnative.String {
 	Args: [], Returns: int
 */
 func (o *Translation) GetMessageCount() gdnative.Int {
-	//log.Println("Calling Translation.GetMessageCount()")
+	// log.Println("Calling Translation.GetMessageCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *Translation) GetMessageCount() gdnative.Int {
 	Args: [], Returns: PoolStringArray
 */
 func (o *Translation) GetMessageList() gdnative.PoolStringArray {
-	//log.Println("Calling Translation.GetMessageList()")
+	// log.Println("Calling Translation.GetMessageList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -219,7 +219,7 @@ func (o *Translation) GetMessageList() gdnative.PoolStringArray {
 	Args: [{ false locale String}], Returns: void
 */
 func (o *Translation) SetLocale(locale gdnative.String) {
-	//log.Println("Calling Translation.SetLocale()")
+	// log.Println("Calling Translation.SetLocale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *ProgressBar) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *ProgressBar) IsPercentVisible() gdnative.Bool {
-	//log.Println("Calling ProgressBar.IsPercentVisible()")
+	// log.Println("Calling ProgressBar.IsPercentVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ProgressBar) IsPercentVisible() gdnative.Bool {
 	Args: [{ false visible bool}], Returns: void
 */
 func (o *ProgressBar) SetPercentVisible(visible gdnative.Bool) {
-	//log.Println("Calling ProgressBar.SetPercentVisible()")
+	// log.Println("Calling ProgressBar.SetPercentVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

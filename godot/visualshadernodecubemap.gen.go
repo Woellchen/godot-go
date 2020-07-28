@@ -56,7 +56,7 @@ func (o *VisualShaderNodeCubeMap) BaseClass() string {
 	Args: [], Returns: CubeMap
 */
 func (o *VisualShaderNodeCubeMap) GetCubeMap() CubeMapImplementer {
-	//log.Println("Calling VisualShaderNodeCubeMap.GetCubeMap()")
+	// log.Println("Calling VisualShaderNodeCubeMap.GetCubeMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -93,7 +93,7 @@ func (o *VisualShaderNodeCubeMap) GetCubeMap() CubeMapImplementer {
 	Args: [], Returns: enum.VisualShaderNodeCubeMap::Source
 */
 func (o *VisualShaderNodeCubeMap) GetSource() VisualShaderNodeCubeMapSource {
-	//log.Println("Calling VisualShaderNodeCubeMap.GetSource()")
+	// log.Println("Calling VisualShaderNodeCubeMap.GetSource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *VisualShaderNodeCubeMap) GetSource() VisualShaderNodeCubeMapSource {
 	Args: [], Returns: enum.VisualShaderNodeCubeMap::TextureType
 */
 func (o *VisualShaderNodeCubeMap) GetTextureType() VisualShaderNodeCubeMapTextureType {
-	//log.Println("Calling VisualShaderNodeCubeMap.GetTextureType()")
+	// log.Println("Calling VisualShaderNodeCubeMap.GetTextureType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *VisualShaderNodeCubeMap) GetTextureType() VisualShaderNodeCubeMapTextur
 	Args: [{ false value CubeMap}], Returns: void
 */
 func (o *VisualShaderNodeCubeMap) SetCubeMap(value CubeMapImplementer) {
-	//log.Println("Calling VisualShaderNodeCubeMap.SetCubeMap()")
+	// log.Println("Calling VisualShaderNodeCubeMap.SetCubeMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -160,7 +160,7 @@ func (o *VisualShaderNodeCubeMap) SetCubeMap(value CubeMapImplementer) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *VisualShaderNodeCubeMap) SetSource(value gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeCubeMap.SetSource()")
+	// log.Println("Calling VisualShaderNodeCubeMap.SetSource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -181,7 +181,7 @@ func (o *VisualShaderNodeCubeMap) SetSource(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *VisualShaderNodeCubeMap) SetTextureType(value gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeCubeMap.SetTextureType()")
+	// log.Println("Calling VisualShaderNodeCubeMap.SetTextureType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

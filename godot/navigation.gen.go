@@ -39,7 +39,7 @@ func (o *Navigation) BaseClass() string {
 	Args: [{ false to_point Vector3}], Returns: Vector3
 */
 func (o *Navigation) GetClosestPoint(toPoint gdnative.Vector3) gdnative.Vector3 {
-	//log.Println("Calling Navigation.GetClosestPoint()")
+	// log.Println("Calling Navigation.GetClosestPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *Navigation) GetClosestPoint(toPoint gdnative.Vector3) gdnative.Vector3 
 	Args: [{ false to_point Vector3}], Returns: Vector3
 */
 func (o *Navigation) GetClosestPointNormal(toPoint gdnative.Vector3) gdnative.Vector3 {
-	//log.Println("Calling Navigation.GetClosestPointNormal()")
+	// log.Println("Calling Navigation.GetClosestPointNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -87,7 +87,7 @@ func (o *Navigation) GetClosestPointNormal(toPoint gdnative.Vector3) gdnative.Ve
 	Args: [{ false to_point Vector3}], Returns: Object
 */
 func (o *Navigation) GetClosestPointOwner(toPoint gdnative.Vector3) ObjectImplementer {
-	//log.Println("Calling Navigation.GetClosestPointOwner()")
+	// log.Println("Calling Navigation.GetClosestPointOwner()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *Navigation) GetClosestPointOwner(toPoint gdnative.Vector3) ObjectImplem
 	Args: [{ false start Vector3} { false end Vector3} {False true use_collision bool}], Returns: Vector3
 */
 func (o *Navigation) GetClosestPointToSegment(start gdnative.Vector3, end gdnative.Vector3, useCollision gdnative.Bool) gdnative.Vector3 {
-	//log.Println("Calling Navigation.GetClosestPointToSegment()")
+	// log.Println("Calling Navigation.GetClosestPointToSegment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -151,7 +151,7 @@ func (o *Navigation) GetClosestPointToSegment(start gdnative.Vector3, end gdnati
 	Args: [{ false start Vector3} { false end Vector3} {True true optimize bool}], Returns: PoolVector3Array
 */
 func (o *Navigation) GetSimplePath(start gdnative.Vector3, end gdnative.Vector3, optimize gdnative.Bool) gdnative.PoolVector3Array {
-	//log.Println("Calling Navigation.GetSimplePath()")
+	// log.Println("Calling Navigation.GetSimplePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -177,7 +177,7 @@ func (o *Navigation) GetSimplePath(start gdnative.Vector3, end gdnative.Vector3,
 	Args: [], Returns: Vector3
 */
 func (o *Navigation) GetUpVector() gdnative.Vector3 {
-	//log.Println("Calling Navigation.GetUpVector()")
+	// log.Println("Calling Navigation.GetUpVector()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *Navigation) GetUpVector() gdnative.Vector3 {
 	Args: [{ false mesh NavigationMesh} { false xform Transform} {Null true owner Object}], Returns: int
 */
 func (o *Navigation) NavmeshAdd(mesh NavigationMeshImplementer, xform gdnative.Transform, owner ObjectImplementer) gdnative.Int {
-	//log.Println("Calling Navigation.NavmeshAdd()")
+	// log.Println("Calling Navigation.NavmeshAdd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -226,7 +226,7 @@ func (o *Navigation) NavmeshAdd(mesh NavigationMeshImplementer, xform gdnative.T
 	Args: [{ false id int}], Returns: void
 */
 func (o *Navigation) NavmeshRemove(id gdnative.Int) {
-	//log.Println("Calling Navigation.NavmeshRemove()")
+	// log.Println("Calling Navigation.NavmeshRemove()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -247,7 +247,7 @@ func (o *Navigation) NavmeshRemove(id gdnative.Int) {
 	Args: [{ false id int} { false xform Transform}], Returns: void
 */
 func (o *Navigation) NavmeshSetTransform(id gdnative.Int, xform gdnative.Transform) {
-	//log.Println("Calling Navigation.NavmeshSetTransform()")
+	// log.Println("Calling Navigation.NavmeshSetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -269,7 +269,7 @@ func (o *Navigation) NavmeshSetTransform(id gdnative.Int, xform gdnative.Transfo
 	Args: [{ false up Vector3}], Returns: void
 */
 func (o *Navigation) SetUpVector(up gdnative.Vector3) {
-	//log.Println("Calling Navigation.SetUpVector()")
+	// log.Println("Calling Navigation.SetUpVector()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

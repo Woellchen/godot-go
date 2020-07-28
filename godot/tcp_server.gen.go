@@ -39,7 +39,7 @@ func (o *TCP_Server) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *TCP_Server) IsConnectionAvailable() gdnative.Bool {
-	//log.Println("Calling TCP_Server.IsConnectionAvailable()")
+	// log.Println("Calling TCP_Server.IsConnectionAvailable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *TCP_Server) IsConnectionAvailable() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TCP_Server) IsListening() gdnative.Bool {
-	//log.Println("Calling TCP_Server.IsListening()")
+	// log.Println("Calling TCP_Server.IsListening()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *TCP_Server) IsListening() gdnative.Bool {
 	Args: [{ false port int} {* true bind_address String}], Returns: enum.Error
 */
 func (o *TCP_Server) Listen(port gdnative.Int, bindAddress gdnative.String) gdnative.Error {
-	//log.Println("Calling TCP_Server.Listen()")
+	// log.Println("Calling TCP_Server.Listen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -110,7 +110,7 @@ func (o *TCP_Server) Listen(port gdnative.Int, bindAddress gdnative.String) gdna
 	Args: [], Returns: void
 */
 func (o *TCP_Server) Stop() {
-	//log.Println("Calling TCP_Server.Stop()")
+	// log.Println("Calling TCP_Server.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -130,7 +130,7 @@ func (o *TCP_Server) Stop() {
 	Args: [], Returns: StreamPeerTCP
 */
 func (o *TCP_Server) TakeConnection() StreamPeerTCPImplementer {
-	//log.Println("Calling TCP_Server.TakeConnection()")
+	// log.Println("Calling TCP_Server.TakeConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

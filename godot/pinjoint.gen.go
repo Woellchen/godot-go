@@ -48,7 +48,7 @@ func (o *PinJoint) BaseClass() string {
 	Args: [{ false param int}], Returns: float
 */
 func (o *PinJoint) GetParam(param gdnative.Int) gdnative.Real {
-	//log.Println("Calling PinJoint.GetParam()")
+	// log.Println("Calling PinJoint.GetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -72,7 +72,7 @@ func (o *PinJoint) GetParam(param gdnative.Int) gdnative.Real {
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *PinJoint) SetParam(param gdnative.Int, value gdnative.Real) {
-	//log.Println("Calling PinJoint.SetParam()")
+	// log.Println("Calling PinJoint.SetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

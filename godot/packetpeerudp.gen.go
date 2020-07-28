@@ -39,7 +39,7 @@ func (o *PacketPeerUDP) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *PacketPeerUDP) Close() {
-	//log.Println("Calling PacketPeerUDP.Close()")
+	// log.Println("Calling PacketPeerUDP.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *PacketPeerUDP) Close() {
 	Args: [{ false host String} { false port int}], Returns: enum.Error
 */
 func (o *PacketPeerUDP) ConnectToHost(host gdnative.String, port gdnative.Int) gdnative.Error {
-	//log.Println("Calling PacketPeerUDP.ConnectToHost()")
+	// log.Println("Calling PacketPeerUDP.ConnectToHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -84,7 +84,7 @@ func (o *PacketPeerUDP) ConnectToHost(host gdnative.String, port gdnative.Int) g
 	Args: [], Returns: String
 */
 func (o *PacketPeerUDP) GetPacketIp() gdnative.String {
-	//log.Println("Calling PacketPeerUDP.GetPacketIp()")
+	// log.Println("Calling PacketPeerUDP.GetPacketIp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -107,7 +107,7 @@ func (o *PacketPeerUDP) GetPacketIp() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *PacketPeerUDP) GetPacketPort() gdnative.Int {
-	//log.Println("Calling PacketPeerUDP.GetPacketPort()")
+	// log.Println("Calling PacketPeerUDP.GetPacketPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -130,7 +130,7 @@ func (o *PacketPeerUDP) GetPacketPort() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *PacketPeerUDP) IsConnectedToHost() gdnative.Bool {
-	//log.Println("Calling PacketPeerUDP.IsConnectedToHost()")
+	// log.Println("Calling PacketPeerUDP.IsConnectedToHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -153,7 +153,7 @@ func (o *PacketPeerUDP) IsConnectedToHost() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *PacketPeerUDP) IsListening() gdnative.Bool {
-	//log.Println("Calling PacketPeerUDP.IsListening()")
+	// log.Println("Calling PacketPeerUDP.IsListening()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -176,7 +176,7 @@ func (o *PacketPeerUDP) IsListening() gdnative.Bool {
 	Args: [{ false multicast_address String} { false interface_name String}], Returns: enum.Error
 */
 func (o *PacketPeerUDP) JoinMulticastGroup(multicastAddress gdnative.String, interfaceName gdnative.String) gdnative.Error {
-	//log.Println("Calling PacketPeerUDP.JoinMulticastGroup()")
+	// log.Println("Calling PacketPeerUDP.JoinMulticastGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -201,7 +201,7 @@ func (o *PacketPeerUDP) JoinMulticastGroup(multicastAddress gdnative.String, int
 	Args: [{ false multicast_address String} { false interface_name String}], Returns: enum.Error
 */
 func (o *PacketPeerUDP) LeaveMulticastGroup(multicastAddress gdnative.String, interfaceName gdnative.String) gdnative.Error {
-	//log.Println("Calling PacketPeerUDP.LeaveMulticastGroup()")
+	// log.Println("Calling PacketPeerUDP.LeaveMulticastGroup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -226,7 +226,7 @@ func (o *PacketPeerUDP) LeaveMulticastGroup(multicastAddress gdnative.String, in
 	Args: [{ false port int} {* true bind_address String} {65536 true recv_buf_size int}], Returns: enum.Error
 */
 func (o *PacketPeerUDP) Listen(port gdnative.Int, bindAddress gdnative.String, recvBufSize gdnative.Int) gdnative.Error {
-	//log.Println("Calling PacketPeerUDP.Listen()")
+	// log.Println("Calling PacketPeerUDP.Listen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -252,7 +252,7 @@ func (o *PacketPeerUDP) Listen(port gdnative.Int, bindAddress gdnative.String, r
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *PacketPeerUDP) SetBroadcastEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling PacketPeerUDP.SetBroadcastEnabled()")
+	// log.Println("Calling PacketPeerUDP.SetBroadcastEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -273,7 +273,7 @@ func (o *PacketPeerUDP) SetBroadcastEnabled(enabled gdnative.Bool) {
 	Args: [{ false host String} { false port int}], Returns: enum.Error
 */
 func (o *PacketPeerUDP) SetDestAddress(host gdnative.String, port gdnative.Int) gdnative.Error {
-	//log.Println("Calling PacketPeerUDP.SetDestAddress()")
+	// log.Println("Calling PacketPeerUDP.SetDestAddress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -298,7 +298,7 @@ func (o *PacketPeerUDP) SetDestAddress(host gdnative.String, port gdnative.Int) 
 	Args: [], Returns: enum.Error
 */
 func (o *PacketPeerUDP) Wait() gdnative.Error {
-	//log.Println("Calling PacketPeerUDP.Wait()")
+	// log.Println("Calling PacketPeerUDP.Wait()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

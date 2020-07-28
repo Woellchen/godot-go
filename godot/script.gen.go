@@ -39,7 +39,7 @@ func (o *Script) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *Script) CanInstance() gdnative.Bool {
-	//log.Println("Calling Script.CanInstance()")
+	// log.Println("Calling Script.CanInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Script) CanInstance() gdnative.Bool {
 	Args: [], Returns: Script
 */
 func (o *Script) GetBaseScript() ScriptImplementer {
-	//log.Println("Calling Script.GetBaseScript()")
+	// log.Println("Calling Script.GetBaseScript()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *Script) GetBaseScript() ScriptImplementer {
 	Args: [], Returns: String
 */
 func (o *Script) GetInstanceBaseType() gdnative.String {
-	//log.Println("Calling Script.GetInstanceBaseType()")
+	// log.Println("Calling Script.GetInstanceBaseType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *Script) GetInstanceBaseType() gdnative.String {
 	Args: [{ false property String}], Returns: Variant
 */
 func (o *Script) GetPropertyDefaultValue(property gdnative.String) gdnative.Variant {
-	//log.Println("Calling Script.GetPropertyDefaultValue()")
+	// log.Println("Calling Script.GetPropertyDefaultValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +146,7 @@ func (o *Script) GetPropertyDefaultValue(property gdnative.String) gdnative.Vari
 	Args: [], Returns: Dictionary
 */
 func (o *Script) GetScriptConstantMap() gdnative.Dictionary {
-	//log.Println("Calling Script.GetScriptConstantMap()")
+	// log.Println("Calling Script.GetScriptConstantMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -169,7 +169,7 @@ func (o *Script) GetScriptConstantMap() gdnative.Dictionary {
 	Args: [], Returns: Array
 */
 func (o *Script) GetScriptMethodList() gdnative.Array {
-	//log.Println("Calling Script.GetScriptMethodList()")
+	// log.Println("Calling Script.GetScriptMethodList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -192,7 +192,7 @@ func (o *Script) GetScriptMethodList() gdnative.Array {
 	Args: [], Returns: Array
 */
 func (o *Script) GetScriptPropertyList() gdnative.Array {
-	//log.Println("Calling Script.GetScriptPropertyList()")
+	// log.Println("Calling Script.GetScriptPropertyList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -215,7 +215,7 @@ func (o *Script) GetScriptPropertyList() gdnative.Array {
 	Args: [], Returns: Array
 */
 func (o *Script) GetScriptSignalList() gdnative.Array {
-	//log.Println("Calling Script.GetScriptSignalList()")
+	// log.Println("Calling Script.GetScriptSignalList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -238,7 +238,7 @@ func (o *Script) GetScriptSignalList() gdnative.Array {
 	Args: [], Returns: String
 */
 func (o *Script) GetSourceCode() gdnative.String {
-	//log.Println("Calling Script.GetSourceCode()")
+	// log.Println("Calling Script.GetSourceCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -261,7 +261,7 @@ func (o *Script) GetSourceCode() gdnative.String {
 	Args: [{ false signal_name String}], Returns: bool
 */
 func (o *Script) HasScriptSignal(signalName gdnative.String) gdnative.Bool {
-	//log.Println("Calling Script.HasScriptSignal()")
+	// log.Println("Calling Script.HasScriptSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -285,7 +285,7 @@ func (o *Script) HasScriptSignal(signalName gdnative.String) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Script) HasSourceCode() gdnative.Bool {
-	//log.Println("Calling Script.HasSourceCode()")
+	// log.Println("Calling Script.HasSourceCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -308,7 +308,7 @@ func (o *Script) HasSourceCode() gdnative.Bool {
 	Args: [{ false base_object Object}], Returns: bool
 */
 func (o *Script) InstanceHas(baseObject ObjectImplementer) gdnative.Bool {
-	//log.Println("Calling Script.InstanceHas()")
+	// log.Println("Calling Script.InstanceHas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -332,7 +332,7 @@ func (o *Script) InstanceHas(baseObject ObjectImplementer) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Script) IsTool() gdnative.Bool {
-	//log.Println("Calling Script.IsTool()")
+	// log.Println("Calling Script.IsTool()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -355,7 +355,7 @@ func (o *Script) IsTool() gdnative.Bool {
 	Args: [{False true keep_state bool}], Returns: enum.Error
 */
 func (o *Script) Reload(keepState gdnative.Bool) gdnative.Error {
-	//log.Println("Calling Script.Reload()")
+	// log.Println("Calling Script.Reload()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -379,7 +379,7 @@ func (o *Script) Reload(keepState gdnative.Bool) gdnative.Error {
 	Args: [{ false source String}], Returns: void
 */
 func (o *Script) SetSourceCode(source gdnative.String) {
-	//log.Println("Calling Script.SetSourceCode()")
+	// log.Println("Calling Script.SetSourceCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

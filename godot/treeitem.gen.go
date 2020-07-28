@@ -1,6 +1,8 @@
 package godot
 
 import (
+	"reflect"
+
 	"github.com/Woellchen/godot-go/gdnative"
 )
 
@@ -59,7 +61,7 @@ func (o *TreeItem) BaseClass() string {
 	Args: [{ false column int} { false button Texture} {-1 true button_idx int} {False true disabled bool} { true tooltip String}], Returns: void
 */
 func (o *TreeItem) AddButton(column gdnative.Int, button TextureImplementer, buttonIdx gdnative.Int, disabled gdnative.Bool, tooltip gdnative.String) {
-	//log.Println("Calling TreeItem.AddButton()")
+	// log.Println("Calling TreeItem.AddButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -83,15 +85,15 @@ func (o *TreeItem) AddButton(column gdnative.Int, button TextureImplementer, but
         Calls the [code]method[/code] on the actual TreeItem and its children recursively. Pass parameters as a comma separated list.
 	Args: [{ false method String}], Returns: Variant
 */
-func (o *TreeItem) CallRecursive(method gdnative.String, args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling TreeItem.CallRecursive()")
+func (o *TreeItem) CallRecursive(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling TreeItem.CallRecursive()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 1+len(args), 1+len(args))
-	ptrArguments[0] = gdnative.NewPointerFromString(method)
+	arguments := make([]gdnative.Variant, 1+len(args), 1+len(args))
+	arguments[0] = GoTypeToVariant(reflect.ValueOf(method))
 
 	for i, arg := range args {
-		ptrArguments[i+1] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+1] = arg
 	}
 
 	// Get the method bind
@@ -99,12 +101,9 @@ func (o *TreeItem) CallRecursive(method gdnative.String, args ...gdnative.Varian
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -112,7 +111,7 @@ func (o *TreeItem) CallRecursive(method gdnative.String, args ...gdnative.Varian
 	Args: [{ false column int}], Returns: void
 */
 func (o *TreeItem) ClearCustomBgColor(column gdnative.Int) {
-	//log.Println("Calling TreeItem.ClearCustomBgColor()")
+	// log.Println("Calling TreeItem.ClearCustomBgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -133,7 +132,7 @@ func (o *TreeItem) ClearCustomBgColor(column gdnative.Int) {
 	Args: [{ false column int}], Returns: void
 */
 func (o *TreeItem) ClearCustomColor(column gdnative.Int) {
-	//log.Println("Calling TreeItem.ClearCustomColor()")
+	// log.Println("Calling TreeItem.ClearCustomColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -154,7 +153,7 @@ func (o *TreeItem) ClearCustomColor(column gdnative.Int) {
 	Args: [{ false column int}], Returns: void
 */
 func (o *TreeItem) Deselect(column gdnative.Int) {
-	//log.Println("Calling TreeItem.Deselect()")
+	// log.Println("Calling TreeItem.Deselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +174,7 @@ func (o *TreeItem) Deselect(column gdnative.Int) {
 	Args: [{ false column int} { false button_idx int}], Returns: void
 */
 func (o *TreeItem) EraseButton(column gdnative.Int, buttonIdx gdnative.Int) {
-	//log.Println("Calling TreeItem.EraseButton()")
+	// log.Println("Calling TreeItem.EraseButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -197,7 +196,7 @@ func (o *TreeItem) EraseButton(column gdnative.Int, buttonIdx gdnative.Int) {
 	Args: [{ false column int} { false button_idx int}], Returns: Texture
 */
 func (o *TreeItem) GetButton(column gdnative.Int, buttonIdx gdnative.Int) TextureImplementer {
-	//log.Println("Calling TreeItem.GetButton()")
+	// log.Println("Calling TreeItem.GetButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -236,7 +235,7 @@ func (o *TreeItem) GetButton(column gdnative.Int, buttonIdx gdnative.Int) Textur
 	Args: [{ false column int}], Returns: int
 */
 func (o *TreeItem) GetButtonCount(column gdnative.Int) gdnative.Int {
-	//log.Println("Calling TreeItem.GetButtonCount()")
+	// log.Println("Calling TreeItem.GetButtonCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -260,7 +259,7 @@ func (o *TreeItem) GetButtonCount(column gdnative.Int) gdnative.Int {
 	Args: [{ false column int} { false button_idx int}], Returns: String
 */
 func (o *TreeItem) GetButtonTooltip(column gdnative.Int, buttonIdx gdnative.Int) gdnative.String {
-	//log.Println("Calling TreeItem.GetButtonTooltip()")
+	// log.Println("Calling TreeItem.GetButtonTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -285,7 +284,7 @@ func (o *TreeItem) GetButtonTooltip(column gdnative.Int, buttonIdx gdnative.Int)
 	Args: [{ false column int}], Returns: enum.TreeItem::TreeCellMode
 */
 func (o *TreeItem) GetCellMode(column gdnative.Int) TreeItemTreeCellMode {
-	//log.Println("Calling TreeItem.GetCellMode()")
+	// log.Println("Calling TreeItem.GetCellMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -309,7 +308,7 @@ func (o *TreeItem) GetCellMode(column gdnative.Int) TreeItemTreeCellMode {
 	Args: [], Returns: TreeItem
 */
 func (o *TreeItem) GetChildren() TreeItemImplementer {
-	//log.Println("Calling TreeItem.GetChildren()")
+	// log.Println("Calling TreeItem.GetChildren()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -346,7 +345,7 @@ func (o *TreeItem) GetChildren() TreeItemImplementer {
 	Args: [{ false column int}], Returns: Color
 */
 func (o *TreeItem) GetCustomBgColor(column gdnative.Int) gdnative.Color {
-	//log.Println("Calling TreeItem.GetCustomBgColor()")
+	// log.Println("Calling TreeItem.GetCustomBgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +369,7 @@ func (o *TreeItem) GetCustomBgColor(column gdnative.Int) gdnative.Color {
 	Args: [{ false column int}], Returns: Color
 */
 func (o *TreeItem) GetCustomColor(column gdnative.Int) gdnative.Color {
-	//log.Println("Calling TreeItem.GetCustomColor()")
+	// log.Println("Calling TreeItem.GetCustomColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -394,7 +393,7 @@ func (o *TreeItem) GetCustomColor(column gdnative.Int) gdnative.Color {
 	Args: [], Returns: int
 */
 func (o *TreeItem) GetCustomMinimumHeight() gdnative.Int {
-	//log.Println("Calling TreeItem.GetCustomMinimumHeight()")
+	// log.Println("Calling TreeItem.GetCustomMinimumHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -417,7 +416,7 @@ func (o *TreeItem) GetCustomMinimumHeight() gdnative.Int {
 	Args: [{ false column int}], Returns: bool
 */
 func (o *TreeItem) GetExpandRight(column gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.GetExpandRight()")
+	// log.Println("Calling TreeItem.GetExpandRight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -441,7 +440,7 @@ func (o *TreeItem) GetExpandRight(column gdnative.Int) gdnative.Bool {
 	Args: [{ false column int}], Returns: Texture
 */
 func (o *TreeItem) GetIcon(column gdnative.Int) TextureImplementer {
-	//log.Println("Calling TreeItem.GetIcon()")
+	// log.Println("Calling TreeItem.GetIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -479,7 +478,7 @@ func (o *TreeItem) GetIcon(column gdnative.Int) TextureImplementer {
 	Args: [{ false column int}], Returns: int
 */
 func (o *TreeItem) GetIconMaxWidth(column gdnative.Int) gdnative.Int {
-	//log.Println("Calling TreeItem.GetIconMaxWidth()")
+	// log.Println("Calling TreeItem.GetIconMaxWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -503,7 +502,7 @@ func (o *TreeItem) GetIconMaxWidth(column gdnative.Int) gdnative.Int {
 	Args: [{ false column int}], Returns: Color
 */
 func (o *TreeItem) GetIconModulate(column gdnative.Int) gdnative.Color {
-	//log.Println("Calling TreeItem.GetIconModulate()")
+	// log.Println("Calling TreeItem.GetIconModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -527,7 +526,7 @@ func (o *TreeItem) GetIconModulate(column gdnative.Int) gdnative.Color {
 	Args: [{ false column int}], Returns: Rect2
 */
 func (o *TreeItem) GetIconRegion(column gdnative.Int) gdnative.Rect2 {
-	//log.Println("Calling TreeItem.GetIconRegion()")
+	// log.Println("Calling TreeItem.GetIconRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -551,7 +550,7 @@ func (o *TreeItem) GetIconRegion(column gdnative.Int) gdnative.Rect2 {
 	Args: [{ false column int}], Returns: Variant
 */
 func (o *TreeItem) GetMetadata(column gdnative.Int) gdnative.Variant {
-	//log.Println("Calling TreeItem.GetMetadata()")
+	// log.Println("Calling TreeItem.GetMetadata()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -575,7 +574,7 @@ func (o *TreeItem) GetMetadata(column gdnative.Int) gdnative.Variant {
 	Args: [], Returns: TreeItem
 */
 func (o *TreeItem) GetNext() TreeItemImplementer {
-	//log.Println("Calling TreeItem.GetNext()")
+	// log.Println("Calling TreeItem.GetNext()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -612,7 +611,7 @@ func (o *TreeItem) GetNext() TreeItemImplementer {
 	Args: [{False true wrap bool}], Returns: TreeItem
 */
 func (o *TreeItem) GetNextVisible(wrap gdnative.Bool) TreeItemImplementer {
-	//log.Println("Calling TreeItem.GetNextVisible()")
+	// log.Println("Calling TreeItem.GetNextVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -650,7 +649,7 @@ func (o *TreeItem) GetNextVisible(wrap gdnative.Bool) TreeItemImplementer {
 	Args: [], Returns: TreeItem
 */
 func (o *TreeItem) GetParent() TreeItemImplementer {
-	//log.Println("Calling TreeItem.GetParent()")
+	// log.Println("Calling TreeItem.GetParent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -687,7 +686,7 @@ func (o *TreeItem) GetParent() TreeItemImplementer {
 	Args: [], Returns: TreeItem
 */
 func (o *TreeItem) GetPrev() TreeItemImplementer {
-	//log.Println("Calling TreeItem.GetPrev()")
+	// log.Println("Calling TreeItem.GetPrev()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -724,7 +723,7 @@ func (o *TreeItem) GetPrev() TreeItemImplementer {
 	Args: [{False true wrap bool}], Returns: TreeItem
 */
 func (o *TreeItem) GetPrevVisible(wrap gdnative.Bool) TreeItemImplementer {
-	//log.Println("Calling TreeItem.GetPrevVisible()")
+	// log.Println("Calling TreeItem.GetPrevVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -762,7 +761,7 @@ func (o *TreeItem) GetPrevVisible(wrap gdnative.Bool) TreeItemImplementer {
 	Args: [{ false column int}], Returns: float
 */
 func (o *TreeItem) GetRange(column gdnative.Int) gdnative.Real {
-	//log.Println("Calling TreeItem.GetRange()")
+	// log.Println("Calling TreeItem.GetRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -786,7 +785,7 @@ func (o *TreeItem) GetRange(column gdnative.Int) gdnative.Real {
 	Args: [{ false column int}], Returns: Dictionary
 */
 func (o *TreeItem) GetRangeConfig(column gdnative.Int) gdnative.Dictionary {
-	//log.Println("Calling TreeItem.GetRangeConfig()")
+	// log.Println("Calling TreeItem.GetRangeConfig()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -810,7 +809,7 @@ func (o *TreeItem) GetRangeConfig(column gdnative.Int) gdnative.Dictionary {
 	Args: [{ false column int}], Returns: String
 */
 func (o *TreeItem) GetSuffix(column gdnative.Int) gdnative.String {
-	//log.Println("Calling TreeItem.GetSuffix()")
+	// log.Println("Calling TreeItem.GetSuffix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -834,7 +833,7 @@ func (o *TreeItem) GetSuffix(column gdnative.Int) gdnative.String {
 	Args: [{ false column int}], Returns: String
 */
 func (o *TreeItem) GetText(column gdnative.Int) gdnative.String {
-	//log.Println("Calling TreeItem.GetText()")
+	// log.Println("Calling TreeItem.GetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -858,7 +857,7 @@ func (o *TreeItem) GetText(column gdnative.Int) gdnative.String {
 	Args: [{ false column int}], Returns: enum.TreeItem::TextAlign
 */
 func (o *TreeItem) GetTextAlign(column gdnative.Int) TreeItemTextAlign {
-	//log.Println("Calling TreeItem.GetTextAlign()")
+	// log.Println("Calling TreeItem.GetTextAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -882,7 +881,7 @@ func (o *TreeItem) GetTextAlign(column gdnative.Int) TreeItemTextAlign {
 	Args: [{ false column int}], Returns: String
 */
 func (o *TreeItem) GetTooltip(column gdnative.Int) gdnative.String {
-	//log.Println("Calling TreeItem.GetTooltip()")
+	// log.Println("Calling TreeItem.GetTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -906,7 +905,7 @@ func (o *TreeItem) GetTooltip(column gdnative.Int) gdnative.String {
 	Args: [{ false column int} { false button_idx int}], Returns: bool
 */
 func (o *TreeItem) IsButtonDisabled(column gdnative.Int, buttonIdx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.IsButtonDisabled()")
+	// log.Println("Calling TreeItem.IsButtonDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -931,7 +930,7 @@ func (o *TreeItem) IsButtonDisabled(column gdnative.Int, buttonIdx gdnative.Int)
 	Args: [{ false column int}], Returns: bool
 */
 func (o *TreeItem) IsChecked(column gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.IsChecked()")
+	// log.Println("Calling TreeItem.IsChecked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -955,7 +954,7 @@ func (o *TreeItem) IsChecked(column gdnative.Int) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TreeItem) IsCollapsed() gdnative.Bool {
-	//log.Println("Calling TreeItem.IsCollapsed()")
+	// log.Println("Calling TreeItem.IsCollapsed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -978,7 +977,7 @@ func (o *TreeItem) IsCollapsed() gdnative.Bool {
 	Args: [{ false column int}], Returns: bool
 */
 func (o *TreeItem) IsCustomSetAsButton(column gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.IsCustomSetAsButton()")
+	// log.Println("Calling TreeItem.IsCustomSetAsButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1002,7 +1001,7 @@ func (o *TreeItem) IsCustomSetAsButton(column gdnative.Int) gdnative.Bool {
 	Args: [{ false column int}], Returns: bool
 */
 func (o *TreeItem) IsEditable(column gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.IsEditable()")
+	// log.Println("Calling TreeItem.IsEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1026,7 +1025,7 @@ func (o *TreeItem) IsEditable(column gdnative.Int) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TreeItem) IsFoldingDisabled() gdnative.Bool {
-	//log.Println("Calling TreeItem.IsFoldingDisabled()")
+	// log.Println("Calling TreeItem.IsFoldingDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1049,7 +1048,7 @@ func (o *TreeItem) IsFoldingDisabled() gdnative.Bool {
 	Args: [{ false column int}], Returns: bool
 */
 func (o *TreeItem) IsSelectable(column gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.IsSelectable()")
+	// log.Println("Calling TreeItem.IsSelectable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1073,7 +1072,7 @@ func (o *TreeItem) IsSelectable(column gdnative.Int) gdnative.Bool {
 	Args: [{ false column int}], Returns: bool
 */
 func (o *TreeItem) IsSelected(column gdnative.Int) gdnative.Bool {
-	//log.Println("Calling TreeItem.IsSelected()")
+	// log.Println("Calling TreeItem.IsSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1097,7 +1096,7 @@ func (o *TreeItem) IsSelected(column gdnative.Int) gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *TreeItem) MoveToBottom() {
-	//log.Println("Calling TreeItem.MoveToBottom()")
+	// log.Println("Calling TreeItem.MoveToBottom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1117,7 +1116,7 @@ func (o *TreeItem) MoveToBottom() {
 	Args: [], Returns: void
 */
 func (o *TreeItem) MoveToTop() {
-	//log.Println("Calling TreeItem.MoveToTop()")
+	// log.Println("Calling TreeItem.MoveToTop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1137,7 +1136,7 @@ func (o *TreeItem) MoveToTop() {
 	Args: [{ false child Object}], Returns: void
 */
 func (o *TreeItem) RemoveChild(child ObjectImplementer) {
-	//log.Println("Calling TreeItem.RemoveChild()")
+	// log.Println("Calling TreeItem.RemoveChild()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1158,7 +1157,7 @@ func (o *TreeItem) RemoveChild(child ObjectImplementer) {
 	Args: [{ false column int}], Returns: void
 */
 func (o *TreeItem) Select(column gdnative.Int) {
-	//log.Println("Calling TreeItem.Select()")
+	// log.Println("Calling TreeItem.Select()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1179,7 +1178,7 @@ func (o *TreeItem) Select(column gdnative.Int) {
 	Args: [{ false column int} { false button_idx int} { false button Texture}], Returns: void
 */
 func (o *TreeItem) SetButton(column gdnative.Int, buttonIdx gdnative.Int, button TextureImplementer) {
-	//log.Println("Calling TreeItem.SetButton()")
+	// log.Println("Calling TreeItem.SetButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1202,7 +1201,7 @@ func (o *TreeItem) SetButton(column gdnative.Int, buttonIdx gdnative.Int, button
 	Args: [{ false column int} { false button_idx int} { false disabled bool}], Returns: void
 */
 func (o *TreeItem) SetButtonDisabled(column gdnative.Int, buttonIdx gdnative.Int, disabled gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetButtonDisabled()")
+	// log.Println("Calling TreeItem.SetButtonDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1225,7 +1224,7 @@ func (o *TreeItem) SetButtonDisabled(column gdnative.Int, buttonIdx gdnative.Int
 	Args: [{ false column int} { false mode int}], Returns: void
 */
 func (o *TreeItem) SetCellMode(column gdnative.Int, mode gdnative.Int) {
-	//log.Println("Calling TreeItem.SetCellMode()")
+	// log.Println("Calling TreeItem.SetCellMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1247,7 +1246,7 @@ func (o *TreeItem) SetCellMode(column gdnative.Int, mode gdnative.Int) {
 	Args: [{ false column int} { false checked bool}], Returns: void
 */
 func (o *TreeItem) SetChecked(column gdnative.Int, checked gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetChecked()")
+	// log.Println("Calling TreeItem.SetChecked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1269,7 +1268,7 @@ func (o *TreeItem) SetChecked(column gdnative.Int, checked gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *TreeItem) SetCollapsed(enable gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetCollapsed()")
+	// log.Println("Calling TreeItem.SetCollapsed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1290,7 +1289,7 @@ func (o *TreeItem) SetCollapsed(enable gdnative.Bool) {
 	Args: [{ false column int} { false enable bool}], Returns: void
 */
 func (o *TreeItem) SetCustomAsButton(column gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetCustomAsButton()")
+	// log.Println("Calling TreeItem.SetCustomAsButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1312,7 +1311,7 @@ func (o *TreeItem) SetCustomAsButton(column gdnative.Int, enable gdnative.Bool) 
 	Args: [{ false column int} { false color Color} {False true just_outline bool}], Returns: void
 */
 func (o *TreeItem) SetCustomBgColor(column gdnative.Int, color gdnative.Color, justOutline gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetCustomBgColor()")
+	// log.Println("Calling TreeItem.SetCustomBgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1335,7 +1334,7 @@ func (o *TreeItem) SetCustomBgColor(column gdnative.Int, color gdnative.Color, j
 	Args: [{ false column int} { false color Color}], Returns: void
 */
 func (o *TreeItem) SetCustomColor(column gdnative.Int, color gdnative.Color) {
-	//log.Println("Calling TreeItem.SetCustomColor()")
+	// log.Println("Calling TreeItem.SetCustomColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1357,7 +1356,7 @@ func (o *TreeItem) SetCustomColor(column gdnative.Int, color gdnative.Color) {
 	Args: [{ false column int} { false object Object} { false callback String}], Returns: void
 */
 func (o *TreeItem) SetCustomDraw(column gdnative.Int, object ObjectImplementer, callback gdnative.String) {
-	//log.Println("Calling TreeItem.SetCustomDraw()")
+	// log.Println("Calling TreeItem.SetCustomDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1380,7 +1379,7 @@ func (o *TreeItem) SetCustomDraw(column gdnative.Int, object ObjectImplementer, 
 	Args: [{ false height int}], Returns: void
 */
 func (o *TreeItem) SetCustomMinimumHeight(height gdnative.Int) {
-	//log.Println("Calling TreeItem.SetCustomMinimumHeight()")
+	// log.Println("Calling TreeItem.SetCustomMinimumHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1401,7 +1400,7 @@ func (o *TreeItem) SetCustomMinimumHeight(height gdnative.Int) {
 	Args: [{ false disable bool}], Returns: void
 */
 func (o *TreeItem) SetDisableFolding(disable gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetDisableFolding()")
+	// log.Println("Calling TreeItem.SetDisableFolding()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1422,7 +1421,7 @@ func (o *TreeItem) SetDisableFolding(disable gdnative.Bool) {
 	Args: [{ false column int} { false enabled bool}], Returns: void
 */
 func (o *TreeItem) SetEditable(column gdnative.Int, enabled gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetEditable()")
+	// log.Println("Calling TreeItem.SetEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1444,7 +1443,7 @@ func (o *TreeItem) SetEditable(column gdnative.Int, enabled gdnative.Bool) {
 	Args: [{ false column int} { false enable bool}], Returns: void
 */
 func (o *TreeItem) SetExpandRight(column gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetExpandRight()")
+	// log.Println("Calling TreeItem.SetExpandRight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1466,7 +1465,7 @@ func (o *TreeItem) SetExpandRight(column gdnative.Int, enable gdnative.Bool) {
 	Args: [{ false column int} { false texture Texture}], Returns: void
 */
 func (o *TreeItem) SetIcon(column gdnative.Int, texture TextureImplementer) {
-	//log.Println("Calling TreeItem.SetIcon()")
+	// log.Println("Calling TreeItem.SetIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1488,7 +1487,7 @@ func (o *TreeItem) SetIcon(column gdnative.Int, texture TextureImplementer) {
 	Args: [{ false column int} { false width int}], Returns: void
 */
 func (o *TreeItem) SetIconMaxWidth(column gdnative.Int, width gdnative.Int) {
-	//log.Println("Calling TreeItem.SetIconMaxWidth()")
+	// log.Println("Calling TreeItem.SetIconMaxWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1510,7 +1509,7 @@ func (o *TreeItem) SetIconMaxWidth(column gdnative.Int, width gdnative.Int) {
 	Args: [{ false column int} { false modulate Color}], Returns: void
 */
 func (o *TreeItem) SetIconModulate(column gdnative.Int, modulate gdnative.Color) {
-	//log.Println("Calling TreeItem.SetIconModulate()")
+	// log.Println("Calling TreeItem.SetIconModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1532,7 +1531,7 @@ func (o *TreeItem) SetIconModulate(column gdnative.Int, modulate gdnative.Color)
 	Args: [{ false column int} { false region Rect2}], Returns: void
 */
 func (o *TreeItem) SetIconRegion(column gdnative.Int, region gdnative.Rect2) {
-	//log.Println("Calling TreeItem.SetIconRegion()")
+	// log.Println("Calling TreeItem.SetIconRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1554,7 +1553,7 @@ func (o *TreeItem) SetIconRegion(column gdnative.Int, region gdnative.Rect2) {
 	Args: [{ false column int} { false meta Variant}], Returns: void
 */
 func (o *TreeItem) SetMetadata(column gdnative.Int, meta gdnative.Variant) {
-	//log.Println("Calling TreeItem.SetMetadata()")
+	// log.Println("Calling TreeItem.SetMetadata()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1576,7 +1575,7 @@ func (o *TreeItem) SetMetadata(column gdnative.Int, meta gdnative.Variant) {
 	Args: [{ false column int} { false value float}], Returns: void
 */
 func (o *TreeItem) SetRange(column gdnative.Int, value gdnative.Real) {
-	//log.Println("Calling TreeItem.SetRange()")
+	// log.Println("Calling TreeItem.SetRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1598,7 +1597,7 @@ func (o *TreeItem) SetRange(column gdnative.Int, value gdnative.Real) {
 	Args: [{ false column int} { false min float} { false max float} { false step float} {False true expr bool}], Returns: void
 */
 func (o *TreeItem) SetRangeConfig(column gdnative.Int, min gdnative.Real, max gdnative.Real, step gdnative.Real, expr gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetRangeConfig()")
+	// log.Println("Calling TreeItem.SetRangeConfig()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -1623,7 +1622,7 @@ func (o *TreeItem) SetRangeConfig(column gdnative.Int, min gdnative.Real, max gd
 	Args: [{ false column int} { false selectable bool}], Returns: void
 */
 func (o *TreeItem) SetSelectable(column gdnative.Int, selectable gdnative.Bool) {
-	//log.Println("Calling TreeItem.SetSelectable()")
+	// log.Println("Calling TreeItem.SetSelectable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1645,7 +1644,7 @@ func (o *TreeItem) SetSelectable(column gdnative.Int, selectable gdnative.Bool) 
 	Args: [{ false column int} { false text String}], Returns: void
 */
 func (o *TreeItem) SetSuffix(column gdnative.Int, text gdnative.String) {
-	//log.Println("Calling TreeItem.SetSuffix()")
+	// log.Println("Calling TreeItem.SetSuffix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1667,7 +1666,7 @@ func (o *TreeItem) SetSuffix(column gdnative.Int, text gdnative.String) {
 	Args: [{ false column int} { false text String}], Returns: void
 */
 func (o *TreeItem) SetText(column gdnative.Int, text gdnative.String) {
-	//log.Println("Calling TreeItem.SetText()")
+	// log.Println("Calling TreeItem.SetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1689,7 +1688,7 @@ func (o *TreeItem) SetText(column gdnative.Int, text gdnative.String) {
 	Args: [{ false column int} { false text_align int}], Returns: void
 */
 func (o *TreeItem) SetTextAlign(column gdnative.Int, textAlign gdnative.Int) {
-	//log.Println("Calling TreeItem.SetTextAlign()")
+	// log.Println("Calling TreeItem.SetTextAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1711,7 +1710,7 @@ func (o *TreeItem) SetTextAlign(column gdnative.Int, textAlign gdnative.Int) {
 	Args: [{ false column int} { false tooltip String}], Returns: void
 */
 func (o *TreeItem) SetTooltip(column gdnative.Int, tooltip gdnative.String) {
-	//log.Println("Calling TreeItem.SetTooltip()")
+	// log.Println("Calling TreeItem.SetTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1733,7 +1732,7 @@ func (o *TreeItem) SetTooltip(column gdnative.Int, tooltip gdnative.String) {
 type TreeItemImplementer interface {
 	ObjectImplementer
 	AddButton(column gdnative.Int, button TextureImplementer, buttonIdx gdnative.Int, disabled gdnative.Bool, tooltip gdnative.String)
-	CallRecursive(method gdnative.String, args ...gdnative.Variant) gdnative.Variant
+	CallRecursive(method gdnative.String, args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	ClearCustomBgColor(column gdnative.Int)
 	ClearCustomColor(column gdnative.Int)
 	Deselect(column gdnative.Int)

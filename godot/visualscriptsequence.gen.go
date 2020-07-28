@@ -39,7 +39,7 @@ func (o *VisualScriptSequence) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *VisualScriptSequence) GetSteps() gdnative.Int {
-	//log.Println("Calling VisualScriptSequence.GetSteps()")
+	// log.Println("Calling VisualScriptSequence.GetSteps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptSequence) GetSteps() gdnative.Int {
 	Args: [{ false steps int}], Returns: void
 */
 func (o *VisualScriptSequence) SetSteps(steps gdnative.Int) {
-	//log.Println("Calling VisualScriptSequence.SetSteps()")
+	// log.Println("Calling VisualScriptSequence.SetSteps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

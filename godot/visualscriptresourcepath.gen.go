@@ -39,7 +39,7 @@ func (o *VisualScriptResourcePath) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptResourcePath) GetResourcePath() gdnative.String {
-	//log.Println("Calling VisualScriptResourcePath.GetResourcePath()")
+	// log.Println("Calling VisualScriptResourcePath.GetResourcePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptResourcePath) GetResourcePath() gdnative.String {
 	Args: [{ false path String}], Returns: void
 */
 func (o *VisualScriptResourcePath) SetResourcePath(path gdnative.String) {
-	//log.Println("Calling VisualScriptResourcePath.SetResourcePath()")
+	// log.Println("Calling VisualScriptResourcePath.SetResourcePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

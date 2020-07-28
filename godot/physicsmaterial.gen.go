@@ -39,7 +39,7 @@ func (o *PhysicsMaterial) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *PhysicsMaterial) GetBounce() gdnative.Real {
-	//log.Println("Calling PhysicsMaterial.GetBounce()")
+	// log.Println("Calling PhysicsMaterial.GetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PhysicsMaterial) GetBounce() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PhysicsMaterial) GetFriction() gdnative.Real {
-	//log.Println("Calling PhysicsMaterial.GetFriction()")
+	// log.Println("Calling PhysicsMaterial.GetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PhysicsMaterial) GetFriction() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *PhysicsMaterial) IsAbsorbent() gdnative.Bool {
-	//log.Println("Calling PhysicsMaterial.IsAbsorbent()")
+	// log.Println("Calling PhysicsMaterial.IsAbsorbent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *PhysicsMaterial) IsAbsorbent() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *PhysicsMaterial) IsRough() gdnative.Bool {
-	//log.Println("Calling PhysicsMaterial.IsRough()")
+	// log.Println("Calling PhysicsMaterial.IsRough()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *PhysicsMaterial) IsRough() gdnative.Bool {
 	Args: [{ false absorbent bool}], Returns: void
 */
 func (o *PhysicsMaterial) SetAbsorbent(absorbent gdnative.Bool) {
-	//log.Println("Calling PhysicsMaterial.SetAbsorbent()")
+	// log.Println("Calling PhysicsMaterial.SetAbsorbent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *PhysicsMaterial) SetAbsorbent(absorbent gdnative.Bool) {
 	Args: [{ false bounce float}], Returns: void
 */
 func (o *PhysicsMaterial) SetBounce(bounce gdnative.Real) {
-	//log.Println("Calling PhysicsMaterial.SetBounce()")
+	// log.Println("Calling PhysicsMaterial.SetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *PhysicsMaterial) SetBounce(bounce gdnative.Real) {
 	Args: [{ false friction float}], Returns: void
 */
 func (o *PhysicsMaterial) SetFriction(friction gdnative.Real) {
-	//log.Println("Calling PhysicsMaterial.SetFriction()")
+	// log.Println("Calling PhysicsMaterial.SetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *PhysicsMaterial) SetFriction(friction gdnative.Real) {
 	Args: [{ false rough bool}], Returns: void
 */
 func (o *PhysicsMaterial) SetRough(rough gdnative.Bool) {
-	//log.Println("Calling PhysicsMaterial.SetRough()")
+	// log.Println("Calling PhysicsMaterial.SetRough()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

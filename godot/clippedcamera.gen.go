@@ -47,7 +47,7 @@ func (o *ClippedCamera) BaseClass() string {
 	Args: [{ false node Object}], Returns: void
 */
 func (o *ClippedCamera) AddException(node ObjectImplementer) {
-	//log.Println("Calling ClippedCamera.AddException()")
+	// log.Println("Calling ClippedCamera.AddException()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -68,7 +68,7 @@ func (o *ClippedCamera) AddException(node ObjectImplementer) {
 	Args: [{ false rid RID}], Returns: void
 */
 func (o *ClippedCamera) AddExceptionRid(rid gdnative.Rid) {
-	//log.Println("Calling ClippedCamera.AddExceptionRid()")
+	// log.Println("Calling ClippedCamera.AddExceptionRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -89,7 +89,7 @@ func (o *ClippedCamera) AddExceptionRid(rid gdnative.Rid) {
 	Args: [], Returns: void
 */
 func (o *ClippedCamera) ClearExceptions() {
-	//log.Println("Calling ClippedCamera.ClearExceptions()")
+	// log.Println("Calling ClippedCamera.ClearExceptions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *ClippedCamera) ClearExceptions() {
 	Args: [], Returns: float
 */
 func (o *ClippedCamera) GetClipOffset() gdnative.Real {
-	//log.Println("Calling ClippedCamera.GetClipOffset()")
+	// log.Println("Calling ClippedCamera.GetClipOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -132,7 +132,7 @@ func (o *ClippedCamera) GetClipOffset() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *ClippedCamera) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling ClippedCamera.GetCollisionMask()")
+	// log.Println("Calling ClippedCamera.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -155,7 +155,7 @@ func (o *ClippedCamera) GetCollisionMask() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *ClippedCamera) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling ClippedCamera.GetCollisionMaskBit()")
+	// log.Println("Calling ClippedCamera.GetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *ClippedCamera) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *ClippedCamera) GetMargin() gdnative.Real {
-	//log.Println("Calling ClippedCamera.GetMargin()")
+	// log.Println("Calling ClippedCamera.GetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -202,7 +202,7 @@ func (o *ClippedCamera) GetMargin() gdnative.Real {
 	Args: [], Returns: enum.ClippedCamera::ProcessMode
 */
 func (o *ClippedCamera) GetProcessMode() ClippedCameraProcessMode {
-	//log.Println("Calling ClippedCamera.GetProcessMode()")
+	// log.Println("Calling ClippedCamera.GetProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -225,7 +225,7 @@ func (o *ClippedCamera) GetProcessMode() ClippedCameraProcessMode {
 	Args: [], Returns: bool
 */
 func (o *ClippedCamera) IsClipToAreasEnabled() gdnative.Bool {
-	//log.Println("Calling ClippedCamera.IsClipToAreasEnabled()")
+	// log.Println("Calling ClippedCamera.IsClipToAreasEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -248,7 +248,7 @@ func (o *ClippedCamera) IsClipToAreasEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ClippedCamera) IsClipToBodiesEnabled() gdnative.Bool {
-	//log.Println("Calling ClippedCamera.IsClipToBodiesEnabled()")
+	// log.Println("Calling ClippedCamera.IsClipToBodiesEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -271,7 +271,7 @@ func (o *ClippedCamera) IsClipToBodiesEnabled() gdnative.Bool {
 	Args: [{ false node Object}], Returns: void
 */
 func (o *ClippedCamera) RemoveException(node ObjectImplementer) {
-	//log.Println("Calling ClippedCamera.RemoveException()")
+	// log.Println("Calling ClippedCamera.RemoveException()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -292,7 +292,7 @@ func (o *ClippedCamera) RemoveException(node ObjectImplementer) {
 	Args: [{ false rid RID}], Returns: void
 */
 func (o *ClippedCamera) RemoveExceptionRid(rid gdnative.Rid) {
-	//log.Println("Calling ClippedCamera.RemoveExceptionRid()")
+	// log.Println("Calling ClippedCamera.RemoveExceptionRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -313,7 +313,7 @@ func (o *ClippedCamera) RemoveExceptionRid(rid gdnative.Rid) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ClippedCamera) SetClipToAreas(enable gdnative.Bool) {
-	//log.Println("Calling ClippedCamera.SetClipToAreas()")
+	// log.Println("Calling ClippedCamera.SetClipToAreas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -334,7 +334,7 @@ func (o *ClippedCamera) SetClipToAreas(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ClippedCamera) SetClipToBodies(enable gdnative.Bool) {
-	//log.Println("Calling ClippedCamera.SetClipToBodies()")
+	// log.Println("Calling ClippedCamera.SetClipToBodies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -355,7 +355,7 @@ func (o *ClippedCamera) SetClipToBodies(enable gdnative.Bool) {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *ClippedCamera) SetCollisionMask(mask gdnative.Int) {
-	//log.Println("Calling ClippedCamera.SetCollisionMask()")
+	// log.Println("Calling ClippedCamera.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -376,7 +376,7 @@ func (o *ClippedCamera) SetCollisionMask(mask gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *ClippedCamera) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling ClippedCamera.SetCollisionMaskBit()")
+	// log.Println("Calling ClippedCamera.SetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -398,7 +398,7 @@ func (o *ClippedCamera) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Boo
 	Args: [{ false margin float}], Returns: void
 */
 func (o *ClippedCamera) SetMargin(margin gdnative.Real) {
-	//log.Println("Calling ClippedCamera.SetMargin()")
+	// log.Println("Calling ClippedCamera.SetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -419,7 +419,7 @@ func (o *ClippedCamera) SetMargin(margin gdnative.Real) {
 	Args: [{ false process_mode int}], Returns: void
 */
 func (o *ClippedCamera) SetProcessMode(processMode gdnative.Int) {
-	//log.Println("Calling ClippedCamera.SetProcessMode()")
+	// log.Println("Calling ClippedCamera.SetProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

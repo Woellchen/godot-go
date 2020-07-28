@@ -39,7 +39,7 @@ func (o *VisualScriptGlobalConstant) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *VisualScriptGlobalConstant) GetGlobalConstant() gdnative.Int {
-	//log.Println("Calling VisualScriptGlobalConstant.GetGlobalConstant()")
+	// log.Println("Calling VisualScriptGlobalConstant.GetGlobalConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptGlobalConstant) GetGlobalConstant() gdnative.Int {
 	Args: [{ false index int}], Returns: void
 */
 func (o *VisualScriptGlobalConstant) SetGlobalConstant(index gdnative.Int) {
-	//log.Println("Calling VisualScriptGlobalConstant.SetGlobalConstant()")
+	// log.Println("Calling VisualScriptGlobalConstant.SetGlobalConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

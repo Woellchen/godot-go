@@ -39,7 +39,7 @@ func (o *AudioStreamGenerator) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioStreamGenerator) GetBufferLength() gdnative.Real {
-	//log.Println("Calling AudioStreamGenerator.GetBufferLength()")
+	// log.Println("Calling AudioStreamGenerator.GetBufferLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioStreamGenerator) GetBufferLength() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioStreamGenerator) GetMixRate() gdnative.Real {
-	//log.Println("Calling AudioStreamGenerator.GetMixRate()")
+	// log.Println("Calling AudioStreamGenerator.GetMixRate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioStreamGenerator) GetMixRate() gdnative.Real {
 	Args: [{ false seconds float}], Returns: void
 */
 func (o *AudioStreamGenerator) SetBufferLength(seconds gdnative.Real) {
-	//log.Println("Calling AudioStreamGenerator.SetBufferLength()")
+	// log.Println("Calling AudioStreamGenerator.SetBufferLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *AudioStreamGenerator) SetBufferLength(seconds gdnative.Real) {
 	Args: [{ false hz float}], Returns: void
 */
 func (o *AudioStreamGenerator) SetMixRate(hz gdnative.Real) {
-	//log.Println("Calling AudioStreamGenerator.SetMixRate()")
+	// log.Println("Calling AudioStreamGenerator.SetMixRate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

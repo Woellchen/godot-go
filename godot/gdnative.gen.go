@@ -39,7 +39,7 @@ func (o *GDNative) BaseClass() string {
 	Args: [{ false calling_type String} { false procedure_name String} { false arguments Array}], Returns: Variant
 */
 func (o *GDNative) CallNative(callingType gdnative.String, procedureName gdnative.String, arguments gdnative.Array) gdnative.Variant {
-	//log.Println("Calling GDNative.CallNative()")
+	// log.Println("Calling GDNative.CallNative()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -65,7 +65,7 @@ func (o *GDNative) CallNative(callingType gdnative.String, procedureName gdnativ
 	Args: [], Returns: GDNativeLibrary
 */
 func (o *GDNative) GetLibrary() GDNativeLibraryImplementer {
-	//log.Println("Calling GDNative.GetLibrary()")
+	// log.Println("Calling GDNative.GetLibrary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -102,7 +102,7 @@ func (o *GDNative) GetLibrary() GDNativeLibraryImplementer {
 	Args: [], Returns: bool
 */
 func (o *GDNative) Initialize() gdnative.Bool {
-	//log.Println("Calling GDNative.Initialize()")
+	// log.Println("Calling GDNative.Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -125,7 +125,7 @@ func (o *GDNative) Initialize() gdnative.Bool {
 	Args: [{ false library GDNativeLibrary}], Returns: void
 */
 func (o *GDNative) SetLibrary(library GDNativeLibraryImplementer) {
-	//log.Println("Calling GDNative.SetLibrary()")
+	// log.Println("Calling GDNative.SetLibrary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +146,7 @@ func (o *GDNative) SetLibrary(library GDNativeLibraryImplementer) {
 	Args: [], Returns: bool
 */
 func (o *GDNative) Terminate() gdnative.Bool {
-	//log.Println("Calling GDNative.Terminate()")
+	// log.Println("Calling GDNative.Terminate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

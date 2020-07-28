@@ -39,7 +39,7 @@ func (o *Physics2DTestMotionResult) BaseClass() string {
 	Args: [], Returns: Object
 */
 func (o *Physics2DTestMotionResult) GetCollider() ObjectImplementer {
-	//log.Println("Calling Physics2DTestMotionResult.GetCollider()")
+	// log.Println("Calling Physics2DTestMotionResult.GetCollider()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *Physics2DTestMotionResult) GetCollider() ObjectImplementer {
 	Args: [], Returns: int
 */
 func (o *Physics2DTestMotionResult) GetColliderId() gdnative.Int {
-	//log.Println("Calling Physics2DTestMotionResult.GetColliderId()")
+	// log.Println("Calling Physics2DTestMotionResult.GetColliderId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *Physics2DTestMotionResult) GetColliderId() gdnative.Int {
 	Args: [], Returns: RID
 */
 func (o *Physics2DTestMotionResult) GetColliderRid() gdnative.Rid {
-	//log.Println("Calling Physics2DTestMotionResult.GetColliderRid()")
+	// log.Println("Calling Physics2DTestMotionResult.GetColliderRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *Physics2DTestMotionResult) GetColliderRid() gdnative.Rid {
 	Args: [], Returns: int
 */
 func (o *Physics2DTestMotionResult) GetColliderShape() gdnative.Int {
-	//log.Println("Calling Physics2DTestMotionResult.GetColliderShape()")
+	// log.Println("Calling Physics2DTestMotionResult.GetColliderShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *Physics2DTestMotionResult) GetColliderShape() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DTestMotionResult) GetColliderVelocity() gdnative.Vector2 {
-	//log.Println("Calling Physics2DTestMotionResult.GetColliderVelocity()")
+	// log.Println("Calling Physics2DTestMotionResult.GetColliderVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *Physics2DTestMotionResult) GetColliderVelocity() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DTestMotionResult) GetCollisionNormal() gdnative.Vector2 {
-	//log.Println("Calling Physics2DTestMotionResult.GetCollisionNormal()")
+	// log.Println("Calling Physics2DTestMotionResult.GetCollisionNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *Physics2DTestMotionResult) GetCollisionNormal() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DTestMotionResult) GetCollisionPoint() gdnative.Vector2 {
-	//log.Println("Calling Physics2DTestMotionResult.GetCollisionPoint()")
+	// log.Println("Calling Physics2DTestMotionResult.GetCollisionPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -214,7 +214,7 @@ func (o *Physics2DTestMotionResult) GetCollisionPoint() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DTestMotionResult) GetMotion() gdnative.Vector2 {
-	//log.Println("Calling Physics2DTestMotionResult.GetMotion()")
+	// log.Println("Calling Physics2DTestMotionResult.GetMotion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -237,7 +237,7 @@ func (o *Physics2DTestMotionResult) GetMotion() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DTestMotionResult) GetMotionRemainder() gdnative.Vector2 {
-	//log.Println("Calling Physics2DTestMotionResult.GetMotionRemainder()")
+	// log.Println("Calling Physics2DTestMotionResult.GetMotionRemainder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

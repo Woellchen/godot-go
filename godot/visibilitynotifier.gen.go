@@ -39,7 +39,7 @@ func (o *VisibilityNotifier) BaseClass() string {
 	Args: [], Returns: AABB
 */
 func (o *VisibilityNotifier) GetAabb() gdnative.Aabb {
-	//log.Println("Calling VisibilityNotifier.GetAabb()")
+	// log.Println("Calling VisibilityNotifier.GetAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisibilityNotifier) GetAabb() gdnative.Aabb {
 	Args: [], Returns: bool
 */
 func (o *VisibilityNotifier) IsOnScreen() gdnative.Bool {
-	//log.Println("Calling VisibilityNotifier.IsOnScreen()")
+	// log.Println("Calling VisibilityNotifier.IsOnScreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisibilityNotifier) IsOnScreen() gdnative.Bool {
 	Args: [{ false rect AABB}], Returns: void
 */
 func (o *VisibilityNotifier) SetAabb(rect gdnative.Aabb) {
-	//log.Println("Calling VisibilityNotifier.SetAabb()")
+	// log.Println("Calling VisibilityNotifier.SetAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

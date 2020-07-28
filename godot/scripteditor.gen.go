@@ -39,7 +39,7 @@ func (o *ScriptEditor) BaseClass() string {
 	Args: [{ false arg0 Object} { false arg1 String} { false arg2 PoolStringArray}], Returns: void
 */
 func (o *ScriptEditor) X_AddCallback(arg0 ObjectImplementer, arg1 gdnative.String, arg2 gdnative.PoolStringArray) {
-	//log.Println("Calling ScriptEditor.X_AddCallback()")
+	// log.Println("Calling ScriptEditor.X_AddCallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -62,7 +62,7 @@ func (o *ScriptEditor) X_AddCallback(arg0 ObjectImplementer, arg1 gdnative.Strin
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_AutosaveScripts() {
-	//log.Println("Calling ScriptEditor.X_AutosaveScripts()")
+	// log.Println("Calling ScriptEditor.X_AutosaveScripts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *ScriptEditor) X_AutosaveScripts() {
 	Args: [{ false arg0 bool} { false arg1 bool}], Returns: void
 */
 func (o *ScriptEditor) X_Breaked(arg0 gdnative.Bool, arg1 gdnative.Bool) {
-	//log.Println("Calling ScriptEditor.X_Breaked()")
+	// log.Println("Calling ScriptEditor.X_Breaked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -104,7 +104,7 @@ func (o *ScriptEditor) X_Breaked(arg0 gdnative.Bool, arg1 gdnative.Bool) {
 	Args: [{ false arg0 Reference}], Returns: void
 */
 func (o *ScriptEditor) X_ClearExecution(arg0 ReferenceImplementer) {
-	//log.Println("Calling ScriptEditor.X_ClearExecution()")
+	// log.Println("Calling ScriptEditor.X_ClearExecution()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *ScriptEditor) X_ClearExecution(arg0 ReferenceImplementer) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_CloseAllTabs() {
-	//log.Println("Calling ScriptEditor.X_CloseAllTabs()")
+	// log.Println("Calling ScriptEditor.X_CloseAllTabs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *ScriptEditor) X_CloseAllTabs() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_CloseCurrentTab() {
-	//log.Println("Calling ScriptEditor.X_CloseCurrentTab()")
+	// log.Println("Calling ScriptEditor.X_CloseCurrentTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *ScriptEditor) X_CloseCurrentTab() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_CloseDiscardCurrentTab(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_CloseDiscardCurrentTab()")
+	// log.Println("Calling ScriptEditor.X_CloseDiscardCurrentTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -186,7 +186,7 @@ func (o *ScriptEditor) X_CloseDiscardCurrentTab(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_CloseDocsTab() {
-	//log.Println("Calling ScriptEditor.X_CloseDocsTab()")
+	// log.Println("Calling ScriptEditor.X_CloseDocsTab()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -206,7 +206,7 @@ func (o *ScriptEditor) X_CloseDocsTab() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_CloseOtherTabs() {
-	//log.Println("Calling ScriptEditor.X_CloseOtherTabs()")
+	// log.Println("Calling ScriptEditor.X_CloseOtherTabs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -226,7 +226,7 @@ func (o *ScriptEditor) X_CloseOtherTabs() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_CopyScriptPath() {
-	//log.Println("Calling ScriptEditor.X_CopyScriptPath()")
+	// log.Println("Calling ScriptEditor.X_CopyScriptPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -246,7 +246,7 @@ func (o *ScriptEditor) X_CopyScriptPath() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_EditorPause() {
-	//log.Println("Calling ScriptEditor.X_EditorPause()")
+	// log.Println("Calling ScriptEditor.X_EditorPause()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -266,7 +266,7 @@ func (o *ScriptEditor) X_EditorPause() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_EditorPlay() {
-	//log.Println("Calling ScriptEditor.X_EditorPlay()")
+	// log.Println("Calling ScriptEditor.X_EditorPlay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -286,7 +286,7 @@ func (o *ScriptEditor) X_EditorPlay() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_EditorSettingsChanged() {
-	//log.Println("Calling ScriptEditor.X_EditorSettingsChanged()")
+	// log.Println("Calling ScriptEditor.X_EditorSettingsChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -306,7 +306,7 @@ func (o *ScriptEditor) X_EditorSettingsChanged() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_EditorStop() {
-	//log.Println("Calling ScriptEditor.X_EditorStop()")
+	// log.Println("Calling ScriptEditor.X_EditorStop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -326,7 +326,7 @@ func (o *ScriptEditor) X_EditorStop() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_FileDialogAction(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_FileDialogAction()")
+	// log.Println("Calling ScriptEditor.X_FileDialogAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -347,7 +347,7 @@ func (o *ScriptEditor) X_FileDialogAction(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_FilterMethodsTextChanged(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_FilterMethodsTextChanged()")
+	// log.Println("Calling ScriptEditor.X_FilterMethodsTextChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -368,7 +368,7 @@ func (o *ScriptEditor) X_FilterMethodsTextChanged(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_FilterScriptsTextChanged(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_FilterScriptsTextChanged()")
+	// log.Println("Calling ScriptEditor.X_FilterScriptsTextChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -389,7 +389,7 @@ func (o *ScriptEditor) X_FilterScriptsTextChanged(arg0 gdnative.String) {
 	Args: [{ false arg0 String} { false arg1 Node}], Returns: String
 */
 func (o *ScriptEditor) X_GetDebugTooltip(arg0 gdnative.String, arg1 NodeImplementer) gdnative.String {
-	//log.Println("Calling ScriptEditor.X_GetDebugTooltip()")
+	// log.Println("Calling ScriptEditor.X_GetDebugTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -414,7 +414,7 @@ func (o *ScriptEditor) X_GetDebugTooltip(arg0 gdnative.String, arg1 NodeImplemen
 	Args: [{ false arg0 Reference} { false arg1 int}], Returns: void
 */
 func (o *ScriptEditor) X_GotoScriptLine(arg0 ReferenceImplementer, arg1 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_GotoScriptLine()")
+	// log.Println("Calling ScriptEditor.X_GotoScriptLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -436,7 +436,7 @@ func (o *ScriptEditor) X_GotoScriptLine(arg0 ReferenceImplementer, arg1 gdnative
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_GotoScriptLine2(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_GotoScriptLine2()")
+	// log.Println("Calling ScriptEditor.X_GotoScriptLine2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -457,7 +457,7 @@ func (o *ScriptEditor) X_GotoScriptLine2(arg0 gdnative.Int) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_HelpClassGoto(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_HelpClassGoto()")
+	// log.Println("Calling ScriptEditor.X_HelpClassGoto()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -478,7 +478,7 @@ func (o *ScriptEditor) X_HelpClassGoto(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_HelpClassOpen(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_HelpClassOpen()")
+	// log.Println("Calling ScriptEditor.X_HelpClassOpen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -499,7 +499,7 @@ func (o *ScriptEditor) X_HelpClassOpen(arg0 gdnative.String) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_HelpOverviewSelected(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_HelpOverviewSelected()")
+	// log.Println("Calling ScriptEditor.X_HelpOverviewSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -520,7 +520,7 @@ func (o *ScriptEditor) X_HelpOverviewSelected(arg0 gdnative.Int) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_HelpSearch(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_HelpSearch()")
+	// log.Println("Calling ScriptEditor.X_HelpSearch()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -541,7 +541,7 @@ func (o *ScriptEditor) X_HelpSearch(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_HistoryBack() {
-	//log.Println("Calling ScriptEditor.X_HistoryBack()")
+	// log.Println("Calling ScriptEditor.X_HistoryBack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -561,7 +561,7 @@ func (o *ScriptEditor) X_HistoryBack() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_HistoryForward() {
-	//log.Println("Calling ScriptEditor.X_HistoryForward()")
+	// log.Println("Calling ScriptEditor.X_HistoryForward()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -581,7 +581,7 @@ func (o *ScriptEditor) X_HistoryForward() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_LiveAutoReloadRunningScripts() {
-	//log.Println("Calling ScriptEditor.X_LiveAutoReloadRunningScripts()")
+	// log.Println("Calling ScriptEditor.X_LiveAutoReloadRunningScripts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -601,7 +601,7 @@ func (o *ScriptEditor) X_LiveAutoReloadRunningScripts() {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_MembersOverviewSelected(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_MembersOverviewSelected()")
+	// log.Println("Calling ScriptEditor.X_MembersOverviewSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -622,7 +622,7 @@ func (o *ScriptEditor) X_MembersOverviewSelected(arg0 gdnative.Int) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_MenuOption(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_MenuOption()")
+	// log.Println("Calling ScriptEditor.X_MenuOption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -643,7 +643,7 @@ func (o *ScriptEditor) X_MenuOption(arg0 gdnative.Int) {
 	Args: [{ false arg0 PoolStringArray}], Returns: void
 */
 func (o *ScriptEditor) X_OnFindInFilesModifiedFiles(arg0 gdnative.PoolStringArray) {
-	//log.Println("Calling ScriptEditor.X_OnFindInFilesModifiedFiles()")
+	// log.Println("Calling ScriptEditor.X_OnFindInFilesModifiedFiles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -664,7 +664,7 @@ func (o *ScriptEditor) X_OnFindInFilesModifiedFiles(arg0 gdnative.PoolStringArra
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_OnFindInFilesRequested(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_OnFindInFilesRequested()")
+	// log.Println("Calling ScriptEditor.X_OnFindInFilesRequested()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -685,7 +685,7 @@ func (o *ScriptEditor) X_OnFindInFilesRequested(arg0 gdnative.String) {
 	Args: [{ false arg0 String} { false arg1 int} { false arg2 int} { false arg3 int}], Returns: void
 */
 func (o *ScriptEditor) X_OnFindInFilesResultSelected(arg0 gdnative.String, arg1 gdnative.Int, arg2 gdnative.Int, arg3 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_OnFindInFilesResultSelected()")
+	// log.Println("Calling ScriptEditor.X_OnFindInFilesResultSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -709,7 +709,7 @@ func (o *ScriptEditor) X_OnFindInFilesResultSelected(arg0 gdnative.String, arg1 
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_OpenRecentScript(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_OpenRecentScript()")
+	// log.Println("Calling ScriptEditor.X_OpenRecentScript()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -730,7 +730,7 @@ func (o *ScriptEditor) X_OpenRecentScript(arg0 gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_ReloadScripts() {
-	//log.Println("Calling ScriptEditor.X_ReloadScripts()")
+	// log.Println("Calling ScriptEditor.X_ReloadScripts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -750,7 +750,7 @@ func (o *ScriptEditor) X_ReloadScripts() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_RequestHelp(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_RequestHelp()")
+	// log.Println("Calling ScriptEditor.X_RequestHelp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -771,7 +771,7 @@ func (o *ScriptEditor) X_RequestHelp(arg0 gdnative.String) {
 	Args: [{ false arg0 Resource}], Returns: void
 */
 func (o *ScriptEditor) X_ResSavedCallback(arg0 ResourceImplementer) {
-	//log.Println("Calling ScriptEditor.X_ResSavedCallback()")
+	// log.Println("Calling ScriptEditor.X_ResSavedCallback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -792,7 +792,7 @@ func (o *ScriptEditor) X_ResSavedCallback(arg0 ResourceImplementer) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptEditor) X_ResaveScripts(arg0 gdnative.String) {
-	//log.Println("Calling ScriptEditor.X_ResaveScripts()")
+	// log.Println("Calling ScriptEditor.X_ResaveScripts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -813,7 +813,7 @@ func (o *ScriptEditor) X_ResaveScripts(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_SaveHistory() {
-	//log.Println("Calling ScriptEditor.X_SaveHistory()")
+	// log.Println("Calling ScriptEditor.X_SaveHistory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -833,7 +833,7 @@ func (o *ScriptEditor) X_SaveHistory() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_ScriptChanged() {
-	//log.Println("Calling ScriptEditor.X_ScriptChanged()")
+	// log.Println("Calling ScriptEditor.X_ScriptChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -853,7 +853,7 @@ func (o *ScriptEditor) X_ScriptChanged() {
 	Args: [{ false arg0 Script}], Returns: void
 */
 func (o *ScriptEditor) X_ScriptCreated(arg0 ScriptImplementer) {
-	//log.Println("Calling ScriptEditor.X_ScriptCreated()")
+	// log.Println("Calling ScriptEditor.X_ScriptCreated()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -874,7 +874,7 @@ func (o *ScriptEditor) X_ScriptCreated(arg0 ScriptImplementer) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ScriptEditor) X_ScriptListGuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ScriptEditor.X_ScriptListGuiInput()")
+	// log.Println("Calling ScriptEditor.X_ScriptListGuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -895,7 +895,7 @@ func (o *ScriptEditor) X_ScriptListGuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_ScriptSelected(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_ScriptSelected()")
+	// log.Println("Calling ScriptEditor.X_ScriptSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -916,7 +916,7 @@ func (o *ScriptEditor) X_ScriptSelected(arg0 gdnative.Int) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *ScriptEditor) X_ScriptSplitDragged(arg0 gdnative.Real) {
-	//log.Println("Calling ScriptEditor.X_ScriptSplitDragged()")
+	// log.Println("Calling ScriptEditor.X_ScriptSplitDragged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -937,7 +937,7 @@ func (o *ScriptEditor) X_ScriptSplitDragged(arg0 gdnative.Real) {
 	Args: [{ false arg0 Reference} { false arg1 int}], Returns: void
 */
 func (o *ScriptEditor) X_SetExecution(arg0 ReferenceImplementer, arg1 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_SetExecution()")
+	// log.Println("Calling ScriptEditor.X_SetExecution()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -959,7 +959,7 @@ func (o *ScriptEditor) X_SetExecution(arg0 ReferenceImplementer, arg1 gdnative.I
 	Args: [{ false arg0 bool}], Returns: void
 */
 func (o *ScriptEditor) X_ShowDebugger(arg0 gdnative.Bool) {
-	//log.Println("Calling ScriptEditor.X_ShowDebugger()")
+	// log.Println("Calling ScriptEditor.X_ShowDebugger()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -980,7 +980,7 @@ func (o *ScriptEditor) X_ShowDebugger(arg0 gdnative.Bool) {
 	Args: [{ false arg0 bool}], Returns: void
 */
 func (o *ScriptEditor) X_StartFindInFiles(arg0 gdnative.Bool) {
-	//log.Println("Calling ScriptEditor.X_StartFindInFiles()")
+	// log.Println("Calling ScriptEditor.X_StartFindInFiles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1001,7 +1001,7 @@ func (o *ScriptEditor) X_StartFindInFiles(arg0 gdnative.Bool) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_TabChanged(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_TabChanged()")
+	// log.Println("Calling ScriptEditor.X_TabChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1022,7 +1022,7 @@ func (o *ScriptEditor) X_TabChanged(arg0 gdnative.Int) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptEditor) X_ThemeOption(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptEditor.X_ThemeOption()")
+	// log.Println("Calling ScriptEditor.X_ThemeOption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1043,7 +1043,7 @@ func (o *ScriptEditor) X_ThemeOption(arg0 gdnative.Int) {
 	Args: [{ false arg0 bool}], Returns: void
 */
 func (o *ScriptEditor) X_ToggleMembersOverviewAlphaSort(arg0 gdnative.Bool) {
-	//log.Println("Calling ScriptEditor.X_ToggleMembersOverviewAlphaSort()")
+	// log.Println("Calling ScriptEditor.X_ToggleMembersOverviewAlphaSort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1064,7 +1064,7 @@ func (o *ScriptEditor) X_ToggleMembersOverviewAlphaSort(arg0 gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_TreeChanged() {
-	//log.Println("Calling ScriptEditor.X_TreeChanged()")
+	// log.Println("Calling ScriptEditor.X_TreeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1084,7 +1084,7 @@ func (o *ScriptEditor) X_TreeChanged() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ScriptEditor) X_UnhandledInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ScriptEditor.X_UnhandledInput()")
+	// log.Println("Calling ScriptEditor.X_UnhandledInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1105,7 +1105,7 @@ func (o *ScriptEditor) X_UnhandledInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_UpdateAutosaveTimer() {
-	//log.Println("Calling ScriptEditor.X_UpdateAutosaveTimer()")
+	// log.Println("Calling ScriptEditor.X_UpdateAutosaveTimer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1125,7 +1125,7 @@ func (o *ScriptEditor) X_UpdateAutosaveTimer() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_UpdateMembersOverview() {
-	//log.Println("Calling ScriptEditor.X_UpdateMembersOverview()")
+	// log.Println("Calling ScriptEditor.X_UpdateMembersOverview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1145,7 +1145,7 @@ func (o *ScriptEditor) X_UpdateMembersOverview() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_UpdateRecentScripts() {
-	//log.Println("Calling ScriptEditor.X_UpdateRecentScripts()")
+	// log.Println("Calling ScriptEditor.X_UpdateRecentScripts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1165,7 +1165,7 @@ func (o *ScriptEditor) X_UpdateRecentScripts() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_UpdateScriptConnections() {
-	//log.Println("Calling ScriptEditor.X_UpdateScriptConnections()")
+	// log.Println("Calling ScriptEditor.X_UpdateScriptConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1185,7 +1185,7 @@ func (o *ScriptEditor) X_UpdateScriptConnections() {
 	Args: [], Returns: void
 */
 func (o *ScriptEditor) X_UpdateScriptNames() {
-	//log.Println("Calling ScriptEditor.X_UpdateScriptNames()")
+	// log.Println("Calling ScriptEditor.X_UpdateScriptNames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1205,7 +1205,7 @@ func (o *ScriptEditor) X_UpdateScriptNames() {
 	Args: [{ false point Vector2} { false data Variant} { false from Control}], Returns: bool
 */
 func (o *ScriptEditor) CanDropDataFw(point gdnative.Vector2, data gdnative.Variant, from ControlImplementer) gdnative.Bool {
-	//log.Println("Calling ScriptEditor.CanDropDataFw()")
+	// log.Println("Calling ScriptEditor.CanDropDataFw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1231,7 +1231,7 @@ func (o *ScriptEditor) CanDropDataFw(point gdnative.Vector2, data gdnative.Varia
 	Args: [{ false point Vector2} { false data Variant} { false from Control}], Returns: void
 */
 func (o *ScriptEditor) DropDataFw(point gdnative.Vector2, data gdnative.Variant, from ControlImplementer) {
-	//log.Println("Calling ScriptEditor.DropDataFw()")
+	// log.Println("Calling ScriptEditor.DropDataFw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1254,7 +1254,7 @@ func (o *ScriptEditor) DropDataFw(point gdnative.Vector2, data gdnative.Variant,
 	Args: [], Returns: Script
 */
 func (o *ScriptEditor) GetCurrentScript() ScriptImplementer {
-	//log.Println("Calling ScriptEditor.GetCurrentScript()")
+	// log.Println("Calling ScriptEditor.GetCurrentScript()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1291,7 +1291,7 @@ func (o *ScriptEditor) GetCurrentScript() ScriptImplementer {
 	Args: [{ false point Vector2} { false from Control}], Returns: Variant
 */
 func (o *ScriptEditor) GetDragDataFw(point gdnative.Vector2, from ControlImplementer) gdnative.Variant {
-	//log.Println("Calling ScriptEditor.GetDragDataFw()")
+	// log.Println("Calling ScriptEditor.GetDragDataFw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1316,7 +1316,7 @@ func (o *ScriptEditor) GetDragDataFw(point gdnative.Vector2, from ControlImpleme
 	Args: [], Returns: Array
 */
 func (o *ScriptEditor) GetOpenScripts() gdnative.Array {
-	//log.Println("Calling ScriptEditor.GetOpenScripts()")
+	// log.Println("Calling ScriptEditor.GetOpenScripts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1339,7 +1339,7 @@ func (o *ScriptEditor) GetOpenScripts() gdnative.Array {
 	Args: [{ false line_number int}], Returns: void
 */
 func (o *ScriptEditor) GotoLine(lineNumber gdnative.Int) {
-	//log.Println("Calling ScriptEditor.GotoLine()")
+	// log.Println("Calling ScriptEditor.GotoLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1360,7 +1360,7 @@ func (o *ScriptEditor) GotoLine(lineNumber gdnative.Int) {
 	Args: [{ false base_name String} { false base_path String}], Returns: void
 */
 func (o *ScriptEditor) OpenScriptCreateDialog(baseName gdnative.String, basePath gdnative.String) {
-	//log.Println("Calling ScriptEditor.OpenScriptCreateDialog()")
+	// log.Println("Calling ScriptEditor.OpenScriptCreateDialog()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

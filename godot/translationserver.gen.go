@@ -62,7 +62,7 @@ func (o *translationServer) BaseClass() string {
 */
 func (o *translationServer) AddTranslation(translation TranslationImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.AddTranslation()")
+	// log.Println("Calling TranslationServer.AddTranslation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -84,7 +84,7 @@ func (o *translationServer) AddTranslation(translation TranslationImplementer) {
 */
 func (o *translationServer) Clear() {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.Clear()")
+	// log.Println("Calling TranslationServer.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *translationServer) Clear() {
 */
 func (o *translationServer) GetLoadedLocales() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.GetLoadedLocales()")
+	// log.Println("Calling TranslationServer.GetLoadedLocales()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *translationServer) GetLoadedLocales() gdnative.Array {
 */
 func (o *translationServer) GetLocale() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.GetLocale()")
+	// log.Println("Calling TranslationServer.GetLocale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -153,7 +153,7 @@ func (o *translationServer) GetLocale() gdnative.String {
 */
 func (o *translationServer) GetLocaleName(locale gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.GetLocaleName()")
+	// log.Println("Calling TranslationServer.GetLocaleName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -178,7 +178,7 @@ func (o *translationServer) GetLocaleName(locale gdnative.String) gdnative.Strin
 */
 func (o *translationServer) RemoveTranslation(translation TranslationImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.RemoveTranslation()")
+	// log.Println("Calling TranslationServer.RemoveTranslation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -200,7 +200,7 @@ func (o *translationServer) RemoveTranslation(translation TranslationImplementer
 */
 func (o *translationServer) SetLocale(locale gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.SetLocale()")
+	// log.Println("Calling TranslationServer.SetLocale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -222,7 +222,7 @@ func (o *translationServer) SetLocale(locale gdnative.String) {
 */
 func (o *translationServer) Translate(message gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling TranslationServer.Translate()")
+	// log.Println("Calling TranslationServer.Translate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

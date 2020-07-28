@@ -39,7 +39,7 @@ func (o *InputEventMouseButton) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventMouseButton) GetButtonIndex() gdnative.Int {
-	//log.Println("Calling InputEventMouseButton.GetButtonIndex()")
+	// log.Println("Calling InputEventMouseButton.GetButtonIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventMouseButton) GetButtonIndex() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *InputEventMouseButton) GetFactor() gdnative.Real {
-	//log.Println("Calling InputEventMouseButton.GetFactor()")
+	// log.Println("Calling InputEventMouseButton.GetFactor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventMouseButton) GetFactor() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *InputEventMouseButton) IsDoubleclick() gdnative.Bool {
-	//log.Println("Calling InputEventMouseButton.IsDoubleclick()")
+	// log.Println("Calling InputEventMouseButton.IsDoubleclick()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InputEventMouseButton) IsDoubleclick() gdnative.Bool {
 	Args: [{ false button_index int}], Returns: void
 */
 func (o *InputEventMouseButton) SetButtonIndex(buttonIndex gdnative.Int) {
-	//log.Println("Calling InputEventMouseButton.SetButtonIndex()")
+	// log.Println("Calling InputEventMouseButton.SetButtonIndex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *InputEventMouseButton) SetButtonIndex(buttonIndex gdnative.Int) {
 	Args: [{ false doubleclick bool}], Returns: void
 */
 func (o *InputEventMouseButton) SetDoubleclick(doubleclick gdnative.Bool) {
-	//log.Println("Calling InputEventMouseButton.SetDoubleclick()")
+	// log.Println("Calling InputEventMouseButton.SetDoubleclick()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *InputEventMouseButton) SetDoubleclick(doubleclick gdnative.Bool) {
 	Args: [{ false factor float}], Returns: void
 */
 func (o *InputEventMouseButton) SetFactor(factor gdnative.Real) {
-	//log.Println("Calling InputEventMouseButton.SetFactor()")
+	// log.Println("Calling InputEventMouseButton.SetFactor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *InputEventMouseButton) SetFactor(factor gdnative.Real) {
 	Args: [{ false pressed bool}], Returns: void
 */
 func (o *InputEventMouseButton) SetPressed(pressed gdnative.Bool) {
-	//log.Println("Calling InputEventMouseButton.SetPressed()")
+	// log.Println("Calling InputEventMouseButton.SetPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

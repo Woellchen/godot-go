@@ -47,7 +47,7 @@ func (o *AudioEffectSpectrumAnalyzerInstance) BaseClass() string {
 	Args: [{ false from_hz float} { false to_hz float} {1 true mode int}], Returns: Vector2
 */
 func (o *AudioEffectSpectrumAnalyzerInstance) GetMagnitudeForFrequencyRange(fromHz gdnative.Real, toHz gdnative.Real, mode gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling AudioEffectSpectrumAnalyzerInstance.GetMagnitudeForFrequencyRange()")
+	// log.Println("Calling AudioEffectSpectrumAnalyzerInstance.GetMagnitudeForFrequencyRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

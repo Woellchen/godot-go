@@ -48,7 +48,7 @@ func (o *Shader) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *Shader) GetCode() gdnative.String {
-	//log.Println("Calling Shader.GetCode()")
+	// log.Println("Calling Shader.GetCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *Shader) GetCode() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *Shader) GetCustomDefines() gdnative.String {
-	//log.Println("Calling Shader.GetCustomDefines()")
+	// log.Println("Calling Shader.GetCustomDefines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *Shader) GetCustomDefines() gdnative.String {
 	Args: [{ false param String}], Returns: Texture
 */
 func (o *Shader) GetDefaultTextureParam(param gdnative.String) TextureImplementer {
-	//log.Println("Calling Shader.GetDefaultTextureParam()")
+	// log.Println("Calling Shader.GetDefaultTextureParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -132,7 +132,7 @@ func (o *Shader) GetDefaultTextureParam(param gdnative.String) TextureImplemente
 	Args: [], Returns: enum.Shader::Mode
 */
 func (o *Shader) GetMode() ShaderMode {
-	//log.Println("Calling Shader.GetMode()")
+	// log.Println("Calling Shader.GetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -155,7 +155,7 @@ func (o *Shader) GetMode() ShaderMode {
 	Args: [{ false name String}], Returns: bool
 */
 func (o *Shader) HasParam(name gdnative.String) gdnative.Bool {
-	//log.Println("Calling Shader.HasParam()")
+	// log.Println("Calling Shader.HasParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *Shader) HasParam(name gdnative.String) gdnative.Bool {
 	Args: [{ false code String}], Returns: void
 */
 func (o *Shader) SetCode(code gdnative.String) {
-	//log.Println("Calling Shader.SetCode()")
+	// log.Println("Calling Shader.SetCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -200,7 +200,7 @@ func (o *Shader) SetCode(code gdnative.String) {
 	Args: [{ false custom_defines String}], Returns: void
 */
 func (o *Shader) SetCustomDefines(customDefines gdnative.String) {
-	//log.Println("Calling Shader.SetCustomDefines()")
+	// log.Println("Calling Shader.SetCustomDefines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -221,7 +221,7 @@ func (o *Shader) SetCustomDefines(customDefines gdnative.String) {
 	Args: [{ false param String} { false texture Texture}], Returns: void
 */
 func (o *Shader) SetDefaultTextureParam(param gdnative.String, texture TextureImplementer) {
-	//log.Println("Calling Shader.SetDefaultTextureParam()")
+	// log.Println("Calling Shader.SetDefaultTextureParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

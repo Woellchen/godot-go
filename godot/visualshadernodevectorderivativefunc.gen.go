@@ -48,7 +48,7 @@ func (o *VisualShaderNodeVectorDerivativeFunc) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeVectorDerivativeFunc::Function
 */
 func (o *VisualShaderNodeVectorDerivativeFunc) GetFunction() VisualShaderNodeVectorDerivativeFuncFunction {
-	//log.Println("Calling VisualShaderNodeVectorDerivativeFunc.GetFunction()")
+	// log.Println("Calling VisualShaderNodeVectorDerivativeFunc.GetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *VisualShaderNodeVectorDerivativeFunc) GetFunction() VisualShaderNodeVec
 	Args: [{ false func int}], Returns: void
 */
 func (o *VisualShaderNodeVectorDerivativeFunc) SetFunction(function gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeVectorDerivativeFunc.SetFunction()")
+	// log.Println("Calling VisualShaderNodeVectorDerivativeFunc.SetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

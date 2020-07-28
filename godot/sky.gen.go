@@ -53,7 +53,7 @@ func (o *Sky) BaseClass() string {
 	Args: [], Returns: enum.Sky::RadianceSize
 */
 func (o *Sky) GetRadianceSize() SkyRadianceSize {
-	//log.Println("Calling Sky.GetRadianceSize()")
+	// log.Println("Calling Sky.GetRadianceSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *Sky) GetRadianceSize() SkyRadianceSize {
 	Args: [{ false size int}], Returns: void
 */
 func (o *Sky) SetRadianceSize(size gdnative.Int) {
-	//log.Println("Calling Sky.SetRadianceSize()")
+	// log.Println("Calling Sky.SetRadianceSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

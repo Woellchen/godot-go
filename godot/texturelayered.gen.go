@@ -49,7 +49,7 @@ func (o *TextureLayered) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *TextureLayered) X_GetData() gdnative.Dictionary {
-	//log.Println("Calling TextureLayered.X_GetData()")
+	// log.Println("Calling TextureLayered.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -72,7 +72,7 @@ func (o *TextureLayered) X_GetData() gdnative.Dictionary {
 	Args: [{ false data Dictionary}], Returns: void
 */
 func (o *TextureLayered) X_SetData(data gdnative.Dictionary) {
-	//log.Println("Calling TextureLayered.X_SetData()")
+	// log.Println("Calling TextureLayered.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -93,7 +93,7 @@ func (o *TextureLayered) X_SetData(data gdnative.Dictionary) {
 	Args: [{ false width int} { false height int} { false depth int} { false format int} {4 true flags int}], Returns: void
 */
 func (o *TextureLayered) Create(width gdnative.Int, height gdnative.Int, depth gdnative.Int, format gdnative.Int, flags gdnative.Int) {
-	//log.Println("Calling TextureLayered.Create()")
+	// log.Println("Calling TextureLayered.Create()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -118,7 +118,7 @@ func (o *TextureLayered) Create(width gdnative.Int, height gdnative.Int, depth g
 	Args: [], Returns: int
 */
 func (o *TextureLayered) GetDepth() gdnative.Int {
-	//log.Println("Calling TextureLayered.GetDepth()")
+	// log.Println("Calling TextureLayered.GetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -141,7 +141,7 @@ func (o *TextureLayered) GetDepth() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *TextureLayered) GetFlags() gdnative.Int {
-	//log.Println("Calling TextureLayered.GetFlags()")
+	// log.Println("Calling TextureLayered.GetFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -164,7 +164,7 @@ func (o *TextureLayered) GetFlags() gdnative.Int {
 	Args: [], Returns: enum.Image::Format
 */
 func (o *TextureLayered) GetFormat() ImageFormat {
-	//log.Println("Calling TextureLayered.GetFormat()")
+	// log.Println("Calling TextureLayered.GetFormat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -187,7 +187,7 @@ func (o *TextureLayered) GetFormat() ImageFormat {
 	Args: [], Returns: int
 */
 func (o *TextureLayered) GetHeight() gdnative.Int {
-	//log.Println("Calling TextureLayered.GetHeight()")
+	// log.Println("Calling TextureLayered.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -210,7 +210,7 @@ func (o *TextureLayered) GetHeight() gdnative.Int {
 	Args: [{ false layer int}], Returns: Image
 */
 func (o *TextureLayered) GetLayerData(layer gdnative.Int) ImageImplementer {
-	//log.Println("Calling TextureLayered.GetLayerData()")
+	// log.Println("Calling TextureLayered.GetLayerData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -248,7 +248,7 @@ func (o *TextureLayered) GetLayerData(layer gdnative.Int) ImageImplementer {
 	Args: [], Returns: int
 */
 func (o *TextureLayered) GetWidth() gdnative.Int {
-	//log.Println("Calling TextureLayered.GetWidth()")
+	// log.Println("Calling TextureLayered.GetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -271,7 +271,7 @@ func (o *TextureLayered) GetWidth() gdnative.Int {
 	Args: [{ false image Image} { false x_offset int} { false y_offset int} { false layer int} {0 true mipmap int}], Returns: void
 */
 func (o *TextureLayered) SetDataPartial(image ImageImplementer, xOffset gdnative.Int, yOffset gdnative.Int, layer gdnative.Int, mipmap gdnative.Int) {
-	//log.Println("Calling TextureLayered.SetDataPartial()")
+	// log.Println("Calling TextureLayered.SetDataPartial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -296,7 +296,7 @@ func (o *TextureLayered) SetDataPartial(image ImageImplementer, xOffset gdnative
 	Args: [{ false flags int}], Returns: void
 */
 func (o *TextureLayered) SetFlags(flags gdnative.Int) {
-	//log.Println("Calling TextureLayered.SetFlags()")
+	// log.Println("Calling TextureLayered.SetFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -317,7 +317,7 @@ func (o *TextureLayered) SetFlags(flags gdnative.Int) {
 	Args: [{ false image Image} { false layer int}], Returns: void
 */
 func (o *TextureLayered) SetLayerData(image ImageImplementer, layer gdnative.Int) {
-	//log.Println("Calling TextureLayered.SetLayerData()")
+	// log.Println("Calling TextureLayered.SetLayerData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

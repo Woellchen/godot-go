@@ -39,7 +39,7 @@ func (o *NoiseTexture) BaseClass() string {
 	Args: [], Returns: Image
 */
 func (o *NoiseTexture) X_GenerateTexture() ImageImplementer {
-	//log.Println("Calling NoiseTexture.X_GenerateTexture()")
+	// log.Println("Calling NoiseTexture.X_GenerateTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *NoiseTexture) X_GenerateTexture() ImageImplementer {
 	Args: [], Returns: void
 */
 func (o *NoiseTexture) X_QueueUpdate() {
-	//log.Println("Calling NoiseTexture.X_QueueUpdate()")
+	// log.Println("Calling NoiseTexture.X_QueueUpdate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *NoiseTexture) X_QueueUpdate() {
 	Args: [{ false image Image}], Returns: void
 */
 func (o *NoiseTexture) X_ThreadDone(image ImageImplementer) {
-	//log.Println("Calling NoiseTexture.X_ThreadDone()")
+	// log.Println("Calling NoiseTexture.X_ThreadDone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -117,7 +117,7 @@ func (o *NoiseTexture) X_ThreadDone(image ImageImplementer) {
 	Args: [], Returns: void
 */
 func (o *NoiseTexture) X_UpdateTexture() {
-	//log.Println("Calling NoiseTexture.X_UpdateTexture()")
+	// log.Println("Calling NoiseTexture.X_UpdateTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -137,7 +137,7 @@ func (o *NoiseTexture) X_UpdateTexture() {
 	Args: [], Returns: float
 */
 func (o *NoiseTexture) GetBumpStrength() gdnative.Real {
-	//log.Println("Calling NoiseTexture.GetBumpStrength()")
+	// log.Println("Calling NoiseTexture.GetBumpStrength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -160,7 +160,7 @@ func (o *NoiseTexture) GetBumpStrength() gdnative.Real {
 	Args: [], Returns: OpenSimplexNoise
 */
 func (o *NoiseTexture) GetNoise() OpenSimplexNoiseImplementer {
-	//log.Println("Calling NoiseTexture.GetNoise()")
+	// log.Println("Calling NoiseTexture.GetNoise()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -197,7 +197,7 @@ func (o *NoiseTexture) GetNoise() OpenSimplexNoiseImplementer {
 	Args: [], Returns: bool
 */
 func (o *NoiseTexture) GetSeamless() gdnative.Bool {
-	//log.Println("Calling NoiseTexture.GetSeamless()")
+	// log.Println("Calling NoiseTexture.GetSeamless()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -220,7 +220,7 @@ func (o *NoiseTexture) GetSeamless() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *NoiseTexture) IsNormalmap() gdnative.Bool {
-	//log.Println("Calling NoiseTexture.IsNormalmap()")
+	// log.Println("Calling NoiseTexture.IsNormalmap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -243,7 +243,7 @@ func (o *NoiseTexture) IsNormalmap() gdnative.Bool {
 	Args: [{ false as_normalmap bool}], Returns: void
 */
 func (o *NoiseTexture) SetAsNormalmap(asNormalmap gdnative.Bool) {
-	//log.Println("Calling NoiseTexture.SetAsNormalmap()")
+	// log.Println("Calling NoiseTexture.SetAsNormalmap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -264,7 +264,7 @@ func (o *NoiseTexture) SetAsNormalmap(asNormalmap gdnative.Bool) {
 	Args: [{ false bump_strength float}], Returns: void
 */
 func (o *NoiseTexture) SetBumpStrength(bumpStrength gdnative.Real) {
-	//log.Println("Calling NoiseTexture.SetBumpStrength()")
+	// log.Println("Calling NoiseTexture.SetBumpStrength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -285,7 +285,7 @@ func (o *NoiseTexture) SetBumpStrength(bumpStrength gdnative.Real) {
 	Args: [{ false height int}], Returns: void
 */
 func (o *NoiseTexture) SetHeight(height gdnative.Int) {
-	//log.Println("Calling NoiseTexture.SetHeight()")
+	// log.Println("Calling NoiseTexture.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -306,7 +306,7 @@ func (o *NoiseTexture) SetHeight(height gdnative.Int) {
 	Args: [{ false noise OpenSimplexNoise}], Returns: void
 */
 func (o *NoiseTexture) SetNoise(noise OpenSimplexNoiseImplementer) {
-	//log.Println("Calling NoiseTexture.SetNoise()")
+	// log.Println("Calling NoiseTexture.SetNoise()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -327,7 +327,7 @@ func (o *NoiseTexture) SetNoise(noise OpenSimplexNoiseImplementer) {
 	Args: [{ false seamless bool}], Returns: void
 */
 func (o *NoiseTexture) SetSeamless(seamless gdnative.Bool) {
-	//log.Println("Calling NoiseTexture.SetSeamless()")
+	// log.Println("Calling NoiseTexture.SetSeamless()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -348,7 +348,7 @@ func (o *NoiseTexture) SetSeamless(seamless gdnative.Bool) {
 	Args: [{ false width int}], Returns: void
 */
 func (o *NoiseTexture) SetWidth(width gdnative.Int) {
-	//log.Println("Calling NoiseTexture.SetWidth()")
+	// log.Println("Calling NoiseTexture.SetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

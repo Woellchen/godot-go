@@ -48,7 +48,7 @@ func (o *BoxContainer) BaseClass() string {
 	Args: [{ false begin bool}], Returns: void
 */
 func (o *BoxContainer) AddSpacer(begin gdnative.Bool) {
-	//log.Println("Calling BoxContainer.AddSpacer()")
+	// log.Println("Calling BoxContainer.AddSpacer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -69,7 +69,7 @@ func (o *BoxContainer) AddSpacer(begin gdnative.Bool) {
 	Args: [], Returns: enum.BoxContainer::AlignMode
 */
 func (o *BoxContainer) GetAlignment() BoxContainerAlignMode {
-	//log.Println("Calling BoxContainer.GetAlignment()")
+	// log.Println("Calling BoxContainer.GetAlignment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -92,7 +92,7 @@ func (o *BoxContainer) GetAlignment() BoxContainerAlignMode {
 	Args: [{ false alignment int}], Returns: void
 */
 func (o *BoxContainer) SetAlignment(alignment gdnative.Int) {
-	//log.Println("Calling BoxContainer.SetAlignment()")
+	// log.Println("Calling BoxContainer.SetAlignment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

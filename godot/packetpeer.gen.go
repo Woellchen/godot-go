@@ -39,7 +39,7 @@ func (o *PacketPeer) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *PacketPeer) GetAvailablePacketCount() gdnative.Int {
-	//log.Println("Calling PacketPeer.GetAvailablePacketCount()")
+	// log.Println("Calling PacketPeer.GetAvailablePacketCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PacketPeer) GetAvailablePacketCount() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *PacketPeer) GetEncodeBufferMaxSize() gdnative.Int {
-	//log.Println("Calling PacketPeer.GetEncodeBufferMaxSize()")
+	// log.Println("Calling PacketPeer.GetEncodeBufferMaxSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PacketPeer) GetEncodeBufferMaxSize() gdnative.Int {
 	Args: [], Returns: PoolByteArray
 */
 func (o *PacketPeer) GetPacket() gdnative.PoolByteArray {
-	//log.Println("Calling PacketPeer.GetPacket()")
+	// log.Println("Calling PacketPeer.GetPacket()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *PacketPeer) GetPacket() gdnative.PoolByteArray {
 	Args: [], Returns: enum.Error
 */
 func (o *PacketPeer) GetPacketError() gdnative.Error {
-	//log.Println("Calling PacketPeer.GetPacketError()")
+	// log.Println("Calling PacketPeer.GetPacketError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *PacketPeer) GetPacketError() gdnative.Error {
 	Args: [{False true allow_objects bool}], Returns: Variant
 */
 func (o *PacketPeer) GetVar(allowObjects gdnative.Bool) gdnative.Variant {
-	//log.Println("Calling PacketPeer.GetVar()")
+	// log.Println("Calling PacketPeer.GetVar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -155,7 +155,7 @@ func (o *PacketPeer) GetVar(allowObjects gdnative.Bool) gdnative.Variant {
 	Args: [], Returns: bool
 */
 func (o *PacketPeer) IsObjectDecodingAllowed() gdnative.Bool {
-	//log.Println("Calling PacketPeer.IsObjectDecodingAllowed()")
+	// log.Println("Calling PacketPeer.IsObjectDecodingAllowed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -178,7 +178,7 @@ func (o *PacketPeer) IsObjectDecodingAllowed() gdnative.Bool {
 	Args: [{ false buffer PoolByteArray}], Returns: enum.Error
 */
 func (o *PacketPeer) PutPacket(buffer gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling PacketPeer.PutPacket()")
+	// log.Println("Calling PacketPeer.PutPacket()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -202,7 +202,7 @@ func (o *PacketPeer) PutPacket(buffer gdnative.PoolByteArray) gdnative.Error {
 	Args: [{ false var Variant} {False true full_objects bool}], Returns: enum.Error
 */
 func (o *PacketPeer) PutVar(variable gdnative.Variant, fullObjects gdnative.Bool) gdnative.Error {
-	//log.Println("Calling PacketPeer.PutVar()")
+	// log.Println("Calling PacketPeer.PutVar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -227,7 +227,7 @@ func (o *PacketPeer) PutVar(variable gdnative.Variant, fullObjects gdnative.Bool
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PacketPeer) SetAllowObjectDecoding(enable gdnative.Bool) {
-	//log.Println("Calling PacketPeer.SetAllowObjectDecoding()")
+	// log.Println("Calling PacketPeer.SetAllowObjectDecoding()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -248,7 +248,7 @@ func (o *PacketPeer) SetAllowObjectDecoding(enable gdnative.Bool) {
 	Args: [{ false max_size int}], Returns: void
 */
 func (o *PacketPeer) SetEncodeBufferMaxSize(maxSize gdnative.Int) {
-	//log.Println("Calling PacketPeer.SetEncodeBufferMaxSize()")
+	// log.Println("Calling PacketPeer.SetEncodeBufferMaxSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

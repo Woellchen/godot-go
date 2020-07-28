@@ -39,7 +39,7 @@ func (o *VisualScriptSelect) BaseClass() string {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptSelect) GetTyped() gdnative.VariantType {
-	//log.Println("Calling VisualScriptSelect.GetTyped()")
+	// log.Println("Calling VisualScriptSelect.GetTyped()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptSelect) GetTyped() gdnative.VariantType {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualScriptSelect) SetTyped(aType gdnative.Int) {
-	//log.Println("Calling VisualScriptSelect.SetTyped()")
+	// log.Println("Calling VisualScriptSelect.SetTyped()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PackedDataContainer) BaseClass() string {
 	Args: [], Returns: PoolByteArray
 */
 func (o *PackedDataContainer) X_GetData() gdnative.PoolByteArray {
-	//log.Println("Calling PackedDataContainer.X_GetData()")
+	// log.Println("Calling PackedDataContainer.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PackedDataContainer) X_GetData() gdnative.PoolByteArray {
 	Args: [{ false arg0 Variant}], Returns: Variant
 */
 func (o *PackedDataContainer) X_IterGet(arg0 gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling PackedDataContainer.X_IterGet()")
+	// log.Println("Calling PackedDataContainer.X_IterGet()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -86,7 +86,7 @@ func (o *PackedDataContainer) X_IterGet(arg0 gdnative.Variant) gdnative.Variant 
 	Args: [{ false arg0 Array}], Returns: Variant
 */
 func (o *PackedDataContainer) X_IterInit(arg0 gdnative.Array) gdnative.Variant {
-	//log.Println("Calling PackedDataContainer.X_IterInit()")
+	// log.Println("Calling PackedDataContainer.X_IterInit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -110,7 +110,7 @@ func (o *PackedDataContainer) X_IterInit(arg0 gdnative.Array) gdnative.Variant {
 	Args: [{ false arg0 Array}], Returns: Variant
 */
 func (o *PackedDataContainer) X_IterNext(arg0 gdnative.Array) gdnative.Variant {
-	//log.Println("Calling PackedDataContainer.X_IterNext()")
+	// log.Println("Calling PackedDataContainer.X_IterNext()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -134,7 +134,7 @@ func (o *PackedDataContainer) X_IterNext(arg0 gdnative.Array) gdnative.Variant {
 	Args: [{ false arg0 PoolByteArray}], Returns: void
 */
 func (o *PackedDataContainer) X_SetData(arg0 gdnative.PoolByteArray) {
-	//log.Println("Calling PackedDataContainer.X_SetData()")
+	// log.Println("Calling PackedDataContainer.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -155,7 +155,7 @@ func (o *PackedDataContainer) X_SetData(arg0 gdnative.PoolByteArray) {
 	Args: [{ false value Variant}], Returns: enum.Error
 */
 func (o *PackedDataContainer) Pack(value gdnative.Variant) gdnative.Error {
-	//log.Println("Calling PackedDataContainer.Pack()")
+	// log.Println("Calling PackedDataContainer.Pack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *PackedDataContainer) Pack(value gdnative.Variant) gdnative.Error {
 	Args: [], Returns: int
 */
 func (o *PackedDataContainer) Size() gdnative.Int {
-	//log.Println("Calling PackedDataContainer.Size()")
+	// log.Println("Calling PackedDataContainer.Size()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

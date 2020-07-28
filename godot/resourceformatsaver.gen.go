@@ -39,7 +39,7 @@ func (o *ResourceFormatSaver) BaseClass() string {
 	Args: [{ false resource Resource}], Returns: PoolStringArray
 */
 func (o *ResourceFormatSaver) GetRecognizedExtensions(resource ResourceImplementer) gdnative.PoolStringArray {
-	//log.Println("Calling ResourceFormatSaver.GetRecognizedExtensions()")
+	// log.Println("Calling ResourceFormatSaver.GetRecognizedExtensions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *ResourceFormatSaver) GetRecognizedExtensions(resource ResourceImplement
 	Args: [{ false resource Resource}], Returns: bool
 */
 func (o *ResourceFormatSaver) Recognize(resource ResourceImplementer) gdnative.Bool {
-	//log.Println("Calling ResourceFormatSaver.Recognize()")
+	// log.Println("Calling ResourceFormatSaver.Recognize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -87,7 +87,7 @@ func (o *ResourceFormatSaver) Recognize(resource ResourceImplementer) gdnative.B
 	Args: [{ false path String} { false resource Resource} { false flags int}], Returns: int
 */
 func (o *ResourceFormatSaver) Save(path gdnative.String, resource ResourceImplementer, flags gdnative.Int) gdnative.Int {
-	//log.Println("Calling ResourceFormatSaver.Save()")
+	// log.Println("Calling ResourceFormatSaver.Save()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

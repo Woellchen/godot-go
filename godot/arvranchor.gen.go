@@ -39,7 +39,7 @@ func (o *ARVRAnchor) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *ARVRAnchor) GetAnchorId() gdnative.Int {
-	//log.Println("Calling ARVRAnchor.GetAnchorId()")
+	// log.Println("Calling ARVRAnchor.GetAnchorId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ARVRAnchor) GetAnchorId() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *ARVRAnchor) GetAnchorName() gdnative.String {
-	//log.Println("Calling ARVRAnchor.GetAnchorName()")
+	// log.Println("Calling ARVRAnchor.GetAnchorName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *ARVRAnchor) GetAnchorName() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *ARVRAnchor) GetIsActive() gdnative.Bool {
-	//log.Println("Calling ARVRAnchor.GetIsActive()")
+	// log.Println("Calling ARVRAnchor.GetIsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *ARVRAnchor) GetIsActive() gdnative.Bool {
 	Args: [], Returns: Mesh
 */
 func (o *ARVRAnchor) GetMesh() MeshImplementer {
-	//log.Println("Calling ARVRAnchor.GetMesh()")
+	// log.Println("Calling ARVRAnchor.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *ARVRAnchor) GetMesh() MeshImplementer {
 	Args: [], Returns: Plane
 */
 func (o *ARVRAnchor) GetPlane() gdnative.Plane {
-	//log.Println("Calling ARVRAnchor.GetPlane()")
+	// log.Println("Calling ARVRAnchor.GetPlane()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *ARVRAnchor) GetPlane() gdnative.Plane {
 	Args: [], Returns: Vector3
 */
 func (o *ARVRAnchor) GetSize() gdnative.Vector3 {
-	//log.Println("Calling ARVRAnchor.GetSize()")
+	// log.Println("Calling ARVRAnchor.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *ARVRAnchor) GetSize() gdnative.Vector3 {
 	Args: [{ false anchor_id int}], Returns: void
 */
 func (o *ARVRAnchor) SetAnchorId(anchorId gdnative.Int) {
-	//log.Println("Calling ARVRAnchor.SetAnchorId()")
+	// log.Println("Calling ARVRAnchor.SetAnchorId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

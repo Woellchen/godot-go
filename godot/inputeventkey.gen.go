@@ -39,7 +39,7 @@ func (o *InputEventKey) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventKey) GetScancode() gdnative.Int {
-	//log.Println("Calling InputEventKey.GetScancode()")
+	// log.Println("Calling InputEventKey.GetScancode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventKey) GetScancode() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventKey) GetScancodeWithModifiers() gdnative.Int {
-	//log.Println("Calling InputEventKey.GetScancodeWithModifiers()")
+	// log.Println("Calling InputEventKey.GetScancodeWithModifiers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventKey) GetScancodeWithModifiers() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *InputEventKey) GetUnicode() gdnative.Int {
-	//log.Println("Calling InputEventKey.GetUnicode()")
+	// log.Println("Calling InputEventKey.GetUnicode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InputEventKey) GetUnicode() gdnative.Int {
 	Args: [{ false echo bool}], Returns: void
 */
 func (o *InputEventKey) SetEcho(echo gdnative.Bool) {
-	//log.Println("Calling InputEventKey.SetEcho()")
+	// log.Println("Calling InputEventKey.SetEcho()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *InputEventKey) SetEcho(echo gdnative.Bool) {
 	Args: [{ false pressed bool}], Returns: void
 */
 func (o *InputEventKey) SetPressed(pressed gdnative.Bool) {
-	//log.Println("Calling InputEventKey.SetPressed()")
+	// log.Println("Calling InputEventKey.SetPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *InputEventKey) SetPressed(pressed gdnative.Bool) {
 	Args: [{ false scancode int}], Returns: void
 */
 func (o *InputEventKey) SetScancode(scancode gdnative.Int) {
-	//log.Println("Calling InputEventKey.SetScancode()")
+	// log.Println("Calling InputEventKey.SetScancode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *InputEventKey) SetScancode(scancode gdnative.Int) {
 	Args: [{ false unicode int}], Returns: void
 */
 func (o *InputEventKey) SetUnicode(unicode gdnative.Int) {
-	//log.Println("Calling InputEventKey.SetUnicode()")
+	// log.Println("Calling InputEventKey.SetUnicode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

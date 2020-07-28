@@ -39,7 +39,7 @@ func (o *GridContainer) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *GridContainer) GetColumns() gdnative.Int {
-	//log.Println("Calling GridContainer.GetColumns()")
+	// log.Println("Calling GridContainer.GetColumns()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *GridContainer) GetColumns() gdnative.Int {
 	Args: [{ false columns int}], Returns: void
 */
 func (o *GridContainer) SetColumns(columns gdnative.Int) {
-	//log.Println("Calling GridContainer.SetColumns()")
+	// log.Println("Calling GridContainer.SetColumns()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

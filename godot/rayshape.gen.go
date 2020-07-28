@@ -39,7 +39,7 @@ func (o *RayShape) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *RayShape) GetLength() gdnative.Real {
-	//log.Println("Calling RayShape.GetLength()")
+	// log.Println("Calling RayShape.GetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *RayShape) GetLength() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *RayShape) GetSlipsOnSlope() gdnative.Bool {
-	//log.Println("Calling RayShape.GetSlipsOnSlope()")
+	// log.Println("Calling RayShape.GetSlipsOnSlope()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *RayShape) GetSlipsOnSlope() gdnative.Bool {
 	Args: [{ false length float}], Returns: void
 */
 func (o *RayShape) SetLength(length gdnative.Real) {
-	//log.Println("Calling RayShape.SetLength()")
+	// log.Println("Calling RayShape.SetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *RayShape) SetLength(length gdnative.Real) {
 	Args: [{ false active bool}], Returns: void
 */
 func (o *RayShape) SetSlipsOnSlope(active gdnative.Bool) {
-	//log.Println("Calling RayShape.SetSlipsOnSlope()")
+	// log.Println("Calling RayShape.SetSlipsOnSlope()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

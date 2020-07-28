@@ -62,7 +62,7 @@ func (o *resourceLoader) BaseClass() string {
 */
 func (o *resourceLoader) Exists(path gdnative.String, typeHint gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.Exists()")
+	// log.Println("Calling _ResourceLoader.Exists()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -88,7 +88,7 @@ func (o *resourceLoader) Exists(path gdnative.String, typeHint gdnative.String) 
 */
 func (o *resourceLoader) GetDependencies(path gdnative.String) gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.GetDependencies()")
+	// log.Println("Calling _ResourceLoader.GetDependencies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -113,7 +113,7 @@ func (o *resourceLoader) GetDependencies(path gdnative.String) gdnative.PoolStri
 */
 func (o *resourceLoader) GetRecognizedExtensionsForType(aType gdnative.String) gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.GetRecognizedExtensionsForType()")
+	// log.Println("Calling _ResourceLoader.GetRecognizedExtensionsForType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -138,7 +138,7 @@ func (o *resourceLoader) GetRecognizedExtensionsForType(aType gdnative.String) g
 */
 func (o *resourceLoader) Has(path gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.Has()")
+	// log.Println("Calling _ResourceLoader.Has()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -163,7 +163,7 @@ func (o *resourceLoader) Has(path gdnative.String) gdnative.Bool {
 */
 func (o *resourceLoader) HasCached(path gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.HasCached()")
+	// log.Println("Calling _ResourceLoader.HasCached()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -188,7 +188,7 @@ func (o *resourceLoader) HasCached(path gdnative.String) gdnative.Bool {
 */
 func (o *resourceLoader) Load(path gdnative.String, typeHint gdnative.String, noCache gdnative.Bool) ResourceImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.Load()")
+	// log.Println("Calling _ResourceLoader.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -229,7 +229,7 @@ func (o *resourceLoader) Load(path gdnative.String, typeHint gdnative.String, no
 */
 func (o *resourceLoader) LoadInteractive(path gdnative.String, typeHint gdnative.String) ResourceInteractiveLoaderImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.LoadInteractive()")
+	// log.Println("Calling _ResourceLoader.LoadInteractive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -269,7 +269,7 @@ func (o *resourceLoader) LoadInteractive(path gdnative.String, typeHint gdnative
 */
 func (o *resourceLoader) SetAbortOnMissingResources(abort gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceLoader.SetAbortOnMissingResources()")
+	// log.Println("Calling _ResourceLoader.SetAbortOnMissingResources()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

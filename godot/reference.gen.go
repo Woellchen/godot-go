@@ -39,7 +39,7 @@ func (o *Reference) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *Reference) InitRef() gdnative.Bool {
-	//log.Println("Calling Reference.InitRef()")
+	// log.Println("Calling Reference.InitRef()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Reference) InitRef() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Reference) ReferenceMethod() gdnative.Bool {
-	//log.Println("Calling Reference.ReferenceMethod()")
+	// log.Println("Calling Reference.ReferenceMethod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *Reference) ReferenceMethod() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Reference) Unreference() gdnative.Bool {
-	//log.Println("Calling Reference.Unreference()")
+	// log.Println("Calling Reference.Unreference()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

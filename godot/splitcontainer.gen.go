@@ -48,7 +48,7 @@ func (o *SplitContainer) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *SplitContainer) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling SplitContainer.X_GuiInput()")
+	// log.Println("Calling SplitContainer.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -69,7 +69,7 @@ func (o *SplitContainer) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *SplitContainer) ClampSplitOffset() {
-	//log.Println("Calling SplitContainer.ClampSplitOffset()")
+	// log.Println("Calling SplitContainer.ClampSplitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -89,7 +89,7 @@ func (o *SplitContainer) ClampSplitOffset() {
 	Args: [], Returns: enum.SplitContainer::DraggerVisibility
 */
 func (o *SplitContainer) GetDraggerVisibility() SplitContainerDraggerVisibility {
-	//log.Println("Calling SplitContainer.GetDraggerVisibility()")
+	// log.Println("Calling SplitContainer.GetDraggerVisibility()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -112,7 +112,7 @@ func (o *SplitContainer) GetDraggerVisibility() SplitContainerDraggerVisibility 
 	Args: [], Returns: int
 */
 func (o *SplitContainer) GetSplitOffset() gdnative.Int {
-	//log.Println("Calling SplitContainer.GetSplitOffset()")
+	// log.Println("Calling SplitContainer.GetSplitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -135,7 +135,7 @@ func (o *SplitContainer) GetSplitOffset() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *SplitContainer) IsCollapsed() gdnative.Bool {
-	//log.Println("Calling SplitContainer.IsCollapsed()")
+	// log.Println("Calling SplitContainer.IsCollapsed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *SplitContainer) IsCollapsed() gdnative.Bool {
 	Args: [{ false collapsed bool}], Returns: void
 */
 func (o *SplitContainer) SetCollapsed(collapsed gdnative.Bool) {
-	//log.Println("Calling SplitContainer.SetCollapsed()")
+	// log.Println("Calling SplitContainer.SetCollapsed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *SplitContainer) SetCollapsed(collapsed gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *SplitContainer) SetDraggerVisibility(mode gdnative.Int) {
-	//log.Println("Calling SplitContainer.SetDraggerVisibility()")
+	// log.Println("Calling SplitContainer.SetDraggerVisibility()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -200,7 +200,7 @@ func (o *SplitContainer) SetDraggerVisibility(mode gdnative.Int) {
 	Args: [{ false offset int}], Returns: void
 */
 func (o *SplitContainer) SetSplitOffset(offset gdnative.Int) {
-	//log.Println("Calling SplitContainer.SetSplitOffset()")
+	// log.Println("Calling SplitContainer.SetSplitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *Directory) BaseClass() string {
 	Args: [{ false todir String}], Returns: enum.Error
 */
 func (o *Directory) ChangeDir(todir gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.ChangeDir()")
+	// log.Println("Calling _Directory.ChangeDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *Directory) ChangeDir(todir gdnative.String) gdnative.Error {
 	Args: [{ false from String} { false to String}], Returns: enum.Error
 */
 func (o *Directory) Copy(from gdnative.String, to gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.Copy()")
+	// log.Println("Calling _Directory.Copy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -88,7 +88,7 @@ func (o *Directory) Copy(from gdnative.String, to gdnative.String) gdnative.Erro
 	Args: [], Returns: bool
 */
 func (o *Directory) CurrentIsDir() gdnative.Bool {
-	//log.Println("Calling _Directory.CurrentIsDir()")
+	// log.Println("Calling _Directory.CurrentIsDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -111,7 +111,7 @@ func (o *Directory) CurrentIsDir() gdnative.Bool {
 	Args: [{ false path String}], Returns: bool
 */
 func (o *Directory) DirExists(path gdnative.String) gdnative.Bool {
-	//log.Println("Calling _Directory.DirExists()")
+	// log.Println("Calling _Directory.DirExists()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -135,7 +135,7 @@ func (o *Directory) DirExists(path gdnative.String) gdnative.Bool {
 	Args: [{ false path String}], Returns: bool
 */
 func (o *Directory) FileExists(path gdnative.String) gdnative.Bool {
-	//log.Println("Calling _Directory.FileExists()")
+	// log.Println("Calling _Directory.FileExists()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -159,7 +159,7 @@ func (o *Directory) FileExists(path gdnative.String) gdnative.Bool {
 	Args: [], Returns: String
 */
 func (o *Directory) GetCurrentDir() gdnative.String {
-	//log.Println("Calling _Directory.GetCurrentDir()")
+	// log.Println("Calling _Directory.GetCurrentDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -182,7 +182,7 @@ func (o *Directory) GetCurrentDir() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *Directory) GetCurrentDrive() gdnative.Int {
-	//log.Println("Calling _Directory.GetCurrentDrive()")
+	// log.Println("Calling _Directory.GetCurrentDrive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -205,7 +205,7 @@ func (o *Directory) GetCurrentDrive() gdnative.Int {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *Directory) GetDrive(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling _Directory.GetDrive()")
+	// log.Println("Calling _Directory.GetDrive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -229,7 +229,7 @@ func (o *Directory) GetDrive(idx gdnative.Int) gdnative.String {
 	Args: [], Returns: int
 */
 func (o *Directory) GetDriveCount() gdnative.Int {
-	//log.Println("Calling _Directory.GetDriveCount()")
+	// log.Println("Calling _Directory.GetDriveCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -252,7 +252,7 @@ func (o *Directory) GetDriveCount() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *Directory) GetNext() gdnative.String {
-	//log.Println("Calling _Directory.GetNext()")
+	// log.Println("Calling _Directory.GetNext()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -275,7 +275,7 @@ func (o *Directory) GetNext() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *Directory) GetSpaceLeft() gdnative.Int {
-	//log.Println("Calling _Directory.GetSpaceLeft()")
+	// log.Println("Calling _Directory.GetSpaceLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -298,7 +298,7 @@ func (o *Directory) GetSpaceLeft() gdnative.Int {
 	Args: [{False true skip_navigational bool} {False true skip_hidden bool}], Returns: enum.Error
 */
 func (o *Directory) ListDirBegin(skipNavigational gdnative.Bool, skipHidden gdnative.Bool) gdnative.Error {
-	//log.Println("Calling _Directory.ListDirBegin()")
+	// log.Println("Calling _Directory.ListDirBegin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -323,7 +323,7 @@ func (o *Directory) ListDirBegin(skipNavigational gdnative.Bool, skipHidden gdna
 	Args: [], Returns: void
 */
 func (o *Directory) ListDirEnd() {
-	//log.Println("Calling _Directory.ListDirEnd()")
+	// log.Println("Calling _Directory.ListDirEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -343,7 +343,7 @@ func (o *Directory) ListDirEnd() {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Directory) MakeDir(path gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.MakeDir()")
+	// log.Println("Calling _Directory.MakeDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -367,7 +367,7 @@ func (o *Directory) MakeDir(path gdnative.String) gdnative.Error {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Directory) MakeDirRecursive(path gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.MakeDirRecursive()")
+	// log.Println("Calling _Directory.MakeDirRecursive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -391,7 +391,7 @@ func (o *Directory) MakeDirRecursive(path gdnative.String) gdnative.Error {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Directory) Open(path gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.Open()")
+	// log.Println("Calling _Directory.Open()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -415,7 +415,7 @@ func (o *Directory) Open(path gdnative.String) gdnative.Error {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Directory) Remove(path gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.Remove()")
+	// log.Println("Calling _Directory.Remove()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -439,7 +439,7 @@ func (o *Directory) Remove(path gdnative.String) gdnative.Error {
 	Args: [{ false from String} { false to String}], Returns: enum.Error
 */
 func (o *Directory) Rename(from gdnative.String, to gdnative.String) gdnative.Error {
-	//log.Println("Calling _Directory.Rename()")
+	// log.Println("Calling _Directory.Rename()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

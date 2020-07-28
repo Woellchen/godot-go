@@ -39,7 +39,7 @@ func (o *NativeScript) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *NativeScript) GetClassDocumentation() gdnative.String {
-	//log.Println("Calling NativeScript.GetClassDocumentation()")
+	// log.Println("Calling NativeScript.GetClassDocumentation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *NativeScript) GetClassDocumentation() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *NativeScript) GetClassName() gdnative.String {
-	//log.Println("Calling NativeScript.GetClassName()")
+	// log.Println("Calling NativeScript.GetClassName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *NativeScript) GetClassName() gdnative.String {
 	Args: [], Returns: GDNativeLibrary
 */
 func (o *NativeScript) GetLibrary() GDNativeLibraryImplementer {
-	//log.Println("Calling NativeScript.GetLibrary()")
+	// log.Println("Calling NativeScript.GetLibrary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *NativeScript) GetLibrary() GDNativeLibraryImplementer {
 	Args: [{ false method String}], Returns: String
 */
 func (o *NativeScript) GetMethodDocumentation(method gdnative.String) gdnative.String {
-	//log.Println("Calling NativeScript.GetMethodDocumentation()")
+	// log.Println("Calling NativeScript.GetMethodDocumentation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +146,7 @@ func (o *NativeScript) GetMethodDocumentation(method gdnative.String) gdnative.S
 	Args: [{ false path String}], Returns: String
 */
 func (o *NativeScript) GetPropertyDocumentation(path gdnative.String) gdnative.String {
-	//log.Println("Calling NativeScript.GetPropertyDocumentation()")
+	// log.Println("Calling NativeScript.GetPropertyDocumentation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -170,7 +170,7 @@ func (o *NativeScript) GetPropertyDocumentation(path gdnative.String) gdnative.S
 	Args: [], Returns: String
 */
 func (o *NativeScript) GetScriptClassIconPath() gdnative.String {
-	//log.Println("Calling NativeScript.GetScriptClassIconPath()")
+	// log.Println("Calling NativeScript.GetScriptClassIconPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -193,7 +193,7 @@ func (o *NativeScript) GetScriptClassIconPath() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *NativeScript) GetScriptClassName() gdnative.String {
-	//log.Println("Calling NativeScript.GetScriptClassName()")
+	// log.Println("Calling NativeScript.GetScriptClassName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -216,7 +216,7 @@ func (o *NativeScript) GetScriptClassName() gdnative.String {
 	Args: [{ false signal_name String}], Returns: String
 */
 func (o *NativeScript) GetSignalDocumentation(signalName gdnative.String) gdnative.String {
-	//log.Println("Calling NativeScript.GetSignalDocumentation()")
+	// log.Println("Calling NativeScript.GetSignalDocumentation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -239,14 +239,14 @@ func (o *NativeScript) GetSignalDocumentation(signalName gdnative.String) gdnati
         Undocumented
 	Args: [], Returns: Variant
 */
-func (o *NativeScript) New(args ...gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling NativeScript.New()")
+func (o *NativeScript) New(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError) {
+	// log.Println("Calling NativeScript.New()")
 
 	// Build out the method's arguments
-	ptrArguments := make([]gdnative.Pointer, 0+len(args), 0+len(args))
+	arguments := make([]gdnative.Variant, 0+len(args), 0+len(args))
 
 	for i, arg := range args {
-		ptrArguments[i+0] = gdnative.NewPointerFromVariant(arg)
+		arguments[i+0] = arg
 	}
 
 	// Get the method bind
@@ -254,12 +254,9 @@ func (o *NativeScript) New(args ...gdnative.Variant) gdnative.Variant {
 
 	// Call the parent method.
 	// Variant
-	retPtr := gdnative.NewEmptyVariant()
-	gdnative.MethodBindPtrCall(methodBind, o.GetBaseObject(), ptrArguments, retPtr)
+	ret, err := gdnative.MethodBindCall(methodBind, o.GetBaseObject(), arguments)
 
-	// If we have a return type, convert it from a pointer into its actual object.
-	ret := gdnative.NewVariantFromPointer(retPtr)
-	return ret
+	return ret, err
 }
 
 /*
@@ -267,7 +264,7 @@ func (o *NativeScript) New(args ...gdnative.Variant) gdnative.Variant {
 	Args: [{ false class_name String}], Returns: void
 */
 func (o *NativeScript) SetClassName(className gdnative.String) {
-	//log.Println("Calling NativeScript.SetClassName()")
+	// log.Println("Calling NativeScript.SetClassName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -288,7 +285,7 @@ func (o *NativeScript) SetClassName(className gdnative.String) {
 	Args: [{ false library GDNativeLibrary}], Returns: void
 */
 func (o *NativeScript) SetLibrary(library GDNativeLibraryImplementer) {
-	//log.Println("Calling NativeScript.SetLibrary()")
+	// log.Println("Calling NativeScript.SetLibrary()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -309,7 +306,7 @@ func (o *NativeScript) SetLibrary(library GDNativeLibraryImplementer) {
 	Args: [{ false icon_path String}], Returns: void
 */
 func (o *NativeScript) SetScriptClassIconPath(iconPath gdnative.String) {
-	//log.Println("Calling NativeScript.SetScriptClassIconPath()")
+	// log.Println("Calling NativeScript.SetScriptClassIconPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -330,7 +327,7 @@ func (o *NativeScript) SetScriptClassIconPath(iconPath gdnative.String) {
 	Args: [{ false class_name String}], Returns: void
 */
 func (o *NativeScript) SetScriptClassName(className gdnative.String) {
-	//log.Println("Calling NativeScript.SetScriptClassName()")
+	// log.Println("Calling NativeScript.SetScriptClassName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -358,7 +355,7 @@ type NativeScriptImplementer interface {
 	GetScriptClassIconPath() gdnative.String
 	GetScriptClassName() gdnative.String
 	GetSignalDocumentation(signalName gdnative.String) gdnative.String
-	New(args ...gdnative.Variant) gdnative.Variant
+	New(args ...gdnative.Variant) (gdnative.Variant, gdnative.VariantCallError)
 	SetClassName(className gdnative.String)
 	SetLibrary(library GDNativeLibraryImplementer)
 	SetScriptClassIconPath(iconPath gdnative.String)

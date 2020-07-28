@@ -39,7 +39,7 @@ func (o *CanvasModulate) BaseClass() string {
 	Args: [], Returns: Color
 */
 func (o *CanvasModulate) GetColor() gdnative.Color {
-	//log.Println("Calling CanvasModulate.GetColor()")
+	// log.Println("Calling CanvasModulate.GetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CanvasModulate) GetColor() gdnative.Color {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *CanvasModulate) SetColor(color gdnative.Color) {
-	//log.Println("Calling CanvasModulate.SetColor()")
+	// log.Println("Calling CanvasModulate.SetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -139,7 +139,7 @@ func (o *os) BaseClass() string {
 */
 func (o *os) Alert(text gdnative.String, title gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.Alert()")
+	// log.Println("Calling _OS.Alert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -162,7 +162,7 @@ func (o *os) Alert(text gdnative.String, title gdnative.String) {
 */
 func (o *os) CanDraw() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.CanDraw()")
+	// log.Println("Calling _OS.CanDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *os) CanDraw() gdnative.Bool {
 */
 func (o *os) CanUseThreads() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.CanUseThreads()")
+	// log.Println("Calling _OS.CanUseThreads()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -210,7 +210,7 @@ func (o *os) CanUseThreads() gdnative.Bool {
 */
 func (o *os) CenterWindow() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.CenterWindow()")
+	// log.Println("Calling _OS.CenterWindow()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -231,7 +231,7 @@ func (o *os) CenterWindow() {
 */
 func (o *os) CloseMidiInputs() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.CloseMidiInputs()")
+	// log.Println("Calling _OS.CloseMidiInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -252,7 +252,7 @@ func (o *os) CloseMidiInputs() {
 */
 func (o *os) DelayMsec(msec gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.DelayMsec()")
+	// log.Println("Calling _OS.DelayMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -274,7 +274,7 @@ func (o *os) DelayMsec(msec gdnative.Int) {
 */
 func (o *os) DelayUsec(usec gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.DelayUsec()")
+	// log.Println("Calling _OS.DelayUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -296,7 +296,7 @@ func (o *os) DelayUsec(usec gdnative.Int) {
 */
 func (o *os) DumpMemoryToFile(file gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.DumpMemoryToFile()")
+	// log.Println("Calling _OS.DumpMemoryToFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -318,7 +318,7 @@ func (o *os) DumpMemoryToFile(file gdnative.String) {
 */
 func (o *os) DumpResourcesToFile(file gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.DumpResourcesToFile()")
+	// log.Println("Calling _OS.DumpResourcesToFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -340,7 +340,7 @@ func (o *os) DumpResourcesToFile(file gdnative.String) {
 */
 func (o *os) Execute(path gdnative.String, arguments gdnative.PoolStringArray, blocking gdnative.Bool, output gdnative.Array, readStderr gdnative.Bool) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.Execute()")
+	// log.Println("Calling _OS.Execute()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -369,7 +369,7 @@ func (o *os) Execute(path gdnative.String, arguments gdnative.PoolStringArray, b
 */
 func (o *os) FindScancodeFromString(string gdnative.String) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.FindScancodeFromString()")
+	// log.Println("Calling _OS.FindScancodeFromString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -394,7 +394,7 @@ func (o *os) FindScancodeFromString(string gdnative.String) gdnative.Int {
 */
 func (o *os) GetAudioDriverCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetAudioDriverCount()")
+	// log.Println("Calling _OS.GetAudioDriverCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -418,7 +418,7 @@ func (o *os) GetAudioDriverCount() gdnative.Int {
 */
 func (o *os) GetAudioDriverName(driver gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetAudioDriverName()")
+	// log.Println("Calling _OS.GetAudioDriverName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -443,7 +443,7 @@ func (o *os) GetAudioDriverName(driver gdnative.Int) gdnative.String {
 */
 func (o *os) GetBorderlessWindow() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetBorderlessWindow()")
+	// log.Println("Calling _OS.GetBorderlessWindow()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -467,7 +467,7 @@ func (o *os) GetBorderlessWindow() gdnative.Bool {
 */
 func (o *os) GetClipboard() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetClipboard()")
+	// log.Println("Calling _OS.GetClipboard()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -491,7 +491,7 @@ func (o *os) GetClipboard() gdnative.String {
 */
 func (o *os) GetCmdlineArgs() gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetCmdlineArgs()")
+	// log.Println("Calling _OS.GetCmdlineArgs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -515,7 +515,7 @@ func (o *os) GetCmdlineArgs() gdnative.PoolStringArray {
 */
 func (o *os) GetConnectedMidiInputs() gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetConnectedMidiInputs()")
+	// log.Println("Calling _OS.GetConnectedMidiInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -539,7 +539,7 @@ func (o *os) GetConnectedMidiInputs() gdnative.PoolStringArray {
 */
 func (o *os) GetCurrentScreen() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetCurrentScreen()")
+	// log.Println("Calling _OS.GetCurrentScreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -563,7 +563,7 @@ func (o *os) GetCurrentScreen() gdnative.Int {
 */
 func (o *os) GetCurrentTabletDriver() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetCurrentTabletDriver()")
+	// log.Println("Calling _OS.GetCurrentTabletDriver()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -587,7 +587,7 @@ func (o *os) GetCurrentTabletDriver() gdnative.String {
 */
 func (o *os) GetCurrentVideoDriver() _OSVideoDriver {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetCurrentVideoDriver()")
+	// log.Println("Calling _OS.GetCurrentVideoDriver()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -611,7 +611,7 @@ func (o *os) GetCurrentVideoDriver() _OSVideoDriver {
 */
 func (o *os) GetDate(utc gdnative.Bool) gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetDate()")
+	// log.Println("Calling _OS.GetDate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -636,7 +636,7 @@ func (o *os) GetDate(utc gdnative.Bool) gdnative.Dictionary {
 */
 func (o *os) GetDatetime(utc gdnative.Bool) gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetDatetime()")
+	// log.Println("Calling _OS.GetDatetime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -661,7 +661,7 @@ func (o *os) GetDatetime(utc gdnative.Bool) gdnative.Dictionary {
 */
 func (o *os) GetDatetimeFromUnixTime(unixTimeVal gdnative.Int) gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetDatetimeFromUnixTime()")
+	// log.Println("Calling _OS.GetDatetimeFromUnixTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -686,7 +686,7 @@ func (o *os) GetDatetimeFromUnixTime(unixTimeVal gdnative.Int) gdnative.Dictiona
 */
 func (o *os) GetDynamicMemoryUsage() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetDynamicMemoryUsage()")
+	// log.Println("Calling _OS.GetDynamicMemoryUsage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -710,7 +710,7 @@ func (o *os) GetDynamicMemoryUsage() gdnative.Int {
 */
 func (o *os) GetEnvironment(environment gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetEnvironment()")
+	// log.Println("Calling _OS.GetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -735,7 +735,7 @@ func (o *os) GetEnvironment(environment gdnative.String) gdnative.String {
 */
 func (o *os) GetExecutablePath() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetExecutablePath()")
+	// log.Println("Calling _OS.GetExecutablePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -759,7 +759,7 @@ func (o *os) GetExecutablePath() gdnative.String {
 */
 func (o *os) GetExitCode() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetExitCode()")
+	// log.Println("Calling _OS.GetExitCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -783,7 +783,7 @@ func (o *os) GetExitCode() gdnative.Int {
 */
 func (o *os) GetGrantedPermissions() gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetGrantedPermissions()")
+	// log.Println("Calling _OS.GetGrantedPermissions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -807,7 +807,7 @@ func (o *os) GetGrantedPermissions() gdnative.PoolStringArray {
 */
 func (o *os) GetImeSelection() gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetImeSelection()")
+	// log.Println("Calling _OS.GetImeSelection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -831,7 +831,7 @@ func (o *os) GetImeSelection() gdnative.Vector2 {
 */
 func (o *os) GetImeText() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetImeText()")
+	// log.Println("Calling _OS.GetImeText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -855,7 +855,7 @@ func (o *os) GetImeText() gdnative.String {
 */
 func (o *os) GetLatinKeyboardVariant() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetLatinKeyboardVariant()")
+	// log.Println("Calling _OS.GetLatinKeyboardVariant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -879,7 +879,7 @@ func (o *os) GetLatinKeyboardVariant() gdnative.String {
 */
 func (o *os) GetLocale() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetLocale()")
+	// log.Println("Calling _OS.GetLocale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -903,7 +903,7 @@ func (o *os) GetLocale() gdnative.String {
 */
 func (o *os) GetLowProcessorUsageModeSleepUsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetLowProcessorUsageModeSleepUsec()")
+	// log.Println("Calling _OS.GetLowProcessorUsageModeSleepUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -927,7 +927,7 @@ func (o *os) GetLowProcessorUsageModeSleepUsec() gdnative.Int {
 */
 func (o *os) GetMaxWindowSize() gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetMaxWindowSize()")
+	// log.Println("Calling _OS.GetMaxWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -951,7 +951,7 @@ func (o *os) GetMaxWindowSize() gdnative.Vector2 {
 */
 func (o *os) GetMinWindowSize() gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetMinWindowSize()")
+	// log.Println("Calling _OS.GetMinWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -975,7 +975,7 @@ func (o *os) GetMinWindowSize() gdnative.Vector2 {
 */
 func (o *os) GetModelName() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetModelName()")
+	// log.Println("Calling _OS.GetModelName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -999,7 +999,7 @@ func (o *os) GetModelName() gdnative.String {
 */
 func (o *os) GetName() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetName()")
+	// log.Println("Calling _OS.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1023,7 +1023,7 @@ func (o *os) GetName() gdnative.String {
 */
 func (o *os) GetPowerPercentLeft() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetPowerPercentLeft()")
+	// log.Println("Calling _OS.GetPowerPercentLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1047,7 +1047,7 @@ func (o *os) GetPowerPercentLeft() gdnative.Int {
 */
 func (o *os) GetPowerSecondsLeft() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetPowerSecondsLeft()")
+	// log.Println("Calling _OS.GetPowerSecondsLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1071,7 +1071,7 @@ func (o *os) GetPowerSecondsLeft() gdnative.Int {
 */
 func (o *os) GetPowerState() _OSPowerState {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetPowerState()")
+	// log.Println("Calling _OS.GetPowerState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1095,7 +1095,7 @@ func (o *os) GetPowerState() _OSPowerState {
 */
 func (o *os) GetProcessId() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetProcessId()")
+	// log.Println("Calling _OS.GetProcessId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1119,7 +1119,7 @@ func (o *os) GetProcessId() gdnative.Int {
 */
 func (o *os) GetProcessorCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetProcessorCount()")
+	// log.Println("Calling _OS.GetProcessorCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1143,7 +1143,7 @@ func (o *os) GetProcessorCount() gdnative.Int {
 */
 func (o *os) GetRealWindowSize() gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetRealWindowSize()")
+	// log.Println("Calling _OS.GetRealWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1167,7 +1167,7 @@ func (o *os) GetRealWindowSize() gdnative.Vector2 {
 */
 func (o *os) GetScancodeString(code gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetScancodeString()")
+	// log.Println("Calling _OS.GetScancodeString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1192,7 +1192,7 @@ func (o *os) GetScancodeString(code gdnative.Int) gdnative.String {
 */
 func (o *os) GetScreenCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetScreenCount()")
+	// log.Println("Calling _OS.GetScreenCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1216,7 +1216,7 @@ func (o *os) GetScreenCount() gdnative.Int {
 */
 func (o *os) GetScreenDpi(screen gdnative.Int) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetScreenDpi()")
+	// log.Println("Calling _OS.GetScreenDpi()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1241,7 +1241,7 @@ func (o *os) GetScreenDpi(screen gdnative.Int) gdnative.Int {
 */
 func (o *os) GetScreenOrientation() _OSScreenOrientation {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetScreenOrientation()")
+	// log.Println("Calling _OS.GetScreenOrientation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1265,7 +1265,7 @@ func (o *os) GetScreenOrientation() _OSScreenOrientation {
 */
 func (o *os) GetScreenPosition(screen gdnative.Int) gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetScreenPosition()")
+	// log.Println("Calling _OS.GetScreenPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1290,7 +1290,7 @@ func (o *os) GetScreenPosition(screen gdnative.Int) gdnative.Vector2 {
 */
 func (o *os) GetScreenSize(screen gdnative.Int) gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetScreenSize()")
+	// log.Println("Calling _OS.GetScreenSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1315,7 +1315,7 @@ func (o *os) GetScreenSize(screen gdnative.Int) gdnative.Vector2 {
 */
 func (o *os) GetSplashTickMsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetSplashTickMsec()")
+	// log.Println("Calling _OS.GetSplashTickMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1339,7 +1339,7 @@ func (o *os) GetSplashTickMsec() gdnative.Int {
 */
 func (o *os) GetStaticMemoryPeakUsage() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetStaticMemoryPeakUsage()")
+	// log.Println("Calling _OS.GetStaticMemoryPeakUsage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1363,7 +1363,7 @@ func (o *os) GetStaticMemoryPeakUsage() gdnative.Int {
 */
 func (o *os) GetStaticMemoryUsage() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetStaticMemoryUsage()")
+	// log.Println("Calling _OS.GetStaticMemoryUsage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1387,7 +1387,7 @@ func (o *os) GetStaticMemoryUsage() gdnative.Int {
 */
 func (o *os) GetSystemDir(dir gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetSystemDir()")
+	// log.Println("Calling _OS.GetSystemDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1412,7 +1412,7 @@ func (o *os) GetSystemDir(dir gdnative.Int) gdnative.String {
 */
 func (o *os) GetSystemTimeMsecs() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetSystemTimeMsecs()")
+	// log.Println("Calling _OS.GetSystemTimeMsecs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1436,7 +1436,7 @@ func (o *os) GetSystemTimeMsecs() gdnative.Int {
 */
 func (o *os) GetSystemTimeSecs() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetSystemTimeSecs()")
+	// log.Println("Calling _OS.GetSystemTimeSecs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1460,7 +1460,7 @@ func (o *os) GetSystemTimeSecs() gdnative.Int {
 */
 func (o *os) GetTabletDriverCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetTabletDriverCount()")
+	// log.Println("Calling _OS.GetTabletDriverCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1484,7 +1484,7 @@ func (o *os) GetTabletDriverCount() gdnative.Int {
 */
 func (o *os) GetTabletDriverName(idx gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetTabletDriverName()")
+	// log.Println("Calling _OS.GetTabletDriverName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1509,7 +1509,7 @@ func (o *os) GetTabletDriverName(idx gdnative.Int) gdnative.String {
 */
 func (o *os) GetTicksMsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetTicksMsec()")
+	// log.Println("Calling _OS.GetTicksMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1533,7 +1533,7 @@ func (o *os) GetTicksMsec() gdnative.Int {
 */
 func (o *os) GetTicksUsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetTicksUsec()")
+	// log.Println("Calling _OS.GetTicksUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1557,7 +1557,7 @@ func (o *os) GetTicksUsec() gdnative.Int {
 */
 func (o *os) GetTime(utc gdnative.Bool) gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetTime()")
+	// log.Println("Calling _OS.GetTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1582,7 +1582,7 @@ func (o *os) GetTime(utc gdnative.Bool) gdnative.Dictionary {
 */
 func (o *os) GetTimeZoneInfo() gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetTimeZoneInfo()")
+	// log.Println("Calling _OS.GetTimeZoneInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1606,7 +1606,7 @@ func (o *os) GetTimeZoneInfo() gdnative.Dictionary {
 */
 func (o *os) GetUniqueId() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetUniqueId()")
+	// log.Println("Calling _OS.GetUniqueId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1630,7 +1630,7 @@ func (o *os) GetUniqueId() gdnative.String {
 */
 func (o *os) GetUnixTime() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetUnixTime()")
+	// log.Println("Calling _OS.GetUnixTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1654,7 +1654,7 @@ func (o *os) GetUnixTime() gdnative.Int {
 */
 func (o *os) GetUnixTimeFromDatetime(datetime gdnative.Dictionary) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetUnixTimeFromDatetime()")
+	// log.Println("Calling _OS.GetUnixTimeFromDatetime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1679,7 +1679,7 @@ func (o *os) GetUnixTimeFromDatetime(datetime gdnative.Dictionary) gdnative.Int 
 */
 func (o *os) GetUserDataDir() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetUserDataDir()")
+	// log.Println("Calling _OS.GetUserDataDir()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1703,7 +1703,7 @@ func (o *os) GetUserDataDir() gdnative.String {
 */
 func (o *os) GetVideoDriverCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetVideoDriverCount()")
+	// log.Println("Calling _OS.GetVideoDriverCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1727,7 +1727,7 @@ func (o *os) GetVideoDriverCount() gdnative.Int {
 */
 func (o *os) GetVideoDriverName(driver gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetVideoDriverName()")
+	// log.Println("Calling _OS.GetVideoDriverName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1752,7 +1752,7 @@ func (o *os) GetVideoDriverName(driver gdnative.Int) gdnative.String {
 */
 func (o *os) GetVirtualKeyboardHeight() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetVirtualKeyboardHeight()")
+	// log.Println("Calling _OS.GetVirtualKeyboardHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1776,7 +1776,7 @@ func (o *os) GetVirtualKeyboardHeight() gdnative.Int {
 */
 func (o *os) GetWindowPerPixelTransparencyEnabled() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetWindowPerPixelTransparencyEnabled()")
+	// log.Println("Calling _OS.GetWindowPerPixelTransparencyEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1800,7 +1800,7 @@ func (o *os) GetWindowPerPixelTransparencyEnabled() gdnative.Bool {
 */
 func (o *os) GetWindowPosition() gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetWindowPosition()")
+	// log.Println("Calling _OS.GetWindowPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1824,7 +1824,7 @@ func (o *os) GetWindowPosition() gdnative.Vector2 {
 */
 func (o *os) GetWindowSafeArea() gdnative.Rect2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetWindowSafeArea()")
+	// log.Println("Calling _OS.GetWindowSafeArea()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1848,7 +1848,7 @@ func (o *os) GetWindowSafeArea() gdnative.Rect2 {
 */
 func (o *os) GetWindowSize() gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GetWindowSize()")
+	// log.Println("Calling _OS.GetWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1872,7 +1872,7 @@ func (o *os) GetWindowSize() gdnative.Vector2 {
 */
 func (o *os) GlobalMenuAddItem(menu gdnative.String, label gdnative.String, id gdnative.Variant, meta gdnative.Variant) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GlobalMenuAddItem()")
+	// log.Println("Calling _OS.GlobalMenuAddItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -1897,7 +1897,7 @@ func (o *os) GlobalMenuAddItem(menu gdnative.String, label gdnative.String, id g
 */
 func (o *os) GlobalMenuAddSeparator(menu gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GlobalMenuAddSeparator()")
+	// log.Println("Calling _OS.GlobalMenuAddSeparator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1919,7 +1919,7 @@ func (o *os) GlobalMenuAddSeparator(menu gdnative.String) {
 */
 func (o *os) GlobalMenuClear(menu gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GlobalMenuClear()")
+	// log.Println("Calling _OS.GlobalMenuClear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1941,7 +1941,7 @@ func (o *os) GlobalMenuClear(menu gdnative.String) {
 */
 func (o *os) GlobalMenuRemoveItem(menu gdnative.String, idx gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.GlobalMenuRemoveItem()")
+	// log.Println("Calling _OS.GlobalMenuRemoveItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1964,7 +1964,7 @@ func (o *os) GlobalMenuRemoveItem(menu gdnative.String, idx gdnative.Int) {
 */
 func (o *os) HasEnvironment(environment gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.HasEnvironment()")
+	// log.Println("Calling _OS.HasEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1989,7 +1989,7 @@ func (o *os) HasEnvironment(environment gdnative.String) gdnative.Bool {
 */
 func (o *os) HasFeature(tagName gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.HasFeature()")
+	// log.Println("Calling _OS.HasFeature()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2014,7 +2014,7 @@ func (o *os) HasFeature(tagName gdnative.String) gdnative.Bool {
 */
 func (o *os) HasTouchscreenUiHint() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.HasTouchscreenUiHint()")
+	// log.Println("Calling _OS.HasTouchscreenUiHint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2038,7 +2038,7 @@ func (o *os) HasTouchscreenUiHint() gdnative.Bool {
 */
 func (o *os) HasVirtualKeyboard() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.HasVirtualKeyboard()")
+	// log.Println("Calling _OS.HasVirtualKeyboard()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2062,7 +2062,7 @@ func (o *os) HasVirtualKeyboard() gdnative.Bool {
 */
 func (o *os) HideVirtualKeyboard() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.HideVirtualKeyboard()")
+	// log.Println("Calling _OS.HideVirtualKeyboard()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2083,7 +2083,7 @@ func (o *os) HideVirtualKeyboard() {
 */
 func (o *os) IsDebugBuild() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsDebugBuild()")
+	// log.Println("Calling _OS.IsDebugBuild()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2107,7 +2107,7 @@ func (o *os) IsDebugBuild() gdnative.Bool {
 */
 func (o *os) IsInLowProcessorUsageMode() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsInLowProcessorUsageMode()")
+	// log.Println("Calling _OS.IsInLowProcessorUsageMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2131,7 +2131,7 @@ func (o *os) IsInLowProcessorUsageMode() gdnative.Bool {
 */
 func (o *os) IsKeepScreenOn() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsKeepScreenOn()")
+	// log.Println("Calling _OS.IsKeepScreenOn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2155,7 +2155,7 @@ func (o *os) IsKeepScreenOn() gdnative.Bool {
 */
 func (o *os) IsOkLeftAndCancelRight() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsOkLeftAndCancelRight()")
+	// log.Println("Calling _OS.IsOkLeftAndCancelRight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2179,7 +2179,7 @@ func (o *os) IsOkLeftAndCancelRight() gdnative.Bool {
 */
 func (o *os) IsScancodeUnicode(code gdnative.Int) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsScancodeUnicode()")
+	// log.Println("Calling _OS.IsScancodeUnicode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2204,7 +2204,7 @@ func (o *os) IsScancodeUnicode(code gdnative.Int) gdnative.Bool {
 */
 func (o *os) IsStdoutVerbose() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsStdoutVerbose()")
+	// log.Println("Calling _OS.IsStdoutVerbose()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2228,7 +2228,7 @@ func (o *os) IsStdoutVerbose() gdnative.Bool {
 */
 func (o *os) IsUserfsPersistent() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsUserfsPersistent()")
+	// log.Println("Calling _OS.IsUserfsPersistent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2252,7 +2252,7 @@ func (o *os) IsUserfsPersistent() gdnative.Bool {
 */
 func (o *os) IsVsyncEnabled() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsVsyncEnabled()")
+	// log.Println("Calling _OS.IsVsyncEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2276,7 +2276,7 @@ func (o *os) IsVsyncEnabled() gdnative.Bool {
 */
 func (o *os) IsVsyncViaCompositorEnabled() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsVsyncViaCompositorEnabled()")
+	// log.Println("Calling _OS.IsVsyncViaCompositorEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2300,7 +2300,7 @@ func (o *os) IsVsyncViaCompositorEnabled() gdnative.Bool {
 */
 func (o *os) IsWindowAlwaysOnTop() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsWindowAlwaysOnTop()")
+	// log.Println("Calling _OS.IsWindowAlwaysOnTop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2324,7 +2324,7 @@ func (o *os) IsWindowAlwaysOnTop() gdnative.Bool {
 */
 func (o *os) IsWindowFocused() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsWindowFocused()")
+	// log.Println("Calling _OS.IsWindowFocused()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2348,7 +2348,7 @@ func (o *os) IsWindowFocused() gdnative.Bool {
 */
 func (o *os) IsWindowFullscreen() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsWindowFullscreen()")
+	// log.Println("Calling _OS.IsWindowFullscreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2372,7 +2372,7 @@ func (o *os) IsWindowFullscreen() gdnative.Bool {
 */
 func (o *os) IsWindowMaximized() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsWindowMaximized()")
+	// log.Println("Calling _OS.IsWindowMaximized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2396,7 +2396,7 @@ func (o *os) IsWindowMaximized() gdnative.Bool {
 */
 func (o *os) IsWindowMinimized() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsWindowMinimized()")
+	// log.Println("Calling _OS.IsWindowMinimized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2420,7 +2420,7 @@ func (o *os) IsWindowMinimized() gdnative.Bool {
 */
 func (o *os) IsWindowResizable() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.IsWindowResizable()")
+	// log.Println("Calling _OS.IsWindowResizable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2444,7 +2444,7 @@ func (o *os) IsWindowResizable() gdnative.Bool {
 */
 func (o *os) KeyboardGetCurrentLayout() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.KeyboardGetCurrentLayout()")
+	// log.Println("Calling _OS.KeyboardGetCurrentLayout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2468,7 +2468,7 @@ func (o *os) KeyboardGetCurrentLayout() gdnative.Int {
 */
 func (o *os) KeyboardGetLayoutCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.KeyboardGetLayoutCount()")
+	// log.Println("Calling _OS.KeyboardGetLayoutCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2492,7 +2492,7 @@ func (o *os) KeyboardGetLayoutCount() gdnative.Int {
 */
 func (o *os) KeyboardGetLayoutLanguage(index gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.KeyboardGetLayoutLanguage()")
+	// log.Println("Calling _OS.KeyboardGetLayoutLanguage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2517,7 +2517,7 @@ func (o *os) KeyboardGetLayoutLanguage(index gdnative.Int) gdnative.String {
 */
 func (o *os) KeyboardGetLayoutName(index gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.KeyboardGetLayoutName()")
+	// log.Println("Calling _OS.KeyboardGetLayoutName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2542,7 +2542,7 @@ func (o *os) KeyboardGetLayoutName(index gdnative.Int) gdnative.String {
 */
 func (o *os) KeyboardSetCurrentLayout(index gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.KeyboardSetCurrentLayout()")
+	// log.Println("Calling _OS.KeyboardSetCurrentLayout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2564,7 +2564,7 @@ func (o *os) KeyboardSetCurrentLayout(index gdnative.Int) {
 */
 func (o *os) Kill(pid gdnative.Int) gdnative.Error {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.Kill()")
+	// log.Println("Calling _OS.Kill()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2589,7 +2589,7 @@ func (o *os) Kill(pid gdnative.Int) gdnative.Error {
 */
 func (o *os) MoveWindowToForeground() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.MoveWindowToForeground()")
+	// log.Println("Calling _OS.MoveWindowToForeground()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2610,7 +2610,7 @@ func (o *os) MoveWindowToForeground() {
 */
 func (o *os) NativeVideoIsPlaying() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.NativeVideoIsPlaying()")
+	// log.Println("Calling _OS.NativeVideoIsPlaying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2634,7 +2634,7 @@ func (o *os) NativeVideoIsPlaying() gdnative.Bool {
 */
 func (o *os) NativeVideoPause() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.NativeVideoPause()")
+	// log.Println("Calling _OS.NativeVideoPause()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2655,7 +2655,7 @@ func (o *os) NativeVideoPause() {
 */
 func (o *os) NativeVideoPlay(path gdnative.String, volume gdnative.Real, audioTrack gdnative.String, subtitleTrack gdnative.String) gdnative.Error {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.NativeVideoPlay()")
+	// log.Println("Calling _OS.NativeVideoPlay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -2683,7 +2683,7 @@ func (o *os) NativeVideoPlay(path gdnative.String, volume gdnative.Real, audioTr
 */
 func (o *os) NativeVideoStop() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.NativeVideoStop()")
+	// log.Println("Calling _OS.NativeVideoStop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2704,7 +2704,7 @@ func (o *os) NativeVideoStop() {
 */
 func (o *os) NativeVideoUnpause() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.NativeVideoUnpause()")
+	// log.Println("Calling _OS.NativeVideoUnpause()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2725,7 +2725,7 @@ func (o *os) NativeVideoUnpause() {
 */
 func (o *os) OpenMidiInputs() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.OpenMidiInputs()")
+	// log.Println("Calling _OS.OpenMidiInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2746,7 +2746,7 @@ func (o *os) OpenMidiInputs() {
 */
 func (o *os) PrintAllResources(tofile gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.PrintAllResources()")
+	// log.Println("Calling _OS.PrintAllResources()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2768,7 +2768,7 @@ func (o *os) PrintAllResources(tofile gdnative.String) {
 */
 func (o *os) PrintAllTexturesBySize() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.PrintAllTexturesBySize()")
+	// log.Println("Calling _OS.PrintAllTexturesBySize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2789,7 +2789,7 @@ func (o *os) PrintAllTexturesBySize() {
 */
 func (o *os) PrintResourcesByType(types gdnative.PoolStringArray) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.PrintResourcesByType()")
+	// log.Println("Calling _OS.PrintResourcesByType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2811,7 +2811,7 @@ func (o *os) PrintResourcesByType(types gdnative.PoolStringArray) {
 */
 func (o *os) PrintResourcesInUse(short gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.PrintResourcesInUse()")
+	// log.Println("Calling _OS.PrintResourcesInUse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2833,7 +2833,7 @@ func (o *os) PrintResourcesInUse(short gdnative.Bool) {
 */
 func (o *os) RequestAttention() {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.RequestAttention()")
+	// log.Println("Calling _OS.RequestAttention()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2854,7 +2854,7 @@ func (o *os) RequestAttention() {
 */
 func (o *os) RequestPermission(name gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.RequestPermission()")
+	// log.Println("Calling _OS.RequestPermission()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2879,7 +2879,7 @@ func (o *os) RequestPermission(name gdnative.String) gdnative.Bool {
 */
 func (o *os) RequestPermissions() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.RequestPermissions()")
+	// log.Println("Calling _OS.RequestPermissions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -2903,7 +2903,7 @@ func (o *os) RequestPermissions() gdnative.Bool {
 */
 func (o *os) SetBorderlessWindow(borderless gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetBorderlessWindow()")
+	// log.Println("Calling _OS.SetBorderlessWindow()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2925,7 +2925,7 @@ func (o *os) SetBorderlessWindow(borderless gdnative.Bool) {
 */
 func (o *os) SetClipboard(clipboard gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetClipboard()")
+	// log.Println("Calling _OS.SetClipboard()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2947,7 +2947,7 @@ func (o *os) SetClipboard(clipboard gdnative.String) {
 */
 func (o *os) SetCurrentScreen(screen gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetCurrentScreen()")
+	// log.Println("Calling _OS.SetCurrentScreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2969,7 +2969,7 @@ func (o *os) SetCurrentScreen(screen gdnative.Int) {
 */
 func (o *os) SetCurrentTabletDriver(name gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetCurrentTabletDriver()")
+	// log.Println("Calling _OS.SetCurrentTabletDriver()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -2991,7 +2991,7 @@ func (o *os) SetCurrentTabletDriver(name gdnative.String) {
 */
 func (o *os) SetExitCode(code gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetExitCode()")
+	// log.Println("Calling _OS.SetExitCode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3013,7 +3013,7 @@ func (o *os) SetExitCode(code gdnative.Int) {
 */
 func (o *os) SetIcon(icon ImageImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetIcon()")
+	// log.Println("Calling _OS.SetIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3035,7 +3035,7 @@ func (o *os) SetIcon(icon ImageImplementer) {
 */
 func (o *os) SetImeActive(active gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetImeActive()")
+	// log.Println("Calling _OS.SetImeActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3057,7 +3057,7 @@ func (o *os) SetImeActive(active gdnative.Bool) {
 */
 func (o *os) SetImePosition(position gdnative.Vector2) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetImePosition()")
+	// log.Println("Calling _OS.SetImePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3079,7 +3079,7 @@ func (o *os) SetImePosition(position gdnative.Vector2) {
 */
 func (o *os) SetKeepScreenOn(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetKeepScreenOn()")
+	// log.Println("Calling _OS.SetKeepScreenOn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3101,7 +3101,7 @@ func (o *os) SetKeepScreenOn(enabled gdnative.Bool) {
 */
 func (o *os) SetLowProcessorUsageMode(enable gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetLowProcessorUsageMode()")
+	// log.Println("Calling _OS.SetLowProcessorUsageMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3123,7 +3123,7 @@ func (o *os) SetLowProcessorUsageMode(enable gdnative.Bool) {
 */
 func (o *os) SetLowProcessorUsageModeSleepUsec(usec gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetLowProcessorUsageModeSleepUsec()")
+	// log.Println("Calling _OS.SetLowProcessorUsageModeSleepUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3145,7 +3145,7 @@ func (o *os) SetLowProcessorUsageModeSleepUsec(usec gdnative.Int) {
 */
 func (o *os) SetMaxWindowSize(size gdnative.Vector2) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetMaxWindowSize()")
+	// log.Println("Calling _OS.SetMaxWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3167,7 +3167,7 @@ func (o *os) SetMaxWindowSize(size gdnative.Vector2) {
 */
 func (o *os) SetMinWindowSize(size gdnative.Vector2) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetMinWindowSize()")
+	// log.Println("Calling _OS.SetMinWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3189,7 +3189,7 @@ func (o *os) SetMinWindowSize(size gdnative.Vector2) {
 */
 func (o *os) SetNativeIcon(filename gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetNativeIcon()")
+	// log.Println("Calling _OS.SetNativeIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3211,7 +3211,7 @@ func (o *os) SetNativeIcon(filename gdnative.String) {
 */
 func (o *os) SetScreenOrientation(orientation gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetScreenOrientation()")
+	// log.Println("Calling _OS.SetScreenOrientation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3233,7 +3233,7 @@ func (o *os) SetScreenOrientation(orientation gdnative.Int) {
 */
 func (o *os) SetThreadName(name gdnative.String) gdnative.Error {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetThreadName()")
+	// log.Println("Calling _OS.SetThreadName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3258,7 +3258,7 @@ func (o *os) SetThreadName(name gdnative.String) gdnative.Error {
 */
 func (o *os) SetUseFileAccessSaveAndSwap(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetUseFileAccessSaveAndSwap()")
+	// log.Println("Calling _OS.SetUseFileAccessSaveAndSwap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3280,7 +3280,7 @@ func (o *os) SetUseFileAccessSaveAndSwap(enabled gdnative.Bool) {
 */
 func (o *os) SetUseVsync(enable gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetUseVsync()")
+	// log.Println("Calling _OS.SetUseVsync()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3302,7 +3302,7 @@ func (o *os) SetUseVsync(enable gdnative.Bool) {
 */
 func (o *os) SetVsyncViaCompositor(enable gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetVsyncViaCompositor()")
+	// log.Println("Calling _OS.SetVsyncViaCompositor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3324,7 +3324,7 @@ func (o *os) SetVsyncViaCompositor(enable gdnative.Bool) {
 */
 func (o *os) SetWindowAlwaysOnTop(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowAlwaysOnTop()")
+	// log.Println("Calling _OS.SetWindowAlwaysOnTop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3346,7 +3346,7 @@ func (o *os) SetWindowAlwaysOnTop(enabled gdnative.Bool) {
 */
 func (o *os) SetWindowFullscreen(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowFullscreen()")
+	// log.Println("Calling _OS.SetWindowFullscreen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3368,7 +3368,7 @@ func (o *os) SetWindowFullscreen(enabled gdnative.Bool) {
 */
 func (o *os) SetWindowMaximized(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowMaximized()")
+	// log.Println("Calling _OS.SetWindowMaximized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3390,7 +3390,7 @@ func (o *os) SetWindowMaximized(enabled gdnative.Bool) {
 */
 func (o *os) SetWindowMinimized(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowMinimized()")
+	// log.Println("Calling _OS.SetWindowMinimized()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3412,7 +3412,7 @@ func (o *os) SetWindowMinimized(enabled gdnative.Bool) {
 */
 func (o *os) SetWindowPerPixelTransparencyEnabled(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowPerPixelTransparencyEnabled()")
+	// log.Println("Calling _OS.SetWindowPerPixelTransparencyEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3434,7 +3434,7 @@ func (o *os) SetWindowPerPixelTransparencyEnabled(enabled gdnative.Bool) {
 */
 func (o *os) SetWindowPosition(position gdnative.Vector2) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowPosition()")
+	// log.Println("Calling _OS.SetWindowPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3456,7 +3456,7 @@ func (o *os) SetWindowPosition(position gdnative.Vector2) {
 */
 func (o *os) SetWindowResizable(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowResizable()")
+	// log.Println("Calling _OS.SetWindowResizable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3478,7 +3478,7 @@ func (o *os) SetWindowResizable(enabled gdnative.Bool) {
 */
 func (o *os) SetWindowSize(size gdnative.Vector2) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowSize()")
+	// log.Println("Calling _OS.SetWindowSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3500,7 +3500,7 @@ func (o *os) SetWindowSize(size gdnative.Vector2) {
 */
 func (o *os) SetWindowTitle(title gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.SetWindowTitle()")
+	// log.Println("Calling _OS.SetWindowTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3522,7 +3522,7 @@ func (o *os) SetWindowTitle(title gdnative.String) {
 */
 func (o *os) ShellOpen(uri gdnative.String) gdnative.Error {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.ShellOpen()")
+	// log.Println("Calling _OS.ShellOpen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -3547,7 +3547,7 @@ func (o *os) ShellOpen(uri gdnative.String) gdnative.Error {
 */
 func (o *os) ShowVirtualKeyboard(existingText gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling _OS.ShowVirtualKeyboard()")
+	// log.Println("Calling _OS.ShowVirtualKeyboard()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *AudioEffectCompressor) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectCompressor) GetAttackUs() gdnative.Real {
-	//log.Println("Calling AudioEffectCompressor.GetAttackUs()")
+	// log.Println("Calling AudioEffectCompressor.GetAttackUs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectCompressor) GetAttackUs() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectCompressor) GetGain() gdnative.Real {
-	//log.Println("Calling AudioEffectCompressor.GetGain()")
+	// log.Println("Calling AudioEffectCompressor.GetGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioEffectCompressor) GetGain() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectCompressor) GetMix() gdnative.Real {
-	//log.Println("Calling AudioEffectCompressor.GetMix()")
+	// log.Println("Calling AudioEffectCompressor.GetMix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AudioEffectCompressor) GetMix() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectCompressor) GetRatio() gdnative.Real {
-	//log.Println("Calling AudioEffectCompressor.GetRatio()")
+	// log.Println("Calling AudioEffectCompressor.GetRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *AudioEffectCompressor) GetRatio() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectCompressor) GetReleaseMs() gdnative.Real {
-	//log.Println("Calling AudioEffectCompressor.GetReleaseMs()")
+	// log.Println("Calling AudioEffectCompressor.GetReleaseMs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *AudioEffectCompressor) GetReleaseMs() gdnative.Real {
 	Args: [], Returns: String
 */
 func (o *AudioEffectCompressor) GetSidechain() gdnative.String {
-	//log.Println("Calling AudioEffectCompressor.GetSidechain()")
+	// log.Println("Calling AudioEffectCompressor.GetSidechain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *AudioEffectCompressor) GetSidechain() gdnative.String {
 	Args: [], Returns: float
 */
 func (o *AudioEffectCompressor) GetThreshold() gdnative.Real {
-	//log.Println("Calling AudioEffectCompressor.GetThreshold()")
+	// log.Println("Calling AudioEffectCompressor.GetThreshold()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *AudioEffectCompressor) GetThreshold() gdnative.Real {
 	Args: [{ false attack_us float}], Returns: void
 */
 func (o *AudioEffectCompressor) SetAttackUs(attackUs gdnative.Real) {
-	//log.Println("Calling AudioEffectCompressor.SetAttackUs()")
+	// log.Println("Calling AudioEffectCompressor.SetAttackUs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -221,7 +221,7 @@ func (o *AudioEffectCompressor) SetAttackUs(attackUs gdnative.Real) {
 	Args: [{ false gain float}], Returns: void
 */
 func (o *AudioEffectCompressor) SetGain(gain gdnative.Real) {
-	//log.Println("Calling AudioEffectCompressor.SetGain()")
+	// log.Println("Calling AudioEffectCompressor.SetGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -242,7 +242,7 @@ func (o *AudioEffectCompressor) SetGain(gain gdnative.Real) {
 	Args: [{ false mix float}], Returns: void
 */
 func (o *AudioEffectCompressor) SetMix(mix gdnative.Real) {
-	//log.Println("Calling AudioEffectCompressor.SetMix()")
+	// log.Println("Calling AudioEffectCompressor.SetMix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -263,7 +263,7 @@ func (o *AudioEffectCompressor) SetMix(mix gdnative.Real) {
 	Args: [{ false ratio float}], Returns: void
 */
 func (o *AudioEffectCompressor) SetRatio(ratio gdnative.Real) {
-	//log.Println("Calling AudioEffectCompressor.SetRatio()")
+	// log.Println("Calling AudioEffectCompressor.SetRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -284,7 +284,7 @@ func (o *AudioEffectCompressor) SetRatio(ratio gdnative.Real) {
 	Args: [{ false release_ms float}], Returns: void
 */
 func (o *AudioEffectCompressor) SetReleaseMs(releaseMs gdnative.Real) {
-	//log.Println("Calling AudioEffectCompressor.SetReleaseMs()")
+	// log.Println("Calling AudioEffectCompressor.SetReleaseMs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -305,7 +305,7 @@ func (o *AudioEffectCompressor) SetReleaseMs(releaseMs gdnative.Real) {
 	Args: [{ false sidechain String}], Returns: void
 */
 func (o *AudioEffectCompressor) SetSidechain(sidechain gdnative.String) {
-	//log.Println("Calling AudioEffectCompressor.SetSidechain()")
+	// log.Println("Calling AudioEffectCompressor.SetSidechain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -326,7 +326,7 @@ func (o *AudioEffectCompressor) SetSidechain(sidechain gdnative.String) {
 	Args: [{ false threshold float}], Returns: void
 */
 func (o *AudioEffectCompressor) SetThreshold(threshold gdnative.Real) {
-	//log.Println("Calling AudioEffectCompressor.SetThreshold()")
+	// log.Println("Calling AudioEffectCompressor.SetThreshold()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

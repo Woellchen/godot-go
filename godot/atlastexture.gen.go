@@ -39,7 +39,7 @@ func (o *AtlasTexture) BaseClass() string {
 	Args: [], Returns: Texture
 */
 func (o *AtlasTexture) GetAtlas() TextureImplementer {
-	//log.Println("Calling AtlasTexture.GetAtlas()")
+	// log.Println("Calling AtlasTexture.GetAtlas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *AtlasTexture) GetAtlas() TextureImplementer {
 	Args: [], Returns: Rect2
 */
 func (o *AtlasTexture) GetMargin() gdnative.Rect2 {
-	//log.Println("Calling AtlasTexture.GetMargin()")
+	// log.Println("Calling AtlasTexture.GetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *AtlasTexture) GetMargin() gdnative.Rect2 {
 	Args: [], Returns: Rect2
 */
 func (o *AtlasTexture) GetRegion() gdnative.Rect2 {
-	//log.Println("Calling AtlasTexture.GetRegion()")
+	// log.Println("Calling AtlasTexture.GetRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *AtlasTexture) GetRegion() gdnative.Rect2 {
 	Args: [], Returns: bool
 */
 func (o *AtlasTexture) HasFilterClip() gdnative.Bool {
-	//log.Println("Calling AtlasTexture.HasFilterClip()")
+	// log.Println("Calling AtlasTexture.HasFilterClip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *AtlasTexture) HasFilterClip() gdnative.Bool {
 	Args: [{ false atlas Texture}], Returns: void
 */
 func (o *AtlasTexture) SetAtlas(atlas TextureImplementer) {
-	//log.Println("Calling AtlasTexture.SetAtlas()")
+	// log.Println("Calling AtlasTexture.SetAtlas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -166,7 +166,7 @@ func (o *AtlasTexture) SetAtlas(atlas TextureImplementer) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *AtlasTexture) SetFilterClip(enable gdnative.Bool) {
-	//log.Println("Calling AtlasTexture.SetFilterClip()")
+	// log.Println("Calling AtlasTexture.SetFilterClip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -187,7 +187,7 @@ func (o *AtlasTexture) SetFilterClip(enable gdnative.Bool) {
 	Args: [{ false margin Rect2}], Returns: void
 */
 func (o *AtlasTexture) SetMargin(margin gdnative.Rect2) {
-	//log.Println("Calling AtlasTexture.SetMargin()")
+	// log.Println("Calling AtlasTexture.SetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -208,7 +208,7 @@ func (o *AtlasTexture) SetMargin(margin gdnative.Rect2) {
 	Args: [{ false region Rect2}], Returns: void
 */
 func (o *AtlasTexture) SetRegion(region gdnative.Rect2) {
-	//log.Println("Calling AtlasTexture.SetRegion()")
+	// log.Println("Calling AtlasTexture.SetRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -48,7 +48,7 @@ func (o *BackBufferCopy) BaseClass() string {
 	Args: [], Returns: enum.BackBufferCopy::CopyMode
 */
 func (o *BackBufferCopy) GetCopyMode() BackBufferCopyCopyMode {
-	//log.Println("Calling BackBufferCopy.GetCopyMode()")
+	// log.Println("Calling BackBufferCopy.GetCopyMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *BackBufferCopy) GetCopyMode() BackBufferCopyCopyMode {
 	Args: [], Returns: Rect2
 */
 func (o *BackBufferCopy) GetRect() gdnative.Rect2 {
-	//log.Println("Calling BackBufferCopy.GetRect()")
+	// log.Println("Calling BackBufferCopy.GetRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *BackBufferCopy) GetRect() gdnative.Rect2 {
 	Args: [{ false copy_mode int}], Returns: void
 */
 func (o *BackBufferCopy) SetCopyMode(copyMode gdnative.Int) {
-	//log.Println("Calling BackBufferCopy.SetCopyMode()")
+	// log.Println("Calling BackBufferCopy.SetCopyMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -115,7 +115,7 @@ func (o *BackBufferCopy) SetCopyMode(copyMode gdnative.Int) {
 	Args: [{ false rect Rect2}], Returns: void
 */
 func (o *BackBufferCopy) SetRect(rect gdnative.Rect2) {
-	//log.Println("Calling BackBufferCopy.SetRect()")
+	// log.Println("Calling BackBufferCopy.SetRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

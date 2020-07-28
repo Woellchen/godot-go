@@ -39,7 +39,7 @@ func (o *CSGSphere) BaseClass() string {
 	Args: [], Returns: Material
 */
 func (o *CSGSphere) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CSGSphere.GetMaterial()")
+	// log.Println("Calling CSGSphere.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *CSGSphere) GetMaterial() MaterialImplementer {
 	Args: [], Returns: int
 */
 func (o *CSGSphere) GetRadialSegments() gdnative.Int {
-	//log.Println("Calling CSGSphere.GetRadialSegments()")
+	// log.Println("Calling CSGSphere.GetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *CSGSphere) GetRadialSegments() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *CSGSphere) GetRadius() gdnative.Real {
-	//log.Println("Calling CSGSphere.GetRadius()")
+	// log.Println("Calling CSGSphere.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *CSGSphere) GetRadius() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CSGSphere) GetRings() gdnative.Int {
-	//log.Println("Calling CSGSphere.GetRings()")
+	// log.Println("Calling CSGSphere.GetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *CSGSphere) GetRings() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CSGSphere) GetSmoothFaces() gdnative.Bool {
-	//log.Println("Calling CSGSphere.GetSmoothFaces()")
+	// log.Println("Calling CSGSphere.GetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *CSGSphere) GetSmoothFaces() gdnative.Bool {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CSGSphere) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CSGSphere.SetMaterial()")
+	// log.Println("Calling CSGSphere.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *CSGSphere) SetMaterial(material MaterialImplementer) {
 	Args: [{ false radial_segments int}], Returns: void
 */
 func (o *CSGSphere) SetRadialSegments(radialSegments gdnative.Int) {
-	//log.Println("Calling CSGSphere.SetRadialSegments()")
+	// log.Println("Calling CSGSphere.SetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -210,7 +210,7 @@ func (o *CSGSphere) SetRadialSegments(radialSegments gdnative.Int) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CSGSphere) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling CSGSphere.SetRadius()")
+	// log.Println("Calling CSGSphere.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -231,7 +231,7 @@ func (o *CSGSphere) SetRadius(radius gdnative.Real) {
 	Args: [{ false rings int}], Returns: void
 */
 func (o *CSGSphere) SetRings(rings gdnative.Int) {
-	//log.Println("Calling CSGSphere.SetRings()")
+	// log.Println("Calling CSGSphere.SetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -252,7 +252,7 @@ func (o *CSGSphere) SetRings(rings gdnative.Int) {
 	Args: [{ false smooth_faces bool}], Returns: void
 */
 func (o *CSGSphere) SetSmoothFaces(smoothFaces gdnative.Bool) {
-	//log.Println("Calling CSGSphere.SetSmoothFaces()")
+	// log.Println("Calling CSGSphere.SetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

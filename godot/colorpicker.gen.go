@@ -39,7 +39,7 @@ func (o *ColorPicker) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_AddPresetPressed() {
-	//log.Println("Calling ColorPicker.X_AddPresetPressed()")
+	// log.Println("Calling ColorPicker.X_AddPresetPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *ColorPicker) X_AddPresetPressed() {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_FocusEnter() {
-	//log.Println("Calling ColorPicker.X_FocusEnter()")
+	// log.Println("Calling ColorPicker.X_FocusEnter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *ColorPicker) X_FocusEnter() {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_FocusExit() {
-	//log.Println("Calling ColorPicker.X_FocusExit()")
+	// log.Println("Calling ColorPicker.X_FocusExit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *ColorPicker) X_FocusExit() {
 	Args: [{ false arg0 int} { false arg1 Control}], Returns: void
 */
 func (o *ColorPicker) X_HsvDraw(arg0 gdnative.Int, arg1 ControlImplementer) {
-	//log.Println("Calling ColorPicker.X_HsvDraw()")
+	// log.Println("Calling ColorPicker.X_HsvDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -121,7 +121,7 @@ func (o *ColorPicker) X_HsvDraw(arg0 gdnative.Int, arg1 ControlImplementer) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ColorPicker) X_HtmlEntered(arg0 gdnative.String) {
-	//log.Println("Calling ColorPicker.X_HtmlEntered()")
+	// log.Println("Calling ColorPicker.X_HtmlEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -142,7 +142,7 @@ func (o *ColorPicker) X_HtmlEntered(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_HtmlFocusExit() {
-	//log.Println("Calling ColorPicker.X_HtmlFocusExit()")
+	// log.Println("Calling ColorPicker.X_HtmlFocusExit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *ColorPicker) X_HtmlFocusExit() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ColorPicker) X_PresetInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ColorPicker.X_PresetInput()")
+	// log.Println("Calling ColorPicker.X_PresetInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -183,7 +183,7 @@ func (o *ColorPicker) X_PresetInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_SampleDraw() {
-	//log.Println("Calling ColorPicker.X_SampleDraw()")
+	// log.Println("Calling ColorPicker.X_SampleDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -203,7 +203,7 @@ func (o *ColorPicker) X_SampleDraw() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ColorPicker) X_ScreenInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ColorPicker.X_ScreenInput()")
+	// log.Println("Calling ColorPicker.X_ScreenInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -224,7 +224,7 @@ func (o *ColorPicker) X_ScreenInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_ScreenPickPressed() {
-	//log.Println("Calling ColorPicker.X_ScreenPickPressed()")
+	// log.Println("Calling ColorPicker.X_ScreenPickPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -244,7 +244,7 @@ func (o *ColorPicker) X_ScreenPickPressed() {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_TextTypeToggled() {
-	//log.Println("Calling ColorPicker.X_TextTypeToggled()")
+	// log.Println("Calling ColorPicker.X_TextTypeToggled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -264,7 +264,7 @@ func (o *ColorPicker) X_TextTypeToggled() {
 	Args: [], Returns: void
 */
 func (o *ColorPicker) X_UpdatePresets() {
-	//log.Println("Calling ColorPicker.X_UpdatePresets()")
+	// log.Println("Calling ColorPicker.X_UpdatePresets()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -284,7 +284,7 @@ func (o *ColorPicker) X_UpdatePresets() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ColorPicker) X_UvInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ColorPicker.X_UvInput()")
+	// log.Println("Calling ColorPicker.X_UvInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -305,7 +305,7 @@ func (o *ColorPicker) X_UvInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *ColorPicker) X_ValueChanged(arg0 gdnative.Real) {
-	//log.Println("Calling ColorPicker.X_ValueChanged()")
+	// log.Println("Calling ColorPicker.X_ValueChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -326,7 +326,7 @@ func (o *ColorPicker) X_ValueChanged(arg0 gdnative.Real) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ColorPicker) X_WInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ColorPicker.X_WInput()")
+	// log.Println("Calling ColorPicker.X_WInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -347,7 +347,7 @@ func (o *ColorPicker) X_WInput(arg0 InputEventImplementer) {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ColorPicker) AddPreset(color gdnative.Color) {
-	//log.Println("Calling ColorPicker.AddPreset()")
+	// log.Println("Calling ColorPicker.AddPreset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -368,7 +368,7 @@ func (o *ColorPicker) AddPreset(color gdnative.Color) {
 	Args: [], Returns: bool
 */
 func (o *ColorPicker) ArePresetsEnabled() gdnative.Bool {
-	//log.Println("Calling ColorPicker.ArePresetsEnabled()")
+	// log.Println("Calling ColorPicker.ArePresetsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -391,7 +391,7 @@ func (o *ColorPicker) ArePresetsEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ColorPicker) ArePresetsVisible() gdnative.Bool {
-	//log.Println("Calling ColorPicker.ArePresetsVisible()")
+	// log.Println("Calling ColorPicker.ArePresetsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -414,7 +414,7 @@ func (o *ColorPicker) ArePresetsVisible() gdnative.Bool {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ColorPicker) ErasePreset(color gdnative.Color) {
-	//log.Println("Calling ColorPicker.ErasePreset()")
+	// log.Println("Calling ColorPicker.ErasePreset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -435,7 +435,7 @@ func (o *ColorPicker) ErasePreset(color gdnative.Color) {
 	Args: [], Returns: Color
 */
 func (o *ColorPicker) GetPickColor() gdnative.Color {
-	//log.Println("Calling ColorPicker.GetPickColor()")
+	// log.Println("Calling ColorPicker.GetPickColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -458,7 +458,7 @@ func (o *ColorPicker) GetPickColor() gdnative.Color {
 	Args: [], Returns: PoolColorArray
 */
 func (o *ColorPicker) GetPresets() gdnative.PoolColorArray {
-	//log.Println("Calling ColorPicker.GetPresets()")
+	// log.Println("Calling ColorPicker.GetPresets()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -481,7 +481,7 @@ func (o *ColorPicker) GetPresets() gdnative.PoolColorArray {
 	Args: [], Returns: bool
 */
 func (o *ColorPicker) IsDeferredMode() gdnative.Bool {
-	//log.Println("Calling ColorPicker.IsDeferredMode()")
+	// log.Println("Calling ColorPicker.IsDeferredMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -504,7 +504,7 @@ func (o *ColorPicker) IsDeferredMode() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ColorPicker) IsEditingAlpha() gdnative.Bool {
-	//log.Println("Calling ColorPicker.IsEditingAlpha()")
+	// log.Println("Calling ColorPicker.IsEditingAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -527,7 +527,7 @@ func (o *ColorPicker) IsEditingAlpha() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ColorPicker) IsHsvMode() gdnative.Bool {
-	//log.Println("Calling ColorPicker.IsHsvMode()")
+	// log.Println("Calling ColorPicker.IsHsvMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -550,7 +550,7 @@ func (o *ColorPicker) IsHsvMode() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ColorPicker) IsRawMode() gdnative.Bool {
-	//log.Println("Calling ColorPicker.IsRawMode()")
+	// log.Println("Calling ColorPicker.IsRawMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -573,7 +573,7 @@ func (o *ColorPicker) IsRawMode() gdnative.Bool {
 	Args: [{ false mode bool}], Returns: void
 */
 func (o *ColorPicker) SetDeferredMode(mode gdnative.Bool) {
-	//log.Println("Calling ColorPicker.SetDeferredMode()")
+	// log.Println("Calling ColorPicker.SetDeferredMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -594,7 +594,7 @@ func (o *ColorPicker) SetDeferredMode(mode gdnative.Bool) {
 	Args: [{ false show bool}], Returns: void
 */
 func (o *ColorPicker) SetEditAlpha(show gdnative.Bool) {
-	//log.Println("Calling ColorPicker.SetEditAlpha()")
+	// log.Println("Calling ColorPicker.SetEditAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -615,7 +615,7 @@ func (o *ColorPicker) SetEditAlpha(show gdnative.Bool) {
 	Args: [{ false mode bool}], Returns: void
 */
 func (o *ColorPicker) SetHsvMode(mode gdnative.Bool) {
-	//log.Println("Calling ColorPicker.SetHsvMode()")
+	// log.Println("Calling ColorPicker.SetHsvMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -636,7 +636,7 @@ func (o *ColorPicker) SetHsvMode(mode gdnative.Bool) {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ColorPicker) SetPickColor(color gdnative.Color) {
-	//log.Println("Calling ColorPicker.SetPickColor()")
+	// log.Println("Calling ColorPicker.SetPickColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -657,7 +657,7 @@ func (o *ColorPicker) SetPickColor(color gdnative.Color) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *ColorPicker) SetPresetsEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling ColorPicker.SetPresetsEnabled()")
+	// log.Println("Calling ColorPicker.SetPresetsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -678,7 +678,7 @@ func (o *ColorPicker) SetPresetsEnabled(enabled gdnative.Bool) {
 	Args: [{ false visible bool}], Returns: void
 */
 func (o *ColorPicker) SetPresetsVisible(visible gdnative.Bool) {
-	//log.Println("Calling ColorPicker.SetPresetsVisible()")
+	// log.Println("Calling ColorPicker.SetPresetsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -699,7 +699,7 @@ func (o *ColorPicker) SetPresetsVisible(visible gdnative.Bool) {
 	Args: [{ false mode bool}], Returns: void
 */
 func (o *ColorPicker) SetRawMode(mode gdnative.Bool) {
-	//log.Println("Calling ColorPicker.SetRawMode()")
+	// log.Println("Calling ColorPicker.SetRawMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

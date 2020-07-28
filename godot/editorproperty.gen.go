@@ -39,7 +39,7 @@ func (o *EditorProperty) BaseClass() string {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *EditorProperty) X_FocusableFocused(arg0 gdnative.Int) {
-	//log.Println("Calling EditorProperty.X_FocusableFocused()")
+	// log.Println("Calling EditorProperty.X_FocusableFocused()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *EditorProperty) X_FocusableFocused(arg0 gdnative.Int) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *EditorProperty) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling EditorProperty.X_GuiInput()")
+	// log.Println("Calling EditorProperty.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -81,7 +81,7 @@ func (o *EditorProperty) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [{ false control Control}], Returns: void
 */
 func (o *EditorProperty) AddFocusable(control ControlImplementer) {
-	//log.Println("Calling EditorProperty.AddFocusable()")
+	// log.Println("Calling EditorProperty.AddFocusable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -102,7 +102,7 @@ func (o *EditorProperty) AddFocusable(control ControlImplementer) {
 	Args: [{ false property String} { false value Variant} { true field String} {False true changing bool}], Returns: void
 */
 func (o *EditorProperty) EmitChanged(property gdnative.String, value gdnative.Variant, field gdnative.String, changing gdnative.Bool) {
-	//log.Println("Calling EditorProperty.EmitChanged()")
+	// log.Println("Calling EditorProperty.EmitChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -126,7 +126,7 @@ func (o *EditorProperty) EmitChanged(property gdnative.String, value gdnative.Va
 	Args: [], Returns: Object
 */
 func (o *EditorProperty) GetEditedObject() ObjectImplementer {
-	//log.Println("Calling EditorProperty.GetEditedObject()")
+	// log.Println("Calling EditorProperty.GetEditedObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *EditorProperty) GetEditedObject() ObjectImplementer {
 	Args: [], Returns: String
 */
 func (o *EditorProperty) GetEditedProperty() gdnative.String {
-	//log.Println("Calling EditorProperty.GetEditedProperty()")
+	// log.Println("Calling EditorProperty.GetEditedProperty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *EditorProperty) GetEditedProperty() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorProperty) GetLabel() gdnative.String {
-	//log.Println("Calling EditorProperty.GetLabel()")
+	// log.Println("Calling EditorProperty.GetLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -209,7 +209,7 @@ func (o *EditorProperty) GetLabel() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorProperty) GetTooltipText() gdnative.String {
-	//log.Println("Calling EditorProperty.GetTooltipText()")
+	// log.Println("Calling EditorProperty.GetTooltipText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -232,7 +232,7 @@ func (o *EditorProperty) GetTooltipText() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *EditorProperty) IsCheckable() gdnative.Bool {
-	//log.Println("Calling EditorProperty.IsCheckable()")
+	// log.Println("Calling EditorProperty.IsCheckable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -255,7 +255,7 @@ func (o *EditorProperty) IsCheckable() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorProperty) IsChecked() gdnative.Bool {
-	//log.Println("Calling EditorProperty.IsChecked()")
+	// log.Println("Calling EditorProperty.IsChecked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -278,7 +278,7 @@ func (o *EditorProperty) IsChecked() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorProperty) IsDrawRed() gdnative.Bool {
-	//log.Println("Calling EditorProperty.IsDrawRed()")
+	// log.Println("Calling EditorProperty.IsDrawRed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -301,7 +301,7 @@ func (o *EditorProperty) IsDrawRed() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorProperty) IsKeying() gdnative.Bool {
-	//log.Println("Calling EditorProperty.IsKeying()")
+	// log.Println("Calling EditorProperty.IsKeying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -324,7 +324,7 @@ func (o *EditorProperty) IsKeying() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *EditorProperty) IsReadOnly() gdnative.Bool {
-	//log.Println("Calling EditorProperty.IsReadOnly()")
+	// log.Println("Calling EditorProperty.IsReadOnly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -347,7 +347,7 @@ func (o *EditorProperty) IsReadOnly() gdnative.Bool {
 	Args: [{ false editor Control}], Returns: void
 */
 func (o *EditorProperty) SetBottomEditor(editor ControlImplementer) {
-	//log.Println("Calling EditorProperty.SetBottomEditor()")
+	// log.Println("Calling EditorProperty.SetBottomEditor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -368,7 +368,7 @@ func (o *EditorProperty) SetBottomEditor(editor ControlImplementer) {
 	Args: [{ false checkable bool}], Returns: void
 */
 func (o *EditorProperty) SetCheckable(checkable gdnative.Bool) {
-	//log.Println("Calling EditorProperty.SetCheckable()")
+	// log.Println("Calling EditorProperty.SetCheckable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -389,7 +389,7 @@ func (o *EditorProperty) SetCheckable(checkable gdnative.Bool) {
 	Args: [{ false checked bool}], Returns: void
 */
 func (o *EditorProperty) SetChecked(checked gdnative.Bool) {
-	//log.Println("Calling EditorProperty.SetChecked()")
+	// log.Println("Calling EditorProperty.SetChecked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -410,7 +410,7 @@ func (o *EditorProperty) SetChecked(checked gdnative.Bool) {
 	Args: [{ false draw_red bool}], Returns: void
 */
 func (o *EditorProperty) SetDrawRed(drawRed gdnative.Bool) {
-	//log.Println("Calling EditorProperty.SetDrawRed()")
+	// log.Println("Calling EditorProperty.SetDrawRed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -431,7 +431,7 @@ func (o *EditorProperty) SetDrawRed(drawRed gdnative.Bool) {
 	Args: [{ false keying bool}], Returns: void
 */
 func (o *EditorProperty) SetKeying(keying gdnative.Bool) {
-	//log.Println("Calling EditorProperty.SetKeying()")
+	// log.Println("Calling EditorProperty.SetKeying()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -452,7 +452,7 @@ func (o *EditorProperty) SetKeying(keying gdnative.Bool) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *EditorProperty) SetLabel(text gdnative.String) {
-	//log.Println("Calling EditorProperty.SetLabel()")
+	// log.Println("Calling EditorProperty.SetLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -473,7 +473,7 @@ func (o *EditorProperty) SetLabel(text gdnative.String) {
 	Args: [{ false read_only bool}], Returns: void
 */
 func (o *EditorProperty) SetReadOnly(readOnly gdnative.Bool) {
-	//log.Println("Calling EditorProperty.SetReadOnly()")
+	// log.Println("Calling EditorProperty.SetReadOnly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -494,7 +494,7 @@ func (o *EditorProperty) SetReadOnly(readOnly gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *EditorProperty) UpdateProperty() {
-	//log.Println("Calling EditorProperty.UpdateProperty()")
+	// log.Println("Calling EditorProperty.UpdateProperty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

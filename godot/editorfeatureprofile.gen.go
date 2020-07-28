@@ -53,7 +53,7 @@ func (o *EditorFeatureProfile) BaseClass() string {
 	Args: [{ false feature int}], Returns: String
 */
 func (o *EditorFeatureProfile) GetFeatureName(feature gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorFeatureProfile.GetFeatureName()")
+	// log.Println("Calling EditorFeatureProfile.GetFeatureName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -77,7 +77,7 @@ func (o *EditorFeatureProfile) GetFeatureName(feature gdnative.Int) gdnative.Str
 	Args: [{ false class_name String}], Returns: bool
 */
 func (o *EditorFeatureProfile) IsClassDisabled(className gdnative.String) gdnative.Bool {
-	//log.Println("Calling EditorFeatureProfile.IsClassDisabled()")
+	// log.Println("Calling EditorFeatureProfile.IsClassDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *EditorFeatureProfile) IsClassDisabled(className gdnative.String) gdnati
 	Args: [{ false class_name String}], Returns: bool
 */
 func (o *EditorFeatureProfile) IsClassEditorDisabled(className gdnative.String) gdnative.Bool {
-	//log.Println("Calling EditorFeatureProfile.IsClassEditorDisabled()")
+	// log.Println("Calling EditorFeatureProfile.IsClassEditorDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *EditorFeatureProfile) IsClassEditorDisabled(className gdnative.String) 
 	Args: [{ false class_name String} { false property String}], Returns: bool
 */
 func (o *EditorFeatureProfile) IsClassPropertyDisabled(className gdnative.String, property gdnative.String) gdnative.Bool {
-	//log.Println("Calling EditorFeatureProfile.IsClassPropertyDisabled()")
+	// log.Println("Calling EditorFeatureProfile.IsClassPropertyDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -150,7 +150,7 @@ func (o *EditorFeatureProfile) IsClassPropertyDisabled(className gdnative.String
 	Args: [{ false feature int}], Returns: bool
 */
 func (o *EditorFeatureProfile) IsFeatureDisabled(feature gdnative.Int) gdnative.Bool {
-	//log.Println("Calling EditorFeatureProfile.IsFeatureDisabled()")
+	// log.Println("Calling EditorFeatureProfile.IsFeatureDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -174,7 +174,7 @@ func (o *EditorFeatureProfile) IsFeatureDisabled(feature gdnative.Int) gdnative.
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *EditorFeatureProfile) LoadFromFile(path gdnative.String) gdnative.Error {
-	//log.Println("Calling EditorFeatureProfile.LoadFromFile()")
+	// log.Println("Calling EditorFeatureProfile.LoadFromFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -198,7 +198,7 @@ func (o *EditorFeatureProfile) LoadFromFile(path gdnative.String) gdnative.Error
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *EditorFeatureProfile) SaveToFile(path gdnative.String) gdnative.Error {
-	//log.Println("Calling EditorFeatureProfile.SaveToFile()")
+	// log.Println("Calling EditorFeatureProfile.SaveToFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -222,7 +222,7 @@ func (o *EditorFeatureProfile) SaveToFile(path gdnative.String) gdnative.Error {
 	Args: [{ false class_name String} { false disable bool}], Returns: void
 */
 func (o *EditorFeatureProfile) SetDisableClass(className gdnative.String, disable gdnative.Bool) {
-	//log.Println("Calling EditorFeatureProfile.SetDisableClass()")
+	// log.Println("Calling EditorFeatureProfile.SetDisableClass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -244,7 +244,7 @@ func (o *EditorFeatureProfile) SetDisableClass(className gdnative.String, disabl
 	Args: [{ false class_name String} { false disable bool}], Returns: void
 */
 func (o *EditorFeatureProfile) SetDisableClassEditor(className gdnative.String, disable gdnative.Bool) {
-	//log.Println("Calling EditorFeatureProfile.SetDisableClassEditor()")
+	// log.Println("Calling EditorFeatureProfile.SetDisableClassEditor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -266,7 +266,7 @@ func (o *EditorFeatureProfile) SetDisableClassEditor(className gdnative.String, 
 	Args: [{ false class_name String} { false property String} { false disable bool}], Returns: void
 */
 func (o *EditorFeatureProfile) SetDisableClassProperty(className gdnative.String, property gdnative.String, disable gdnative.Bool) {
-	//log.Println("Calling EditorFeatureProfile.SetDisableClassProperty()")
+	// log.Println("Calling EditorFeatureProfile.SetDisableClassProperty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -289,7 +289,7 @@ func (o *EditorFeatureProfile) SetDisableClassProperty(className gdnative.String
 	Args: [{ false feature int} { false disable bool}], Returns: void
 */
 func (o *EditorFeatureProfile) SetDisableFeature(feature gdnative.Int, disable gdnative.Bool) {
-	//log.Println("Calling EditorFeatureProfile.SetDisableFeature()")
+	// log.Println("Calling EditorFeatureProfile.SetDisableFeature()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

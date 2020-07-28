@@ -39,7 +39,7 @@ func (o *AudioStream) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioStream) GetLength() gdnative.Real {
-	//log.Println("Calling AudioStream.GetLength()")
+	// log.Println("Calling AudioStream.GetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

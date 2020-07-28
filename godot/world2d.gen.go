@@ -39,7 +39,7 @@ func (o *World2D) BaseClass() string {
 	Args: [], Returns: RID
 */
 func (o *World2D) GetCanvas() gdnative.Rid {
-	//log.Println("Calling World2D.GetCanvas()")
+	// log.Println("Calling World2D.GetCanvas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *World2D) GetCanvas() gdnative.Rid {
 	Args: [], Returns: Physics2DDirectSpaceState
 */
 func (o *World2D) GetDirectSpaceState() Physics2DDirectSpaceStateImplementer {
-	//log.Println("Calling World2D.GetDirectSpaceState()")
+	// log.Println("Calling World2D.GetDirectSpaceState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *World2D) GetDirectSpaceState() Physics2DDirectSpaceStateImplementer {
 	Args: [], Returns: RID
 */
 func (o *World2D) GetSpace() gdnative.Rid {
-	//log.Println("Calling World2D.GetSpace()")
+	// log.Println("Calling World2D.GetSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

@@ -39,7 +39,7 @@ func (o *Mutex) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Mutex) Lock() {
-	//log.Println("Calling _Mutex.Lock()")
+	// log.Println("Calling _Mutex.Lock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *Mutex) Lock() {
 	Args: [], Returns: enum.Error
 */
 func (o *Mutex) TryLock() gdnative.Error {
-	//log.Println("Calling _Mutex.TryLock()")
+	// log.Println("Calling _Mutex.TryLock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *Mutex) TryLock() gdnative.Error {
 	Args: [], Returns: void
 */
 func (o *Mutex) Unlock() {
-	//log.Println("Calling _Mutex.Unlock()")
+	// log.Println("Calling _Mutex.Unlock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

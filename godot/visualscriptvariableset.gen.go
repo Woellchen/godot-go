@@ -39,7 +39,7 @@ func (o *VisualScriptVariableSet) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptVariableSet) GetVariable() gdnative.String {
-	//log.Println("Calling VisualScriptVariableSet.GetVariable()")
+	// log.Println("Calling VisualScriptVariableSet.GetVariable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptVariableSet) GetVariable() gdnative.String {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualScriptVariableSet) SetVariable(name gdnative.String) {
-	//log.Println("Calling VisualScriptVariableSet.SetVariable()")
+	// log.Println("Calling VisualScriptVariableSet.SetVariable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

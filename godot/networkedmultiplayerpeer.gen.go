@@ -57,7 +57,7 @@ func (o *NetworkedMultiplayerPeer) BaseClass() string {
 	Args: [], Returns: enum.NetworkedMultiplayerPeer::ConnectionStatus
 */
 func (o *NetworkedMultiplayerPeer) GetConnectionStatus() NetworkedMultiplayerPeerConnectionStatus {
-	//log.Println("Calling NetworkedMultiplayerPeer.GetConnectionStatus()")
+	// log.Println("Calling NetworkedMultiplayerPeer.GetConnectionStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *NetworkedMultiplayerPeer) GetConnectionStatus() NetworkedMultiplayerPee
 	Args: [], Returns: int
 */
 func (o *NetworkedMultiplayerPeer) GetPacketPeer() gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerPeer.GetPacketPeer()")
+	// log.Println("Calling NetworkedMultiplayerPeer.GetPacketPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *NetworkedMultiplayerPeer) GetPacketPeer() gdnative.Int {
 	Args: [], Returns: enum.NetworkedMultiplayerPeer::TransferMode
 */
 func (o *NetworkedMultiplayerPeer) GetTransferMode() NetworkedMultiplayerPeerTransferMode {
-	//log.Println("Calling NetworkedMultiplayerPeer.GetTransferMode()")
+	// log.Println("Calling NetworkedMultiplayerPeer.GetTransferMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *NetworkedMultiplayerPeer) GetTransferMode() NetworkedMultiplayerPeerTra
 	Args: [], Returns: int
 */
 func (o *NetworkedMultiplayerPeer) GetUniqueId() gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerPeer.GetUniqueId()")
+	// log.Println("Calling NetworkedMultiplayerPeer.GetUniqueId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *NetworkedMultiplayerPeer) GetUniqueId() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *NetworkedMultiplayerPeer) IsRefusingNewConnections() gdnative.Bool {
-	//log.Println("Calling NetworkedMultiplayerPeer.IsRefusingNewConnections()")
+	// log.Println("Calling NetworkedMultiplayerPeer.IsRefusingNewConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -172,7 +172,7 @@ func (o *NetworkedMultiplayerPeer) IsRefusingNewConnections() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *NetworkedMultiplayerPeer) Poll() {
-	//log.Println("Calling NetworkedMultiplayerPeer.Poll()")
+	// log.Println("Calling NetworkedMultiplayerPeer.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -192,7 +192,7 @@ func (o *NetworkedMultiplayerPeer) Poll() {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *NetworkedMultiplayerPeer) SetRefuseNewConnections(enable gdnative.Bool) {
-	//log.Println("Calling NetworkedMultiplayerPeer.SetRefuseNewConnections()")
+	// log.Println("Calling NetworkedMultiplayerPeer.SetRefuseNewConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -213,7 +213,7 @@ func (o *NetworkedMultiplayerPeer) SetRefuseNewConnections(enable gdnative.Bool)
 	Args: [{ false id int}], Returns: void
 */
 func (o *NetworkedMultiplayerPeer) SetTargetPeer(id gdnative.Int) {
-	//log.Println("Calling NetworkedMultiplayerPeer.SetTargetPeer()")
+	// log.Println("Calling NetworkedMultiplayerPeer.SetTargetPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -234,7 +234,7 @@ func (o *NetworkedMultiplayerPeer) SetTargetPeer(id gdnative.Int) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *NetworkedMultiplayerPeer) SetTransferMode(mode gdnative.Int) {
-	//log.Println("Calling NetworkedMultiplayerPeer.SetTransferMode()")
+	// log.Println("Calling NetworkedMultiplayerPeer.SetTransferMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

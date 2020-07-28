@@ -60,7 +60,7 @@ func (o *VisualShaderNodeTexture) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeTexture::Source
 */
 func (o *VisualShaderNodeTexture) GetSource() VisualShaderNodeTextureSource {
-	//log.Println("Calling VisualShaderNodeTexture.GetSource()")
+	// log.Println("Calling VisualShaderNodeTexture.GetSource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -83,7 +83,7 @@ func (o *VisualShaderNodeTexture) GetSource() VisualShaderNodeTextureSource {
 	Args: [], Returns: Texture
 */
 func (o *VisualShaderNodeTexture) GetTexture() TextureImplementer {
-	//log.Println("Calling VisualShaderNodeTexture.GetTexture()")
+	// log.Println("Calling VisualShaderNodeTexture.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -120,7 +120,7 @@ func (o *VisualShaderNodeTexture) GetTexture() TextureImplementer {
 	Args: [], Returns: enum.VisualShaderNodeTexture::TextureType
 */
 func (o *VisualShaderNodeTexture) GetTextureType() VisualShaderNodeTextureTextureType {
-	//log.Println("Calling VisualShaderNodeTexture.GetTextureType()")
+	// log.Println("Calling VisualShaderNodeTexture.GetTextureType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -143,7 +143,7 @@ func (o *VisualShaderNodeTexture) GetTextureType() VisualShaderNodeTextureTextur
 	Args: [{ false value int}], Returns: void
 */
 func (o *VisualShaderNodeTexture) SetSource(value gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeTexture.SetSource()")
+	// log.Println("Calling VisualShaderNodeTexture.SetSource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -164,7 +164,7 @@ func (o *VisualShaderNodeTexture) SetSource(value gdnative.Int) {
 	Args: [{ false value Texture}], Returns: void
 */
 func (o *VisualShaderNodeTexture) SetTexture(value TextureImplementer) {
-	//log.Println("Calling VisualShaderNodeTexture.SetTexture()")
+	// log.Println("Calling VisualShaderNodeTexture.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -185,7 +185,7 @@ func (o *VisualShaderNodeTexture) SetTexture(value TextureImplementer) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *VisualShaderNodeTexture) SetTextureType(value gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeTexture.SetTextureType()")
+	// log.Println("Calling VisualShaderNodeTexture.SetTextureType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

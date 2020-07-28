@@ -52,7 +52,7 @@ func (o *TextureButton) BaseClass() string {
 	Args: [], Returns: BitMap
 */
 func (o *TextureButton) GetClickMask() BitMapImplementer {
-	//log.Println("Calling TextureButton.GetClickMask()")
+	// log.Println("Calling TextureButton.GetClickMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -89,7 +89,7 @@ func (o *TextureButton) GetClickMask() BitMapImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TextureButton) GetDisabledTexture() TextureImplementer {
-	//log.Println("Calling TextureButton.GetDisabledTexture()")
+	// log.Println("Calling TextureButton.GetDisabledTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *TextureButton) GetDisabledTexture() TextureImplementer {
 	Args: [], Returns: bool
 */
 func (o *TextureButton) GetExpand() gdnative.Bool {
-	//log.Println("Calling TextureButton.GetExpand()")
+	// log.Println("Calling TextureButton.GetExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *TextureButton) GetExpand() gdnative.Bool {
 	Args: [], Returns: Texture
 */
 func (o *TextureButton) GetFocusedTexture() TextureImplementer {
-	//log.Println("Calling TextureButton.GetFocusedTexture()")
+	// log.Println("Calling TextureButton.GetFocusedTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -186,7 +186,7 @@ func (o *TextureButton) GetFocusedTexture() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TextureButton) GetHoverTexture() TextureImplementer {
-	//log.Println("Calling TextureButton.GetHoverTexture()")
+	// log.Println("Calling TextureButton.GetHoverTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *TextureButton) GetHoverTexture() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TextureButton) GetNormalTexture() TextureImplementer {
-	//log.Println("Calling TextureButton.GetNormalTexture()")
+	// log.Println("Calling TextureButton.GetNormalTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -260,7 +260,7 @@ func (o *TextureButton) GetNormalTexture() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TextureButton) GetPressedTexture() TextureImplementer {
-	//log.Println("Calling TextureButton.GetPressedTexture()")
+	// log.Println("Calling TextureButton.GetPressedTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -297,7 +297,7 @@ func (o *TextureButton) GetPressedTexture() TextureImplementer {
 	Args: [], Returns: enum.TextureButton::StretchMode
 */
 func (o *TextureButton) GetStretchMode() TextureButtonStretchMode {
-	//log.Println("Calling TextureButton.GetStretchMode()")
+	// log.Println("Calling TextureButton.GetStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -320,7 +320,7 @@ func (o *TextureButton) GetStretchMode() TextureButtonStretchMode {
 	Args: [{ false mask BitMap}], Returns: void
 */
 func (o *TextureButton) SetClickMask(mask BitMapImplementer) {
-	//log.Println("Calling TextureButton.SetClickMask()")
+	// log.Println("Calling TextureButton.SetClickMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -341,7 +341,7 @@ func (o *TextureButton) SetClickMask(mask BitMapImplementer) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TextureButton) SetDisabledTexture(texture TextureImplementer) {
-	//log.Println("Calling TextureButton.SetDisabledTexture()")
+	// log.Println("Calling TextureButton.SetDisabledTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -362,7 +362,7 @@ func (o *TextureButton) SetDisabledTexture(texture TextureImplementer) {
 	Args: [{ false p_expand bool}], Returns: void
 */
 func (o *TextureButton) SetExpand(pExpand gdnative.Bool) {
-	//log.Println("Calling TextureButton.SetExpand()")
+	// log.Println("Calling TextureButton.SetExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -383,7 +383,7 @@ func (o *TextureButton) SetExpand(pExpand gdnative.Bool) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TextureButton) SetFocusedTexture(texture TextureImplementer) {
-	//log.Println("Calling TextureButton.SetFocusedTexture()")
+	// log.Println("Calling TextureButton.SetFocusedTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -404,7 +404,7 @@ func (o *TextureButton) SetFocusedTexture(texture TextureImplementer) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TextureButton) SetHoverTexture(texture TextureImplementer) {
-	//log.Println("Calling TextureButton.SetHoverTexture()")
+	// log.Println("Calling TextureButton.SetHoverTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -425,7 +425,7 @@ func (o *TextureButton) SetHoverTexture(texture TextureImplementer) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TextureButton) SetNormalTexture(texture TextureImplementer) {
-	//log.Println("Calling TextureButton.SetNormalTexture()")
+	// log.Println("Calling TextureButton.SetNormalTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -446,7 +446,7 @@ func (o *TextureButton) SetNormalTexture(texture TextureImplementer) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TextureButton) SetPressedTexture(texture TextureImplementer) {
-	//log.Println("Calling TextureButton.SetPressedTexture()")
+	// log.Println("Calling TextureButton.SetPressedTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -467,7 +467,7 @@ func (o *TextureButton) SetPressedTexture(texture TextureImplementer) {
 	Args: [{ false p_mode int}], Returns: void
 */
 func (o *TextureButton) SetStretchMode(pMode gdnative.Int) {
-	//log.Println("Calling TextureButton.SetStretchMode()")
+	// log.Println("Calling TextureButton.SetStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

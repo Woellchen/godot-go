@@ -39,7 +39,7 @@ func (o *SphereMesh) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *SphereMesh) GetHeight() gdnative.Real {
-	//log.Println("Calling SphereMesh.GetHeight()")
+	// log.Println("Calling SphereMesh.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *SphereMesh) GetHeight() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *SphereMesh) GetIsHemisphere() gdnative.Bool {
-	//log.Println("Calling SphereMesh.GetIsHemisphere()")
+	// log.Println("Calling SphereMesh.GetIsHemisphere()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *SphereMesh) GetIsHemisphere() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *SphereMesh) GetRadialSegments() gdnative.Int {
-	//log.Println("Calling SphereMesh.GetRadialSegments()")
+	// log.Println("Calling SphereMesh.GetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *SphereMesh) GetRadialSegments() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *SphereMesh) GetRadius() gdnative.Real {
-	//log.Println("Calling SphereMesh.GetRadius()")
+	// log.Println("Calling SphereMesh.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *SphereMesh) GetRadius() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *SphereMesh) GetRings() gdnative.Int {
-	//log.Println("Calling SphereMesh.GetRings()")
+	// log.Println("Calling SphereMesh.GetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *SphereMesh) GetRings() gdnative.Int {
 	Args: [{ false height float}], Returns: void
 */
 func (o *SphereMesh) SetHeight(height gdnative.Real) {
-	//log.Println("Calling SphereMesh.SetHeight()")
+	// log.Println("Calling SphereMesh.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *SphereMesh) SetHeight(height gdnative.Real) {
 	Args: [{ false is_hemisphere bool}], Returns: void
 */
 func (o *SphereMesh) SetIsHemisphere(isHemisphere gdnative.Bool) {
-	//log.Println("Calling SphereMesh.SetIsHemisphere()")
+	// log.Println("Calling SphereMesh.SetIsHemisphere()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -196,7 +196,7 @@ func (o *SphereMesh) SetIsHemisphere(isHemisphere gdnative.Bool) {
 	Args: [{ false radial_segments int}], Returns: void
 */
 func (o *SphereMesh) SetRadialSegments(radialSegments gdnative.Int) {
-	//log.Println("Calling SphereMesh.SetRadialSegments()")
+	// log.Println("Calling SphereMesh.SetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *SphereMesh) SetRadialSegments(radialSegments gdnative.Int) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *SphereMesh) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling SphereMesh.SetRadius()")
+	// log.Println("Calling SphereMesh.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *SphereMesh) SetRadius(radius gdnative.Real) {
 	Args: [{ false rings int}], Returns: void
 */
 func (o *SphereMesh) SetRings(rings gdnative.Int) {
-	//log.Println("Calling SphereMesh.SetRings()")
+	// log.Println("Calling SphereMesh.SetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

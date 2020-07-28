@@ -39,7 +39,7 @@ func (o *VisualShaderNodeGroupBase) BaseClass() string {
 	Args: [{ false id int} { false type int} { false name String}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) AddInputPort(id gdnative.Int, aType gdnative.Int, name gdnative.String) {
-	//log.Println("Calling VisualShaderNodeGroupBase.AddInputPort()")
+	// log.Println("Calling VisualShaderNodeGroupBase.AddInputPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeGroupBase) AddInputPort(id gdnative.Int, aType gdnative
 	Args: [{ false id int} { false type int} { false name String}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) AddOutputPort(id gdnative.Int, aType gdnative.Int, name gdnative.String) {
-	//log.Println("Calling VisualShaderNodeGroupBase.AddOutputPort()")
+	// log.Println("Calling VisualShaderNodeGroupBase.AddOutputPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -85,7 +85,7 @@ func (o *VisualShaderNodeGroupBase) AddOutputPort(id gdnative.Int, aType gdnativ
 	Args: [], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) ClearInputPorts() {
-	//log.Println("Calling VisualShaderNodeGroupBase.ClearInputPorts()")
+	// log.Println("Calling VisualShaderNodeGroupBase.ClearInputPorts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *VisualShaderNodeGroupBase) ClearInputPorts() {
 	Args: [], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) ClearOutputPorts() {
-	//log.Println("Calling VisualShaderNodeGroupBase.ClearOutputPorts()")
+	// log.Println("Calling VisualShaderNodeGroupBase.ClearOutputPorts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -125,7 +125,7 @@ func (o *VisualShaderNodeGroupBase) ClearOutputPorts() {
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeGroupBase) GetFreeInputPortId() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetFreeInputPortId()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetFreeInputPortId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -148,7 +148,7 @@ func (o *VisualShaderNodeGroupBase) GetFreeInputPortId() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeGroupBase) GetFreeOutputPortId() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetFreeOutputPortId()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetFreeOutputPortId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -171,7 +171,7 @@ func (o *VisualShaderNodeGroupBase) GetFreeOutputPortId() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeGroupBase) GetInputPortCount() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetInputPortCount()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetInputPortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -194,7 +194,7 @@ func (o *VisualShaderNodeGroupBase) GetInputPortCount() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeGroupBase) GetInputs() gdnative.String {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetInputs()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -217,7 +217,7 @@ func (o *VisualShaderNodeGroupBase) GetInputs() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *VisualShaderNodeGroupBase) GetOutputPortCount() gdnative.Int {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetOutputPortCount()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetOutputPortCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -240,7 +240,7 @@ func (o *VisualShaderNodeGroupBase) GetOutputPortCount() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeGroupBase) GetOutputs() gdnative.String {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetOutputs()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetOutputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -263,7 +263,7 @@ func (o *VisualShaderNodeGroupBase) GetOutputs() gdnative.String {
 	Args: [], Returns: Vector2
 */
 func (o *VisualShaderNodeGroupBase) GetSize() gdnative.Vector2 {
-	//log.Println("Calling VisualShaderNodeGroupBase.GetSize()")
+	// log.Println("Calling VisualShaderNodeGroupBase.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -286,7 +286,7 @@ func (o *VisualShaderNodeGroupBase) GetSize() gdnative.Vector2 {
 	Args: [{ false id int}], Returns: bool
 */
 func (o *VisualShaderNodeGroupBase) HasInputPort(id gdnative.Int) gdnative.Bool {
-	//log.Println("Calling VisualShaderNodeGroupBase.HasInputPort()")
+	// log.Println("Calling VisualShaderNodeGroupBase.HasInputPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -310,7 +310,7 @@ func (o *VisualShaderNodeGroupBase) HasInputPort(id gdnative.Int) gdnative.Bool 
 	Args: [{ false id int}], Returns: bool
 */
 func (o *VisualShaderNodeGroupBase) HasOutputPort(id gdnative.Int) gdnative.Bool {
-	//log.Println("Calling VisualShaderNodeGroupBase.HasOutputPort()")
+	// log.Println("Calling VisualShaderNodeGroupBase.HasOutputPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -334,7 +334,7 @@ func (o *VisualShaderNodeGroupBase) HasOutputPort(id gdnative.Int) gdnative.Bool
 	Args: [{ false name String}], Returns: bool
 */
 func (o *VisualShaderNodeGroupBase) IsValidPortName(name gdnative.String) gdnative.Bool {
-	//log.Println("Calling VisualShaderNodeGroupBase.IsValidPortName()")
+	// log.Println("Calling VisualShaderNodeGroupBase.IsValidPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -358,7 +358,7 @@ func (o *VisualShaderNodeGroupBase) IsValidPortName(name gdnative.String) gdnati
 	Args: [{ false id int}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) RemoveInputPort(id gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeGroupBase.RemoveInputPort()")
+	// log.Println("Calling VisualShaderNodeGroupBase.RemoveInputPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -379,7 +379,7 @@ func (o *VisualShaderNodeGroupBase) RemoveInputPort(id gdnative.Int) {
 	Args: [{ false id int}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) RemoveOutputPort(id gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeGroupBase.RemoveOutputPort()")
+	// log.Println("Calling VisualShaderNodeGroupBase.RemoveOutputPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -400,7 +400,7 @@ func (o *VisualShaderNodeGroupBase) RemoveOutputPort(id gdnative.Int) {
 	Args: [{ false id int} { false name String}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetInputPortName(id gdnative.Int, name gdnative.String) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetInputPortName()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetInputPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -422,7 +422,7 @@ func (o *VisualShaderNodeGroupBase) SetInputPortName(id gdnative.Int, name gdnat
 	Args: [{ false id int} { false type int}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetInputPortType(id gdnative.Int, aType gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetInputPortType()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetInputPortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -444,7 +444,7 @@ func (o *VisualShaderNodeGroupBase) SetInputPortType(id gdnative.Int, aType gdna
 	Args: [{ false inputs String}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetInputs(inputs gdnative.String) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetInputs()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -465,7 +465,7 @@ func (o *VisualShaderNodeGroupBase) SetInputs(inputs gdnative.String) {
 	Args: [{ false id int} { false name String}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetOutputPortName(id gdnative.Int, name gdnative.String) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetOutputPortName()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetOutputPortName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -487,7 +487,7 @@ func (o *VisualShaderNodeGroupBase) SetOutputPortName(id gdnative.Int, name gdna
 	Args: [{ false id int} { false type int}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetOutputPortType(id gdnative.Int, aType gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetOutputPortType()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetOutputPortType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -509,7 +509,7 @@ func (o *VisualShaderNodeGroupBase) SetOutputPortType(id gdnative.Int, aType gdn
 	Args: [{ false outputs String}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetOutputs(outputs gdnative.String) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetOutputs()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetOutputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -530,7 +530,7 @@ func (o *VisualShaderNodeGroupBase) SetOutputs(outputs gdnative.String) {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *VisualShaderNodeGroupBase) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling VisualShaderNodeGroupBase.SetSize()")
+	// log.Println("Calling VisualShaderNodeGroupBase.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

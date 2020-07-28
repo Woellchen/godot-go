@@ -39,7 +39,7 @@ func (o *CylinderShape) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CylinderShape) GetHeight() gdnative.Real {
-	//log.Println("Calling CylinderShape.GetHeight()")
+	// log.Println("Calling CylinderShape.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CylinderShape) GetHeight() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CylinderShape) GetRadius() gdnative.Real {
-	//log.Println("Calling CylinderShape.GetRadius()")
+	// log.Println("Calling CylinderShape.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CylinderShape) GetRadius() gdnative.Real {
 	Args: [{ false height float}], Returns: void
 */
 func (o *CylinderShape) SetHeight(height gdnative.Real) {
-	//log.Println("Calling CylinderShape.SetHeight()")
+	// log.Println("Calling CylinderShape.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *CylinderShape) SetHeight(height gdnative.Real) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CylinderShape) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling CylinderShape.SetRadius()")
+	// log.Println("Calling CylinderShape.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -50,7 +50,7 @@ func (o *NetworkedMultiplayerENet) BaseClass() string {
 	Args: [{100 true wait_usec int}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) CloseConnection(waitUsec gdnative.Int) {
-	//log.Println("Calling NetworkedMultiplayerENet.CloseConnection()")
+	// log.Println("Calling NetworkedMultiplayerENet.CloseConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -71,7 +71,7 @@ func (o *NetworkedMultiplayerENet) CloseConnection(waitUsec gdnative.Int) {
 	Args: [{ false address String} { false port int} {0 true in_bandwidth int} {0 true out_bandwidth int} {0 true client_port int}], Returns: enum.Error
 */
 func (o *NetworkedMultiplayerENet) CreateClient(address gdnative.String, port gdnative.Int, inBandwidth gdnative.Int, outBandwidth gdnative.Int, clientPort gdnative.Int) gdnative.Error {
-	//log.Println("Calling NetworkedMultiplayerENet.CreateClient()")
+	// log.Println("Calling NetworkedMultiplayerENet.CreateClient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -99,7 +99,7 @@ func (o *NetworkedMultiplayerENet) CreateClient(address gdnative.String, port gd
 	Args: [{ false port int} {32 true max_clients int} {0 true in_bandwidth int} {0 true out_bandwidth int}], Returns: enum.Error
 */
 func (o *NetworkedMultiplayerENet) CreateServer(port gdnative.Int, maxClients gdnative.Int, inBandwidth gdnative.Int, outBandwidth gdnative.Int) gdnative.Error {
-	//log.Println("Calling NetworkedMultiplayerENet.CreateServer()")
+	// log.Println("Calling NetworkedMultiplayerENet.CreateServer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -126,7 +126,7 @@ func (o *NetworkedMultiplayerENet) CreateServer(port gdnative.Int, maxClients gd
 	Args: [{ false id int} {False true now bool}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) DisconnectPeer(id gdnative.Int, now gdnative.Bool) {
-	//log.Println("Calling NetworkedMultiplayerENet.DisconnectPeer()")
+	// log.Println("Calling NetworkedMultiplayerENet.DisconnectPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -148,7 +148,7 @@ func (o *NetworkedMultiplayerENet) DisconnectPeer(id gdnative.Int, now gdnative.
 	Args: [], Returns: int
 */
 func (o *NetworkedMultiplayerENet) GetChannelCount() gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerENet.GetChannelCount()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetChannelCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -171,7 +171,7 @@ func (o *NetworkedMultiplayerENet) GetChannelCount() gdnative.Int {
 	Args: [], Returns: enum.NetworkedMultiplayerENet::CompressionMode
 */
 func (o *NetworkedMultiplayerENet) GetCompressionMode() NetworkedMultiplayerENetCompressionMode {
-	//log.Println("Calling NetworkedMultiplayerENet.GetCompressionMode()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetCompressionMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -194,7 +194,7 @@ func (o *NetworkedMultiplayerENet) GetCompressionMode() NetworkedMultiplayerENet
 	Args: [], Returns: int
 */
 func (o *NetworkedMultiplayerENet) GetLastPacketChannel() gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerENet.GetLastPacketChannel()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetLastPacketChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -217,7 +217,7 @@ func (o *NetworkedMultiplayerENet) GetLastPacketChannel() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *NetworkedMultiplayerENet) GetPacketChannel() gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerENet.GetPacketChannel()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetPacketChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -240,7 +240,7 @@ func (o *NetworkedMultiplayerENet) GetPacketChannel() gdnative.Int {
 	Args: [{ false id int}], Returns: String
 */
 func (o *NetworkedMultiplayerENet) GetPeerAddress(id gdnative.Int) gdnative.String {
-	//log.Println("Calling NetworkedMultiplayerENet.GetPeerAddress()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetPeerAddress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -264,7 +264,7 @@ func (o *NetworkedMultiplayerENet) GetPeerAddress(id gdnative.Int) gdnative.Stri
 	Args: [{ false id int}], Returns: int
 */
 func (o *NetworkedMultiplayerENet) GetPeerPort(id gdnative.Int) gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerENet.GetPeerPort()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetPeerPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -288,7 +288,7 @@ func (o *NetworkedMultiplayerENet) GetPeerPort(id gdnative.Int) gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *NetworkedMultiplayerENet) GetTransferChannel() gdnative.Int {
-	//log.Println("Calling NetworkedMultiplayerENet.GetTransferChannel()")
+	// log.Println("Calling NetworkedMultiplayerENet.GetTransferChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -311,7 +311,7 @@ func (o *NetworkedMultiplayerENet) GetTransferChannel() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *NetworkedMultiplayerENet) IsAlwaysOrdered() gdnative.Bool {
-	//log.Println("Calling NetworkedMultiplayerENet.IsAlwaysOrdered()")
+	// log.Println("Calling NetworkedMultiplayerENet.IsAlwaysOrdered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -334,7 +334,7 @@ func (o *NetworkedMultiplayerENet) IsAlwaysOrdered() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *NetworkedMultiplayerENet) IsDtlsEnabled() gdnative.Bool {
-	//log.Println("Calling NetworkedMultiplayerENet.IsDtlsEnabled()")
+	// log.Println("Calling NetworkedMultiplayerENet.IsDtlsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -357,7 +357,7 @@ func (o *NetworkedMultiplayerENet) IsDtlsEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *NetworkedMultiplayerENet) IsDtlsVerifyEnabled() gdnative.Bool {
-	//log.Println("Calling NetworkedMultiplayerENet.IsDtlsVerifyEnabled()")
+	// log.Println("Calling NetworkedMultiplayerENet.IsDtlsVerifyEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -380,7 +380,7 @@ func (o *NetworkedMultiplayerENet) IsDtlsVerifyEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *NetworkedMultiplayerENet) IsServerRelayEnabled() gdnative.Bool {
-	//log.Println("Calling NetworkedMultiplayerENet.IsServerRelayEnabled()")
+	// log.Println("Calling NetworkedMultiplayerENet.IsServerRelayEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -403,7 +403,7 @@ func (o *NetworkedMultiplayerENet) IsServerRelayEnabled() gdnative.Bool {
 	Args: [{ false ordered bool}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetAlwaysOrdered(ordered gdnative.Bool) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetAlwaysOrdered()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetAlwaysOrdered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -424,7 +424,7 @@ func (o *NetworkedMultiplayerENet) SetAlwaysOrdered(ordered gdnative.Bool) {
 	Args: [{ false ip String}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetBindIp(ip gdnative.String) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetBindIp()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetBindIp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -445,7 +445,7 @@ func (o *NetworkedMultiplayerENet) SetBindIp(ip gdnative.String) {
 	Args: [{ false channels int}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetChannelCount(channels gdnative.Int) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetChannelCount()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetChannelCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -466,7 +466,7 @@ func (o *NetworkedMultiplayerENet) SetChannelCount(channels gdnative.Int) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetCompressionMode(mode gdnative.Int) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetCompressionMode()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetCompressionMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -487,7 +487,7 @@ func (o *NetworkedMultiplayerENet) SetCompressionMode(mode gdnative.Int) {
 	Args: [{ false certificate X509Certificate}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetDtlsCertificate(certificate X509CertificateImplementer) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsCertificate()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetDtlsCertificate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -508,7 +508,7 @@ func (o *NetworkedMultiplayerENet) SetDtlsCertificate(certificate X509Certificat
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetDtlsEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsEnabled()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetDtlsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -529,7 +529,7 @@ func (o *NetworkedMultiplayerENet) SetDtlsEnabled(enabled gdnative.Bool) {
 	Args: [{ false key CryptoKey}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetDtlsKey(key CryptoKeyImplementer) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsKey()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetDtlsKey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -550,7 +550,7 @@ func (o *NetworkedMultiplayerENet) SetDtlsKey(key CryptoKeyImplementer) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetDtlsVerifyEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetDtlsVerifyEnabled()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetDtlsVerifyEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -571,7 +571,7 @@ func (o *NetworkedMultiplayerENet) SetDtlsVerifyEnabled(enabled gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetServerRelayEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetServerRelayEnabled()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetServerRelayEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -592,7 +592,7 @@ func (o *NetworkedMultiplayerENet) SetServerRelayEnabled(enabled gdnative.Bool) 
 	Args: [{ false channel int}], Returns: void
 */
 func (o *NetworkedMultiplayerENet) SetTransferChannel(channel gdnative.Int) {
-	//log.Println("Calling NetworkedMultiplayerENet.SetTransferChannel()")
+	// log.Println("Calling NetworkedMultiplayerENet.SetTransferChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *StreamPeerBuffer) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *StreamPeerBuffer) Clear() {
-	//log.Println("Calling StreamPeerBuffer.Clear()")
+	// log.Println("Calling StreamPeerBuffer.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *StreamPeerBuffer) Clear() {
 	Args: [], Returns: StreamPeerBuffer
 */
 func (o *StreamPeerBuffer) Duplicate() StreamPeerBufferImplementer {
-	//log.Println("Calling StreamPeerBuffer.Duplicate()")
+	// log.Println("Calling StreamPeerBuffer.Duplicate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *StreamPeerBuffer) Duplicate() StreamPeerBufferImplementer {
 	Args: [], Returns: PoolByteArray
 */
 func (o *StreamPeerBuffer) GetDataArray() gdnative.PoolByteArray {
-	//log.Println("Calling StreamPeerBuffer.GetDataArray()")
+	// log.Println("Calling StreamPeerBuffer.GetDataArray()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *StreamPeerBuffer) GetDataArray() gdnative.PoolByteArray {
 	Args: [], Returns: int
 */
 func (o *StreamPeerBuffer) GetPosition() gdnative.Int {
-	//log.Println("Calling StreamPeerBuffer.GetPosition()")
+	// log.Println("Calling StreamPeerBuffer.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *StreamPeerBuffer) GetPosition() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *StreamPeerBuffer) GetSize() gdnative.Int {
-	//log.Println("Calling StreamPeerBuffer.GetSize()")
+	// log.Println("Calling StreamPeerBuffer.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *StreamPeerBuffer) GetSize() gdnative.Int {
 	Args: [{ false size int}], Returns: void
 */
 func (o *StreamPeerBuffer) Resize(size gdnative.Int) {
-	//log.Println("Calling StreamPeerBuffer.Resize()")
+	// log.Println("Calling StreamPeerBuffer.Resize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -186,7 +186,7 @@ func (o *StreamPeerBuffer) Resize(size gdnative.Int) {
 	Args: [{ false position int}], Returns: void
 */
 func (o *StreamPeerBuffer) Seek(position gdnative.Int) {
-	//log.Println("Calling StreamPeerBuffer.Seek()")
+	// log.Println("Calling StreamPeerBuffer.Seek()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -207,7 +207,7 @@ func (o *StreamPeerBuffer) Seek(position gdnative.Int) {
 	Args: [{ false data PoolByteArray}], Returns: void
 */
 func (o *StreamPeerBuffer) SetDataArray(data gdnative.PoolByteArray) {
-	//log.Println("Calling StreamPeerBuffer.SetDataArray()")
+	// log.Println("Calling StreamPeerBuffer.SetDataArray()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

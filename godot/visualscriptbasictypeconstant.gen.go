@@ -39,7 +39,7 @@ func (o *VisualScriptBasicTypeConstant) BaseClass() string {
 	Args: [], Returns: enum.Variant::Type
 */
 func (o *VisualScriptBasicTypeConstant) GetBasicType() gdnative.VariantType {
-	//log.Println("Calling VisualScriptBasicTypeConstant.GetBasicType()")
+	// log.Println("Calling VisualScriptBasicTypeConstant.GetBasicType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptBasicTypeConstant) GetBasicType() gdnative.VariantType {
 	Args: [], Returns: String
 */
 func (o *VisualScriptBasicTypeConstant) GetBasicTypeConstant() gdnative.String {
-	//log.Println("Calling VisualScriptBasicTypeConstant.GetBasicTypeConstant()")
+	// log.Println("Calling VisualScriptBasicTypeConstant.GetBasicTypeConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptBasicTypeConstant) GetBasicTypeConstant() gdnative.String {
 	Args: [{ false name int}], Returns: void
 */
 func (o *VisualScriptBasicTypeConstant) SetBasicType(name gdnative.Int) {
-	//log.Println("Calling VisualScriptBasicTypeConstant.SetBasicType()")
+	// log.Println("Calling VisualScriptBasicTypeConstant.SetBasicType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *VisualScriptBasicTypeConstant) SetBasicType(name gdnative.Int) {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualScriptBasicTypeConstant) SetBasicTypeConstant(name gdnative.String) {
-	//log.Println("Calling VisualScriptBasicTypeConstant.SetBasicTypeConstant()")
+	// log.Println("Calling VisualScriptBasicTypeConstant.SetBasicTypeConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

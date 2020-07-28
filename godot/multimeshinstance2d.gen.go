@@ -39,7 +39,7 @@ func (o *MultiMeshInstance2D) BaseClass() string {
 	Args: [], Returns: MultiMesh
 */
 func (o *MultiMeshInstance2D) GetMultimesh() MultiMeshImplementer {
-	//log.Println("Calling MultiMeshInstance2D.GetMultimesh()")
+	// log.Println("Calling MultiMeshInstance2D.GetMultimesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *MultiMeshInstance2D) GetMultimesh() MultiMeshImplementer {
 	Args: [], Returns: Texture
 */
 func (o *MultiMeshInstance2D) GetNormalMap() TextureImplementer {
-	//log.Println("Calling MultiMeshInstance2D.GetNormalMap()")
+	// log.Println("Calling MultiMeshInstance2D.GetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -113,7 +113,7 @@ func (o *MultiMeshInstance2D) GetNormalMap() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *MultiMeshInstance2D) GetTexture() TextureImplementer {
-	//log.Println("Calling MultiMeshInstance2D.GetTexture()")
+	// log.Println("Calling MultiMeshInstance2D.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *MultiMeshInstance2D) GetTexture() TextureImplementer {
 	Args: [{ false multimesh MultiMesh}], Returns: void
 */
 func (o *MultiMeshInstance2D) SetMultimesh(multimesh MultiMeshImplementer) {
-	//log.Println("Calling MultiMeshInstance2D.SetMultimesh()")
+	// log.Println("Calling MultiMeshInstance2D.SetMultimesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *MultiMeshInstance2D) SetMultimesh(multimesh MultiMeshImplementer) {
 	Args: [{ false normal_map Texture}], Returns: void
 */
 func (o *MultiMeshInstance2D) SetNormalMap(normalMap TextureImplementer) {
-	//log.Println("Calling MultiMeshInstance2D.SetNormalMap()")
+	// log.Println("Calling MultiMeshInstance2D.SetNormalMap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -192,7 +192,7 @@ func (o *MultiMeshInstance2D) SetNormalMap(normalMap TextureImplementer) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *MultiMeshInstance2D) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling MultiMeshInstance2D.SetTexture()")
+	// log.Println("Calling MultiMeshInstance2D.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

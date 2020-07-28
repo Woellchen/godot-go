@@ -63,7 +63,7 @@ func (o *AnimationTreePlayer) BaseClass() string {
 	Args: [{ false type int} { false id String}], Returns: void
 */
 func (o *AnimationTreePlayer) AddNode(aType gdnative.Int, id gdnative.String) {
-	//log.Println("Calling AnimationTreePlayer.AddNode()")
+	// log.Println("Calling AnimationTreePlayer.AddNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -85,7 +85,7 @@ func (o *AnimationTreePlayer) AddNode(aType gdnative.Int, id gdnative.String) {
 	Args: [{ false delta float}], Returns: void
 */
 func (o *AnimationTreePlayer) Advance(delta gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.Advance()")
+	// log.Println("Calling AnimationTreePlayer.Advance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *AnimationTreePlayer) Advance(delta gdnative.Real) {
 	Args: [{ false id String}], Returns: Animation
 */
 func (o *AnimationTreePlayer) AnimationNodeGetAnimation(id gdnative.String) AnimationImplementer {
-	//log.Println("Calling AnimationTreePlayer.AnimationNodeGetAnimation()")
+	// log.Println("Calling AnimationTreePlayer.AnimationNodeGetAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -144,7 +144,7 @@ func (o *AnimationTreePlayer) AnimationNodeGetAnimation(id gdnative.String) Anim
 	Args: [{ false id String}], Returns: String
 */
 func (o *AnimationTreePlayer) AnimationNodeGetMasterAnimation(id gdnative.String) gdnative.String {
-	//log.Println("Calling AnimationTreePlayer.AnimationNodeGetMasterAnimation()")
+	// log.Println("Calling AnimationTreePlayer.AnimationNodeGetMasterAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -168,7 +168,7 @@ func (o *AnimationTreePlayer) AnimationNodeGetMasterAnimation(id gdnative.String
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) AnimationNodeGetPosition(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.AnimationNodeGetPosition()")
+	// log.Println("Calling AnimationTreePlayer.AnimationNodeGetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -192,7 +192,7 @@ func (o *AnimationTreePlayer) AnimationNodeGetPosition(id gdnative.String) gdnat
 	Args: [{ false id String} { false animation Animation}], Returns: void
 */
 func (o *AnimationTreePlayer) AnimationNodeSetAnimation(id gdnative.String, animation AnimationImplementer) {
-	//log.Println("Calling AnimationTreePlayer.AnimationNodeSetAnimation()")
+	// log.Println("Calling AnimationTreePlayer.AnimationNodeSetAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -214,7 +214,7 @@ func (o *AnimationTreePlayer) AnimationNodeSetAnimation(id gdnative.String, anim
 	Args: [{ false id String} { false path NodePath} { false enable bool}], Returns: void
 */
 func (o *AnimationTreePlayer) AnimationNodeSetFilterPath(id gdnative.String, path gdnative.NodePath, enable gdnative.Bool) {
-	//log.Println("Calling AnimationTreePlayer.AnimationNodeSetFilterPath()")
+	// log.Println("Calling AnimationTreePlayer.AnimationNodeSetFilterPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -237,7 +237,7 @@ func (o *AnimationTreePlayer) AnimationNodeSetFilterPath(id gdnative.String, pat
 	Args: [{ false id String} { false source String}], Returns: void
 */
 func (o *AnimationTreePlayer) AnimationNodeSetMasterAnimation(id gdnative.String, source gdnative.String) {
-	//log.Println("Calling AnimationTreePlayer.AnimationNodeSetMasterAnimation()")
+	// log.Println("Calling AnimationTreePlayer.AnimationNodeSetMasterAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -259,7 +259,7 @@ func (o *AnimationTreePlayer) AnimationNodeSetMasterAnimation(id gdnative.String
 	Args: [{ false id String} { false dst_id String} { false dst_input_idx int}], Returns: bool
 */
 func (o *AnimationTreePlayer) AreNodesConnected(id gdnative.String, dstId gdnative.String, dstInputIdx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AnimationTreePlayer.AreNodesConnected()")
+	// log.Println("Calling AnimationTreePlayer.AreNodesConnected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -285,7 +285,7 @@ func (o *AnimationTreePlayer) AreNodesConnected(id gdnative.String, dstId gdnati
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) Blend2NodeGetAmount(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.Blend2NodeGetAmount()")
+	// log.Println("Calling AnimationTreePlayer.Blend2NodeGetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -309,7 +309,7 @@ func (o *AnimationTreePlayer) Blend2NodeGetAmount(id gdnative.String) gdnative.R
 	Args: [{ false id String} { false blend float}], Returns: void
 */
 func (o *AnimationTreePlayer) Blend2NodeSetAmount(id gdnative.String, blend gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.Blend2NodeSetAmount()")
+	// log.Println("Calling AnimationTreePlayer.Blend2NodeSetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -331,7 +331,7 @@ func (o *AnimationTreePlayer) Blend2NodeSetAmount(id gdnative.String, blend gdna
 	Args: [{ false id String} { false path NodePath} { false enable bool}], Returns: void
 */
 func (o *AnimationTreePlayer) Blend2NodeSetFilterPath(id gdnative.String, path gdnative.NodePath, enable gdnative.Bool) {
-	//log.Println("Calling AnimationTreePlayer.Blend2NodeSetFilterPath()")
+	// log.Println("Calling AnimationTreePlayer.Blend2NodeSetFilterPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -354,7 +354,7 @@ func (o *AnimationTreePlayer) Blend2NodeSetFilterPath(id gdnative.String, path g
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) Blend3NodeGetAmount(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.Blend3NodeGetAmount()")
+	// log.Println("Calling AnimationTreePlayer.Blend3NodeGetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -378,7 +378,7 @@ func (o *AnimationTreePlayer) Blend3NodeGetAmount(id gdnative.String) gdnative.R
 	Args: [{ false id String} { false blend float}], Returns: void
 */
 func (o *AnimationTreePlayer) Blend3NodeSetAmount(id gdnative.String, blend gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.Blend3NodeSetAmount()")
+	// log.Println("Calling AnimationTreePlayer.Blend3NodeSetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -400,7 +400,7 @@ func (o *AnimationTreePlayer) Blend3NodeSetAmount(id gdnative.String, blend gdna
 	Args: [{ false id String}], Returns: Vector2
 */
 func (o *AnimationTreePlayer) Blend4NodeGetAmount(id gdnative.String) gdnative.Vector2 {
-	//log.Println("Calling AnimationTreePlayer.Blend4NodeGetAmount()")
+	// log.Println("Calling AnimationTreePlayer.Blend4NodeGetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -424,7 +424,7 @@ func (o *AnimationTreePlayer) Blend4NodeGetAmount(id gdnative.String) gdnative.V
 	Args: [{ false id String} { false blend Vector2}], Returns: void
 */
 func (o *AnimationTreePlayer) Blend4NodeSetAmount(id gdnative.String, blend gdnative.Vector2) {
-	//log.Println("Calling AnimationTreePlayer.Blend4NodeSetAmount()")
+	// log.Println("Calling AnimationTreePlayer.Blend4NodeSetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -446,7 +446,7 @@ func (o *AnimationTreePlayer) Blend4NodeSetAmount(id gdnative.String, blend gdna
 	Args: [{ false id String} { false dst_id String} { false dst_input_idx int}], Returns: enum.Error
 */
 func (o *AnimationTreePlayer) ConnectNodes(id gdnative.String, dstId gdnative.String, dstInputIdx gdnative.Int) gdnative.Error {
-	//log.Println("Calling AnimationTreePlayer.ConnectNodes()")
+	// log.Println("Calling AnimationTreePlayer.ConnectNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -472,7 +472,7 @@ func (o *AnimationTreePlayer) ConnectNodes(id gdnative.String, dstId gdnative.St
 	Args: [{ false id String} { false dst_input_idx int}], Returns: void
 */
 func (o *AnimationTreePlayer) DisconnectNodes(id gdnative.String, dstInputIdx gdnative.Int) {
-	//log.Println("Calling AnimationTreePlayer.DisconnectNodes()")
+	// log.Println("Calling AnimationTreePlayer.DisconnectNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -494,7 +494,7 @@ func (o *AnimationTreePlayer) DisconnectNodes(id gdnative.String, dstInputIdx gd
 	Args: [], Returns: enum.AnimationTreePlayer::AnimationProcessMode
 */
 func (o *AnimationTreePlayer) GetAnimationProcessMode() AnimationTreePlayerAnimationProcessMode {
-	//log.Println("Calling AnimationTreePlayer.GetAnimationProcessMode()")
+	// log.Println("Calling AnimationTreePlayer.GetAnimationProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -517,7 +517,7 @@ func (o *AnimationTreePlayer) GetAnimationProcessMode() AnimationTreePlayerAnima
 	Args: [], Returns: NodePath
 */
 func (o *AnimationTreePlayer) GetBasePath() gdnative.NodePath {
-	//log.Println("Calling AnimationTreePlayer.GetBasePath()")
+	// log.Println("Calling AnimationTreePlayer.GetBasePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -540,7 +540,7 @@ func (o *AnimationTreePlayer) GetBasePath() gdnative.NodePath {
 	Args: [], Returns: NodePath
 */
 func (o *AnimationTreePlayer) GetMasterPlayer() gdnative.NodePath {
-	//log.Println("Calling AnimationTreePlayer.GetMasterPlayer()")
+	// log.Println("Calling AnimationTreePlayer.GetMasterPlayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -563,7 +563,7 @@ func (o *AnimationTreePlayer) GetMasterPlayer() gdnative.NodePath {
 	Args: [], Returns: PoolStringArray
 */
 func (o *AnimationTreePlayer) GetNodeList() gdnative.PoolStringArray {
-	//log.Println("Calling AnimationTreePlayer.GetNodeList()")
+	// log.Println("Calling AnimationTreePlayer.GetNodeList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -586,7 +586,7 @@ func (o *AnimationTreePlayer) GetNodeList() gdnative.PoolStringArray {
 	Args: [], Returns: bool
 */
 func (o *AnimationTreePlayer) IsActive() gdnative.Bool {
-	//log.Println("Calling AnimationTreePlayer.IsActive()")
+	// log.Println("Calling AnimationTreePlayer.IsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -609,7 +609,7 @@ func (o *AnimationTreePlayer) IsActive() gdnative.Bool {
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) MixNodeGetAmount(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.MixNodeGetAmount()")
+	// log.Println("Calling AnimationTreePlayer.MixNodeGetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -633,7 +633,7 @@ func (o *AnimationTreePlayer) MixNodeGetAmount(id gdnative.String) gdnative.Real
 	Args: [{ false id String} { false ratio float}], Returns: void
 */
 func (o *AnimationTreePlayer) MixNodeSetAmount(id gdnative.String, ratio gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.MixNodeSetAmount()")
+	// log.Println("Calling AnimationTreePlayer.MixNodeSetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -655,7 +655,7 @@ func (o *AnimationTreePlayer) MixNodeSetAmount(id gdnative.String, ratio gdnativ
 	Args: [{ false node String}], Returns: bool
 */
 func (o *AnimationTreePlayer) NodeExists(node gdnative.String) gdnative.Bool {
-	//log.Println("Calling AnimationTreePlayer.NodeExists()")
+	// log.Println("Calling AnimationTreePlayer.NodeExists()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -679,7 +679,7 @@ func (o *AnimationTreePlayer) NodeExists(node gdnative.String) gdnative.Bool {
 	Args: [{ false id String}], Returns: int
 */
 func (o *AnimationTreePlayer) NodeGetInputCount(id gdnative.String) gdnative.Int {
-	//log.Println("Calling AnimationTreePlayer.NodeGetInputCount()")
+	// log.Println("Calling AnimationTreePlayer.NodeGetInputCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -703,7 +703,7 @@ func (o *AnimationTreePlayer) NodeGetInputCount(id gdnative.String) gdnative.Int
 	Args: [{ false id String} { false idx int}], Returns: String
 */
 func (o *AnimationTreePlayer) NodeGetInputSource(id gdnative.String, idx gdnative.Int) gdnative.String {
-	//log.Println("Calling AnimationTreePlayer.NodeGetInputSource()")
+	// log.Println("Calling AnimationTreePlayer.NodeGetInputSource()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -728,7 +728,7 @@ func (o *AnimationTreePlayer) NodeGetInputSource(id gdnative.String, idx gdnativ
 	Args: [{ false id String}], Returns: Vector2
 */
 func (o *AnimationTreePlayer) NodeGetPosition(id gdnative.String) gdnative.Vector2 {
-	//log.Println("Calling AnimationTreePlayer.NodeGetPosition()")
+	// log.Println("Calling AnimationTreePlayer.NodeGetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -752,7 +752,7 @@ func (o *AnimationTreePlayer) NodeGetPosition(id gdnative.String) gdnative.Vecto
 	Args: [{ false id String}], Returns: enum.AnimationTreePlayer::NodeType
 */
 func (o *AnimationTreePlayer) NodeGetType(id gdnative.String) AnimationTreePlayerNodeType {
-	//log.Println("Calling AnimationTreePlayer.NodeGetType()")
+	// log.Println("Calling AnimationTreePlayer.NodeGetType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -776,7 +776,7 @@ func (o *AnimationTreePlayer) NodeGetType(id gdnative.String) AnimationTreePlaye
 	Args: [{ false node String} { false new_name String}], Returns: enum.Error
 */
 func (o *AnimationTreePlayer) NodeRename(node gdnative.String, newName gdnative.String) gdnative.Error {
-	//log.Println("Calling AnimationTreePlayer.NodeRename()")
+	// log.Println("Calling AnimationTreePlayer.NodeRename()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -801,7 +801,7 @@ func (o *AnimationTreePlayer) NodeRename(node gdnative.String, newName gdnative.
 	Args: [{ false id String} { false screen_position Vector2}], Returns: void
 */
 func (o *AnimationTreePlayer) NodeSetPosition(id gdnative.String, screenPosition gdnative.Vector2) {
-	//log.Println("Calling AnimationTreePlayer.NodeSetPosition()")
+	// log.Println("Calling AnimationTreePlayer.NodeSetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -823,7 +823,7 @@ func (o *AnimationTreePlayer) NodeSetPosition(id gdnative.String, screenPosition
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) OneshotNodeGetAutorestartDelay(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeGetAutorestartDelay()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeGetAutorestartDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -847,7 +847,7 @@ func (o *AnimationTreePlayer) OneshotNodeGetAutorestartDelay(id gdnative.String)
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) OneshotNodeGetAutorestartRandomDelay(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeGetAutorestartRandomDelay()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeGetAutorestartRandomDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -871,7 +871,7 @@ func (o *AnimationTreePlayer) OneshotNodeGetAutorestartRandomDelay(id gdnative.S
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) OneshotNodeGetFadeinTime(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeGetFadeinTime()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeGetFadeinTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -895,7 +895,7 @@ func (o *AnimationTreePlayer) OneshotNodeGetFadeinTime(id gdnative.String) gdnat
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) OneshotNodeGetFadeoutTime(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeGetFadeoutTime()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeGetFadeoutTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -919,7 +919,7 @@ func (o *AnimationTreePlayer) OneshotNodeGetFadeoutTime(id gdnative.String) gdna
 	Args: [{ false id String}], Returns: bool
 */
 func (o *AnimationTreePlayer) OneshotNodeHasAutorestart(id gdnative.String) gdnative.Bool {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeHasAutorestart()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeHasAutorestart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -943,7 +943,7 @@ func (o *AnimationTreePlayer) OneshotNodeHasAutorestart(id gdnative.String) gdna
 	Args: [{ false id String}], Returns: bool
 */
 func (o *AnimationTreePlayer) OneshotNodeIsActive(id gdnative.String) gdnative.Bool {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeIsActive()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeIsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -967,7 +967,7 @@ func (o *AnimationTreePlayer) OneshotNodeIsActive(id gdnative.String) gdnative.B
 	Args: [{ false id String} { false enable bool}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeSetAutorestart(id gdnative.String, enable gdnative.Bool) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeSetAutorestart()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeSetAutorestart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -989,7 +989,7 @@ func (o *AnimationTreePlayer) OneshotNodeSetAutorestart(id gdnative.String, enab
 	Args: [{ false id String} { false delay_sec float}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeSetAutorestartDelay(id gdnative.String, delaySec gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeSetAutorestartDelay()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeSetAutorestartDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1011,7 +1011,7 @@ func (o *AnimationTreePlayer) OneshotNodeSetAutorestartDelay(id gdnative.String,
 	Args: [{ false id String} { false rand_sec float}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeSetAutorestartRandomDelay(id gdnative.String, randSec gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeSetAutorestartRandomDelay()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeSetAutorestartRandomDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1033,7 +1033,7 @@ func (o *AnimationTreePlayer) OneshotNodeSetAutorestartRandomDelay(id gdnative.S
 	Args: [{ false id String} { false time_sec float}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeSetFadeinTime(id gdnative.String, timeSec gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeSetFadeinTime()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeSetFadeinTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1055,7 +1055,7 @@ func (o *AnimationTreePlayer) OneshotNodeSetFadeinTime(id gdnative.String, timeS
 	Args: [{ false id String} { false time_sec float}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeSetFadeoutTime(id gdnative.String, timeSec gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeSetFadeoutTime()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeSetFadeoutTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1077,7 +1077,7 @@ func (o *AnimationTreePlayer) OneshotNodeSetFadeoutTime(id gdnative.String, time
 	Args: [{ false id String} { false path NodePath} { false enable bool}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeSetFilterPath(id gdnative.String, path gdnative.NodePath, enable gdnative.Bool) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeSetFilterPath()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeSetFilterPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1100,7 +1100,7 @@ func (o *AnimationTreePlayer) OneshotNodeSetFilterPath(id gdnative.String, path 
 	Args: [{ false id String}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeStart(id gdnative.String) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeStart()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeStart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1121,7 +1121,7 @@ func (o *AnimationTreePlayer) OneshotNodeStart(id gdnative.String) {
 	Args: [{ false id String}], Returns: void
 */
 func (o *AnimationTreePlayer) OneshotNodeStop(id gdnative.String) {
-	//log.Println("Calling AnimationTreePlayer.OneshotNodeStop()")
+	// log.Println("Calling AnimationTreePlayer.OneshotNodeStop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1142,7 +1142,7 @@ func (o *AnimationTreePlayer) OneshotNodeStop(id gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *AnimationTreePlayer) RecomputeCaches() {
-	//log.Println("Calling AnimationTreePlayer.RecomputeCaches()")
+	// log.Println("Calling AnimationTreePlayer.RecomputeCaches()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1162,7 +1162,7 @@ func (o *AnimationTreePlayer) RecomputeCaches() {
 	Args: [{ false id String}], Returns: void
 */
 func (o *AnimationTreePlayer) RemoveNode(id gdnative.String) {
-	//log.Println("Calling AnimationTreePlayer.RemoveNode()")
+	// log.Println("Calling AnimationTreePlayer.RemoveNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1183,7 +1183,7 @@ func (o *AnimationTreePlayer) RemoveNode(id gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *AnimationTreePlayer) Reset() {
-	//log.Println("Calling AnimationTreePlayer.Reset()")
+	// log.Println("Calling AnimationTreePlayer.Reset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1203,7 +1203,7 @@ func (o *AnimationTreePlayer) Reset() {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *AnimationTreePlayer) SetActive(enabled gdnative.Bool) {
-	//log.Println("Calling AnimationTreePlayer.SetActive()")
+	// log.Println("Calling AnimationTreePlayer.SetActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1224,7 +1224,7 @@ func (o *AnimationTreePlayer) SetActive(enabled gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *AnimationTreePlayer) SetAnimationProcessMode(mode gdnative.Int) {
-	//log.Println("Calling AnimationTreePlayer.SetAnimationProcessMode()")
+	// log.Println("Calling AnimationTreePlayer.SetAnimationProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1245,7 +1245,7 @@ func (o *AnimationTreePlayer) SetAnimationProcessMode(mode gdnative.Int) {
 	Args: [{ false path NodePath}], Returns: void
 */
 func (o *AnimationTreePlayer) SetBasePath(path gdnative.NodePath) {
-	//log.Println("Calling AnimationTreePlayer.SetBasePath()")
+	// log.Println("Calling AnimationTreePlayer.SetBasePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1266,7 +1266,7 @@ func (o *AnimationTreePlayer) SetBasePath(path gdnative.NodePath) {
 	Args: [{ false nodepath NodePath}], Returns: void
 */
 func (o *AnimationTreePlayer) SetMasterPlayer(nodepath gdnative.NodePath) {
-	//log.Println("Calling AnimationTreePlayer.SetMasterPlayer()")
+	// log.Println("Calling AnimationTreePlayer.SetMasterPlayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1287,7 +1287,7 @@ func (o *AnimationTreePlayer) SetMasterPlayer(nodepath gdnative.NodePath) {
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) TimescaleNodeGetScale(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.TimescaleNodeGetScale()")
+	// log.Println("Calling AnimationTreePlayer.TimescaleNodeGetScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1311,7 +1311,7 @@ func (o *AnimationTreePlayer) TimescaleNodeGetScale(id gdnative.String) gdnative
 	Args: [{ false id String} { false scale float}], Returns: void
 */
 func (o *AnimationTreePlayer) TimescaleNodeSetScale(id gdnative.String, scale gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.TimescaleNodeSetScale()")
+	// log.Println("Calling AnimationTreePlayer.TimescaleNodeSetScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1333,7 +1333,7 @@ func (o *AnimationTreePlayer) TimescaleNodeSetScale(id gdnative.String, scale gd
 	Args: [{ false id String} { false seconds float}], Returns: void
 */
 func (o *AnimationTreePlayer) TimeseekNodeSeek(id gdnative.String, seconds gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.TimeseekNodeSeek()")
+	// log.Println("Calling AnimationTreePlayer.TimeseekNodeSeek()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1355,7 +1355,7 @@ func (o *AnimationTreePlayer) TimeseekNodeSeek(id gdnative.String, seconds gdnat
 	Args: [{ false id String} { false input_idx int}], Returns: void
 */
 func (o *AnimationTreePlayer) TransitionNodeDeleteInput(id gdnative.String, inputIdx gdnative.Int) {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeDeleteInput()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeDeleteInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1377,7 +1377,7 @@ func (o *AnimationTreePlayer) TransitionNodeDeleteInput(id gdnative.String, inpu
 	Args: [{ false id String}], Returns: int
 */
 func (o *AnimationTreePlayer) TransitionNodeGetCurrent(id gdnative.String) gdnative.Int {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeGetCurrent()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeGetCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1401,7 +1401,7 @@ func (o *AnimationTreePlayer) TransitionNodeGetCurrent(id gdnative.String) gdnat
 	Args: [{ false id String}], Returns: int
 */
 func (o *AnimationTreePlayer) TransitionNodeGetInputCount(id gdnative.String) gdnative.Int {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeGetInputCount()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeGetInputCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1425,7 +1425,7 @@ func (o *AnimationTreePlayer) TransitionNodeGetInputCount(id gdnative.String) gd
 	Args: [{ false id String}], Returns: float
 */
 func (o *AnimationTreePlayer) TransitionNodeGetXfadeTime(id gdnative.String) gdnative.Real {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeGetXfadeTime()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeGetXfadeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1449,7 +1449,7 @@ func (o *AnimationTreePlayer) TransitionNodeGetXfadeTime(id gdnative.String) gdn
 	Args: [{ false id String} { false input_idx int}], Returns: bool
 */
 func (o *AnimationTreePlayer) TransitionNodeHasInputAutoAdvance(id gdnative.String, inputIdx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeHasInputAutoAdvance()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeHasInputAutoAdvance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1474,7 +1474,7 @@ func (o *AnimationTreePlayer) TransitionNodeHasInputAutoAdvance(id gdnative.Stri
 	Args: [{ false id String} { false input_idx int}], Returns: void
 */
 func (o *AnimationTreePlayer) TransitionNodeSetCurrent(id gdnative.String, inputIdx gdnative.Int) {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeSetCurrent()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeSetCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1496,7 +1496,7 @@ func (o *AnimationTreePlayer) TransitionNodeSetCurrent(id gdnative.String, input
 	Args: [{ false id String} { false input_idx int} { false enable bool}], Returns: void
 */
 func (o *AnimationTreePlayer) TransitionNodeSetInputAutoAdvance(id gdnative.String, inputIdx gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeSetInputAutoAdvance()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeSetInputAutoAdvance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1519,7 +1519,7 @@ func (o *AnimationTreePlayer) TransitionNodeSetInputAutoAdvance(id gdnative.Stri
 	Args: [{ false id String} { false count int}], Returns: void
 */
 func (o *AnimationTreePlayer) TransitionNodeSetInputCount(id gdnative.String, count gdnative.Int) {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeSetInputCount()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeSetInputCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1541,7 +1541,7 @@ func (o *AnimationTreePlayer) TransitionNodeSetInputCount(id gdnative.String, co
 	Args: [{ false id String} { false time_sec float}], Returns: void
 */
 func (o *AnimationTreePlayer) TransitionNodeSetXfadeTime(id gdnative.String, timeSec gdnative.Real) {
-	//log.Println("Calling AnimationTreePlayer.TransitionNodeSetXfadeTime()")
+	// log.Println("Calling AnimationTreePlayer.TransitionNodeSetXfadeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

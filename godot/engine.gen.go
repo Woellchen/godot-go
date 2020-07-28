@@ -62,7 +62,7 @@ func (o *engine) BaseClass() string {
 */
 func (o *engine) GetAuthorInfo() gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetAuthorInfo()")
+	// log.Println("Calling _Engine.GetAuthorInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -86,7 +86,7 @@ func (o *engine) GetAuthorInfo() gdnative.Dictionary {
 */
 func (o *engine) GetCopyrightInfo() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetCopyrightInfo()")
+	// log.Println("Calling _Engine.GetCopyrightInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -110,7 +110,7 @@ func (o *engine) GetCopyrightInfo() gdnative.Array {
 */
 func (o *engine) GetDonorInfo() gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetDonorInfo()")
+	// log.Println("Calling _Engine.GetDonorInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -134,7 +134,7 @@ func (o *engine) GetDonorInfo() gdnative.Dictionary {
 */
 func (o *engine) GetFramesDrawn() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetFramesDrawn()")
+	// log.Println("Calling _Engine.GetFramesDrawn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -158,7 +158,7 @@ func (o *engine) GetFramesDrawn() gdnative.Int {
 */
 func (o *engine) GetFramesPerSecond() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetFramesPerSecond()")
+	// log.Println("Calling _Engine.GetFramesPerSecond()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -182,7 +182,7 @@ func (o *engine) GetFramesPerSecond() gdnative.Real {
 */
 func (o *engine) GetIdleFrames() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetIdleFrames()")
+	// log.Println("Calling _Engine.GetIdleFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -206,7 +206,7 @@ func (o *engine) GetIdleFrames() gdnative.Int {
 */
 func (o *engine) GetIterationsPerSecond() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetIterationsPerSecond()")
+	// log.Println("Calling _Engine.GetIterationsPerSecond()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -230,7 +230,7 @@ func (o *engine) GetIterationsPerSecond() gdnative.Int {
 */
 func (o *engine) GetLicenseInfo() gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetLicenseInfo()")
+	// log.Println("Calling _Engine.GetLicenseInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -254,7 +254,7 @@ func (o *engine) GetLicenseInfo() gdnative.Dictionary {
 */
 func (o *engine) GetLicenseText() gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetLicenseText()")
+	// log.Println("Calling _Engine.GetLicenseText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -278,7 +278,7 @@ func (o *engine) GetLicenseText() gdnative.String {
 */
 func (o *engine) GetMainLoop() MainLoopImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetMainLoop()")
+	// log.Println("Calling _Engine.GetMainLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -316,7 +316,7 @@ func (o *engine) GetMainLoop() MainLoopImplementer {
 */
 func (o *engine) GetPhysicsFrames() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetPhysicsFrames()")
+	// log.Println("Calling _Engine.GetPhysicsFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -340,7 +340,7 @@ func (o *engine) GetPhysicsFrames() gdnative.Int {
 */
 func (o *engine) GetPhysicsInterpolationFraction() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetPhysicsInterpolationFraction()")
+	// log.Println("Calling _Engine.GetPhysicsInterpolationFraction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -364,7 +364,7 @@ func (o *engine) GetPhysicsInterpolationFraction() gdnative.Real {
 */
 func (o *engine) GetPhysicsJitterFix() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetPhysicsJitterFix()")
+	// log.Println("Calling _Engine.GetPhysicsJitterFix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -388,7 +388,7 @@ func (o *engine) GetPhysicsJitterFix() gdnative.Real {
 */
 func (o *engine) GetSingleton(name gdnative.String) ObjectImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetSingleton()")
+	// log.Println("Calling _Engine.GetSingleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -427,7 +427,7 @@ func (o *engine) GetSingleton(name gdnative.String) ObjectImplementer {
 */
 func (o *engine) GetTargetFps() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetTargetFps()")
+	// log.Println("Calling _Engine.GetTargetFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -451,7 +451,7 @@ func (o *engine) GetTargetFps() gdnative.Int {
 */
 func (o *engine) GetTimeScale() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetTimeScale()")
+	// log.Println("Calling _Engine.GetTimeScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -475,7 +475,7 @@ func (o *engine) GetTimeScale() gdnative.Real {
 */
 func (o *engine) GetVersionInfo() gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.GetVersionInfo()")
+	// log.Println("Calling _Engine.GetVersionInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -499,7 +499,7 @@ func (o *engine) GetVersionInfo() gdnative.Dictionary {
 */
 func (o *engine) HasSingleton(name gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.HasSingleton()")
+	// log.Println("Calling _Engine.HasSingleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -524,7 +524,7 @@ func (o *engine) HasSingleton(name gdnative.String) gdnative.Bool {
 */
 func (o *engine) IsEditorHint() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.IsEditorHint()")
+	// log.Println("Calling _Engine.IsEditorHint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -548,7 +548,7 @@ func (o *engine) IsEditorHint() gdnative.Bool {
 */
 func (o *engine) IsInPhysicsFrame() gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.IsInPhysicsFrame()")
+	// log.Println("Calling _Engine.IsInPhysicsFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -572,7 +572,7 @@ func (o *engine) IsInPhysicsFrame() gdnative.Bool {
 */
 func (o *engine) SetEditorHint(enabled gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.SetEditorHint()")
+	// log.Println("Calling _Engine.SetEditorHint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -594,7 +594,7 @@ func (o *engine) SetEditorHint(enabled gdnative.Bool) {
 */
 func (o *engine) SetIterationsPerSecond(iterationsPerSecond gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.SetIterationsPerSecond()")
+	// log.Println("Calling _Engine.SetIterationsPerSecond()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -616,7 +616,7 @@ func (o *engine) SetIterationsPerSecond(iterationsPerSecond gdnative.Int) {
 */
 func (o *engine) SetPhysicsJitterFix(physicsJitterFix gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.SetPhysicsJitterFix()")
+	// log.Println("Calling _Engine.SetPhysicsJitterFix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -638,7 +638,7 @@ func (o *engine) SetPhysicsJitterFix(physicsJitterFix gdnative.Real) {
 */
 func (o *engine) SetTargetFps(targetFps gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.SetTargetFps()")
+	// log.Println("Calling _Engine.SetTargetFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -660,7 +660,7 @@ func (o *engine) SetTargetFps(targetFps gdnative.Int) {
 */
 func (o *engine) SetTimeScale(timeScale gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling _Engine.SetTimeScale()")
+	// log.Println("Calling _Engine.SetTimeScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

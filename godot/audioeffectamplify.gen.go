@@ -39,7 +39,7 @@ func (o *AudioEffectAmplify) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectAmplify) GetVolumeDb() gdnative.Real {
-	//log.Println("Calling AudioEffectAmplify.GetVolumeDb()")
+	// log.Println("Calling AudioEffectAmplify.GetVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectAmplify) GetVolumeDb() gdnative.Real {
 	Args: [{ false volume float}], Returns: void
 */
 func (o *AudioEffectAmplify) SetVolumeDb(volume gdnative.Real) {
-	//log.Println("Calling AudioEffectAmplify.SetVolumeDb()")
+	// log.Println("Calling AudioEffectAmplify.SetVolumeDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

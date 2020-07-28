@@ -39,7 +39,7 @@ func (o *HeightMapShape) BaseClass() string {
 	Args: [], Returns: PoolRealArray
 */
 func (o *HeightMapShape) GetMapData() gdnative.PoolRealArray {
-	//log.Println("Calling HeightMapShape.GetMapData()")
+	// log.Println("Calling HeightMapShape.GetMapData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *HeightMapShape) GetMapData() gdnative.PoolRealArray {
 	Args: [], Returns: int
 */
 func (o *HeightMapShape) GetMapDepth() gdnative.Int {
-	//log.Println("Calling HeightMapShape.GetMapDepth()")
+	// log.Println("Calling HeightMapShape.GetMapDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *HeightMapShape) GetMapDepth() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *HeightMapShape) GetMapWidth() gdnative.Int {
-	//log.Println("Calling HeightMapShape.GetMapWidth()")
+	// log.Println("Calling HeightMapShape.GetMapWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *HeightMapShape) GetMapWidth() gdnative.Int {
 	Args: [{ false data PoolRealArray}], Returns: void
 */
 func (o *HeightMapShape) SetMapData(data gdnative.PoolRealArray) {
-	//log.Println("Calling HeightMapShape.SetMapData()")
+	// log.Println("Calling HeightMapShape.SetMapData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *HeightMapShape) SetMapData(data gdnative.PoolRealArray) {
 	Args: [{ false height int}], Returns: void
 */
 func (o *HeightMapShape) SetMapDepth(height gdnative.Int) {
-	//log.Println("Calling HeightMapShape.SetMapDepth()")
+	// log.Println("Calling HeightMapShape.SetMapDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *HeightMapShape) SetMapDepth(height gdnative.Int) {
 	Args: [{ false width int}], Returns: void
 */
 func (o *HeightMapShape) SetMapWidth(width gdnative.Int) {
-	//log.Println("Calling HeightMapShape.SetMapWidth()")
+	// log.Println("Calling HeightMapShape.SetMapWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

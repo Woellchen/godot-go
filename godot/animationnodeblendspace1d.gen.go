@@ -39,7 +39,7 @@ func (o *AnimationNodeBlendSpace1D) BaseClass() string {
 	Args: [{ false index int} { false node AnimationRootNode}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) X_AddBlendPoint(index gdnative.Int, node AnimationRootNodeImplementer) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.X_AddBlendPoint()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.X_AddBlendPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *AnimationNodeBlendSpace1D) X_AddBlendPoint(index gdnative.Int, node Ani
 	Args: [], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) X_TreeChanged() {
-	//log.Println("Calling AnimationNodeBlendSpace1D.X_TreeChanged()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.X_TreeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -81,7 +81,7 @@ func (o *AnimationNodeBlendSpace1D) X_TreeChanged() {
 	Args: [{ false node AnimationRootNode} { false pos float} {-1 true at_index int}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) AddBlendPoint(node AnimationRootNodeImplementer, pos gdnative.Real, atIndex gdnative.Int) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.AddBlendPoint()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.AddBlendPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -104,7 +104,7 @@ func (o *AnimationNodeBlendSpace1D) AddBlendPoint(node AnimationRootNodeImplemen
 	Args: [], Returns: int
 */
 func (o *AnimationNodeBlendSpace1D) GetBlendPointCount() gdnative.Int {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetBlendPointCount()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetBlendPointCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -127,7 +127,7 @@ func (o *AnimationNodeBlendSpace1D) GetBlendPointCount() gdnative.Int {
 	Args: [{ false point int}], Returns: AnimationRootNode
 */
 func (o *AnimationNodeBlendSpace1D) GetBlendPointNode(point gdnative.Int) AnimationRootNodeImplementer {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetBlendPointNode()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetBlendPointNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -165,7 +165,7 @@ func (o *AnimationNodeBlendSpace1D) GetBlendPointNode(point gdnative.Int) Animat
 	Args: [{ false point int}], Returns: float
 */
 func (o *AnimationNodeBlendSpace1D) GetBlendPointPosition(point gdnative.Int) gdnative.Real {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetBlendPointPosition()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetBlendPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *AnimationNodeBlendSpace1D) GetBlendPointPosition(point gdnative.Int) gd
 	Args: [], Returns: float
 */
 func (o *AnimationNodeBlendSpace1D) GetMaxSpace() gdnative.Real {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetMaxSpace()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetMaxSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -212,7 +212,7 @@ func (o *AnimationNodeBlendSpace1D) GetMaxSpace() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeBlendSpace1D) GetMinSpace() gdnative.Real {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetMinSpace()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetMinSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -235,7 +235,7 @@ func (o *AnimationNodeBlendSpace1D) GetMinSpace() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeBlendSpace1D) GetSnap() gdnative.Real {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetSnap()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -258,7 +258,7 @@ func (o *AnimationNodeBlendSpace1D) GetSnap() gdnative.Real {
 	Args: [], Returns: String
 */
 func (o *AnimationNodeBlendSpace1D) GetValueLabel() gdnative.String {
-	//log.Println("Calling AnimationNodeBlendSpace1D.GetValueLabel()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.GetValueLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -281,7 +281,7 @@ func (o *AnimationNodeBlendSpace1D) GetValueLabel() gdnative.String {
 	Args: [{ false point int}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) RemoveBlendPoint(point gdnative.Int) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.RemoveBlendPoint()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.RemoveBlendPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -302,7 +302,7 @@ func (o *AnimationNodeBlendSpace1D) RemoveBlendPoint(point gdnative.Int) {
 	Args: [{ false point int} { false node AnimationRootNode}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) SetBlendPointNode(point gdnative.Int, node AnimationRootNodeImplementer) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.SetBlendPointNode()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.SetBlendPointNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -324,7 +324,7 @@ func (o *AnimationNodeBlendSpace1D) SetBlendPointNode(point gdnative.Int, node A
 	Args: [{ false point int} { false pos float}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) SetBlendPointPosition(point gdnative.Int, pos gdnative.Real) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.SetBlendPointPosition()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.SetBlendPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -346,7 +346,7 @@ func (o *AnimationNodeBlendSpace1D) SetBlendPointPosition(point gdnative.Int, po
 	Args: [{ false max_space float}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) SetMaxSpace(maxSpace gdnative.Real) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.SetMaxSpace()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.SetMaxSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -367,7 +367,7 @@ func (o *AnimationNodeBlendSpace1D) SetMaxSpace(maxSpace gdnative.Real) {
 	Args: [{ false min_space float}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) SetMinSpace(minSpace gdnative.Real) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.SetMinSpace()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.SetMinSpace()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -388,7 +388,7 @@ func (o *AnimationNodeBlendSpace1D) SetMinSpace(minSpace gdnative.Real) {
 	Args: [{ false snap float}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) SetSnap(snap gdnative.Real) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.SetSnap()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.SetSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -409,7 +409,7 @@ func (o *AnimationNodeBlendSpace1D) SetSnap(snap gdnative.Real) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *AnimationNodeBlendSpace1D) SetValueLabel(text gdnative.String) {
-	//log.Println("Calling AnimationNodeBlendSpace1D.SetValueLabel()")
+	// log.Println("Calling AnimationNodeBlendSpace1D.SetValueLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *Path) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Path) X_CurveChanged() {
-	//log.Println("Calling Path.X_CurveChanged()")
+	// log.Println("Calling Path.X_CurveChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *Path) X_CurveChanged() {
 	Args: [], Returns: Curve3D
 */
 func (o *Path) GetCurve() Curve3DImplementer {
-	//log.Println("Calling Path.GetCurve()")
+	// log.Println("Calling Path.GetCurve()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *Path) GetCurve() Curve3DImplementer {
 	Args: [{ false curve Curve3D}], Returns: void
 */
 func (o *Path) SetCurve(curve Curve3DImplementer) {
-	//log.Println("Calling Path.SetCurve()")
+	// log.Println("Calling Path.SetCurve()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

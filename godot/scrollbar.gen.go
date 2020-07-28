@@ -39,7 +39,7 @@ func (o *ScrollBar) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *ScrollBar) X_DragNodeExit() {
-	//log.Println("Calling ScrollBar.X_DragNodeExit()")
+	// log.Println("Calling ScrollBar.X_DragNodeExit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *ScrollBar) X_DragNodeExit() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ScrollBar) X_DragNodeInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ScrollBar.X_DragNodeInput()")
+	// log.Println("Calling ScrollBar.X_DragNodeInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *ScrollBar) X_DragNodeInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ScrollBar) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ScrollBar.X_GuiInput()")
+	// log.Println("Calling ScrollBar.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *ScrollBar) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: float
 */
 func (o *ScrollBar) GetCustomStep() gdnative.Real {
-	//log.Println("Calling ScrollBar.GetCustomStep()")
+	// log.Println("Calling ScrollBar.GetCustomStep()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -124,7 +124,7 @@ func (o *ScrollBar) GetCustomStep() gdnative.Real {
 	Args: [{ false step float}], Returns: void
 */
 func (o *ScrollBar) SetCustomStep(step gdnative.Real) {
-	//log.Println("Calling ScrollBar.SetCustomStep()")
+	// log.Println("Calling ScrollBar.SetCustomStep()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

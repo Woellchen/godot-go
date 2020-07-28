@@ -59,7 +59,7 @@ func (o *CanvasItemMaterial) BaseClass() string {
 	Args: [], Returns: enum.CanvasItemMaterial::BlendMode
 */
 func (o *CanvasItemMaterial) GetBlendMode() CanvasItemMaterialBlendMode {
-	//log.Println("Calling CanvasItemMaterial.GetBlendMode()")
+	// log.Println("Calling CanvasItemMaterial.GetBlendMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *CanvasItemMaterial) GetBlendMode() CanvasItemMaterialBlendMode {
 	Args: [], Returns: enum.CanvasItemMaterial::LightMode
 */
 func (o *CanvasItemMaterial) GetLightMode() CanvasItemMaterialLightMode {
-	//log.Println("Calling CanvasItemMaterial.GetLightMode()")
+	// log.Println("Calling CanvasItemMaterial.GetLightMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *CanvasItemMaterial) GetLightMode() CanvasItemMaterialLightMode {
 	Args: [], Returns: int
 */
 func (o *CanvasItemMaterial) GetParticlesAnimHFrames() gdnative.Int {
-	//log.Println("Calling CanvasItemMaterial.GetParticlesAnimHFrames()")
+	// log.Println("Calling CanvasItemMaterial.GetParticlesAnimHFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *CanvasItemMaterial) GetParticlesAnimHFrames() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CanvasItemMaterial) GetParticlesAnimLoop() gdnative.Bool {
-	//log.Println("Calling CanvasItemMaterial.GetParticlesAnimLoop()")
+	// log.Println("Calling CanvasItemMaterial.GetParticlesAnimLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *CanvasItemMaterial) GetParticlesAnimLoop() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *CanvasItemMaterial) GetParticlesAnimVFrames() gdnative.Int {
-	//log.Println("Calling CanvasItemMaterial.GetParticlesAnimVFrames()")
+	// log.Println("Calling CanvasItemMaterial.GetParticlesAnimVFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -174,7 +174,7 @@ func (o *CanvasItemMaterial) GetParticlesAnimVFrames() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CanvasItemMaterial) GetParticlesAnimation() gdnative.Bool {
-	//log.Println("Calling CanvasItemMaterial.GetParticlesAnimation()")
+	// log.Println("Calling CanvasItemMaterial.GetParticlesAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -197,7 +197,7 @@ func (o *CanvasItemMaterial) GetParticlesAnimation() gdnative.Bool {
 	Args: [{ false blend_mode int}], Returns: void
 */
 func (o *CanvasItemMaterial) SetBlendMode(blendMode gdnative.Int) {
-	//log.Println("Calling CanvasItemMaterial.SetBlendMode()")
+	// log.Println("Calling CanvasItemMaterial.SetBlendMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -218,7 +218,7 @@ func (o *CanvasItemMaterial) SetBlendMode(blendMode gdnative.Int) {
 	Args: [{ false light_mode int}], Returns: void
 */
 func (o *CanvasItemMaterial) SetLightMode(lightMode gdnative.Int) {
-	//log.Println("Calling CanvasItemMaterial.SetLightMode()")
+	// log.Println("Calling CanvasItemMaterial.SetLightMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -239,7 +239,7 @@ func (o *CanvasItemMaterial) SetLightMode(lightMode gdnative.Int) {
 	Args: [{ false frames int}], Returns: void
 */
 func (o *CanvasItemMaterial) SetParticlesAnimHFrames(frames gdnative.Int) {
-	//log.Println("Calling CanvasItemMaterial.SetParticlesAnimHFrames()")
+	// log.Println("Calling CanvasItemMaterial.SetParticlesAnimHFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -260,7 +260,7 @@ func (o *CanvasItemMaterial) SetParticlesAnimHFrames(frames gdnative.Int) {
 	Args: [{ false loop bool}], Returns: void
 */
 func (o *CanvasItemMaterial) SetParticlesAnimLoop(loop gdnative.Bool) {
-	//log.Println("Calling CanvasItemMaterial.SetParticlesAnimLoop()")
+	// log.Println("Calling CanvasItemMaterial.SetParticlesAnimLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -281,7 +281,7 @@ func (o *CanvasItemMaterial) SetParticlesAnimLoop(loop gdnative.Bool) {
 	Args: [{ false frames int}], Returns: void
 */
 func (o *CanvasItemMaterial) SetParticlesAnimVFrames(frames gdnative.Int) {
-	//log.Println("Calling CanvasItemMaterial.SetParticlesAnimVFrames()")
+	// log.Println("Calling CanvasItemMaterial.SetParticlesAnimVFrames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -302,7 +302,7 @@ func (o *CanvasItemMaterial) SetParticlesAnimVFrames(frames gdnative.Int) {
 	Args: [{ false particles_anim bool}], Returns: void
 */
 func (o *CanvasItemMaterial) SetParticlesAnimation(particlesAnim gdnative.Bool) {
-	//log.Println("Calling CanvasItemMaterial.SetParticlesAnimation()")
+	// log.Println("Calling CanvasItemMaterial.SetParticlesAnimation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

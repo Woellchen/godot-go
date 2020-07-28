@@ -39,7 +39,7 @@ func (o *VisualScriptPreload) BaseClass() string {
 	Args: [], Returns: Resource
 */
 func (o *VisualScriptPreload) GetPreload() ResourceImplementer {
-	//log.Println("Calling VisualScriptPreload.GetPreload()")
+	// log.Println("Calling VisualScriptPreload.GetPreload()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *VisualScriptPreload) GetPreload() ResourceImplementer {
 	Args: [{ false resource Resource}], Returns: void
 */
 func (o *VisualScriptPreload) SetPreload(resource ResourceImplementer) {
-	//log.Println("Calling VisualScriptPreload.SetPreload()")
+	// log.Println("Calling VisualScriptPreload.SetPreload()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

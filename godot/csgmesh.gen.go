@@ -39,7 +39,7 @@ func (o *CSGMesh) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CSGMesh) X_MeshChanged() {
-	//log.Println("Calling CSGMesh.X_MeshChanged()")
+	// log.Println("Calling CSGMesh.X_MeshChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *CSGMesh) X_MeshChanged() {
 	Args: [], Returns: Material
 */
 func (o *CSGMesh) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CSGMesh.GetMaterial()")
+	// log.Println("Calling CSGMesh.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *CSGMesh) GetMaterial() MaterialImplementer {
 	Args: [], Returns: Mesh
 */
 func (o *CSGMesh) GetMesh() MeshImplementer {
-	//log.Println("Calling CSGMesh.GetMesh()")
+	// log.Println("Calling CSGMesh.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -133,7 +133,7 @@ func (o *CSGMesh) GetMesh() MeshImplementer {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CSGMesh) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CSGMesh.SetMaterial()")
+	// log.Println("Calling CSGMesh.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -154,7 +154,7 @@ func (o *CSGMesh) SetMaterial(material MaterialImplementer) {
 	Args: [{ false mesh Mesh}], Returns: void
 */
 func (o *CSGMesh) SetMesh(mesh MeshImplementer) {
-	//log.Println("Calling CSGMesh.SetMesh()")
+	// log.Println("Calling CSGMesh.SetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

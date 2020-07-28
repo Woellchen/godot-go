@@ -39,7 +39,7 @@ func (o *AudioEffectStereoEnhance) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectStereoEnhance) GetPanPullout() gdnative.Real {
-	//log.Println("Calling AudioEffectStereoEnhance.GetPanPullout()")
+	// log.Println("Calling AudioEffectStereoEnhance.GetPanPullout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectStereoEnhance) GetPanPullout() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectStereoEnhance) GetSurround() gdnative.Real {
-	//log.Println("Calling AudioEffectStereoEnhance.GetSurround()")
+	// log.Println("Calling AudioEffectStereoEnhance.GetSurround()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioEffectStereoEnhance) GetSurround() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectStereoEnhance) GetTimePullout() gdnative.Real {
-	//log.Println("Calling AudioEffectStereoEnhance.GetTimePullout()")
+	// log.Println("Calling AudioEffectStereoEnhance.GetTimePullout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AudioEffectStereoEnhance) GetTimePullout() gdnative.Real {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectStereoEnhance) SetPanPullout(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectStereoEnhance.SetPanPullout()")
+	// log.Println("Calling AudioEffectStereoEnhance.SetPanPullout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *AudioEffectStereoEnhance) SetPanPullout(amount gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectStereoEnhance) SetSurround(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectStereoEnhance.SetSurround()")
+	// log.Println("Calling AudioEffectStereoEnhance.SetSurround()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *AudioEffectStereoEnhance) SetSurround(amount gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectStereoEnhance) SetTimePullout(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectStereoEnhance.SetTimePullout()")
+	// log.Println("Calling AudioEffectStereoEnhance.SetTimePullout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

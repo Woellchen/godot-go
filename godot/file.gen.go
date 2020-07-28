@@ -59,7 +59,7 @@ func (o *File) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *File) Close() {
-	//log.Println("Calling _File.Close()")
+	// log.Println("Calling _File.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *File) Close() {
 	Args: [], Returns: bool
 */
 func (o *File) EofReached() gdnative.Bool {
-	//log.Println("Calling _File.EofReached()")
+	// log.Println("Calling _File.EofReached()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -102,7 +102,7 @@ func (o *File) EofReached() gdnative.Bool {
 	Args: [{ false path String}], Returns: bool
 */
 func (o *File) FileExists(path gdnative.String) gdnative.Bool {
-	//log.Println("Calling _File.FileExists()")
+	// log.Println("Calling _File.FileExists()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -126,7 +126,7 @@ func (o *File) FileExists(path gdnative.String) gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *File) Get16() gdnative.Int {
-	//log.Println("Calling _File.Get16()")
+	// log.Println("Calling _File.Get16()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *File) Get16() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *File) Get32() gdnative.Int {
-	//log.Println("Calling _File.Get32()")
+	// log.Println("Calling _File.Get32()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -172,7 +172,7 @@ func (o *File) Get32() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *File) Get64() gdnative.Int {
-	//log.Println("Calling _File.Get64()")
+	// log.Println("Calling _File.Get64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -195,7 +195,7 @@ func (o *File) Get64() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *File) Get8() gdnative.Int {
-	//log.Println("Calling _File.Get8()")
+	// log.Println("Calling _File.Get8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -218,7 +218,7 @@ func (o *File) Get8() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *File) GetAsText() gdnative.String {
-	//log.Println("Calling _File.GetAsText()")
+	// log.Println("Calling _File.GetAsText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -241,7 +241,7 @@ func (o *File) GetAsText() gdnative.String {
 	Args: [{ false len int}], Returns: PoolByteArray
 */
 func (o *File) GetBuffer(len gdnative.Int) gdnative.PoolByteArray {
-	//log.Println("Calling _File.GetBuffer()")
+	// log.Println("Calling _File.GetBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *File) GetBuffer(len gdnative.Int) gdnative.PoolByteArray {
 	Args: [{, true delim String}], Returns: PoolStringArray
 */
 func (o *File) GetCsvLine(delim gdnative.String) gdnative.PoolStringArray {
-	//log.Println("Calling _File.GetCsvLine()")
+	// log.Println("Calling _File.GetCsvLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -289,7 +289,7 @@ func (o *File) GetCsvLine(delim gdnative.String) gdnative.PoolStringArray {
 	Args: [], Returns: float
 */
 func (o *File) GetDouble() gdnative.Real {
-	//log.Println("Calling _File.GetDouble()")
+	// log.Println("Calling _File.GetDouble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -312,7 +312,7 @@ func (o *File) GetDouble() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *File) GetEndianSwap() gdnative.Bool {
-	//log.Println("Calling _File.GetEndianSwap()")
+	// log.Println("Calling _File.GetEndianSwap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -335,7 +335,7 @@ func (o *File) GetEndianSwap() gdnative.Bool {
 	Args: [], Returns: enum.Error
 */
 func (o *File) GetError() gdnative.Error {
-	//log.Println("Calling _File.GetError()")
+	// log.Println("Calling _File.GetError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -358,7 +358,7 @@ func (o *File) GetError() gdnative.Error {
 	Args: [], Returns: float
 */
 func (o *File) GetFloat() gdnative.Real {
-	//log.Println("Calling _File.GetFloat()")
+	// log.Println("Calling _File.GetFloat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -381,7 +381,7 @@ func (o *File) GetFloat() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *File) GetLen() gdnative.Int {
-	//log.Println("Calling _File.GetLen()")
+	// log.Println("Calling _File.GetLen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -404,7 +404,7 @@ func (o *File) GetLen() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *File) GetLine() gdnative.String {
-	//log.Println("Calling _File.GetLine()")
+	// log.Println("Calling _File.GetLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -427,7 +427,7 @@ func (o *File) GetLine() gdnative.String {
 	Args: [{ false path String}], Returns: String
 */
 func (o *File) GetMd5(path gdnative.String) gdnative.String {
-	//log.Println("Calling _File.GetMd5()")
+	// log.Println("Calling _File.GetMd5()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -451,7 +451,7 @@ func (o *File) GetMd5(path gdnative.String) gdnative.String {
 	Args: [{ false file String}], Returns: int
 */
 func (o *File) GetModifiedTime(file gdnative.String) gdnative.Int {
-	//log.Println("Calling _File.GetModifiedTime()")
+	// log.Println("Calling _File.GetModifiedTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -475,7 +475,7 @@ func (o *File) GetModifiedTime(file gdnative.String) gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *File) GetPascalString() gdnative.String {
-	//log.Println("Calling _File.GetPascalString()")
+	// log.Println("Calling _File.GetPascalString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -498,7 +498,7 @@ func (o *File) GetPascalString() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *File) GetPath() gdnative.String {
-	//log.Println("Calling _File.GetPath()")
+	// log.Println("Calling _File.GetPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -521,7 +521,7 @@ func (o *File) GetPath() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *File) GetPathAbsolute() gdnative.String {
-	//log.Println("Calling _File.GetPathAbsolute()")
+	// log.Println("Calling _File.GetPathAbsolute()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -544,7 +544,7 @@ func (o *File) GetPathAbsolute() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *File) GetPosition() gdnative.Int {
-	//log.Println("Calling _File.GetPosition()")
+	// log.Println("Calling _File.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -567,7 +567,7 @@ func (o *File) GetPosition() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *File) GetReal() gdnative.Real {
-	//log.Println("Calling _File.GetReal()")
+	// log.Println("Calling _File.GetReal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -590,7 +590,7 @@ func (o *File) GetReal() gdnative.Real {
 	Args: [{ false path String}], Returns: String
 */
 func (o *File) GetSha256(path gdnative.String) gdnative.String {
-	//log.Println("Calling _File.GetSha256()")
+	// log.Println("Calling _File.GetSha256()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -614,7 +614,7 @@ func (o *File) GetSha256(path gdnative.String) gdnative.String {
 	Args: [{False true allow_objects bool}], Returns: Variant
 */
 func (o *File) GetVar(allowObjects gdnative.Bool) gdnative.Variant {
-	//log.Println("Calling _File.GetVar()")
+	// log.Println("Calling _File.GetVar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -638,7 +638,7 @@ func (o *File) GetVar(allowObjects gdnative.Bool) gdnative.Variant {
 	Args: [], Returns: bool
 */
 func (o *File) IsOpen() gdnative.Bool {
-	//log.Println("Calling _File.IsOpen()")
+	// log.Println("Calling _File.IsOpen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -661,7 +661,7 @@ func (o *File) IsOpen() gdnative.Bool {
 	Args: [{ false path String} { false flags int}], Returns: enum.Error
 */
 func (o *File) Open(path gdnative.String, flags gdnative.Int) gdnative.Error {
-	//log.Println("Calling _File.Open()")
+	// log.Println("Calling _File.Open()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -686,7 +686,7 @@ func (o *File) Open(path gdnative.String, flags gdnative.Int) gdnative.Error {
 	Args: [{ false path String} { false mode_flags int} {0 true compression_mode int}], Returns: enum.Error
 */
 func (o *File) OpenCompressed(path gdnative.String, modeFlags gdnative.Int, compressionMode gdnative.Int) gdnative.Error {
-	//log.Println("Calling _File.OpenCompressed()")
+	// log.Println("Calling _File.OpenCompressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -712,7 +712,7 @@ func (o *File) OpenCompressed(path gdnative.String, modeFlags gdnative.Int, comp
 	Args: [{ false path String} { false mode_flags int} { false key PoolByteArray}], Returns: enum.Error
 */
 func (o *File) OpenEncrypted(path gdnative.String, modeFlags gdnative.Int, key gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling _File.OpenEncrypted()")
+	// log.Println("Calling _File.OpenEncrypted()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -738,7 +738,7 @@ func (o *File) OpenEncrypted(path gdnative.String, modeFlags gdnative.Int, key g
 	Args: [{ false path String} { false mode_flags int} { false pass String}], Returns: enum.Error
 */
 func (o *File) OpenEncryptedWithPass(path gdnative.String, modeFlags gdnative.Int, pass gdnative.String) gdnative.Error {
-	//log.Println("Calling _File.OpenEncryptedWithPass()")
+	// log.Println("Calling _File.OpenEncryptedWithPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -764,7 +764,7 @@ func (o *File) OpenEncryptedWithPass(path gdnative.String, modeFlags gdnative.In
 	Args: [{ false position int}], Returns: void
 */
 func (o *File) Seek(position gdnative.Int) {
-	//log.Println("Calling _File.Seek()")
+	// log.Println("Calling _File.Seek()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -785,7 +785,7 @@ func (o *File) Seek(position gdnative.Int) {
 	Args: [{0 true position int}], Returns: void
 */
 func (o *File) SeekEnd(position gdnative.Int) {
-	//log.Println("Calling _File.SeekEnd()")
+	// log.Println("Calling _File.SeekEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -806,7 +806,7 @@ func (o *File) SeekEnd(position gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *File) SetEndianSwap(enable gdnative.Bool) {
-	//log.Println("Calling _File.SetEndianSwap()")
+	// log.Println("Calling _File.SetEndianSwap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -827,7 +827,7 @@ func (o *File) SetEndianSwap(enable gdnative.Bool) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *File) Store16(value gdnative.Int) {
-	//log.Println("Calling _File.Store16()")
+	// log.Println("Calling _File.Store16()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -848,7 +848,7 @@ func (o *File) Store16(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *File) Store32(value gdnative.Int) {
-	//log.Println("Calling _File.Store32()")
+	// log.Println("Calling _File.Store32()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -869,7 +869,7 @@ func (o *File) Store32(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *File) Store64(value gdnative.Int) {
-	//log.Println("Calling _File.Store64()")
+	// log.Println("Calling _File.Store64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -890,7 +890,7 @@ func (o *File) Store64(value gdnative.Int) {
 	Args: [{ false value int}], Returns: void
 */
 func (o *File) Store8(value gdnative.Int) {
-	//log.Println("Calling _File.Store8()")
+	// log.Println("Calling _File.Store8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -911,7 +911,7 @@ func (o *File) Store8(value gdnative.Int) {
 	Args: [{ false buffer PoolByteArray}], Returns: void
 */
 func (o *File) StoreBuffer(buffer gdnative.PoolByteArray) {
-	//log.Println("Calling _File.StoreBuffer()")
+	// log.Println("Calling _File.StoreBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -932,7 +932,7 @@ func (o *File) StoreBuffer(buffer gdnative.PoolByteArray) {
 	Args: [{ false values PoolStringArray} {, true delim String}], Returns: void
 */
 func (o *File) StoreCsvLine(values gdnative.PoolStringArray, delim gdnative.String) {
-	//log.Println("Calling _File.StoreCsvLine()")
+	// log.Println("Calling _File.StoreCsvLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -954,7 +954,7 @@ func (o *File) StoreCsvLine(values gdnative.PoolStringArray, delim gdnative.Stri
 	Args: [{ false value float}], Returns: void
 */
 func (o *File) StoreDouble(value gdnative.Real) {
-	//log.Println("Calling _File.StoreDouble()")
+	// log.Println("Calling _File.StoreDouble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -975,7 +975,7 @@ func (o *File) StoreDouble(value gdnative.Real) {
 	Args: [{ false value float}], Returns: void
 */
 func (o *File) StoreFloat(value gdnative.Real) {
-	//log.Println("Calling _File.StoreFloat()")
+	// log.Println("Calling _File.StoreFloat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -996,7 +996,7 @@ func (o *File) StoreFloat(value gdnative.Real) {
 	Args: [{ false line String}], Returns: void
 */
 func (o *File) StoreLine(line gdnative.String) {
-	//log.Println("Calling _File.StoreLine()")
+	// log.Println("Calling _File.StoreLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1017,7 +1017,7 @@ func (o *File) StoreLine(line gdnative.String) {
 	Args: [{ false string String}], Returns: void
 */
 func (o *File) StorePascalString(string gdnative.String) {
-	//log.Println("Calling _File.StorePascalString()")
+	// log.Println("Calling _File.StorePascalString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1038,7 +1038,7 @@ func (o *File) StorePascalString(string gdnative.String) {
 	Args: [{ false value float}], Returns: void
 */
 func (o *File) StoreReal(value gdnative.Real) {
-	//log.Println("Calling _File.StoreReal()")
+	// log.Println("Calling _File.StoreReal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1059,7 +1059,7 @@ func (o *File) StoreReal(value gdnative.Real) {
 	Args: [{ false string String}], Returns: void
 */
 func (o *File) StoreString(string gdnative.String) {
-	//log.Println("Calling _File.StoreString()")
+	// log.Println("Calling _File.StoreString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1080,7 +1080,7 @@ func (o *File) StoreString(string gdnative.String) {
 	Args: [{ false value Variant} {False true full_objects bool}], Returns: void
 */
 func (o *File) StoreVar(value gdnative.Variant, fullObjects gdnative.Bool) {
-	//log.Println("Calling _File.StoreVar()")
+	// log.Println("Calling _File.StoreVar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

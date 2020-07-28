@@ -39,7 +39,7 @@ func (o *BitMap) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *BitMap) X_GetData() gdnative.Dictionary {
-	//log.Println("Calling BitMap.X_GetData()")
+	// log.Println("Calling BitMap.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *BitMap) X_GetData() gdnative.Dictionary {
 	Args: [{ false arg0 Dictionary}], Returns: void
 */
 func (o *BitMap) X_SetData(arg0 gdnative.Dictionary) {
-	//log.Println("Calling BitMap.X_SetData()")
+	// log.Println("Calling BitMap.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *BitMap) X_SetData(arg0 gdnative.Dictionary) {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *BitMap) Create(size gdnative.Vector2) {
-	//log.Println("Calling BitMap.Create()")
+	// log.Println("Calling BitMap.Create()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *BitMap) Create(size gdnative.Vector2) {
 	Args: [{ false image Image} {0.1 true threshold float}], Returns: void
 */
 func (o *BitMap) CreateFromImageAlpha(image ImageImplementer, threshold gdnative.Real) {
-	//log.Println("Calling BitMap.CreateFromImageAlpha()")
+	// log.Println("Calling BitMap.CreateFromImageAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -126,7 +126,7 @@ func (o *BitMap) CreateFromImageAlpha(image ImageImplementer, threshold gdnative
 	Args: [{ false position Vector2}], Returns: bool
 */
 func (o *BitMap) GetBit(position gdnative.Vector2) gdnative.Bool {
-	//log.Println("Calling BitMap.GetBit()")
+	// log.Println("Calling BitMap.GetBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *BitMap) GetBit(position gdnative.Vector2) gdnative.Bool {
 	Args: [], Returns: Vector2
 */
 func (o *BitMap) GetSize() gdnative.Vector2 {
-	//log.Println("Calling BitMap.GetSize()")
+	// log.Println("Calling BitMap.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -173,7 +173,7 @@ func (o *BitMap) GetSize() gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *BitMap) GetTrueBitCount() gdnative.Int {
-	//log.Println("Calling BitMap.GetTrueBitCount()")
+	// log.Println("Calling BitMap.GetTrueBitCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *BitMap) GetTrueBitCount() gdnative.Int {
 	Args: [{ false pixels int} { false rect Rect2}], Returns: void
 */
 func (o *BitMap) GrowMask(pixels gdnative.Int, rect gdnative.Rect2) {
-	//log.Println("Calling BitMap.GrowMask()")
+	// log.Println("Calling BitMap.GrowMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -218,7 +218,7 @@ func (o *BitMap) GrowMask(pixels gdnative.Int, rect gdnative.Rect2) {
 	Args: [{ false rect Rect2} {2 true epsilon float}], Returns: Array
 */
 func (o *BitMap) OpaqueToPolygons(rect gdnative.Rect2, epsilon gdnative.Real) gdnative.Array {
-	//log.Println("Calling BitMap.OpaqueToPolygons()")
+	// log.Println("Calling BitMap.OpaqueToPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -243,7 +243,7 @@ func (o *BitMap) OpaqueToPolygons(rect gdnative.Rect2, epsilon gdnative.Real) gd
 	Args: [{ false position Vector2} { false bit bool}], Returns: void
 */
 func (o *BitMap) SetBit(position gdnative.Vector2, bit gdnative.Bool) {
-	//log.Println("Calling BitMap.SetBit()")
+	// log.Println("Calling BitMap.SetBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -265,7 +265,7 @@ func (o *BitMap) SetBit(position gdnative.Vector2, bit gdnative.Bool) {
 	Args: [{ false rect Rect2} { false bit bool}], Returns: void
 */
 func (o *BitMap) SetBitRect(rect gdnative.Rect2, bit gdnative.Bool) {
-	//log.Println("Calling BitMap.SetBitRect()")
+	// log.Println("Calling BitMap.SetBitRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

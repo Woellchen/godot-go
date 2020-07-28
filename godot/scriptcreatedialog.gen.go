@@ -39,7 +39,7 @@ func (o *ScriptCreateDialog) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *ScriptCreateDialog) X_BrowseClassInTree() {
-	//log.Println("Calling ScriptCreateDialog.X_BrowseClassInTree()")
+	// log.Println("Calling ScriptCreateDialog.X_BrowseClassInTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *ScriptCreateDialog) X_BrowseClassInTree() {
 	Args: [{ false arg0 bool} { false arg1 bool}], Returns: void
 */
 func (o *ScriptCreateDialog) X_BrowsePath(arg0 gdnative.Bool, arg1 gdnative.Bool) {
-	//log.Println("Calling ScriptCreateDialog.X_BrowsePath()")
+	// log.Println("Calling ScriptCreateDialog.X_BrowsePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -81,7 +81,7 @@ func (o *ScriptCreateDialog) X_BrowsePath(arg0 gdnative.Bool, arg1 gdnative.Bool
 	Args: [], Returns: void
 */
 func (o *ScriptCreateDialog) X_BuiltInPressed() {
-	//log.Println("Calling ScriptCreateDialog.X_BuiltInPressed()")
+	// log.Println("Calling ScriptCreateDialog.X_BuiltInPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -101,7 +101,7 @@ func (o *ScriptCreateDialog) X_BuiltInPressed() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptCreateDialog) X_ClassNameChanged(arg0 gdnative.String) {
-	//log.Println("Calling ScriptCreateDialog.X_ClassNameChanged()")
+	// log.Println("Calling ScriptCreateDialog.X_ClassNameChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -122,7 +122,7 @@ func (o *ScriptCreateDialog) X_ClassNameChanged(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *ScriptCreateDialog) X_Create() {
-	//log.Println("Calling ScriptCreateDialog.X_Create()")
+	// log.Println("Calling ScriptCreateDialog.X_Create()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *ScriptCreateDialog) X_Create() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptCreateDialog) X_FileSelected(arg0 gdnative.String) {
-	//log.Println("Calling ScriptCreateDialog.X_FileSelected()")
+	// log.Println("Calling ScriptCreateDialog.X_FileSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -163,7 +163,7 @@ func (o *ScriptCreateDialog) X_FileSelected(arg0 gdnative.String) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptCreateDialog) X_LangChanged(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptCreateDialog.X_LangChanged()")
+	// log.Println("Calling ScriptCreateDialog.X_LangChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -184,7 +184,7 @@ func (o *ScriptCreateDialog) X_LangChanged(arg0 gdnative.Int) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptCreateDialog) X_ParentNameChanged(arg0 gdnative.String) {
-	//log.Println("Calling ScriptCreateDialog.X_ParentNameChanged()")
+	// log.Println("Calling ScriptCreateDialog.X_ParentNameChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -205,7 +205,7 @@ func (o *ScriptCreateDialog) X_ParentNameChanged(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptCreateDialog) X_PathChanged(arg0 gdnative.String) {
-	//log.Println("Calling ScriptCreateDialog.X_PathChanged()")
+	// log.Println("Calling ScriptCreateDialog.X_PathChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -226,7 +226,7 @@ func (o *ScriptCreateDialog) X_PathChanged(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *ScriptCreateDialog) X_PathEntered(arg0 gdnative.String) {
-	//log.Println("Calling ScriptCreateDialog.X_PathEntered()")
+	// log.Println("Calling ScriptCreateDialog.X_PathEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -247,7 +247,7 @@ func (o *ScriptCreateDialog) X_PathEntered(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *ScriptCreateDialog) X_PathHboxSorted() {
-	//log.Println("Calling ScriptCreateDialog.X_PathHboxSorted()")
+	// log.Println("Calling ScriptCreateDialog.X_PathHboxSorted()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -267,7 +267,7 @@ func (o *ScriptCreateDialog) X_PathHboxSorted() {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *ScriptCreateDialog) X_TemplateChanged(arg0 gdnative.Int) {
-	//log.Println("Calling ScriptCreateDialog.X_TemplateChanged()")
+	// log.Println("Calling ScriptCreateDialog.X_TemplateChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -288,7 +288,7 @@ func (o *ScriptCreateDialog) X_TemplateChanged(arg0 gdnative.Int) {
 	Args: [{ false inherits String} { false path String} {True true built_in_enabled bool} {True true load_enabled bool}], Returns: void
 */
 func (o *ScriptCreateDialog) Config(inherits gdnative.String, path gdnative.String, builtInEnabled gdnative.Bool, loadEnabled gdnative.Bool) {
-	//log.Println("Calling ScriptCreateDialog.Config()")
+	// log.Println("Calling ScriptCreateDialog.Config()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)

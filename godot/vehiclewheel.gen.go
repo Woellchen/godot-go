@@ -39,7 +39,7 @@ func (o *VehicleWheel) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetBrake() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetBrake()")
+	// log.Println("Calling VehicleWheel.GetBrake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VehicleWheel) GetBrake() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetDampingCompression() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetDampingCompression()")
+	// log.Println("Calling VehicleWheel.GetDampingCompression()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VehicleWheel) GetDampingCompression() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetDampingRelaxation() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetDampingRelaxation()")
+	// log.Println("Calling VehicleWheel.GetDampingRelaxation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *VehicleWheel) GetDampingRelaxation() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetEngineForce() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetEngineForce()")
+	// log.Println("Calling VehicleWheel.GetEngineForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *VehicleWheel) GetEngineForce() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetFrictionSlip() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetFrictionSlip()")
+	// log.Println("Calling VehicleWheel.GetFrictionSlip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *VehicleWheel) GetFrictionSlip() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetRadius() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetRadius()")
+	// log.Println("Calling VehicleWheel.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *VehicleWheel) GetRadius() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetRollInfluence() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetRollInfluence()")
+	// log.Println("Calling VehicleWheel.GetRollInfluence()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *VehicleWheel) GetRollInfluence() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetRpm() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetRpm()")
+	// log.Println("Calling VehicleWheel.GetRpm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *VehicleWheel) GetRpm() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetSkidinfo() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetSkidinfo()")
+	// log.Println("Calling VehicleWheel.GetSkidinfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -246,7 +246,7 @@ func (o *VehicleWheel) GetSkidinfo() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetSteering() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetSteering()")
+	// log.Println("Calling VehicleWheel.GetSteering()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -269,7 +269,7 @@ func (o *VehicleWheel) GetSteering() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetSuspensionMaxForce() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetSuspensionMaxForce()")
+	// log.Println("Calling VehicleWheel.GetSuspensionMaxForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -292,7 +292,7 @@ func (o *VehicleWheel) GetSuspensionMaxForce() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetSuspensionRestLength() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetSuspensionRestLength()")
+	// log.Println("Calling VehicleWheel.GetSuspensionRestLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -315,7 +315,7 @@ func (o *VehicleWheel) GetSuspensionRestLength() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetSuspensionStiffness() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetSuspensionStiffness()")
+	// log.Println("Calling VehicleWheel.GetSuspensionStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -338,7 +338,7 @@ func (o *VehicleWheel) GetSuspensionStiffness() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *VehicleWheel) GetSuspensionTravel() gdnative.Real {
-	//log.Println("Calling VehicleWheel.GetSuspensionTravel()")
+	// log.Println("Calling VehicleWheel.GetSuspensionTravel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -361,7 +361,7 @@ func (o *VehicleWheel) GetSuspensionTravel() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *VehicleWheel) IsInContact() gdnative.Bool {
-	//log.Println("Calling VehicleWheel.IsInContact()")
+	// log.Println("Calling VehicleWheel.IsInContact()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -384,7 +384,7 @@ func (o *VehicleWheel) IsInContact() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *VehicleWheel) IsUsedAsSteering() gdnative.Bool {
-	//log.Println("Calling VehicleWheel.IsUsedAsSteering()")
+	// log.Println("Calling VehicleWheel.IsUsedAsSteering()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -407,7 +407,7 @@ func (o *VehicleWheel) IsUsedAsSteering() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *VehicleWheel) IsUsedAsTraction() gdnative.Bool {
-	//log.Println("Calling VehicleWheel.IsUsedAsTraction()")
+	// log.Println("Calling VehicleWheel.IsUsedAsTraction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -430,7 +430,7 @@ func (o *VehicleWheel) IsUsedAsTraction() gdnative.Bool {
 	Args: [{ false brake float}], Returns: void
 */
 func (o *VehicleWheel) SetBrake(brake gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetBrake()")
+	// log.Println("Calling VehicleWheel.SetBrake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -451,7 +451,7 @@ func (o *VehicleWheel) SetBrake(brake gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetDampingCompression(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetDampingCompression()")
+	// log.Println("Calling VehicleWheel.SetDampingCompression()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -472,7 +472,7 @@ func (o *VehicleWheel) SetDampingCompression(length gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetDampingRelaxation(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetDampingRelaxation()")
+	// log.Println("Calling VehicleWheel.SetDampingRelaxation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -493,7 +493,7 @@ func (o *VehicleWheel) SetDampingRelaxation(length gdnative.Real) {
 	Args: [{ false engine_force float}], Returns: void
 */
 func (o *VehicleWheel) SetEngineForce(engineForce gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetEngineForce()")
+	// log.Println("Calling VehicleWheel.SetEngineForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -514,7 +514,7 @@ func (o *VehicleWheel) SetEngineForce(engineForce gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetFrictionSlip(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetFrictionSlip()")
+	// log.Println("Calling VehicleWheel.SetFrictionSlip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -535,7 +535,7 @@ func (o *VehicleWheel) SetFrictionSlip(length gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetRadius(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetRadius()")
+	// log.Println("Calling VehicleWheel.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -556,7 +556,7 @@ func (o *VehicleWheel) SetRadius(length gdnative.Real) {
 	Args: [{ false roll_influence float}], Returns: void
 */
 func (o *VehicleWheel) SetRollInfluence(rollInfluence gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetRollInfluence()")
+	// log.Println("Calling VehicleWheel.SetRollInfluence()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -577,7 +577,7 @@ func (o *VehicleWheel) SetRollInfluence(rollInfluence gdnative.Real) {
 	Args: [{ false steering float}], Returns: void
 */
 func (o *VehicleWheel) SetSteering(steering gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetSteering()")
+	// log.Println("Calling VehicleWheel.SetSteering()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -598,7 +598,7 @@ func (o *VehicleWheel) SetSteering(steering gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetSuspensionMaxForce(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetSuspensionMaxForce()")
+	// log.Println("Calling VehicleWheel.SetSuspensionMaxForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -619,7 +619,7 @@ func (o *VehicleWheel) SetSuspensionMaxForce(length gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetSuspensionRestLength(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetSuspensionRestLength()")
+	// log.Println("Calling VehicleWheel.SetSuspensionRestLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -640,7 +640,7 @@ func (o *VehicleWheel) SetSuspensionRestLength(length gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetSuspensionStiffness(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetSuspensionStiffness()")
+	// log.Println("Calling VehicleWheel.SetSuspensionStiffness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -661,7 +661,7 @@ func (o *VehicleWheel) SetSuspensionStiffness(length gdnative.Real) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *VehicleWheel) SetSuspensionTravel(length gdnative.Real) {
-	//log.Println("Calling VehicleWheel.SetSuspensionTravel()")
+	// log.Println("Calling VehicleWheel.SetSuspensionTravel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -682,7 +682,7 @@ func (o *VehicleWheel) SetSuspensionTravel(length gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *VehicleWheel) SetUseAsSteering(enable gdnative.Bool) {
-	//log.Println("Calling VehicleWheel.SetUseAsSteering()")
+	// log.Println("Calling VehicleWheel.SetUseAsSteering()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -703,7 +703,7 @@ func (o *VehicleWheel) SetUseAsSteering(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *VehicleWheel) SetUseAsTraction(enable gdnative.Bool) {
-	//log.Println("Calling VehicleWheel.SetUseAsTraction()")
+	// log.Println("Calling VehicleWheel.SetUseAsTraction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

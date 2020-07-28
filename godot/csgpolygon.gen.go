@@ -57,7 +57,7 @@ func (o *CSGPolygon) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *CSGPolygon) X_HasEditable3DPolygonNoDepth() gdnative.Bool {
-	//log.Println("Calling CSGPolygon.X_HasEditable3DPolygonNoDepth()")
+	// log.Println("Calling CSGPolygon.X_HasEditable3DPolygonNoDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *CSGPolygon) X_HasEditable3DPolygonNoDepth() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CSGPolygon) X_IsEditable3DPolygon() gdnative.Bool {
-	//log.Println("Calling CSGPolygon.X_IsEditable3DPolygon()")
+	// log.Println("Calling CSGPolygon.X_IsEditable3DPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *CSGPolygon) X_IsEditable3DPolygon() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *CSGPolygon) X_PathChanged() {
-	//log.Println("Calling CSGPolygon.X_PathChanged()")
+	// log.Println("Calling CSGPolygon.X_PathChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -123,7 +123,7 @@ func (o *CSGPolygon) X_PathChanged() {
 	Args: [], Returns: void
 */
 func (o *CSGPolygon) X_PathExited() {
-	//log.Println("Calling CSGPolygon.X_PathExited()")
+	// log.Println("Calling CSGPolygon.X_PathExited()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -143,7 +143,7 @@ func (o *CSGPolygon) X_PathExited() {
 	Args: [], Returns: float
 */
 func (o *CSGPolygon) GetDepth() gdnative.Real {
-	//log.Println("Calling CSGPolygon.GetDepth()")
+	// log.Println("Calling CSGPolygon.GetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -166,7 +166,7 @@ func (o *CSGPolygon) GetDepth() gdnative.Real {
 	Args: [], Returns: Material
 */
 func (o *CSGPolygon) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CSGPolygon.GetMaterial()")
+	// log.Println("Calling CSGPolygon.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -203,7 +203,7 @@ func (o *CSGPolygon) GetMaterial() MaterialImplementer {
 	Args: [], Returns: enum.CSGPolygon::Mode
 */
 func (o *CSGPolygon) GetMode() CSGPolygonMode {
-	//log.Println("Calling CSGPolygon.GetMode()")
+	// log.Println("Calling CSGPolygon.GetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -226,7 +226,7 @@ func (o *CSGPolygon) GetMode() CSGPolygonMode {
 	Args: [], Returns: float
 */
 func (o *CSGPolygon) GetPathInterval() gdnative.Real {
-	//log.Println("Calling CSGPolygon.GetPathInterval()")
+	// log.Println("Calling CSGPolygon.GetPathInterval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -249,7 +249,7 @@ func (o *CSGPolygon) GetPathInterval() gdnative.Real {
 	Args: [], Returns: NodePath
 */
 func (o *CSGPolygon) GetPathNode() gdnative.NodePath {
-	//log.Println("Calling CSGPolygon.GetPathNode()")
+	// log.Println("Calling CSGPolygon.GetPathNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -272,7 +272,7 @@ func (o *CSGPolygon) GetPathNode() gdnative.NodePath {
 	Args: [], Returns: enum.CSGPolygon::PathRotation
 */
 func (o *CSGPolygon) GetPathRotation() CSGPolygonPathRotation {
-	//log.Println("Calling CSGPolygon.GetPathRotation()")
+	// log.Println("Calling CSGPolygon.GetPathRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -295,7 +295,7 @@ func (o *CSGPolygon) GetPathRotation() CSGPolygonPathRotation {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *CSGPolygon) GetPolygon() gdnative.PoolVector2Array {
-	//log.Println("Calling CSGPolygon.GetPolygon()")
+	// log.Println("Calling CSGPolygon.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -318,7 +318,7 @@ func (o *CSGPolygon) GetPolygon() gdnative.PoolVector2Array {
 	Args: [], Returns: bool
 */
 func (o *CSGPolygon) GetSmoothFaces() gdnative.Bool {
-	//log.Println("Calling CSGPolygon.GetSmoothFaces()")
+	// log.Println("Calling CSGPolygon.GetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -341,7 +341,7 @@ func (o *CSGPolygon) GetSmoothFaces() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *CSGPolygon) GetSpinDegrees() gdnative.Real {
-	//log.Println("Calling CSGPolygon.GetSpinDegrees()")
+	// log.Println("Calling CSGPolygon.GetSpinDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -364,7 +364,7 @@ func (o *CSGPolygon) GetSpinDegrees() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CSGPolygon) GetSpinSides() gdnative.Int {
-	//log.Println("Calling CSGPolygon.GetSpinSides()")
+	// log.Println("Calling CSGPolygon.GetSpinSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -387,7 +387,7 @@ func (o *CSGPolygon) GetSpinSides() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CSGPolygon) IsPathContinuousU() gdnative.Bool {
-	//log.Println("Calling CSGPolygon.IsPathContinuousU()")
+	// log.Println("Calling CSGPolygon.IsPathContinuousU()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -410,7 +410,7 @@ func (o *CSGPolygon) IsPathContinuousU() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CSGPolygon) IsPathJoined() gdnative.Bool {
-	//log.Println("Calling CSGPolygon.IsPathJoined()")
+	// log.Println("Calling CSGPolygon.IsPathJoined()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -433,7 +433,7 @@ func (o *CSGPolygon) IsPathJoined() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CSGPolygon) IsPathLocal() gdnative.Bool {
-	//log.Println("Calling CSGPolygon.IsPathLocal()")
+	// log.Println("Calling CSGPolygon.IsPathLocal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -456,7 +456,7 @@ func (o *CSGPolygon) IsPathLocal() gdnative.Bool {
 	Args: [{ false depth float}], Returns: void
 */
 func (o *CSGPolygon) SetDepth(depth gdnative.Real) {
-	//log.Println("Calling CSGPolygon.SetDepth()")
+	// log.Println("Calling CSGPolygon.SetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -477,7 +477,7 @@ func (o *CSGPolygon) SetDepth(depth gdnative.Real) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CSGPolygon) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CSGPolygon.SetMaterial()")
+	// log.Println("Calling CSGPolygon.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -498,7 +498,7 @@ func (o *CSGPolygon) SetMaterial(material MaterialImplementer) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *CSGPolygon) SetMode(mode gdnative.Int) {
-	//log.Println("Calling CSGPolygon.SetMode()")
+	// log.Println("Calling CSGPolygon.SetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -519,7 +519,7 @@ func (o *CSGPolygon) SetMode(mode gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CSGPolygon) SetPathContinuousU(enable gdnative.Bool) {
-	//log.Println("Calling CSGPolygon.SetPathContinuousU()")
+	// log.Println("Calling CSGPolygon.SetPathContinuousU()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -540,7 +540,7 @@ func (o *CSGPolygon) SetPathContinuousU(enable gdnative.Bool) {
 	Args: [{ false distance float}], Returns: void
 */
 func (o *CSGPolygon) SetPathInterval(distance gdnative.Real) {
-	//log.Println("Calling CSGPolygon.SetPathInterval()")
+	// log.Println("Calling CSGPolygon.SetPathInterval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -561,7 +561,7 @@ func (o *CSGPolygon) SetPathInterval(distance gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CSGPolygon) SetPathJoined(enable gdnative.Bool) {
-	//log.Println("Calling CSGPolygon.SetPathJoined()")
+	// log.Println("Calling CSGPolygon.SetPathJoined()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -582,7 +582,7 @@ func (o *CSGPolygon) SetPathJoined(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CSGPolygon) SetPathLocal(enable gdnative.Bool) {
-	//log.Println("Calling CSGPolygon.SetPathLocal()")
+	// log.Println("Calling CSGPolygon.SetPathLocal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -603,7 +603,7 @@ func (o *CSGPolygon) SetPathLocal(enable gdnative.Bool) {
 	Args: [{ false path NodePath}], Returns: void
 */
 func (o *CSGPolygon) SetPathNode(path gdnative.NodePath) {
-	//log.Println("Calling CSGPolygon.SetPathNode()")
+	// log.Println("Calling CSGPolygon.SetPathNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -624,7 +624,7 @@ func (o *CSGPolygon) SetPathNode(path gdnative.NodePath) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *CSGPolygon) SetPathRotation(mode gdnative.Int) {
-	//log.Println("Calling CSGPolygon.SetPathRotation()")
+	// log.Println("Calling CSGPolygon.SetPathRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -645,7 +645,7 @@ func (o *CSGPolygon) SetPathRotation(mode gdnative.Int) {
 	Args: [{ false polygon PoolVector2Array}], Returns: void
 */
 func (o *CSGPolygon) SetPolygon(polygon gdnative.PoolVector2Array) {
-	//log.Println("Calling CSGPolygon.SetPolygon()")
+	// log.Println("Calling CSGPolygon.SetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -666,7 +666,7 @@ func (o *CSGPolygon) SetPolygon(polygon gdnative.PoolVector2Array) {
 	Args: [{ false smooth_faces bool}], Returns: void
 */
 func (o *CSGPolygon) SetSmoothFaces(smoothFaces gdnative.Bool) {
-	//log.Println("Calling CSGPolygon.SetSmoothFaces()")
+	// log.Println("Calling CSGPolygon.SetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -687,7 +687,7 @@ func (o *CSGPolygon) SetSmoothFaces(smoothFaces gdnative.Bool) {
 	Args: [{ false degrees float}], Returns: void
 */
 func (o *CSGPolygon) SetSpinDegrees(degrees gdnative.Real) {
-	//log.Println("Calling CSGPolygon.SetSpinDegrees()")
+	// log.Println("Calling CSGPolygon.SetSpinDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -708,7 +708,7 @@ func (o *CSGPolygon) SetSpinDegrees(degrees gdnative.Real) {
 	Args: [{ false spin_sides int}], Returns: void
 */
 func (o *CSGPolygon) SetSpinSides(spinSides gdnative.Int) {
-	//log.Println("Calling CSGPolygon.SetSpinSides()")
+	// log.Println("Calling CSGPolygon.SetSpinSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

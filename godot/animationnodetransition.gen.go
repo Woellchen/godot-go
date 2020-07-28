@@ -39,7 +39,7 @@ func (o *AnimationNodeTransition) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AnimationNodeTransition) GetCrossFadeTime() gdnative.Real {
-	//log.Println("Calling AnimationNodeTransition.GetCrossFadeTime()")
+	// log.Println("Calling AnimationNodeTransition.GetCrossFadeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AnimationNodeTransition) GetCrossFadeTime() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *AnimationNodeTransition) GetEnabledInputs() gdnative.Int {
-	//log.Println("Calling AnimationNodeTransition.GetEnabledInputs()")
+	// log.Println("Calling AnimationNodeTransition.GetEnabledInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AnimationNodeTransition) GetEnabledInputs() gdnative.Int {
 	Args: [{ false input int}], Returns: String
 */
 func (o *AnimationNodeTransition) GetInputCaption(input gdnative.Int) gdnative.String {
-	//log.Println("Calling AnimationNodeTransition.GetInputCaption()")
+	// log.Println("Calling AnimationNodeTransition.GetInputCaption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -109,7 +109,7 @@ func (o *AnimationNodeTransition) GetInputCaption(input gdnative.Int) gdnative.S
 	Args: [{ false input int}], Returns: bool
 */
 func (o *AnimationNodeTransition) IsInputSetAsAutoAdvance(input gdnative.Int) gdnative.Bool {
-	//log.Println("Calling AnimationNodeTransition.IsInputSetAsAutoAdvance()")
+	// log.Println("Calling AnimationNodeTransition.IsInputSetAsAutoAdvance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -133,7 +133,7 @@ func (o *AnimationNodeTransition) IsInputSetAsAutoAdvance(input gdnative.Int) gd
 	Args: [{ false time float}], Returns: void
 */
 func (o *AnimationNodeTransition) SetCrossFadeTime(time gdnative.Real) {
-	//log.Println("Calling AnimationNodeTransition.SetCrossFadeTime()")
+	// log.Println("Calling AnimationNodeTransition.SetCrossFadeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -154,7 +154,7 @@ func (o *AnimationNodeTransition) SetCrossFadeTime(time gdnative.Real) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *AnimationNodeTransition) SetEnabledInputs(amount gdnative.Int) {
-	//log.Println("Calling AnimationNodeTransition.SetEnabledInputs()")
+	// log.Println("Calling AnimationNodeTransition.SetEnabledInputs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *AnimationNodeTransition) SetEnabledInputs(amount gdnative.Int) {
 	Args: [{ false input int} { false enable bool}], Returns: void
 */
 func (o *AnimationNodeTransition) SetInputAsAutoAdvance(input gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling AnimationNodeTransition.SetInputAsAutoAdvance()")
+	// log.Println("Calling AnimationNodeTransition.SetInputAsAutoAdvance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -197,7 +197,7 @@ func (o *AnimationNodeTransition) SetInputAsAutoAdvance(input gdnative.Int, enab
 	Args: [{ false input int} { false caption String}], Returns: void
 */
 func (o *AnimationNodeTransition) SetInputCaption(input gdnative.Int, caption gdnative.String) {
-	//log.Println("Calling AnimationNodeTransition.SetInputCaption()")
+	// log.Println("Calling AnimationNodeTransition.SetInputCaption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

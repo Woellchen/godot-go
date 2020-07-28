@@ -39,7 +39,7 @@ func (o *Physics2DDirectSpaceState) BaseClass() string {
 	Args: [{ false shape Physics2DShapeQueryParameters}], Returns: Array
 */
 func (o *Physics2DDirectSpaceState) CastMotion(shape Physics2DShapeQueryParametersImplementer) gdnative.Array {
-	//log.Println("Calling Physics2DDirectSpaceState.CastMotion()")
+	// log.Println("Calling Physics2DDirectSpaceState.CastMotion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *Physics2DDirectSpaceState) CastMotion(shape Physics2DShapeQueryParamete
 	Args: [{ false shape Physics2DShapeQueryParameters} {32 true max_results int}], Returns: Array
 */
 func (o *Physics2DDirectSpaceState) CollideShape(shape Physics2DShapeQueryParametersImplementer, maxResults gdnative.Int) gdnative.Array {
-	//log.Println("Calling Physics2DDirectSpaceState.CollideShape()")
+	// log.Println("Calling Physics2DDirectSpaceState.CollideShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -88,7 +88,7 @@ func (o *Physics2DDirectSpaceState) CollideShape(shape Physics2DShapeQueryParame
 	Args: [{ false shape Physics2DShapeQueryParameters}], Returns: Dictionary
 */
 func (o *Physics2DDirectSpaceState) GetRestInfo(shape Physics2DShapeQueryParametersImplementer) gdnative.Dictionary {
-	//log.Println("Calling Physics2DDirectSpaceState.GetRestInfo()")
+	// log.Println("Calling Physics2DDirectSpaceState.GetRestInfo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -112,7 +112,7 @@ func (o *Physics2DDirectSpaceState) GetRestInfo(shape Physics2DShapeQueryParamet
 	Args: [{ false point Vector2} {32 true max_results int} {[] true exclude Array} {2147483647 true collision_layer int} {True true collide_with_bodies bool} {False true collide_with_areas bool}], Returns: Array
 */
 func (o *Physics2DDirectSpaceState) IntersectPoint(point gdnative.Vector2, maxResults gdnative.Int, exclude gdnative.Array, collisionLayer gdnative.Int, collideWithBodies gdnative.Bool, collideWithAreas gdnative.Bool) gdnative.Array {
-	//log.Println("Calling Physics2DDirectSpaceState.IntersectPoint()")
+	// log.Println("Calling Physics2DDirectSpaceState.IntersectPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -141,7 +141,7 @@ func (o *Physics2DDirectSpaceState) IntersectPoint(point gdnative.Vector2, maxRe
 	Args: [{ false point Vector2} { false canvas_instance_id int} {32 true max_results int} {[] true exclude Array} {2147483647 true collision_layer int} {True true collide_with_bodies bool} {False true collide_with_areas bool}], Returns: Array
 */
 func (o *Physics2DDirectSpaceState) IntersectPointOnCanvas(point gdnative.Vector2, canvasInstanceId gdnative.Int, maxResults gdnative.Int, exclude gdnative.Array, collisionLayer gdnative.Int, collideWithBodies gdnative.Bool, collideWithAreas gdnative.Bool) gdnative.Array {
-	//log.Println("Calling Physics2DDirectSpaceState.IntersectPointOnCanvas()")
+	// log.Println("Calling Physics2DDirectSpaceState.IntersectPointOnCanvas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 7, 7)
@@ -171,7 +171,7 @@ func (o *Physics2DDirectSpaceState) IntersectPointOnCanvas(point gdnative.Vector
 	Args: [{ false from Vector2} { false to Vector2} {[] true exclude Array} {2147483647 true collision_layer int} {True true collide_with_bodies bool} {False true collide_with_areas bool}], Returns: Dictionary
 */
 func (o *Physics2DDirectSpaceState) IntersectRay(from gdnative.Vector2, to gdnative.Vector2, exclude gdnative.Array, collisionLayer gdnative.Int, collideWithBodies gdnative.Bool, collideWithAreas gdnative.Bool) gdnative.Dictionary {
-	//log.Println("Calling Physics2DDirectSpaceState.IntersectRay()")
+	// log.Println("Calling Physics2DDirectSpaceState.IntersectRay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -200,7 +200,7 @@ func (o *Physics2DDirectSpaceState) IntersectRay(from gdnative.Vector2, to gdnat
 	Args: [{ false shape Physics2DShapeQueryParameters} {32 true max_results int}], Returns: Array
 */
 func (o *Physics2DDirectSpaceState) IntersectShape(shape Physics2DShapeQueryParametersImplementer, maxResults gdnative.Int) gdnative.Array {
-	//log.Println("Calling Physics2DDirectSpaceState.IntersectShape()")
+	// log.Println("Calling Physics2DDirectSpaceState.IntersectShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

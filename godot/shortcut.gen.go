@@ -39,7 +39,7 @@ func (o *ShortCut) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *ShortCut) GetAsText() gdnative.String {
-	//log.Println("Calling ShortCut.GetAsText()")
+	// log.Println("Calling ShortCut.GetAsText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ShortCut) GetAsText() gdnative.String {
 	Args: [], Returns: InputEvent
 */
 func (o *ShortCut) GetShortcut() InputEventImplementer {
-	//log.Println("Calling ShortCut.GetShortcut()")
+	// log.Println("Calling ShortCut.GetShortcut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *ShortCut) GetShortcut() InputEventImplementer {
 	Args: [{ false event InputEvent}], Returns: bool
 */
 func (o *ShortCut) IsShortcut(event InputEventImplementer) gdnative.Bool {
-	//log.Println("Calling ShortCut.IsShortcut()")
+	// log.Println("Calling ShortCut.IsShortcut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -123,7 +123,7 @@ func (o *ShortCut) IsShortcut(event InputEventImplementer) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ShortCut) IsValid() gdnative.Bool {
-	//log.Println("Calling ShortCut.IsValid()")
+	// log.Println("Calling ShortCut.IsValid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -146,7 +146,7 @@ func (o *ShortCut) IsValid() gdnative.Bool {
 	Args: [{ false event InputEvent}], Returns: void
 */
 func (o *ShortCut) SetShortcut(event InputEventImplementer) {
-	//log.Println("Calling ShortCut.SetShortcut()")
+	// log.Println("Calling ShortCut.SetShortcut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

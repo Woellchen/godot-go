@@ -39,7 +39,7 @@ func (o *MenuButton) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *MenuButton) X_GetItems() gdnative.Array {
-	//log.Println("Calling MenuButton.X_GetItems()")
+	// log.Println("Calling MenuButton.X_GetItems()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *MenuButton) X_GetItems() gdnative.Array {
 	Args: [{ false arg0 Array}], Returns: void
 */
 func (o *MenuButton) X_SetItems(arg0 gdnative.Array) {
-	//log.Println("Calling MenuButton.X_SetItems()")
+	// log.Println("Calling MenuButton.X_SetItems()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *MenuButton) X_SetItems(arg0 gdnative.Array) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *MenuButton) X_UnhandledKeyInput(arg0 InputEventImplementer) {
-	//log.Println("Calling MenuButton.X_UnhandledKeyInput()")
+	// log.Println("Calling MenuButton.X_UnhandledKeyInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *MenuButton) X_UnhandledKeyInput(arg0 InputEventImplementer) {
 	Args: [], Returns: PopupMenu
 */
 func (o *MenuButton) GetPopup() PopupMenuImplementer {
-	//log.Println("Calling MenuButton.GetPopup()")
+	// log.Println("Calling MenuButton.GetPopup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -141,7 +141,7 @@ func (o *MenuButton) GetPopup() PopupMenuImplementer {
 	Args: [], Returns: bool
 */
 func (o *MenuButton) IsSwitchOnHover() gdnative.Bool {
-	//log.Println("Calling MenuButton.IsSwitchOnHover()")
+	// log.Println("Calling MenuButton.IsSwitchOnHover()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -164,7 +164,7 @@ func (o *MenuButton) IsSwitchOnHover() gdnative.Bool {
 	Args: [{ false disabled bool}], Returns: void
 */
 func (o *MenuButton) SetDisableShortcuts(disabled gdnative.Bool) {
-	//log.Println("Calling MenuButton.SetDisableShortcuts()")
+	// log.Println("Calling MenuButton.SetDisableShortcuts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -185,7 +185,7 @@ func (o *MenuButton) SetDisableShortcuts(disabled gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *MenuButton) SetSwitchOnHover(enable gdnative.Bool) {
-	//log.Println("Calling MenuButton.SetSwitchOnHover()")
+	// log.Println("Calling MenuButton.SetSwitchOnHover()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

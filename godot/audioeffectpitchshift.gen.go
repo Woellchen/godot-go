@@ -51,7 +51,7 @@ func (o *AudioEffectPitchShift) BaseClass() string {
 	Args: [], Returns: enum.AudioEffectPitchShift::FFT_Size
 */
 func (o *AudioEffectPitchShift) GetFftSize() AudioEffectPitchShiftFFT_Size {
-	//log.Println("Calling AudioEffectPitchShift.GetFftSize()")
+	// log.Println("Calling AudioEffectPitchShift.GetFftSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -74,7 +74,7 @@ func (o *AudioEffectPitchShift) GetFftSize() AudioEffectPitchShiftFFT_Size {
 	Args: [], Returns: int
 */
 func (o *AudioEffectPitchShift) GetOversampling() gdnative.Int {
-	//log.Println("Calling AudioEffectPitchShift.GetOversampling()")
+	// log.Println("Calling AudioEffectPitchShift.GetOversampling()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -97,7 +97,7 @@ func (o *AudioEffectPitchShift) GetOversampling() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *AudioEffectPitchShift) GetPitchScale() gdnative.Real {
-	//log.Println("Calling AudioEffectPitchShift.GetPitchScale()")
+	// log.Println("Calling AudioEffectPitchShift.GetPitchScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -120,7 +120,7 @@ func (o *AudioEffectPitchShift) GetPitchScale() gdnative.Real {
 	Args: [{ false size int}], Returns: void
 */
 func (o *AudioEffectPitchShift) SetFftSize(size gdnative.Int) {
-	//log.Println("Calling AudioEffectPitchShift.SetFftSize()")
+	// log.Println("Calling AudioEffectPitchShift.SetFftSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -141,7 +141,7 @@ func (o *AudioEffectPitchShift) SetFftSize(size gdnative.Int) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *AudioEffectPitchShift) SetOversampling(amount gdnative.Int) {
-	//log.Println("Calling AudioEffectPitchShift.SetOversampling()")
+	// log.Println("Calling AudioEffectPitchShift.SetOversampling()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -162,7 +162,7 @@ func (o *AudioEffectPitchShift) SetOversampling(amount gdnative.Int) {
 	Args: [{ false rate float}], Returns: void
 */
 func (o *AudioEffectPitchShift) SetPitchScale(rate gdnative.Real) {
-	//log.Println("Calling AudioEffectPitchShift.SetPitchScale()")
+	// log.Println("Calling AudioEffectPitchShift.SetPitchScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

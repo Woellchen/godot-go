@@ -39,7 +39,7 @@ func (o *GIProbeData) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *GIProbeData) GetBias() gdnative.Real {
-	//log.Println("Calling GIProbeData.GetBias()")
+	// log.Println("Calling GIProbeData.GetBias()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *GIProbeData) GetBias() gdnative.Real {
 	Args: [], Returns: AABB
 */
 func (o *GIProbeData) GetBounds() gdnative.Aabb {
-	//log.Println("Calling GIProbeData.GetBounds()")
+	// log.Println("Calling GIProbeData.GetBounds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *GIProbeData) GetBounds() gdnative.Aabb {
 	Args: [], Returns: float
 */
 func (o *GIProbeData) GetCellSize() gdnative.Real {
-	//log.Println("Calling GIProbeData.GetCellSize()")
+	// log.Println("Calling GIProbeData.GetCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *GIProbeData) GetCellSize() gdnative.Real {
 	Args: [], Returns: PoolIntArray
 */
 func (o *GIProbeData) GetDynamicData() gdnative.PoolIntArray {
-	//log.Println("Calling GIProbeData.GetDynamicData()")
+	// log.Println("Calling GIProbeData.GetDynamicData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *GIProbeData) GetDynamicData() gdnative.PoolIntArray {
 	Args: [], Returns: int
 */
 func (o *GIProbeData) GetDynamicRange() gdnative.Int {
-	//log.Println("Calling GIProbeData.GetDynamicRange()")
+	// log.Println("Calling GIProbeData.GetDynamicRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *GIProbeData) GetDynamicRange() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *GIProbeData) GetEnergy() gdnative.Real {
-	//log.Println("Calling GIProbeData.GetEnergy()")
+	// log.Println("Calling GIProbeData.GetEnergy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *GIProbeData) GetEnergy() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *GIProbeData) GetNormalBias() gdnative.Real {
-	//log.Println("Calling GIProbeData.GetNormalBias()")
+	// log.Println("Calling GIProbeData.GetNormalBias()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *GIProbeData) GetNormalBias() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *GIProbeData) GetPropagation() gdnative.Real {
-	//log.Println("Calling GIProbeData.GetPropagation()")
+	// log.Println("Calling GIProbeData.GetPropagation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *GIProbeData) GetPropagation() gdnative.Real {
 	Args: [], Returns: Transform
 */
 func (o *GIProbeData) GetToCellXform() gdnative.Transform {
-	//log.Println("Calling GIProbeData.GetToCellXform()")
+	// log.Println("Calling GIProbeData.GetToCellXform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -246,7 +246,7 @@ func (o *GIProbeData) GetToCellXform() gdnative.Transform {
 	Args: [], Returns: bool
 */
 func (o *GIProbeData) IsCompressed() gdnative.Bool {
-	//log.Println("Calling GIProbeData.IsCompressed()")
+	// log.Println("Calling GIProbeData.IsCompressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -269,7 +269,7 @@ func (o *GIProbeData) IsCompressed() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *GIProbeData) IsInterior() gdnative.Bool {
-	//log.Println("Calling GIProbeData.IsInterior()")
+	// log.Println("Calling GIProbeData.IsInterior()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -292,7 +292,7 @@ func (o *GIProbeData) IsInterior() gdnative.Bool {
 	Args: [{ false bias float}], Returns: void
 */
 func (o *GIProbeData) SetBias(bias gdnative.Real) {
-	//log.Println("Calling GIProbeData.SetBias()")
+	// log.Println("Calling GIProbeData.SetBias()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -313,7 +313,7 @@ func (o *GIProbeData) SetBias(bias gdnative.Real) {
 	Args: [{ false bounds AABB}], Returns: void
 */
 func (o *GIProbeData) SetBounds(bounds gdnative.Aabb) {
-	//log.Println("Calling GIProbeData.SetBounds()")
+	// log.Println("Calling GIProbeData.SetBounds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -334,7 +334,7 @@ func (o *GIProbeData) SetBounds(bounds gdnative.Aabb) {
 	Args: [{ false cell_size float}], Returns: void
 */
 func (o *GIProbeData) SetCellSize(cellSize gdnative.Real) {
-	//log.Println("Calling GIProbeData.SetCellSize()")
+	// log.Println("Calling GIProbeData.SetCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -355,7 +355,7 @@ func (o *GIProbeData) SetCellSize(cellSize gdnative.Real) {
 	Args: [{ false compress bool}], Returns: void
 */
 func (o *GIProbeData) SetCompress(compress gdnative.Bool) {
-	//log.Println("Calling GIProbeData.SetCompress()")
+	// log.Println("Calling GIProbeData.SetCompress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -376,7 +376,7 @@ func (o *GIProbeData) SetCompress(compress gdnative.Bool) {
 	Args: [{ false dynamic_data PoolIntArray}], Returns: void
 */
 func (o *GIProbeData) SetDynamicData(dynamicData gdnative.PoolIntArray) {
-	//log.Println("Calling GIProbeData.SetDynamicData()")
+	// log.Println("Calling GIProbeData.SetDynamicData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -397,7 +397,7 @@ func (o *GIProbeData) SetDynamicData(dynamicData gdnative.PoolIntArray) {
 	Args: [{ false dynamic_range int}], Returns: void
 */
 func (o *GIProbeData) SetDynamicRange(dynamicRange gdnative.Int) {
-	//log.Println("Calling GIProbeData.SetDynamicRange()")
+	// log.Println("Calling GIProbeData.SetDynamicRange()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -418,7 +418,7 @@ func (o *GIProbeData) SetDynamicRange(dynamicRange gdnative.Int) {
 	Args: [{ false energy float}], Returns: void
 */
 func (o *GIProbeData) SetEnergy(energy gdnative.Real) {
-	//log.Println("Calling GIProbeData.SetEnergy()")
+	// log.Println("Calling GIProbeData.SetEnergy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -439,7 +439,7 @@ func (o *GIProbeData) SetEnergy(energy gdnative.Real) {
 	Args: [{ false interior bool}], Returns: void
 */
 func (o *GIProbeData) SetInterior(interior gdnative.Bool) {
-	//log.Println("Calling GIProbeData.SetInterior()")
+	// log.Println("Calling GIProbeData.SetInterior()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -460,7 +460,7 @@ func (o *GIProbeData) SetInterior(interior gdnative.Bool) {
 	Args: [{ false bias float}], Returns: void
 */
 func (o *GIProbeData) SetNormalBias(bias gdnative.Real) {
-	//log.Println("Calling GIProbeData.SetNormalBias()")
+	// log.Println("Calling GIProbeData.SetNormalBias()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -481,7 +481,7 @@ func (o *GIProbeData) SetNormalBias(bias gdnative.Real) {
 	Args: [{ false propagation float}], Returns: void
 */
 func (o *GIProbeData) SetPropagation(propagation gdnative.Real) {
-	//log.Println("Calling GIProbeData.SetPropagation()")
+	// log.Println("Calling GIProbeData.SetPropagation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -502,7 +502,7 @@ func (o *GIProbeData) SetPropagation(propagation gdnative.Real) {
 	Args: [{ false to_cell_xform Transform}], Returns: void
 */
 func (o *GIProbeData) SetToCellXform(toCellXform gdnative.Transform) {
-	//log.Println("Calling GIProbeData.SetToCellXform()")
+	// log.Println("Calling GIProbeData.SetToCellXform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

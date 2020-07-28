@@ -39,7 +39,7 @@ func (o *MeshTexture) BaseClass() string {
 	Args: [], Returns: Texture
 */
 func (o *MeshTexture) GetBaseTexture() TextureImplementer {
-	//log.Println("Calling MeshTexture.GetBaseTexture()")
+	// log.Println("Calling MeshTexture.GetBaseTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *MeshTexture) GetBaseTexture() TextureImplementer {
 	Args: [], Returns: Vector2
 */
 func (o *MeshTexture) GetImageSize() gdnative.Vector2 {
-	//log.Println("Calling MeshTexture.GetImageSize()")
+	// log.Println("Calling MeshTexture.GetImageSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *MeshTexture) GetImageSize() gdnative.Vector2 {
 	Args: [], Returns: Mesh
 */
 func (o *MeshTexture) GetMesh() MeshImplementer {
-	//log.Println("Calling MeshTexture.GetMesh()")
+	// log.Println("Calling MeshTexture.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -136,7 +136,7 @@ func (o *MeshTexture) GetMesh() MeshImplementer {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *MeshTexture) SetBaseTexture(texture TextureImplementer) {
-	//log.Println("Calling MeshTexture.SetBaseTexture()")
+	// log.Println("Calling MeshTexture.SetBaseTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -157,7 +157,7 @@ func (o *MeshTexture) SetBaseTexture(texture TextureImplementer) {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *MeshTexture) SetImageSize(size gdnative.Vector2) {
-	//log.Println("Calling MeshTexture.SetImageSize()")
+	// log.Println("Calling MeshTexture.SetImageSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -178,7 +178,7 @@ func (o *MeshTexture) SetImageSize(size gdnative.Vector2) {
 	Args: [{ false mesh Mesh}], Returns: void
 */
 func (o *MeshTexture) SetMesh(mesh MeshImplementer) {
-	//log.Println("Calling MeshTexture.SetMesh()")
+	// log.Println("Calling MeshTexture.SetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

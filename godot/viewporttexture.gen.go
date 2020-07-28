@@ -39,7 +39,7 @@ func (o *ViewportTexture) BaseClass() string {
 	Args: [], Returns: NodePath
 */
 func (o *ViewportTexture) GetViewportPathInScene() gdnative.NodePath {
-	//log.Println("Calling ViewportTexture.GetViewportPathInScene()")
+	// log.Println("Calling ViewportTexture.GetViewportPathInScene()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ViewportTexture) GetViewportPathInScene() gdnative.NodePath {
 	Args: [{ false path NodePath}], Returns: void
 */
 func (o *ViewportTexture) SetViewportPathInScene(path gdnative.NodePath) {
-	//log.Println("Calling ViewportTexture.SetViewportPathInScene()")
+	// log.Println("Calling ViewportTexture.SetViewportPathInScene()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

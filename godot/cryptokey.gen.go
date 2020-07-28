@@ -39,7 +39,7 @@ func (o *CryptoKey) BaseClass() string {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *CryptoKey) Load(path gdnative.String) gdnative.Error {
-	//log.Println("Calling CryptoKey.Load()")
+	// log.Println("Calling CryptoKey.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *CryptoKey) Load(path gdnative.String) gdnative.Error {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *CryptoKey) Save(path gdnative.String) gdnative.Error {
-	//log.Println("Calling CryptoKey.Save()")
+	// log.Println("Calling CryptoKey.Save()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

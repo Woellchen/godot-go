@@ -39,7 +39,7 @@ func (o *PinJoint2D) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *PinJoint2D) GetSoftness() gdnative.Real {
-	//log.Println("Calling PinJoint2D.GetSoftness()")
+	// log.Println("Calling PinJoint2D.GetSoftness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PinJoint2D) GetSoftness() gdnative.Real {
 	Args: [{ false softness float}], Returns: void
 */
 func (o *PinJoint2D) SetSoftness(softness gdnative.Real) {
-	//log.Println("Calling PinJoint2D.SetSoftness()")
+	// log.Println("Calling PinJoint2D.SetSoftness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

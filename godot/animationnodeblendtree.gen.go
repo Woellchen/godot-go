@@ -39,7 +39,7 @@ func (o *AnimationNodeBlendTree) BaseClass() string {
 	Args: [{ false node String}], Returns: void
 */
 func (o *AnimationNodeBlendTree) X_NodeChanged(node gdnative.String) {
-	//log.Println("Calling AnimationNodeBlendTree.X_NodeChanged()")
+	// log.Println("Calling AnimationNodeBlendTree.X_NodeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *AnimationNodeBlendTree) X_NodeChanged(node gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *AnimationNodeBlendTree) X_TreeChanged() {
-	//log.Println("Calling AnimationNodeBlendTree.X_TreeChanged()")
+	// log.Println("Calling AnimationNodeBlendTree.X_TreeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *AnimationNodeBlendTree) X_TreeChanged() {
 	Args: [{ false name String} { false node AnimationNode} {(0, 0) true position Vector2}], Returns: void
 */
 func (o *AnimationNodeBlendTree) AddNode(name gdnative.String, node AnimationNodeImplementer, position gdnative.Vector2) {
-	//log.Println("Calling AnimationNodeBlendTree.AddNode()")
+	// log.Println("Calling AnimationNodeBlendTree.AddNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -103,7 +103,7 @@ func (o *AnimationNodeBlendTree) AddNode(name gdnative.String, node AnimationNod
 	Args: [{ false input_node String} { false input_index int} { false output_node String}], Returns: void
 */
 func (o *AnimationNodeBlendTree) ConnectNode(inputNode gdnative.String, inputIndex gdnative.Int, outputNode gdnative.String) {
-	//log.Println("Calling AnimationNodeBlendTree.ConnectNode()")
+	// log.Println("Calling AnimationNodeBlendTree.ConnectNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -126,7 +126,7 @@ func (o *AnimationNodeBlendTree) ConnectNode(inputNode gdnative.String, inputInd
 	Args: [{ false input_node String} { false input_index int}], Returns: void
 */
 func (o *AnimationNodeBlendTree) DisconnectNode(inputNode gdnative.String, inputIndex gdnative.Int) {
-	//log.Println("Calling AnimationNodeBlendTree.DisconnectNode()")
+	// log.Println("Calling AnimationNodeBlendTree.DisconnectNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -148,7 +148,7 @@ func (o *AnimationNodeBlendTree) DisconnectNode(inputNode gdnative.String, input
 	Args: [], Returns: Vector2
 */
 func (o *AnimationNodeBlendTree) GetGraphOffset() gdnative.Vector2 {
-	//log.Println("Calling AnimationNodeBlendTree.GetGraphOffset()")
+	// log.Println("Calling AnimationNodeBlendTree.GetGraphOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -171,7 +171,7 @@ func (o *AnimationNodeBlendTree) GetGraphOffset() gdnative.Vector2 {
 	Args: [{ false name String}], Returns: AnimationNode
 */
 func (o *AnimationNodeBlendTree) GetNode(name gdnative.String) AnimationNodeImplementer {
-	//log.Println("Calling AnimationNodeBlendTree.GetNode()")
+	// log.Println("Calling AnimationNodeBlendTree.GetNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -209,7 +209,7 @@ func (o *AnimationNodeBlendTree) GetNode(name gdnative.String) AnimationNodeImpl
 	Args: [{ false name String}], Returns: Vector2
 */
 func (o *AnimationNodeBlendTree) GetNodePosition(name gdnative.String) gdnative.Vector2 {
-	//log.Println("Calling AnimationNodeBlendTree.GetNodePosition()")
+	// log.Println("Calling AnimationNodeBlendTree.GetNodePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -233,7 +233,7 @@ func (o *AnimationNodeBlendTree) GetNodePosition(name gdnative.String) gdnative.
 	Args: [{ false name String}], Returns: bool
 */
 func (o *AnimationNodeBlendTree) HasNode(name gdnative.String) gdnative.Bool {
-	//log.Println("Calling AnimationNodeBlendTree.HasNode()")
+	// log.Println("Calling AnimationNodeBlendTree.HasNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -257,7 +257,7 @@ func (o *AnimationNodeBlendTree) HasNode(name gdnative.String) gdnative.Bool {
 	Args: [{ false name String}], Returns: void
 */
 func (o *AnimationNodeBlendTree) RemoveNode(name gdnative.String) {
-	//log.Println("Calling AnimationNodeBlendTree.RemoveNode()")
+	// log.Println("Calling AnimationNodeBlendTree.RemoveNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -278,7 +278,7 @@ func (o *AnimationNodeBlendTree) RemoveNode(name gdnative.String) {
 	Args: [{ false name String} { false new_name String}], Returns: void
 */
 func (o *AnimationNodeBlendTree) RenameNode(name gdnative.String, newName gdnative.String) {
-	//log.Println("Calling AnimationNodeBlendTree.RenameNode()")
+	// log.Println("Calling AnimationNodeBlendTree.RenameNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -300,7 +300,7 @@ func (o *AnimationNodeBlendTree) RenameNode(name gdnative.String, newName gdnati
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *AnimationNodeBlendTree) SetGraphOffset(offset gdnative.Vector2) {
-	//log.Println("Calling AnimationNodeBlendTree.SetGraphOffset()")
+	// log.Println("Calling AnimationNodeBlendTree.SetGraphOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -321,7 +321,7 @@ func (o *AnimationNodeBlendTree) SetGraphOffset(offset gdnative.Vector2) {
 	Args: [{ false name String} { false position Vector2}], Returns: void
 */
 func (o *AnimationNodeBlendTree) SetNodePosition(name gdnative.String, position gdnative.Vector2) {
-	//log.Println("Calling AnimationNodeBlendTree.SetNodePosition()")
+	// log.Println("Calling AnimationNodeBlendTree.SetNodePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

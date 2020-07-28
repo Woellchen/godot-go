@@ -39,7 +39,7 @@ func (o *WindowDialog) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *WindowDialog) X_Closed() {
-	//log.Println("Calling WindowDialog.X_Closed()")
+	// log.Println("Calling WindowDialog.X_Closed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *WindowDialog) X_Closed() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *WindowDialog) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling WindowDialog.X_GuiInput()")
+	// log.Println("Calling WindowDialog.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *WindowDialog) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: TextureButton
 */
 func (o *WindowDialog) GetCloseButton() TextureButtonImplementer {
-	//log.Println("Calling WindowDialog.GetCloseButton()")
+	// log.Println("Calling WindowDialog.GetCloseButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *WindowDialog) GetCloseButton() TextureButtonImplementer {
 	Args: [], Returns: bool
 */
 func (o *WindowDialog) GetResizable() gdnative.Bool {
-	//log.Println("Calling WindowDialog.GetResizable()")
+	// log.Println("Calling WindowDialog.GetResizable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *WindowDialog) GetResizable() gdnative.Bool {
 	Args: [], Returns: String
 */
 func (o *WindowDialog) GetTitle() gdnative.String {
-	//log.Println("Calling WindowDialog.GetTitle()")
+	// log.Println("Calling WindowDialog.GetTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *WindowDialog) GetTitle() gdnative.String {
 	Args: [{ false resizable bool}], Returns: void
 */
 func (o *WindowDialog) SetResizable(resizable gdnative.Bool) {
-	//log.Println("Calling WindowDialog.SetResizable()")
+	// log.Println("Calling WindowDialog.SetResizable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -184,7 +184,7 @@ func (o *WindowDialog) SetResizable(resizable gdnative.Bool) {
 	Args: [{ false title String}], Returns: void
 */
 func (o *WindowDialog) SetTitle(title gdnative.String) {
-	//log.Println("Calling WindowDialog.SetTitle()")
+	// log.Println("Calling WindowDialog.SetTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

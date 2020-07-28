@@ -39,7 +39,7 @@ func (o *ExternalTexture) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *ExternalTexture) GetExternalTextureId() gdnative.Int {
-	//log.Println("Calling ExternalTexture.GetExternalTextureId()")
+	// log.Println("Calling ExternalTexture.GetExternalTextureId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ExternalTexture) GetExternalTextureId() gdnative.Int {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *ExternalTexture) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling ExternalTexture.SetSize()")
+	// log.Println("Calling ExternalTexture.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

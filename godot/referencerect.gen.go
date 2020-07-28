@@ -39,7 +39,7 @@ func (o *ReferenceRect) BaseClass() string {
 	Args: [], Returns: Color
 */
 func (o *ReferenceRect) GetBorderColor() gdnative.Color {
-	//log.Println("Calling ReferenceRect.GetBorderColor()")
+	// log.Println("Calling ReferenceRect.GetBorderColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ReferenceRect) GetBorderColor() gdnative.Color {
 	Args: [], Returns: bool
 */
 func (o *ReferenceRect) GetEditorOnly() gdnative.Bool {
-	//log.Println("Calling ReferenceRect.GetEditorOnly()")
+	// log.Println("Calling ReferenceRect.GetEditorOnly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *ReferenceRect) GetEditorOnly() gdnative.Bool {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ReferenceRect) SetBorderColor(color gdnative.Color) {
-	//log.Println("Calling ReferenceRect.SetBorderColor()")
+	// log.Println("Calling ReferenceRect.SetBorderColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *ReferenceRect) SetBorderColor(color gdnative.Color) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *ReferenceRect) SetEditorOnly(enabled gdnative.Bool) {
-	//log.Println("Calling ReferenceRect.SetEditorOnly()")
+	// log.Println("Calling ReferenceRect.SetEditorOnly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

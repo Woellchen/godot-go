@@ -57,7 +57,7 @@ func (o *WebRTCDataChannel) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *WebRTCDataChannel) Close() {
-	//log.Println("Calling WebRTCDataChannel.Close()")
+	// log.Println("Calling WebRTCDataChannel.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -77,7 +77,7 @@ func (o *WebRTCDataChannel) Close() {
 	Args: [], Returns: int
 */
 func (o *WebRTCDataChannel) GetId() gdnative.Int {
-	//log.Println("Calling WebRTCDataChannel.GetId()")
+	// log.Println("Calling WebRTCDataChannel.GetId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -100,7 +100,7 @@ func (o *WebRTCDataChannel) GetId() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *WebRTCDataChannel) GetLabel() gdnative.String {
-	//log.Println("Calling WebRTCDataChannel.GetLabel()")
+	// log.Println("Calling WebRTCDataChannel.GetLabel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -123,7 +123,7 @@ func (o *WebRTCDataChannel) GetLabel() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *WebRTCDataChannel) GetMaxPacketLifeTime() gdnative.Int {
-	//log.Println("Calling WebRTCDataChannel.GetMaxPacketLifeTime()")
+	// log.Println("Calling WebRTCDataChannel.GetMaxPacketLifeTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -146,7 +146,7 @@ func (o *WebRTCDataChannel) GetMaxPacketLifeTime() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *WebRTCDataChannel) GetMaxRetransmits() gdnative.Int {
-	//log.Println("Calling WebRTCDataChannel.GetMaxRetransmits()")
+	// log.Println("Calling WebRTCDataChannel.GetMaxRetransmits()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -169,7 +169,7 @@ func (o *WebRTCDataChannel) GetMaxRetransmits() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *WebRTCDataChannel) GetProtocol() gdnative.String {
-	//log.Println("Calling WebRTCDataChannel.GetProtocol()")
+	// log.Println("Calling WebRTCDataChannel.GetProtocol()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -192,7 +192,7 @@ func (o *WebRTCDataChannel) GetProtocol() gdnative.String {
 	Args: [], Returns: enum.WebRTCDataChannel::ChannelState
 */
 func (o *WebRTCDataChannel) GetReadyState() WebRTCDataChannelChannelState {
-	//log.Println("Calling WebRTCDataChannel.GetReadyState()")
+	// log.Println("Calling WebRTCDataChannel.GetReadyState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -215,7 +215,7 @@ func (o *WebRTCDataChannel) GetReadyState() WebRTCDataChannelChannelState {
 	Args: [], Returns: enum.WebRTCDataChannel::WriteMode
 */
 func (o *WebRTCDataChannel) GetWriteMode() WebRTCDataChannelWriteMode {
-	//log.Println("Calling WebRTCDataChannel.GetWriteMode()")
+	// log.Println("Calling WebRTCDataChannel.GetWriteMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -238,7 +238,7 @@ func (o *WebRTCDataChannel) GetWriteMode() WebRTCDataChannelWriteMode {
 	Args: [], Returns: bool
 */
 func (o *WebRTCDataChannel) IsNegotiated() gdnative.Bool {
-	//log.Println("Calling WebRTCDataChannel.IsNegotiated()")
+	// log.Println("Calling WebRTCDataChannel.IsNegotiated()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -261,7 +261,7 @@ func (o *WebRTCDataChannel) IsNegotiated() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *WebRTCDataChannel) IsOrdered() gdnative.Bool {
-	//log.Println("Calling WebRTCDataChannel.IsOrdered()")
+	// log.Println("Calling WebRTCDataChannel.IsOrdered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -284,7 +284,7 @@ func (o *WebRTCDataChannel) IsOrdered() gdnative.Bool {
 	Args: [], Returns: enum.Error
 */
 func (o *WebRTCDataChannel) Poll() gdnative.Error {
-	//log.Println("Calling WebRTCDataChannel.Poll()")
+	// log.Println("Calling WebRTCDataChannel.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -307,7 +307,7 @@ func (o *WebRTCDataChannel) Poll() gdnative.Error {
 	Args: [{ false write_mode int}], Returns: void
 */
 func (o *WebRTCDataChannel) SetWriteMode(writeMode gdnative.Int) {
-	//log.Println("Calling WebRTCDataChannel.SetWriteMode()")
+	// log.Println("Calling WebRTCDataChannel.SetWriteMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *WebRTCDataChannel) SetWriteMode(writeMode gdnative.Int) {
 	Args: [], Returns: bool
 */
 func (o *WebRTCDataChannel) WasStringPacket() gdnative.Bool {
-	//log.Println("Calling WebRTCDataChannel.WasStringPacket()")
+	// log.Println("Calling WebRTCDataChannel.WasStringPacket()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

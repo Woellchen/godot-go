@@ -39,7 +39,7 @@ func (o *StyleBoxLine) BaseClass() string {
 	Args: [], Returns: Color
 */
 func (o *StyleBoxLine) GetColor() gdnative.Color {
-	//log.Println("Calling StyleBoxLine.GetColor()")
+	// log.Println("Calling StyleBoxLine.GetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *StyleBoxLine) GetColor() gdnative.Color {
 	Args: [], Returns: float
 */
 func (o *StyleBoxLine) GetGrowBegin() gdnative.Real {
-	//log.Println("Calling StyleBoxLine.GetGrowBegin()")
+	// log.Println("Calling StyleBoxLine.GetGrowBegin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *StyleBoxLine) GetGrowBegin() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *StyleBoxLine) GetGrowEnd() gdnative.Real {
-	//log.Println("Calling StyleBoxLine.GetGrowEnd()")
+	// log.Println("Calling StyleBoxLine.GetGrowEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *StyleBoxLine) GetGrowEnd() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *StyleBoxLine) GetThickness() gdnative.Int {
-	//log.Println("Calling StyleBoxLine.GetThickness()")
+	// log.Println("Calling StyleBoxLine.GetThickness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *StyleBoxLine) GetThickness() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *StyleBoxLine) IsVertical() gdnative.Bool {
-	//log.Println("Calling StyleBoxLine.IsVertical()")
+	// log.Println("Calling StyleBoxLine.IsVertical()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *StyleBoxLine) IsVertical() gdnative.Bool {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *StyleBoxLine) SetColor(color gdnative.Color) {
-	//log.Println("Calling StyleBoxLine.SetColor()")
+	// log.Println("Calling StyleBoxLine.SetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *StyleBoxLine) SetColor(color gdnative.Color) {
 	Args: [{ false offset float}], Returns: void
 */
 func (o *StyleBoxLine) SetGrowBegin(offset gdnative.Real) {
-	//log.Println("Calling StyleBoxLine.SetGrowBegin()")
+	// log.Println("Calling StyleBoxLine.SetGrowBegin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -196,7 +196,7 @@ func (o *StyleBoxLine) SetGrowBegin(offset gdnative.Real) {
 	Args: [{ false offset float}], Returns: void
 */
 func (o *StyleBoxLine) SetGrowEnd(offset gdnative.Real) {
-	//log.Println("Calling StyleBoxLine.SetGrowEnd()")
+	// log.Println("Calling StyleBoxLine.SetGrowEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *StyleBoxLine) SetGrowEnd(offset gdnative.Real) {
 	Args: [{ false thickness int}], Returns: void
 */
 func (o *StyleBoxLine) SetThickness(thickness gdnative.Int) {
-	//log.Println("Calling StyleBoxLine.SetThickness()")
+	// log.Println("Calling StyleBoxLine.SetThickness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *StyleBoxLine) SetThickness(thickness gdnative.Int) {
 	Args: [{ false vertical bool}], Returns: void
 */
 func (o *StyleBoxLine) SetVertical(vertical gdnative.Bool) {
-	//log.Println("Calling StyleBoxLine.SetVertical()")
+	// log.Println("Calling StyleBoxLine.SetVertical()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

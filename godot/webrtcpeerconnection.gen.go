@@ -51,7 +51,7 @@ func (o *WebRTCPeerConnection) BaseClass() string {
 	Args: [{ false media String} { false index int} { false name String}], Returns: enum.Error
 */
 func (o *WebRTCPeerConnection) AddIceCandidate(media gdnative.String, index gdnative.Int, name gdnative.String) gdnative.Error {
-	//log.Println("Calling WebRTCPeerConnection.AddIceCandidate()")
+	// log.Println("Calling WebRTCPeerConnection.AddIceCandidate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -77,7 +77,7 @@ func (o *WebRTCPeerConnection) AddIceCandidate(media gdnative.String, index gdna
 	Args: [], Returns: void
 */
 func (o *WebRTCPeerConnection) Close() {
-	//log.Println("Calling WebRTCPeerConnection.Close()")
+	// log.Println("Calling WebRTCPeerConnection.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -97,7 +97,7 @@ func (o *WebRTCPeerConnection) Close() {
 	Args: [{ false label String} {{} true options Dictionary}], Returns: WebRTCDataChannel
 */
 func (o *WebRTCPeerConnection) CreateDataChannel(label gdnative.String, options gdnative.Dictionary) WebRTCDataChannelImplementer {
-	//log.Println("Calling WebRTCPeerConnection.CreateDataChannel()")
+	// log.Println("Calling WebRTCPeerConnection.CreateDataChannel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -136,7 +136,7 @@ func (o *WebRTCPeerConnection) CreateDataChannel(label gdnative.String, options 
 	Args: [], Returns: enum.Error
 */
 func (o *WebRTCPeerConnection) CreateOffer() gdnative.Error {
-	//log.Println("Calling WebRTCPeerConnection.CreateOffer()")
+	// log.Println("Calling WebRTCPeerConnection.CreateOffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -159,7 +159,7 @@ func (o *WebRTCPeerConnection) CreateOffer() gdnative.Error {
 	Args: [], Returns: enum.WebRTCPeerConnection::ConnectionState
 */
 func (o *WebRTCPeerConnection) GetConnectionState() WebRTCPeerConnectionConnectionState {
-	//log.Println("Calling WebRTCPeerConnection.GetConnectionState()")
+	// log.Println("Calling WebRTCPeerConnection.GetConnectionState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -182,7 +182,7 @@ func (o *WebRTCPeerConnection) GetConnectionState() WebRTCPeerConnectionConnecti
 	Args: [{{} true configuration Dictionary}], Returns: enum.Error
 */
 func (o *WebRTCPeerConnection) Initialize(configuration gdnative.Dictionary) gdnative.Error {
-	//log.Println("Calling WebRTCPeerConnection.Initialize()")
+	// log.Println("Calling WebRTCPeerConnection.Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -206,7 +206,7 @@ func (o *WebRTCPeerConnection) Initialize(configuration gdnative.Dictionary) gdn
 	Args: [], Returns: enum.Error
 */
 func (o *WebRTCPeerConnection) Poll() gdnative.Error {
-	//log.Println("Calling WebRTCPeerConnection.Poll()")
+	// log.Println("Calling WebRTCPeerConnection.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -229,7 +229,7 @@ func (o *WebRTCPeerConnection) Poll() gdnative.Error {
 	Args: [{ false type String} { false sdp String}], Returns: enum.Error
 */
 func (o *WebRTCPeerConnection) SetLocalDescription(aType gdnative.String, sdp gdnative.String) gdnative.Error {
-	//log.Println("Calling WebRTCPeerConnection.SetLocalDescription()")
+	// log.Println("Calling WebRTCPeerConnection.SetLocalDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -254,7 +254,7 @@ func (o *WebRTCPeerConnection) SetLocalDescription(aType gdnative.String, sdp gd
 	Args: [{ false type String} { false sdp String}], Returns: enum.Error
 */
 func (o *WebRTCPeerConnection) SetRemoteDescription(aType gdnative.String, sdp gdnative.String) gdnative.Error {
-	//log.Println("Calling WebRTCPeerConnection.SetRemoteDescription()")
+	// log.Println("Calling WebRTCPeerConnection.SetRemoteDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

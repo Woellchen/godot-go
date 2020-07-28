@@ -39,7 +39,7 @@ func (o *CSGTorus) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CSGTorus) GetInnerRadius() gdnative.Real {
-	//log.Println("Calling CSGTorus.GetInnerRadius()")
+	// log.Println("Calling CSGTorus.GetInnerRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CSGTorus) GetInnerRadius() gdnative.Real {
 	Args: [], Returns: Material
 */
 func (o *CSGTorus) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CSGTorus.GetMaterial()")
+	// log.Println("Calling CSGTorus.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *CSGTorus) GetMaterial() MaterialImplementer {
 	Args: [], Returns: float
 */
 func (o *CSGTorus) GetOuterRadius() gdnative.Real {
-	//log.Println("Calling CSGTorus.GetOuterRadius()")
+	// log.Println("Calling CSGTorus.GetOuterRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *CSGTorus) GetOuterRadius() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CSGTorus) GetRingSides() gdnative.Int {
-	//log.Println("Calling CSGTorus.GetRingSides()")
+	// log.Println("Calling CSGTorus.GetRingSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *CSGTorus) GetRingSides() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *CSGTorus) GetSides() gdnative.Int {
-	//log.Println("Calling CSGTorus.GetSides()")
+	// log.Println("Calling CSGTorus.GetSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *CSGTorus) GetSides() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *CSGTorus) GetSmoothFaces() gdnative.Bool {
-	//log.Println("Calling CSGTorus.GetSmoothFaces()")
+	// log.Println("Calling CSGTorus.GetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *CSGTorus) GetSmoothFaces() gdnative.Bool {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CSGTorus) SetInnerRadius(radius gdnative.Real) {
-	//log.Println("Calling CSGTorus.SetInnerRadius()")
+	// log.Println("Calling CSGTorus.SetInnerRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -212,7 +212,7 @@ func (o *CSGTorus) SetInnerRadius(radius gdnative.Real) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CSGTorus) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CSGTorus.SetMaterial()")
+	// log.Println("Calling CSGTorus.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -233,7 +233,7 @@ func (o *CSGTorus) SetMaterial(material MaterialImplementer) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CSGTorus) SetOuterRadius(radius gdnative.Real) {
-	//log.Println("Calling CSGTorus.SetOuterRadius()")
+	// log.Println("Calling CSGTorus.SetOuterRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -254,7 +254,7 @@ func (o *CSGTorus) SetOuterRadius(radius gdnative.Real) {
 	Args: [{ false sides int}], Returns: void
 */
 func (o *CSGTorus) SetRingSides(sides gdnative.Int) {
-	//log.Println("Calling CSGTorus.SetRingSides()")
+	// log.Println("Calling CSGTorus.SetRingSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -275,7 +275,7 @@ func (o *CSGTorus) SetRingSides(sides gdnative.Int) {
 	Args: [{ false sides int}], Returns: void
 */
 func (o *CSGTorus) SetSides(sides gdnative.Int) {
-	//log.Println("Calling CSGTorus.SetSides()")
+	// log.Println("Calling CSGTorus.SetSides()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -296,7 +296,7 @@ func (o *CSGTorus) SetSides(sides gdnative.Int) {
 	Args: [{ false smooth_faces bool}], Returns: void
 */
 func (o *CSGTorus) SetSmoothFaces(smoothFaces gdnative.Bool) {
-	//log.Println("Calling CSGTorus.SetSmoothFaces()")
+	// log.Println("Calling CSGTorus.SetSmoothFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *ProxyTexture) BaseClass() string {
 	Args: [], Returns: Texture
 */
 func (o *ProxyTexture) GetBase() TextureImplementer {
-	//log.Println("Calling ProxyTexture.GetBase()")
+	// log.Println("Calling ProxyTexture.GetBase()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *ProxyTexture) GetBase() TextureImplementer {
 	Args: [{ false base Texture}], Returns: void
 */
 func (o *ProxyTexture) SetBase(base TextureImplementer) {
-	//log.Println("Calling ProxyTexture.SetBase()")
+	// log.Println("Calling ProxyTexture.SetBase()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

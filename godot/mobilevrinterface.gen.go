@@ -39,7 +39,7 @@ func (o *MobileVRInterface) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetDisplayToLens() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetDisplayToLens()")
+	// log.Println("Calling MobileVRInterface.GetDisplayToLens()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *MobileVRInterface) GetDisplayToLens() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetDisplayWidth() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetDisplayWidth()")
+	// log.Println("Calling MobileVRInterface.GetDisplayWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *MobileVRInterface) GetDisplayWidth() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetEyeHeight() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetEyeHeight()")
+	// log.Println("Calling MobileVRInterface.GetEyeHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *MobileVRInterface) GetEyeHeight() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetIod() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetIod()")
+	// log.Println("Calling MobileVRInterface.GetIod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *MobileVRInterface) GetIod() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetK1() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetK1()")
+	// log.Println("Calling MobileVRInterface.GetK1()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *MobileVRInterface) GetK1() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetK2() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetK2()")
+	// log.Println("Calling MobileVRInterface.GetK2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *MobileVRInterface) GetK2() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *MobileVRInterface) GetOversample() gdnative.Real {
-	//log.Println("Calling MobileVRInterface.GetOversample()")
+	// log.Println("Calling MobileVRInterface.GetOversample()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *MobileVRInterface) GetOversample() gdnative.Real {
 	Args: [{ false display_to_lens float}], Returns: void
 */
 func (o *MobileVRInterface) SetDisplayToLens(displayToLens gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetDisplayToLens()")
+	// log.Println("Calling MobileVRInterface.SetDisplayToLens()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -221,7 +221,7 @@ func (o *MobileVRInterface) SetDisplayToLens(displayToLens gdnative.Real) {
 	Args: [{ false display_width float}], Returns: void
 */
 func (o *MobileVRInterface) SetDisplayWidth(displayWidth gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetDisplayWidth()")
+	// log.Println("Calling MobileVRInterface.SetDisplayWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -242,7 +242,7 @@ func (o *MobileVRInterface) SetDisplayWidth(displayWidth gdnative.Real) {
 	Args: [{ false eye_height float}], Returns: void
 */
 func (o *MobileVRInterface) SetEyeHeight(eyeHeight gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetEyeHeight()")
+	// log.Println("Calling MobileVRInterface.SetEyeHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -263,7 +263,7 @@ func (o *MobileVRInterface) SetEyeHeight(eyeHeight gdnative.Real) {
 	Args: [{ false iod float}], Returns: void
 */
 func (o *MobileVRInterface) SetIod(iod gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetIod()")
+	// log.Println("Calling MobileVRInterface.SetIod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -284,7 +284,7 @@ func (o *MobileVRInterface) SetIod(iod gdnative.Real) {
 	Args: [{ false k float}], Returns: void
 */
 func (o *MobileVRInterface) SetK1(k gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetK1()")
+	// log.Println("Calling MobileVRInterface.SetK1()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -305,7 +305,7 @@ func (o *MobileVRInterface) SetK1(k gdnative.Real) {
 	Args: [{ false k float}], Returns: void
 */
 func (o *MobileVRInterface) SetK2(k gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetK2()")
+	// log.Println("Calling MobileVRInterface.SetK2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -326,7 +326,7 @@ func (o *MobileVRInterface) SetK2(k gdnative.Real) {
 	Args: [{ false oversample float}], Returns: void
 */
 func (o *MobileVRInterface) SetOversample(oversample gdnative.Real) {
-	//log.Println("Calling MobileVRInterface.SetOversample()")
+	// log.Println("Calling MobileVRInterface.SetOversample()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -83,7 +83,7 @@ func (o *RichTextLabel) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *RichTextLabel) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling RichTextLabel.X_GuiInput()")
+	// log.Println("Calling RichTextLabel.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *RichTextLabel) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *RichTextLabel) X_ScrollChanged(arg0 gdnative.Real) {
-	//log.Println("Calling RichTextLabel.X_ScrollChanged()")
+	// log.Println("Calling RichTextLabel.X_ScrollChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *RichTextLabel) X_ScrollChanged(arg0 gdnative.Real) {
 	Args: [{ false image Texture} {0 true width int} {0 true height int}], Returns: void
 */
 func (o *RichTextLabel) AddImage(image TextureImplementer, width gdnative.Int, height gdnative.Int) {
-	//log.Println("Calling RichTextLabel.AddImage()")
+	// log.Println("Calling RichTextLabel.AddImage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -148,7 +148,7 @@ func (o *RichTextLabel) AddImage(image TextureImplementer, width gdnative.Int, h
 	Args: [{ false text String}], Returns: void
 */
 func (o *RichTextLabel) AddText(text gdnative.String) {
-	//log.Println("Calling RichTextLabel.AddText()")
+	// log.Println("Calling RichTextLabel.AddText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -169,7 +169,7 @@ func (o *RichTextLabel) AddText(text gdnative.String) {
 	Args: [{ false bbcode String}], Returns: enum.Error
 */
 func (o *RichTextLabel) AppendBbcode(bbcode gdnative.String) gdnative.Error {
-	//log.Println("Calling RichTextLabel.AppendBbcode()")
+	// log.Println("Calling RichTextLabel.AppendBbcode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -193,7 +193,7 @@ func (o *RichTextLabel) AppendBbcode(bbcode gdnative.String) gdnative.Error {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) Clear() {
-	//log.Println("Calling RichTextLabel.Clear()")
+	// log.Println("Calling RichTextLabel.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -213,7 +213,7 @@ func (o *RichTextLabel) Clear() {
 	Args: [], Returns: String
 */
 func (o *RichTextLabel) GetBbcode() gdnative.String {
-	//log.Println("Calling RichTextLabel.GetBbcode()")
+	// log.Println("Calling RichTextLabel.GetBbcode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -236,7 +236,7 @@ func (o *RichTextLabel) GetBbcode() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *RichTextLabel) GetContentHeight() gdnative.Int {
-	//log.Println("Calling RichTextLabel.GetContentHeight()")
+	// log.Println("Calling RichTextLabel.GetContentHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -259,7 +259,7 @@ func (o *RichTextLabel) GetContentHeight() gdnative.Int {
 	Args: [], Returns: Array
 */
 func (o *RichTextLabel) GetEffects() gdnative.Array {
-	//log.Println("Calling RichTextLabel.GetEffects()")
+	// log.Println("Calling RichTextLabel.GetEffects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -282,7 +282,7 @@ func (o *RichTextLabel) GetEffects() gdnative.Array {
 	Args: [], Returns: int
 */
 func (o *RichTextLabel) GetLineCount() gdnative.Int {
-	//log.Println("Calling RichTextLabel.GetLineCount()")
+	// log.Println("Calling RichTextLabel.GetLineCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -305,7 +305,7 @@ func (o *RichTextLabel) GetLineCount() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *RichTextLabel) GetPercentVisible() gdnative.Real {
-	//log.Println("Calling RichTextLabel.GetPercentVisible()")
+	// log.Println("Calling RichTextLabel.GetPercentVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -328,7 +328,7 @@ func (o *RichTextLabel) GetPercentVisible() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *RichTextLabel) GetTabSize() gdnative.Int {
-	//log.Println("Calling RichTextLabel.GetTabSize()")
+	// log.Println("Calling RichTextLabel.GetTabSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -351,7 +351,7 @@ func (o *RichTextLabel) GetTabSize() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *RichTextLabel) GetText() gdnative.String {
-	//log.Println("Calling RichTextLabel.GetText()")
+	// log.Println("Calling RichTextLabel.GetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -374,7 +374,7 @@ func (o *RichTextLabel) GetText() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *RichTextLabel) GetTotalCharacterCount() gdnative.Int {
-	//log.Println("Calling RichTextLabel.GetTotalCharacterCount()")
+	// log.Println("Calling RichTextLabel.GetTotalCharacterCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -397,7 +397,7 @@ func (o *RichTextLabel) GetTotalCharacterCount() gdnative.Int {
 	Args: [], Returns: VScrollBar
 */
 func (o *RichTextLabel) GetVScroll() VScrollBarImplementer {
-	//log.Println("Calling RichTextLabel.GetVScroll()")
+	// log.Println("Calling RichTextLabel.GetVScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -434,7 +434,7 @@ func (o *RichTextLabel) GetVScroll() VScrollBarImplementer {
 	Args: [], Returns: int
 */
 func (o *RichTextLabel) GetVisibleCharacters() gdnative.Int {
-	//log.Println("Calling RichTextLabel.GetVisibleCharacters()")
+	// log.Println("Calling RichTextLabel.GetVisibleCharacters()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -457,7 +457,7 @@ func (o *RichTextLabel) GetVisibleCharacters() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *RichTextLabel) GetVisibleLineCount() gdnative.Int {
-	//log.Println("Calling RichTextLabel.GetVisibleLineCount()")
+	// log.Println("Calling RichTextLabel.GetVisibleLineCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -480,7 +480,7 @@ func (o *RichTextLabel) GetVisibleLineCount() gdnative.Int {
 	Args: [{ false effect Variant}], Returns: void
 */
 func (o *RichTextLabel) InstallEffect(effect gdnative.Variant) {
-	//log.Println("Calling RichTextLabel.InstallEffect()")
+	// log.Println("Calling RichTextLabel.InstallEffect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -501,7 +501,7 @@ func (o *RichTextLabel) InstallEffect(effect gdnative.Variant) {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsFitContentHeightEnabled() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsFitContentHeightEnabled()")
+	// log.Println("Calling RichTextLabel.IsFitContentHeightEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -524,7 +524,7 @@ func (o *RichTextLabel) IsFitContentHeightEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsMetaUnderlined() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsMetaUnderlined()")
+	// log.Println("Calling RichTextLabel.IsMetaUnderlined()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -547,7 +547,7 @@ func (o *RichTextLabel) IsMetaUnderlined() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsOverridingSelectedFontColor() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsOverridingSelectedFontColor()")
+	// log.Println("Calling RichTextLabel.IsOverridingSelectedFontColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -570,7 +570,7 @@ func (o *RichTextLabel) IsOverridingSelectedFontColor() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsScrollActive() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsScrollActive()")
+	// log.Println("Calling RichTextLabel.IsScrollActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -593,7 +593,7 @@ func (o *RichTextLabel) IsScrollActive() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsScrollFollowing() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsScrollFollowing()")
+	// log.Println("Calling RichTextLabel.IsScrollFollowing()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -616,7 +616,7 @@ func (o *RichTextLabel) IsScrollFollowing() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsSelectionEnabled() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsSelectionEnabled()")
+	// log.Println("Calling RichTextLabel.IsSelectionEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -639,7 +639,7 @@ func (o *RichTextLabel) IsSelectionEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RichTextLabel) IsUsingBbcode() gdnative.Bool {
-	//log.Println("Calling RichTextLabel.IsUsingBbcode()")
+	// log.Println("Calling RichTextLabel.IsUsingBbcode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -662,7 +662,7 @@ func (o *RichTextLabel) IsUsingBbcode() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) Newline() {
-	//log.Println("Calling RichTextLabel.Newline()")
+	// log.Println("Calling RichTextLabel.Newline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -682,7 +682,7 @@ func (o *RichTextLabel) Newline() {
 	Args: [{ false bbcode String}], Returns: enum.Error
 */
 func (o *RichTextLabel) ParseBbcode(bbcode gdnative.String) gdnative.Error {
-	//log.Println("Calling RichTextLabel.ParseBbcode()")
+	// log.Println("Calling RichTextLabel.ParseBbcode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -706,7 +706,7 @@ func (o *RichTextLabel) ParseBbcode(bbcode gdnative.String) gdnative.Error {
 	Args: [{ false expressions PoolStringArray}], Returns: Dictionary
 */
 func (o *RichTextLabel) ParseExpressionsForValues(expressions gdnative.PoolStringArray) gdnative.Dictionary {
-	//log.Println("Calling RichTextLabel.ParseExpressionsForValues()")
+	// log.Println("Calling RichTextLabel.ParseExpressionsForValues()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -730,7 +730,7 @@ func (o *RichTextLabel) ParseExpressionsForValues(expressions gdnative.PoolStrin
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) Pop() {
-	//log.Println("Calling RichTextLabel.Pop()")
+	// log.Println("Calling RichTextLabel.Pop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -750,7 +750,7 @@ func (o *RichTextLabel) Pop() {
 	Args: [{ false align int}], Returns: void
 */
 func (o *RichTextLabel) PushAlign(align gdnative.Int) {
-	//log.Println("Calling RichTextLabel.PushAlign()")
+	// log.Println("Calling RichTextLabel.PushAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -771,7 +771,7 @@ func (o *RichTextLabel) PushAlign(align gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushBold() {
-	//log.Println("Calling RichTextLabel.PushBold()")
+	// log.Println("Calling RichTextLabel.PushBold()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -791,7 +791,7 @@ func (o *RichTextLabel) PushBold() {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushBoldItalics() {
-	//log.Println("Calling RichTextLabel.PushBoldItalics()")
+	// log.Println("Calling RichTextLabel.PushBoldItalics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -811,7 +811,7 @@ func (o *RichTextLabel) PushBoldItalics() {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushCell() {
-	//log.Println("Calling RichTextLabel.PushCell()")
+	// log.Println("Calling RichTextLabel.PushCell()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -831,7 +831,7 @@ func (o *RichTextLabel) PushCell() {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *RichTextLabel) PushColor(color gdnative.Color) {
-	//log.Println("Calling RichTextLabel.PushColor()")
+	// log.Println("Calling RichTextLabel.PushColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -852,7 +852,7 @@ func (o *RichTextLabel) PushColor(color gdnative.Color) {
 	Args: [{ false font Font}], Returns: void
 */
 func (o *RichTextLabel) PushFont(font FontImplementer) {
-	//log.Println("Calling RichTextLabel.PushFont()")
+	// log.Println("Calling RichTextLabel.PushFont()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -873,7 +873,7 @@ func (o *RichTextLabel) PushFont(font FontImplementer) {
 	Args: [{ false level int}], Returns: void
 */
 func (o *RichTextLabel) PushIndent(level gdnative.Int) {
-	//log.Println("Calling RichTextLabel.PushIndent()")
+	// log.Println("Calling RichTextLabel.PushIndent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -894,7 +894,7 @@ func (o *RichTextLabel) PushIndent(level gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushItalics() {
-	//log.Println("Calling RichTextLabel.PushItalics()")
+	// log.Println("Calling RichTextLabel.PushItalics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -914,7 +914,7 @@ func (o *RichTextLabel) PushItalics() {
 	Args: [{ false type int}], Returns: void
 */
 func (o *RichTextLabel) PushList(aType gdnative.Int) {
-	//log.Println("Calling RichTextLabel.PushList()")
+	// log.Println("Calling RichTextLabel.PushList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -935,7 +935,7 @@ func (o *RichTextLabel) PushList(aType gdnative.Int) {
 	Args: [{ false data Variant}], Returns: void
 */
 func (o *RichTextLabel) PushMeta(data gdnative.Variant) {
-	//log.Println("Calling RichTextLabel.PushMeta()")
+	// log.Println("Calling RichTextLabel.PushMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -956,7 +956,7 @@ func (o *RichTextLabel) PushMeta(data gdnative.Variant) {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushMono() {
-	//log.Println("Calling RichTextLabel.PushMono()")
+	// log.Println("Calling RichTextLabel.PushMono()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -976,7 +976,7 @@ func (o *RichTextLabel) PushMono() {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushNormal() {
-	//log.Println("Calling RichTextLabel.PushNormal()")
+	// log.Println("Calling RichTextLabel.PushNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -996,7 +996,7 @@ func (o *RichTextLabel) PushNormal() {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushStrikethrough() {
-	//log.Println("Calling RichTextLabel.PushStrikethrough()")
+	// log.Println("Calling RichTextLabel.PushStrikethrough()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1016,7 +1016,7 @@ func (o *RichTextLabel) PushStrikethrough() {
 	Args: [{ false columns int}], Returns: void
 */
 func (o *RichTextLabel) PushTable(columns gdnative.Int) {
-	//log.Println("Calling RichTextLabel.PushTable()")
+	// log.Println("Calling RichTextLabel.PushTable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1037,7 +1037,7 @@ func (o *RichTextLabel) PushTable(columns gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *RichTextLabel) PushUnderline() {
-	//log.Println("Calling RichTextLabel.PushUnderline()")
+	// log.Println("Calling RichTextLabel.PushUnderline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1057,7 +1057,7 @@ func (o *RichTextLabel) PushUnderline() {
 	Args: [{ false line int}], Returns: bool
 */
 func (o *RichTextLabel) RemoveLine(line gdnative.Int) gdnative.Bool {
-	//log.Println("Calling RichTextLabel.RemoveLine()")
+	// log.Println("Calling RichTextLabel.RemoveLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1081,7 +1081,7 @@ func (o *RichTextLabel) RemoveLine(line gdnative.Int) gdnative.Bool {
 	Args: [{ false line int}], Returns: void
 */
 func (o *RichTextLabel) ScrollToLine(line gdnative.Int) {
-	//log.Println("Calling RichTextLabel.ScrollToLine()")
+	// log.Println("Calling RichTextLabel.ScrollToLine()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1102,7 +1102,7 @@ func (o *RichTextLabel) ScrollToLine(line gdnative.Int) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *RichTextLabel) SetBbcode(text gdnative.String) {
-	//log.Println("Calling RichTextLabel.SetBbcode()")
+	// log.Println("Calling RichTextLabel.SetBbcode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1123,7 +1123,7 @@ func (o *RichTextLabel) SetBbcode(text gdnative.String) {
 	Args: [{ false effects Array}], Returns: void
 */
 func (o *RichTextLabel) SetEffects(effects gdnative.Array) {
-	//log.Println("Calling RichTextLabel.SetEffects()")
+	// log.Println("Calling RichTextLabel.SetEffects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1144,7 +1144,7 @@ func (o *RichTextLabel) SetEffects(effects gdnative.Array) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *RichTextLabel) SetFitContentHeight(enabled gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetFitContentHeight()")
+	// log.Println("Calling RichTextLabel.SetFitContentHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1165,7 +1165,7 @@ func (o *RichTextLabel) SetFitContentHeight(enabled gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *RichTextLabel) SetMetaUnderline(enable gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetMetaUnderline()")
+	// log.Println("Calling RichTextLabel.SetMetaUnderline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1186,7 +1186,7 @@ func (o *RichTextLabel) SetMetaUnderline(enable gdnative.Bool) {
 	Args: [{ false override bool}], Returns: void
 */
 func (o *RichTextLabel) SetOverrideSelectedFontColor(override gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetOverrideSelectedFontColor()")
+	// log.Println("Calling RichTextLabel.SetOverrideSelectedFontColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1207,7 +1207,7 @@ func (o *RichTextLabel) SetOverrideSelectedFontColor(override gdnative.Bool) {
 	Args: [{ false percent_visible float}], Returns: void
 */
 func (o *RichTextLabel) SetPercentVisible(percentVisible gdnative.Real) {
-	//log.Println("Calling RichTextLabel.SetPercentVisible()")
+	// log.Println("Calling RichTextLabel.SetPercentVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1228,7 +1228,7 @@ func (o *RichTextLabel) SetPercentVisible(percentVisible gdnative.Real) {
 	Args: [{ false active bool}], Returns: void
 */
 func (o *RichTextLabel) SetScrollActive(active gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetScrollActive()")
+	// log.Println("Calling RichTextLabel.SetScrollActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1249,7 +1249,7 @@ func (o *RichTextLabel) SetScrollActive(active gdnative.Bool) {
 	Args: [{ false follow bool}], Returns: void
 */
 func (o *RichTextLabel) SetScrollFollow(follow gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetScrollFollow()")
+	// log.Println("Calling RichTextLabel.SetScrollFollow()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1270,7 +1270,7 @@ func (o *RichTextLabel) SetScrollFollow(follow gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *RichTextLabel) SetSelectionEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetSelectionEnabled()")
+	// log.Println("Calling RichTextLabel.SetSelectionEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1291,7 +1291,7 @@ func (o *RichTextLabel) SetSelectionEnabled(enabled gdnative.Bool) {
 	Args: [{ false spaces int}], Returns: void
 */
 func (o *RichTextLabel) SetTabSize(spaces gdnative.Int) {
-	//log.Println("Calling RichTextLabel.SetTabSize()")
+	// log.Println("Calling RichTextLabel.SetTabSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1312,7 +1312,7 @@ func (o *RichTextLabel) SetTabSize(spaces gdnative.Int) {
 	Args: [{ false column int} { false expand bool} { false ratio int}], Returns: void
 */
 func (o *RichTextLabel) SetTableColumnExpand(column gdnative.Int, expand gdnative.Bool, ratio gdnative.Int) {
-	//log.Println("Calling RichTextLabel.SetTableColumnExpand()")
+	// log.Println("Calling RichTextLabel.SetTableColumnExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1335,7 +1335,7 @@ func (o *RichTextLabel) SetTableColumnExpand(column gdnative.Int, expand gdnativ
 	Args: [{ false text String}], Returns: void
 */
 func (o *RichTextLabel) SetText(text gdnative.String) {
-	//log.Println("Calling RichTextLabel.SetText()")
+	// log.Println("Calling RichTextLabel.SetText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1356,7 +1356,7 @@ func (o *RichTextLabel) SetText(text gdnative.String) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *RichTextLabel) SetUseBbcode(enable gdnative.Bool) {
-	//log.Println("Calling RichTextLabel.SetUseBbcode()")
+	// log.Println("Calling RichTextLabel.SetUseBbcode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1377,7 +1377,7 @@ func (o *RichTextLabel) SetUseBbcode(enable gdnative.Bool) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *RichTextLabel) SetVisibleCharacters(amount gdnative.Int) {
-	//log.Println("Calling RichTextLabel.SetVisibleCharacters()")
+	// log.Println("Calling RichTextLabel.SetVisibleCharacters()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PHashTranslation) BaseClass() string {
 	Args: [{ false from Translation}], Returns: void
 */
 func (o *PHashTranslation) Generate(from TranslationImplementer) {
-	//log.Println("Calling PHashTranslation.Generate()")
+	// log.Println("Calling PHashTranslation.Generate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

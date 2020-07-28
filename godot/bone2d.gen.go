@@ -39,7 +39,7 @@ func (o *Bone2D) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *Bone2D) ApplyRest() {
-	//log.Println("Calling Bone2D.ApplyRest()")
+	// log.Println("Calling Bone2D.ApplyRest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *Bone2D) ApplyRest() {
 	Args: [], Returns: float
 */
 func (o *Bone2D) GetDefaultLength() gdnative.Real {
-	//log.Println("Calling Bone2D.GetDefaultLength()")
+	// log.Println("Calling Bone2D.GetDefaultLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *Bone2D) GetDefaultLength() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *Bone2D) GetIndexInSkeleton() gdnative.Int {
-	//log.Println("Calling Bone2D.GetIndexInSkeleton()")
+	// log.Println("Calling Bone2D.GetIndexInSkeleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *Bone2D) GetIndexInSkeleton() gdnative.Int {
 	Args: [], Returns: Transform2D
 */
 func (o *Bone2D) GetRest() gdnative.Transform2D {
-	//log.Println("Calling Bone2D.GetRest()")
+	// log.Println("Calling Bone2D.GetRest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *Bone2D) GetRest() gdnative.Transform2D {
 	Args: [], Returns: Transform2D
 */
 func (o *Bone2D) GetSkeletonRest() gdnative.Transform2D {
-	//log.Println("Calling Bone2D.GetSkeletonRest()")
+	// log.Println("Calling Bone2D.GetSkeletonRest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *Bone2D) GetSkeletonRest() gdnative.Transform2D {
 	Args: [{ false default_length float}], Returns: void
 */
 func (o *Bone2D) SetDefaultLength(defaultLength gdnative.Real) {
-	//log.Println("Calling Bone2D.SetDefaultLength()")
+	// log.Println("Calling Bone2D.SetDefaultLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -172,7 +172,7 @@ func (o *Bone2D) SetDefaultLength(defaultLength gdnative.Real) {
 	Args: [{ false rest Transform2D}], Returns: void
 */
 func (o *Bone2D) SetRest(rest gdnative.Transform2D) {
-	//log.Println("Calling Bone2D.SetRest()")
+	// log.Println("Calling Bone2D.SetRest()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

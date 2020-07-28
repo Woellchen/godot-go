@@ -58,7 +58,7 @@ func (o *RigidBody2D) BaseClass() string {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *RigidBody2D) X_BodyEnterTree(arg0 gdnative.Int) {
-	//log.Println("Calling RigidBody2D.X_BodyEnterTree()")
+	// log.Println("Calling RigidBody2D.X_BodyEnterTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -79,7 +79,7 @@ func (o *RigidBody2D) X_BodyEnterTree(arg0 gdnative.Int) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *RigidBody2D) X_BodyExitTree(arg0 gdnative.Int) {
-	//log.Println("Calling RigidBody2D.X_BodyExitTree()")
+	// log.Println("Calling RigidBody2D.X_BodyExitTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -100,7 +100,7 @@ func (o *RigidBody2D) X_BodyExitTree(arg0 gdnative.Int) {
 	Args: [{ false arg0 Object}], Returns: void
 */
 func (o *RigidBody2D) X_DirectStateChanged(arg0 ObjectImplementer) {
-	//log.Println("Calling RigidBody2D.X_DirectStateChanged()")
+	// log.Println("Calling RigidBody2D.X_DirectStateChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -121,7 +121,7 @@ func (o *RigidBody2D) X_DirectStateChanged(arg0 ObjectImplementer) {
 	Args: [{ false state Physics2DDirectBodyState}], Returns: void
 */
 func (o *RigidBody2D) X_IntegrateForces(state Physics2DDirectBodyStateImplementer) {
-	//log.Println("Calling RigidBody2D.X_IntegrateForces()")
+	// log.Println("Calling RigidBody2D.X_IntegrateForces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -142,7 +142,7 @@ func (o *RigidBody2D) X_IntegrateForces(state Physics2DDirectBodyStateImplemente
 	Args: [], Returns: void
 */
 func (o *RigidBody2D) X_ReloadPhysicsCharacteristics() {
-	//log.Println("Calling RigidBody2D.X_ReloadPhysicsCharacteristics()")
+	// log.Println("Calling RigidBody2D.X_ReloadPhysicsCharacteristics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *RigidBody2D) X_ReloadPhysicsCharacteristics() {
 	Args: [{ false force Vector2}], Returns: void
 */
 func (o *RigidBody2D) AddCentralForce(force gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.AddCentralForce()")
+	// log.Println("Calling RigidBody2D.AddCentralForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -183,7 +183,7 @@ func (o *RigidBody2D) AddCentralForce(force gdnative.Vector2) {
 	Args: [{ false offset Vector2} { false force Vector2}], Returns: void
 */
 func (o *RigidBody2D) AddForce(offset gdnative.Vector2, force gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.AddForce()")
+	// log.Println("Calling RigidBody2D.AddForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -205,7 +205,7 @@ func (o *RigidBody2D) AddForce(offset gdnative.Vector2, force gdnative.Vector2) 
 	Args: [{ false torque float}], Returns: void
 */
 func (o *RigidBody2D) AddTorque(torque gdnative.Real) {
-	//log.Println("Calling RigidBody2D.AddTorque()")
+	// log.Println("Calling RigidBody2D.AddTorque()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -226,7 +226,7 @@ func (o *RigidBody2D) AddTorque(torque gdnative.Real) {
 	Args: [{ false impulse Vector2}], Returns: void
 */
 func (o *RigidBody2D) ApplyCentralImpulse(impulse gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.ApplyCentralImpulse()")
+	// log.Println("Calling RigidBody2D.ApplyCentralImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -247,7 +247,7 @@ func (o *RigidBody2D) ApplyCentralImpulse(impulse gdnative.Vector2) {
 	Args: [{ false offset Vector2} { false impulse Vector2}], Returns: void
 */
 func (o *RigidBody2D) ApplyImpulse(offset gdnative.Vector2, impulse gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.ApplyImpulse()")
+	// log.Println("Calling RigidBody2D.ApplyImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -269,7 +269,7 @@ func (o *RigidBody2D) ApplyImpulse(offset gdnative.Vector2, impulse gdnative.Vec
 	Args: [{ false torque float}], Returns: void
 */
 func (o *RigidBody2D) ApplyTorqueImpulse(torque gdnative.Real) {
-	//log.Println("Calling RigidBody2D.ApplyTorqueImpulse()")
+	// log.Println("Calling RigidBody2D.ApplyTorqueImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -290,7 +290,7 @@ func (o *RigidBody2D) ApplyTorqueImpulse(torque gdnative.Real) {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetAngularDamp() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetAngularDamp()")
+	// log.Println("Calling RigidBody2D.GetAngularDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -313,7 +313,7 @@ func (o *RigidBody2D) GetAngularDamp() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetAngularVelocity() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetAngularVelocity()")
+	// log.Println("Calling RigidBody2D.GetAngularVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -336,7 +336,7 @@ func (o *RigidBody2D) GetAngularVelocity() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *RigidBody2D) GetAppliedForce() gdnative.Vector2 {
-	//log.Println("Calling RigidBody2D.GetAppliedForce()")
+	// log.Println("Calling RigidBody2D.GetAppliedForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -359,7 +359,7 @@ func (o *RigidBody2D) GetAppliedForce() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetAppliedTorque() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetAppliedTorque()")
+	// log.Println("Calling RigidBody2D.GetAppliedTorque()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -382,7 +382,7 @@ func (o *RigidBody2D) GetAppliedTorque() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetBounce() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetBounce()")
+	// log.Println("Calling RigidBody2D.GetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -405,7 +405,7 @@ func (o *RigidBody2D) GetBounce() gdnative.Real {
 	Args: [], Returns: Array
 */
 func (o *RigidBody2D) GetCollidingBodies() gdnative.Array {
-	//log.Println("Calling RigidBody2D.GetCollidingBodies()")
+	// log.Println("Calling RigidBody2D.GetCollidingBodies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -428,7 +428,7 @@ func (o *RigidBody2D) GetCollidingBodies() gdnative.Array {
 	Args: [], Returns: enum.RigidBody2D::CCDMode
 */
 func (o *RigidBody2D) GetContinuousCollisionDetectionMode() RigidBody2DCCDMode {
-	//log.Println("Calling RigidBody2D.GetContinuousCollisionDetectionMode()")
+	// log.Println("Calling RigidBody2D.GetContinuousCollisionDetectionMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -451,7 +451,7 @@ func (o *RigidBody2D) GetContinuousCollisionDetectionMode() RigidBody2DCCDMode {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetFriction() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetFriction()")
+	// log.Println("Calling RigidBody2D.GetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -474,7 +474,7 @@ func (o *RigidBody2D) GetFriction() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetGravityScale() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetGravityScale()")
+	// log.Println("Calling RigidBody2D.GetGravityScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -497,7 +497,7 @@ func (o *RigidBody2D) GetGravityScale() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetInertia() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetInertia()")
+	// log.Println("Calling RigidBody2D.GetInertia()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -520,7 +520,7 @@ func (o *RigidBody2D) GetInertia() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetLinearDamp() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetLinearDamp()")
+	// log.Println("Calling RigidBody2D.GetLinearDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -543,7 +543,7 @@ func (o *RigidBody2D) GetLinearDamp() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *RigidBody2D) GetLinearVelocity() gdnative.Vector2 {
-	//log.Println("Calling RigidBody2D.GetLinearVelocity()")
+	// log.Println("Calling RigidBody2D.GetLinearVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -566,7 +566,7 @@ func (o *RigidBody2D) GetLinearVelocity() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetMass() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetMass()")
+	// log.Println("Calling RigidBody2D.GetMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -589,7 +589,7 @@ func (o *RigidBody2D) GetMass() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *RigidBody2D) GetMaxContactsReported() gdnative.Int {
-	//log.Println("Calling RigidBody2D.GetMaxContactsReported()")
+	// log.Println("Calling RigidBody2D.GetMaxContactsReported()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -612,7 +612,7 @@ func (o *RigidBody2D) GetMaxContactsReported() gdnative.Int {
 	Args: [], Returns: enum.RigidBody2D::Mode
 */
 func (o *RigidBody2D) GetMode() RigidBody2DMode {
-	//log.Println("Calling RigidBody2D.GetMode()")
+	// log.Println("Calling RigidBody2D.GetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -635,7 +635,7 @@ func (o *RigidBody2D) GetMode() RigidBody2DMode {
 	Args: [], Returns: PhysicsMaterial
 */
 func (o *RigidBody2D) GetPhysicsMaterialOverride() PhysicsMaterialImplementer {
-	//log.Println("Calling RigidBody2D.GetPhysicsMaterialOverride()")
+	// log.Println("Calling RigidBody2D.GetPhysicsMaterialOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -672,7 +672,7 @@ func (o *RigidBody2D) GetPhysicsMaterialOverride() PhysicsMaterialImplementer {
 	Args: [], Returns: float
 */
 func (o *RigidBody2D) GetWeight() gdnative.Real {
-	//log.Println("Calling RigidBody2D.GetWeight()")
+	// log.Println("Calling RigidBody2D.GetWeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -695,7 +695,7 @@ func (o *RigidBody2D) GetWeight() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *RigidBody2D) IsAbleToSleep() gdnative.Bool {
-	//log.Println("Calling RigidBody2D.IsAbleToSleep()")
+	// log.Println("Calling RigidBody2D.IsAbleToSleep()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -718,7 +718,7 @@ func (o *RigidBody2D) IsAbleToSleep() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RigidBody2D) IsContactMonitorEnabled() gdnative.Bool {
-	//log.Println("Calling RigidBody2D.IsContactMonitorEnabled()")
+	// log.Println("Calling RigidBody2D.IsContactMonitorEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -741,7 +741,7 @@ func (o *RigidBody2D) IsContactMonitorEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RigidBody2D) IsSleeping() gdnative.Bool {
-	//log.Println("Calling RigidBody2D.IsSleeping()")
+	// log.Println("Calling RigidBody2D.IsSleeping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -764,7 +764,7 @@ func (o *RigidBody2D) IsSleeping() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *RigidBody2D) IsUsingCustomIntegrator() gdnative.Bool {
-	//log.Println("Calling RigidBody2D.IsUsingCustomIntegrator()")
+	// log.Println("Calling RigidBody2D.IsUsingCustomIntegrator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -787,7 +787,7 @@ func (o *RigidBody2D) IsUsingCustomIntegrator() gdnative.Bool {
 	Args: [{ false angular_damp float}], Returns: void
 */
 func (o *RigidBody2D) SetAngularDamp(angularDamp gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetAngularDamp()")
+	// log.Println("Calling RigidBody2D.SetAngularDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -808,7 +808,7 @@ func (o *RigidBody2D) SetAngularDamp(angularDamp gdnative.Real) {
 	Args: [{ false angular_velocity float}], Returns: void
 */
 func (o *RigidBody2D) SetAngularVelocity(angularVelocity gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetAngularVelocity()")
+	// log.Println("Calling RigidBody2D.SetAngularVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -829,7 +829,7 @@ func (o *RigidBody2D) SetAngularVelocity(angularVelocity gdnative.Real) {
 	Args: [{ false force Vector2}], Returns: void
 */
 func (o *RigidBody2D) SetAppliedForce(force gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.SetAppliedForce()")
+	// log.Println("Calling RigidBody2D.SetAppliedForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -850,7 +850,7 @@ func (o *RigidBody2D) SetAppliedForce(force gdnative.Vector2) {
 	Args: [{ false torque float}], Returns: void
 */
 func (o *RigidBody2D) SetAppliedTorque(torque gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetAppliedTorque()")
+	// log.Println("Calling RigidBody2D.SetAppliedTorque()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -871,7 +871,7 @@ func (o *RigidBody2D) SetAppliedTorque(torque gdnative.Real) {
 	Args: [{ false axis_velocity Vector2}], Returns: void
 */
 func (o *RigidBody2D) SetAxisVelocity(axisVelocity gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.SetAxisVelocity()")
+	// log.Println("Calling RigidBody2D.SetAxisVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -892,7 +892,7 @@ func (o *RigidBody2D) SetAxisVelocity(axisVelocity gdnative.Vector2) {
 	Args: [{ false bounce float}], Returns: void
 */
 func (o *RigidBody2D) SetBounce(bounce gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetBounce()")
+	// log.Println("Calling RigidBody2D.SetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -913,7 +913,7 @@ func (o *RigidBody2D) SetBounce(bounce gdnative.Real) {
 	Args: [{ false able_to_sleep bool}], Returns: void
 */
 func (o *RigidBody2D) SetCanSleep(ableToSleep gdnative.Bool) {
-	//log.Println("Calling RigidBody2D.SetCanSleep()")
+	// log.Println("Calling RigidBody2D.SetCanSleep()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -934,7 +934,7 @@ func (o *RigidBody2D) SetCanSleep(ableToSleep gdnative.Bool) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *RigidBody2D) SetContactMonitor(enabled gdnative.Bool) {
-	//log.Println("Calling RigidBody2D.SetContactMonitor()")
+	// log.Println("Calling RigidBody2D.SetContactMonitor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -955,7 +955,7 @@ func (o *RigidBody2D) SetContactMonitor(enabled gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *RigidBody2D) SetContinuousCollisionDetectionMode(mode gdnative.Int) {
-	//log.Println("Calling RigidBody2D.SetContinuousCollisionDetectionMode()")
+	// log.Println("Calling RigidBody2D.SetContinuousCollisionDetectionMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -976,7 +976,7 @@ func (o *RigidBody2D) SetContinuousCollisionDetectionMode(mode gdnative.Int) {
 	Args: [{ false friction float}], Returns: void
 */
 func (o *RigidBody2D) SetFriction(friction gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetFriction()")
+	// log.Println("Calling RigidBody2D.SetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -997,7 +997,7 @@ func (o *RigidBody2D) SetFriction(friction gdnative.Real) {
 	Args: [{ false gravity_scale float}], Returns: void
 */
 func (o *RigidBody2D) SetGravityScale(gravityScale gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetGravityScale()")
+	// log.Println("Calling RigidBody2D.SetGravityScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1018,7 +1018,7 @@ func (o *RigidBody2D) SetGravityScale(gravityScale gdnative.Real) {
 	Args: [{ false inertia float}], Returns: void
 */
 func (o *RigidBody2D) SetInertia(inertia gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetInertia()")
+	// log.Println("Calling RigidBody2D.SetInertia()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1039,7 +1039,7 @@ func (o *RigidBody2D) SetInertia(inertia gdnative.Real) {
 	Args: [{ false linear_damp float}], Returns: void
 */
 func (o *RigidBody2D) SetLinearDamp(linearDamp gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetLinearDamp()")
+	// log.Println("Calling RigidBody2D.SetLinearDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1060,7 +1060,7 @@ func (o *RigidBody2D) SetLinearDamp(linearDamp gdnative.Real) {
 	Args: [{ false linear_velocity Vector2}], Returns: void
 */
 func (o *RigidBody2D) SetLinearVelocity(linearVelocity gdnative.Vector2) {
-	//log.Println("Calling RigidBody2D.SetLinearVelocity()")
+	// log.Println("Calling RigidBody2D.SetLinearVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1081,7 +1081,7 @@ func (o *RigidBody2D) SetLinearVelocity(linearVelocity gdnative.Vector2) {
 	Args: [{ false mass float}], Returns: void
 */
 func (o *RigidBody2D) SetMass(mass gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetMass()")
+	// log.Println("Calling RigidBody2D.SetMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1102,7 +1102,7 @@ func (o *RigidBody2D) SetMass(mass gdnative.Real) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *RigidBody2D) SetMaxContactsReported(amount gdnative.Int) {
-	//log.Println("Calling RigidBody2D.SetMaxContactsReported()")
+	// log.Println("Calling RigidBody2D.SetMaxContactsReported()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1123,7 +1123,7 @@ func (o *RigidBody2D) SetMaxContactsReported(amount gdnative.Int) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *RigidBody2D) SetMode(mode gdnative.Int) {
-	//log.Println("Calling RigidBody2D.SetMode()")
+	// log.Println("Calling RigidBody2D.SetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1144,7 +1144,7 @@ func (o *RigidBody2D) SetMode(mode gdnative.Int) {
 	Args: [{ false physics_material_override PhysicsMaterial}], Returns: void
 */
 func (o *RigidBody2D) SetPhysicsMaterialOverride(physicsMaterialOverride PhysicsMaterialImplementer) {
-	//log.Println("Calling RigidBody2D.SetPhysicsMaterialOverride()")
+	// log.Println("Calling RigidBody2D.SetPhysicsMaterialOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1165,7 +1165,7 @@ func (o *RigidBody2D) SetPhysicsMaterialOverride(physicsMaterialOverride Physics
 	Args: [{ false sleeping bool}], Returns: void
 */
 func (o *RigidBody2D) SetSleeping(sleeping gdnative.Bool) {
-	//log.Println("Calling RigidBody2D.SetSleeping()")
+	// log.Println("Calling RigidBody2D.SetSleeping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1186,7 +1186,7 @@ func (o *RigidBody2D) SetSleeping(sleeping gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *RigidBody2D) SetUseCustomIntegrator(enable gdnative.Bool) {
-	//log.Println("Calling RigidBody2D.SetUseCustomIntegrator()")
+	// log.Println("Calling RigidBody2D.SetUseCustomIntegrator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1207,7 +1207,7 @@ func (o *RigidBody2D) SetUseCustomIntegrator(enable gdnative.Bool) {
 	Args: [{ false weight float}], Returns: void
 */
 func (o *RigidBody2D) SetWeight(weight gdnative.Real) {
-	//log.Println("Calling RigidBody2D.SetWeight()")
+	// log.Println("Calling RigidBody2D.SetWeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1228,7 +1228,7 @@ func (o *RigidBody2D) SetWeight(weight gdnative.Real) {
 	Args: [{ false motion Vector2} {True true infinite_inertia bool} {0.08 true margin float} {Null true result Physics2DTestMotionResult}], Returns: bool
 */
 func (o *RigidBody2D) TestMotion(motion gdnative.Vector2, infiniteInertia gdnative.Bool, margin gdnative.Real, result Physics2DTestMotionResultImplementer) gdnative.Bool {
-	//log.Println("Calling RigidBody2D.TestMotion()")
+	// log.Println("Calling RigidBody2D.TestMotion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)

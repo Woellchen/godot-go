@@ -47,7 +47,7 @@ func (o *VisualShaderNodeTransformFunc) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeTransformFunc::Function
 */
 func (o *VisualShaderNodeTransformFunc) GetFunction() VisualShaderNodeTransformFuncFunction {
-	//log.Println("Calling VisualShaderNodeTransformFunc.GetFunction()")
+	// log.Println("Calling VisualShaderNodeTransformFunc.GetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -70,7 +70,7 @@ func (o *VisualShaderNodeTransformFunc) GetFunction() VisualShaderNodeTransformF
 	Args: [{ false func int}], Returns: void
 */
 func (o *VisualShaderNodeTransformFunc) SetFunction(function gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeTransformFunc.SetFunction()")
+	// log.Println("Calling VisualShaderNodeTransformFunc.SetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

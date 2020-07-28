@@ -48,7 +48,7 @@ func (o *Curve) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *Curve) X_GetData() gdnative.Array {
-	//log.Println("Calling Curve.X_GetData()")
+	// log.Println("Calling Curve.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *Curve) X_GetData() gdnative.Array {
 	Args: [{ false data Array}], Returns: void
 */
 func (o *Curve) X_SetData(data gdnative.Array) {
-	//log.Println("Calling Curve.X_SetData()")
+	// log.Println("Calling Curve.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -92,7 +92,7 @@ func (o *Curve) X_SetData(data gdnative.Array) {
 	Args: [{ false position Vector2} {0 true left_tangent float} {0 true right_tangent float} {0 true left_mode int} {0 true right_mode int}], Returns: int
 */
 func (o *Curve) AddPoint(position gdnative.Vector2, leftTangent gdnative.Real, rightTangent gdnative.Real, leftMode gdnative.Int, rightMode gdnative.Int) gdnative.Int {
-	//log.Println("Calling Curve.AddPoint()")
+	// log.Println("Calling Curve.AddPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -120,7 +120,7 @@ func (o *Curve) AddPoint(position gdnative.Vector2, leftTangent gdnative.Real, r
 	Args: [], Returns: void
 */
 func (o *Curve) Bake() {
-	//log.Println("Calling Curve.Bake()")
+	// log.Println("Calling Curve.Bake()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *Curve) Bake() {
 	Args: [], Returns: void
 */
 func (o *Curve) CleanDupes() {
-	//log.Println("Calling Curve.CleanDupes()")
+	// log.Println("Calling Curve.CleanDupes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -160,7 +160,7 @@ func (o *Curve) CleanDupes() {
 	Args: [], Returns: void
 */
 func (o *Curve) ClearPoints() {
-	//log.Println("Calling Curve.ClearPoints()")
+	// log.Println("Calling Curve.ClearPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -180,7 +180,7 @@ func (o *Curve) ClearPoints() {
 	Args: [], Returns: int
 */
 func (o *Curve) GetBakeResolution() gdnative.Int {
-	//log.Println("Calling Curve.GetBakeResolution()")
+	// log.Println("Calling Curve.GetBakeResolution()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -203,7 +203,7 @@ func (o *Curve) GetBakeResolution() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *Curve) GetMaxValue() gdnative.Real {
-	//log.Println("Calling Curve.GetMaxValue()")
+	// log.Println("Calling Curve.GetMaxValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -226,7 +226,7 @@ func (o *Curve) GetMaxValue() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Curve) GetMinValue() gdnative.Real {
-	//log.Println("Calling Curve.GetMinValue()")
+	// log.Println("Calling Curve.GetMinValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -249,7 +249,7 @@ func (o *Curve) GetMinValue() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *Curve) GetPointCount() gdnative.Int {
-	//log.Println("Calling Curve.GetPointCount()")
+	// log.Println("Calling Curve.GetPointCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -272,7 +272,7 @@ func (o *Curve) GetPointCount() gdnative.Int {
 	Args: [{ false index int}], Returns: enum.Curve::TangentMode
 */
 func (o *Curve) GetPointLeftMode(index gdnative.Int) CurveTangentMode {
-	//log.Println("Calling Curve.GetPointLeftMode()")
+	// log.Println("Calling Curve.GetPointLeftMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -296,7 +296,7 @@ func (o *Curve) GetPointLeftMode(index gdnative.Int) CurveTangentMode {
 	Args: [{ false index int}], Returns: float
 */
 func (o *Curve) GetPointLeftTangent(index gdnative.Int) gdnative.Real {
-	//log.Println("Calling Curve.GetPointLeftTangent()")
+	// log.Println("Calling Curve.GetPointLeftTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -320,7 +320,7 @@ func (o *Curve) GetPointLeftTangent(index gdnative.Int) gdnative.Real {
 	Args: [{ false index int}], Returns: Vector2
 */
 func (o *Curve) GetPointPosition(index gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Curve.GetPointPosition()")
+	// log.Println("Calling Curve.GetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -344,7 +344,7 @@ func (o *Curve) GetPointPosition(index gdnative.Int) gdnative.Vector2 {
 	Args: [{ false index int}], Returns: enum.Curve::TangentMode
 */
 func (o *Curve) GetPointRightMode(index gdnative.Int) CurveTangentMode {
-	//log.Println("Calling Curve.GetPointRightMode()")
+	// log.Println("Calling Curve.GetPointRightMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -368,7 +368,7 @@ func (o *Curve) GetPointRightMode(index gdnative.Int) CurveTangentMode {
 	Args: [{ false index int}], Returns: float
 */
 func (o *Curve) GetPointRightTangent(index gdnative.Int) gdnative.Real {
-	//log.Println("Calling Curve.GetPointRightTangent()")
+	// log.Println("Calling Curve.GetPointRightTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -392,7 +392,7 @@ func (o *Curve) GetPointRightTangent(index gdnative.Int) gdnative.Real {
 	Args: [{ false offset float}], Returns: float
 */
 func (o *Curve) Interpolate(offset gdnative.Real) gdnative.Real {
-	//log.Println("Calling Curve.Interpolate()")
+	// log.Println("Calling Curve.Interpolate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -416,7 +416,7 @@ func (o *Curve) Interpolate(offset gdnative.Real) gdnative.Real {
 	Args: [{ false offset float}], Returns: float
 */
 func (o *Curve) InterpolateBaked(offset gdnative.Real) gdnative.Real {
-	//log.Println("Calling Curve.InterpolateBaked()")
+	// log.Println("Calling Curve.InterpolateBaked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -440,7 +440,7 @@ func (o *Curve) InterpolateBaked(offset gdnative.Real) gdnative.Real {
 	Args: [{ false index int}], Returns: void
 */
 func (o *Curve) RemovePoint(index gdnative.Int) {
-	//log.Println("Calling Curve.RemovePoint()")
+	// log.Println("Calling Curve.RemovePoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -461,7 +461,7 @@ func (o *Curve) RemovePoint(index gdnative.Int) {
 	Args: [{ false resolution int}], Returns: void
 */
 func (o *Curve) SetBakeResolution(resolution gdnative.Int) {
-	//log.Println("Calling Curve.SetBakeResolution()")
+	// log.Println("Calling Curve.SetBakeResolution()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -482,7 +482,7 @@ func (o *Curve) SetBakeResolution(resolution gdnative.Int) {
 	Args: [{ false max float}], Returns: void
 */
 func (o *Curve) SetMaxValue(max gdnative.Real) {
-	//log.Println("Calling Curve.SetMaxValue()")
+	// log.Println("Calling Curve.SetMaxValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -503,7 +503,7 @@ func (o *Curve) SetMaxValue(max gdnative.Real) {
 	Args: [{ false min float}], Returns: void
 */
 func (o *Curve) SetMinValue(min gdnative.Real) {
-	//log.Println("Calling Curve.SetMinValue()")
+	// log.Println("Calling Curve.SetMinValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -524,7 +524,7 @@ func (o *Curve) SetMinValue(min gdnative.Real) {
 	Args: [{ false index int} { false mode int}], Returns: void
 */
 func (o *Curve) SetPointLeftMode(index gdnative.Int, mode gdnative.Int) {
-	//log.Println("Calling Curve.SetPointLeftMode()")
+	// log.Println("Calling Curve.SetPointLeftMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -546,7 +546,7 @@ func (o *Curve) SetPointLeftMode(index gdnative.Int, mode gdnative.Int) {
 	Args: [{ false index int} { false tangent float}], Returns: void
 */
 func (o *Curve) SetPointLeftTangent(index gdnative.Int, tangent gdnative.Real) {
-	//log.Println("Calling Curve.SetPointLeftTangent()")
+	// log.Println("Calling Curve.SetPointLeftTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -568,7 +568,7 @@ func (o *Curve) SetPointLeftTangent(index gdnative.Int, tangent gdnative.Real) {
 	Args: [{ false index int} { false offset float}], Returns: int
 */
 func (o *Curve) SetPointOffset(index gdnative.Int, offset gdnative.Real) gdnative.Int {
-	//log.Println("Calling Curve.SetPointOffset()")
+	// log.Println("Calling Curve.SetPointOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -593,7 +593,7 @@ func (o *Curve) SetPointOffset(index gdnative.Int, offset gdnative.Real) gdnativ
 	Args: [{ false index int} { false mode int}], Returns: void
 */
 func (o *Curve) SetPointRightMode(index gdnative.Int, mode gdnative.Int) {
-	//log.Println("Calling Curve.SetPointRightMode()")
+	// log.Println("Calling Curve.SetPointRightMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -615,7 +615,7 @@ func (o *Curve) SetPointRightMode(index gdnative.Int, mode gdnative.Int) {
 	Args: [{ false index int} { false tangent float}], Returns: void
 */
 func (o *Curve) SetPointRightTangent(index gdnative.Int, tangent gdnative.Real) {
-	//log.Println("Calling Curve.SetPointRightTangent()")
+	// log.Println("Calling Curve.SetPointRightTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -637,7 +637,7 @@ func (o *Curve) SetPointRightTangent(index gdnative.Int, tangent gdnative.Real) 
 	Args: [{ false index int} { false y float}], Returns: void
 */
 func (o *Curve) SetPointValue(index gdnative.Int, y gdnative.Real) {
-	//log.Println("Calling Curve.SetPointValue()")
+	// log.Println("Calling Curve.SetPointValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

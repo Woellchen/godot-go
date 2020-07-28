@@ -39,7 +39,7 @@ func (o *VisualShaderNodeUniform) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualShaderNodeUniform) GetUniformName() gdnative.String {
-	//log.Println("Calling VisualShaderNodeUniform.GetUniformName()")
+	// log.Println("Calling VisualShaderNodeUniform.GetUniformName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeUniform) GetUniformName() gdnative.String {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualShaderNodeUniform) SetUniformName(name gdnative.String) {
-	//log.Println("Calling VisualShaderNodeUniform.SetUniformName()")
+	// log.Println("Calling VisualShaderNodeUniform.SetUniformName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *FileSystemDock) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_BwHistory() {
-	//log.Println("Calling FileSystemDock.X_BwHistory()")
+	// log.Println("Calling FileSystemDock.X_BwHistory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *FileSystemDock) X_BwHistory() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_DuplicateOperationConfirm() {
-	//log.Println("Calling FileSystemDock.X_DuplicateOperationConfirm()")
+	// log.Println("Calling FileSystemDock.X_DuplicateOperationConfirm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *FileSystemDock) X_DuplicateOperationConfirm() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_FeatureProfileChanged() {
-	//log.Println("Calling FileSystemDock.X_FeatureProfileChanged()")
+	// log.Println("Calling FileSystemDock.X_FeatureProfileChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *FileSystemDock) X_FeatureProfileChanged() {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *FileSystemDock) X_FileListActivateFile(arg0 gdnative.Int) {
-	//log.Println("Calling FileSystemDock.X_FileListActivateFile()")
+	// log.Println("Calling FileSystemDock.X_FileListActivateFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -120,7 +120,7 @@ func (o *FileSystemDock) X_FileListActivateFile(arg0 gdnative.Int) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *FileSystemDock) X_FileListGuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling FileSystemDock.X_FileListGuiInput()")
+	// log.Println("Calling FileSystemDock.X_FileListGuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -141,7 +141,7 @@ func (o *FileSystemDock) X_FileListGuiInput(arg0 InputEventImplementer) {
 	Args: [{ false option int}], Returns: void
 */
 func (o *FileSystemDock) X_FileListRmbOption(option gdnative.Int) {
-	//log.Println("Calling FileSystemDock.X_FileListRmbOption()")
+	// log.Println("Calling FileSystemDock.X_FileListRmbOption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -162,7 +162,7 @@ func (o *FileSystemDock) X_FileListRmbOption(option gdnative.Int) {
 	Args: [{ false arg0 Vector2}], Returns: void
 */
 func (o *FileSystemDock) X_FileListRmbPressed(arg0 gdnative.Vector2) {
-	//log.Println("Calling FileSystemDock.X_FileListRmbPressed()")
+	// log.Println("Calling FileSystemDock.X_FileListRmbPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -183,7 +183,7 @@ func (o *FileSystemDock) X_FileListRmbPressed(arg0 gdnative.Vector2) {
 	Args: [{ false arg0 int} { false arg1 Vector2}], Returns: void
 */
 func (o *FileSystemDock) X_FileListRmbSelect(arg0 gdnative.Int, arg1 gdnative.Vector2) {
-	//log.Println("Calling FileSystemDock.X_FileListRmbSelect()")
+	// log.Println("Calling FileSystemDock.X_FileListRmbSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -205,7 +205,7 @@ func (o *FileSystemDock) X_FileListRmbSelect(arg0 gdnative.Int, arg1 gdnative.Ve
 	Args: [{ false arg0 String} { false arg1 Texture} { false arg2 Texture} { false arg3 Variant}], Returns: void
 */
 func (o *FileSystemDock) X_FileListThumbnailDone(arg0 gdnative.String, arg1 TextureImplementer, arg2 TextureImplementer, arg3 gdnative.Variant) {
-	//log.Println("Calling FileSystemDock.X_FileListThumbnailDone()")
+	// log.Println("Calling FileSystemDock.X_FileListThumbnailDone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -229,7 +229,7 @@ func (o *FileSystemDock) X_FileListThumbnailDone(arg0 gdnative.String, arg1 Text
 	Args: [{ false arg0 int} { false arg1 bool}], Returns: void
 */
 func (o *FileSystemDock) X_FileMultiSelected(arg0 gdnative.Int, arg1 gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_FileMultiSelected()")
+	// log.Println("Calling FileSystemDock.X_FileMultiSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -251,7 +251,7 @@ func (o *FileSystemDock) X_FileMultiSelected(arg0 gdnative.Int, arg1 gdnative.Bo
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *FileSystemDock) X_FileRemoved(arg0 gdnative.String) {
-	//log.Println("Calling FileSystemDock.X_FileRemoved()")
+	// log.Println("Calling FileSystemDock.X_FileRemoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -272,7 +272,7 @@ func (o *FileSystemDock) X_FileRemoved(arg0 gdnative.String) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *FileSystemDock) X_FolderRemoved(arg0 gdnative.String) {
-	//log.Println("Calling FileSystemDock.X_FolderRemoved()")
+	// log.Println("Calling FileSystemDock.X_FolderRemoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -293,7 +293,7 @@ func (o *FileSystemDock) X_FolderRemoved(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_FsChanged() {
-	//log.Println("Calling FileSystemDock.X_FsChanged()")
+	// log.Println("Calling FileSystemDock.X_FsChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -313,7 +313,7 @@ func (o *FileSystemDock) X_FsChanged() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_FwHistory() {
-	//log.Println("Calling FileSystemDock.X_FwHistory()")
+	// log.Println("Calling FileSystemDock.X_FwHistory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -333,7 +333,7 @@ func (o *FileSystemDock) X_FwHistory() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_MakeDirConfirm() {
-	//log.Println("Calling FileSystemDock.X_MakeDirConfirm()")
+	// log.Println("Calling FileSystemDock.X_MakeDirConfirm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -353,7 +353,7 @@ func (o *FileSystemDock) X_MakeDirConfirm() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_MakeSceneConfirm() {
-	//log.Println("Calling FileSystemDock.X_MakeSceneConfirm()")
+	// log.Println("Calling FileSystemDock.X_MakeSceneConfirm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -373,7 +373,7 @@ func (o *FileSystemDock) X_MakeSceneConfirm() {
 	Args: [{ false to_path String} {False true overwrite bool}], Returns: void
 */
 func (o *FileSystemDock) X_MoveOperationConfirm(toPath gdnative.String, overwrite gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_MoveOperationConfirm()")
+	// log.Println("Calling FileSystemDock.X_MoveOperationConfirm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -395,7 +395,7 @@ func (o *FileSystemDock) X_MoveOperationConfirm(toPath gdnative.String, overwrit
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_MoveWithOverwrite() {
-	//log.Println("Calling FileSystemDock.X_MoveWithOverwrite()")
+	// log.Println("Calling FileSystemDock.X_MoveWithOverwrite()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -415,7 +415,7 @@ func (o *FileSystemDock) X_MoveWithOverwrite() {
 	Args: [{ false arg0 String} {False true arg1 bool}], Returns: void
 */
 func (o *FileSystemDock) X_NavigateToPath(arg0 gdnative.String, arg1 gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_NavigateToPath()")
+	// log.Println("Calling FileSystemDock.X_NavigateToPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -437,7 +437,7 @@ func (o *FileSystemDock) X_NavigateToPath(arg0 gdnative.String, arg1 gdnative.Bo
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *FileSystemDock) X_PreviewInvalidated(arg0 gdnative.String) {
-	//log.Println("Calling FileSystemDock.X_PreviewInvalidated()")
+	// log.Println("Calling FileSystemDock.X_PreviewInvalidated()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -458,7 +458,7 @@ func (o *FileSystemDock) X_PreviewInvalidated(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_RenameOperationConfirm() {
-	//log.Println("Calling FileSystemDock.X_RenameOperationConfirm()")
+	// log.Println("Calling FileSystemDock.X_RenameOperationConfirm()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -478,7 +478,7 @@ func (o *FileSystemDock) X_RenameOperationConfirm() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_Rescan() {
-	//log.Println("Calling FileSystemDock.X_Rescan()")
+	// log.Println("Calling FileSystemDock.X_Rescan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -498,7 +498,7 @@ func (o *FileSystemDock) X_Rescan() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_ResourceCreated() {
-	//log.Println("Calling FileSystemDock.X_ResourceCreated()")
+	// log.Println("Calling FileSystemDock.X_ResourceCreated()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -518,7 +518,7 @@ func (o *FileSystemDock) X_ResourceCreated() {
 	Args: [{ false arg0 String} { false arg1 Control}], Returns: void
 */
 func (o *FileSystemDock) X_SearchChanged(arg0 gdnative.String, arg1 ControlImplementer) {
-	//log.Println("Calling FileSystemDock.X_SearchChanged()")
+	// log.Println("Calling FileSystemDock.X_SearchChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -540,7 +540,7 @@ func (o *FileSystemDock) X_SearchChanged(arg0 gdnative.String, arg1 ControlImple
 	Args: [{ false arg0 String} { false arg1 bool}], Returns: void
 */
 func (o *FileSystemDock) X_SelectFile(arg0 gdnative.String, arg1 gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_SelectFile()")
+	// log.Println("Calling FileSystemDock.X_SelectFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -562,7 +562,7 @@ func (o *FileSystemDock) X_SelectFile(arg0 gdnative.String, arg1 gdnative.Bool) 
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_ToggleFileDisplay() {
-	//log.Println("Calling FileSystemDock.X_ToggleFileDisplay()")
+	// log.Println("Calling FileSystemDock.X_ToggleFileDisplay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -582,7 +582,7 @@ func (o *FileSystemDock) X_ToggleFileDisplay() {
 	Args: [{ false arg0 bool}], Returns: void
 */
 func (o *FileSystemDock) X_ToggleSplitMode(arg0 gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_ToggleSplitMode()")
+	// log.Println("Calling FileSystemDock.X_ToggleSplitMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -603,7 +603,7 @@ func (o *FileSystemDock) X_ToggleSplitMode(arg0 gdnative.Bool) {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_TreeActivateFile() {
-	//log.Println("Calling FileSystemDock.X_TreeActivateFile()")
+	// log.Println("Calling FileSystemDock.X_TreeActivateFile()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -623,7 +623,7 @@ func (o *FileSystemDock) X_TreeActivateFile() {
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_TreeEmptySelected() {
-	//log.Println("Calling FileSystemDock.X_TreeEmptySelected()")
+	// log.Println("Calling FileSystemDock.X_TreeEmptySelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -643,7 +643,7 @@ func (o *FileSystemDock) X_TreeEmptySelected() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *FileSystemDock) X_TreeGuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling FileSystemDock.X_TreeGuiInput()")
+	// log.Println("Calling FileSystemDock.X_TreeGuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -664,7 +664,7 @@ func (o *FileSystemDock) X_TreeGuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 Object} { false arg1 int} { false arg2 bool}], Returns: void
 */
 func (o *FileSystemDock) X_TreeMultiSelected(arg0 ObjectImplementer, arg1 gdnative.Int, arg2 gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_TreeMultiSelected()")
+	// log.Println("Calling FileSystemDock.X_TreeMultiSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -687,7 +687,7 @@ func (o *FileSystemDock) X_TreeMultiSelected(arg0 ObjectImplementer, arg1 gdnati
 	Args: [{ false arg0 Vector2}], Returns: void
 */
 func (o *FileSystemDock) X_TreeRmbEmpty(arg0 gdnative.Vector2) {
-	//log.Println("Calling FileSystemDock.X_TreeRmbEmpty()")
+	// log.Println("Calling FileSystemDock.X_TreeRmbEmpty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -708,7 +708,7 @@ func (o *FileSystemDock) X_TreeRmbEmpty(arg0 gdnative.Vector2) {
 	Args: [{ false option int}], Returns: void
 */
 func (o *FileSystemDock) X_TreeRmbOption(option gdnative.Int) {
-	//log.Println("Calling FileSystemDock.X_TreeRmbOption()")
+	// log.Println("Calling FileSystemDock.X_TreeRmbOption()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -729,7 +729,7 @@ func (o *FileSystemDock) X_TreeRmbOption(option gdnative.Int) {
 	Args: [{ false arg0 Vector2}], Returns: void
 */
 func (o *FileSystemDock) X_TreeRmbSelect(arg0 gdnative.Vector2) {
-	//log.Println("Calling FileSystemDock.X_TreeRmbSelect()")
+	// log.Println("Calling FileSystemDock.X_TreeRmbSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -750,7 +750,7 @@ func (o *FileSystemDock) X_TreeRmbSelect(arg0 gdnative.Vector2) {
 	Args: [{ false arg0 String} { false arg1 Texture} { false arg2 Texture} { false arg3 Variant}], Returns: void
 */
 func (o *FileSystemDock) X_TreeThumbnailDone(arg0 gdnative.String, arg1 TextureImplementer, arg2 TextureImplementer, arg3 gdnative.Variant) {
-	//log.Println("Calling FileSystemDock.X_TreeThumbnailDone()")
+	// log.Println("Calling FileSystemDock.X_TreeThumbnailDone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -774,7 +774,7 @@ func (o *FileSystemDock) X_TreeThumbnailDone(arg0 gdnative.String, arg1 TextureI
 	Args: [], Returns: void
 */
 func (o *FileSystemDock) X_UpdateImportDock() {
-	//log.Println("Calling FileSystemDock.X_UpdateImportDock()")
+	// log.Println("Calling FileSystemDock.X_UpdateImportDock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -794,7 +794,7 @@ func (o *FileSystemDock) X_UpdateImportDock() {
 	Args: [{ false arg0 PoolStringArray} { false arg1 bool} { false arg2 bool} { false arg3 bool}], Returns: void
 */
 func (o *FileSystemDock) X_UpdateTree(arg0 gdnative.PoolStringArray, arg1 gdnative.Bool, arg2 gdnative.Bool, arg3 gdnative.Bool) {
-	//log.Println("Calling FileSystemDock.X_UpdateTree()")
+	// log.Println("Calling FileSystemDock.X_UpdateTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -818,7 +818,7 @@ func (o *FileSystemDock) X_UpdateTree(arg0 gdnative.PoolStringArray, arg1 gdnati
 	Args: [{ false arg0 Vector2} { false arg1 Variant} { false arg2 Control}], Returns: bool
 */
 func (o *FileSystemDock) CanDropDataFw(arg0 gdnative.Vector2, arg1 gdnative.Variant, arg2 ControlImplementer) gdnative.Bool {
-	//log.Println("Calling FileSystemDock.CanDropDataFw()")
+	// log.Println("Calling FileSystemDock.CanDropDataFw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -844,7 +844,7 @@ func (o *FileSystemDock) CanDropDataFw(arg0 gdnative.Vector2, arg1 gdnative.Vari
 	Args: [{ false arg0 Vector2} { false arg1 Variant} { false arg2 Control}], Returns: void
 */
 func (o *FileSystemDock) DropDataFw(arg0 gdnative.Vector2, arg1 gdnative.Variant, arg2 ControlImplementer) {
-	//log.Println("Calling FileSystemDock.DropDataFw()")
+	// log.Println("Calling FileSystemDock.DropDataFw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -867,7 +867,7 @@ func (o *FileSystemDock) DropDataFw(arg0 gdnative.Vector2, arg1 gdnative.Variant
 	Args: [{ false arg0 Vector2} { false arg1 Control}], Returns: Variant
 */
 func (o *FileSystemDock) GetDragDataFw(arg0 gdnative.Vector2, arg1 ControlImplementer) gdnative.Variant {
-	//log.Println("Calling FileSystemDock.GetDragDataFw()")
+	// log.Println("Calling FileSystemDock.GetDragDataFw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -892,7 +892,7 @@ func (o *FileSystemDock) GetDragDataFw(arg0 gdnative.Vector2, arg1 ControlImplem
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *FileSystemDock) NavigateToPath(arg0 gdnative.String) {
-	//log.Println("Calling FileSystemDock.NavigateToPath()")
+	// log.Println("Calling FileSystemDock.NavigateToPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

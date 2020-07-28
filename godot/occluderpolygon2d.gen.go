@@ -48,7 +48,7 @@ func (o *OccluderPolygon2D) BaseClass() string {
 	Args: [], Returns: enum.OccluderPolygon2D::CullMode
 */
 func (o *OccluderPolygon2D) GetCullMode() OccluderPolygon2DCullMode {
-	//log.Println("Calling OccluderPolygon2D.GetCullMode()")
+	// log.Println("Calling OccluderPolygon2D.GetCullMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *OccluderPolygon2D) GetCullMode() OccluderPolygon2DCullMode {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *OccluderPolygon2D) GetPolygon() gdnative.PoolVector2Array {
-	//log.Println("Calling OccluderPolygon2D.GetPolygon()")
+	// log.Println("Calling OccluderPolygon2D.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *OccluderPolygon2D) GetPolygon() gdnative.PoolVector2Array {
 	Args: [], Returns: bool
 */
 func (o *OccluderPolygon2D) IsClosed() gdnative.Bool {
-	//log.Println("Calling OccluderPolygon2D.IsClosed()")
+	// log.Println("Calling OccluderPolygon2D.IsClosed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *OccluderPolygon2D) IsClosed() gdnative.Bool {
 	Args: [{ false closed bool}], Returns: void
 */
 func (o *OccluderPolygon2D) SetClosed(closed gdnative.Bool) {
-	//log.Println("Calling OccluderPolygon2D.SetClosed()")
+	// log.Println("Calling OccluderPolygon2D.SetClosed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -138,7 +138,7 @@ func (o *OccluderPolygon2D) SetClosed(closed gdnative.Bool) {
 	Args: [{ false cull_mode int}], Returns: void
 */
 func (o *OccluderPolygon2D) SetCullMode(cullMode gdnative.Int) {
-	//log.Println("Calling OccluderPolygon2D.SetCullMode()")
+	// log.Println("Calling OccluderPolygon2D.SetCullMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -159,7 +159,7 @@ func (o *OccluderPolygon2D) SetCullMode(cullMode gdnative.Int) {
 	Args: [{ false polygon PoolVector2Array}], Returns: void
 */
 func (o *OccluderPolygon2D) SetPolygon(polygon gdnative.PoolVector2Array) {
-	//log.Println("Calling OccluderPolygon2D.SetPolygon()")
+	// log.Println("Calling OccluderPolygon2D.SetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

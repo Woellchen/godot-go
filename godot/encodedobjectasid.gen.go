@@ -39,7 +39,7 @@ func (o *EncodedObjectAsID) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *EncodedObjectAsID) GetObjectId() gdnative.Int {
-	//log.Println("Calling EncodedObjectAsID.GetObjectId()")
+	// log.Println("Calling EncodedObjectAsID.GetObjectId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *EncodedObjectAsID) GetObjectId() gdnative.Int {
 	Args: [{ false id int}], Returns: void
 */
 func (o *EncodedObjectAsID) SetObjectId(id gdnative.Int) {
-	//log.Println("Calling EncodedObjectAsID.SetObjectId()")
+	// log.Println("Calling EncodedObjectAsID.SetObjectId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PanoramaSky) BaseClass() string {
 	Args: [], Returns: Texture
 */
 func (o *PanoramaSky) GetPanorama() TextureImplementer {
-	//log.Println("Calling PanoramaSky.GetPanorama()")
+	// log.Println("Calling PanoramaSky.GetPanorama()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *PanoramaSky) GetPanorama() TextureImplementer {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *PanoramaSky) SetPanorama(texture TextureImplementer) {
-	//log.Println("Calling PanoramaSky.SetPanorama()")
+	// log.Println("Calling PanoramaSky.SetPanorama()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

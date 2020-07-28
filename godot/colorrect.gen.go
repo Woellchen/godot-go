@@ -39,7 +39,7 @@ func (o *ColorRect) BaseClass() string {
 	Args: [], Returns: Color
 */
 func (o *ColorRect) GetFrameColor() gdnative.Color {
-	//log.Println("Calling ColorRect.GetFrameColor()")
+	// log.Println("Calling ColorRect.GetFrameColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ColorRect) GetFrameColor() gdnative.Color {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *ColorRect) SetFrameColor(color gdnative.Color) {
-	//log.Println("Calling ColorRect.SetFrameColor()")
+	// log.Println("Calling ColorRect.SetFrameColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

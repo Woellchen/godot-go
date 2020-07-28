@@ -39,7 +39,7 @@ func (o *ConfirmationDialog) BaseClass() string {
 	Args: [], Returns: Button
 */
 func (o *ConfirmationDialog) GetCancel() ButtonImplementer {
-	//log.Println("Calling ConfirmationDialog.GetCancel()")
+	// log.Println("Calling ConfirmationDialog.GetCancel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

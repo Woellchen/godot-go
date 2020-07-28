@@ -39,7 +39,7 @@ func (o *PolygonPathFinder) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *PolygonPathFinder) X_GetData() gdnative.Dictionary {
-	//log.Println("Calling PolygonPathFinder.X_GetData()")
+	// log.Println("Calling PolygonPathFinder.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PolygonPathFinder) X_GetData() gdnative.Dictionary {
 	Args: [{ false arg0 Dictionary}], Returns: void
 */
 func (o *PolygonPathFinder) X_SetData(arg0 gdnative.Dictionary) {
-	//log.Println("Calling PolygonPathFinder.X_SetData()")
+	// log.Println("Calling PolygonPathFinder.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *PolygonPathFinder) X_SetData(arg0 gdnative.Dictionary) {
 	Args: [{ false from Vector2} { false to Vector2}], Returns: PoolVector2Array
 */
 func (o *PolygonPathFinder) FindPath(from gdnative.Vector2, to gdnative.Vector2) gdnative.PoolVector2Array {
-	//log.Println("Calling PolygonPathFinder.FindPath()")
+	// log.Println("Calling PolygonPathFinder.FindPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -108,7 +108,7 @@ func (o *PolygonPathFinder) FindPath(from gdnative.Vector2, to gdnative.Vector2)
 	Args: [], Returns: Rect2
 */
 func (o *PolygonPathFinder) GetBounds() gdnative.Rect2 {
-	//log.Println("Calling PolygonPathFinder.GetBounds()")
+	// log.Println("Calling PolygonPathFinder.GetBounds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *PolygonPathFinder) GetBounds() gdnative.Rect2 {
 	Args: [{ false point Vector2}], Returns: Vector2
 */
 func (o *PolygonPathFinder) GetClosestPoint(point gdnative.Vector2) gdnative.Vector2 {
-	//log.Println("Calling PolygonPathFinder.GetClosestPoint()")
+	// log.Println("Calling PolygonPathFinder.GetClosestPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -155,7 +155,7 @@ func (o *PolygonPathFinder) GetClosestPoint(point gdnative.Vector2) gdnative.Vec
 	Args: [{ false from Vector2} { false to Vector2}], Returns: PoolVector2Array
 */
 func (o *PolygonPathFinder) GetIntersections(from gdnative.Vector2, to gdnative.Vector2) gdnative.PoolVector2Array {
-	//log.Println("Calling PolygonPathFinder.GetIntersections()")
+	// log.Println("Calling PolygonPathFinder.GetIntersections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -180,7 +180,7 @@ func (o *PolygonPathFinder) GetIntersections(from gdnative.Vector2, to gdnative.
 	Args: [{ false idx int}], Returns: float
 */
 func (o *PolygonPathFinder) GetPointPenalty(idx gdnative.Int) gdnative.Real {
-	//log.Println("Calling PolygonPathFinder.GetPointPenalty()")
+	// log.Println("Calling PolygonPathFinder.GetPointPenalty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -204,7 +204,7 @@ func (o *PolygonPathFinder) GetPointPenalty(idx gdnative.Int) gdnative.Real {
 	Args: [{ false point Vector2}], Returns: bool
 */
 func (o *PolygonPathFinder) IsPointInside(point gdnative.Vector2) gdnative.Bool {
-	//log.Println("Calling PolygonPathFinder.IsPointInside()")
+	// log.Println("Calling PolygonPathFinder.IsPointInside()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -228,7 +228,7 @@ func (o *PolygonPathFinder) IsPointInside(point gdnative.Vector2) gdnative.Bool 
 	Args: [{ false idx int} { false penalty float}], Returns: void
 */
 func (o *PolygonPathFinder) SetPointPenalty(idx gdnative.Int, penalty gdnative.Real) {
-	//log.Println("Calling PolygonPathFinder.SetPointPenalty()")
+	// log.Println("Calling PolygonPathFinder.SetPointPenalty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -250,7 +250,7 @@ func (o *PolygonPathFinder) SetPointPenalty(idx gdnative.Int, penalty gdnative.R
 	Args: [{ false points PoolVector2Array} { false connections PoolIntArray}], Returns: void
 */
 func (o *PolygonPathFinder) Setup(points gdnative.PoolVector2Array, connections gdnative.PoolIntArray) {
-	//log.Println("Calling PolygonPathFinder.Setup()")
+	// log.Println("Calling PolygonPathFinder.Setup()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

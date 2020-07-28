@@ -39,7 +39,7 @@ func (o *EditorInspectorPlugin) BaseClass() string {
 	Args: [{ false control Control}], Returns: void
 */
 func (o *EditorInspectorPlugin) AddCustomControl(control ControlImplementer) {
-	//log.Println("Calling EditorInspectorPlugin.AddCustomControl()")
+	// log.Println("Calling EditorInspectorPlugin.AddCustomControl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *EditorInspectorPlugin) AddCustomControl(control ControlImplementer) {
 	Args: [{ false property String} { false editor Control}], Returns: void
 */
 func (o *EditorInspectorPlugin) AddPropertyEditor(property gdnative.String, editor ControlImplementer) {
-	//log.Println("Calling EditorInspectorPlugin.AddPropertyEditor()")
+	// log.Println("Calling EditorInspectorPlugin.AddPropertyEditor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -82,7 +82,7 @@ func (o *EditorInspectorPlugin) AddPropertyEditor(property gdnative.String, edit
 	Args: [{ false label String} { false properties PoolStringArray} { false editor Control}], Returns: void
 */
 func (o *EditorInspectorPlugin) AddPropertyEditorForMultipleProperties(label gdnative.String, properties gdnative.PoolStringArray, editor ControlImplementer) {
-	//log.Println("Calling EditorInspectorPlugin.AddPropertyEditorForMultipleProperties()")
+	// log.Println("Calling EditorInspectorPlugin.AddPropertyEditorForMultipleProperties()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -105,7 +105,7 @@ func (o *EditorInspectorPlugin) AddPropertyEditorForMultipleProperties(label gdn
 	Args: [{ false object Object}], Returns: bool
 */
 func (o *EditorInspectorPlugin) CanHandle(object ObjectImplementer) gdnative.Bool {
-	//log.Println("Calling EditorInspectorPlugin.CanHandle()")
+	// log.Println("Calling EditorInspectorPlugin.CanHandle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *EditorInspectorPlugin) CanHandle(object ObjectImplementer) gdnative.Boo
 	Args: [{ false object Object}], Returns: void
 */
 func (o *EditorInspectorPlugin) ParseBegin(object ObjectImplementer) {
-	//log.Println("Calling EditorInspectorPlugin.ParseBegin()")
+	// log.Println("Calling EditorInspectorPlugin.ParseBegin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *EditorInspectorPlugin) ParseBegin(object ObjectImplementer) {
 	Args: [{ false object Object} { false category String}], Returns: void
 */
 func (o *EditorInspectorPlugin) ParseCategory(object ObjectImplementer, category gdnative.String) {
-	//log.Println("Calling EditorInspectorPlugin.ParseCategory()")
+	// log.Println("Calling EditorInspectorPlugin.ParseCategory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -172,7 +172,7 @@ func (o *EditorInspectorPlugin) ParseCategory(object ObjectImplementer, category
 	Args: [], Returns: void
 */
 func (o *EditorInspectorPlugin) ParseEnd() {
-	//log.Println("Calling EditorInspectorPlugin.ParseEnd()")
+	// log.Println("Calling EditorInspectorPlugin.ParseEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -192,7 +192,7 @@ func (o *EditorInspectorPlugin) ParseEnd() {
 	Args: [{ false object Object} { false type int} { false path String} { false hint int} { false hint_text String} { false usage int}], Returns: bool
 */
 func (o *EditorInspectorPlugin) ParseProperty(object ObjectImplementer, aType gdnative.Int, path gdnative.String, hint gdnative.Int, hintText gdnative.String, usage gdnative.Int) gdnative.Bool {
-	//log.Println("Calling EditorInspectorPlugin.ParseProperty()")
+	// log.Println("Calling EditorInspectorPlugin.ParseProperty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)

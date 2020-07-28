@@ -55,7 +55,7 @@ func (o *ItemList) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *ItemList) X_GetItems() gdnative.Array {
-	//log.Println("Calling ItemList.X_GetItems()")
+	// log.Println("Calling ItemList.X_GetItems()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -78,7 +78,7 @@ func (o *ItemList) X_GetItems() gdnative.Array {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *ItemList) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling ItemList.X_GuiInput()")
+	// log.Println("Calling ItemList.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -99,7 +99,7 @@ func (o *ItemList) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *ItemList) X_ScrollChanged(arg0 gdnative.Real) {
-	//log.Println("Calling ItemList.X_ScrollChanged()")
+	// log.Println("Calling ItemList.X_ScrollChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -120,7 +120,7 @@ func (o *ItemList) X_ScrollChanged(arg0 gdnative.Real) {
 	Args: [{ false arg0 Array}], Returns: void
 */
 func (o *ItemList) X_SetItems(arg0 gdnative.Array) {
-	//log.Println("Calling ItemList.X_SetItems()")
+	// log.Println("Calling ItemList.X_SetItems()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -141,7 +141,7 @@ func (o *ItemList) X_SetItems(arg0 gdnative.Array) {
 	Args: [{ false icon Texture} {True true selectable bool}], Returns: void
 */
 func (o *ItemList) AddIconItem(icon TextureImplementer, selectable gdnative.Bool) {
-	//log.Println("Calling ItemList.AddIconItem()")
+	// log.Println("Calling ItemList.AddIconItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -163,7 +163,7 @@ func (o *ItemList) AddIconItem(icon TextureImplementer, selectable gdnative.Bool
 	Args: [{ false text String} {Null true icon Texture} {True true selectable bool}], Returns: void
 */
 func (o *ItemList) AddItem(text gdnative.String, icon TextureImplementer, selectable gdnative.Bool) {
-	//log.Println("Calling ItemList.AddItem()")
+	// log.Println("Calling ItemList.AddItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -186,7 +186,7 @@ func (o *ItemList) AddItem(text gdnative.String, icon TextureImplementer, select
 	Args: [], Returns: void
 */
 func (o *ItemList) Clear() {
-	//log.Println("Calling ItemList.Clear()")
+	// log.Println("Calling ItemList.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -206,7 +206,7 @@ func (o *ItemList) Clear() {
 	Args: [], Returns: void
 */
 func (o *ItemList) EnsureCurrentIsVisible() {
-	//log.Println("Calling ItemList.EnsureCurrentIsVisible()")
+	// log.Println("Calling ItemList.EnsureCurrentIsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -226,7 +226,7 @@ func (o *ItemList) EnsureCurrentIsVisible() {
 	Args: [], Returns: bool
 */
 func (o *ItemList) GetAllowReselect() gdnative.Bool {
-	//log.Println("Calling ItemList.GetAllowReselect()")
+	// log.Println("Calling ItemList.GetAllowReselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -249,7 +249,7 @@ func (o *ItemList) GetAllowReselect() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ItemList) GetAllowRmbSelect() gdnative.Bool {
-	//log.Println("Calling ItemList.GetAllowRmbSelect()")
+	// log.Println("Calling ItemList.GetAllowRmbSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -272,7 +272,7 @@ func (o *ItemList) GetAllowRmbSelect() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *ItemList) GetFixedColumnWidth() gdnative.Int {
-	//log.Println("Calling ItemList.GetFixedColumnWidth()")
+	// log.Println("Calling ItemList.GetFixedColumnWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -295,7 +295,7 @@ func (o *ItemList) GetFixedColumnWidth() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *ItemList) GetFixedIconSize() gdnative.Vector2 {
-	//log.Println("Calling ItemList.GetFixedIconSize()")
+	// log.Println("Calling ItemList.GetFixedIconSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -318,7 +318,7 @@ func (o *ItemList) GetFixedIconSize() gdnative.Vector2 {
 	Args: [], Returns: enum.ItemList::IconMode
 */
 func (o *ItemList) GetIconMode() ItemListIconMode {
-	//log.Println("Calling ItemList.GetIconMode()")
+	// log.Println("Calling ItemList.GetIconMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -341,7 +341,7 @@ func (o *ItemList) GetIconMode() ItemListIconMode {
 	Args: [], Returns: float
 */
 func (o *ItemList) GetIconScale() gdnative.Real {
-	//log.Println("Calling ItemList.GetIconScale()")
+	// log.Println("Calling ItemList.GetIconScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -364,7 +364,7 @@ func (o *ItemList) GetIconScale() gdnative.Real {
 	Args: [{ false position Vector2} {False true exact bool}], Returns: int
 */
 func (o *ItemList) GetItemAtPosition(position gdnative.Vector2, exact gdnative.Bool) gdnative.Int {
-	//log.Println("Calling ItemList.GetItemAtPosition()")
+	// log.Println("Calling ItemList.GetItemAtPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -389,7 +389,7 @@ func (o *ItemList) GetItemAtPosition(position gdnative.Vector2, exact gdnative.B
 	Args: [], Returns: int
 */
 func (o *ItemList) GetItemCount() gdnative.Int {
-	//log.Println("Calling ItemList.GetItemCount()")
+	// log.Println("Calling ItemList.GetItemCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -412,7 +412,7 @@ func (o *ItemList) GetItemCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: Color
 */
 func (o *ItemList) GetItemCustomBgColor(idx gdnative.Int) gdnative.Color {
-	//log.Println("Calling ItemList.GetItemCustomBgColor()")
+	// log.Println("Calling ItemList.GetItemCustomBgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -436,7 +436,7 @@ func (o *ItemList) GetItemCustomBgColor(idx gdnative.Int) gdnative.Color {
 	Args: [{ false idx int}], Returns: Color
 */
 func (o *ItemList) GetItemCustomFgColor(idx gdnative.Int) gdnative.Color {
-	//log.Println("Calling ItemList.GetItemCustomFgColor()")
+	// log.Println("Calling ItemList.GetItemCustomFgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -460,7 +460,7 @@ func (o *ItemList) GetItemCustomFgColor(idx gdnative.Int) gdnative.Color {
 	Args: [{ false idx int}], Returns: Texture
 */
 func (o *ItemList) GetItemIcon(idx gdnative.Int) TextureImplementer {
-	//log.Println("Calling ItemList.GetItemIcon()")
+	// log.Println("Calling ItemList.GetItemIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -498,7 +498,7 @@ func (o *ItemList) GetItemIcon(idx gdnative.Int) TextureImplementer {
 	Args: [{ false idx int}], Returns: Color
 */
 func (o *ItemList) GetItemIconModulate(idx gdnative.Int) gdnative.Color {
-	//log.Println("Calling ItemList.GetItemIconModulate()")
+	// log.Println("Calling ItemList.GetItemIconModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -522,7 +522,7 @@ func (o *ItemList) GetItemIconModulate(idx gdnative.Int) gdnative.Color {
 	Args: [{ false idx int}], Returns: Rect2
 */
 func (o *ItemList) GetItemIconRegion(idx gdnative.Int) gdnative.Rect2 {
-	//log.Println("Calling ItemList.GetItemIconRegion()")
+	// log.Println("Calling ItemList.GetItemIconRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -546,7 +546,7 @@ func (o *ItemList) GetItemIconRegion(idx gdnative.Int) gdnative.Rect2 {
 	Args: [{ false idx int}], Returns: Variant
 */
 func (o *ItemList) GetItemMetadata(idx gdnative.Int) gdnative.Variant {
-	//log.Println("Calling ItemList.GetItemMetadata()")
+	// log.Println("Calling ItemList.GetItemMetadata()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -570,7 +570,7 @@ func (o *ItemList) GetItemMetadata(idx gdnative.Int) gdnative.Variant {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *ItemList) GetItemText(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling ItemList.GetItemText()")
+	// log.Println("Calling ItemList.GetItemText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -594,7 +594,7 @@ func (o *ItemList) GetItemText(idx gdnative.Int) gdnative.String {
 	Args: [{ false idx int}], Returns: String
 */
 func (o *ItemList) GetItemTooltip(idx gdnative.Int) gdnative.String {
-	//log.Println("Calling ItemList.GetItemTooltip()")
+	// log.Println("Calling ItemList.GetItemTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -618,7 +618,7 @@ func (o *ItemList) GetItemTooltip(idx gdnative.Int) gdnative.String {
 	Args: [], Returns: int
 */
 func (o *ItemList) GetMaxColumns() gdnative.Int {
-	//log.Println("Calling ItemList.GetMaxColumns()")
+	// log.Println("Calling ItemList.GetMaxColumns()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -641,7 +641,7 @@ func (o *ItemList) GetMaxColumns() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *ItemList) GetMaxTextLines() gdnative.Int {
-	//log.Println("Calling ItemList.GetMaxTextLines()")
+	// log.Println("Calling ItemList.GetMaxTextLines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -664,7 +664,7 @@ func (o *ItemList) GetMaxTextLines() gdnative.Int {
 	Args: [], Returns: enum.ItemList::SelectMode
 */
 func (o *ItemList) GetSelectMode() ItemListSelectMode {
-	//log.Println("Calling ItemList.GetSelectMode()")
+	// log.Println("Calling ItemList.GetSelectMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -687,7 +687,7 @@ func (o *ItemList) GetSelectMode() ItemListSelectMode {
 	Args: [], Returns: PoolIntArray
 */
 func (o *ItemList) GetSelectedItems() gdnative.PoolIntArray {
-	//log.Println("Calling ItemList.GetSelectedItems()")
+	// log.Println("Calling ItemList.GetSelectedItems()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -710,7 +710,7 @@ func (o *ItemList) GetSelectedItems() gdnative.PoolIntArray {
 	Args: [], Returns: VScrollBar
 */
 func (o *ItemList) GetVScroll() VScrollBarImplementer {
-	//log.Println("Calling ItemList.GetVScroll()")
+	// log.Println("Calling ItemList.GetVScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -747,7 +747,7 @@ func (o *ItemList) GetVScroll() VScrollBarImplementer {
 	Args: [], Returns: bool
 */
 func (o *ItemList) HasAutoHeight() gdnative.Bool {
-	//log.Println("Calling ItemList.HasAutoHeight()")
+	// log.Println("Calling ItemList.HasAutoHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -770,7 +770,7 @@ func (o *ItemList) HasAutoHeight() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ItemList) IsAnythingSelected() gdnative.Bool {
-	//log.Println("Calling ItemList.IsAnythingSelected()")
+	// log.Println("Calling ItemList.IsAnythingSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -793,7 +793,7 @@ func (o *ItemList) IsAnythingSelected() gdnative.Bool {
 	Args: [{ false idx int}], Returns: bool
 */
 func (o *ItemList) IsItemDisabled(idx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling ItemList.IsItemDisabled()")
+	// log.Println("Calling ItemList.IsItemDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -817,7 +817,7 @@ func (o *ItemList) IsItemDisabled(idx gdnative.Int) gdnative.Bool {
 	Args: [{ false idx int}], Returns: bool
 */
 func (o *ItemList) IsItemIconTransposed(idx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling ItemList.IsItemIconTransposed()")
+	// log.Println("Calling ItemList.IsItemIconTransposed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -841,7 +841,7 @@ func (o *ItemList) IsItemIconTransposed(idx gdnative.Int) gdnative.Bool {
 	Args: [{ false idx int}], Returns: bool
 */
 func (o *ItemList) IsItemSelectable(idx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling ItemList.IsItemSelectable()")
+	// log.Println("Calling ItemList.IsItemSelectable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -865,7 +865,7 @@ func (o *ItemList) IsItemSelectable(idx gdnative.Int) gdnative.Bool {
 	Args: [{ false idx int}], Returns: bool
 */
 func (o *ItemList) IsItemTooltipEnabled(idx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling ItemList.IsItemTooltipEnabled()")
+	// log.Println("Calling ItemList.IsItemTooltipEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -889,7 +889,7 @@ func (o *ItemList) IsItemTooltipEnabled(idx gdnative.Int) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *ItemList) IsSameColumnWidth() gdnative.Bool {
-	//log.Println("Calling ItemList.IsSameColumnWidth()")
+	// log.Println("Calling ItemList.IsSameColumnWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -912,7 +912,7 @@ func (o *ItemList) IsSameColumnWidth() gdnative.Bool {
 	Args: [{ false idx int}], Returns: bool
 */
 func (o *ItemList) IsSelected(idx gdnative.Int) gdnative.Bool {
-	//log.Println("Calling ItemList.IsSelected()")
+	// log.Println("Calling ItemList.IsSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -936,7 +936,7 @@ func (o *ItemList) IsSelected(idx gdnative.Int) gdnative.Bool {
 	Args: [{ false from_idx int} { false to_idx int}], Returns: void
 */
 func (o *ItemList) MoveItem(fromIdx gdnative.Int, toIdx gdnative.Int) {
-	//log.Println("Calling ItemList.MoveItem()")
+	// log.Println("Calling ItemList.MoveItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -958,7 +958,7 @@ func (o *ItemList) MoveItem(fromIdx gdnative.Int, toIdx gdnative.Int) {
 	Args: [{ false idx int}], Returns: void
 */
 func (o *ItemList) RemoveItem(idx gdnative.Int) {
-	//log.Println("Calling ItemList.RemoveItem()")
+	// log.Println("Calling ItemList.RemoveItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -979,7 +979,7 @@ func (o *ItemList) RemoveItem(idx gdnative.Int) {
 	Args: [{ false idx int} {True true single bool}], Returns: void
 */
 func (o *ItemList) Select(idx gdnative.Int, single gdnative.Bool) {
-	//log.Println("Calling ItemList.Select()")
+	// log.Println("Calling ItemList.Select()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1001,7 +1001,7 @@ func (o *ItemList) Select(idx gdnative.Int, single gdnative.Bool) {
 	Args: [{ false allow bool}], Returns: void
 */
 func (o *ItemList) SetAllowReselect(allow gdnative.Bool) {
-	//log.Println("Calling ItemList.SetAllowReselect()")
+	// log.Println("Calling ItemList.SetAllowReselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1022,7 +1022,7 @@ func (o *ItemList) SetAllowReselect(allow gdnative.Bool) {
 	Args: [{ false allow bool}], Returns: void
 */
 func (o *ItemList) SetAllowRmbSelect(allow gdnative.Bool) {
-	//log.Println("Calling ItemList.SetAllowRmbSelect()")
+	// log.Println("Calling ItemList.SetAllowRmbSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1043,7 +1043,7 @@ func (o *ItemList) SetAllowRmbSelect(allow gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ItemList) SetAutoHeight(enable gdnative.Bool) {
-	//log.Println("Calling ItemList.SetAutoHeight()")
+	// log.Println("Calling ItemList.SetAutoHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1064,7 +1064,7 @@ func (o *ItemList) SetAutoHeight(enable gdnative.Bool) {
 	Args: [{ false width int}], Returns: void
 */
 func (o *ItemList) SetFixedColumnWidth(width gdnative.Int) {
-	//log.Println("Calling ItemList.SetFixedColumnWidth()")
+	// log.Println("Calling ItemList.SetFixedColumnWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1085,7 +1085,7 @@ func (o *ItemList) SetFixedColumnWidth(width gdnative.Int) {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *ItemList) SetFixedIconSize(size gdnative.Vector2) {
-	//log.Println("Calling ItemList.SetFixedIconSize()")
+	// log.Println("Calling ItemList.SetFixedIconSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1106,7 +1106,7 @@ func (o *ItemList) SetFixedIconSize(size gdnative.Vector2) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *ItemList) SetIconMode(mode gdnative.Int) {
-	//log.Println("Calling ItemList.SetIconMode()")
+	// log.Println("Calling ItemList.SetIconMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1127,7 +1127,7 @@ func (o *ItemList) SetIconMode(mode gdnative.Int) {
 	Args: [{ false scale float}], Returns: void
 */
 func (o *ItemList) SetIconScale(scale gdnative.Real) {
-	//log.Println("Calling ItemList.SetIconScale()")
+	// log.Println("Calling ItemList.SetIconScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1148,7 +1148,7 @@ func (o *ItemList) SetIconScale(scale gdnative.Real) {
 	Args: [{ false idx int} { false custom_bg_color Color}], Returns: void
 */
 func (o *ItemList) SetItemCustomBgColor(idx gdnative.Int, customBgColor gdnative.Color) {
-	//log.Println("Calling ItemList.SetItemCustomBgColor()")
+	// log.Println("Calling ItemList.SetItemCustomBgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1170,7 +1170,7 @@ func (o *ItemList) SetItemCustomBgColor(idx gdnative.Int, customBgColor gdnative
 	Args: [{ false idx int} { false custom_fg_color Color}], Returns: void
 */
 func (o *ItemList) SetItemCustomFgColor(idx gdnative.Int, customFgColor gdnative.Color) {
-	//log.Println("Calling ItemList.SetItemCustomFgColor()")
+	// log.Println("Calling ItemList.SetItemCustomFgColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1192,7 +1192,7 @@ func (o *ItemList) SetItemCustomFgColor(idx gdnative.Int, customFgColor gdnative
 	Args: [{ false idx int} { false disabled bool}], Returns: void
 */
 func (o *ItemList) SetItemDisabled(idx gdnative.Int, disabled gdnative.Bool) {
-	//log.Println("Calling ItemList.SetItemDisabled()")
+	// log.Println("Calling ItemList.SetItemDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1214,7 +1214,7 @@ func (o *ItemList) SetItemDisabled(idx gdnative.Int, disabled gdnative.Bool) {
 	Args: [{ false idx int} { false icon Texture}], Returns: void
 */
 func (o *ItemList) SetItemIcon(idx gdnative.Int, icon TextureImplementer) {
-	//log.Println("Calling ItemList.SetItemIcon()")
+	// log.Println("Calling ItemList.SetItemIcon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1236,7 +1236,7 @@ func (o *ItemList) SetItemIcon(idx gdnative.Int, icon TextureImplementer) {
 	Args: [{ false idx int} { false modulate Color}], Returns: void
 */
 func (o *ItemList) SetItemIconModulate(idx gdnative.Int, modulate gdnative.Color) {
-	//log.Println("Calling ItemList.SetItemIconModulate()")
+	// log.Println("Calling ItemList.SetItemIconModulate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1258,7 +1258,7 @@ func (o *ItemList) SetItemIconModulate(idx gdnative.Int, modulate gdnative.Color
 	Args: [{ false idx int} { false rect Rect2}], Returns: void
 */
 func (o *ItemList) SetItemIconRegion(idx gdnative.Int, rect gdnative.Rect2) {
-	//log.Println("Calling ItemList.SetItemIconRegion()")
+	// log.Println("Calling ItemList.SetItemIconRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1280,7 +1280,7 @@ func (o *ItemList) SetItemIconRegion(idx gdnative.Int, rect gdnative.Rect2) {
 	Args: [{ false idx int} { false transposed bool}], Returns: void
 */
 func (o *ItemList) SetItemIconTransposed(idx gdnative.Int, transposed gdnative.Bool) {
-	//log.Println("Calling ItemList.SetItemIconTransposed()")
+	// log.Println("Calling ItemList.SetItemIconTransposed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1302,7 +1302,7 @@ func (o *ItemList) SetItemIconTransposed(idx gdnative.Int, transposed gdnative.B
 	Args: [{ false idx int} { false metadata Variant}], Returns: void
 */
 func (o *ItemList) SetItemMetadata(idx gdnative.Int, metadata gdnative.Variant) {
-	//log.Println("Calling ItemList.SetItemMetadata()")
+	// log.Println("Calling ItemList.SetItemMetadata()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1324,7 +1324,7 @@ func (o *ItemList) SetItemMetadata(idx gdnative.Int, metadata gdnative.Variant) 
 	Args: [{ false idx int} { false selectable bool}], Returns: void
 */
 func (o *ItemList) SetItemSelectable(idx gdnative.Int, selectable gdnative.Bool) {
-	//log.Println("Calling ItemList.SetItemSelectable()")
+	// log.Println("Calling ItemList.SetItemSelectable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1346,7 +1346,7 @@ func (o *ItemList) SetItemSelectable(idx gdnative.Int, selectable gdnative.Bool)
 	Args: [{ false idx int} { false text String}], Returns: void
 */
 func (o *ItemList) SetItemText(idx gdnative.Int, text gdnative.String) {
-	//log.Println("Calling ItemList.SetItemText()")
+	// log.Println("Calling ItemList.SetItemText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1368,7 +1368,7 @@ func (o *ItemList) SetItemText(idx gdnative.Int, text gdnative.String) {
 	Args: [{ false idx int} { false tooltip String}], Returns: void
 */
 func (o *ItemList) SetItemTooltip(idx gdnative.Int, tooltip gdnative.String) {
-	//log.Println("Calling ItemList.SetItemTooltip()")
+	// log.Println("Calling ItemList.SetItemTooltip()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1390,7 +1390,7 @@ func (o *ItemList) SetItemTooltip(idx gdnative.Int, tooltip gdnative.String) {
 	Args: [{ false idx int} { false enable bool}], Returns: void
 */
 func (o *ItemList) SetItemTooltipEnabled(idx gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling ItemList.SetItemTooltipEnabled()")
+	// log.Println("Calling ItemList.SetItemTooltipEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1412,7 +1412,7 @@ func (o *ItemList) SetItemTooltipEnabled(idx gdnative.Int, enable gdnative.Bool)
 	Args: [{ false amount int}], Returns: void
 */
 func (o *ItemList) SetMaxColumns(amount gdnative.Int) {
-	//log.Println("Calling ItemList.SetMaxColumns()")
+	// log.Println("Calling ItemList.SetMaxColumns()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1433,7 +1433,7 @@ func (o *ItemList) SetMaxColumns(amount gdnative.Int) {
 	Args: [{ false lines int}], Returns: void
 */
 func (o *ItemList) SetMaxTextLines(lines gdnative.Int) {
-	//log.Println("Calling ItemList.SetMaxTextLines()")
+	// log.Println("Calling ItemList.SetMaxTextLines()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1454,7 +1454,7 @@ func (o *ItemList) SetMaxTextLines(lines gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *ItemList) SetSameColumnWidth(enable gdnative.Bool) {
-	//log.Println("Calling ItemList.SetSameColumnWidth()")
+	// log.Println("Calling ItemList.SetSameColumnWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1475,7 +1475,7 @@ func (o *ItemList) SetSameColumnWidth(enable gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *ItemList) SetSelectMode(mode gdnative.Int) {
-	//log.Println("Calling ItemList.SetSelectMode()")
+	// log.Println("Calling ItemList.SetSelectMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1496,7 +1496,7 @@ func (o *ItemList) SetSelectMode(mode gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *ItemList) SortItemsByText() {
-	//log.Println("Calling ItemList.SortItemsByText()")
+	// log.Println("Calling ItemList.SortItemsByText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1516,7 +1516,7 @@ func (o *ItemList) SortItemsByText() {
 	Args: [{ false idx int}], Returns: void
 */
 func (o *ItemList) Unselect(idx gdnative.Int) {
-	//log.Println("Calling ItemList.Unselect()")
+	// log.Println("Calling ItemList.Unselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1537,7 +1537,7 @@ func (o *ItemList) Unselect(idx gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *ItemList) UnselectAll() {
-	//log.Println("Calling ItemList.UnselectAll()")
+	// log.Println("Calling ItemList.UnselectAll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

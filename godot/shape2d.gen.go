@@ -39,7 +39,7 @@ func (o *Shape2D) BaseClass() string {
 	Args: [{ false local_xform Transform2D} { false with_shape Shape2D} { false shape_xform Transform2D}], Returns: bool
 */
 func (o *Shape2D) Collide(localXform gdnative.Transform2D, withShape Shape2DImplementer, shapeXform gdnative.Transform2D) gdnative.Bool {
-	//log.Println("Calling Shape2D.Collide()")
+	// log.Println("Calling Shape2D.Collide()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -65,7 +65,7 @@ func (o *Shape2D) Collide(localXform gdnative.Transform2D, withShape Shape2DImpl
 	Args: [{ false local_xform Transform2D} { false with_shape Shape2D} { false shape_xform Transform2D}], Returns: Array
 */
 func (o *Shape2D) CollideAndGetContacts(localXform gdnative.Transform2D, withShape Shape2DImplementer, shapeXform gdnative.Transform2D) gdnative.Array {
-	//log.Println("Calling Shape2D.CollideAndGetContacts()")
+	// log.Println("Calling Shape2D.CollideAndGetContacts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -91,7 +91,7 @@ func (o *Shape2D) CollideAndGetContacts(localXform gdnative.Transform2D, withSha
 	Args: [{ false local_xform Transform2D} { false local_motion Vector2} { false with_shape Shape2D} { false shape_xform Transform2D} { false shape_motion Vector2}], Returns: bool
 */
 func (o *Shape2D) CollideWithMotion(localXform gdnative.Transform2D, localMotion gdnative.Vector2, withShape Shape2DImplementer, shapeXform gdnative.Transform2D, shapeMotion gdnative.Vector2) gdnative.Bool {
-	//log.Println("Calling Shape2D.CollideWithMotion()")
+	// log.Println("Calling Shape2D.CollideWithMotion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -119,7 +119,7 @@ func (o *Shape2D) CollideWithMotion(localXform gdnative.Transform2D, localMotion
 	Args: [{ false local_xform Transform2D} { false local_motion Vector2} { false with_shape Shape2D} { false shape_xform Transform2D} { false shape_motion Vector2}], Returns: Array
 */
 func (o *Shape2D) CollideWithMotionAndGetContacts(localXform gdnative.Transform2D, localMotion gdnative.Vector2, withShape Shape2DImplementer, shapeXform gdnative.Transform2D, shapeMotion gdnative.Vector2) gdnative.Array {
-	//log.Println("Calling Shape2D.CollideWithMotionAndGetContacts()")
+	// log.Println("Calling Shape2D.CollideWithMotionAndGetContacts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -147,7 +147,7 @@ func (o *Shape2D) CollideWithMotionAndGetContacts(localXform gdnative.Transform2
 	Args: [{ false canvas_item RID} { false color Color}], Returns: void
 */
 func (o *Shape2D) Draw(canvasItem gdnative.Rid, color gdnative.Color) {
-	//log.Println("Calling Shape2D.Draw()")
+	// log.Println("Calling Shape2D.Draw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -169,7 +169,7 @@ func (o *Shape2D) Draw(canvasItem gdnative.Rid, color gdnative.Color) {
 	Args: [], Returns: float
 */
 func (o *Shape2D) GetCustomSolverBias() gdnative.Real {
-	//log.Println("Calling Shape2D.GetCustomSolverBias()")
+	// log.Println("Calling Shape2D.GetCustomSolverBias()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -192,7 +192,7 @@ func (o *Shape2D) GetCustomSolverBias() gdnative.Real {
 	Args: [{ false bias float}], Returns: void
 */
 func (o *Shape2D) SetCustomSolverBias(bias gdnative.Real) {
-	//log.Println("Calling Shape2D.SetCustomSolverBias()")
+	// log.Println("Calling Shape2D.SetCustomSolverBias()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

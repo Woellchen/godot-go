@@ -39,7 +39,7 @@ func (o *WebSocketServer) BaseClass() string {
 	Args: [{ false id int} {1000 true code int} { true reason String}], Returns: void
 */
 func (o *WebSocketServer) DisconnectPeer(id gdnative.Int, code gdnative.Int, reason gdnative.String) {
-	//log.Println("Calling WebSocketServer.DisconnectPeer()")
+	// log.Println("Calling WebSocketServer.DisconnectPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -62,7 +62,7 @@ func (o *WebSocketServer) DisconnectPeer(id gdnative.Int, code gdnative.Int, rea
 	Args: [], Returns: String
 */
 func (o *WebSocketServer) GetBindIp() gdnative.String {
-	//log.Println("Calling WebSocketServer.GetBindIp()")
+	// log.Println("Calling WebSocketServer.GetBindIp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *WebSocketServer) GetBindIp() gdnative.String {
 	Args: [], Returns: X509Certificate
 */
 func (o *WebSocketServer) GetCaChain() X509CertificateImplementer {
-	//log.Println("Calling WebSocketServer.GetCaChain()")
+	// log.Println("Calling WebSocketServer.GetCaChain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *WebSocketServer) GetCaChain() X509CertificateImplementer {
 	Args: [{ false id int}], Returns: String
 */
 func (o *WebSocketServer) GetPeerAddress(id gdnative.Int) gdnative.String {
-	//log.Println("Calling WebSocketServer.GetPeerAddress()")
+	// log.Println("Calling WebSocketServer.GetPeerAddress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +146,7 @@ func (o *WebSocketServer) GetPeerAddress(id gdnative.Int) gdnative.String {
 	Args: [{ false id int}], Returns: int
 */
 func (o *WebSocketServer) GetPeerPort(id gdnative.Int) gdnative.Int {
-	//log.Println("Calling WebSocketServer.GetPeerPort()")
+	// log.Println("Calling WebSocketServer.GetPeerPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -170,7 +170,7 @@ func (o *WebSocketServer) GetPeerPort(id gdnative.Int) gdnative.Int {
 	Args: [], Returns: CryptoKey
 */
 func (o *WebSocketServer) GetPrivateKey() CryptoKeyImplementer {
-	//log.Println("Calling WebSocketServer.GetPrivateKey()")
+	// log.Println("Calling WebSocketServer.GetPrivateKey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -207,7 +207,7 @@ func (o *WebSocketServer) GetPrivateKey() CryptoKeyImplementer {
 	Args: [], Returns: X509Certificate
 */
 func (o *WebSocketServer) GetSslCertificate() X509CertificateImplementer {
-	//log.Println("Calling WebSocketServer.GetSslCertificate()")
+	// log.Println("Calling WebSocketServer.GetSslCertificate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -244,7 +244,7 @@ func (o *WebSocketServer) GetSslCertificate() X509CertificateImplementer {
 	Args: [{ false id int}], Returns: bool
 */
 func (o *WebSocketServer) HasPeer(id gdnative.Int) gdnative.Bool {
-	//log.Println("Calling WebSocketServer.HasPeer()")
+	// log.Println("Calling WebSocketServer.HasPeer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -268,7 +268,7 @@ func (o *WebSocketServer) HasPeer(id gdnative.Int) gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *WebSocketServer) IsListening() gdnative.Bool {
-	//log.Println("Calling WebSocketServer.IsListening()")
+	// log.Println("Calling WebSocketServer.IsListening()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -291,7 +291,7 @@ func (o *WebSocketServer) IsListening() gdnative.Bool {
 	Args: [{ false port int} {[] true protocols PoolStringArray} {False true gd_mp_api bool}], Returns: enum.Error
 */
 func (o *WebSocketServer) Listen(port gdnative.Int, protocols gdnative.PoolStringArray, gdMpApi gdnative.Bool) gdnative.Error {
-	//log.Println("Calling WebSocketServer.Listen()")
+	// log.Println("Calling WebSocketServer.Listen()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -317,7 +317,7 @@ func (o *WebSocketServer) Listen(port gdnative.Int, protocols gdnative.PoolStrin
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *WebSocketServer) SetBindIp(arg0 gdnative.String) {
-	//log.Println("Calling WebSocketServer.SetBindIp()")
+	// log.Println("Calling WebSocketServer.SetBindIp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -338,7 +338,7 @@ func (o *WebSocketServer) SetBindIp(arg0 gdnative.String) {
 	Args: [{ false arg0 X509Certificate}], Returns: void
 */
 func (o *WebSocketServer) SetCaChain(arg0 X509CertificateImplementer) {
-	//log.Println("Calling WebSocketServer.SetCaChain()")
+	// log.Println("Calling WebSocketServer.SetCaChain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -359,7 +359,7 @@ func (o *WebSocketServer) SetCaChain(arg0 X509CertificateImplementer) {
 	Args: [{ false arg0 CryptoKey}], Returns: void
 */
 func (o *WebSocketServer) SetPrivateKey(arg0 CryptoKeyImplementer) {
-	//log.Println("Calling WebSocketServer.SetPrivateKey()")
+	// log.Println("Calling WebSocketServer.SetPrivateKey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -380,7 +380,7 @@ func (o *WebSocketServer) SetPrivateKey(arg0 CryptoKeyImplementer) {
 	Args: [{ false arg0 X509Certificate}], Returns: void
 */
 func (o *WebSocketServer) SetSslCertificate(arg0 X509CertificateImplementer) {
-	//log.Println("Calling WebSocketServer.SetSslCertificate()")
+	// log.Println("Calling WebSocketServer.SetSslCertificate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -401,7 +401,7 @@ func (o *WebSocketServer) SetSslCertificate(arg0 X509CertificateImplementer) {
 	Args: [], Returns: void
 */
 func (o *WebSocketServer) Stop() {
-	//log.Println("Calling WebSocketServer.Stop()")
+	// log.Println("Calling WebSocketServer.Stop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

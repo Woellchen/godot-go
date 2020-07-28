@@ -39,7 +39,7 @@ func (o *InputEventGesture) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventGesture) GetPosition() gdnative.Vector2 {
-	//log.Println("Calling InputEventGesture.GetPosition()")
+	// log.Println("Calling InputEventGesture.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventGesture) GetPosition() gdnative.Vector2 {
 	Args: [{ false position Vector2}], Returns: void
 */
 func (o *InputEventGesture) SetPosition(position gdnative.Vector2) {
-	//log.Println("Calling InputEventGesture.SetPosition()")
+	// log.Println("Calling InputEventGesture.SetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PhysicsShapeQueryResult) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *PhysicsShapeQueryResult) GetResultCount() gdnative.Int {
-	//log.Println("Calling PhysicsShapeQueryResult.GetResultCount()")
+	// log.Println("Calling PhysicsShapeQueryResult.GetResultCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PhysicsShapeQueryResult) GetResultCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: Object
 */
 func (o *PhysicsShapeQueryResult) GetResultObject(idx gdnative.Int) ObjectImplementer {
-	//log.Println("Calling PhysicsShapeQueryResult.GetResultObject()")
+	// log.Println("Calling PhysicsShapeQueryResult.GetResultObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -100,7 +100,7 @@ func (o *PhysicsShapeQueryResult) GetResultObject(idx gdnative.Int) ObjectImplem
 	Args: [{ false idx int}], Returns: int
 */
 func (o *PhysicsShapeQueryResult) GetResultObjectId(idx gdnative.Int) gdnative.Int {
-	//log.Println("Calling PhysicsShapeQueryResult.GetResultObjectId()")
+	// log.Println("Calling PhysicsShapeQueryResult.GetResultObjectId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -124,7 +124,7 @@ func (o *PhysicsShapeQueryResult) GetResultObjectId(idx gdnative.Int) gdnative.I
 	Args: [{ false idx int}], Returns: int
 */
 func (o *PhysicsShapeQueryResult) GetResultObjectShape(idx gdnative.Int) gdnative.Int {
-	//log.Println("Calling PhysicsShapeQueryResult.GetResultObjectShape()")
+	// log.Println("Calling PhysicsShapeQueryResult.GetResultObjectShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -148,7 +148,7 @@ func (o *PhysicsShapeQueryResult) GetResultObjectShape(idx gdnative.Int) gdnativ
 	Args: [{ false idx int}], Returns: RID
 */
 func (o *PhysicsShapeQueryResult) GetResultRid(idx gdnative.Int) gdnative.Rid {
-	//log.Println("Calling PhysicsShapeQueryResult.GetResultRid()")
+	// log.Println("Calling PhysicsShapeQueryResult.GetResultRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

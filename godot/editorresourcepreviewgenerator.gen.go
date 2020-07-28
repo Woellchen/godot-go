@@ -39,7 +39,7 @@ func (o *EditorResourcePreviewGenerator) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *EditorResourcePreviewGenerator) CanGenerateSmallPreview() gdnative.Bool {
-	//log.Println("Calling EditorResourcePreviewGenerator.CanGenerateSmallPreview()")
+	// log.Println("Calling EditorResourcePreviewGenerator.CanGenerateSmallPreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *EditorResourcePreviewGenerator) CanGenerateSmallPreview() gdnative.Bool
 	Args: [{ false from Resource} { false size Vector2}], Returns: Texture
 */
 func (o *EditorResourcePreviewGenerator) Generate(from ResourceImplementer, size gdnative.Vector2) TextureImplementer {
-	//log.Println("Calling EditorResourcePreviewGenerator.Generate()")
+	// log.Println("Calling EditorResourcePreviewGenerator.Generate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -101,7 +101,7 @@ func (o *EditorResourcePreviewGenerator) Generate(from ResourceImplementer, size
 	Args: [{ false path String} { false size Vector2}], Returns: Texture
 */
 func (o *EditorResourcePreviewGenerator) GenerateFromPath(path gdnative.String, size gdnative.Vector2) TextureImplementer {
-	//log.Println("Calling EditorResourcePreviewGenerator.GenerateFromPath()")
+	// log.Println("Calling EditorResourcePreviewGenerator.GenerateFromPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -140,7 +140,7 @@ func (o *EditorResourcePreviewGenerator) GenerateFromPath(path gdnative.String, 
 	Args: [], Returns: bool
 */
 func (o *EditorResourcePreviewGenerator) GenerateSmallPreviewAutomatically() gdnative.Bool {
-	//log.Println("Calling EditorResourcePreviewGenerator.GenerateSmallPreviewAutomatically()")
+	// log.Println("Calling EditorResourcePreviewGenerator.GenerateSmallPreviewAutomatically()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *EditorResourcePreviewGenerator) GenerateSmallPreviewAutomatically() gdn
 	Args: [{ false type String}], Returns: bool
 */
 func (o *EditorResourcePreviewGenerator) Handles(aType gdnative.String) gdnative.Bool {
-	//log.Println("Calling EditorResourcePreviewGenerator.Handles()")
+	// log.Println("Calling EditorResourcePreviewGenerator.Handles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

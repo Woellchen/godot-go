@@ -75,7 +75,7 @@ func (o *resourceSaver) BaseClass() string {
 */
 func (o *resourceSaver) GetRecognizedExtensions(aType ResourceImplementer) gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceSaver.GetRecognizedExtensions()")
+	// log.Println("Calling _ResourceSaver.GetRecognizedExtensions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -100,7 +100,7 @@ func (o *resourceSaver) GetRecognizedExtensions(aType ResourceImplementer) gdnat
 */
 func (o *resourceSaver) Save(path gdnative.String, resource ResourceImplementer, flags gdnative.Int) gdnative.Error {
 	o.ensureSingleton()
-	//log.Println("Calling _ResourceSaver.Save()")
+	// log.Println("Calling _ResourceSaver.Save()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

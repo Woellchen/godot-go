@@ -39,7 +39,7 @@ func (o *RectangleShape2D) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *RectangleShape2D) GetExtents() gdnative.Vector2 {
-	//log.Println("Calling RectangleShape2D.GetExtents()")
+	// log.Println("Calling RectangleShape2D.GetExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *RectangleShape2D) GetExtents() gdnative.Vector2 {
 	Args: [{ false extents Vector2}], Returns: void
 */
 func (o *RectangleShape2D) SetExtents(extents gdnative.Vector2) {
-	//log.Println("Calling RectangleShape2D.SetExtents()")
+	// log.Println("Calling RectangleShape2D.SetExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

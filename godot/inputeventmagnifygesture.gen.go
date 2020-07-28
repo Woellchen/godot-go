@@ -39,7 +39,7 @@ func (o *InputEventMagnifyGesture) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *InputEventMagnifyGesture) GetFactor() gdnative.Real {
-	//log.Println("Calling InputEventMagnifyGesture.GetFactor()")
+	// log.Println("Calling InputEventMagnifyGesture.GetFactor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventMagnifyGesture) GetFactor() gdnative.Real {
 	Args: [{ false factor float}], Returns: void
 */
 func (o *InputEventMagnifyGesture) SetFactor(factor gdnative.Real) {
-	//log.Println("Calling InputEventMagnifyGesture.SetFactor()")
+	// log.Println("Calling InputEventMagnifyGesture.SetFactor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

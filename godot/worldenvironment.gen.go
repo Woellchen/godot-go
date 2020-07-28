@@ -39,7 +39,7 @@ func (o *WorldEnvironment) BaseClass() string {
 	Args: [], Returns: Environment
 */
 func (o *WorldEnvironment) GetEnvironment() EnvironmentImplementer {
-	//log.Println("Calling WorldEnvironment.GetEnvironment()")
+	// log.Println("Calling WorldEnvironment.GetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -76,7 +76,7 @@ func (o *WorldEnvironment) GetEnvironment() EnvironmentImplementer {
 	Args: [{ false env Environment}], Returns: void
 */
 func (o *WorldEnvironment) SetEnvironment(env EnvironmentImplementer) {
-	//log.Println("Calling WorldEnvironment.SetEnvironment()")
+	// log.Println("Calling WorldEnvironment.SetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *SceneTreeTimer) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *SceneTreeTimer) GetTimeLeft() gdnative.Real {
-	//log.Println("Calling SceneTreeTimer.GetTimeLeft()")
+	// log.Println("Calling SceneTreeTimer.GetTimeLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *SceneTreeTimer) GetTimeLeft() gdnative.Real {
 	Args: [{ false time float}], Returns: void
 */
 func (o *SceneTreeTimer) SetTimeLeft(time gdnative.Real) {
-	//log.Println("Calling SceneTreeTimer.SetTimeLeft()")
+	// log.Println("Calling SceneTreeTimer.SetTimeLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

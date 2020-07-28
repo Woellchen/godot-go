@@ -39,7 +39,7 @@ func (o *AudioEffectEQ) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *AudioEffectEQ) GetBandCount() gdnative.Int {
-	//log.Println("Calling AudioEffectEQ.GetBandCount()")
+	// log.Println("Calling AudioEffectEQ.GetBandCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectEQ) GetBandCount() gdnative.Int {
 	Args: [{ false band_idx int}], Returns: float
 */
 func (o *AudioEffectEQ) GetBandGainDb(bandIdx gdnative.Int) gdnative.Real {
-	//log.Println("Calling AudioEffectEQ.GetBandGainDb()")
+	// log.Println("Calling AudioEffectEQ.GetBandGainDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -86,7 +86,7 @@ func (o *AudioEffectEQ) GetBandGainDb(bandIdx gdnative.Int) gdnative.Real {
 	Args: [{ false band_idx int} { false volume_db float}], Returns: void
 */
 func (o *AudioEffectEQ) SetBandGainDb(bandIdx gdnative.Int, volumeDb gdnative.Real) {
-	//log.Println("Calling AudioEffectEQ.SetBandGainDb()")
+	// log.Println("Calling AudioEffectEQ.SetBandGainDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

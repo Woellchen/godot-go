@@ -39,7 +39,7 @@ func (o *RichTextEffect) BaseClass() string {
 	Args: [{ false char_fx CharFXTransform}], Returns: bool
 */
 func (o *RichTextEffect) X_ProcessCustomFx(charFx CharFXTransformImplementer) gdnative.Bool {
-	//log.Println("Calling RichTextEffect.X_ProcessCustomFx()")
+	// log.Println("Calling RichTextEffect.X_ProcessCustomFx()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

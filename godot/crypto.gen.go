@@ -39,7 +39,7 @@ func (o *Crypto) BaseClass() string {
 	Args: [{ false size int}], Returns: PoolByteArray
 */
 func (o *Crypto) GenerateRandomBytes(size gdnative.Int) gdnative.PoolByteArray {
-	//log.Println("Calling Crypto.GenerateRandomBytes()")
+	// log.Println("Calling Crypto.GenerateRandomBytes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *Crypto) GenerateRandomBytes(size gdnative.Int) gdnative.PoolByteArray {
 	Args: [{ false size int}], Returns: CryptoKey
 */
 func (o *Crypto) GenerateRsa(size gdnative.Int) CryptoKeyImplementer {
-	//log.Println("Calling Crypto.GenerateRsa()")
+	// log.Println("Calling Crypto.GenerateRsa()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *Crypto) GenerateRsa(size gdnative.Int) CryptoKeyImplementer {
 	Args: [{ false key CryptoKey} {CN=myserver,O=myorganisation,C=IT true issuer_name String} {20140101000000 true not_before String} {20340101000000 true not_after String}], Returns: X509Certificate
 */
 func (o *Crypto) GenerateSelfSignedCertificate(key CryptoKeyImplementer, issuerName gdnative.String, notBefore gdnative.String, notAfter gdnative.String) X509CertificateImplementer {
-	//log.Println("Calling Crypto.GenerateSelfSignedCertificate()")
+	// log.Println("Calling Crypto.GenerateSelfSignedCertificate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)

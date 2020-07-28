@@ -39,7 +39,7 @@ func (o *CircleShape2D) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CircleShape2D) GetRadius() gdnative.Real {
-	//log.Println("Calling CircleShape2D.GetRadius()")
+	// log.Println("Calling CircleShape2D.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CircleShape2D) GetRadius() gdnative.Real {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CircleShape2D) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling CircleShape2D.SetRadius()")
+	// log.Println("Calling CircleShape2D.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

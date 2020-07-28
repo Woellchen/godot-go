@@ -39,7 +39,7 @@ func (o *Physics2DDirectBodyState) BaseClass() string {
 	Args: [{ false force Vector2}], Returns: void
 */
 func (o *Physics2DDirectBodyState) AddCentralForce(force gdnative.Vector2) {
-	//log.Println("Calling Physics2DDirectBodyState.AddCentralForce()")
+	// log.Println("Calling Physics2DDirectBodyState.AddCentralForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *Physics2DDirectBodyState) AddCentralForce(force gdnative.Vector2) {
 	Args: [{ false offset Vector2} { false force Vector2}], Returns: void
 */
 func (o *Physics2DDirectBodyState) AddForce(offset gdnative.Vector2, force gdnative.Vector2) {
-	//log.Println("Calling Physics2DDirectBodyState.AddForce()")
+	// log.Println("Calling Physics2DDirectBodyState.AddForce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -82,7 +82,7 @@ func (o *Physics2DDirectBodyState) AddForce(offset gdnative.Vector2, force gdnat
 	Args: [{ false torque float}], Returns: void
 */
 func (o *Physics2DDirectBodyState) AddTorque(torque gdnative.Real) {
-	//log.Println("Calling Physics2DDirectBodyState.AddTorque()")
+	// log.Println("Calling Physics2DDirectBodyState.AddTorque()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -103,7 +103,7 @@ func (o *Physics2DDirectBodyState) AddTorque(torque gdnative.Real) {
 	Args: [{ false impulse Vector2}], Returns: void
 */
 func (o *Physics2DDirectBodyState) ApplyCentralImpulse(impulse gdnative.Vector2) {
-	//log.Println("Calling Physics2DDirectBodyState.ApplyCentralImpulse()")
+	// log.Println("Calling Physics2DDirectBodyState.ApplyCentralImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -124,7 +124,7 @@ func (o *Physics2DDirectBodyState) ApplyCentralImpulse(impulse gdnative.Vector2)
 	Args: [{ false offset Vector2} { false impulse Vector2}], Returns: void
 */
 func (o *Physics2DDirectBodyState) ApplyImpulse(offset gdnative.Vector2, impulse gdnative.Vector2) {
-	//log.Println("Calling Physics2DDirectBodyState.ApplyImpulse()")
+	// log.Println("Calling Physics2DDirectBodyState.ApplyImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -146,7 +146,7 @@ func (o *Physics2DDirectBodyState) ApplyImpulse(offset gdnative.Vector2, impulse
 	Args: [{ false impulse float}], Returns: void
 */
 func (o *Physics2DDirectBodyState) ApplyTorqueImpulse(impulse gdnative.Real) {
-	//log.Println("Calling Physics2DDirectBodyState.ApplyTorqueImpulse()")
+	// log.Println("Calling Physics2DDirectBodyState.ApplyTorqueImpulse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -167,7 +167,7 @@ func (o *Physics2DDirectBodyState) ApplyTorqueImpulse(impulse gdnative.Real) {
 	Args: [], Returns: float
 */
 func (o *Physics2DDirectBodyState) GetAngularVelocity() gdnative.Real {
-	//log.Println("Calling Physics2DDirectBodyState.GetAngularVelocity()")
+	// log.Println("Calling Physics2DDirectBodyState.GetAngularVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -190,7 +190,7 @@ func (o *Physics2DDirectBodyState) GetAngularVelocity() gdnative.Real {
 	Args: [{ false contact_idx int}], Returns: RID
 */
 func (o *Physics2DDirectBodyState) GetContactCollider(contactIdx gdnative.Int) gdnative.Rid {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactCollider()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactCollider()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -214,7 +214,7 @@ func (o *Physics2DDirectBodyState) GetContactCollider(contactIdx gdnative.Int) g
 	Args: [{ false contact_idx int}], Returns: int
 */
 func (o *Physics2DDirectBodyState) GetContactColliderId(contactIdx gdnative.Int) gdnative.Int {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactColliderId()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactColliderId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *Physics2DDirectBodyState) GetContactColliderId(contactIdx gdnative.Int)
 	Args: [{ false contact_idx int}], Returns: Object
 */
 func (o *Physics2DDirectBodyState) GetContactColliderObject(contactIdx gdnative.Int) ObjectImplementer {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactColliderObject()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactColliderObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -276,7 +276,7 @@ func (o *Physics2DDirectBodyState) GetContactColliderObject(contactIdx gdnative.
 	Args: [{ false contact_idx int}], Returns: Vector2
 */
 func (o *Physics2DDirectBodyState) GetContactColliderPosition(contactIdx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactColliderPosition()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactColliderPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -300,7 +300,7 @@ func (o *Physics2DDirectBodyState) GetContactColliderPosition(contactIdx gdnativ
 	Args: [{ false contact_idx int}], Returns: int
 */
 func (o *Physics2DDirectBodyState) GetContactColliderShape(contactIdx gdnative.Int) gdnative.Int {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactColliderShape()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactColliderShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -324,7 +324,7 @@ func (o *Physics2DDirectBodyState) GetContactColliderShape(contactIdx gdnative.I
 	Args: [{ false contact_idx int}], Returns: Variant
 */
 func (o *Physics2DDirectBodyState) GetContactColliderShapeMetadata(contactIdx gdnative.Int) gdnative.Variant {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactColliderShapeMetadata()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactColliderShapeMetadata()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -348,7 +348,7 @@ func (o *Physics2DDirectBodyState) GetContactColliderShapeMetadata(contactIdx gd
 	Args: [{ false contact_idx int}], Returns: Vector2
 */
 func (o *Physics2DDirectBodyState) GetContactColliderVelocityAtPosition(contactIdx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactColliderVelocityAtPosition()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactColliderVelocityAtPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -372,7 +372,7 @@ func (o *Physics2DDirectBodyState) GetContactColliderVelocityAtPosition(contactI
 	Args: [], Returns: int
 */
 func (o *Physics2DDirectBodyState) GetContactCount() gdnative.Int {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactCount()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -395,7 +395,7 @@ func (o *Physics2DDirectBodyState) GetContactCount() gdnative.Int {
 	Args: [{ false contact_idx int}], Returns: Vector2
 */
 func (o *Physics2DDirectBodyState) GetContactLocalNormal(contactIdx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactLocalNormal()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactLocalNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -419,7 +419,7 @@ func (o *Physics2DDirectBodyState) GetContactLocalNormal(contactIdx gdnative.Int
 	Args: [{ false contact_idx int}], Returns: Vector2
 */
 func (o *Physics2DDirectBodyState) GetContactLocalPosition(contactIdx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactLocalPosition()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactLocalPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -443,7 +443,7 @@ func (o *Physics2DDirectBodyState) GetContactLocalPosition(contactIdx gdnative.I
 	Args: [{ false contact_idx int}], Returns: int
 */
 func (o *Physics2DDirectBodyState) GetContactLocalShape(contactIdx gdnative.Int) gdnative.Int {
-	//log.Println("Calling Physics2DDirectBodyState.GetContactLocalShape()")
+	// log.Println("Calling Physics2DDirectBodyState.GetContactLocalShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -467,7 +467,7 @@ func (o *Physics2DDirectBodyState) GetContactLocalShape(contactIdx gdnative.Int)
 	Args: [], Returns: float
 */
 func (o *Physics2DDirectBodyState) GetInverseInertia() gdnative.Real {
-	//log.Println("Calling Physics2DDirectBodyState.GetInverseInertia()")
+	// log.Println("Calling Physics2DDirectBodyState.GetInverseInertia()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -490,7 +490,7 @@ func (o *Physics2DDirectBodyState) GetInverseInertia() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Physics2DDirectBodyState) GetInverseMass() gdnative.Real {
-	//log.Println("Calling Physics2DDirectBodyState.GetInverseMass()")
+	// log.Println("Calling Physics2DDirectBodyState.GetInverseMass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -513,7 +513,7 @@ func (o *Physics2DDirectBodyState) GetInverseMass() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DDirectBodyState) GetLinearVelocity() gdnative.Vector2 {
-	//log.Println("Calling Physics2DDirectBodyState.GetLinearVelocity()")
+	// log.Println("Calling Physics2DDirectBodyState.GetLinearVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -536,7 +536,7 @@ func (o *Physics2DDirectBodyState) GetLinearVelocity() gdnative.Vector2 {
 	Args: [], Returns: Physics2DDirectSpaceState
 */
 func (o *Physics2DDirectBodyState) GetSpaceState() Physics2DDirectSpaceStateImplementer {
-	//log.Println("Calling Physics2DDirectBodyState.GetSpaceState()")
+	// log.Println("Calling Physics2DDirectBodyState.GetSpaceState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -573,7 +573,7 @@ func (o *Physics2DDirectBodyState) GetSpaceState() Physics2DDirectSpaceStateImpl
 	Args: [], Returns: float
 */
 func (o *Physics2DDirectBodyState) GetStep() gdnative.Real {
-	//log.Println("Calling Physics2DDirectBodyState.GetStep()")
+	// log.Println("Calling Physics2DDirectBodyState.GetStep()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -596,7 +596,7 @@ func (o *Physics2DDirectBodyState) GetStep() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Physics2DDirectBodyState) GetTotalAngularDamp() gdnative.Real {
-	//log.Println("Calling Physics2DDirectBodyState.GetTotalAngularDamp()")
+	// log.Println("Calling Physics2DDirectBodyState.GetTotalAngularDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -619,7 +619,7 @@ func (o *Physics2DDirectBodyState) GetTotalAngularDamp() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *Physics2DDirectBodyState) GetTotalGravity() gdnative.Vector2 {
-	//log.Println("Calling Physics2DDirectBodyState.GetTotalGravity()")
+	// log.Println("Calling Physics2DDirectBodyState.GetTotalGravity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -642,7 +642,7 @@ func (o *Physics2DDirectBodyState) GetTotalGravity() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *Physics2DDirectBodyState) GetTotalLinearDamp() gdnative.Real {
-	//log.Println("Calling Physics2DDirectBodyState.GetTotalLinearDamp()")
+	// log.Println("Calling Physics2DDirectBodyState.GetTotalLinearDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -665,7 +665,7 @@ func (o *Physics2DDirectBodyState) GetTotalLinearDamp() gdnative.Real {
 	Args: [], Returns: Transform2D
 */
 func (o *Physics2DDirectBodyState) GetTransform() gdnative.Transform2D {
-	//log.Println("Calling Physics2DDirectBodyState.GetTransform()")
+	// log.Println("Calling Physics2DDirectBodyState.GetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -688,7 +688,7 @@ func (o *Physics2DDirectBodyState) GetTransform() gdnative.Transform2D {
 	Args: [], Returns: void
 */
 func (o *Physics2DDirectBodyState) IntegrateForces() {
-	//log.Println("Calling Physics2DDirectBodyState.IntegrateForces()")
+	// log.Println("Calling Physics2DDirectBodyState.IntegrateForces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -708,7 +708,7 @@ func (o *Physics2DDirectBodyState) IntegrateForces() {
 	Args: [], Returns: bool
 */
 func (o *Physics2DDirectBodyState) IsSleeping() gdnative.Bool {
-	//log.Println("Calling Physics2DDirectBodyState.IsSleeping()")
+	// log.Println("Calling Physics2DDirectBodyState.IsSleeping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -731,7 +731,7 @@ func (o *Physics2DDirectBodyState) IsSleeping() gdnative.Bool {
 	Args: [{ false velocity float}], Returns: void
 */
 func (o *Physics2DDirectBodyState) SetAngularVelocity(velocity gdnative.Real) {
-	//log.Println("Calling Physics2DDirectBodyState.SetAngularVelocity()")
+	// log.Println("Calling Physics2DDirectBodyState.SetAngularVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -752,7 +752,7 @@ func (o *Physics2DDirectBodyState) SetAngularVelocity(velocity gdnative.Real) {
 	Args: [{ false velocity Vector2}], Returns: void
 */
 func (o *Physics2DDirectBodyState) SetLinearVelocity(velocity gdnative.Vector2) {
-	//log.Println("Calling Physics2DDirectBodyState.SetLinearVelocity()")
+	// log.Println("Calling Physics2DDirectBodyState.SetLinearVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -773,7 +773,7 @@ func (o *Physics2DDirectBodyState) SetLinearVelocity(velocity gdnative.Vector2) 
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *Physics2DDirectBodyState) SetSleepState(enabled gdnative.Bool) {
-	//log.Println("Calling Physics2DDirectBodyState.SetSleepState()")
+	// log.Println("Calling Physics2DDirectBodyState.SetSleepState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -794,7 +794,7 @@ func (o *Physics2DDirectBodyState) SetSleepState(enabled gdnative.Bool) {
 	Args: [{ false transform Transform2D}], Returns: void
 */
 func (o *Physics2DDirectBodyState) SetTransform(transform gdnative.Transform2D) {
-	//log.Println("Calling Physics2DDirectBodyState.SetTransform()")
+	// log.Println("Calling Physics2DDirectBodyState.SetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

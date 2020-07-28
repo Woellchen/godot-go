@@ -62,7 +62,7 @@ func (o *inputMap) BaseClass() string {
 */
 func (o *inputMap) ActionAddEvent(action gdnative.String, event InputEventImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.ActionAddEvent()")
+	// log.Println("Calling InputMap.ActionAddEvent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -85,7 +85,7 @@ func (o *inputMap) ActionAddEvent(action gdnative.String, event InputEventImplem
 */
 func (o *inputMap) ActionEraseEvent(action gdnative.String, event InputEventImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.ActionEraseEvent()")
+	// log.Println("Calling InputMap.ActionEraseEvent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -108,7 +108,7 @@ func (o *inputMap) ActionEraseEvent(action gdnative.String, event InputEventImpl
 */
 func (o *inputMap) ActionEraseEvents(action gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.ActionEraseEvents()")
+	// log.Println("Calling InputMap.ActionEraseEvents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -130,7 +130,7 @@ func (o *inputMap) ActionEraseEvents(action gdnative.String) {
 */
 func (o *inputMap) ActionHasEvent(action gdnative.String, event InputEventImplementer) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.ActionHasEvent()")
+	// log.Println("Calling InputMap.ActionHasEvent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -156,7 +156,7 @@ func (o *inputMap) ActionHasEvent(action gdnative.String, event InputEventImplem
 */
 func (o *inputMap) ActionSetDeadzone(action gdnative.String, deadzone gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.ActionSetDeadzone()")
+	// log.Println("Calling InputMap.ActionSetDeadzone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -179,7 +179,7 @@ func (o *inputMap) ActionSetDeadzone(action gdnative.String, deadzone gdnative.R
 */
 func (o *inputMap) AddAction(action gdnative.String, deadzone gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.AddAction()")
+	// log.Println("Calling InputMap.AddAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -202,7 +202,7 @@ func (o *inputMap) AddAction(action gdnative.String, deadzone gdnative.Real) {
 */
 func (o *inputMap) EraseAction(action gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.EraseAction()")
+	// log.Println("Calling InputMap.EraseAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -224,7 +224,7 @@ func (o *inputMap) EraseAction(action gdnative.String) {
 */
 func (o *inputMap) EventIsAction(event InputEventImplementer, action gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.EventIsAction()")
+	// log.Println("Calling InputMap.EventIsAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -250,7 +250,7 @@ func (o *inputMap) EventIsAction(event InputEventImplementer, action gdnative.St
 */
 func (o *inputMap) GetActionList(action gdnative.String) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.GetActionList()")
+	// log.Println("Calling InputMap.GetActionList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -275,7 +275,7 @@ func (o *inputMap) GetActionList(action gdnative.String) gdnative.Array {
 */
 func (o *inputMap) GetActions() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.GetActions()")
+	// log.Println("Calling InputMap.GetActions()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -299,7 +299,7 @@ func (o *inputMap) GetActions() gdnative.Array {
 */
 func (o *inputMap) HasAction(action gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.HasAction()")
+	// log.Println("Calling InputMap.HasAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -324,7 +324,7 @@ func (o *inputMap) HasAction(action gdnative.String) gdnative.Bool {
 */
 func (o *inputMap) LoadFromGlobals() {
 	o.ensureSingleton()
-	//log.Println("Calling InputMap.LoadFromGlobals()")
+	// log.Println("Calling InputMap.LoadFromGlobals()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

@@ -39,7 +39,7 @@ func (o *Semaphore) BaseClass() string {
 	Args: [], Returns: enum.Error
 */
 func (o *Semaphore) Post() gdnative.Error {
-	//log.Println("Calling _Semaphore.Post()")
+	// log.Println("Calling _Semaphore.Post()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Semaphore) Post() gdnative.Error {
 	Args: [], Returns: enum.Error
 */
 func (o *Semaphore) Wait() gdnative.Error {
-	//log.Println("Calling _Semaphore.Wait()")
+	// log.Println("Calling _Semaphore.Wait()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

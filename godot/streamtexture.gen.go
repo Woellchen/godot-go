@@ -39,7 +39,7 @@ func (o *StreamTexture) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *StreamTexture) GetLoadPath() gdnative.String {
-	//log.Println("Calling StreamTexture.GetLoadPath()")
+	// log.Println("Calling StreamTexture.GetLoadPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *StreamTexture) GetLoadPath() gdnative.String {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *StreamTexture) Load(path gdnative.String) gdnative.Error {
-	//log.Println("Calling StreamTexture.Load()")
+	// log.Println("Calling StreamTexture.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

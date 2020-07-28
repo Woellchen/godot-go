@@ -39,7 +39,7 @@ func (o *BakedLightmapData) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *BakedLightmapData) X_GetUserData() gdnative.Array {
-	//log.Println("Calling BakedLightmapData.X_GetUserData()")
+	// log.Println("Calling BakedLightmapData.X_GetUserData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *BakedLightmapData) X_GetUserData() gdnative.Array {
 	Args: [{ false data Array}], Returns: void
 */
 func (o *BakedLightmapData) X_SetUserData(data gdnative.Array) {
-	//log.Println("Calling BakedLightmapData.X_SetUserData()")
+	// log.Println("Calling BakedLightmapData.X_SetUserData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *BakedLightmapData) X_SetUserData(data gdnative.Array) {
 	Args: [{ false path NodePath} { false lightmap Texture} { false instance int}], Returns: void
 */
 func (o *BakedLightmapData) AddUser(path gdnative.NodePath, lightmap TextureImplementer, instance gdnative.Int) {
-	//log.Println("Calling BakedLightmapData.AddUser()")
+	// log.Println("Calling BakedLightmapData.AddUser()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -106,7 +106,7 @@ func (o *BakedLightmapData) AddUser(path gdnative.NodePath, lightmap TextureImpl
 	Args: [], Returns: void
 */
 func (o *BakedLightmapData) ClearUsers() {
-	//log.Println("Calling BakedLightmapData.ClearUsers()")
+	// log.Println("Calling BakedLightmapData.ClearUsers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *BakedLightmapData) ClearUsers() {
 	Args: [], Returns: AABB
 */
 func (o *BakedLightmapData) GetBounds() gdnative.Aabb {
-	//log.Println("Calling BakedLightmapData.GetBounds()")
+	// log.Println("Calling BakedLightmapData.GetBounds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *BakedLightmapData) GetBounds() gdnative.Aabb {
 	Args: [], Returns: Transform
 */
 func (o *BakedLightmapData) GetCellSpaceTransform() gdnative.Transform {
-	//log.Println("Calling BakedLightmapData.GetCellSpaceTransform()")
+	// log.Println("Calling BakedLightmapData.GetCellSpaceTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -172,7 +172,7 @@ func (o *BakedLightmapData) GetCellSpaceTransform() gdnative.Transform {
 	Args: [], Returns: int
 */
 func (o *BakedLightmapData) GetCellSubdiv() gdnative.Int {
-	//log.Println("Calling BakedLightmapData.GetCellSubdiv()")
+	// log.Println("Calling BakedLightmapData.GetCellSubdiv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -195,7 +195,7 @@ func (o *BakedLightmapData) GetCellSubdiv() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *BakedLightmapData) GetEnergy() gdnative.Real {
-	//log.Println("Calling BakedLightmapData.GetEnergy()")
+	// log.Println("Calling BakedLightmapData.GetEnergy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -218,7 +218,7 @@ func (o *BakedLightmapData) GetEnergy() gdnative.Real {
 	Args: [], Returns: PoolByteArray
 */
 func (o *BakedLightmapData) GetOctree() gdnative.PoolByteArray {
-	//log.Println("Calling BakedLightmapData.GetOctree()")
+	// log.Println("Calling BakedLightmapData.GetOctree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -241,7 +241,7 @@ func (o *BakedLightmapData) GetOctree() gdnative.PoolByteArray {
 	Args: [], Returns: int
 */
 func (o *BakedLightmapData) GetUserCount() gdnative.Int {
-	//log.Println("Calling BakedLightmapData.GetUserCount()")
+	// log.Println("Calling BakedLightmapData.GetUserCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -264,7 +264,7 @@ func (o *BakedLightmapData) GetUserCount() gdnative.Int {
 	Args: [{ false user_idx int}], Returns: Texture
 */
 func (o *BakedLightmapData) GetUserLightmap(userIdx gdnative.Int) TextureImplementer {
-	//log.Println("Calling BakedLightmapData.GetUserLightmap()")
+	// log.Println("Calling BakedLightmapData.GetUserLightmap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -302,7 +302,7 @@ func (o *BakedLightmapData) GetUserLightmap(userIdx gdnative.Int) TextureImpleme
 	Args: [{ false user_idx int}], Returns: NodePath
 */
 func (o *BakedLightmapData) GetUserPath(userIdx gdnative.Int) gdnative.NodePath {
-	//log.Println("Calling BakedLightmapData.GetUserPath()")
+	// log.Println("Calling BakedLightmapData.GetUserPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -326,7 +326,7 @@ func (o *BakedLightmapData) GetUserPath(userIdx gdnative.Int) gdnative.NodePath 
 	Args: [{ false bounds AABB}], Returns: void
 */
 func (o *BakedLightmapData) SetBounds(bounds gdnative.Aabb) {
-	//log.Println("Calling BakedLightmapData.SetBounds()")
+	// log.Println("Calling BakedLightmapData.SetBounds()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -347,7 +347,7 @@ func (o *BakedLightmapData) SetBounds(bounds gdnative.Aabb) {
 	Args: [{ false xform Transform}], Returns: void
 */
 func (o *BakedLightmapData) SetCellSpaceTransform(xform gdnative.Transform) {
-	//log.Println("Calling BakedLightmapData.SetCellSpaceTransform()")
+	// log.Println("Calling BakedLightmapData.SetCellSpaceTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -368,7 +368,7 @@ func (o *BakedLightmapData) SetCellSpaceTransform(xform gdnative.Transform) {
 	Args: [{ false cell_subdiv int}], Returns: void
 */
 func (o *BakedLightmapData) SetCellSubdiv(cellSubdiv gdnative.Int) {
-	//log.Println("Calling BakedLightmapData.SetCellSubdiv()")
+	// log.Println("Calling BakedLightmapData.SetCellSubdiv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -389,7 +389,7 @@ func (o *BakedLightmapData) SetCellSubdiv(cellSubdiv gdnative.Int) {
 	Args: [{ false energy float}], Returns: void
 */
 func (o *BakedLightmapData) SetEnergy(energy gdnative.Real) {
-	//log.Println("Calling BakedLightmapData.SetEnergy()")
+	// log.Println("Calling BakedLightmapData.SetEnergy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -410,7 +410,7 @@ func (o *BakedLightmapData) SetEnergy(energy gdnative.Real) {
 	Args: [{ false octree PoolByteArray}], Returns: void
 */
 func (o *BakedLightmapData) SetOctree(octree gdnative.PoolByteArray) {
-	//log.Println("Calling BakedLightmapData.SetOctree()")
+	// log.Println("Calling BakedLightmapData.SetOctree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

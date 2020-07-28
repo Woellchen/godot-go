@@ -48,7 +48,7 @@ func (o *PackedScene) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *PackedScene) X_GetBundledScene() gdnative.Dictionary {
-	//log.Println("Calling PackedScene.X_GetBundledScene()")
+	// log.Println("Calling PackedScene.X_GetBundledScene()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *PackedScene) X_GetBundledScene() gdnative.Dictionary {
 	Args: [{ false arg0 Dictionary}], Returns: void
 */
 func (o *PackedScene) X_SetBundledScene(arg0 gdnative.Dictionary) {
-	//log.Println("Calling PackedScene.X_SetBundledScene()")
+	// log.Println("Calling PackedScene.X_SetBundledScene()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -92,7 +92,7 @@ func (o *PackedScene) X_SetBundledScene(arg0 gdnative.Dictionary) {
 	Args: [], Returns: bool
 */
 func (o *PackedScene) CanInstance() gdnative.Bool {
-	//log.Println("Calling PackedScene.CanInstance()")
+	// log.Println("Calling PackedScene.CanInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -115,7 +115,7 @@ func (o *PackedScene) CanInstance() gdnative.Bool {
 	Args: [], Returns: SceneState
 */
 func (o *PackedScene) GetState() SceneStateImplementer {
-	//log.Println("Calling PackedScene.GetState()")
+	// log.Println("Calling PackedScene.GetState()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -152,7 +152,7 @@ func (o *PackedScene) GetState() SceneStateImplementer {
 	Args: [{0 true edit_state int}], Returns: Node
 */
 func (o *PackedScene) Instance(editState gdnative.Int) NodeImplementer {
-	//log.Println("Calling PackedScene.Instance()")
+	// log.Println("Calling PackedScene.Instance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -190,7 +190,7 @@ func (o *PackedScene) Instance(editState gdnative.Int) NodeImplementer {
 	Args: [{ false path Node}], Returns: enum.Error
 */
 func (o *PackedScene) Pack(path NodeImplementer) gdnative.Error {
-	//log.Println("Calling PackedScene.Pack()")
+	// log.Println("Calling PackedScene.Pack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

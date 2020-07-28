@@ -39,7 +39,7 @@ func (o *RegExMatch) BaseClass() string {
 	Args: [{0 true name Variant}], Returns: int
 */
 func (o *RegExMatch) GetEnd(name gdnative.Variant) gdnative.Int {
-	//log.Println("Calling RegExMatch.GetEnd()")
+	// log.Println("Calling RegExMatch.GetEnd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -63,7 +63,7 @@ func (o *RegExMatch) GetEnd(name gdnative.Variant) gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *RegExMatch) GetGroupCount() gdnative.Int {
-	//log.Println("Calling RegExMatch.GetGroupCount()")
+	// log.Println("Calling RegExMatch.GetGroupCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -86,7 +86,7 @@ func (o *RegExMatch) GetGroupCount() gdnative.Int {
 	Args: [], Returns: Dictionary
 */
 func (o *RegExMatch) GetNames() gdnative.Dictionary {
-	//log.Println("Calling RegExMatch.GetNames()")
+	// log.Println("Calling RegExMatch.GetNames()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *RegExMatch) GetNames() gdnative.Dictionary {
 	Args: [{0 true name Variant}], Returns: int
 */
 func (o *RegExMatch) GetStart(name gdnative.Variant) gdnative.Int {
-	//log.Println("Calling RegExMatch.GetStart()")
+	// log.Println("Calling RegExMatch.GetStart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -133,7 +133,7 @@ func (o *RegExMatch) GetStart(name gdnative.Variant) gdnative.Int {
 	Args: [{0 true name Variant}], Returns: String
 */
 func (o *RegExMatch) GetString(name gdnative.Variant) gdnative.String {
-	//log.Println("Calling RegExMatch.GetString()")
+	// log.Println("Calling RegExMatch.GetString()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -157,7 +157,7 @@ func (o *RegExMatch) GetString(name gdnative.Variant) gdnative.String {
 	Args: [], Returns: Array
 */
 func (o *RegExMatch) GetStrings() gdnative.Array {
-	//log.Println("Calling RegExMatch.GetStrings()")
+	// log.Println("Calling RegExMatch.GetStrings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -180,7 +180,7 @@ func (o *RegExMatch) GetStrings() gdnative.Array {
 	Args: [], Returns: String
 */
 func (o *RegExMatch) GetSubject() gdnative.String {
-	//log.Println("Calling RegExMatch.GetSubject()")
+	// log.Println("Calling RegExMatch.GetSubject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

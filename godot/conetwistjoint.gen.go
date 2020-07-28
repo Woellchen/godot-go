@@ -51,7 +51,7 @@ func (o *ConeTwistJoint) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *ConeTwistJoint) X_GetSwingSpan() gdnative.Real {
-	//log.Println("Calling ConeTwistJoint.X_GetSwingSpan()")
+	// log.Println("Calling ConeTwistJoint.X_GetSwingSpan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -74,7 +74,7 @@ func (o *ConeTwistJoint) X_GetSwingSpan() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *ConeTwistJoint) X_GetTwistSpan() gdnative.Real {
-	//log.Println("Calling ConeTwistJoint.X_GetTwistSpan()")
+	// log.Println("Calling ConeTwistJoint.X_GetTwistSpan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -97,7 +97,7 @@ func (o *ConeTwistJoint) X_GetTwistSpan() gdnative.Real {
 	Args: [{ false swing_span float}], Returns: void
 */
 func (o *ConeTwistJoint) X_SetSwingSpan(swingSpan gdnative.Real) {
-	//log.Println("Calling ConeTwistJoint.X_SetSwingSpan()")
+	// log.Println("Calling ConeTwistJoint.X_SetSwingSpan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -118,7 +118,7 @@ func (o *ConeTwistJoint) X_SetSwingSpan(swingSpan gdnative.Real) {
 	Args: [{ false twist_span float}], Returns: void
 */
 func (o *ConeTwistJoint) X_SetTwistSpan(twistSpan gdnative.Real) {
-	//log.Println("Calling ConeTwistJoint.X_SetTwistSpan()")
+	// log.Println("Calling ConeTwistJoint.X_SetTwistSpan()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -139,7 +139,7 @@ func (o *ConeTwistJoint) X_SetTwistSpan(twistSpan gdnative.Real) {
 	Args: [{ false param int}], Returns: float
 */
 func (o *ConeTwistJoint) GetParam(param gdnative.Int) gdnative.Real {
-	//log.Println("Calling ConeTwistJoint.GetParam()")
+	// log.Println("Calling ConeTwistJoint.GetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -163,7 +163,7 @@ func (o *ConeTwistJoint) GetParam(param gdnative.Int) gdnative.Real {
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *ConeTwistJoint) SetParam(param gdnative.Int, value gdnative.Real) {
-	//log.Println("Calling ConeTwistJoint.SetParam()")
+	// log.Println("Calling ConeTwistJoint.SetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

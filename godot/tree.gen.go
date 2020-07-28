@@ -57,7 +57,7 @@ func (o *Tree) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *Tree) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling Tree.X_GuiInput()")
+	// log.Println("Calling Tree.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -78,7 +78,7 @@ func (o *Tree) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *Tree) X_PopupSelect(arg0 gdnative.Int) {
-	//log.Println("Calling Tree.X_PopupSelect()")
+	// log.Println("Calling Tree.X_PopupSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -99,7 +99,7 @@ func (o *Tree) X_PopupSelect(arg0 gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *Tree) X_RangeClickTimeout() {
-	//log.Println("Calling Tree.X_RangeClickTimeout()")
+	// log.Println("Calling Tree.X_RangeClickTimeout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -119,7 +119,7 @@ func (o *Tree) X_RangeClickTimeout() {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *Tree) X_ScrollMoved(arg0 gdnative.Real) {
-	//log.Println("Calling Tree.X_ScrollMoved()")
+	// log.Println("Calling Tree.X_ScrollMoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -140,7 +140,7 @@ func (o *Tree) X_ScrollMoved(arg0 gdnative.Real) {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *Tree) X_TextEditorEnter(arg0 gdnative.String) {
-	//log.Println("Calling Tree.X_TextEditorEnter()")
+	// log.Println("Calling Tree.X_TextEditorEnter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -161,7 +161,7 @@ func (o *Tree) X_TextEditorEnter(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *Tree) X_TextEditorModalClose() {
-	//log.Println("Calling Tree.X_TextEditorModalClose()")
+	// log.Println("Calling Tree.X_TextEditorModalClose()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -181,7 +181,7 @@ func (o *Tree) X_TextEditorModalClose() {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *Tree) X_ValueEditorChanged(arg0 gdnative.Real) {
-	//log.Println("Calling Tree.X_ValueEditorChanged()")
+	// log.Println("Calling Tree.X_ValueEditorChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -202,7 +202,7 @@ func (o *Tree) X_ValueEditorChanged(arg0 gdnative.Real) {
 	Args: [], Returns: bool
 */
 func (o *Tree) AreColumnTitlesVisible() gdnative.Bool {
-	//log.Println("Calling Tree.AreColumnTitlesVisible()")
+	// log.Println("Calling Tree.AreColumnTitlesVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -225,7 +225,7 @@ func (o *Tree) AreColumnTitlesVisible() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *Tree) Clear() {
-	//log.Println("Calling Tree.Clear()")
+	// log.Println("Calling Tree.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -245,7 +245,7 @@ func (o *Tree) Clear() {
 	Args: [{Null true parent Object} {-1 true idx int}], Returns: TreeItem
 */
 func (o *Tree) CreateItem(parent ObjectImplementer, idx gdnative.Int) TreeItemImplementer {
-	//log.Println("Calling Tree.CreateItem()")
+	// log.Println("Calling Tree.CreateItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -284,7 +284,7 @@ func (o *Tree) CreateItem(parent ObjectImplementer, idx gdnative.Int) TreeItemIm
 	Args: [], Returns: void
 */
 func (o *Tree) EnsureCursorIsVisible() {
-	//log.Println("Calling Tree.EnsureCursorIsVisible()")
+	// log.Println("Calling Tree.EnsureCursorIsVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -304,7 +304,7 @@ func (o *Tree) EnsureCursorIsVisible() {
 	Args: [], Returns: bool
 */
 func (o *Tree) GetAllowReselect() gdnative.Bool {
-	//log.Println("Calling Tree.GetAllowReselect()")
+	// log.Println("Calling Tree.GetAllowReselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -327,7 +327,7 @@ func (o *Tree) GetAllowReselect() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Tree) GetAllowRmbSelect() gdnative.Bool {
-	//log.Println("Calling Tree.GetAllowRmbSelect()")
+	// log.Println("Calling Tree.GetAllowRmbSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -350,7 +350,7 @@ func (o *Tree) GetAllowRmbSelect() gdnative.Bool {
 	Args: [{ false position Vector2}], Returns: int
 */
 func (o *Tree) GetColumnAtPosition(position gdnative.Vector2) gdnative.Int {
-	//log.Println("Calling Tree.GetColumnAtPosition()")
+	// log.Println("Calling Tree.GetColumnAtPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -374,7 +374,7 @@ func (o *Tree) GetColumnAtPosition(position gdnative.Vector2) gdnative.Int {
 	Args: [{ false column int}], Returns: String
 */
 func (o *Tree) GetColumnTitle(column gdnative.Int) gdnative.String {
-	//log.Println("Calling Tree.GetColumnTitle()")
+	// log.Println("Calling Tree.GetColumnTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -398,7 +398,7 @@ func (o *Tree) GetColumnTitle(column gdnative.Int) gdnative.String {
 	Args: [{ false column int}], Returns: int
 */
 func (o *Tree) GetColumnWidth(column gdnative.Int) gdnative.Int {
-	//log.Println("Calling Tree.GetColumnWidth()")
+	// log.Println("Calling Tree.GetColumnWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -422,7 +422,7 @@ func (o *Tree) GetColumnWidth(column gdnative.Int) gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *Tree) GetColumns() gdnative.Int {
-	//log.Println("Calling Tree.GetColumns()")
+	// log.Println("Calling Tree.GetColumns()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -445,7 +445,7 @@ func (o *Tree) GetColumns() gdnative.Int {
 	Args: [], Returns: Rect2
 */
 func (o *Tree) GetCustomPopupRect() gdnative.Rect2 {
-	//log.Println("Calling Tree.GetCustomPopupRect()")
+	// log.Println("Calling Tree.GetCustomPopupRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -468,7 +468,7 @@ func (o *Tree) GetCustomPopupRect() gdnative.Rect2 {
 	Args: [], Returns: int
 */
 func (o *Tree) GetDropModeFlags() gdnative.Int {
-	//log.Println("Calling Tree.GetDropModeFlags()")
+	// log.Println("Calling Tree.GetDropModeFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -491,7 +491,7 @@ func (o *Tree) GetDropModeFlags() gdnative.Int {
 	Args: [{ false position Vector2}], Returns: int
 */
 func (o *Tree) GetDropSectionAtPosition(position gdnative.Vector2) gdnative.Int {
-	//log.Println("Calling Tree.GetDropSectionAtPosition()")
+	// log.Println("Calling Tree.GetDropSectionAtPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -515,7 +515,7 @@ func (o *Tree) GetDropSectionAtPosition(position gdnative.Vector2) gdnative.Int 
 	Args: [], Returns: TreeItem
 */
 func (o *Tree) GetEdited() TreeItemImplementer {
-	//log.Println("Calling Tree.GetEdited()")
+	// log.Println("Calling Tree.GetEdited()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -552,7 +552,7 @@ func (o *Tree) GetEdited() TreeItemImplementer {
 	Args: [], Returns: int
 */
 func (o *Tree) GetEditedColumn() gdnative.Int {
-	//log.Println("Calling Tree.GetEditedColumn()")
+	// log.Println("Calling Tree.GetEditedColumn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -575,7 +575,7 @@ func (o *Tree) GetEditedColumn() gdnative.Int {
 	Args: [{ false item Object} {-1 true column int}], Returns: Rect2
 */
 func (o *Tree) GetItemAreaRect(item ObjectImplementer, column gdnative.Int) gdnative.Rect2 {
-	//log.Println("Calling Tree.GetItemAreaRect()")
+	// log.Println("Calling Tree.GetItemAreaRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -600,7 +600,7 @@ func (o *Tree) GetItemAreaRect(item ObjectImplementer, column gdnative.Int) gdna
 	Args: [{ false position Vector2}], Returns: TreeItem
 */
 func (o *Tree) GetItemAtPosition(position gdnative.Vector2) TreeItemImplementer {
-	//log.Println("Calling Tree.GetItemAtPosition()")
+	// log.Println("Calling Tree.GetItemAtPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -638,7 +638,7 @@ func (o *Tree) GetItemAtPosition(position gdnative.Vector2) TreeItemImplementer 
 	Args: [{ false from Object}], Returns: TreeItem
 */
 func (o *Tree) GetNextSelected(from ObjectImplementer) TreeItemImplementer {
-	//log.Println("Calling Tree.GetNextSelected()")
+	// log.Println("Calling Tree.GetNextSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -676,7 +676,7 @@ func (o *Tree) GetNextSelected(from ObjectImplementer) TreeItemImplementer {
 	Args: [], Returns: int
 */
 func (o *Tree) GetPressedButton() gdnative.Int {
-	//log.Println("Calling Tree.GetPressedButton()")
+	// log.Println("Calling Tree.GetPressedButton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -699,7 +699,7 @@ func (o *Tree) GetPressedButton() gdnative.Int {
 	Args: [], Returns: TreeItem
 */
 func (o *Tree) GetRoot() TreeItemImplementer {
-	//log.Println("Calling Tree.GetRoot()")
+	// log.Println("Calling Tree.GetRoot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -736,7 +736,7 @@ func (o *Tree) GetRoot() TreeItemImplementer {
 	Args: [], Returns: Vector2
 */
 func (o *Tree) GetScroll() gdnative.Vector2 {
-	//log.Println("Calling Tree.GetScroll()")
+	// log.Println("Calling Tree.GetScroll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -759,7 +759,7 @@ func (o *Tree) GetScroll() gdnative.Vector2 {
 	Args: [], Returns: enum.Tree::SelectMode
 */
 func (o *Tree) GetSelectMode() TreeSelectMode {
-	//log.Println("Calling Tree.GetSelectMode()")
+	// log.Println("Calling Tree.GetSelectMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -782,7 +782,7 @@ func (o *Tree) GetSelectMode() TreeSelectMode {
 	Args: [], Returns: TreeItem
 */
 func (o *Tree) GetSelected() TreeItemImplementer {
-	//log.Println("Calling Tree.GetSelected()")
+	// log.Println("Calling Tree.GetSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -819,7 +819,7 @@ func (o *Tree) GetSelected() TreeItemImplementer {
 	Args: [], Returns: int
 */
 func (o *Tree) GetSelectedColumn() gdnative.Int {
-	//log.Println("Calling Tree.GetSelectedColumn()")
+	// log.Println("Calling Tree.GetSelectedColumn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -842,7 +842,7 @@ func (o *Tree) GetSelectedColumn() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Tree) IsFoldingHidden() gdnative.Bool {
-	//log.Println("Calling Tree.IsFoldingHidden()")
+	// log.Println("Calling Tree.IsFoldingHidden()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -865,7 +865,7 @@ func (o *Tree) IsFoldingHidden() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Tree) IsRootHidden() gdnative.Bool {
-	//log.Println("Calling Tree.IsRootHidden()")
+	// log.Println("Calling Tree.IsRootHidden()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -888,7 +888,7 @@ func (o *Tree) IsRootHidden() gdnative.Bool {
 	Args: [{ false allow bool}], Returns: void
 */
 func (o *Tree) SetAllowReselect(allow gdnative.Bool) {
-	//log.Println("Calling Tree.SetAllowReselect()")
+	// log.Println("Calling Tree.SetAllowReselect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -909,7 +909,7 @@ func (o *Tree) SetAllowReselect(allow gdnative.Bool) {
 	Args: [{ false allow bool}], Returns: void
 */
 func (o *Tree) SetAllowRmbSelect(allow gdnative.Bool) {
-	//log.Println("Calling Tree.SetAllowRmbSelect()")
+	// log.Println("Calling Tree.SetAllowRmbSelect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -930,7 +930,7 @@ func (o *Tree) SetAllowRmbSelect(allow gdnative.Bool) {
 	Args: [{ false column int} { false expand bool}], Returns: void
 */
 func (o *Tree) SetColumnExpand(column gdnative.Int, expand gdnative.Bool) {
-	//log.Println("Calling Tree.SetColumnExpand()")
+	// log.Println("Calling Tree.SetColumnExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -952,7 +952,7 @@ func (o *Tree) SetColumnExpand(column gdnative.Int, expand gdnative.Bool) {
 	Args: [{ false column int} { false min_width int}], Returns: void
 */
 func (o *Tree) SetColumnMinWidth(column gdnative.Int, minWidth gdnative.Int) {
-	//log.Println("Calling Tree.SetColumnMinWidth()")
+	// log.Println("Calling Tree.SetColumnMinWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -974,7 +974,7 @@ func (o *Tree) SetColumnMinWidth(column gdnative.Int, minWidth gdnative.Int) {
 	Args: [{ false column int} { false title String}], Returns: void
 */
 func (o *Tree) SetColumnTitle(column gdnative.Int, title gdnative.String) {
-	//log.Println("Calling Tree.SetColumnTitle()")
+	// log.Println("Calling Tree.SetColumnTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -996,7 +996,7 @@ func (o *Tree) SetColumnTitle(column gdnative.Int, title gdnative.String) {
 	Args: [{ false visible bool}], Returns: void
 */
 func (o *Tree) SetColumnTitlesVisible(visible gdnative.Bool) {
-	//log.Println("Calling Tree.SetColumnTitlesVisible()")
+	// log.Println("Calling Tree.SetColumnTitlesVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1017,7 +1017,7 @@ func (o *Tree) SetColumnTitlesVisible(visible gdnative.Bool) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *Tree) SetColumns(amount gdnative.Int) {
-	//log.Println("Calling Tree.SetColumns()")
+	// log.Println("Calling Tree.SetColumns()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1038,7 +1038,7 @@ func (o *Tree) SetColumns(amount gdnative.Int) {
 	Args: [{ false flags int}], Returns: void
 */
 func (o *Tree) SetDropModeFlags(flags gdnative.Int) {
-	//log.Println("Calling Tree.SetDropModeFlags()")
+	// log.Println("Calling Tree.SetDropModeFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1059,7 +1059,7 @@ func (o *Tree) SetDropModeFlags(flags gdnative.Int) {
 	Args: [{ false hide bool}], Returns: void
 */
 func (o *Tree) SetHideFolding(hide gdnative.Bool) {
-	//log.Println("Calling Tree.SetHideFolding()")
+	// log.Println("Calling Tree.SetHideFolding()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1080,7 +1080,7 @@ func (o *Tree) SetHideFolding(hide gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Tree) SetHideRoot(enable gdnative.Bool) {
-	//log.Println("Calling Tree.SetHideRoot()")
+	// log.Println("Calling Tree.SetHideRoot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1101,7 +1101,7 @@ func (o *Tree) SetHideRoot(enable gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Tree) SetSelectMode(mode gdnative.Int) {
-	//log.Println("Calling Tree.SetSelectMode()")
+	// log.Println("Calling Tree.SetSelectMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

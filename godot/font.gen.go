@@ -39,7 +39,7 @@ func (o *Font) BaseClass() string {
 	Args: [{ false canvas_item RID} { false position Vector2} { false string String} {1,1,1,1 true modulate Color} {-1 true clip_w int} {1,1,1,1 true outline_modulate Color}], Returns: void
 */
 func (o *Font) Draw(canvasItem gdnative.Rid, position gdnative.Vector2, string gdnative.String, modulate gdnative.Color, clipW gdnative.Int, outlineModulate gdnative.Color) {
-	//log.Println("Calling Font.Draw()")
+	// log.Println("Calling Font.Draw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -65,7 +65,7 @@ func (o *Font) Draw(canvasItem gdnative.Rid, position gdnative.Vector2, string g
 	Args: [{ false canvas_item RID} { false position Vector2} { false char int} {-1 true next int} {1,1,1,1 true modulate Color} {False true outline bool}], Returns: float
 */
 func (o *Font) DrawChar(canvasItem gdnative.Rid, position gdnative.Vector2, char gdnative.Int, next gdnative.Int, modulate gdnative.Color, outline gdnative.Bool) gdnative.Real {
-	//log.Println("Calling Font.DrawChar()")
+	// log.Println("Calling Font.DrawChar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -94,7 +94,7 @@ func (o *Font) DrawChar(canvasItem gdnative.Rid, position gdnative.Vector2, char
 	Args: [], Returns: float
 */
 func (o *Font) GetAscent() gdnative.Real {
-	//log.Println("Calling Font.GetAscent()")
+	// log.Println("Calling Font.GetAscent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *Font) GetAscent() gdnative.Real {
 	Args: [{ false char int} {0 true next int}], Returns: Vector2
 */
 func (o *Font) GetCharSize(char gdnative.Int, next gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling Font.GetCharSize()")
+	// log.Println("Calling Font.GetCharSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -142,7 +142,7 @@ func (o *Font) GetCharSize(char gdnative.Int, next gdnative.Int) gdnative.Vector
 	Args: [], Returns: float
 */
 func (o *Font) GetDescent() gdnative.Real {
-	//log.Println("Calling Font.GetDescent()")
+	// log.Println("Calling Font.GetDescent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *Font) GetDescent() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Font) GetHeight() gdnative.Real {
-	//log.Println("Calling Font.GetHeight()")
+	// log.Println("Calling Font.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -188,7 +188,7 @@ func (o *Font) GetHeight() gdnative.Real {
 	Args: [{ false string String}], Returns: Vector2
 */
 func (o *Font) GetStringSize(string gdnative.String) gdnative.Vector2 {
-	//log.Println("Calling Font.GetStringSize()")
+	// log.Println("Calling Font.GetStringSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -212,7 +212,7 @@ func (o *Font) GetStringSize(string gdnative.String) gdnative.Vector2 {
 	Args: [{ false string String} { false width float}], Returns: Vector2
 */
 func (o *Font) GetWordwrapStringSize(string gdnative.String, width gdnative.Real) gdnative.Vector2 {
-	//log.Println("Calling Font.GetWordwrapStringSize()")
+	// log.Println("Calling Font.GetWordwrapStringSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -237,7 +237,7 @@ func (o *Font) GetWordwrapStringSize(string gdnative.String, width gdnative.Real
 	Args: [], Returns: bool
 */
 func (o *Font) HasOutline() gdnative.Bool {
-	//log.Println("Calling Font.HasOutline()")
+	// log.Println("Calling Font.HasOutline()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -260,7 +260,7 @@ func (o *Font) HasOutline() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Font) IsDistanceFieldHint() gdnative.Bool {
-	//log.Println("Calling Font.IsDistanceFieldHint()")
+	// log.Println("Calling Font.IsDistanceFieldHint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -283,7 +283,7 @@ func (o *Font) IsDistanceFieldHint() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *Font) UpdateChanges() {
-	//log.Println("Calling Font.UpdateChanges()")
+	// log.Println("Calling Font.UpdateChanges()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

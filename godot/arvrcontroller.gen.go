@@ -39,7 +39,7 @@ func (o *ARVRController) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *ARVRController) GetControllerId() gdnative.Int {
-	//log.Println("Calling ARVRController.GetControllerId()")
+	// log.Println("Calling ARVRController.GetControllerId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ARVRController) GetControllerId() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *ARVRController) GetControllerName() gdnative.String {
-	//log.Println("Calling ARVRController.GetControllerName()")
+	// log.Println("Calling ARVRController.GetControllerName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *ARVRController) GetControllerName() gdnative.String {
 	Args: [], Returns: enum.ARVRPositionalTracker::TrackerHand
 */
 func (o *ARVRController) GetHand() ARVRPositionalTrackerTrackerHand {
-	//log.Println("Calling ARVRController.GetHand()")
+	// log.Println("Calling ARVRController.GetHand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *ARVRController) GetHand() ARVRPositionalTrackerTrackerHand {
 	Args: [], Returns: bool
 */
 func (o *ARVRController) GetIsActive() gdnative.Bool {
-	//log.Println("Calling ARVRController.GetIsActive()")
+	// log.Println("Calling ARVRController.GetIsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *ARVRController) GetIsActive() gdnative.Bool {
 	Args: [{ false axis int}], Returns: float
 */
 func (o *ARVRController) GetJoystickAxis(axis gdnative.Int) gdnative.Real {
-	//log.Println("Calling ARVRController.GetJoystickAxis()")
+	// log.Println("Calling ARVRController.GetJoystickAxis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -155,7 +155,7 @@ func (o *ARVRController) GetJoystickAxis(axis gdnative.Int) gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *ARVRController) GetJoystickId() gdnative.Int {
-	//log.Println("Calling ARVRController.GetJoystickId()")
+	// log.Println("Calling ARVRController.GetJoystickId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -178,7 +178,7 @@ func (o *ARVRController) GetJoystickId() gdnative.Int {
 	Args: [], Returns: Mesh
 */
 func (o *ARVRController) GetMesh() MeshImplementer {
-	//log.Println("Calling ARVRController.GetMesh()")
+	// log.Println("Calling ARVRController.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -215,7 +215,7 @@ func (o *ARVRController) GetMesh() MeshImplementer {
 	Args: [], Returns: float
 */
 func (o *ARVRController) GetRumble() gdnative.Real {
-	//log.Println("Calling ARVRController.GetRumble()")
+	// log.Println("Calling ARVRController.GetRumble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -238,7 +238,7 @@ func (o *ARVRController) GetRumble() gdnative.Real {
 	Args: [{ false button int}], Returns: int
 */
 func (o *ARVRController) IsButtonPressed(button gdnative.Int) gdnative.Int {
-	//log.Println("Calling ARVRController.IsButtonPressed()")
+	// log.Println("Calling ARVRController.IsButtonPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -262,7 +262,7 @@ func (o *ARVRController) IsButtonPressed(button gdnative.Int) gdnative.Int {
 	Args: [{ false controller_id int}], Returns: void
 */
 func (o *ARVRController) SetControllerId(controllerId gdnative.Int) {
-	//log.Println("Calling ARVRController.SetControllerId()")
+	// log.Println("Calling ARVRController.SetControllerId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -283,7 +283,7 @@ func (o *ARVRController) SetControllerId(controllerId gdnative.Int) {
 	Args: [{ false rumble float}], Returns: void
 */
 func (o *ARVRController) SetRumble(rumble gdnative.Real) {
-	//log.Println("Calling ARVRController.SetRumble()")
+	// log.Println("Calling ARVRController.SetRumble()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

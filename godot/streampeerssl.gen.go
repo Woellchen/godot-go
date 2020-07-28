@@ -50,7 +50,7 @@ func (o *StreamPeerSSL) BaseClass() string {
 	Args: [{ false stream StreamPeer} { false private_key CryptoKey} { false certificate X509Certificate} {[Object:null] true chain X509Certificate}], Returns: enum.Error
 */
 func (o *StreamPeerSSL) AcceptStream(stream StreamPeerImplementer, privateKey CryptoKeyImplementer, certificate X509CertificateImplementer, chain X509CertificateImplementer) gdnative.Error {
-	//log.Println("Calling StreamPeerSSL.AcceptStream()")
+	// log.Println("Calling StreamPeerSSL.AcceptStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -77,7 +77,7 @@ func (o *StreamPeerSSL) AcceptStream(stream StreamPeerImplementer, privateKey Cr
 	Args: [{ false stream StreamPeer} {False true validate_certs bool} { true for_hostname String} {[Object:null] true valid_certificate X509Certificate}], Returns: enum.Error
 */
 func (o *StreamPeerSSL) ConnectToStream(stream StreamPeerImplementer, validateCerts gdnative.Bool, forHostname gdnative.String, validCertificate X509CertificateImplementer) gdnative.Error {
-	//log.Println("Calling StreamPeerSSL.ConnectToStream()")
+	// log.Println("Calling StreamPeerSSL.ConnectToStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -104,7 +104,7 @@ func (o *StreamPeerSSL) ConnectToStream(stream StreamPeerImplementer, validateCe
 	Args: [], Returns: void
 */
 func (o *StreamPeerSSL) DisconnectFromStream() {
-	//log.Println("Calling StreamPeerSSL.DisconnectFromStream()")
+	// log.Println("Calling StreamPeerSSL.DisconnectFromStream()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -124,7 +124,7 @@ func (o *StreamPeerSSL) DisconnectFromStream() {
 	Args: [], Returns: enum.StreamPeerSSL::Status
 */
 func (o *StreamPeerSSL) GetStatus() StreamPeerSSLStatus {
-	//log.Println("Calling StreamPeerSSL.GetStatus()")
+	// log.Println("Calling StreamPeerSSL.GetStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -147,7 +147,7 @@ func (o *StreamPeerSSL) GetStatus() StreamPeerSSLStatus {
 	Args: [], Returns: bool
 */
 func (o *StreamPeerSSL) IsBlockingHandshakeEnabled() gdnative.Bool {
-	//log.Println("Calling StreamPeerSSL.IsBlockingHandshakeEnabled()")
+	// log.Println("Calling StreamPeerSSL.IsBlockingHandshakeEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -170,7 +170,7 @@ func (o *StreamPeerSSL) IsBlockingHandshakeEnabled() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *StreamPeerSSL) Poll() {
-	//log.Println("Calling StreamPeerSSL.Poll()")
+	// log.Println("Calling StreamPeerSSL.Poll()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -190,7 +190,7 @@ func (o *StreamPeerSSL) Poll() {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *StreamPeerSSL) SetBlockingHandshakeEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling StreamPeerSSL.SetBlockingHandshakeEnabled()")
+	// log.Println("Calling StreamPeerSSL.SetBlockingHandshakeEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

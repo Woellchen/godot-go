@@ -39,7 +39,7 @@ func (o *NavigationMesh) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *NavigationMesh) X_GetPolygons() gdnative.Array {
-	//log.Println("Calling NavigationMesh.X_GetPolygons()")
+	// log.Println("Calling NavigationMesh.X_GetPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *NavigationMesh) X_GetPolygons() gdnative.Array {
 	Args: [{ false polygons Array}], Returns: void
 */
 func (o *NavigationMesh) X_SetPolygons(polygons gdnative.Array) {
-	//log.Println("Calling NavigationMesh.X_SetPolygons()")
+	// log.Println("Calling NavigationMesh.X_SetPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *NavigationMesh) X_SetPolygons(polygons gdnative.Array) {
 	Args: [{ false polygon PoolIntArray}], Returns: void
 */
 func (o *NavigationMesh) AddPolygon(polygon gdnative.PoolIntArray) {
-	//log.Println("Calling NavigationMesh.AddPolygon()")
+	// log.Println("Calling NavigationMesh.AddPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *NavigationMesh) AddPolygon(polygon gdnative.PoolIntArray) {
 	Args: [], Returns: void
 */
 func (o *NavigationMesh) ClearPolygons() {
-	//log.Println("Calling NavigationMesh.ClearPolygons()")
+	// log.Println("Calling NavigationMesh.ClearPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -124,7 +124,7 @@ func (o *NavigationMesh) ClearPolygons() {
 	Args: [{ false mesh Mesh}], Returns: void
 */
 func (o *NavigationMesh) CreateFromMesh(mesh MeshImplementer) {
-	//log.Println("Calling NavigationMesh.CreateFromMesh()")
+	// log.Println("Calling NavigationMesh.CreateFromMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -145,7 +145,7 @@ func (o *NavigationMesh) CreateFromMesh(mesh MeshImplementer) {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetAgentHeight() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetAgentHeight()")
+	// log.Println("Calling NavigationMesh.GetAgentHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *NavigationMesh) GetAgentHeight() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetAgentMaxClimb() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetAgentMaxClimb()")
+	// log.Println("Calling NavigationMesh.GetAgentMaxClimb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *NavigationMesh) GetAgentMaxClimb() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetAgentMaxSlope() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetAgentMaxSlope()")
+	// log.Println("Calling NavigationMesh.GetAgentMaxSlope()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -214,7 +214,7 @@ func (o *NavigationMesh) GetAgentMaxSlope() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetAgentRadius() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetAgentRadius()")
+	// log.Println("Calling NavigationMesh.GetAgentRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -237,7 +237,7 @@ func (o *NavigationMesh) GetAgentRadius() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetCellHeight() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetCellHeight()")
+	// log.Println("Calling NavigationMesh.GetCellHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -260,7 +260,7 @@ func (o *NavigationMesh) GetCellHeight() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetCellSize() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetCellSize()")
+	// log.Println("Calling NavigationMesh.GetCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -283,7 +283,7 @@ func (o *NavigationMesh) GetCellSize() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *NavigationMesh) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling NavigationMesh.GetCollisionMask()")
+	// log.Println("Calling NavigationMesh.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -306,7 +306,7 @@ func (o *NavigationMesh) GetCollisionMask() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *NavigationMesh) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling NavigationMesh.GetCollisionMaskBit()")
+	// log.Println("Calling NavigationMesh.GetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -330,7 +330,7 @@ func (o *NavigationMesh) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetDetailSampleDistance() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetDetailSampleDistance()")
+	// log.Println("Calling NavigationMesh.GetDetailSampleDistance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -353,7 +353,7 @@ func (o *NavigationMesh) GetDetailSampleDistance() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetDetailSampleMaxError() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetDetailSampleMaxError()")
+	// log.Println("Calling NavigationMesh.GetDetailSampleMaxError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -376,7 +376,7 @@ func (o *NavigationMesh) GetDetailSampleMaxError() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetEdgeMaxError() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetEdgeMaxError()")
+	// log.Println("Calling NavigationMesh.GetEdgeMaxError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -399,7 +399,7 @@ func (o *NavigationMesh) GetEdgeMaxError() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetEdgeMaxLength() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetEdgeMaxLength()")
+	// log.Println("Calling NavigationMesh.GetEdgeMaxLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -422,7 +422,7 @@ func (o *NavigationMesh) GetEdgeMaxLength() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *NavigationMesh) GetFilterLedgeSpans() gdnative.Bool {
-	//log.Println("Calling NavigationMesh.GetFilterLedgeSpans()")
+	// log.Println("Calling NavigationMesh.GetFilterLedgeSpans()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -445,7 +445,7 @@ func (o *NavigationMesh) GetFilterLedgeSpans() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *NavigationMesh) GetFilterLowHangingObstacles() gdnative.Bool {
-	//log.Println("Calling NavigationMesh.GetFilterLowHangingObstacles()")
+	// log.Println("Calling NavigationMesh.GetFilterLowHangingObstacles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -468,7 +468,7 @@ func (o *NavigationMesh) GetFilterLowHangingObstacles() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *NavigationMesh) GetFilterWalkableLowHeightSpans() gdnative.Bool {
-	//log.Println("Calling NavigationMesh.GetFilterWalkableLowHeightSpans()")
+	// log.Println("Calling NavigationMesh.GetFilterWalkableLowHeightSpans()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -491,7 +491,7 @@ func (o *NavigationMesh) GetFilterWalkableLowHeightSpans() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *NavigationMesh) GetParsedGeometryType() gdnative.Int {
-	//log.Println("Calling NavigationMesh.GetParsedGeometryType()")
+	// log.Println("Calling NavigationMesh.GetParsedGeometryType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -514,7 +514,7 @@ func (o *NavigationMesh) GetParsedGeometryType() gdnative.Int {
 	Args: [{ false idx int}], Returns: PoolIntArray
 */
 func (o *NavigationMesh) GetPolygon(idx gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling NavigationMesh.GetPolygon()")
+	// log.Println("Calling NavigationMesh.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -538,7 +538,7 @@ func (o *NavigationMesh) GetPolygon(idx gdnative.Int) gdnative.PoolIntArray {
 	Args: [], Returns: int
 */
 func (o *NavigationMesh) GetPolygonCount() gdnative.Int {
-	//log.Println("Calling NavigationMesh.GetPolygonCount()")
+	// log.Println("Calling NavigationMesh.GetPolygonCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -561,7 +561,7 @@ func (o *NavigationMesh) GetPolygonCount() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetRegionMergeSize() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetRegionMergeSize()")
+	// log.Println("Calling NavigationMesh.GetRegionMergeSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -584,7 +584,7 @@ func (o *NavigationMesh) GetRegionMergeSize() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetRegionMinSize() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetRegionMinSize()")
+	// log.Println("Calling NavigationMesh.GetRegionMinSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -607,7 +607,7 @@ func (o *NavigationMesh) GetRegionMinSize() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *NavigationMesh) GetSamplePartitionType() gdnative.Int {
-	//log.Println("Calling NavigationMesh.GetSamplePartitionType()")
+	// log.Println("Calling NavigationMesh.GetSamplePartitionType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -630,7 +630,7 @@ func (o *NavigationMesh) GetSamplePartitionType() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *NavigationMesh) GetSourceGeometryMode() gdnative.Int {
-	//log.Println("Calling NavigationMesh.GetSourceGeometryMode()")
+	// log.Println("Calling NavigationMesh.GetSourceGeometryMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -653,7 +653,7 @@ func (o *NavigationMesh) GetSourceGeometryMode() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *NavigationMesh) GetSourceGroupName() gdnative.String {
-	//log.Println("Calling NavigationMesh.GetSourceGroupName()")
+	// log.Println("Calling NavigationMesh.GetSourceGroupName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -676,7 +676,7 @@ func (o *NavigationMesh) GetSourceGroupName() gdnative.String {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *NavigationMesh) GetVertices() gdnative.PoolVector3Array {
-	//log.Println("Calling NavigationMesh.GetVertices()")
+	// log.Println("Calling NavigationMesh.GetVertices()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -699,7 +699,7 @@ func (o *NavigationMesh) GetVertices() gdnative.PoolVector3Array {
 	Args: [], Returns: float
 */
 func (o *NavigationMesh) GetVertsPerPoly() gdnative.Real {
-	//log.Println("Calling NavigationMesh.GetVertsPerPoly()")
+	// log.Println("Calling NavigationMesh.GetVertsPerPoly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -722,7 +722,7 @@ func (o *NavigationMesh) GetVertsPerPoly() gdnative.Real {
 	Args: [{ false agent_height float}], Returns: void
 */
 func (o *NavigationMesh) SetAgentHeight(agentHeight gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetAgentHeight()")
+	// log.Println("Calling NavigationMesh.SetAgentHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -743,7 +743,7 @@ func (o *NavigationMesh) SetAgentHeight(agentHeight gdnative.Real) {
 	Args: [{ false agent_max_climb float}], Returns: void
 */
 func (o *NavigationMesh) SetAgentMaxClimb(agentMaxClimb gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetAgentMaxClimb()")
+	// log.Println("Calling NavigationMesh.SetAgentMaxClimb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -764,7 +764,7 @@ func (o *NavigationMesh) SetAgentMaxClimb(agentMaxClimb gdnative.Real) {
 	Args: [{ false agent_max_slope float}], Returns: void
 */
 func (o *NavigationMesh) SetAgentMaxSlope(agentMaxSlope gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetAgentMaxSlope()")
+	// log.Println("Calling NavigationMesh.SetAgentMaxSlope()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -785,7 +785,7 @@ func (o *NavigationMesh) SetAgentMaxSlope(agentMaxSlope gdnative.Real) {
 	Args: [{ false agent_radius float}], Returns: void
 */
 func (o *NavigationMesh) SetAgentRadius(agentRadius gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetAgentRadius()")
+	// log.Println("Calling NavigationMesh.SetAgentRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -806,7 +806,7 @@ func (o *NavigationMesh) SetAgentRadius(agentRadius gdnative.Real) {
 	Args: [{ false cell_height float}], Returns: void
 */
 func (o *NavigationMesh) SetCellHeight(cellHeight gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetCellHeight()")
+	// log.Println("Calling NavigationMesh.SetCellHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -827,7 +827,7 @@ func (o *NavigationMesh) SetCellHeight(cellHeight gdnative.Real) {
 	Args: [{ false cell_size float}], Returns: void
 */
 func (o *NavigationMesh) SetCellSize(cellSize gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetCellSize()")
+	// log.Println("Calling NavigationMesh.SetCellSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -848,7 +848,7 @@ func (o *NavigationMesh) SetCellSize(cellSize gdnative.Real) {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *NavigationMesh) SetCollisionMask(mask gdnative.Int) {
-	//log.Println("Calling NavigationMesh.SetCollisionMask()")
+	// log.Println("Calling NavigationMesh.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -869,7 +869,7 @@ func (o *NavigationMesh) SetCollisionMask(mask gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *NavigationMesh) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling NavigationMesh.SetCollisionMaskBit()")
+	// log.Println("Calling NavigationMesh.SetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -891,7 +891,7 @@ func (o *NavigationMesh) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bo
 	Args: [{ false detail_sample_dist float}], Returns: void
 */
 func (o *NavigationMesh) SetDetailSampleDistance(detailSampleDist gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetDetailSampleDistance()")
+	// log.Println("Calling NavigationMesh.SetDetailSampleDistance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -912,7 +912,7 @@ func (o *NavigationMesh) SetDetailSampleDistance(detailSampleDist gdnative.Real)
 	Args: [{ false detail_sample_max_error float}], Returns: void
 */
 func (o *NavigationMesh) SetDetailSampleMaxError(detailSampleMaxError gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetDetailSampleMaxError()")
+	// log.Println("Calling NavigationMesh.SetDetailSampleMaxError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -933,7 +933,7 @@ func (o *NavigationMesh) SetDetailSampleMaxError(detailSampleMaxError gdnative.R
 	Args: [{ false edge_max_error float}], Returns: void
 */
 func (o *NavigationMesh) SetEdgeMaxError(edgeMaxError gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetEdgeMaxError()")
+	// log.Println("Calling NavigationMesh.SetEdgeMaxError()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -954,7 +954,7 @@ func (o *NavigationMesh) SetEdgeMaxError(edgeMaxError gdnative.Real) {
 	Args: [{ false edge_max_length float}], Returns: void
 */
 func (o *NavigationMesh) SetEdgeMaxLength(edgeMaxLength gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetEdgeMaxLength()")
+	// log.Println("Calling NavigationMesh.SetEdgeMaxLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -975,7 +975,7 @@ func (o *NavigationMesh) SetEdgeMaxLength(edgeMaxLength gdnative.Real) {
 	Args: [{ false filter_ledge_spans bool}], Returns: void
 */
 func (o *NavigationMesh) SetFilterLedgeSpans(filterLedgeSpans gdnative.Bool) {
-	//log.Println("Calling NavigationMesh.SetFilterLedgeSpans()")
+	// log.Println("Calling NavigationMesh.SetFilterLedgeSpans()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -996,7 +996,7 @@ func (o *NavigationMesh) SetFilterLedgeSpans(filterLedgeSpans gdnative.Bool) {
 	Args: [{ false filter_low_hanging_obstacles bool}], Returns: void
 */
 func (o *NavigationMesh) SetFilterLowHangingObstacles(filterLowHangingObstacles gdnative.Bool) {
-	//log.Println("Calling NavigationMesh.SetFilterLowHangingObstacles()")
+	// log.Println("Calling NavigationMesh.SetFilterLowHangingObstacles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1017,7 +1017,7 @@ func (o *NavigationMesh) SetFilterLowHangingObstacles(filterLowHangingObstacles 
 	Args: [{ false filter_walkable_low_height_spans bool}], Returns: void
 */
 func (o *NavigationMesh) SetFilterWalkableLowHeightSpans(filterWalkableLowHeightSpans gdnative.Bool) {
-	//log.Println("Calling NavigationMesh.SetFilterWalkableLowHeightSpans()")
+	// log.Println("Calling NavigationMesh.SetFilterWalkableLowHeightSpans()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1038,7 +1038,7 @@ func (o *NavigationMesh) SetFilterWalkableLowHeightSpans(filterWalkableLowHeight
 	Args: [{ false geometry_type int}], Returns: void
 */
 func (o *NavigationMesh) SetParsedGeometryType(geometryType gdnative.Int) {
-	//log.Println("Calling NavigationMesh.SetParsedGeometryType()")
+	// log.Println("Calling NavigationMesh.SetParsedGeometryType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1059,7 +1059,7 @@ func (o *NavigationMesh) SetParsedGeometryType(geometryType gdnative.Int) {
 	Args: [{ false region_merge_size float}], Returns: void
 */
 func (o *NavigationMesh) SetRegionMergeSize(regionMergeSize gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetRegionMergeSize()")
+	// log.Println("Calling NavigationMesh.SetRegionMergeSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1080,7 +1080,7 @@ func (o *NavigationMesh) SetRegionMergeSize(regionMergeSize gdnative.Real) {
 	Args: [{ false region_min_size float}], Returns: void
 */
 func (o *NavigationMesh) SetRegionMinSize(regionMinSize gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetRegionMinSize()")
+	// log.Println("Calling NavigationMesh.SetRegionMinSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1101,7 +1101,7 @@ func (o *NavigationMesh) SetRegionMinSize(regionMinSize gdnative.Real) {
 	Args: [{ false sample_partition_type int}], Returns: void
 */
 func (o *NavigationMesh) SetSamplePartitionType(samplePartitionType gdnative.Int) {
-	//log.Println("Calling NavigationMesh.SetSamplePartitionType()")
+	// log.Println("Calling NavigationMesh.SetSamplePartitionType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1122,7 +1122,7 @@ func (o *NavigationMesh) SetSamplePartitionType(samplePartitionType gdnative.Int
 	Args: [{ false mask int}], Returns: void
 */
 func (o *NavigationMesh) SetSourceGeometryMode(mask gdnative.Int) {
-	//log.Println("Calling NavigationMesh.SetSourceGeometryMode()")
+	// log.Println("Calling NavigationMesh.SetSourceGeometryMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1143,7 +1143,7 @@ func (o *NavigationMesh) SetSourceGeometryMode(mask gdnative.Int) {
 	Args: [{ false mask String}], Returns: void
 */
 func (o *NavigationMesh) SetSourceGroupName(mask gdnative.String) {
-	//log.Println("Calling NavigationMesh.SetSourceGroupName()")
+	// log.Println("Calling NavigationMesh.SetSourceGroupName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1164,7 +1164,7 @@ func (o *NavigationMesh) SetSourceGroupName(mask gdnative.String) {
 	Args: [{ false vertices PoolVector3Array}], Returns: void
 */
 func (o *NavigationMesh) SetVertices(vertices gdnative.PoolVector3Array) {
-	//log.Println("Calling NavigationMesh.SetVertices()")
+	// log.Println("Calling NavigationMesh.SetVertices()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1185,7 +1185,7 @@ func (o *NavigationMesh) SetVertices(vertices gdnative.PoolVector3Array) {
 	Args: [{ false verts_per_poly float}], Returns: void
 */
 func (o *NavigationMesh) SetVertsPerPoly(vertsPerPoly gdnative.Real) {
-	//log.Println("Calling NavigationMesh.SetVertsPerPoly()")
+	// log.Println("Calling NavigationMesh.SetVertsPerPoly()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

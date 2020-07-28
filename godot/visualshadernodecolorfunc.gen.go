@@ -47,7 +47,7 @@ func (o *VisualShaderNodeColorFunc) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeColorFunc::Function
 */
 func (o *VisualShaderNodeColorFunc) GetFunction() VisualShaderNodeColorFuncFunction {
-	//log.Println("Calling VisualShaderNodeColorFunc.GetFunction()")
+	// log.Println("Calling VisualShaderNodeColorFunc.GetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -70,7 +70,7 @@ func (o *VisualShaderNodeColorFunc) GetFunction() VisualShaderNodeColorFuncFunct
 	Args: [{ false func int}], Returns: void
 */
 func (o *VisualShaderNodeColorFunc) SetFunction(function gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeColorFunc.SetFunction()")
+	// log.Println("Calling VisualShaderNodeColorFunc.SetFunction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -58,7 +58,7 @@ func (o *CameraFeed) BaseClass() string {
 	Args: [{ false width int} { false height int} { false format int} { false texture_type int} { false data_type int}], Returns: void
 */
 func (o *CameraFeed) X_AllocateTexture(width gdnative.Int, height gdnative.Int, format gdnative.Int, textureType gdnative.Int, dataType gdnative.Int) {
-	//log.Println("Calling CameraFeed.X_AllocateTexture()")
+	// log.Println("Calling CameraFeed.X_AllocateTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -83,7 +83,7 @@ func (o *CameraFeed) X_AllocateTexture(width gdnative.Int, height gdnative.Int, 
 	Args: [{ false rgb_img Image}], Returns: void
 */
 func (o *CameraFeed) X_SetRgbImg(rgbImg ImageImplementer) {
-	//log.Println("Calling CameraFeed.X_SetRgbImg()")
+	// log.Println("Calling CameraFeed.X_SetRgbImg()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *CameraFeed) X_SetRgbImg(rgbImg ImageImplementer) {
 	Args: [{ false ycbcr_img Image}], Returns: void
 */
 func (o *CameraFeed) X_SetYCbCrImg(ycbcrImg ImageImplementer) {
-	//log.Println("Calling CameraFeed.X_SetYCbCrImg()")
+	// log.Println("Calling CameraFeed.X_SetYCbCrImg()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -125,7 +125,7 @@ func (o *CameraFeed) X_SetYCbCrImg(ycbcrImg ImageImplementer) {
 	Args: [{ false y_img Image} { false cbcr_img Image}], Returns: void
 */
 func (o *CameraFeed) X_SetYCbCrImgs(yImg ImageImplementer, cbcrImg ImageImplementer) {
-	//log.Println("Calling CameraFeed.X_SetYCbCrImgs()")
+	// log.Println("Calling CameraFeed.X_SetYCbCrImgs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -147,7 +147,7 @@ func (o *CameraFeed) X_SetYCbCrImgs(yImg ImageImplementer, cbcrImg ImageImplemen
 	Args: [{ false name String}], Returns: void
 */
 func (o *CameraFeed) X_SetName(name gdnative.String) {
-	//log.Println("Calling CameraFeed.X_SetName()")
+	// log.Println("Calling CameraFeed.X_SetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -168,7 +168,7 @@ func (o *CameraFeed) X_SetName(name gdnative.String) {
 	Args: [{ false position int}], Returns: void
 */
 func (o *CameraFeed) X_SetPosition(position gdnative.Int) {
-	//log.Println("Calling CameraFeed.X_SetPosition()")
+	// log.Println("Calling CameraFeed.X_SetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *CameraFeed) X_SetPosition(position gdnative.Int) {
 	Args: [], Returns: int
 */
 func (o *CameraFeed) GetId() gdnative.Int {
-	//log.Println("Calling CameraFeed.GetId()")
+	// log.Println("Calling CameraFeed.GetId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -212,7 +212,7 @@ func (o *CameraFeed) GetId() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *CameraFeed) GetName() gdnative.String {
-	//log.Println("Calling CameraFeed.GetName()")
+	// log.Println("Calling CameraFeed.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -235,7 +235,7 @@ func (o *CameraFeed) GetName() gdnative.String {
 	Args: [], Returns: enum.CameraFeed::FeedPosition
 */
 func (o *CameraFeed) GetPosition() CameraFeedFeedPosition {
-	//log.Println("Calling CameraFeed.GetPosition()")
+	// log.Println("Calling CameraFeed.GetPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -258,7 +258,7 @@ func (o *CameraFeed) GetPosition() CameraFeedFeedPosition {
 	Args: [], Returns: Transform2D
 */
 func (o *CameraFeed) GetTransform() gdnative.Transform2D {
-	//log.Println("Calling CameraFeed.GetTransform()")
+	// log.Println("Calling CameraFeed.GetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -281,7 +281,7 @@ func (o *CameraFeed) GetTransform() gdnative.Transform2D {
 	Args: [], Returns: bool
 */
 func (o *CameraFeed) IsActive() gdnative.Bool {
-	//log.Println("Calling CameraFeed.IsActive()")
+	// log.Println("Calling CameraFeed.IsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -304,7 +304,7 @@ func (o *CameraFeed) IsActive() gdnative.Bool {
 	Args: [{ false active bool}], Returns: void
 */
 func (o *CameraFeed) SetActive(active gdnative.Bool) {
-	//log.Println("Calling CameraFeed.SetActive()")
+	// log.Println("Calling CameraFeed.SetActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -325,7 +325,7 @@ func (o *CameraFeed) SetActive(active gdnative.Bool) {
 	Args: [{ false transform Transform2D}], Returns: void
 */
 func (o *CameraFeed) SetTransform(transform gdnative.Transform2D) {
-	//log.Println("Calling CameraFeed.SetTransform()")
+	// log.Println("Calling CameraFeed.SetTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

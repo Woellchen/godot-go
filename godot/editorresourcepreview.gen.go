@@ -39,7 +39,7 @@ func (o *EditorResourcePreview) BaseClass() string {
 	Args: [{ false arg0 String} { false arg1 Texture} { false arg2 Texture} { false arg3 int} { false arg4 String} { false arg5 Variant}], Returns: void
 */
 func (o *EditorResourcePreview) X_PreviewReady(arg0 gdnative.String, arg1 TextureImplementer, arg2 TextureImplementer, arg3 gdnative.Int, arg4 gdnative.String, arg5 gdnative.Variant) {
-	//log.Println("Calling EditorResourcePreview.X_PreviewReady()")
+	// log.Println("Calling EditorResourcePreview.X_PreviewReady()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -65,7 +65,7 @@ func (o *EditorResourcePreview) X_PreviewReady(arg0 gdnative.String, arg1 Textur
 	Args: [{ false generator EditorResourcePreviewGenerator}], Returns: void
 */
 func (o *EditorResourcePreview) AddPreviewGenerator(generator EditorResourcePreviewGeneratorImplementer) {
-	//log.Println("Calling EditorResourcePreview.AddPreviewGenerator()")
+	// log.Println("Calling EditorResourcePreview.AddPreviewGenerator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -86,7 +86,7 @@ func (o *EditorResourcePreview) AddPreviewGenerator(generator EditorResourcePrev
 	Args: [{ false path String}], Returns: void
 */
 func (o *EditorResourcePreview) CheckForInvalidation(path gdnative.String) {
-	//log.Println("Calling EditorResourcePreview.CheckForInvalidation()")
+	// log.Println("Calling EditorResourcePreview.CheckForInvalidation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -107,7 +107,7 @@ func (o *EditorResourcePreview) CheckForInvalidation(path gdnative.String) {
 	Args: [{ false resource Resource} { false receiver Object} { false receiver_func String} { false userdata Variant}], Returns: void
 */
 func (o *EditorResourcePreview) QueueEditedResourcePreview(resource ResourceImplementer, receiver ObjectImplementer, receiverFunc gdnative.String, userdata gdnative.Variant) {
-	//log.Println("Calling EditorResourcePreview.QueueEditedResourcePreview()")
+	// log.Println("Calling EditorResourcePreview.QueueEditedResourcePreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -131,7 +131,7 @@ func (o *EditorResourcePreview) QueueEditedResourcePreview(resource ResourceImpl
 	Args: [{ false path String} { false receiver Object} { false receiver_func String} { false userdata Variant}], Returns: void
 */
 func (o *EditorResourcePreview) QueueResourcePreview(path gdnative.String, receiver ObjectImplementer, receiverFunc gdnative.String, userdata gdnative.Variant) {
-	//log.Println("Calling EditorResourcePreview.QueueResourcePreview()")
+	// log.Println("Calling EditorResourcePreview.QueueResourcePreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -155,7 +155,7 @@ func (o *EditorResourcePreview) QueueResourcePreview(path gdnative.String, recei
 	Args: [{ false generator EditorResourcePreviewGenerator}], Returns: void
 */
 func (o *EditorResourcePreview) RemovePreviewGenerator(generator EditorResourcePreviewGeneratorImplementer) {
-	//log.Println("Calling EditorResourcePreview.RemovePreviewGenerator()")
+	// log.Println("Calling EditorResourcePreview.RemovePreviewGenerator()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *MeshDataTool) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *MeshDataTool) Clear() {
-	//log.Println("Calling MeshDataTool.Clear()")
+	// log.Println("Calling MeshDataTool.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *MeshDataTool) Clear() {
 	Args: [{ false mesh ArrayMesh}], Returns: enum.Error
 */
 func (o *MeshDataTool) CommitToSurface(mesh ArrayMeshImplementer) gdnative.Error {
-	//log.Println("Calling MeshDataTool.CommitToSurface()")
+	// log.Println("Calling MeshDataTool.CommitToSurface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *MeshDataTool) CommitToSurface(mesh ArrayMeshImplementer) gdnative.Error
 	Args: [{ false mesh ArrayMesh} { false surface int}], Returns: enum.Error
 */
 func (o *MeshDataTool) CreateFromSurface(mesh ArrayMeshImplementer, surface gdnative.Int) gdnative.Error {
-	//log.Println("Calling MeshDataTool.CreateFromSurface()")
+	// log.Println("Calling MeshDataTool.CreateFromSurface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -108,7 +108,7 @@ func (o *MeshDataTool) CreateFromSurface(mesh ArrayMeshImplementer, surface gdna
 	Args: [], Returns: int
 */
 func (o *MeshDataTool) GetEdgeCount() gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetEdgeCount()")
+	// log.Println("Calling MeshDataTool.GetEdgeCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *MeshDataTool) GetEdgeCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: PoolIntArray
 */
 func (o *MeshDataTool) GetEdgeFaces(idx gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling MeshDataTool.GetEdgeFaces()")
+	// log.Println("Calling MeshDataTool.GetEdgeFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -155,7 +155,7 @@ func (o *MeshDataTool) GetEdgeFaces(idx gdnative.Int) gdnative.PoolIntArray {
 	Args: [{ false idx int}], Returns: Variant
 */
 func (o *MeshDataTool) GetEdgeMeta(idx gdnative.Int) gdnative.Variant {
-	//log.Println("Calling MeshDataTool.GetEdgeMeta()")
+	// log.Println("Calling MeshDataTool.GetEdgeMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *MeshDataTool) GetEdgeMeta(idx gdnative.Int) gdnative.Variant {
 	Args: [{ false idx int} { false vertex int}], Returns: int
 */
 func (o *MeshDataTool) GetEdgeVertex(idx gdnative.Int, vertex gdnative.Int) gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetEdgeVertex()")
+	// log.Println("Calling MeshDataTool.GetEdgeVertex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -204,7 +204,7 @@ func (o *MeshDataTool) GetEdgeVertex(idx gdnative.Int, vertex gdnative.Int) gdna
 	Args: [], Returns: int
 */
 func (o *MeshDataTool) GetFaceCount() gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetFaceCount()")
+	// log.Println("Calling MeshDataTool.GetFaceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -227,7 +227,7 @@ func (o *MeshDataTool) GetFaceCount() gdnative.Int {
 	Args: [{ false idx int} { false edge int}], Returns: int
 */
 func (o *MeshDataTool) GetFaceEdge(idx gdnative.Int, edge gdnative.Int) gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetFaceEdge()")
+	// log.Println("Calling MeshDataTool.GetFaceEdge()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -252,7 +252,7 @@ func (o *MeshDataTool) GetFaceEdge(idx gdnative.Int, edge gdnative.Int) gdnative
 	Args: [{ false idx int}], Returns: Variant
 */
 func (o *MeshDataTool) GetFaceMeta(idx gdnative.Int) gdnative.Variant {
-	//log.Println("Calling MeshDataTool.GetFaceMeta()")
+	// log.Println("Calling MeshDataTool.GetFaceMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -276,7 +276,7 @@ func (o *MeshDataTool) GetFaceMeta(idx gdnative.Int) gdnative.Variant {
 	Args: [{ false idx int}], Returns: Vector3
 */
 func (o *MeshDataTool) GetFaceNormal(idx gdnative.Int) gdnative.Vector3 {
-	//log.Println("Calling MeshDataTool.GetFaceNormal()")
+	// log.Println("Calling MeshDataTool.GetFaceNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -300,7 +300,7 @@ func (o *MeshDataTool) GetFaceNormal(idx gdnative.Int) gdnative.Vector3 {
 	Args: [{ false idx int} { false vertex int}], Returns: int
 */
 func (o *MeshDataTool) GetFaceVertex(idx gdnative.Int, vertex gdnative.Int) gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetFaceVertex()")
+	// log.Println("Calling MeshDataTool.GetFaceVertex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -325,7 +325,7 @@ func (o *MeshDataTool) GetFaceVertex(idx gdnative.Int, vertex gdnative.Int) gdna
 	Args: [], Returns: int
 */
 func (o *MeshDataTool) GetFormat() gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetFormat()")
+	// log.Println("Calling MeshDataTool.GetFormat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -348,7 +348,7 @@ func (o *MeshDataTool) GetFormat() gdnative.Int {
 	Args: [], Returns: Material
 */
 func (o *MeshDataTool) GetMaterial() MaterialImplementer {
-	//log.Println("Calling MeshDataTool.GetMaterial()")
+	// log.Println("Calling MeshDataTool.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -385,7 +385,7 @@ func (o *MeshDataTool) GetMaterial() MaterialImplementer {
 	Args: [{ false idx int}], Returns: Vector3
 */
 func (o *MeshDataTool) GetVertex(idx gdnative.Int) gdnative.Vector3 {
-	//log.Println("Calling MeshDataTool.GetVertex()")
+	// log.Println("Calling MeshDataTool.GetVertex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -409,7 +409,7 @@ func (o *MeshDataTool) GetVertex(idx gdnative.Int) gdnative.Vector3 {
 	Args: [{ false idx int}], Returns: PoolIntArray
 */
 func (o *MeshDataTool) GetVertexBones(idx gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling MeshDataTool.GetVertexBones()")
+	// log.Println("Calling MeshDataTool.GetVertexBones()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -433,7 +433,7 @@ func (o *MeshDataTool) GetVertexBones(idx gdnative.Int) gdnative.PoolIntArray {
 	Args: [{ false idx int}], Returns: Color
 */
 func (o *MeshDataTool) GetVertexColor(idx gdnative.Int) gdnative.Color {
-	//log.Println("Calling MeshDataTool.GetVertexColor()")
+	// log.Println("Calling MeshDataTool.GetVertexColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -457,7 +457,7 @@ func (o *MeshDataTool) GetVertexColor(idx gdnative.Int) gdnative.Color {
 	Args: [], Returns: int
 */
 func (o *MeshDataTool) GetVertexCount() gdnative.Int {
-	//log.Println("Calling MeshDataTool.GetVertexCount()")
+	// log.Println("Calling MeshDataTool.GetVertexCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -480,7 +480,7 @@ func (o *MeshDataTool) GetVertexCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: PoolIntArray
 */
 func (o *MeshDataTool) GetVertexEdges(idx gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling MeshDataTool.GetVertexEdges()")
+	// log.Println("Calling MeshDataTool.GetVertexEdges()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -504,7 +504,7 @@ func (o *MeshDataTool) GetVertexEdges(idx gdnative.Int) gdnative.PoolIntArray {
 	Args: [{ false idx int}], Returns: PoolIntArray
 */
 func (o *MeshDataTool) GetVertexFaces(idx gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling MeshDataTool.GetVertexFaces()")
+	// log.Println("Calling MeshDataTool.GetVertexFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -528,7 +528,7 @@ func (o *MeshDataTool) GetVertexFaces(idx gdnative.Int) gdnative.PoolIntArray {
 	Args: [{ false idx int}], Returns: Variant
 */
 func (o *MeshDataTool) GetVertexMeta(idx gdnative.Int) gdnative.Variant {
-	//log.Println("Calling MeshDataTool.GetVertexMeta()")
+	// log.Println("Calling MeshDataTool.GetVertexMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -552,7 +552,7 @@ func (o *MeshDataTool) GetVertexMeta(idx gdnative.Int) gdnative.Variant {
 	Args: [{ false idx int}], Returns: Vector3
 */
 func (o *MeshDataTool) GetVertexNormal(idx gdnative.Int) gdnative.Vector3 {
-	//log.Println("Calling MeshDataTool.GetVertexNormal()")
+	// log.Println("Calling MeshDataTool.GetVertexNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -576,7 +576,7 @@ func (o *MeshDataTool) GetVertexNormal(idx gdnative.Int) gdnative.Vector3 {
 	Args: [{ false idx int}], Returns: Plane
 */
 func (o *MeshDataTool) GetVertexTangent(idx gdnative.Int) gdnative.Plane {
-	//log.Println("Calling MeshDataTool.GetVertexTangent()")
+	// log.Println("Calling MeshDataTool.GetVertexTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -600,7 +600,7 @@ func (o *MeshDataTool) GetVertexTangent(idx gdnative.Int) gdnative.Plane {
 	Args: [{ false idx int}], Returns: Vector2
 */
 func (o *MeshDataTool) GetVertexUv(idx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling MeshDataTool.GetVertexUv()")
+	// log.Println("Calling MeshDataTool.GetVertexUv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -624,7 +624,7 @@ func (o *MeshDataTool) GetVertexUv(idx gdnative.Int) gdnative.Vector2 {
 	Args: [{ false idx int}], Returns: Vector2
 */
 func (o *MeshDataTool) GetVertexUv2(idx gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling MeshDataTool.GetVertexUv2()")
+	// log.Println("Calling MeshDataTool.GetVertexUv2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -648,7 +648,7 @@ func (o *MeshDataTool) GetVertexUv2(idx gdnative.Int) gdnative.Vector2 {
 	Args: [{ false idx int}], Returns: PoolRealArray
 */
 func (o *MeshDataTool) GetVertexWeights(idx gdnative.Int) gdnative.PoolRealArray {
-	//log.Println("Calling MeshDataTool.GetVertexWeights()")
+	// log.Println("Calling MeshDataTool.GetVertexWeights()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -672,7 +672,7 @@ func (o *MeshDataTool) GetVertexWeights(idx gdnative.Int) gdnative.PoolRealArray
 	Args: [{ false idx int} { false meta Variant}], Returns: void
 */
 func (o *MeshDataTool) SetEdgeMeta(idx gdnative.Int, meta gdnative.Variant) {
-	//log.Println("Calling MeshDataTool.SetEdgeMeta()")
+	// log.Println("Calling MeshDataTool.SetEdgeMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -694,7 +694,7 @@ func (o *MeshDataTool) SetEdgeMeta(idx gdnative.Int, meta gdnative.Variant) {
 	Args: [{ false idx int} { false meta Variant}], Returns: void
 */
 func (o *MeshDataTool) SetFaceMeta(idx gdnative.Int, meta gdnative.Variant) {
-	//log.Println("Calling MeshDataTool.SetFaceMeta()")
+	// log.Println("Calling MeshDataTool.SetFaceMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -716,7 +716,7 @@ func (o *MeshDataTool) SetFaceMeta(idx gdnative.Int, meta gdnative.Variant) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *MeshDataTool) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling MeshDataTool.SetMaterial()")
+	// log.Println("Calling MeshDataTool.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -737,7 +737,7 @@ func (o *MeshDataTool) SetMaterial(material MaterialImplementer) {
 	Args: [{ false idx int} { false vertex Vector3}], Returns: void
 */
 func (o *MeshDataTool) SetVertex(idx gdnative.Int, vertex gdnative.Vector3) {
-	//log.Println("Calling MeshDataTool.SetVertex()")
+	// log.Println("Calling MeshDataTool.SetVertex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -759,7 +759,7 @@ func (o *MeshDataTool) SetVertex(idx gdnative.Int, vertex gdnative.Vector3) {
 	Args: [{ false idx int} { false bones PoolIntArray}], Returns: void
 */
 func (o *MeshDataTool) SetVertexBones(idx gdnative.Int, bones gdnative.PoolIntArray) {
-	//log.Println("Calling MeshDataTool.SetVertexBones()")
+	// log.Println("Calling MeshDataTool.SetVertexBones()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -781,7 +781,7 @@ func (o *MeshDataTool) SetVertexBones(idx gdnative.Int, bones gdnative.PoolIntAr
 	Args: [{ false idx int} { false color Color}], Returns: void
 */
 func (o *MeshDataTool) SetVertexColor(idx gdnative.Int, color gdnative.Color) {
-	//log.Println("Calling MeshDataTool.SetVertexColor()")
+	// log.Println("Calling MeshDataTool.SetVertexColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -803,7 +803,7 @@ func (o *MeshDataTool) SetVertexColor(idx gdnative.Int, color gdnative.Color) {
 	Args: [{ false idx int} { false meta Variant}], Returns: void
 */
 func (o *MeshDataTool) SetVertexMeta(idx gdnative.Int, meta gdnative.Variant) {
-	//log.Println("Calling MeshDataTool.SetVertexMeta()")
+	// log.Println("Calling MeshDataTool.SetVertexMeta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -825,7 +825,7 @@ func (o *MeshDataTool) SetVertexMeta(idx gdnative.Int, meta gdnative.Variant) {
 	Args: [{ false idx int} { false normal Vector3}], Returns: void
 */
 func (o *MeshDataTool) SetVertexNormal(idx gdnative.Int, normal gdnative.Vector3) {
-	//log.Println("Calling MeshDataTool.SetVertexNormal()")
+	// log.Println("Calling MeshDataTool.SetVertexNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -847,7 +847,7 @@ func (o *MeshDataTool) SetVertexNormal(idx gdnative.Int, normal gdnative.Vector3
 	Args: [{ false idx int} { false tangent Plane}], Returns: void
 */
 func (o *MeshDataTool) SetVertexTangent(idx gdnative.Int, tangent gdnative.Plane) {
-	//log.Println("Calling MeshDataTool.SetVertexTangent()")
+	// log.Println("Calling MeshDataTool.SetVertexTangent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -869,7 +869,7 @@ func (o *MeshDataTool) SetVertexTangent(idx gdnative.Int, tangent gdnative.Plane
 	Args: [{ false idx int} { false uv Vector2}], Returns: void
 */
 func (o *MeshDataTool) SetVertexUv(idx gdnative.Int, uv gdnative.Vector2) {
-	//log.Println("Calling MeshDataTool.SetVertexUv()")
+	// log.Println("Calling MeshDataTool.SetVertexUv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -891,7 +891,7 @@ func (o *MeshDataTool) SetVertexUv(idx gdnative.Int, uv gdnative.Vector2) {
 	Args: [{ false idx int} { false uv2 Vector2}], Returns: void
 */
 func (o *MeshDataTool) SetVertexUv2(idx gdnative.Int, uv2 gdnative.Vector2) {
-	//log.Println("Calling MeshDataTool.SetVertexUv2()")
+	// log.Println("Calling MeshDataTool.SetVertexUv2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -913,7 +913,7 @@ func (o *MeshDataTool) SetVertexUv2(idx gdnative.Int, uv2 gdnative.Vector2) {
 	Args: [{ false idx int} { false weights PoolRealArray}], Returns: void
 */
 func (o *MeshDataTool) SetVertexWeights(idx gdnative.Int, weights gdnative.PoolRealArray) {
-	//log.Println("Calling MeshDataTool.SetVertexWeights()")
+	// log.Println("Calling MeshDataTool.SetVertexWeights()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

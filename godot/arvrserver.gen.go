@@ -83,7 +83,7 @@ func (o *arvrServer) BaseClass() string {
 */
 func (o *arvrServer) CenterOnHmd(rotationMode gdnative.Int, keepHeight gdnative.Bool) {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.CenterOnHmd()")
+	// log.Println("Calling ARVRServer.CenterOnHmd()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -106,7 +106,7 @@ func (o *arvrServer) CenterOnHmd(rotationMode gdnative.Int, keepHeight gdnative.
 */
 func (o *arvrServer) FindInterface(name gdnative.String) ARVRInterfaceImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.FindInterface()")
+	// log.Println("Calling ARVRServer.FindInterface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -145,7 +145,7 @@ func (o *arvrServer) FindInterface(name gdnative.String) ARVRInterfaceImplemente
 */
 func (o *arvrServer) GetHmdTransform() gdnative.Transform {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetHmdTransform()")
+	// log.Println("Calling ARVRServer.GetHmdTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -169,7 +169,7 @@ func (o *arvrServer) GetHmdTransform() gdnative.Transform {
 */
 func (o *arvrServer) GetInterface(idx gdnative.Int) ARVRInterfaceImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetInterface()")
+	// log.Println("Calling ARVRServer.GetInterface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -208,7 +208,7 @@ func (o *arvrServer) GetInterface(idx gdnative.Int) ARVRInterfaceImplementer {
 */
 func (o *arvrServer) GetInterfaceCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetInterfaceCount()")
+	// log.Println("Calling ARVRServer.GetInterfaceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -232,7 +232,7 @@ func (o *arvrServer) GetInterfaceCount() gdnative.Int {
 */
 func (o *arvrServer) GetInterfaces() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetInterfaces()")
+	// log.Println("Calling ARVRServer.GetInterfaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -256,7 +256,7 @@ func (o *arvrServer) GetInterfaces() gdnative.Array {
 */
 func (o *arvrServer) GetLastCommitUsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetLastCommitUsec()")
+	// log.Println("Calling ARVRServer.GetLastCommitUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -280,7 +280,7 @@ func (o *arvrServer) GetLastCommitUsec() gdnative.Int {
 */
 func (o *arvrServer) GetLastFrameUsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetLastFrameUsec()")
+	// log.Println("Calling ARVRServer.GetLastFrameUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -304,7 +304,7 @@ func (o *arvrServer) GetLastFrameUsec() gdnative.Int {
 */
 func (o *arvrServer) GetLastProcessUsec() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetLastProcessUsec()")
+	// log.Println("Calling ARVRServer.GetLastProcessUsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -328,7 +328,7 @@ func (o *arvrServer) GetLastProcessUsec() gdnative.Int {
 */
 func (o *arvrServer) GetPrimaryInterface() ARVRInterfaceImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetPrimaryInterface()")
+	// log.Println("Calling ARVRServer.GetPrimaryInterface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -366,7 +366,7 @@ func (o *arvrServer) GetPrimaryInterface() ARVRInterfaceImplementer {
 */
 func (o *arvrServer) GetReferenceFrame() gdnative.Transform {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetReferenceFrame()")
+	// log.Println("Calling ARVRServer.GetReferenceFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -390,7 +390,7 @@ func (o *arvrServer) GetReferenceFrame() gdnative.Transform {
 */
 func (o *arvrServer) GetTracker(idx gdnative.Int) ARVRPositionalTrackerImplementer {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetTracker()")
+	// log.Println("Calling ARVRServer.GetTracker()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -429,7 +429,7 @@ func (o *arvrServer) GetTracker(idx gdnative.Int) ARVRPositionalTrackerImplement
 */
 func (o *arvrServer) GetTrackerCount() gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetTrackerCount()")
+	// log.Println("Calling ARVRServer.GetTrackerCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -453,7 +453,7 @@ func (o *arvrServer) GetTrackerCount() gdnative.Int {
 */
 func (o *arvrServer) GetWorldScale() gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.GetWorldScale()")
+	// log.Println("Calling ARVRServer.GetWorldScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -477,7 +477,7 @@ func (o *arvrServer) GetWorldScale() gdnative.Real {
 */
 func (o *arvrServer) SetPrimaryInterface(intrfce ARVRInterfaceImplementer) {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.SetPrimaryInterface()")
+	// log.Println("Calling ARVRServer.SetPrimaryInterface()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -499,7 +499,7 @@ func (o *arvrServer) SetPrimaryInterface(intrfce ARVRInterfaceImplementer) {
 */
 func (o *arvrServer) SetWorldScale(arg0 gdnative.Real) {
 	o.ensureSingleton()
-	//log.Println("Calling ARVRServer.SetWorldScale()")
+	// log.Println("Calling ARVRServer.SetWorldScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *Sprite3D) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *Sprite3D) GetFrame() gdnative.Int {
-	//log.Println("Calling Sprite3D.GetFrame()")
+	// log.Println("Calling Sprite3D.GetFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Sprite3D) GetFrame() gdnative.Int {
 	Args: [], Returns: Vector2
 */
 func (o *Sprite3D) GetFrameCoords() gdnative.Vector2 {
-	//log.Println("Calling Sprite3D.GetFrameCoords()")
+	// log.Println("Calling Sprite3D.GetFrameCoords()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *Sprite3D) GetFrameCoords() gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *Sprite3D) GetHframes() gdnative.Int {
-	//log.Println("Calling Sprite3D.GetHframes()")
+	// log.Println("Calling Sprite3D.GetHframes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *Sprite3D) GetHframes() gdnative.Int {
 	Args: [], Returns: Rect2
 */
 func (o *Sprite3D) GetRegionRect() gdnative.Rect2 {
-	//log.Println("Calling Sprite3D.GetRegionRect()")
+	// log.Println("Calling Sprite3D.GetRegionRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *Sprite3D) GetRegionRect() gdnative.Rect2 {
 	Args: [], Returns: Texture
 */
 func (o *Sprite3D) GetTexture() TextureImplementer {
-	//log.Println("Calling Sprite3D.GetTexture()")
+	// log.Println("Calling Sprite3D.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -168,7 +168,7 @@ func (o *Sprite3D) GetTexture() TextureImplementer {
 	Args: [], Returns: int
 */
 func (o *Sprite3D) GetVframes() gdnative.Int {
-	//log.Println("Calling Sprite3D.GetVframes()")
+	// log.Println("Calling Sprite3D.GetVframes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -191,7 +191,7 @@ func (o *Sprite3D) GetVframes() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Sprite3D) IsRegion() gdnative.Bool {
-	//log.Println("Calling Sprite3D.IsRegion()")
+	// log.Println("Calling Sprite3D.IsRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -214,7 +214,7 @@ func (o *Sprite3D) IsRegion() gdnative.Bool {
 	Args: [{ false frame int}], Returns: void
 */
 func (o *Sprite3D) SetFrame(frame gdnative.Int) {
-	//log.Println("Calling Sprite3D.SetFrame()")
+	// log.Println("Calling Sprite3D.SetFrame()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -235,7 +235,7 @@ func (o *Sprite3D) SetFrame(frame gdnative.Int) {
 	Args: [{ false coords Vector2}], Returns: void
 */
 func (o *Sprite3D) SetFrameCoords(coords gdnative.Vector2) {
-	//log.Println("Calling Sprite3D.SetFrameCoords()")
+	// log.Println("Calling Sprite3D.SetFrameCoords()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -256,7 +256,7 @@ func (o *Sprite3D) SetFrameCoords(coords gdnative.Vector2) {
 	Args: [{ false hframes int}], Returns: void
 */
 func (o *Sprite3D) SetHframes(hframes gdnative.Int) {
-	//log.Println("Calling Sprite3D.SetHframes()")
+	// log.Println("Calling Sprite3D.SetHframes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -277,7 +277,7 @@ func (o *Sprite3D) SetHframes(hframes gdnative.Int) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *Sprite3D) SetRegion(enabled gdnative.Bool) {
-	//log.Println("Calling Sprite3D.SetRegion()")
+	// log.Println("Calling Sprite3D.SetRegion()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -298,7 +298,7 @@ func (o *Sprite3D) SetRegion(enabled gdnative.Bool) {
 	Args: [{ false rect Rect2}], Returns: void
 */
 func (o *Sprite3D) SetRegionRect(rect gdnative.Rect2) {
-	//log.Println("Calling Sprite3D.SetRegionRect()")
+	// log.Println("Calling Sprite3D.SetRegionRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -319,7 +319,7 @@ func (o *Sprite3D) SetRegionRect(rect gdnative.Rect2) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *Sprite3D) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling Sprite3D.SetTexture()")
+	// log.Println("Calling Sprite3D.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -340,7 +340,7 @@ func (o *Sprite3D) SetTexture(texture TextureImplementer) {
 	Args: [{ false vframes int}], Returns: void
 */
 func (o *Sprite3D) SetVframes(vframes gdnative.Int) {
-	//log.Println("Calling Sprite3D.SetVframes()")
+	// log.Println("Calling Sprite3D.SetVframes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

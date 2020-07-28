@@ -39,7 +39,7 @@ func (o *GraphEdit) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_ConnectionsLayerDraw() {
-	//log.Println("Calling GraphEdit.X_ConnectionsLayerDraw()")
+	// log.Println("Calling GraphEdit.X_ConnectionsLayerDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *GraphEdit) X_ConnectionsLayerDraw() {
 	Args: [{ false arg0 Node}], Returns: void
 */
 func (o *GraphEdit) X_GraphNodeMoved(arg0 NodeImplementer) {
-	//log.Println("Calling GraphEdit.X_GraphNodeMoved()")
+	// log.Println("Calling GraphEdit.X_GraphNodeMoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *GraphEdit) X_GraphNodeMoved(arg0 NodeImplementer) {
 	Args: [{ false arg0 Node}], Returns: void
 */
 func (o *GraphEdit) X_GraphNodeRaised(arg0 NodeImplementer) {
-	//log.Println("Calling GraphEdit.X_GraphNodeRaised()")
+	// log.Println("Calling GraphEdit.X_GraphNodeRaised()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *GraphEdit) X_GraphNodeRaised(arg0 NodeImplementer) {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *GraphEdit) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling GraphEdit.X_GuiInput()")
+	// log.Println("Calling GraphEdit.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -122,7 +122,7 @@ func (o *GraphEdit) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *GraphEdit) X_ScrollMoved(arg0 gdnative.Real) {
-	//log.Println("Calling GraphEdit.X_ScrollMoved()")
+	// log.Println("Calling GraphEdit.X_ScrollMoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -143,7 +143,7 @@ func (o *GraphEdit) X_ScrollMoved(arg0 gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_SnapToggled() {
-	//log.Println("Calling GraphEdit.X_SnapToggled()")
+	// log.Println("Calling GraphEdit.X_SnapToggled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -163,7 +163,7 @@ func (o *GraphEdit) X_SnapToggled() {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *GraphEdit) X_SnapValueChanged(arg0 gdnative.Real) {
-	//log.Println("Calling GraphEdit.X_SnapValueChanged()")
+	// log.Println("Calling GraphEdit.X_SnapValueChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -184,7 +184,7 @@ func (o *GraphEdit) X_SnapValueChanged(arg0 gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_TopLayerDraw() {
-	//log.Println("Calling GraphEdit.X_TopLayerDraw()")
+	// log.Println("Calling GraphEdit.X_TopLayerDraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -204,7 +204,7 @@ func (o *GraphEdit) X_TopLayerDraw() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *GraphEdit) X_TopLayerInput(arg0 InputEventImplementer) {
-	//log.Println("Calling GraphEdit.X_TopLayerInput()")
+	// log.Println("Calling GraphEdit.X_TopLayerInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -225,7 +225,7 @@ func (o *GraphEdit) X_TopLayerInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_UpdateScrollOffset() {
-	//log.Println("Calling GraphEdit.X_UpdateScrollOffset()")
+	// log.Println("Calling GraphEdit.X_UpdateScrollOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -245,7 +245,7 @@ func (o *GraphEdit) X_UpdateScrollOffset() {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_ZoomMinus() {
-	//log.Println("Calling GraphEdit.X_ZoomMinus()")
+	// log.Println("Calling GraphEdit.X_ZoomMinus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -265,7 +265,7 @@ func (o *GraphEdit) X_ZoomMinus() {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_ZoomPlus() {
-	//log.Println("Calling GraphEdit.X_ZoomPlus()")
+	// log.Println("Calling GraphEdit.X_ZoomPlus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -285,7 +285,7 @@ func (o *GraphEdit) X_ZoomPlus() {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) X_ZoomReset() {
-	//log.Println("Calling GraphEdit.X_ZoomReset()")
+	// log.Println("Calling GraphEdit.X_ZoomReset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -305,7 +305,7 @@ func (o *GraphEdit) X_ZoomReset() {
 	Args: [{ false from_type int} { false to_type int}], Returns: void
 */
 func (o *GraphEdit) AddValidConnectionType(fromType gdnative.Int, toType gdnative.Int) {
-	//log.Println("Calling GraphEdit.AddValidConnectionType()")
+	// log.Println("Calling GraphEdit.AddValidConnectionType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -327,7 +327,7 @@ func (o *GraphEdit) AddValidConnectionType(fromType gdnative.Int, toType gdnativ
 	Args: [{ false type int}], Returns: void
 */
 func (o *GraphEdit) AddValidLeftDisconnectType(aType gdnative.Int) {
-	//log.Println("Calling GraphEdit.AddValidLeftDisconnectType()")
+	// log.Println("Calling GraphEdit.AddValidLeftDisconnectType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -348,7 +348,7 @@ func (o *GraphEdit) AddValidLeftDisconnectType(aType gdnative.Int) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *GraphEdit) AddValidRightDisconnectType(aType gdnative.Int) {
-	//log.Println("Calling GraphEdit.AddValidRightDisconnectType()")
+	// log.Println("Calling GraphEdit.AddValidRightDisconnectType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -369,7 +369,7 @@ func (o *GraphEdit) AddValidRightDisconnectType(aType gdnative.Int) {
 	Args: [], Returns: void
 */
 func (o *GraphEdit) ClearConnections() {
-	//log.Println("Calling GraphEdit.ClearConnections()")
+	// log.Println("Calling GraphEdit.ClearConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -389,7 +389,7 @@ func (o *GraphEdit) ClearConnections() {
 	Args: [{ false from String} { false from_port int} { false to String} { false to_port int}], Returns: enum.Error
 */
 func (o *GraphEdit) ConnectNode(from gdnative.String, fromPort gdnative.Int, to gdnative.String, toPort gdnative.Int) gdnative.Error {
-	//log.Println("Calling GraphEdit.ConnectNode()")
+	// log.Println("Calling GraphEdit.ConnectNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -416,7 +416,7 @@ func (o *GraphEdit) ConnectNode(from gdnative.String, fromPort gdnative.Int, to 
 	Args: [{ false from String} { false from_port int} { false to String} { false to_port int}], Returns: void
 */
 func (o *GraphEdit) DisconnectNode(from gdnative.String, fromPort gdnative.Int, to gdnative.String, toPort gdnative.Int) {
-	//log.Println("Calling GraphEdit.DisconnectNode()")
+	// log.Println("Calling GraphEdit.DisconnectNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -440,7 +440,7 @@ func (o *GraphEdit) DisconnectNode(from gdnative.String, fromPort gdnative.Int, 
 	Args: [], Returns: Array
 */
 func (o *GraphEdit) GetConnectionList() gdnative.Array {
-	//log.Println("Calling GraphEdit.GetConnectionList()")
+	// log.Println("Calling GraphEdit.GetConnectionList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -463,7 +463,7 @@ func (o *GraphEdit) GetConnectionList() gdnative.Array {
 	Args: [], Returns: Vector2
 */
 func (o *GraphEdit) GetScrollOfs() gdnative.Vector2 {
-	//log.Println("Calling GraphEdit.GetScrollOfs()")
+	// log.Println("Calling GraphEdit.GetScrollOfs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -486,7 +486,7 @@ func (o *GraphEdit) GetScrollOfs() gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *GraphEdit) GetSnap() gdnative.Int {
-	//log.Println("Calling GraphEdit.GetSnap()")
+	// log.Println("Calling GraphEdit.GetSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -509,7 +509,7 @@ func (o *GraphEdit) GetSnap() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *GraphEdit) GetZoom() gdnative.Real {
-	//log.Println("Calling GraphEdit.GetZoom()")
+	// log.Println("Calling GraphEdit.GetZoom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -532,7 +532,7 @@ func (o *GraphEdit) GetZoom() gdnative.Real {
 	Args: [], Returns: HBoxContainer
 */
 func (o *GraphEdit) GetZoomHbox() HBoxContainerImplementer {
-	//log.Println("Calling GraphEdit.GetZoomHbox()")
+	// log.Println("Calling GraphEdit.GetZoomHbox()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -569,7 +569,7 @@ func (o *GraphEdit) GetZoomHbox() HBoxContainerImplementer {
 	Args: [{ false from String} { false from_port int} { false to String} { false to_port int}], Returns: bool
 */
 func (o *GraphEdit) IsNodeConnected(from gdnative.String, fromPort gdnative.Int, to gdnative.String, toPort gdnative.Int) gdnative.Bool {
-	//log.Println("Calling GraphEdit.IsNodeConnected()")
+	// log.Println("Calling GraphEdit.IsNodeConnected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -596,7 +596,7 @@ func (o *GraphEdit) IsNodeConnected(from gdnative.String, fromPort gdnative.Int,
 	Args: [], Returns: bool
 */
 func (o *GraphEdit) IsRightDisconnectsEnabled() gdnative.Bool {
-	//log.Println("Calling GraphEdit.IsRightDisconnectsEnabled()")
+	// log.Println("Calling GraphEdit.IsRightDisconnectsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -619,7 +619,7 @@ func (o *GraphEdit) IsRightDisconnectsEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *GraphEdit) IsUsingSnap() gdnative.Bool {
-	//log.Println("Calling GraphEdit.IsUsingSnap()")
+	// log.Println("Calling GraphEdit.IsUsingSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -642,7 +642,7 @@ func (o *GraphEdit) IsUsingSnap() gdnative.Bool {
 	Args: [{ false from_type int} { false to_type int}], Returns: bool
 */
 func (o *GraphEdit) IsValidConnectionType(fromType gdnative.Int, toType gdnative.Int) gdnative.Bool {
-	//log.Println("Calling GraphEdit.IsValidConnectionType()")
+	// log.Println("Calling GraphEdit.IsValidConnectionType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -667,7 +667,7 @@ func (o *GraphEdit) IsValidConnectionType(fromType gdnative.Int, toType gdnative
 	Args: [{ false from_type int} { false to_type int}], Returns: void
 */
 func (o *GraphEdit) RemoveValidConnectionType(fromType gdnative.Int, toType gdnative.Int) {
-	//log.Println("Calling GraphEdit.RemoveValidConnectionType()")
+	// log.Println("Calling GraphEdit.RemoveValidConnectionType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -689,7 +689,7 @@ func (o *GraphEdit) RemoveValidConnectionType(fromType gdnative.Int, toType gdna
 	Args: [{ false type int}], Returns: void
 */
 func (o *GraphEdit) RemoveValidLeftDisconnectType(aType gdnative.Int) {
-	//log.Println("Calling GraphEdit.RemoveValidLeftDisconnectType()")
+	// log.Println("Calling GraphEdit.RemoveValidLeftDisconnectType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -710,7 +710,7 @@ func (o *GraphEdit) RemoveValidLeftDisconnectType(aType gdnative.Int) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *GraphEdit) RemoveValidRightDisconnectType(aType gdnative.Int) {
-	//log.Println("Calling GraphEdit.RemoveValidRightDisconnectType()")
+	// log.Println("Calling GraphEdit.RemoveValidRightDisconnectType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -731,7 +731,7 @@ func (o *GraphEdit) RemoveValidRightDisconnectType(aType gdnative.Int) {
 	Args: [{ false from String} { false from_port int} { false to String} { false to_port int} { false amount float}], Returns: void
 */
 func (o *GraphEdit) SetConnectionActivity(from gdnative.String, fromPort gdnative.Int, to gdnative.String, toPort gdnative.Int, amount gdnative.Real) {
-	//log.Println("Calling GraphEdit.SetConnectionActivity()")
+	// log.Println("Calling GraphEdit.SetConnectionActivity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -756,7 +756,7 @@ func (o *GraphEdit) SetConnectionActivity(from gdnative.String, fromPort gdnativ
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *GraphEdit) SetRightDisconnects(enable gdnative.Bool) {
-	//log.Println("Calling GraphEdit.SetRightDisconnects()")
+	// log.Println("Calling GraphEdit.SetRightDisconnects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -777,7 +777,7 @@ func (o *GraphEdit) SetRightDisconnects(enable gdnative.Bool) {
 	Args: [{ false ofs Vector2}], Returns: void
 */
 func (o *GraphEdit) SetScrollOfs(ofs gdnative.Vector2) {
-	//log.Println("Calling GraphEdit.SetScrollOfs()")
+	// log.Println("Calling GraphEdit.SetScrollOfs()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -798,7 +798,7 @@ func (o *GraphEdit) SetScrollOfs(ofs gdnative.Vector2) {
 	Args: [{ false node Node}], Returns: void
 */
 func (o *GraphEdit) SetSelected(node NodeImplementer) {
-	//log.Println("Calling GraphEdit.SetSelected()")
+	// log.Println("Calling GraphEdit.SetSelected()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -819,7 +819,7 @@ func (o *GraphEdit) SetSelected(node NodeImplementer) {
 	Args: [{ false pixels int}], Returns: void
 */
 func (o *GraphEdit) SetSnap(pixels gdnative.Int) {
-	//log.Println("Calling GraphEdit.SetSnap()")
+	// log.Println("Calling GraphEdit.SetSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -840,7 +840,7 @@ func (o *GraphEdit) SetSnap(pixels gdnative.Int) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *GraphEdit) SetUseSnap(enable gdnative.Bool) {
-	//log.Println("Calling GraphEdit.SetUseSnap()")
+	// log.Println("Calling GraphEdit.SetUseSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -861,7 +861,7 @@ func (o *GraphEdit) SetUseSnap(enable gdnative.Bool) {
 	Args: [{ false p_zoom float}], Returns: void
 */
 func (o *GraphEdit) SetZoom(pZoom gdnative.Real) {
-	//log.Println("Calling GraphEdit.SetZoom()")
+	// log.Println("Calling GraphEdit.SetZoom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

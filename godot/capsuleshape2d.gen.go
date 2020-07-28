@@ -39,7 +39,7 @@ func (o *CapsuleShape2D) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CapsuleShape2D) GetHeight() gdnative.Real {
-	//log.Println("Calling CapsuleShape2D.GetHeight()")
+	// log.Println("Calling CapsuleShape2D.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CapsuleShape2D) GetHeight() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CapsuleShape2D) GetRadius() gdnative.Real {
-	//log.Println("Calling CapsuleShape2D.GetRadius()")
+	// log.Println("Calling CapsuleShape2D.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CapsuleShape2D) GetRadius() gdnative.Real {
 	Args: [{ false height float}], Returns: void
 */
 func (o *CapsuleShape2D) SetHeight(height gdnative.Real) {
-	//log.Println("Calling CapsuleShape2D.SetHeight()")
+	// log.Println("Calling CapsuleShape2D.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *CapsuleShape2D) SetHeight(height gdnative.Real) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CapsuleShape2D) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling CapsuleShape2D.SetRadius()")
+	// log.Println("Calling CapsuleShape2D.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

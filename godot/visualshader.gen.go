@@ -49,7 +49,7 @@ func (o *VisualShader) BaseClass() string {
 	Args: [{ false arg0 int} { false arg1 int}], Returns: void
 */
 func (o *VisualShader) X_InputTypeChanged(arg0 gdnative.Int, arg1 gdnative.Int) {
-	//log.Println("Calling VisualShader.X_InputTypeChanged()")
+	// log.Println("Calling VisualShader.X_InputTypeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -71,7 +71,7 @@ func (o *VisualShader) X_InputTypeChanged(arg0 gdnative.Int, arg1 gdnative.Int) 
 	Args: [], Returns: void
 */
 func (o *VisualShader) X_QueueUpdate() {
-	//log.Println("Calling VisualShader.X_QueueUpdate()")
+	// log.Println("Calling VisualShader.X_QueueUpdate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -91,7 +91,7 @@ func (o *VisualShader) X_QueueUpdate() {
 	Args: [], Returns: void
 */
 func (o *VisualShader) X_UpdateShader() {
-	//log.Println("Calling VisualShader.X_UpdateShader()")
+	// log.Println("Calling VisualShader.X_UpdateShader()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -111,7 +111,7 @@ func (o *VisualShader) X_UpdateShader() {
 	Args: [{ false type int} { false node VisualShaderNode} { false position Vector2} { false id int}], Returns: void
 */
 func (o *VisualShader) AddNode(aType gdnative.Int, node VisualShaderNodeImplementer, position gdnative.Vector2, id gdnative.Int) {
-	//log.Println("Calling VisualShader.AddNode()")
+	// log.Println("Calling VisualShader.AddNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -135,7 +135,7 @@ func (o *VisualShader) AddNode(aType gdnative.Int, node VisualShaderNodeImplemen
 	Args: [{ false type int} { false from_node int} { false from_port int} { false to_node int} { false to_port int}], Returns: bool
 */
 func (o *VisualShader) CanConnectNodes(aType gdnative.Int, fromNode gdnative.Int, fromPort gdnative.Int, toNode gdnative.Int, toPort gdnative.Int) gdnative.Bool {
-	//log.Println("Calling VisualShader.CanConnectNodes()")
+	// log.Println("Calling VisualShader.CanConnectNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -163,7 +163,7 @@ func (o *VisualShader) CanConnectNodes(aType gdnative.Int, fromNode gdnative.Int
 	Args: [{ false type int} { false from_node int} { false from_port int} { false to_node int} { false to_port int}], Returns: enum.Error
 */
 func (o *VisualShader) ConnectNodes(aType gdnative.Int, fromNode gdnative.Int, fromPort gdnative.Int, toNode gdnative.Int, toPort gdnative.Int) gdnative.Error {
-	//log.Println("Calling VisualShader.ConnectNodes()")
+	// log.Println("Calling VisualShader.ConnectNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -191,7 +191,7 @@ func (o *VisualShader) ConnectNodes(aType gdnative.Int, fromNode gdnative.Int, f
 	Args: [{ false type int} { false from_node int} { false from_port int} { false to_node int} { false to_port int}], Returns: void
 */
 func (o *VisualShader) ConnectNodesForced(aType gdnative.Int, fromNode gdnative.Int, fromPort gdnative.Int, toNode gdnative.Int, toPort gdnative.Int) {
-	//log.Println("Calling VisualShader.ConnectNodesForced()")
+	// log.Println("Calling VisualShader.ConnectNodesForced()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -216,7 +216,7 @@ func (o *VisualShader) ConnectNodesForced(aType gdnative.Int, fromNode gdnative.
 	Args: [{ false type int} { false from_node int} { false from_port int} { false to_node int} { false to_port int}], Returns: void
 */
 func (o *VisualShader) DisconnectNodes(aType gdnative.Int, fromNode gdnative.Int, fromPort gdnative.Int, toNode gdnative.Int, toPort gdnative.Int) {
-	//log.Println("Calling VisualShader.DisconnectNodes()")
+	// log.Println("Calling VisualShader.DisconnectNodes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -241,7 +241,7 @@ func (o *VisualShader) DisconnectNodes(aType gdnative.Int, fromNode gdnative.Int
 	Args: [], Returns: Vector2
 */
 func (o *VisualShader) GetGraphOffset() gdnative.Vector2 {
-	//log.Println("Calling VisualShader.GetGraphOffset()")
+	// log.Println("Calling VisualShader.GetGraphOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -264,7 +264,7 @@ func (o *VisualShader) GetGraphOffset() gdnative.Vector2 {
 	Args: [{ false type int} { false id int}], Returns: VisualShaderNode
 */
 func (o *VisualShader) GetNode(aType gdnative.Int, id gdnative.Int) VisualShaderNodeImplementer {
-	//log.Println("Calling VisualShader.GetNode()")
+	// log.Println("Calling VisualShader.GetNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -303,7 +303,7 @@ func (o *VisualShader) GetNode(aType gdnative.Int, id gdnative.Int) VisualShader
 	Args: [{ false type int}], Returns: Array
 */
 func (o *VisualShader) GetNodeConnections(aType gdnative.Int) gdnative.Array {
-	//log.Println("Calling VisualShader.GetNodeConnections()")
+	// log.Println("Calling VisualShader.GetNodeConnections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -327,7 +327,7 @@ func (o *VisualShader) GetNodeConnections(aType gdnative.Int) gdnative.Array {
 	Args: [{ false type int}], Returns: PoolIntArray
 */
 func (o *VisualShader) GetNodeList(aType gdnative.Int) gdnative.PoolIntArray {
-	//log.Println("Calling VisualShader.GetNodeList()")
+	// log.Println("Calling VisualShader.GetNodeList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -351,7 +351,7 @@ func (o *VisualShader) GetNodeList(aType gdnative.Int) gdnative.PoolIntArray {
 	Args: [{ false type int} { false id int}], Returns: Vector2
 */
 func (o *VisualShader) GetNodePosition(aType gdnative.Int, id gdnative.Int) gdnative.Vector2 {
-	//log.Println("Calling VisualShader.GetNodePosition()")
+	// log.Println("Calling VisualShader.GetNodePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -376,7 +376,7 @@ func (o *VisualShader) GetNodePosition(aType gdnative.Int, id gdnative.Int) gdna
 	Args: [{ false type int}], Returns: int
 */
 func (o *VisualShader) GetValidNodeId(aType gdnative.Int) gdnative.Int {
-	//log.Println("Calling VisualShader.GetValidNodeId()")
+	// log.Println("Calling VisualShader.GetValidNodeId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -400,7 +400,7 @@ func (o *VisualShader) GetValidNodeId(aType gdnative.Int) gdnative.Int {
 	Args: [{ false type int} { false from_node int} { false from_port int} { false to_node int} { false to_port int}], Returns: bool
 */
 func (o *VisualShader) IsNodeConnection(aType gdnative.Int, fromNode gdnative.Int, fromPort gdnative.Int, toNode gdnative.Int, toPort gdnative.Int) gdnative.Bool {
-	//log.Println("Calling VisualShader.IsNodeConnection()")
+	// log.Println("Calling VisualShader.IsNodeConnection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -428,7 +428,7 @@ func (o *VisualShader) IsNodeConnection(aType gdnative.Int, fromNode gdnative.In
 	Args: [{ false type int} { false id int}], Returns: void
 */
 func (o *VisualShader) RemoveNode(aType gdnative.Int, id gdnative.Int) {
-	//log.Println("Calling VisualShader.RemoveNode()")
+	// log.Println("Calling VisualShader.RemoveNode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -450,7 +450,7 @@ func (o *VisualShader) RemoveNode(aType gdnative.Int, id gdnative.Int) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *VisualShader) SetGraphOffset(offset gdnative.Vector2) {
-	//log.Println("Calling VisualShader.SetGraphOffset()")
+	// log.Println("Calling VisualShader.SetGraphOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -471,7 +471,7 @@ func (o *VisualShader) SetGraphOffset(offset gdnative.Vector2) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *VisualShader) SetMode(mode gdnative.Int) {
-	//log.Println("Calling VisualShader.SetMode()")
+	// log.Println("Calling VisualShader.SetMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -492,7 +492,7 @@ func (o *VisualShader) SetMode(mode gdnative.Int) {
 	Args: [{ false type int} { false id int} { false position Vector2}], Returns: void
 */
 func (o *VisualShader) SetNodePosition(aType gdnative.Int, id gdnative.Int, position gdnative.Vector2) {
-	//log.Println("Calling VisualShader.SetNodePosition()")
+	// log.Println("Calling VisualShader.SetNodePosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

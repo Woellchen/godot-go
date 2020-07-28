@@ -123,7 +123,7 @@ func (o *Image) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *Image) X_GetData() gdnative.Dictionary {
-	//log.Println("Calling Image.X_GetData()")
+	// log.Println("Calling Image.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -146,7 +146,7 @@ func (o *Image) X_GetData() gdnative.Dictionary {
 	Args: [{ false data Dictionary}], Returns: void
 */
 func (o *Image) X_SetData(data gdnative.Dictionary) {
-	//log.Println("Calling Image.X_SetData()")
+	// log.Println("Calling Image.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -167,7 +167,7 @@ func (o *Image) X_SetData(data gdnative.Dictionary) {
 	Args: [{ false src Image} { false src_rect Rect2} { false dst Vector2}], Returns: void
 */
 func (o *Image) BlendRect(src ImageImplementer, srcRect gdnative.Rect2, dst gdnative.Vector2) {
-	//log.Println("Calling Image.BlendRect()")
+	// log.Println("Calling Image.BlendRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -190,7 +190,7 @@ func (o *Image) BlendRect(src ImageImplementer, srcRect gdnative.Rect2, dst gdna
 	Args: [{ false src Image} { false mask Image} { false src_rect Rect2} { false dst Vector2}], Returns: void
 */
 func (o *Image) BlendRectMask(src ImageImplementer, mask ImageImplementer, srcRect gdnative.Rect2, dst gdnative.Vector2) {
-	//log.Println("Calling Image.BlendRectMask()")
+	// log.Println("Calling Image.BlendRectMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -214,7 +214,7 @@ func (o *Image) BlendRectMask(src ImageImplementer, mask ImageImplementer, srcRe
 	Args: [{ false src Image} { false src_rect Rect2} { false dst Vector2}], Returns: void
 */
 func (o *Image) BlitRect(src ImageImplementer, srcRect gdnative.Rect2, dst gdnative.Vector2) {
-	//log.Println("Calling Image.BlitRect()")
+	// log.Println("Calling Image.BlitRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -237,7 +237,7 @@ func (o *Image) BlitRect(src ImageImplementer, srcRect gdnative.Rect2, dst gdnat
 	Args: [{ false src Image} { false mask Image} { false src_rect Rect2} { false dst Vector2}], Returns: void
 */
 func (o *Image) BlitRectMask(src ImageImplementer, mask ImageImplementer, srcRect gdnative.Rect2, dst gdnative.Vector2) {
-	//log.Println("Calling Image.BlitRectMask()")
+	// log.Println("Calling Image.BlitRectMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -261,7 +261,7 @@ func (o *Image) BlitRectMask(src ImageImplementer, mask ImageImplementer, srcRec
 	Args: [{1 true bump_scale float}], Returns: void
 */
 func (o *Image) BumpmapToNormalmap(bumpScale gdnative.Real) {
-	//log.Println("Calling Image.BumpmapToNormalmap()")
+	// log.Println("Calling Image.BumpmapToNormalmap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -282,7 +282,7 @@ func (o *Image) BumpmapToNormalmap(bumpScale gdnative.Real) {
 	Args: [], Returns: void
 */
 func (o *Image) ClearMipmaps() {
-	//log.Println("Calling Image.ClearMipmaps()")
+	// log.Println("Calling Image.ClearMipmaps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -302,7 +302,7 @@ func (o *Image) ClearMipmaps() {
 	Args: [{ false mode int} { false source int} { false lossy_quality float}], Returns: enum.Error
 */
 func (o *Image) Compress(mode gdnative.Int, source gdnative.Int, lossyQuality gdnative.Real) gdnative.Error {
-	//log.Println("Calling Image.Compress()")
+	// log.Println("Calling Image.Compress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -328,7 +328,7 @@ func (o *Image) Compress(mode gdnative.Int, source gdnative.Int, lossyQuality gd
 	Args: [{ false format int}], Returns: void
 */
 func (o *Image) Convert(format gdnative.Int) {
-	//log.Println("Calling Image.Convert()")
+	// log.Println("Calling Image.Convert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -349,7 +349,7 @@ func (o *Image) Convert(format gdnative.Int) {
 	Args: [{ false src Image}], Returns: void
 */
 func (o *Image) CopyFrom(src ImageImplementer) {
-	//log.Println("Calling Image.CopyFrom()")
+	// log.Println("Calling Image.CopyFrom()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +370,7 @@ func (o *Image) CopyFrom(src ImageImplementer) {
 	Args: [{ false width int} { false height int} { false use_mipmaps bool} { false format int}], Returns: void
 */
 func (o *Image) Create(width gdnative.Int, height gdnative.Int, useMipmaps gdnative.Bool, format gdnative.Int) {
-	//log.Println("Calling Image.Create()")
+	// log.Println("Calling Image.Create()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -394,7 +394,7 @@ func (o *Image) Create(width gdnative.Int, height gdnative.Int, useMipmaps gdnat
 	Args: [{ false width int} { false height int} { false use_mipmaps bool} { false format int} { false data PoolByteArray}], Returns: void
 */
 func (o *Image) CreateFromData(width gdnative.Int, height gdnative.Int, useMipmaps gdnative.Bool, format gdnative.Int, data gdnative.PoolByteArray) {
-	//log.Println("Calling Image.CreateFromData()")
+	// log.Println("Calling Image.CreateFromData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -419,7 +419,7 @@ func (o *Image) CreateFromData(width gdnative.Int, height gdnative.Int, useMipma
 	Args: [{ false width int} { false height int}], Returns: void
 */
 func (o *Image) Crop(width gdnative.Int, height gdnative.Int) {
-	//log.Println("Calling Image.Crop()")
+	// log.Println("Calling Image.Crop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -441,7 +441,7 @@ func (o *Image) Crop(width gdnative.Int, height gdnative.Int) {
 	Args: [], Returns: enum.Error
 */
 func (o *Image) Decompress() gdnative.Error {
-	//log.Println("Calling Image.Decompress()")
+	// log.Println("Calling Image.Decompress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -464,7 +464,7 @@ func (o *Image) Decompress() gdnative.Error {
 	Args: [], Returns: enum.Image::AlphaMode
 */
 func (o *Image) DetectAlpha() ImageAlphaMode {
-	//log.Println("Calling Image.DetectAlpha()")
+	// log.Println("Calling Image.DetectAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -487,7 +487,7 @@ func (o *Image) DetectAlpha() ImageAlphaMode {
 	Args: [], Returns: void
 */
 func (o *Image) ExpandX2Hq2X() {
-	//log.Println("Calling Image.ExpandX2Hq2X()")
+	// log.Println("Calling Image.ExpandX2Hq2X()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -507,7 +507,7 @@ func (o *Image) ExpandX2Hq2X() {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *Image) Fill(color gdnative.Color) {
-	//log.Println("Calling Image.Fill()")
+	// log.Println("Calling Image.Fill()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -528,7 +528,7 @@ func (o *Image) Fill(color gdnative.Color) {
 	Args: [], Returns: void
 */
 func (o *Image) FixAlphaEdges() {
-	//log.Println("Calling Image.FixAlphaEdges()")
+	// log.Println("Calling Image.FixAlphaEdges()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -548,7 +548,7 @@ func (o *Image) FixAlphaEdges() {
 	Args: [], Returns: void
 */
 func (o *Image) FlipX() {
-	//log.Println("Calling Image.FlipX()")
+	// log.Println("Calling Image.FlipX()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -568,7 +568,7 @@ func (o *Image) FlipX() {
 	Args: [], Returns: void
 */
 func (o *Image) FlipY() {
-	//log.Println("Calling Image.FlipY()")
+	// log.Println("Calling Image.FlipY()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -588,7 +588,7 @@ func (o *Image) FlipY() {
 	Args: [{False true renormalize bool}], Returns: enum.Error
 */
 func (o *Image) GenerateMipmaps(renormalize gdnative.Bool) gdnative.Error {
-	//log.Println("Calling Image.GenerateMipmaps()")
+	// log.Println("Calling Image.GenerateMipmaps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -612,7 +612,7 @@ func (o *Image) GenerateMipmaps(renormalize gdnative.Bool) gdnative.Error {
 	Args: [], Returns: PoolByteArray
 */
 func (o *Image) GetData() gdnative.PoolByteArray {
-	//log.Println("Calling Image.GetData()")
+	// log.Println("Calling Image.GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -635,7 +635,7 @@ func (o *Image) GetData() gdnative.PoolByteArray {
 	Args: [], Returns: enum.Image::Format
 */
 func (o *Image) GetFormat() ImageFormat {
-	//log.Println("Calling Image.GetFormat()")
+	// log.Println("Calling Image.GetFormat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -658,7 +658,7 @@ func (o *Image) GetFormat() ImageFormat {
 	Args: [], Returns: int
 */
 func (o *Image) GetHeight() gdnative.Int {
-	//log.Println("Calling Image.GetHeight()")
+	// log.Println("Calling Image.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -681,7 +681,7 @@ func (o *Image) GetHeight() gdnative.Int {
 	Args: [{ false mipmap int}], Returns: int
 */
 func (o *Image) GetMipmapOffset(mipmap gdnative.Int) gdnative.Int {
-	//log.Println("Calling Image.GetMipmapOffset()")
+	// log.Println("Calling Image.GetMipmapOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -705,7 +705,7 @@ func (o *Image) GetMipmapOffset(mipmap gdnative.Int) gdnative.Int {
 	Args: [{ false x int} { false y int}], Returns: Color
 */
 func (o *Image) GetPixel(x gdnative.Int, y gdnative.Int) gdnative.Color {
-	//log.Println("Calling Image.GetPixel()")
+	// log.Println("Calling Image.GetPixel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -730,7 +730,7 @@ func (o *Image) GetPixel(x gdnative.Int, y gdnative.Int) gdnative.Color {
 	Args: [{ false src Vector2}], Returns: Color
 */
 func (o *Image) GetPixelv(src gdnative.Vector2) gdnative.Color {
-	//log.Println("Calling Image.GetPixelv()")
+	// log.Println("Calling Image.GetPixelv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -754,7 +754,7 @@ func (o *Image) GetPixelv(src gdnative.Vector2) gdnative.Color {
 	Args: [{ false rect Rect2}], Returns: Image
 */
 func (o *Image) GetRect(rect gdnative.Rect2) ImageImplementer {
-	//log.Println("Calling Image.GetRect()")
+	// log.Println("Calling Image.GetRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -792,7 +792,7 @@ func (o *Image) GetRect(rect gdnative.Rect2) ImageImplementer {
 	Args: [], Returns: Vector2
 */
 func (o *Image) GetSize() gdnative.Vector2 {
-	//log.Println("Calling Image.GetSize()")
+	// log.Println("Calling Image.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -815,7 +815,7 @@ func (o *Image) GetSize() gdnative.Vector2 {
 	Args: [], Returns: Rect2
 */
 func (o *Image) GetUsedRect() gdnative.Rect2 {
-	//log.Println("Calling Image.GetUsedRect()")
+	// log.Println("Calling Image.GetUsedRect()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -838,7 +838,7 @@ func (o *Image) GetUsedRect() gdnative.Rect2 {
 	Args: [], Returns: int
 */
 func (o *Image) GetWidth() gdnative.Int {
-	//log.Println("Calling Image.GetWidth()")
+	// log.Println("Calling Image.GetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -861,7 +861,7 @@ func (o *Image) GetWidth() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Image) HasMipmaps() gdnative.Bool {
-	//log.Println("Calling Image.HasMipmaps()")
+	// log.Println("Calling Image.HasMipmaps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -884,7 +884,7 @@ func (o *Image) HasMipmaps() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Image) IsCompressed() gdnative.Bool {
-	//log.Println("Calling Image.IsCompressed()")
+	// log.Println("Calling Image.IsCompressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -907,7 +907,7 @@ func (o *Image) IsCompressed() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Image) IsEmpty() gdnative.Bool {
-	//log.Println("Calling Image.IsEmpty()")
+	// log.Println("Calling Image.IsEmpty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -930,7 +930,7 @@ func (o *Image) IsEmpty() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Image) IsInvisible() gdnative.Bool {
-	//log.Println("Calling Image.IsInvisible()")
+	// log.Println("Calling Image.IsInvisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -953,7 +953,7 @@ func (o *Image) IsInvisible() gdnative.Bool {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Image) Load(path gdnative.String) gdnative.Error {
-	//log.Println("Calling Image.Load()")
+	// log.Println("Calling Image.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -977,7 +977,7 @@ func (o *Image) Load(path gdnative.String) gdnative.Error {
 	Args: [{ false buffer PoolByteArray}], Returns: enum.Error
 */
 func (o *Image) LoadJpgFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling Image.LoadJpgFromBuffer()")
+	// log.Println("Calling Image.LoadJpgFromBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1001,7 +1001,7 @@ func (o *Image) LoadJpgFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error 
 	Args: [{ false buffer PoolByteArray}], Returns: enum.Error
 */
 func (o *Image) LoadPngFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling Image.LoadPngFromBuffer()")
+	// log.Println("Calling Image.LoadPngFromBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1025,7 +1025,7 @@ func (o *Image) LoadPngFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error 
 	Args: [{ false buffer PoolByteArray}], Returns: enum.Error
 */
 func (o *Image) LoadWebpFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling Image.LoadWebpFromBuffer()")
+	// log.Println("Calling Image.LoadWebpFromBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1049,7 +1049,7 @@ func (o *Image) LoadWebpFromBuffer(buffer gdnative.PoolByteArray) gdnative.Error
 	Args: [], Returns: void
 */
 func (o *Image) Lock() {
-	//log.Println("Calling Image.Lock()")
+	// log.Println("Calling Image.Lock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1069,7 +1069,7 @@ func (o *Image) Lock() {
 	Args: [], Returns: void
 */
 func (o *Image) NormalmapToXy() {
-	//log.Println("Calling Image.NormalmapToXy()")
+	// log.Println("Calling Image.NormalmapToXy()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1089,7 +1089,7 @@ func (o *Image) NormalmapToXy() {
 	Args: [], Returns: void
 */
 func (o *Image) PremultiplyAlpha() {
-	//log.Println("Calling Image.PremultiplyAlpha()")
+	// log.Println("Calling Image.PremultiplyAlpha()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1109,7 +1109,7 @@ func (o *Image) PremultiplyAlpha() {
 	Args: [{ false width int} { false height int} {1 true interpolation int}], Returns: void
 */
 func (o *Image) Resize(width gdnative.Int, height gdnative.Int, interpolation gdnative.Int) {
-	//log.Println("Calling Image.Resize()")
+	// log.Println("Calling Image.Resize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1132,7 +1132,7 @@ func (o *Image) Resize(width gdnative.Int, height gdnative.Int, interpolation gd
 	Args: [{False true square bool}], Returns: void
 */
 func (o *Image) ResizeToPo2(square gdnative.Bool) {
-	//log.Println("Calling Image.ResizeToPo2()")
+	// log.Println("Calling Image.ResizeToPo2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1153,7 +1153,7 @@ func (o *Image) ResizeToPo2(square gdnative.Bool) {
 	Args: [], Returns: Image
 */
 func (o *Image) RgbeToSrgb() ImageImplementer {
-	//log.Println("Calling Image.RgbeToSrgb()")
+	// log.Println("Calling Image.RgbeToSrgb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1190,7 +1190,7 @@ func (o *Image) RgbeToSrgb() ImageImplementer {
 	Args: [{ false path String} {False true grayscale bool}], Returns: enum.Error
 */
 func (o *Image) SaveExr(path gdnative.String, grayscale gdnative.Bool) gdnative.Error {
-	//log.Println("Calling Image.SaveExr()")
+	// log.Println("Calling Image.SaveExr()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1215,7 +1215,7 @@ func (o *Image) SaveExr(path gdnative.String, grayscale gdnative.Bool) gdnative.
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *Image) SavePng(path gdnative.String) gdnative.Error {
-	//log.Println("Calling Image.SavePng()")
+	// log.Println("Calling Image.SavePng()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1239,7 +1239,7 @@ func (o *Image) SavePng(path gdnative.String) gdnative.Error {
 	Args: [], Returns: PoolByteArray
 */
 func (o *Image) SavePngToBuffer() gdnative.PoolByteArray {
-	//log.Println("Calling Image.SavePngToBuffer()")
+	// log.Println("Calling Image.SavePngToBuffer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1262,7 +1262,7 @@ func (o *Image) SavePngToBuffer() gdnative.PoolByteArray {
 	Args: [{ false x int} { false y int} { false color Color}], Returns: void
 */
 func (o *Image) SetPixel(x gdnative.Int, y gdnative.Int, color gdnative.Color) {
-	//log.Println("Calling Image.SetPixel()")
+	// log.Println("Calling Image.SetPixel()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -1285,7 +1285,7 @@ func (o *Image) SetPixel(x gdnative.Int, y gdnative.Int, color gdnative.Color) {
 	Args: [{ false dst Vector2} { false color Color}], Returns: void
 */
 func (o *Image) SetPixelv(dst gdnative.Vector2, color gdnative.Color) {
-	//log.Println("Calling Image.SetPixelv()")
+	// log.Println("Calling Image.SetPixelv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1307,7 +1307,7 @@ func (o *Image) SetPixelv(dst gdnative.Vector2, color gdnative.Color) {
 	Args: [], Returns: void
 */
 func (o *Image) ShrinkX2() {
-	//log.Println("Calling Image.ShrinkX2()")
+	// log.Println("Calling Image.ShrinkX2()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1327,7 +1327,7 @@ func (o *Image) ShrinkX2() {
 	Args: [], Returns: void
 */
 func (o *Image) SrgbToLinear() {
-	//log.Println("Calling Image.SrgbToLinear()")
+	// log.Println("Calling Image.SrgbToLinear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -1347,7 +1347,7 @@ func (o *Image) SrgbToLinear() {
 	Args: [], Returns: void
 */
 func (o *Image) Unlock() {
-	//log.Println("Calling Image.Unlock()")
+	// log.Println("Calling Image.Unlock()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

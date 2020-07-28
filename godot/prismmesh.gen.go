@@ -39,7 +39,7 @@ func (o *PrismMesh) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *PrismMesh) GetLeftToRight() gdnative.Real {
-	//log.Println("Calling PrismMesh.GetLeftToRight()")
+	// log.Println("Calling PrismMesh.GetLeftToRight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PrismMesh) GetLeftToRight() gdnative.Real {
 	Args: [], Returns: Vector3
 */
 func (o *PrismMesh) GetSize() gdnative.Vector3 {
-	//log.Println("Calling PrismMesh.GetSize()")
+	// log.Println("Calling PrismMesh.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PrismMesh) GetSize() gdnative.Vector3 {
 	Args: [], Returns: int
 */
 func (o *PrismMesh) GetSubdivideDepth() gdnative.Int {
-	//log.Println("Calling PrismMesh.GetSubdivideDepth()")
+	// log.Println("Calling PrismMesh.GetSubdivideDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *PrismMesh) GetSubdivideDepth() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *PrismMesh) GetSubdivideHeight() gdnative.Int {
-	//log.Println("Calling PrismMesh.GetSubdivideHeight()")
+	// log.Println("Calling PrismMesh.GetSubdivideHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *PrismMesh) GetSubdivideHeight() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *PrismMesh) GetSubdivideWidth() gdnative.Int {
-	//log.Println("Calling PrismMesh.GetSubdivideWidth()")
+	// log.Println("Calling PrismMesh.GetSubdivideWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *PrismMesh) GetSubdivideWidth() gdnative.Int {
 	Args: [{ false left_to_right float}], Returns: void
 */
 func (o *PrismMesh) SetLeftToRight(leftToRight gdnative.Real) {
-	//log.Println("Calling PrismMesh.SetLeftToRight()")
+	// log.Println("Calling PrismMesh.SetLeftToRight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -175,7 +175,7 @@ func (o *PrismMesh) SetLeftToRight(leftToRight gdnative.Real) {
 	Args: [{ false size Vector3}], Returns: void
 */
 func (o *PrismMesh) SetSize(size gdnative.Vector3) {
-	//log.Println("Calling PrismMesh.SetSize()")
+	// log.Println("Calling PrismMesh.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -196,7 +196,7 @@ func (o *PrismMesh) SetSize(size gdnative.Vector3) {
 	Args: [{ false segments int}], Returns: void
 */
 func (o *PrismMesh) SetSubdivideDepth(segments gdnative.Int) {
-	//log.Println("Calling PrismMesh.SetSubdivideDepth()")
+	// log.Println("Calling PrismMesh.SetSubdivideDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -217,7 +217,7 @@ func (o *PrismMesh) SetSubdivideDepth(segments gdnative.Int) {
 	Args: [{ false segments int}], Returns: void
 */
 func (o *PrismMesh) SetSubdivideHeight(segments gdnative.Int) {
-	//log.Println("Calling PrismMesh.SetSubdivideHeight()")
+	// log.Println("Calling PrismMesh.SetSubdivideHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -238,7 +238,7 @@ func (o *PrismMesh) SetSubdivideHeight(segments gdnative.Int) {
 	Args: [{ false segments int}], Returns: void
 */
 func (o *PrismMesh) SetSubdivideWidth(segments gdnative.Int) {
-	//log.Println("Calling PrismMesh.SetSubdivideWidth()")
+	// log.Println("Calling PrismMesh.SetSubdivideWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

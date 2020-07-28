@@ -39,7 +39,7 @@ func (o *MainLoop) BaseClass() string {
 	Args: [{ false files PoolStringArray} { false from_screen int}], Returns: void
 */
 func (o *MainLoop) X_DropFiles(files gdnative.PoolStringArray, fromScreen gdnative.Int) {
-	//log.Println("Calling MainLoop.X_DropFiles()")
+	// log.Println("Calling MainLoop.X_DropFiles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *MainLoop) X_DropFiles(files gdnative.PoolStringArray, fromScreen gdnati
 	Args: [], Returns: void
 */
 func (o *MainLoop) X_Finalize() {
-	//log.Println("Calling MainLoop.X_Finalize()")
+	// log.Println("Calling MainLoop.X_Finalize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -81,7 +81,7 @@ func (o *MainLoop) X_Finalize() {
 	Args: [{ false id Variant} { false meta Variant}], Returns: void
 */
 func (o *MainLoop) X_GlobalMenuAction(id gdnative.Variant, meta gdnative.Variant) {
-	//log.Println("Calling MainLoop.X_GlobalMenuAction()")
+	// log.Println("Calling MainLoop.X_GlobalMenuAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -103,7 +103,7 @@ func (o *MainLoop) X_GlobalMenuAction(id gdnative.Variant, meta gdnative.Variant
 	Args: [{ false delta float}], Returns: bool
 */
 func (o *MainLoop) X_Idle(delta gdnative.Real) gdnative.Bool {
-	//log.Println("Calling MainLoop.X_Idle()")
+	// log.Println("Calling MainLoop.X_Idle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -127,7 +127,7 @@ func (o *MainLoop) X_Idle(delta gdnative.Real) gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *MainLoop) X_Initialize() {
-	//log.Println("Calling MainLoop.X_Initialize()")
+	// log.Println("Calling MainLoop.X_Initialize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -147,7 +147,7 @@ func (o *MainLoop) X_Initialize() {
 	Args: [{ false event InputEvent}], Returns: void
 */
 func (o *MainLoop) X_InputEvent(event InputEventImplementer) {
-	//log.Println("Calling MainLoop.X_InputEvent()")
+	// log.Println("Calling MainLoop.X_InputEvent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -168,7 +168,7 @@ func (o *MainLoop) X_InputEvent(event InputEventImplementer) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *MainLoop) X_InputText(text gdnative.String) {
-	//log.Println("Calling MainLoop.X_InputText()")
+	// log.Println("Calling MainLoop.X_InputText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *MainLoop) X_InputText(text gdnative.String) {
 	Args: [{ false delta float}], Returns: bool
 */
 func (o *MainLoop) X_Iteration(delta gdnative.Real) gdnative.Bool {
-	//log.Println("Calling MainLoop.X_Iteration()")
+	// log.Println("Calling MainLoop.X_Iteration()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -213,7 +213,7 @@ func (o *MainLoop) X_Iteration(delta gdnative.Real) gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *MainLoop) Finish() {
-	//log.Println("Calling MainLoop.Finish()")
+	// log.Println("Calling MainLoop.Finish()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -233,7 +233,7 @@ func (o *MainLoop) Finish() {
 	Args: [{ false delta float}], Returns: bool
 */
 func (o *MainLoop) Idle(delta gdnative.Real) gdnative.Bool {
-	//log.Println("Calling MainLoop.Idle()")
+	// log.Println("Calling MainLoop.Idle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -257,7 +257,7 @@ func (o *MainLoop) Idle(delta gdnative.Real) gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *MainLoop) Init() {
-	//log.Println("Calling MainLoop.Init()")
+	// log.Println("Calling MainLoop.Init()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -277,7 +277,7 @@ func (o *MainLoop) Init() {
 	Args: [{ false event InputEvent}], Returns: void
 */
 func (o *MainLoop) InputEventMethod(event InputEventImplementer) {
-	//log.Println("Calling MainLoop.InputEventMethod()")
+	// log.Println("Calling MainLoop.InputEventMethod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -298,7 +298,7 @@ func (o *MainLoop) InputEventMethod(event InputEventImplementer) {
 	Args: [{ false text String}], Returns: void
 */
 func (o *MainLoop) InputText(text gdnative.String) {
-	//log.Println("Calling MainLoop.InputText()")
+	// log.Println("Calling MainLoop.InputText()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -319,7 +319,7 @@ func (o *MainLoop) InputText(text gdnative.String) {
 	Args: [{ false delta float}], Returns: bool
 */
 func (o *MainLoop) Iteration(delta gdnative.Real) gdnative.Bool {
-	//log.Println("Calling MainLoop.Iteration()")
+	// log.Println("Calling MainLoop.Iteration()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PrimitiveMesh) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *PrimitiveMesh) X_Update() {
-	//log.Println("Calling PrimitiveMesh.X_Update()")
+	// log.Println("Calling PrimitiveMesh.X_Update()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *PrimitiveMesh) X_Update() {
 	Args: [], Returns: AABB
 */
 func (o *PrimitiveMesh) GetCustomAabb() gdnative.Aabb {
-	//log.Println("Calling PrimitiveMesh.GetCustomAabb()")
+	// log.Println("Calling PrimitiveMesh.GetCustomAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *PrimitiveMesh) GetCustomAabb() gdnative.Aabb {
 	Args: [], Returns: bool
 */
 func (o *PrimitiveMesh) GetFlipFaces() gdnative.Bool {
-	//log.Println("Calling PrimitiveMesh.GetFlipFaces()")
+	// log.Println("Calling PrimitiveMesh.GetFlipFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *PrimitiveMesh) GetFlipFaces() gdnative.Bool {
 	Args: [], Returns: Material
 */
 func (o *PrimitiveMesh) GetMaterial() MaterialImplementer {
-	//log.Println("Calling PrimitiveMesh.GetMaterial()")
+	// log.Println("Calling PrimitiveMesh.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -142,7 +142,7 @@ func (o *PrimitiveMesh) GetMaterial() MaterialImplementer {
 	Args: [], Returns: Array
 */
 func (o *PrimitiveMesh) GetMeshArrays() gdnative.Array {
-	//log.Println("Calling PrimitiveMesh.GetMeshArrays()")
+	// log.Println("Calling PrimitiveMesh.GetMeshArrays()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *PrimitiveMesh) GetMeshArrays() gdnative.Array {
 	Args: [{ false aabb AABB}], Returns: void
 */
 func (o *PrimitiveMesh) SetCustomAabb(aabb gdnative.Aabb) {
-	//log.Println("Calling PrimitiveMesh.SetCustomAabb()")
+	// log.Println("Calling PrimitiveMesh.SetCustomAabb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -186,7 +186,7 @@ func (o *PrimitiveMesh) SetCustomAabb(aabb gdnative.Aabb) {
 	Args: [{ false flip_faces bool}], Returns: void
 */
 func (o *PrimitiveMesh) SetFlipFaces(flipFaces gdnative.Bool) {
-	//log.Println("Calling PrimitiveMesh.SetFlipFaces()")
+	// log.Println("Calling PrimitiveMesh.SetFlipFaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -207,7 +207,7 @@ func (o *PrimitiveMesh) SetFlipFaces(flipFaces gdnative.Bool) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *PrimitiveMesh) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling PrimitiveMesh.SetMaterial()")
+	// log.Println("Calling PrimitiveMesh.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

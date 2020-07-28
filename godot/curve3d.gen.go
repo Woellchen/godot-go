@@ -39,7 +39,7 @@ func (o *Curve3D) BaseClass() string {
 	Args: [], Returns: Dictionary
 */
 func (o *Curve3D) X_GetData() gdnative.Dictionary {
-	//log.Println("Calling Curve3D.X_GetData()")
+	// log.Println("Calling Curve3D.X_GetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Curve3D) X_GetData() gdnative.Dictionary {
 	Args: [{ false arg0 Dictionary}], Returns: void
 */
 func (o *Curve3D) X_SetData(arg0 gdnative.Dictionary) {
-	//log.Println("Calling Curve3D.X_SetData()")
+	// log.Println("Calling Curve3D.X_SetData()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *Curve3D) X_SetData(arg0 gdnative.Dictionary) {
 	Args: [{ false position Vector3} {(0, 0, 0) true in Vector3} {(0, 0, 0) true out Vector3} {-1 true at_position int}], Returns: void
 */
 func (o *Curve3D) AddPoint(position gdnative.Vector3, in gdnative.Vector3, out gdnative.Vector3, atPosition gdnative.Int) {
-	//log.Println("Calling Curve3D.AddPoint()")
+	// log.Println("Calling Curve3D.AddPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -107,7 +107,7 @@ func (o *Curve3D) AddPoint(position gdnative.Vector3, in gdnative.Vector3, out g
 	Args: [], Returns: void
 */
 func (o *Curve3D) ClearPoints() {
-	//log.Println("Calling Curve3D.ClearPoints()")
+	// log.Println("Calling Curve3D.ClearPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -127,7 +127,7 @@ func (o *Curve3D) ClearPoints() {
 	Args: [], Returns: float
 */
 func (o *Curve3D) GetBakeInterval() gdnative.Real {
-	//log.Println("Calling Curve3D.GetBakeInterval()")
+	// log.Println("Calling Curve3D.GetBakeInterval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *Curve3D) GetBakeInterval() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Curve3D) GetBakedLength() gdnative.Real {
-	//log.Println("Calling Curve3D.GetBakedLength()")
+	// log.Println("Calling Curve3D.GetBakedLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -173,7 +173,7 @@ func (o *Curve3D) GetBakedLength() gdnative.Real {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *Curve3D) GetBakedPoints() gdnative.PoolVector3Array {
-	//log.Println("Calling Curve3D.GetBakedPoints()")
+	// log.Println("Calling Curve3D.GetBakedPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *Curve3D) GetBakedPoints() gdnative.PoolVector3Array {
 	Args: [], Returns: PoolRealArray
 */
 func (o *Curve3D) GetBakedTilts() gdnative.PoolRealArray {
-	//log.Println("Calling Curve3D.GetBakedTilts()")
+	// log.Println("Calling Curve3D.GetBakedTilts()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -219,7 +219,7 @@ func (o *Curve3D) GetBakedTilts() gdnative.PoolRealArray {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *Curve3D) GetBakedUpVectors() gdnative.PoolVector3Array {
-	//log.Println("Calling Curve3D.GetBakedUpVectors()")
+	// log.Println("Calling Curve3D.GetBakedUpVectors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -242,7 +242,7 @@ func (o *Curve3D) GetBakedUpVectors() gdnative.PoolVector3Array {
 	Args: [{ false to_point Vector3}], Returns: float
 */
 func (o *Curve3D) GetClosestOffset(toPoint gdnative.Vector3) gdnative.Real {
-	//log.Println("Calling Curve3D.GetClosestOffset()")
+	// log.Println("Calling Curve3D.GetClosestOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -266,7 +266,7 @@ func (o *Curve3D) GetClosestOffset(toPoint gdnative.Vector3) gdnative.Real {
 	Args: [{ false to_point Vector3}], Returns: Vector3
 */
 func (o *Curve3D) GetClosestPoint(toPoint gdnative.Vector3) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.GetClosestPoint()")
+	// log.Println("Calling Curve3D.GetClosestPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -290,7 +290,7 @@ func (o *Curve3D) GetClosestPoint(toPoint gdnative.Vector3) gdnative.Vector3 {
 	Args: [], Returns: int
 */
 func (o *Curve3D) GetPointCount() gdnative.Int {
-	//log.Println("Calling Curve3D.GetPointCount()")
+	// log.Println("Calling Curve3D.GetPointCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -313,7 +313,7 @@ func (o *Curve3D) GetPointCount() gdnative.Int {
 	Args: [{ false idx int}], Returns: Vector3
 */
 func (o *Curve3D) GetPointIn(idx gdnative.Int) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.GetPointIn()")
+	// log.Println("Calling Curve3D.GetPointIn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -337,7 +337,7 @@ func (o *Curve3D) GetPointIn(idx gdnative.Int) gdnative.Vector3 {
 	Args: [{ false idx int}], Returns: Vector3
 */
 func (o *Curve3D) GetPointOut(idx gdnative.Int) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.GetPointOut()")
+	// log.Println("Calling Curve3D.GetPointOut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -361,7 +361,7 @@ func (o *Curve3D) GetPointOut(idx gdnative.Int) gdnative.Vector3 {
 	Args: [{ false idx int}], Returns: Vector3
 */
 func (o *Curve3D) GetPointPosition(idx gdnative.Int) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.GetPointPosition()")
+	// log.Println("Calling Curve3D.GetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -385,7 +385,7 @@ func (o *Curve3D) GetPointPosition(idx gdnative.Int) gdnative.Vector3 {
 	Args: [{ false idx int}], Returns: float
 */
 func (o *Curve3D) GetPointTilt(idx gdnative.Int) gdnative.Real {
-	//log.Println("Calling Curve3D.GetPointTilt()")
+	// log.Println("Calling Curve3D.GetPointTilt()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -409,7 +409,7 @@ func (o *Curve3D) GetPointTilt(idx gdnative.Int) gdnative.Real {
 	Args: [{ false idx int} { false t float}], Returns: Vector3
 */
 func (o *Curve3D) Interpolate(idx gdnative.Int, t gdnative.Real) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.Interpolate()")
+	// log.Println("Calling Curve3D.Interpolate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -434,7 +434,7 @@ func (o *Curve3D) Interpolate(idx gdnative.Int, t gdnative.Real) gdnative.Vector
 	Args: [{ false offset float} {False true cubic bool}], Returns: Vector3
 */
 func (o *Curve3D) InterpolateBaked(offset gdnative.Real, cubic gdnative.Bool) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.InterpolateBaked()")
+	// log.Println("Calling Curve3D.InterpolateBaked()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -459,7 +459,7 @@ func (o *Curve3D) InterpolateBaked(offset gdnative.Real, cubic gdnative.Bool) gd
 	Args: [{ false offset float} {False true apply_tilt bool}], Returns: Vector3
 */
 func (o *Curve3D) InterpolateBakedUpVector(offset gdnative.Real, applyTilt gdnative.Bool) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.InterpolateBakedUpVector()")
+	// log.Println("Calling Curve3D.InterpolateBakedUpVector()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -484,7 +484,7 @@ func (o *Curve3D) InterpolateBakedUpVector(offset gdnative.Real, applyTilt gdnat
 	Args: [{ false fofs float}], Returns: Vector3
 */
 func (o *Curve3D) Interpolatef(fofs gdnative.Real) gdnative.Vector3 {
-	//log.Println("Calling Curve3D.Interpolatef()")
+	// log.Println("Calling Curve3D.Interpolatef()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -508,7 +508,7 @@ func (o *Curve3D) Interpolatef(fofs gdnative.Real) gdnative.Vector3 {
 	Args: [], Returns: bool
 */
 func (o *Curve3D) IsUpVectorEnabled() gdnative.Bool {
-	//log.Println("Calling Curve3D.IsUpVectorEnabled()")
+	// log.Println("Calling Curve3D.IsUpVectorEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -531,7 +531,7 @@ func (o *Curve3D) IsUpVectorEnabled() gdnative.Bool {
 	Args: [{ false idx int}], Returns: void
 */
 func (o *Curve3D) RemovePoint(idx gdnative.Int) {
-	//log.Println("Calling Curve3D.RemovePoint()")
+	// log.Println("Calling Curve3D.RemovePoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -552,7 +552,7 @@ func (o *Curve3D) RemovePoint(idx gdnative.Int) {
 	Args: [{ false distance float}], Returns: void
 */
 func (o *Curve3D) SetBakeInterval(distance gdnative.Real) {
-	//log.Println("Calling Curve3D.SetBakeInterval()")
+	// log.Println("Calling Curve3D.SetBakeInterval()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -573,7 +573,7 @@ func (o *Curve3D) SetBakeInterval(distance gdnative.Real) {
 	Args: [{ false idx int} { false position Vector3}], Returns: void
 */
 func (o *Curve3D) SetPointIn(idx gdnative.Int, position gdnative.Vector3) {
-	//log.Println("Calling Curve3D.SetPointIn()")
+	// log.Println("Calling Curve3D.SetPointIn()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -595,7 +595,7 @@ func (o *Curve3D) SetPointIn(idx gdnative.Int, position gdnative.Vector3) {
 	Args: [{ false idx int} { false position Vector3}], Returns: void
 */
 func (o *Curve3D) SetPointOut(idx gdnative.Int, position gdnative.Vector3) {
-	//log.Println("Calling Curve3D.SetPointOut()")
+	// log.Println("Calling Curve3D.SetPointOut()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -617,7 +617,7 @@ func (o *Curve3D) SetPointOut(idx gdnative.Int, position gdnative.Vector3) {
 	Args: [{ false idx int} { false position Vector3}], Returns: void
 */
 func (o *Curve3D) SetPointPosition(idx gdnative.Int, position gdnative.Vector3) {
-	//log.Println("Calling Curve3D.SetPointPosition()")
+	// log.Println("Calling Curve3D.SetPointPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -639,7 +639,7 @@ func (o *Curve3D) SetPointPosition(idx gdnative.Int, position gdnative.Vector3) 
 	Args: [{ false idx int} { false tilt float}], Returns: void
 */
 func (o *Curve3D) SetPointTilt(idx gdnative.Int, tilt gdnative.Real) {
-	//log.Println("Calling Curve3D.SetPointTilt()")
+	// log.Println("Calling Curve3D.SetPointTilt()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -661,7 +661,7 @@ func (o *Curve3D) SetPointTilt(idx gdnative.Int, tilt gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Curve3D) SetUpVectorEnabled(enable gdnative.Bool) {
-	//log.Println("Calling Curve3D.SetUpVectorEnabled()")
+	// log.Println("Calling Curve3D.SetUpVectorEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -682,7 +682,7 @@ func (o *Curve3D) SetUpVectorEnabled(enable gdnative.Bool) {
 	Args: [{5 true max_stages int} {4 true tolerance_degrees float}], Returns: PoolVector3Array
 */
 func (o *Curve3D) Tessellate(maxStages gdnative.Int, toleranceDegrees gdnative.Real) gdnative.PoolVector3Array {
-	//log.Println("Calling Curve3D.Tessellate()")
+	// log.Println("Calling Curve3D.Tessellate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

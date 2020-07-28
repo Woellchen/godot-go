@@ -70,7 +70,7 @@ func (o *CubeMap) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *CubeMap) GetFlags() gdnative.Int {
-	//log.Println("Calling CubeMap.GetFlags()")
+	// log.Println("Calling CubeMap.GetFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -93,7 +93,7 @@ func (o *CubeMap) GetFlags() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *CubeMap) GetHeight() gdnative.Int {
-	//log.Println("Calling CubeMap.GetHeight()")
+	// log.Println("Calling CubeMap.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *CubeMap) GetHeight() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *CubeMap) GetLossyStorageQuality() gdnative.Real {
-	//log.Println("Calling CubeMap.GetLossyStorageQuality()")
+	// log.Println("Calling CubeMap.GetLossyStorageQuality()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *CubeMap) GetLossyStorageQuality() gdnative.Real {
 	Args: [{ false side int}], Returns: Image
 */
 func (o *CubeMap) GetSide(side gdnative.Int) ImageImplementer {
-	//log.Println("Calling CubeMap.GetSide()")
+	// log.Println("Calling CubeMap.GetSide()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -177,7 +177,7 @@ func (o *CubeMap) GetSide(side gdnative.Int) ImageImplementer {
 	Args: [], Returns: enum.CubeMap::Storage
 */
 func (o *CubeMap) GetStorage() CubeMapStorage {
-	//log.Println("Calling CubeMap.GetStorage()")
+	// log.Println("Calling CubeMap.GetStorage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *CubeMap) GetStorage() CubeMapStorage {
 	Args: [], Returns: int
 */
 func (o *CubeMap) GetWidth() gdnative.Int {
-	//log.Println("Calling CubeMap.GetWidth()")
+	// log.Println("Calling CubeMap.GetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *CubeMap) GetWidth() gdnative.Int {
 	Args: [{ false flags int}], Returns: void
 */
 func (o *CubeMap) SetFlags(flags gdnative.Int) {
-	//log.Println("Calling CubeMap.SetFlags()")
+	// log.Println("Calling CubeMap.SetFlags()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *CubeMap) SetFlags(flags gdnative.Int) {
 	Args: [{ false quality float}], Returns: void
 */
 func (o *CubeMap) SetLossyStorageQuality(quality gdnative.Real) {
-	//log.Println("Calling CubeMap.SetLossyStorageQuality()")
+	// log.Println("Calling CubeMap.SetLossyStorageQuality()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *CubeMap) SetLossyStorageQuality(quality gdnative.Real) {
 	Args: [{ false side int} { false image Image}], Returns: void
 */
 func (o *CubeMap) SetSide(side gdnative.Int, image ImageImplementer) {
-	//log.Println("Calling CubeMap.SetSide()")
+	// log.Println("Calling CubeMap.SetSide()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -287,7 +287,7 @@ func (o *CubeMap) SetSide(side gdnative.Int, image ImageImplementer) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *CubeMap) SetStorage(mode gdnative.Int) {
-	//log.Println("Calling CubeMap.SetStorage()")
+	// log.Println("Calling CubeMap.SetStorage()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

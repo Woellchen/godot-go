@@ -65,7 +65,7 @@ func (o *Camera) BaseClass() string {
 	Args: [{True true enable_next bool}], Returns: void
 */
 func (o *Camera) ClearCurrent(enableNext gdnative.Bool) {
-	//log.Println("Calling Camera.ClearCurrent()")
+	// log.Println("Calling Camera.ClearCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -86,7 +86,7 @@ func (o *Camera) ClearCurrent(enableNext gdnative.Bool) {
 	Args: [], Returns: RID
 */
 func (o *Camera) GetCameraRid() gdnative.Rid {
-	//log.Println("Calling Camera.GetCameraRid()")
+	// log.Println("Calling Camera.GetCameraRid()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *Camera) GetCameraRid() gdnative.Rid {
 	Args: [], Returns: Transform
 */
 func (o *Camera) GetCameraTransform() gdnative.Transform {
-	//log.Println("Calling Camera.GetCameraTransform()")
+	// log.Println("Calling Camera.GetCameraTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -132,7 +132,7 @@ func (o *Camera) GetCameraTransform() gdnative.Transform {
 	Args: [], Returns: int
 */
 func (o *Camera) GetCullMask() gdnative.Int {
-	//log.Println("Calling Camera.GetCullMask()")
+	// log.Println("Calling Camera.GetCullMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -155,7 +155,7 @@ func (o *Camera) GetCullMask() gdnative.Int {
 	Args: [{ false layer int}], Returns: bool
 */
 func (o *Camera) GetCullMaskBit(layer gdnative.Int) gdnative.Bool {
-	//log.Println("Calling Camera.GetCullMaskBit()")
+	// log.Println("Calling Camera.GetCullMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *Camera) GetCullMaskBit(layer gdnative.Int) gdnative.Bool {
 	Args: [], Returns: enum.Camera::DopplerTracking
 */
 func (o *Camera) GetDopplerTracking() CameraDopplerTracking {
-	//log.Println("Calling Camera.GetDopplerTracking()")
+	// log.Println("Calling Camera.GetDopplerTracking()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -202,7 +202,7 @@ func (o *Camera) GetDopplerTracking() CameraDopplerTracking {
 	Args: [], Returns: Environment
 */
 func (o *Camera) GetEnvironment() EnvironmentImplementer {
-	//log.Println("Calling Camera.GetEnvironment()")
+	// log.Println("Calling Camera.GetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -239,7 +239,7 @@ func (o *Camera) GetEnvironment() EnvironmentImplementer {
 	Args: [], Returns: float
 */
 func (o *Camera) GetFov() gdnative.Real {
-	//log.Println("Calling Camera.GetFov()")
+	// log.Println("Calling Camera.GetFov()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -262,7 +262,7 @@ func (o *Camera) GetFov() gdnative.Real {
 	Args: [], Returns: Array
 */
 func (o *Camera) GetFrustum() gdnative.Array {
-	//log.Println("Calling Camera.GetFrustum()")
+	// log.Println("Calling Camera.GetFrustum()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -285,7 +285,7 @@ func (o *Camera) GetFrustum() gdnative.Array {
 	Args: [], Returns: Vector2
 */
 func (o *Camera) GetFrustumOffset() gdnative.Vector2 {
-	//log.Println("Calling Camera.GetFrustumOffset()")
+	// log.Println("Calling Camera.GetFrustumOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -308,7 +308,7 @@ func (o *Camera) GetFrustumOffset() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *Camera) GetHOffset() gdnative.Real {
-	//log.Println("Calling Camera.GetHOffset()")
+	// log.Println("Calling Camera.GetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -331,7 +331,7 @@ func (o *Camera) GetHOffset() gdnative.Real {
 	Args: [], Returns: enum.Camera::KeepAspect
 */
 func (o *Camera) GetKeepAspectMode() CameraKeepAspect {
-	//log.Println("Calling Camera.GetKeepAspectMode()")
+	// log.Println("Calling Camera.GetKeepAspectMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -354,7 +354,7 @@ func (o *Camera) GetKeepAspectMode() CameraKeepAspect {
 	Args: [], Returns: enum.Camera::Projection
 */
 func (o *Camera) GetProjection() CameraProjection {
-	//log.Println("Calling Camera.GetProjection()")
+	// log.Println("Calling Camera.GetProjection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -377,7 +377,7 @@ func (o *Camera) GetProjection() CameraProjection {
 	Args: [], Returns: float
 */
 func (o *Camera) GetSize() gdnative.Real {
-	//log.Println("Calling Camera.GetSize()")
+	// log.Println("Calling Camera.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -400,7 +400,7 @@ func (o *Camera) GetSize() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Camera) GetVOffset() gdnative.Real {
-	//log.Println("Calling Camera.GetVOffset()")
+	// log.Println("Calling Camera.GetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -423,7 +423,7 @@ func (o *Camera) GetVOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Camera) GetZfar() gdnative.Real {
-	//log.Println("Calling Camera.GetZfar()")
+	// log.Println("Calling Camera.GetZfar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -446,7 +446,7 @@ func (o *Camera) GetZfar() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Camera) GetZnear() gdnative.Real {
-	//log.Println("Calling Camera.GetZnear()")
+	// log.Println("Calling Camera.GetZnear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -469,7 +469,7 @@ func (o *Camera) GetZnear() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *Camera) IsCurrent() gdnative.Bool {
-	//log.Println("Calling Camera.IsCurrent()")
+	// log.Println("Calling Camera.IsCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -492,7 +492,7 @@ func (o *Camera) IsCurrent() gdnative.Bool {
 	Args: [{ false world_point Vector3}], Returns: bool
 */
 func (o *Camera) IsPositionBehind(worldPoint gdnative.Vector3) gdnative.Bool {
-	//log.Println("Calling Camera.IsPositionBehind()")
+	// log.Println("Calling Camera.IsPositionBehind()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -516,7 +516,7 @@ func (o *Camera) IsPositionBehind(worldPoint gdnative.Vector3) gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *Camera) MakeCurrent() {
-	//log.Println("Calling Camera.MakeCurrent()")
+	// log.Println("Calling Camera.MakeCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -536,7 +536,7 @@ func (o *Camera) MakeCurrent() {
 	Args: [{ false screen_point Vector2}], Returns: Vector3
 */
 func (o *Camera) ProjectLocalRayNormal(screenPoint gdnative.Vector2) gdnative.Vector3 {
-	//log.Println("Calling Camera.ProjectLocalRayNormal()")
+	// log.Println("Calling Camera.ProjectLocalRayNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -560,7 +560,7 @@ func (o *Camera) ProjectLocalRayNormal(screenPoint gdnative.Vector2) gdnative.Ve
 	Args: [{ false screen_point Vector2} { false z_depth float}], Returns: Vector3
 */
 func (o *Camera) ProjectPosition(screenPoint gdnative.Vector2, zDepth gdnative.Real) gdnative.Vector3 {
-	//log.Println("Calling Camera.ProjectPosition()")
+	// log.Println("Calling Camera.ProjectPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -585,7 +585,7 @@ func (o *Camera) ProjectPosition(screenPoint gdnative.Vector2, zDepth gdnative.R
 	Args: [{ false screen_point Vector2}], Returns: Vector3
 */
 func (o *Camera) ProjectRayNormal(screenPoint gdnative.Vector2) gdnative.Vector3 {
-	//log.Println("Calling Camera.ProjectRayNormal()")
+	// log.Println("Calling Camera.ProjectRayNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -609,7 +609,7 @@ func (o *Camera) ProjectRayNormal(screenPoint gdnative.Vector2) gdnative.Vector3
 	Args: [{ false screen_point Vector2}], Returns: Vector3
 */
 func (o *Camera) ProjectRayOrigin(screenPoint gdnative.Vector2) gdnative.Vector3 {
-	//log.Println("Calling Camera.ProjectRayOrigin()")
+	// log.Println("Calling Camera.ProjectRayOrigin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -633,7 +633,7 @@ func (o *Camera) ProjectRayOrigin(screenPoint gdnative.Vector2) gdnative.Vector3
 	Args: [{ false mask int}], Returns: void
 */
 func (o *Camera) SetCullMask(mask gdnative.Int) {
-	//log.Println("Calling Camera.SetCullMask()")
+	// log.Println("Calling Camera.SetCullMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -654,7 +654,7 @@ func (o *Camera) SetCullMask(mask gdnative.Int) {
 	Args: [{ false layer int} { false enable bool}], Returns: void
 */
 func (o *Camera) SetCullMaskBit(layer gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling Camera.SetCullMaskBit()")
+	// log.Println("Calling Camera.SetCullMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -676,7 +676,7 @@ func (o *Camera) SetCullMaskBit(layer gdnative.Int, enable gdnative.Bool) {
 	Args: [{ false arg0 bool}], Returns: void
 */
 func (o *Camera) SetCurrent(arg0 gdnative.Bool) {
-	//log.Println("Calling Camera.SetCurrent()")
+	// log.Println("Calling Camera.SetCurrent()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -697,7 +697,7 @@ func (o *Camera) SetCurrent(arg0 gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Camera) SetDopplerTracking(mode gdnative.Int) {
-	//log.Println("Calling Camera.SetDopplerTracking()")
+	// log.Println("Calling Camera.SetDopplerTracking()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -718,7 +718,7 @@ func (o *Camera) SetDopplerTracking(mode gdnative.Int) {
 	Args: [{ false env Environment}], Returns: void
 */
 func (o *Camera) SetEnvironment(env EnvironmentImplementer) {
-	//log.Println("Calling Camera.SetEnvironment()")
+	// log.Println("Calling Camera.SetEnvironment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -739,7 +739,7 @@ func (o *Camera) SetEnvironment(env EnvironmentImplementer) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *Camera) SetFov(arg0 gdnative.Real) {
-	//log.Println("Calling Camera.SetFov()")
+	// log.Println("Calling Camera.SetFov()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -760,7 +760,7 @@ func (o *Camera) SetFov(arg0 gdnative.Real) {
 	Args: [{ false size float} { false offset Vector2} { false z_near float} { false z_far float}], Returns: void
 */
 func (o *Camera) SetFrustum(size gdnative.Real, offset gdnative.Vector2, zNear gdnative.Real, zFar gdnative.Real) {
-	//log.Println("Calling Camera.SetFrustum()")
+	// log.Println("Calling Camera.SetFrustum()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -784,7 +784,7 @@ func (o *Camera) SetFrustum(size gdnative.Real, offset gdnative.Vector2, zNear g
 	Args: [{ false arg0 Vector2}], Returns: void
 */
 func (o *Camera) SetFrustumOffset(arg0 gdnative.Vector2) {
-	//log.Println("Calling Camera.SetFrustumOffset()")
+	// log.Println("Calling Camera.SetFrustumOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -805,7 +805,7 @@ func (o *Camera) SetFrustumOffset(arg0 gdnative.Vector2) {
 	Args: [{ false ofs float}], Returns: void
 */
 func (o *Camera) SetHOffset(ofs gdnative.Real) {
-	//log.Println("Calling Camera.SetHOffset()")
+	// log.Println("Calling Camera.SetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -826,7 +826,7 @@ func (o *Camera) SetHOffset(ofs gdnative.Real) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *Camera) SetKeepAspectMode(mode gdnative.Int) {
-	//log.Println("Calling Camera.SetKeepAspectMode()")
+	// log.Println("Calling Camera.SetKeepAspectMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -847,7 +847,7 @@ func (o *Camera) SetKeepAspectMode(mode gdnative.Int) {
 	Args: [{ false size float} { false z_near float} { false z_far float}], Returns: void
 */
 func (o *Camera) SetOrthogonal(size gdnative.Real, zNear gdnative.Real, zFar gdnative.Real) {
-	//log.Println("Calling Camera.SetOrthogonal()")
+	// log.Println("Calling Camera.SetOrthogonal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -870,7 +870,7 @@ func (o *Camera) SetOrthogonal(size gdnative.Real, zNear gdnative.Real, zFar gdn
 	Args: [{ false fov float} { false z_near float} { false z_far float}], Returns: void
 */
 func (o *Camera) SetPerspective(fov gdnative.Real, zNear gdnative.Real, zFar gdnative.Real) {
-	//log.Println("Calling Camera.SetPerspective()")
+	// log.Println("Calling Camera.SetPerspective()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -893,7 +893,7 @@ func (o *Camera) SetPerspective(fov gdnative.Real, zNear gdnative.Real, zFar gdn
 	Args: [{ false arg0 int}], Returns: void
 */
 func (o *Camera) SetProjection(arg0 gdnative.Int) {
-	//log.Println("Calling Camera.SetProjection()")
+	// log.Println("Calling Camera.SetProjection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -914,7 +914,7 @@ func (o *Camera) SetProjection(arg0 gdnative.Int) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *Camera) SetSize(arg0 gdnative.Real) {
-	//log.Println("Calling Camera.SetSize()")
+	// log.Println("Calling Camera.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -935,7 +935,7 @@ func (o *Camera) SetSize(arg0 gdnative.Real) {
 	Args: [{ false ofs float}], Returns: void
 */
 func (o *Camera) SetVOffset(ofs gdnative.Real) {
-	//log.Println("Calling Camera.SetVOffset()")
+	// log.Println("Calling Camera.SetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -956,7 +956,7 @@ func (o *Camera) SetVOffset(ofs gdnative.Real) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *Camera) SetZfar(arg0 gdnative.Real) {
-	//log.Println("Calling Camera.SetZfar()")
+	// log.Println("Calling Camera.SetZfar()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -977,7 +977,7 @@ func (o *Camera) SetZfar(arg0 gdnative.Real) {
 	Args: [{ false arg0 float}], Returns: void
 */
 func (o *Camera) SetZnear(arg0 gdnative.Real) {
-	//log.Println("Calling Camera.SetZnear()")
+	// log.Println("Calling Camera.SetZnear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -998,7 +998,7 @@ func (o *Camera) SetZnear(arg0 gdnative.Real) {
 	Args: [{ false world_point Vector3}], Returns: Vector2
 */
 func (o *Camera) UnprojectPosition(worldPoint gdnative.Vector3) gdnative.Vector2 {
-	//log.Println("Calling Camera.UnprojectPosition()")
+	// log.Println("Calling Camera.UnprojectPosition()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

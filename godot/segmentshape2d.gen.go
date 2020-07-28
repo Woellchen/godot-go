@@ -39,7 +39,7 @@ func (o *SegmentShape2D) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *SegmentShape2D) GetA() gdnative.Vector2 {
-	//log.Println("Calling SegmentShape2D.GetA()")
+	// log.Println("Calling SegmentShape2D.GetA()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *SegmentShape2D) GetA() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *SegmentShape2D) GetB() gdnative.Vector2 {
-	//log.Println("Calling SegmentShape2D.GetB()")
+	// log.Println("Calling SegmentShape2D.GetB()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *SegmentShape2D) GetB() gdnative.Vector2 {
 	Args: [{ false a Vector2}], Returns: void
 */
 func (o *SegmentShape2D) SetA(a gdnative.Vector2) {
-	//log.Println("Calling SegmentShape2D.SetA()")
+	// log.Println("Calling SegmentShape2D.SetA()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *SegmentShape2D) SetA(a gdnative.Vector2) {
 	Args: [{ false b Vector2}], Returns: void
 */
 func (o *SegmentShape2D) SetB(b gdnative.Vector2) {
-	//log.Println("Calling SegmentShape2D.SetB()")
+	// log.Println("Calling SegmentShape2D.SetB()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

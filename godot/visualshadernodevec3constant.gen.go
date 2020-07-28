@@ -39,7 +39,7 @@ func (o *VisualShaderNodeVec3Constant) BaseClass() string {
 	Args: [], Returns: Vector3
 */
 func (o *VisualShaderNodeVec3Constant) GetConstant() gdnative.Vector3 {
-	//log.Println("Calling VisualShaderNodeVec3Constant.GetConstant()")
+	// log.Println("Calling VisualShaderNodeVec3Constant.GetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualShaderNodeVec3Constant) GetConstant() gdnative.Vector3 {
 	Args: [{ false value Vector3}], Returns: void
 */
 func (o *VisualShaderNodeVec3Constant) SetConstant(value gdnative.Vector3) {
-	//log.Println("Calling VisualShaderNodeVec3Constant.SetConstant()")
+	// log.Println("Calling VisualShaderNodeVec3Constant.SetConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

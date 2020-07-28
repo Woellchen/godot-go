@@ -39,7 +39,7 @@ func (o *GradientTexture) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *GradientTexture) X_Update() {
-	//log.Println("Calling GradientTexture.X_Update()")
+	// log.Println("Calling GradientTexture.X_Update()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *GradientTexture) X_Update() {
 	Args: [], Returns: Gradient
 */
 func (o *GradientTexture) GetGradient() GradientImplementer {
-	//log.Println("Calling GradientTexture.GetGradient()")
+	// log.Println("Calling GradientTexture.GetGradient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *GradientTexture) GetGradient() GradientImplementer {
 	Args: [{ false gradient Gradient}], Returns: void
 */
 func (o *GradientTexture) SetGradient(gradient GradientImplementer) {
-	//log.Println("Calling GradientTexture.SetGradient()")
+	// log.Println("Calling GradientTexture.SetGradient()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -117,7 +117,7 @@ func (o *GradientTexture) SetGradient(gradient GradientImplementer) {
 	Args: [{ false width int}], Returns: void
 */
 func (o *GradientTexture) SetWidth(width gdnative.Int) {
-	//log.Println("Calling GradientTexture.SetWidth()")
+	// log.Println("Calling GradientTexture.SetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

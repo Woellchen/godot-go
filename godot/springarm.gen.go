@@ -39,7 +39,7 @@ func (o *SpringArm) BaseClass() string {
 	Args: [{ false RID RID}], Returns: void
 */
 func (o *SpringArm) AddExcludedObject(rid gdnative.Rid) {
-	//log.Println("Calling SpringArm.AddExcludedObject()")
+	// log.Println("Calling SpringArm.AddExcludedObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *SpringArm) AddExcludedObject(rid gdnative.Rid) {
 	Args: [], Returns: void
 */
 func (o *SpringArm) ClearExcludedObjects() {
-	//log.Println("Calling SpringArm.ClearExcludedObjects()")
+	// log.Println("Calling SpringArm.ClearExcludedObjects()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *SpringArm) ClearExcludedObjects() {
 	Args: [], Returns: int
 */
 func (o *SpringArm) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling SpringArm.GetCollisionMask()")
+	// log.Println("Calling SpringArm.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *SpringArm) GetCollisionMask() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *SpringArm) GetHitLength() gdnative.Real {
-	//log.Println("Calling SpringArm.GetHitLength()")
+	// log.Println("Calling SpringArm.GetHitLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -126,7 +126,7 @@ func (o *SpringArm) GetHitLength() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SpringArm) GetLength() gdnative.Real {
-	//log.Println("Calling SpringArm.GetLength()")
+	// log.Println("Calling SpringArm.GetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -149,7 +149,7 @@ func (o *SpringArm) GetLength() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *SpringArm) GetMargin() gdnative.Real {
-	//log.Println("Calling SpringArm.GetMargin()")
+	// log.Println("Calling SpringArm.GetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -172,7 +172,7 @@ func (o *SpringArm) GetMargin() gdnative.Real {
 	Args: [], Returns: Shape
 */
 func (o *SpringArm) GetShape() ShapeImplementer {
-	//log.Println("Calling SpringArm.GetShape()")
+	// log.Println("Calling SpringArm.GetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -209,7 +209,7 @@ func (o *SpringArm) GetShape() ShapeImplementer {
 	Args: [{ false RID RID}], Returns: bool
 */
 func (o *SpringArm) RemoveExcludedObject(rid gdnative.Rid) gdnative.Bool {
-	//log.Println("Calling SpringArm.RemoveExcludedObject()")
+	// log.Println("Calling SpringArm.RemoveExcludedObject()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -233,7 +233,7 @@ func (o *SpringArm) RemoveExcludedObject(rid gdnative.Rid) gdnative.Bool {
 	Args: [{ false mask int}], Returns: void
 */
 func (o *SpringArm) SetCollisionMask(mask gdnative.Int) {
-	//log.Println("Calling SpringArm.SetCollisionMask()")
+	// log.Println("Calling SpringArm.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -254,7 +254,7 @@ func (o *SpringArm) SetCollisionMask(mask gdnative.Int) {
 	Args: [{ false length float}], Returns: void
 */
 func (o *SpringArm) SetLength(length gdnative.Real) {
-	//log.Println("Calling SpringArm.SetLength()")
+	// log.Println("Calling SpringArm.SetLength()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -275,7 +275,7 @@ func (o *SpringArm) SetLength(length gdnative.Real) {
 	Args: [{ false margin float}], Returns: void
 */
 func (o *SpringArm) SetMargin(margin gdnative.Real) {
-	//log.Println("Calling SpringArm.SetMargin()")
+	// log.Println("Calling SpringArm.SetMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -296,7 +296,7 @@ func (o *SpringArm) SetMargin(margin gdnative.Real) {
 	Args: [{ false shape Shape}], Returns: void
 */
 func (o *SpringArm) SetShape(shape ShapeImplementer) {
-	//log.Println("Calling SpringArm.SetShape()")
+	// log.Println("Calling SpringArm.SetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

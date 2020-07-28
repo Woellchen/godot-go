@@ -39,7 +39,7 @@ func (o *AudioEffectRecord) BaseClass() string {
 	Args: [], Returns: enum.AudioStreamSample::Format
 */
 func (o *AudioEffectRecord) GetFormat() AudioStreamSampleFormat {
-	//log.Println("Calling AudioEffectRecord.GetFormat()")
+	// log.Println("Calling AudioEffectRecord.GetFormat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectRecord) GetFormat() AudioStreamSampleFormat {
 	Args: [], Returns: AudioStreamSample
 */
 func (o *AudioEffectRecord) GetRecording() AudioStreamSampleImplementer {
-	//log.Println("Calling AudioEffectRecord.GetRecording()")
+	// log.Println("Calling AudioEffectRecord.GetRecording()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -99,7 +99,7 @@ func (o *AudioEffectRecord) GetRecording() AudioStreamSampleImplementer {
 	Args: [], Returns: bool
 */
 func (o *AudioEffectRecord) IsRecordingActive() gdnative.Bool {
-	//log.Println("Calling AudioEffectRecord.IsRecordingActive()")
+	// log.Println("Calling AudioEffectRecord.IsRecordingActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *AudioEffectRecord) IsRecordingActive() gdnative.Bool {
 	Args: [{ false format int}], Returns: void
 */
 func (o *AudioEffectRecord) SetFormat(format gdnative.Int) {
-	//log.Println("Calling AudioEffectRecord.SetFormat()")
+	// log.Println("Calling AudioEffectRecord.SetFormat()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -143,7 +143,7 @@ func (o *AudioEffectRecord) SetFormat(format gdnative.Int) {
 	Args: [{ false record bool}], Returns: void
 */
 func (o *AudioEffectRecord) SetRecordingActive(record gdnative.Bool) {
-	//log.Println("Calling AudioEffectRecord.SetRecordingActive()")
+	// log.Println("Calling AudioEffectRecord.SetRecordingActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

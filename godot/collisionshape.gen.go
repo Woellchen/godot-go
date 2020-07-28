@@ -39,7 +39,7 @@ func (o *CollisionShape) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CollisionShape) X_ShapeChanged() {
-	//log.Println("Calling CollisionShape.X_ShapeChanged()")
+	// log.Println("Calling CollisionShape.X_ShapeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *CollisionShape) X_ShapeChanged() {
 	Args: [], Returns: void
 */
 func (o *CollisionShape) X_UpdateDebugShape() {
-	//log.Println("Calling CollisionShape.X_UpdateDebugShape()")
+	// log.Println("Calling CollisionShape.X_UpdateDebugShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -79,7 +79,7 @@ func (o *CollisionShape) X_UpdateDebugShape() {
 	Args: [], Returns: Shape
 */
 func (o *CollisionShape) GetShape() ShapeImplementer {
-	//log.Println("Calling CollisionShape.GetShape()")
+	// log.Println("Calling CollisionShape.GetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -116,7 +116,7 @@ func (o *CollisionShape) GetShape() ShapeImplementer {
 	Args: [], Returns: bool
 */
 func (o *CollisionShape) IsDisabled() gdnative.Bool {
-	//log.Println("Calling CollisionShape.IsDisabled()")
+	// log.Println("Calling CollisionShape.IsDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -139,7 +139,7 @@ func (o *CollisionShape) IsDisabled() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *CollisionShape) MakeConvexFromBrothers() {
-	//log.Println("Calling CollisionShape.MakeConvexFromBrothers()")
+	// log.Println("Calling CollisionShape.MakeConvexFromBrothers()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -159,7 +159,7 @@ func (o *CollisionShape) MakeConvexFromBrothers() {
 	Args: [{ false resource Resource}], Returns: void
 */
 func (o *CollisionShape) ResourceChanged(resource ResourceImplementer) {
-	//log.Println("Calling CollisionShape.ResourceChanged()")
+	// log.Println("Calling CollisionShape.ResourceChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -180,7 +180,7 @@ func (o *CollisionShape) ResourceChanged(resource ResourceImplementer) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CollisionShape) SetDisabled(enable gdnative.Bool) {
-	//log.Println("Calling CollisionShape.SetDisabled()")
+	// log.Println("Calling CollisionShape.SetDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -201,7 +201,7 @@ func (o *CollisionShape) SetDisabled(enable gdnative.Bool) {
 	Args: [{ false shape Shape}], Returns: void
 */
 func (o *CollisionShape) SetShape(shape ShapeImplementer) {
-	//log.Println("Calling CollisionShape.SetShape()")
+	// log.Println("Calling CollisionShape.SetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *PlaneMesh) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *PlaneMesh) GetSize() gdnative.Vector2 {
-	//log.Println("Calling PlaneMesh.GetSize()")
+	// log.Println("Calling PlaneMesh.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PlaneMesh) GetSize() gdnative.Vector2 {
 	Args: [], Returns: int
 */
 func (o *PlaneMesh) GetSubdivideDepth() gdnative.Int {
-	//log.Println("Calling PlaneMesh.GetSubdivideDepth()")
+	// log.Println("Calling PlaneMesh.GetSubdivideDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PlaneMesh) GetSubdivideDepth() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *PlaneMesh) GetSubdivideWidth() gdnative.Int {
-	//log.Println("Calling PlaneMesh.GetSubdivideWidth()")
+	// log.Println("Calling PlaneMesh.GetSubdivideWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *PlaneMesh) GetSubdivideWidth() gdnative.Int {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *PlaneMesh) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling PlaneMesh.SetSize()")
+	// log.Println("Calling PlaneMesh.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *PlaneMesh) SetSize(size gdnative.Vector2) {
 	Args: [{ false subdivide int}], Returns: void
 */
 func (o *PlaneMesh) SetSubdivideDepth(subdivide gdnative.Int) {
-	//log.Println("Calling PlaneMesh.SetSubdivideDepth()")
+	// log.Println("Calling PlaneMesh.SetSubdivideDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *PlaneMesh) SetSubdivideDepth(subdivide gdnative.Int) {
 	Args: [{ false subdivide int}], Returns: void
 */
 func (o *PlaneMesh) SetSubdivideWidth(subdivide gdnative.Int) {
-	//log.Println("Calling PlaneMesh.SetSubdivideWidth()")
+	// log.Println("Calling PlaneMesh.SetSubdivideWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

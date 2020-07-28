@@ -39,7 +39,7 @@ func (o *InputEventPanGesture) BaseClass() string {
 	Args: [], Returns: Vector2
 */
 func (o *InputEventPanGesture) GetDelta() gdnative.Vector2 {
-	//log.Println("Calling InputEventPanGesture.GetDelta()")
+	// log.Println("Calling InputEventPanGesture.GetDelta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventPanGesture) GetDelta() gdnative.Vector2 {
 	Args: [{ false delta Vector2}], Returns: void
 */
 func (o *InputEventPanGesture) SetDelta(delta gdnative.Vector2) {
-	//log.Println("Calling InputEventPanGesture.SetDelta()")
+	// log.Println("Calling InputEventPanGesture.SetDelta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -47,7 +47,7 @@ func (o *WebSocketPeer) BaseClass() string {
 	Args: [{1000 true code int} { true reason String}], Returns: void
 */
 func (o *WebSocketPeer) Close(code gdnative.Int, reason gdnative.String) {
-	//log.Println("Calling WebSocketPeer.Close()")
+	// log.Println("Calling WebSocketPeer.Close()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -69,7 +69,7 @@ func (o *WebSocketPeer) Close(code gdnative.Int, reason gdnative.String) {
 	Args: [], Returns: String
 */
 func (o *WebSocketPeer) GetConnectedHost() gdnative.String {
-	//log.Println("Calling WebSocketPeer.GetConnectedHost()")
+	// log.Println("Calling WebSocketPeer.GetConnectedHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -92,7 +92,7 @@ func (o *WebSocketPeer) GetConnectedHost() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *WebSocketPeer) GetConnectedPort() gdnative.Int {
-	//log.Println("Calling WebSocketPeer.GetConnectedPort()")
+	// log.Println("Calling WebSocketPeer.GetConnectedPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -115,7 +115,7 @@ func (o *WebSocketPeer) GetConnectedPort() gdnative.Int {
 	Args: [], Returns: enum.WebSocketPeer::WriteMode
 */
 func (o *WebSocketPeer) GetWriteMode() WebSocketPeerWriteMode {
-	//log.Println("Calling WebSocketPeer.GetWriteMode()")
+	// log.Println("Calling WebSocketPeer.GetWriteMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -138,7 +138,7 @@ func (o *WebSocketPeer) GetWriteMode() WebSocketPeerWriteMode {
 	Args: [], Returns: bool
 */
 func (o *WebSocketPeer) IsConnectedToHost() gdnative.Bool {
-	//log.Println("Calling WebSocketPeer.IsConnectedToHost()")
+	// log.Println("Calling WebSocketPeer.IsConnectedToHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -161,7 +161,7 @@ func (o *WebSocketPeer) IsConnectedToHost() gdnative.Bool {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *WebSocketPeer) SetNoDelay(enabled gdnative.Bool) {
-	//log.Println("Calling WebSocketPeer.SetNoDelay()")
+	// log.Println("Calling WebSocketPeer.SetNoDelay()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -182,7 +182,7 @@ func (o *WebSocketPeer) SetNoDelay(enabled gdnative.Bool) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *WebSocketPeer) SetWriteMode(mode gdnative.Int) {
-	//log.Println("Calling WebSocketPeer.SetWriteMode()")
+	// log.Println("Calling WebSocketPeer.SetWriteMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -203,7 +203,7 @@ func (o *WebSocketPeer) SetWriteMode(mode gdnative.Int) {
 	Args: [], Returns: bool
 */
 func (o *WebSocketPeer) WasStringPacket() gdnative.Bool {
-	//log.Println("Calling WebSocketPeer.WasStringPacket()")
+	// log.Println("Calling WebSocketPeer.WasStringPacket()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)

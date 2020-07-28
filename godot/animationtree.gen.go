@@ -48,7 +48,7 @@ func (o *AnimationTree) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *AnimationTree) X_ClearCaches() {
-	//log.Println("Calling AnimationTree.X_ClearCaches()")
+	// log.Println("Calling AnimationTree.X_ClearCaches()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -68,7 +68,7 @@ func (o *AnimationTree) X_ClearCaches() {
 	Args: [{ false arg0 Node}], Returns: void
 */
 func (o *AnimationTree) X_NodeRemoved(arg0 NodeImplementer) {
-	//log.Println("Calling AnimationTree.X_NodeRemoved()")
+	// log.Println("Calling AnimationTree.X_NodeRemoved()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -89,7 +89,7 @@ func (o *AnimationTree) X_NodeRemoved(arg0 NodeImplementer) {
 	Args: [], Returns: void
 */
 func (o *AnimationTree) X_TreeChanged() {
-	//log.Println("Calling AnimationTree.X_TreeChanged()")
+	// log.Println("Calling AnimationTree.X_TreeChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *AnimationTree) X_TreeChanged() {
 	Args: [], Returns: void
 */
 func (o *AnimationTree) X_UpdateProperties() {
-	//log.Println("Calling AnimationTree.X_UpdateProperties()")
+	// log.Println("Calling AnimationTree.X_UpdateProperties()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *AnimationTree) X_UpdateProperties() {
 	Args: [{ false delta float}], Returns: void
 */
 func (o *AnimationTree) Advance(delta gdnative.Real) {
-	//log.Println("Calling AnimationTree.Advance()")
+	// log.Println("Calling AnimationTree.Advance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *AnimationTree) Advance(delta gdnative.Real) {
 	Args: [], Returns: NodePath
 */
 func (o *AnimationTree) GetAnimationPlayer() gdnative.NodePath {
-	//log.Println("Calling AnimationTree.GetAnimationPlayer()")
+	// log.Println("Calling AnimationTree.GetAnimationPlayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -173,7 +173,7 @@ func (o *AnimationTree) GetAnimationPlayer() gdnative.NodePath {
 	Args: [], Returns: enum.AnimationTree::AnimationProcessMode
 */
 func (o *AnimationTree) GetProcessMode() AnimationTreeAnimationProcessMode {
-	//log.Println("Calling AnimationTree.GetProcessMode()")
+	// log.Println("Calling AnimationTree.GetProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -196,7 +196,7 @@ func (o *AnimationTree) GetProcessMode() AnimationTreeAnimationProcessMode {
 	Args: [], Returns: NodePath
 */
 func (o *AnimationTree) GetRootMotionTrack() gdnative.NodePath {
-	//log.Println("Calling AnimationTree.GetRootMotionTrack()")
+	// log.Println("Calling AnimationTree.GetRootMotionTrack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -219,7 +219,7 @@ func (o *AnimationTree) GetRootMotionTrack() gdnative.NodePath {
 	Args: [], Returns: Transform
 */
 func (o *AnimationTree) GetRootMotionTransform() gdnative.Transform {
-	//log.Println("Calling AnimationTree.GetRootMotionTransform()")
+	// log.Println("Calling AnimationTree.GetRootMotionTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -242,7 +242,7 @@ func (o *AnimationTree) GetRootMotionTransform() gdnative.Transform {
 	Args: [], Returns: AnimationNode
 */
 func (o *AnimationTree) GetTreeRoot() AnimationNodeImplementer {
-	//log.Println("Calling AnimationTree.GetTreeRoot()")
+	// log.Println("Calling AnimationTree.GetTreeRoot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -279,7 +279,7 @@ func (o *AnimationTree) GetTreeRoot() AnimationNodeImplementer {
 	Args: [], Returns: bool
 */
 func (o *AnimationTree) IsActive() gdnative.Bool {
-	//log.Println("Calling AnimationTree.IsActive()")
+	// log.Println("Calling AnimationTree.IsActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -302,7 +302,7 @@ func (o *AnimationTree) IsActive() gdnative.Bool {
 	Args: [{ false old_name String} { false new_name String}], Returns: void
 */
 func (o *AnimationTree) RenameParameter(oldName gdnative.String, newName gdnative.String) {
-	//log.Println("Calling AnimationTree.RenameParameter()")
+	// log.Println("Calling AnimationTree.RenameParameter()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -324,7 +324,7 @@ func (o *AnimationTree) RenameParameter(oldName gdnative.String, newName gdnativ
 	Args: [{ false active bool}], Returns: void
 */
 func (o *AnimationTree) SetActive(active gdnative.Bool) {
-	//log.Println("Calling AnimationTree.SetActive()")
+	// log.Println("Calling AnimationTree.SetActive()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -345,7 +345,7 @@ func (o *AnimationTree) SetActive(active gdnative.Bool) {
 	Args: [{ false root NodePath}], Returns: void
 */
 func (o *AnimationTree) SetAnimationPlayer(root gdnative.NodePath) {
-	//log.Println("Calling AnimationTree.SetAnimationPlayer()")
+	// log.Println("Calling AnimationTree.SetAnimationPlayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -366,7 +366,7 @@ func (o *AnimationTree) SetAnimationPlayer(root gdnative.NodePath) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *AnimationTree) SetProcessMode(mode gdnative.Int) {
-	//log.Println("Calling AnimationTree.SetProcessMode()")
+	// log.Println("Calling AnimationTree.SetProcessMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -387,7 +387,7 @@ func (o *AnimationTree) SetProcessMode(mode gdnative.Int) {
 	Args: [{ false path NodePath}], Returns: void
 */
 func (o *AnimationTree) SetRootMotionTrack(path gdnative.NodePath) {
-	//log.Println("Calling AnimationTree.SetRootMotionTrack()")
+	// log.Println("Calling AnimationTree.SetRootMotionTrack()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -408,7 +408,7 @@ func (o *AnimationTree) SetRootMotionTrack(path gdnative.NodePath) {
 	Args: [{ false root AnimationNode}], Returns: void
 */
 func (o *AnimationTree) SetTreeRoot(root AnimationNodeImplementer) {
-	//log.Println("Calling AnimationTree.SetTreeRoot()")
+	// log.Println("Calling AnimationTree.SetTreeRoot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

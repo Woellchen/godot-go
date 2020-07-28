@@ -53,7 +53,7 @@ func (o *TextureRect) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *TextureRect) X_TextureChanged() {
-	//log.Println("Calling TextureRect.X_TextureChanged()")
+	// log.Println("Calling TextureRect.X_TextureChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -73,7 +73,7 @@ func (o *TextureRect) X_TextureChanged() {
 	Args: [], Returns: enum.TextureRect::StretchMode
 */
 func (o *TextureRect) GetStretchMode() TextureRectStretchMode {
-	//log.Println("Calling TextureRect.GetStretchMode()")
+	// log.Println("Calling TextureRect.GetStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -96,7 +96,7 @@ func (o *TextureRect) GetStretchMode() TextureRectStretchMode {
 	Args: [], Returns: Texture
 */
 func (o *TextureRect) GetTexture() TextureImplementer {
-	//log.Println("Calling TextureRect.GetTexture()")
+	// log.Println("Calling TextureRect.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -133,7 +133,7 @@ func (o *TextureRect) GetTexture() TextureImplementer {
 	Args: [], Returns: bool
 */
 func (o *TextureRect) HasExpand() gdnative.Bool {
-	//log.Println("Calling TextureRect.HasExpand()")
+	// log.Println("Calling TextureRect.HasExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -156,7 +156,7 @@ func (o *TextureRect) HasExpand() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TextureRect) IsFlippedH() gdnative.Bool {
-	//log.Println("Calling TextureRect.IsFlippedH()")
+	// log.Println("Calling TextureRect.IsFlippedH()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -179,7 +179,7 @@ func (o *TextureRect) IsFlippedH() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TextureRect) IsFlippedV() gdnative.Bool {
-	//log.Println("Calling TextureRect.IsFlippedV()")
+	// log.Println("Calling TextureRect.IsFlippedV()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -202,7 +202,7 @@ func (o *TextureRect) IsFlippedV() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *TextureRect) SetExpand(enable gdnative.Bool) {
-	//log.Println("Calling TextureRect.SetExpand()")
+	// log.Println("Calling TextureRect.SetExpand()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -223,7 +223,7 @@ func (o *TextureRect) SetExpand(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *TextureRect) SetFlipH(enable gdnative.Bool) {
-	//log.Println("Calling TextureRect.SetFlipH()")
+	// log.Println("Calling TextureRect.SetFlipH()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *TextureRect) SetFlipH(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *TextureRect) SetFlipV(enable gdnative.Bool) {
-	//log.Println("Calling TextureRect.SetFlipV()")
+	// log.Println("Calling TextureRect.SetFlipV()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *TextureRect) SetFlipV(enable gdnative.Bool) {
 	Args: [{ false stretch_mode int}], Returns: void
 */
 func (o *TextureRect) SetStretchMode(stretchMode gdnative.Int) {
-	//log.Println("Calling TextureRect.SetStretchMode()")
+	// log.Println("Calling TextureRect.SetStretchMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *TextureRect) SetStretchMode(stretchMode gdnative.Int) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TextureRect) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling TextureRect.SetTexture()")
+	// log.Println("Calling TextureRect.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

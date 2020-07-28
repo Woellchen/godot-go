@@ -50,7 +50,7 @@ func (o *Area2D) BaseClass() string {
 	Args: [{ false id int}], Returns: void
 */
 func (o *Area2D) X_AreaEnterTree(id gdnative.Int) {
-	//log.Println("Calling Area2D.X_AreaEnterTree()")
+	// log.Println("Calling Area2D.X_AreaEnterTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -71,7 +71,7 @@ func (o *Area2D) X_AreaEnterTree(id gdnative.Int) {
 	Args: [{ false id int}], Returns: void
 */
 func (o *Area2D) X_AreaExitTree(id gdnative.Int) {
-	//log.Println("Calling Area2D.X_AreaExitTree()")
+	// log.Println("Calling Area2D.X_AreaExitTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -92,7 +92,7 @@ func (o *Area2D) X_AreaExitTree(id gdnative.Int) {
 	Args: [{ false arg0 int} { false arg1 RID} { false arg2 int} { false arg3 int} { false arg4 int}], Returns: void
 */
 func (o *Area2D) X_AreaInout(arg0 gdnative.Int, arg1 gdnative.Rid, arg2 gdnative.Int, arg3 gdnative.Int, arg4 gdnative.Int) {
-	//log.Println("Calling Area2D.X_AreaInout()")
+	// log.Println("Calling Area2D.X_AreaInout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -117,7 +117,7 @@ func (o *Area2D) X_AreaInout(arg0 gdnative.Int, arg1 gdnative.Rid, arg2 gdnative
 	Args: [{ false id int}], Returns: void
 */
 func (o *Area2D) X_BodyEnterTree(id gdnative.Int) {
-	//log.Println("Calling Area2D.X_BodyEnterTree()")
+	// log.Println("Calling Area2D.X_BodyEnterTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -138,7 +138,7 @@ func (o *Area2D) X_BodyEnterTree(id gdnative.Int) {
 	Args: [{ false id int}], Returns: void
 */
 func (o *Area2D) X_BodyExitTree(id gdnative.Int) {
-	//log.Println("Calling Area2D.X_BodyExitTree()")
+	// log.Println("Calling Area2D.X_BodyExitTree()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -159,7 +159,7 @@ func (o *Area2D) X_BodyExitTree(id gdnative.Int) {
 	Args: [{ false arg0 int} { false arg1 RID} { false arg2 int} { false arg3 int} { false arg4 int}], Returns: void
 */
 func (o *Area2D) X_BodyInout(arg0 gdnative.Int, arg1 gdnative.Rid, arg2 gdnative.Int, arg3 gdnative.Int, arg4 gdnative.Int) {
-	//log.Println("Calling Area2D.X_BodyInout()")
+	// log.Println("Calling Area2D.X_BodyInout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -184,7 +184,7 @@ func (o *Area2D) X_BodyInout(arg0 gdnative.Int, arg1 gdnative.Rid, arg2 gdnative
 	Args: [], Returns: float
 */
 func (o *Area2D) GetAngularDamp() gdnative.Real {
-	//log.Println("Calling Area2D.GetAngularDamp()")
+	// log.Println("Calling Area2D.GetAngularDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -207,7 +207,7 @@ func (o *Area2D) GetAngularDamp() gdnative.Real {
 	Args: [], Returns: String
 */
 func (o *Area2D) GetAudioBusName() gdnative.String {
-	//log.Println("Calling Area2D.GetAudioBusName()")
+	// log.Println("Calling Area2D.GetAudioBusName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -230,7 +230,7 @@ func (o *Area2D) GetAudioBusName() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *Area2D) GetCollisionLayer() gdnative.Int {
-	//log.Println("Calling Area2D.GetCollisionLayer()")
+	// log.Println("Calling Area2D.GetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -253,7 +253,7 @@ func (o *Area2D) GetCollisionLayer() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *Area2D) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling Area2D.GetCollisionLayerBit()")
+	// log.Println("Calling Area2D.GetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -277,7 +277,7 @@ func (o *Area2D) GetCollisionLayerBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *Area2D) GetCollisionMask() gdnative.Int {
-	//log.Println("Calling Area2D.GetCollisionMask()")
+	// log.Println("Calling Area2D.GetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -300,7 +300,7 @@ func (o *Area2D) GetCollisionMask() gdnative.Int {
 	Args: [{ false bit int}], Returns: bool
 */
 func (o *Area2D) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
-	//log.Println("Calling Area2D.GetCollisionMaskBit()")
+	// log.Println("Calling Area2D.GetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -324,7 +324,7 @@ func (o *Area2D) GetCollisionMaskBit(bit gdnative.Int) gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *Area2D) GetGravity() gdnative.Real {
-	//log.Println("Calling Area2D.GetGravity()")
+	// log.Println("Calling Area2D.GetGravity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -347,7 +347,7 @@ func (o *Area2D) GetGravity() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Area2D) GetGravityDistanceScale() gdnative.Real {
-	//log.Println("Calling Area2D.GetGravityDistanceScale()")
+	// log.Println("Calling Area2D.GetGravityDistanceScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -370,7 +370,7 @@ func (o *Area2D) GetGravityDistanceScale() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *Area2D) GetGravityVector() gdnative.Vector2 {
-	//log.Println("Calling Area2D.GetGravityVector()")
+	// log.Println("Calling Area2D.GetGravityVector()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -393,7 +393,7 @@ func (o *Area2D) GetGravityVector() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *Area2D) GetLinearDamp() gdnative.Real {
-	//log.Println("Calling Area2D.GetLinearDamp()")
+	// log.Println("Calling Area2D.GetLinearDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -416,7 +416,7 @@ func (o *Area2D) GetLinearDamp() gdnative.Real {
 	Args: [], Returns: Array
 */
 func (o *Area2D) GetOverlappingAreas() gdnative.Array {
-	//log.Println("Calling Area2D.GetOverlappingAreas()")
+	// log.Println("Calling Area2D.GetOverlappingAreas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -439,7 +439,7 @@ func (o *Area2D) GetOverlappingAreas() gdnative.Array {
 	Args: [], Returns: Array
 */
 func (o *Area2D) GetOverlappingBodies() gdnative.Array {
-	//log.Println("Calling Area2D.GetOverlappingBodies()")
+	// log.Println("Calling Area2D.GetOverlappingBodies()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -462,7 +462,7 @@ func (o *Area2D) GetOverlappingBodies() gdnative.Array {
 	Args: [], Returns: float
 */
 func (o *Area2D) GetPriority() gdnative.Real {
-	//log.Println("Calling Area2D.GetPriority()")
+	// log.Println("Calling Area2D.GetPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -485,7 +485,7 @@ func (o *Area2D) GetPriority() gdnative.Real {
 	Args: [], Returns: enum.Area2D::SpaceOverride
 */
 func (o *Area2D) GetSpaceOverrideMode() Area2DSpaceOverride {
-	//log.Println("Calling Area2D.GetSpaceOverrideMode()")
+	// log.Println("Calling Area2D.GetSpaceOverrideMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -508,7 +508,7 @@ func (o *Area2D) GetSpaceOverrideMode() Area2DSpaceOverride {
 	Args: [], Returns: bool
 */
 func (o *Area2D) IsGravityAPoint() gdnative.Bool {
-	//log.Println("Calling Area2D.IsGravityAPoint()")
+	// log.Println("Calling Area2D.IsGravityAPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -531,7 +531,7 @@ func (o *Area2D) IsGravityAPoint() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Area2D) IsMonitorable() gdnative.Bool {
-	//log.Println("Calling Area2D.IsMonitorable()")
+	// log.Println("Calling Area2D.IsMonitorable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -554,7 +554,7 @@ func (o *Area2D) IsMonitorable() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Area2D) IsMonitoring() gdnative.Bool {
-	//log.Println("Calling Area2D.IsMonitoring()")
+	// log.Println("Calling Area2D.IsMonitoring()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -577,7 +577,7 @@ func (o *Area2D) IsMonitoring() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *Area2D) IsOverridingAudioBus() gdnative.Bool {
-	//log.Println("Calling Area2D.IsOverridingAudioBus()")
+	// log.Println("Calling Area2D.IsOverridingAudioBus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -600,7 +600,7 @@ func (o *Area2D) IsOverridingAudioBus() gdnative.Bool {
 	Args: [{ false area Node}], Returns: bool
 */
 func (o *Area2D) OverlapsArea(area NodeImplementer) gdnative.Bool {
-	//log.Println("Calling Area2D.OverlapsArea()")
+	// log.Println("Calling Area2D.OverlapsArea()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -624,7 +624,7 @@ func (o *Area2D) OverlapsArea(area NodeImplementer) gdnative.Bool {
 	Args: [{ false body Node}], Returns: bool
 */
 func (o *Area2D) OverlapsBody(body NodeImplementer) gdnative.Bool {
-	//log.Println("Calling Area2D.OverlapsBody()")
+	// log.Println("Calling Area2D.OverlapsBody()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -648,7 +648,7 @@ func (o *Area2D) OverlapsBody(body NodeImplementer) gdnative.Bool {
 	Args: [{ false angular_damp float}], Returns: void
 */
 func (o *Area2D) SetAngularDamp(angularDamp gdnative.Real) {
-	//log.Println("Calling Area2D.SetAngularDamp()")
+	// log.Println("Calling Area2D.SetAngularDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -669,7 +669,7 @@ func (o *Area2D) SetAngularDamp(angularDamp gdnative.Real) {
 	Args: [{ false name String}], Returns: void
 */
 func (o *Area2D) SetAudioBusName(name gdnative.String) {
-	//log.Println("Calling Area2D.SetAudioBusName()")
+	// log.Println("Calling Area2D.SetAudioBusName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -690,7 +690,7 @@ func (o *Area2D) SetAudioBusName(name gdnative.String) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Area2D) SetAudioBusOverride(enable gdnative.Bool) {
-	//log.Println("Calling Area2D.SetAudioBusOverride()")
+	// log.Println("Calling Area2D.SetAudioBusOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -711,7 +711,7 @@ func (o *Area2D) SetAudioBusOverride(enable gdnative.Bool) {
 	Args: [{ false collision_layer int}], Returns: void
 */
 func (o *Area2D) SetCollisionLayer(collisionLayer gdnative.Int) {
-	//log.Println("Calling Area2D.SetCollisionLayer()")
+	// log.Println("Calling Area2D.SetCollisionLayer()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -732,7 +732,7 @@ func (o *Area2D) SetCollisionLayer(collisionLayer gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *Area2D) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling Area2D.SetCollisionLayerBit()")
+	// log.Println("Calling Area2D.SetCollisionLayerBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -754,7 +754,7 @@ func (o *Area2D) SetCollisionLayerBit(bit gdnative.Int, value gdnative.Bool) {
 	Args: [{ false collision_mask int}], Returns: void
 */
 func (o *Area2D) SetCollisionMask(collisionMask gdnative.Int) {
-	//log.Println("Calling Area2D.SetCollisionMask()")
+	// log.Println("Calling Area2D.SetCollisionMask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -775,7 +775,7 @@ func (o *Area2D) SetCollisionMask(collisionMask gdnative.Int) {
 	Args: [{ false bit int} { false value bool}], Returns: void
 */
 func (o *Area2D) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
-	//log.Println("Calling Area2D.SetCollisionMaskBit()")
+	// log.Println("Calling Area2D.SetCollisionMaskBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -797,7 +797,7 @@ func (o *Area2D) SetCollisionMaskBit(bit gdnative.Int, value gdnative.Bool) {
 	Args: [{ false gravity float}], Returns: void
 */
 func (o *Area2D) SetGravity(gravity gdnative.Real) {
-	//log.Println("Calling Area2D.SetGravity()")
+	// log.Println("Calling Area2D.SetGravity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -818,7 +818,7 @@ func (o *Area2D) SetGravity(gravity gdnative.Real) {
 	Args: [{ false distance_scale float}], Returns: void
 */
 func (o *Area2D) SetGravityDistanceScale(distanceScale gdnative.Real) {
-	//log.Println("Calling Area2D.SetGravityDistanceScale()")
+	// log.Println("Calling Area2D.SetGravityDistanceScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -839,7 +839,7 @@ func (o *Area2D) SetGravityDistanceScale(distanceScale gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Area2D) SetGravityIsPoint(enable gdnative.Bool) {
-	//log.Println("Calling Area2D.SetGravityIsPoint()")
+	// log.Println("Calling Area2D.SetGravityIsPoint()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -860,7 +860,7 @@ func (o *Area2D) SetGravityIsPoint(enable gdnative.Bool) {
 	Args: [{ false vector Vector2}], Returns: void
 */
 func (o *Area2D) SetGravityVector(vector gdnative.Vector2) {
-	//log.Println("Calling Area2D.SetGravityVector()")
+	// log.Println("Calling Area2D.SetGravityVector()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -881,7 +881,7 @@ func (o *Area2D) SetGravityVector(vector gdnative.Vector2) {
 	Args: [{ false linear_damp float}], Returns: void
 */
 func (o *Area2D) SetLinearDamp(linearDamp gdnative.Real) {
-	//log.Println("Calling Area2D.SetLinearDamp()")
+	// log.Println("Calling Area2D.SetLinearDamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -902,7 +902,7 @@ func (o *Area2D) SetLinearDamp(linearDamp gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Area2D) SetMonitorable(enable gdnative.Bool) {
-	//log.Println("Calling Area2D.SetMonitorable()")
+	// log.Println("Calling Area2D.SetMonitorable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -923,7 +923,7 @@ func (o *Area2D) SetMonitorable(enable gdnative.Bool) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *Area2D) SetMonitoring(enable gdnative.Bool) {
-	//log.Println("Calling Area2D.SetMonitoring()")
+	// log.Println("Calling Area2D.SetMonitoring()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -944,7 +944,7 @@ func (o *Area2D) SetMonitoring(enable gdnative.Bool) {
 	Args: [{ false priority float}], Returns: void
 */
 func (o *Area2D) SetPriority(priority gdnative.Real) {
-	//log.Println("Calling Area2D.SetPriority()")
+	// log.Println("Calling Area2D.SetPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -965,7 +965,7 @@ func (o *Area2D) SetPriority(priority gdnative.Real) {
 	Args: [{ false space_override_mode int}], Returns: void
 */
 func (o *Area2D) SetSpaceOverrideMode(spaceOverrideMode gdnative.Int) {
-	//log.Println("Calling Area2D.SetSpaceOverrideMode()")
+	// log.Println("Calling Area2D.SetSpaceOverrideMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

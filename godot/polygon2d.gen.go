@@ -39,7 +39,7 @@ func (o *Polygon2D) BaseClass() string {
 	Args: [], Returns: Array
 */
 func (o *Polygon2D) X_GetBones() gdnative.Array {
-	//log.Println("Calling Polygon2D.X_GetBones()")
+	// log.Println("Calling Polygon2D.X_GetBones()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *Polygon2D) X_GetBones() gdnative.Array {
 	Args: [{ false bones Array}], Returns: void
 */
 func (o *Polygon2D) X_SetBones(bones gdnative.Array) {
-	//log.Println("Calling Polygon2D.X_SetBones()")
+	// log.Println("Calling Polygon2D.X_SetBones()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -83,7 +83,7 @@ func (o *Polygon2D) X_SetBones(bones gdnative.Array) {
 	Args: [], Returns: void
 */
 func (o *Polygon2D) X_SkeletonBoneSetupChanged() {
-	//log.Println("Calling Polygon2D.X_SkeletonBoneSetupChanged()")
+	// log.Println("Calling Polygon2D.X_SkeletonBoneSetupChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *Polygon2D) X_SkeletonBoneSetupChanged() {
 	Args: [{ false path NodePath} { false weights PoolRealArray}], Returns: void
 */
 func (o *Polygon2D) AddBone(path gdnative.NodePath, weights gdnative.PoolRealArray) {
-	//log.Println("Calling Polygon2D.AddBone()")
+	// log.Println("Calling Polygon2D.AddBone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -125,7 +125,7 @@ func (o *Polygon2D) AddBone(path gdnative.NodePath, weights gdnative.PoolRealArr
 	Args: [], Returns: void
 */
 func (o *Polygon2D) ClearBones() {
-	//log.Println("Calling Polygon2D.ClearBones()")
+	// log.Println("Calling Polygon2D.ClearBones()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *Polygon2D) ClearBones() {
 	Args: [{ false index int}], Returns: void
 */
 func (o *Polygon2D) EraseBone(index gdnative.Int) {
-	//log.Println("Calling Polygon2D.EraseBone()")
+	// log.Println("Calling Polygon2D.EraseBone()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -166,7 +166,7 @@ func (o *Polygon2D) EraseBone(index gdnative.Int) {
 	Args: [], Returns: bool
 */
 func (o *Polygon2D) GetAntialiased() gdnative.Bool {
-	//log.Println("Calling Polygon2D.GetAntialiased()")
+	// log.Println("Calling Polygon2D.GetAntialiased()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -189,7 +189,7 @@ func (o *Polygon2D) GetAntialiased() gdnative.Bool {
 	Args: [], Returns: int
 */
 func (o *Polygon2D) GetBoneCount() gdnative.Int {
-	//log.Println("Calling Polygon2D.GetBoneCount()")
+	// log.Println("Calling Polygon2D.GetBoneCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -212,7 +212,7 @@ func (o *Polygon2D) GetBoneCount() gdnative.Int {
 	Args: [{ false index int}], Returns: NodePath
 */
 func (o *Polygon2D) GetBonePath(index gdnative.Int) gdnative.NodePath {
-	//log.Println("Calling Polygon2D.GetBonePath()")
+	// log.Println("Calling Polygon2D.GetBonePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -236,7 +236,7 @@ func (o *Polygon2D) GetBonePath(index gdnative.Int) gdnative.NodePath {
 	Args: [{ false index int}], Returns: PoolRealArray
 */
 func (o *Polygon2D) GetBoneWeights(index gdnative.Int) gdnative.PoolRealArray {
-	//log.Println("Calling Polygon2D.GetBoneWeights()")
+	// log.Println("Calling Polygon2D.GetBoneWeights()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -260,7 +260,7 @@ func (o *Polygon2D) GetBoneWeights(index gdnative.Int) gdnative.PoolRealArray {
 	Args: [], Returns: Color
 */
 func (o *Polygon2D) GetColor() gdnative.Color {
-	//log.Println("Calling Polygon2D.GetColor()")
+	// log.Println("Calling Polygon2D.GetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -283,7 +283,7 @@ func (o *Polygon2D) GetColor() gdnative.Color {
 	Args: [], Returns: int
 */
 func (o *Polygon2D) GetInternalVertexCount() gdnative.Int {
-	//log.Println("Calling Polygon2D.GetInternalVertexCount()")
+	// log.Println("Calling Polygon2D.GetInternalVertexCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -306,7 +306,7 @@ func (o *Polygon2D) GetInternalVertexCount() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *Polygon2D) GetInvert() gdnative.Bool {
-	//log.Println("Calling Polygon2D.GetInvert()")
+	// log.Println("Calling Polygon2D.GetInvert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -329,7 +329,7 @@ func (o *Polygon2D) GetInvert() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *Polygon2D) GetInvertBorder() gdnative.Real {
-	//log.Println("Calling Polygon2D.GetInvertBorder()")
+	// log.Println("Calling Polygon2D.GetInvertBorder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -352,7 +352,7 @@ func (o *Polygon2D) GetInvertBorder() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *Polygon2D) GetOffset() gdnative.Vector2 {
-	//log.Println("Calling Polygon2D.GetOffset()")
+	// log.Println("Calling Polygon2D.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -375,7 +375,7 @@ func (o *Polygon2D) GetOffset() gdnative.Vector2 {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *Polygon2D) GetPolygon() gdnative.PoolVector2Array {
-	//log.Println("Calling Polygon2D.GetPolygon()")
+	// log.Println("Calling Polygon2D.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -398,7 +398,7 @@ func (o *Polygon2D) GetPolygon() gdnative.PoolVector2Array {
 	Args: [], Returns: Array
 */
 func (o *Polygon2D) GetPolygons() gdnative.Array {
-	//log.Println("Calling Polygon2D.GetPolygons()")
+	// log.Println("Calling Polygon2D.GetPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -421,7 +421,7 @@ func (o *Polygon2D) GetPolygons() gdnative.Array {
 	Args: [], Returns: NodePath
 */
 func (o *Polygon2D) GetSkeleton() gdnative.NodePath {
-	//log.Println("Calling Polygon2D.GetSkeleton()")
+	// log.Println("Calling Polygon2D.GetSkeleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -444,7 +444,7 @@ func (o *Polygon2D) GetSkeleton() gdnative.NodePath {
 	Args: [], Returns: Texture
 */
 func (o *Polygon2D) GetTexture() TextureImplementer {
-	//log.Println("Calling Polygon2D.GetTexture()")
+	// log.Println("Calling Polygon2D.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -481,7 +481,7 @@ func (o *Polygon2D) GetTexture() TextureImplementer {
 	Args: [], Returns: Vector2
 */
 func (o *Polygon2D) GetTextureOffset() gdnative.Vector2 {
-	//log.Println("Calling Polygon2D.GetTextureOffset()")
+	// log.Println("Calling Polygon2D.GetTextureOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -504,7 +504,7 @@ func (o *Polygon2D) GetTextureOffset() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *Polygon2D) GetTextureRotation() gdnative.Real {
-	//log.Println("Calling Polygon2D.GetTextureRotation()")
+	// log.Println("Calling Polygon2D.GetTextureRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -527,7 +527,7 @@ func (o *Polygon2D) GetTextureRotation() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *Polygon2D) GetTextureRotationDegrees() gdnative.Real {
-	//log.Println("Calling Polygon2D.GetTextureRotationDegrees()")
+	// log.Println("Calling Polygon2D.GetTextureRotationDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -550,7 +550,7 @@ func (o *Polygon2D) GetTextureRotationDegrees() gdnative.Real {
 	Args: [], Returns: Vector2
 */
 func (o *Polygon2D) GetTextureScale() gdnative.Vector2 {
-	//log.Println("Calling Polygon2D.GetTextureScale()")
+	// log.Println("Calling Polygon2D.GetTextureScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -573,7 +573,7 @@ func (o *Polygon2D) GetTextureScale() gdnative.Vector2 {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *Polygon2D) GetUv() gdnative.PoolVector2Array {
-	//log.Println("Calling Polygon2D.GetUv()")
+	// log.Println("Calling Polygon2D.GetUv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -596,7 +596,7 @@ func (o *Polygon2D) GetUv() gdnative.PoolVector2Array {
 	Args: [], Returns: PoolColorArray
 */
 func (o *Polygon2D) GetVertexColors() gdnative.PoolColorArray {
-	//log.Println("Calling Polygon2D.GetVertexColors()")
+	// log.Println("Calling Polygon2D.GetVertexColors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -619,7 +619,7 @@ func (o *Polygon2D) GetVertexColors() gdnative.PoolColorArray {
 	Args: [{ false antialiased bool}], Returns: void
 */
 func (o *Polygon2D) SetAntialiased(antialiased gdnative.Bool) {
-	//log.Println("Calling Polygon2D.SetAntialiased()")
+	// log.Println("Calling Polygon2D.SetAntialiased()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -640,7 +640,7 @@ func (o *Polygon2D) SetAntialiased(antialiased gdnative.Bool) {
 	Args: [{ false index int} { false path NodePath}], Returns: void
 */
 func (o *Polygon2D) SetBonePath(index gdnative.Int, path gdnative.NodePath) {
-	//log.Println("Calling Polygon2D.SetBonePath()")
+	// log.Println("Calling Polygon2D.SetBonePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -662,7 +662,7 @@ func (o *Polygon2D) SetBonePath(index gdnative.Int, path gdnative.NodePath) {
 	Args: [{ false index int} { false weights PoolRealArray}], Returns: void
 */
 func (o *Polygon2D) SetBoneWeights(index gdnative.Int, weights gdnative.PoolRealArray) {
-	//log.Println("Calling Polygon2D.SetBoneWeights()")
+	// log.Println("Calling Polygon2D.SetBoneWeights()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -684,7 +684,7 @@ func (o *Polygon2D) SetBoneWeights(index gdnative.Int, weights gdnative.PoolReal
 	Args: [{ false color Color}], Returns: void
 */
 func (o *Polygon2D) SetColor(color gdnative.Color) {
-	//log.Println("Calling Polygon2D.SetColor()")
+	// log.Println("Calling Polygon2D.SetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -705,7 +705,7 @@ func (o *Polygon2D) SetColor(color gdnative.Color) {
 	Args: [{ false internal_vertex_count int}], Returns: void
 */
 func (o *Polygon2D) SetInternalVertexCount(internalVertexCount gdnative.Int) {
-	//log.Println("Calling Polygon2D.SetInternalVertexCount()")
+	// log.Println("Calling Polygon2D.SetInternalVertexCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -726,7 +726,7 @@ func (o *Polygon2D) SetInternalVertexCount(internalVertexCount gdnative.Int) {
 	Args: [{ false invert bool}], Returns: void
 */
 func (o *Polygon2D) SetInvert(invert gdnative.Bool) {
-	//log.Println("Calling Polygon2D.SetInvert()")
+	// log.Println("Calling Polygon2D.SetInvert()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -747,7 +747,7 @@ func (o *Polygon2D) SetInvert(invert gdnative.Bool) {
 	Args: [{ false invert_border float}], Returns: void
 */
 func (o *Polygon2D) SetInvertBorder(invertBorder gdnative.Real) {
-	//log.Println("Calling Polygon2D.SetInvertBorder()")
+	// log.Println("Calling Polygon2D.SetInvertBorder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -768,7 +768,7 @@ func (o *Polygon2D) SetInvertBorder(invertBorder gdnative.Real) {
 	Args: [{ false offset Vector2}], Returns: void
 */
 func (o *Polygon2D) SetOffset(offset gdnative.Vector2) {
-	//log.Println("Calling Polygon2D.SetOffset()")
+	// log.Println("Calling Polygon2D.SetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -789,7 +789,7 @@ func (o *Polygon2D) SetOffset(offset gdnative.Vector2) {
 	Args: [{ false polygon PoolVector2Array}], Returns: void
 */
 func (o *Polygon2D) SetPolygon(polygon gdnative.PoolVector2Array) {
-	//log.Println("Calling Polygon2D.SetPolygon()")
+	// log.Println("Calling Polygon2D.SetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -810,7 +810,7 @@ func (o *Polygon2D) SetPolygon(polygon gdnative.PoolVector2Array) {
 	Args: [{ false polygons Array}], Returns: void
 */
 func (o *Polygon2D) SetPolygons(polygons gdnative.Array) {
-	//log.Println("Calling Polygon2D.SetPolygons()")
+	// log.Println("Calling Polygon2D.SetPolygons()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -831,7 +831,7 @@ func (o *Polygon2D) SetPolygons(polygons gdnative.Array) {
 	Args: [{ false skeleton NodePath}], Returns: void
 */
 func (o *Polygon2D) SetSkeleton(skeleton gdnative.NodePath) {
-	//log.Println("Calling Polygon2D.SetSkeleton()")
+	// log.Println("Calling Polygon2D.SetSkeleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -852,7 +852,7 @@ func (o *Polygon2D) SetSkeleton(skeleton gdnative.NodePath) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *Polygon2D) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling Polygon2D.SetTexture()")
+	// log.Println("Calling Polygon2D.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -873,7 +873,7 @@ func (o *Polygon2D) SetTexture(texture TextureImplementer) {
 	Args: [{ false texture_offset Vector2}], Returns: void
 */
 func (o *Polygon2D) SetTextureOffset(textureOffset gdnative.Vector2) {
-	//log.Println("Calling Polygon2D.SetTextureOffset()")
+	// log.Println("Calling Polygon2D.SetTextureOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -894,7 +894,7 @@ func (o *Polygon2D) SetTextureOffset(textureOffset gdnative.Vector2) {
 	Args: [{ false texture_rotation float}], Returns: void
 */
 func (o *Polygon2D) SetTextureRotation(textureRotation gdnative.Real) {
-	//log.Println("Calling Polygon2D.SetTextureRotation()")
+	// log.Println("Calling Polygon2D.SetTextureRotation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -915,7 +915,7 @@ func (o *Polygon2D) SetTextureRotation(textureRotation gdnative.Real) {
 	Args: [{ false texture_rotation float}], Returns: void
 */
 func (o *Polygon2D) SetTextureRotationDegrees(textureRotation gdnative.Real) {
-	//log.Println("Calling Polygon2D.SetTextureRotationDegrees()")
+	// log.Println("Calling Polygon2D.SetTextureRotationDegrees()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -936,7 +936,7 @@ func (o *Polygon2D) SetTextureRotationDegrees(textureRotation gdnative.Real) {
 	Args: [{ false texture_scale Vector2}], Returns: void
 */
 func (o *Polygon2D) SetTextureScale(textureScale gdnative.Vector2) {
-	//log.Println("Calling Polygon2D.SetTextureScale()")
+	// log.Println("Calling Polygon2D.SetTextureScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -957,7 +957,7 @@ func (o *Polygon2D) SetTextureScale(textureScale gdnative.Vector2) {
 	Args: [{ false uv PoolVector2Array}], Returns: void
 */
 func (o *Polygon2D) SetUv(uv gdnative.PoolVector2Array) {
-	//log.Println("Calling Polygon2D.SetUv()")
+	// log.Println("Calling Polygon2D.SetUv()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -978,7 +978,7 @@ func (o *Polygon2D) SetUv(uv gdnative.PoolVector2Array) {
 	Args: [{ false vertex_colors PoolColorArray}], Returns: void
 */
 func (o *Polygon2D) SetVertexColors(vertexColors gdnative.PoolColorArray) {
-	//log.Println("Calling Polygon2D.SetVertexColors()")
+	// log.Println("Calling Polygon2D.SetVertexColors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

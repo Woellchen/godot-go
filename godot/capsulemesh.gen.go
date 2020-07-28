@@ -39,7 +39,7 @@ func (o *CapsuleMesh) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CapsuleMesh) GetMidHeight() gdnative.Real {
-	//log.Println("Calling CapsuleMesh.GetMidHeight()")
+	// log.Println("Calling CapsuleMesh.GetMidHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CapsuleMesh) GetMidHeight() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CapsuleMesh) GetRadialSegments() gdnative.Int {
-	//log.Println("Calling CapsuleMesh.GetRadialSegments()")
+	// log.Println("Calling CapsuleMesh.GetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CapsuleMesh) GetRadialSegments() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *CapsuleMesh) GetRadius() gdnative.Real {
-	//log.Println("Calling CapsuleMesh.GetRadius()")
+	// log.Println("Calling CapsuleMesh.GetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *CapsuleMesh) GetRadius() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CapsuleMesh) GetRings() gdnative.Int {
-	//log.Println("Calling CapsuleMesh.GetRings()")
+	// log.Println("Calling CapsuleMesh.GetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *CapsuleMesh) GetRings() gdnative.Int {
 	Args: [{ false mid_height float}], Returns: void
 */
 func (o *CapsuleMesh) SetMidHeight(midHeight gdnative.Real) {
-	//log.Println("Calling CapsuleMesh.SetMidHeight()")
+	// log.Println("Calling CapsuleMesh.SetMidHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *CapsuleMesh) SetMidHeight(midHeight gdnative.Real) {
 	Args: [{ false segments int}], Returns: void
 */
 func (o *CapsuleMesh) SetRadialSegments(segments gdnative.Int) {
-	//log.Println("Calling CapsuleMesh.SetRadialSegments()")
+	// log.Println("Calling CapsuleMesh.SetRadialSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *CapsuleMesh) SetRadialSegments(segments gdnative.Int) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CapsuleMesh) SetRadius(radius gdnative.Real) {
-	//log.Println("Calling CapsuleMesh.SetRadius()")
+	// log.Println("Calling CapsuleMesh.SetRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -194,7 +194,7 @@ func (o *CapsuleMesh) SetRadius(radius gdnative.Real) {
 	Args: [{ false rings int}], Returns: void
 */
 func (o *CapsuleMesh) SetRings(rings gdnative.Int) {
-	//log.Println("Calling CapsuleMesh.SetRings()")
+	// log.Println("Calling CapsuleMesh.SetRings()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

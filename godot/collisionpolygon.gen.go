@@ -39,7 +39,7 @@ func (o *CollisionPolygon) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *CollisionPolygon) X_IsEditable3DPolygon() gdnative.Bool {
-	//log.Println("Calling CollisionPolygon.X_IsEditable3DPolygon()")
+	// log.Println("Calling CollisionPolygon.X_IsEditable3DPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CollisionPolygon) X_IsEditable3DPolygon() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *CollisionPolygon) GetDepth() gdnative.Real {
-	//log.Println("Calling CollisionPolygon.GetDepth()")
+	// log.Println("Calling CollisionPolygon.GetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CollisionPolygon) GetDepth() gdnative.Real {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *CollisionPolygon) GetPolygon() gdnative.PoolVector2Array {
-	//log.Println("Calling CollisionPolygon.GetPolygon()")
+	// log.Println("Calling CollisionPolygon.GetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *CollisionPolygon) GetPolygon() gdnative.PoolVector2Array {
 	Args: [], Returns: bool
 */
 func (o *CollisionPolygon) IsDisabled() gdnative.Bool {
-	//log.Println("Calling CollisionPolygon.IsDisabled()")
+	// log.Println("Calling CollisionPolygon.IsDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *CollisionPolygon) IsDisabled() gdnative.Bool {
 	Args: [{ false depth float}], Returns: void
 */
 func (o *CollisionPolygon) SetDepth(depth gdnative.Real) {
-	//log.Println("Calling CollisionPolygon.SetDepth()")
+	// log.Println("Calling CollisionPolygon.SetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -152,7 +152,7 @@ func (o *CollisionPolygon) SetDepth(depth gdnative.Real) {
 	Args: [{ false disabled bool}], Returns: void
 */
 func (o *CollisionPolygon) SetDisabled(disabled gdnative.Bool) {
-	//log.Println("Calling CollisionPolygon.SetDisabled()")
+	// log.Println("Calling CollisionPolygon.SetDisabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -173,7 +173,7 @@ func (o *CollisionPolygon) SetDisabled(disabled gdnative.Bool) {
 	Args: [{ false polygon PoolVector2Array}], Returns: void
 */
 func (o *CollisionPolygon) SetPolygon(polygon gdnative.PoolVector2Array) {
-	//log.Println("Calling CollisionPolygon.SetPolygon()")
+	// log.Println("Calling CollisionPolygon.SetPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *ConcavePolygonShape2D) BaseClass() string {
 	Args: [], Returns: PoolVector2Array
 */
 func (o *ConcavePolygonShape2D) GetSegments() gdnative.PoolVector2Array {
-	//log.Println("Calling ConcavePolygonShape2D.GetSegments()")
+	// log.Println("Calling ConcavePolygonShape2D.GetSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *ConcavePolygonShape2D) GetSegments() gdnative.PoolVector2Array {
 	Args: [{ false segments PoolVector2Array}], Returns: void
 */
 func (o *ConcavePolygonShape2D) SetSegments(segments gdnative.PoolVector2Array) {
-	//log.Println("Calling ConcavePolygonShape2D.SetSegments()")
+	// log.Println("Calling ConcavePolygonShape2D.SetSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *CenterContainer) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *CenterContainer) IsUsingTopLeft() gdnative.Bool {
-	//log.Println("Calling CenterContainer.IsUsingTopLeft()")
+	// log.Println("Calling CenterContainer.IsUsingTopLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CenterContainer) IsUsingTopLeft() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CenterContainer) SetUseTopLeft(enable gdnative.Bool) {
-	//log.Println("Calling CenterContainer.SetUseTopLeft()")
+	// log.Println("Calling CenterContainer.SetUseTopLeft()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

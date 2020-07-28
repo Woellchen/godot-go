@@ -114,7 +114,7 @@ func (o *VisualScriptBuiltinFunc) BaseClass() string {
 	Args: [], Returns: enum.VisualScriptBuiltinFunc::BuiltinFunc
 */
 func (o *VisualScriptBuiltinFunc) GetFunc() VisualScriptBuiltinFuncBuiltinFunc {
-	//log.Println("Calling VisualScriptBuiltinFunc.GetFunc()")
+	// log.Println("Calling VisualScriptBuiltinFunc.GetFunc()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -137,7 +137,7 @@ func (o *VisualScriptBuiltinFunc) GetFunc() VisualScriptBuiltinFuncBuiltinFunc {
 	Args: [{ false which int}], Returns: void
 */
 func (o *VisualScriptBuiltinFunc) SetFunc(which gdnative.Int) {
-	//log.Println("Calling VisualScriptBuiltinFunc.SetFunc()")
+	// log.Println("Calling VisualScriptBuiltinFunc.SetFunc()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

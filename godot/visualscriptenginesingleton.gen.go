@@ -39,7 +39,7 @@ func (o *VisualScriptEngineSingleton) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptEngineSingleton) GetSingleton() gdnative.String {
-	//log.Println("Calling VisualScriptEngineSingleton.GetSingleton()")
+	// log.Println("Calling VisualScriptEngineSingleton.GetSingleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptEngineSingleton) GetSingleton() gdnative.String {
 	Args: [{ false name String}], Returns: void
 */
 func (o *VisualScriptEngineSingleton) SetSingleton(name gdnative.String) {
-	//log.Println("Calling VisualScriptEngineSingleton.SetSingleton()")
+	// log.Println("Calling VisualScriptEngineSingleton.SetSingleton()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

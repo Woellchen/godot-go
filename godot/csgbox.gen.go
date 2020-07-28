@@ -39,7 +39,7 @@ func (o *CSGBox) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *CSGBox) GetDepth() gdnative.Real {
-	//log.Println("Calling CSGBox.GetDepth()")
+	// log.Println("Calling CSGBox.GetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *CSGBox) GetDepth() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CSGBox) GetHeight() gdnative.Real {
-	//log.Println("Calling CSGBox.GetHeight()")
+	// log.Println("Calling CSGBox.GetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *CSGBox) GetHeight() gdnative.Real {
 	Args: [], Returns: Material
 */
 func (o *CSGBox) GetMaterial() MaterialImplementer {
-	//log.Println("Calling CSGBox.GetMaterial()")
+	// log.Println("Calling CSGBox.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -122,7 +122,7 @@ func (o *CSGBox) GetMaterial() MaterialImplementer {
 	Args: [], Returns: float
 */
 func (o *CSGBox) GetWidth() gdnative.Real {
-	//log.Println("Calling CSGBox.GetWidth()")
+	// log.Println("Calling CSGBox.GetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -145,7 +145,7 @@ func (o *CSGBox) GetWidth() gdnative.Real {
 	Args: [{ false depth float}], Returns: void
 */
 func (o *CSGBox) SetDepth(depth gdnative.Real) {
-	//log.Println("Calling CSGBox.SetDepth()")
+	// log.Println("Calling CSGBox.SetDepth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -166,7 +166,7 @@ func (o *CSGBox) SetDepth(depth gdnative.Real) {
 	Args: [{ false height float}], Returns: void
 */
 func (o *CSGBox) SetHeight(height gdnative.Real) {
-	//log.Println("Calling CSGBox.SetHeight()")
+	// log.Println("Calling CSGBox.SetHeight()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -187,7 +187,7 @@ func (o *CSGBox) SetHeight(height gdnative.Real) {
 	Args: [{ false material Material}], Returns: void
 */
 func (o *CSGBox) SetMaterial(material MaterialImplementer) {
-	//log.Println("Calling CSGBox.SetMaterial()")
+	// log.Println("Calling CSGBox.SetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -208,7 +208,7 @@ func (o *CSGBox) SetMaterial(material MaterialImplementer) {
 	Args: [{ false width float}], Returns: void
 */
 func (o *CSGBox) SetWidth(width gdnative.Real) {
-	//log.Println("Calling CSGBox.SetWidth()")
+	// log.Println("Calling CSGBox.SetWidth()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

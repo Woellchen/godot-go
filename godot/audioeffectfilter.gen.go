@@ -49,7 +49,7 @@ func (o *AudioEffectFilter) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectFilter) GetCutoff() gdnative.Real {
-	//log.Println("Calling AudioEffectFilter.GetCutoff()")
+	// log.Println("Calling AudioEffectFilter.GetCutoff()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -72,7 +72,7 @@ func (o *AudioEffectFilter) GetCutoff() gdnative.Real {
 	Args: [], Returns: enum.AudioEffectFilter::FilterDB
 */
 func (o *AudioEffectFilter) GetDb() AudioEffectFilterFilterDB {
-	//log.Println("Calling AudioEffectFilter.GetDb()")
+	// log.Println("Calling AudioEffectFilter.GetDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -95,7 +95,7 @@ func (o *AudioEffectFilter) GetDb() AudioEffectFilterFilterDB {
 	Args: [], Returns: float
 */
 func (o *AudioEffectFilter) GetGain() gdnative.Real {
-	//log.Println("Calling AudioEffectFilter.GetGain()")
+	// log.Println("Calling AudioEffectFilter.GetGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -118,7 +118,7 @@ func (o *AudioEffectFilter) GetGain() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectFilter) GetResonance() gdnative.Real {
-	//log.Println("Calling AudioEffectFilter.GetResonance()")
+	// log.Println("Calling AudioEffectFilter.GetResonance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -141,7 +141,7 @@ func (o *AudioEffectFilter) GetResonance() gdnative.Real {
 	Args: [{ false freq float}], Returns: void
 */
 func (o *AudioEffectFilter) SetCutoff(freq gdnative.Real) {
-	//log.Println("Calling AudioEffectFilter.SetCutoff()")
+	// log.Println("Calling AudioEffectFilter.SetCutoff()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -162,7 +162,7 @@ func (o *AudioEffectFilter) SetCutoff(freq gdnative.Real) {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *AudioEffectFilter) SetDb(amount gdnative.Int) {
-	//log.Println("Calling AudioEffectFilter.SetDb()")
+	// log.Println("Calling AudioEffectFilter.SetDb()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -183,7 +183,7 @@ func (o *AudioEffectFilter) SetDb(amount gdnative.Int) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectFilter) SetGain(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectFilter.SetGain()")
+	// log.Println("Calling AudioEffectFilter.SetGain()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -204,7 +204,7 @@ func (o *AudioEffectFilter) SetGain(amount gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectFilter) SetResonance(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectFilter.SetResonance()")
+	// log.Println("Calling AudioEffectFilter.SetResonance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -62,7 +62,7 @@ func (o *classDb) BaseClass() string {
 */
 func (o *classDb) CanInstance(class gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.CanInstance()")
+	// log.Println("Calling _ClassDB.CanInstance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -87,7 +87,7 @@ func (o *classDb) CanInstance(class gdnative.String) gdnative.Bool {
 */
 func (o *classDb) ClassExists(class gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassExists()")
+	// log.Println("Calling _ClassDB.ClassExists()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -112,7 +112,7 @@ func (o *classDb) ClassExists(class gdnative.String) gdnative.Bool {
 */
 func (o *classDb) ClassGetCategory(class gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetCategory()")
+	// log.Println("Calling _ClassDB.ClassGetCategory()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -137,7 +137,7 @@ func (o *classDb) ClassGetCategory(class gdnative.String) gdnative.String {
 */
 func (o *classDb) ClassGetIntegerConstant(class gdnative.String, name gdnative.String) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetIntegerConstant()")
+	// log.Println("Calling _ClassDB.ClassGetIntegerConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -163,7 +163,7 @@ func (o *classDb) ClassGetIntegerConstant(class gdnative.String, name gdnative.S
 */
 func (o *classDb) ClassGetIntegerConstantList(class gdnative.String, noInheritance gdnative.Bool) gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetIntegerConstantList()")
+	// log.Println("Calling _ClassDB.ClassGetIntegerConstantList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -189,7 +189,7 @@ func (o *classDb) ClassGetIntegerConstantList(class gdnative.String, noInheritan
 */
 func (o *classDb) ClassGetMethodList(class gdnative.String, noInheritance gdnative.Bool) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetMethodList()")
+	// log.Println("Calling _ClassDB.ClassGetMethodList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -215,7 +215,7 @@ func (o *classDb) ClassGetMethodList(class gdnative.String, noInheritance gdnati
 */
 func (o *classDb) ClassGetProperty(object ObjectImplementer, property gdnative.String) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetProperty()")
+	// log.Println("Calling _ClassDB.ClassGetProperty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -241,7 +241,7 @@ func (o *classDb) ClassGetProperty(object ObjectImplementer, property gdnative.S
 */
 func (o *classDb) ClassGetPropertyList(class gdnative.String, noInheritance gdnative.Bool) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetPropertyList()")
+	// log.Println("Calling _ClassDB.ClassGetPropertyList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -267,7 +267,7 @@ func (o *classDb) ClassGetPropertyList(class gdnative.String, noInheritance gdna
 */
 func (o *classDb) ClassGetSignal(class gdnative.String, signal gdnative.String) gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetSignal()")
+	// log.Println("Calling _ClassDB.ClassGetSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -293,7 +293,7 @@ func (o *classDb) ClassGetSignal(class gdnative.String, signal gdnative.String) 
 */
 func (o *classDb) ClassGetSignalList(class gdnative.String, noInheritance gdnative.Bool) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassGetSignalList()")
+	// log.Println("Calling _ClassDB.ClassGetSignalList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -319,7 +319,7 @@ func (o *classDb) ClassGetSignalList(class gdnative.String, noInheritance gdnati
 */
 func (o *classDb) ClassHasIntegerConstant(class gdnative.String, name gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassHasIntegerConstant()")
+	// log.Println("Calling _ClassDB.ClassHasIntegerConstant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -345,7 +345,7 @@ func (o *classDb) ClassHasIntegerConstant(class gdnative.String, name gdnative.S
 */
 func (o *classDb) ClassHasMethod(class gdnative.String, method gdnative.String, noInheritance gdnative.Bool) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassHasMethod()")
+	// log.Println("Calling _ClassDB.ClassHasMethod()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -372,7 +372,7 @@ func (o *classDb) ClassHasMethod(class gdnative.String, method gdnative.String, 
 */
 func (o *classDb) ClassHasSignal(class gdnative.String, signal gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassHasSignal()")
+	// log.Println("Calling _ClassDB.ClassHasSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -398,7 +398,7 @@ func (o *classDb) ClassHasSignal(class gdnative.String, signal gdnative.String) 
 */
 func (o *classDb) ClassSetProperty(object ObjectImplementer, property gdnative.String, value gdnative.Variant) gdnative.Error {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.ClassSetProperty()")
+	// log.Println("Calling _ClassDB.ClassSetProperty()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -425,7 +425,7 @@ func (o *classDb) ClassSetProperty(object ObjectImplementer, property gdnative.S
 */
 func (o *classDb) GetClassList() gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.GetClassList()")
+	// log.Println("Calling _ClassDB.GetClassList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -449,7 +449,7 @@ func (o *classDb) GetClassList() gdnative.PoolStringArray {
 */
 func (o *classDb) GetInheritersFromClass(class gdnative.String) gdnative.PoolStringArray {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.GetInheritersFromClass()")
+	// log.Println("Calling _ClassDB.GetInheritersFromClass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -474,7 +474,7 @@ func (o *classDb) GetInheritersFromClass(class gdnative.String) gdnative.PoolStr
 */
 func (o *classDb) GetParentClass(class gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.GetParentClass()")
+	// log.Println("Calling _ClassDB.GetParentClass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -499,7 +499,7 @@ func (o *classDb) GetParentClass(class gdnative.String) gdnative.String {
 */
 func (o *classDb) Instance(class gdnative.String) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.Instance()")
+	// log.Println("Calling _ClassDB.Instance()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -524,7 +524,7 @@ func (o *classDb) Instance(class gdnative.String) gdnative.Variant {
 */
 func (o *classDb) IsClassEnabled(class gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.IsClassEnabled()")
+	// log.Println("Calling _ClassDB.IsClassEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -549,7 +549,7 @@ func (o *classDb) IsClassEnabled(class gdnative.String) gdnative.Bool {
 */
 func (o *classDb) IsParentClass(class gdnative.String, inherits gdnative.String) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _ClassDB.IsParentClass()")
+	// log.Println("Calling _ClassDB.IsParentClass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

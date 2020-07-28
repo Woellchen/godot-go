@@ -92,7 +92,7 @@ func (o *geometry) BaseClass() string {
 */
 func (o *geometry) BuildBoxPlanes(extents gdnative.Vector3) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.BuildBoxPlanes()")
+	// log.Println("Calling _Geometry.BuildBoxPlanes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -117,7 +117,7 @@ func (o *geometry) BuildBoxPlanes(extents gdnative.Vector3) gdnative.Array {
 */
 func (o *geometry) BuildCapsulePlanes(radius gdnative.Real, height gdnative.Real, sides gdnative.Int, lats gdnative.Int, axis gdnative.Int) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.BuildCapsulePlanes()")
+	// log.Println("Calling _Geometry.BuildCapsulePlanes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -146,7 +146,7 @@ func (o *geometry) BuildCapsulePlanes(radius gdnative.Real, height gdnative.Real
 */
 func (o *geometry) BuildCylinderPlanes(radius gdnative.Real, height gdnative.Real, sides gdnative.Int, axis gdnative.Int) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.BuildCylinderPlanes()")
+	// log.Println("Calling _Geometry.BuildCylinderPlanes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -174,7 +174,7 @@ func (o *geometry) BuildCylinderPlanes(radius gdnative.Real, height gdnative.Rea
 */
 func (o *geometry) ClipPolygon(points gdnative.PoolVector3Array, plane gdnative.Plane) gdnative.PoolVector3Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.ClipPolygon()")
+	// log.Println("Calling _Geometry.ClipPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -200,7 +200,7 @@ func (o *geometry) ClipPolygon(points gdnative.PoolVector3Array, plane gdnative.
 */
 func (o *geometry) ClipPolygons2D(polygonA gdnative.PoolVector2Array, polygonB gdnative.PoolVector2Array) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.ClipPolygons2D()")
+	// log.Println("Calling _Geometry.ClipPolygons2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -226,7 +226,7 @@ func (o *geometry) ClipPolygons2D(polygonA gdnative.PoolVector2Array, polygonB g
 */
 func (o *geometry) ClipPolylineWithPolygon2D(polyline gdnative.PoolVector2Array, polygon gdnative.PoolVector2Array) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.ClipPolylineWithPolygon2D()")
+	// log.Println("Calling _Geometry.ClipPolylineWithPolygon2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -252,7 +252,7 @@ func (o *geometry) ClipPolylineWithPolygon2D(polyline gdnative.PoolVector2Array,
 */
 func (o *geometry) ConvexHull2D(points gdnative.PoolVector2Array) gdnative.PoolVector2Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.ConvexHull2D()")
+	// log.Println("Calling _Geometry.ConvexHull2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -277,7 +277,7 @@ func (o *geometry) ConvexHull2D(points gdnative.PoolVector2Array) gdnative.PoolV
 */
 func (o *geometry) ExcludePolygons2D(polygonA gdnative.PoolVector2Array, polygonB gdnative.PoolVector2Array) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.ExcludePolygons2D()")
+	// log.Println("Calling _Geometry.ExcludePolygons2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -303,7 +303,7 @@ func (o *geometry) ExcludePolygons2D(polygonA gdnative.PoolVector2Array, polygon
 */
 func (o *geometry) GetClosestPointToSegment(point gdnative.Vector3, s1 gdnative.Vector3, s2 gdnative.Vector3) gdnative.Vector3 {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetClosestPointToSegment()")
+	// log.Println("Calling _Geometry.GetClosestPointToSegment()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -330,7 +330,7 @@ func (o *geometry) GetClosestPointToSegment(point gdnative.Vector3, s1 gdnative.
 */
 func (o *geometry) GetClosestPointToSegment2D(point gdnative.Vector2, s1 gdnative.Vector2, s2 gdnative.Vector2) gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetClosestPointToSegment2D()")
+	// log.Println("Calling _Geometry.GetClosestPointToSegment2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -357,7 +357,7 @@ func (o *geometry) GetClosestPointToSegment2D(point gdnative.Vector2, s1 gdnativ
 */
 func (o *geometry) GetClosestPointToSegmentUncapped(point gdnative.Vector3, s1 gdnative.Vector3, s2 gdnative.Vector3) gdnative.Vector3 {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetClosestPointToSegmentUncapped()")
+	// log.Println("Calling _Geometry.GetClosestPointToSegmentUncapped()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -384,7 +384,7 @@ func (o *geometry) GetClosestPointToSegmentUncapped(point gdnative.Vector3, s1 g
 */
 func (o *geometry) GetClosestPointToSegmentUncapped2D(point gdnative.Vector2, s1 gdnative.Vector2, s2 gdnative.Vector2) gdnative.Vector2 {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetClosestPointToSegmentUncapped2D()")
+	// log.Println("Calling _Geometry.GetClosestPointToSegmentUncapped2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -411,7 +411,7 @@ func (o *geometry) GetClosestPointToSegmentUncapped2D(point gdnative.Vector2, s1
 */
 func (o *geometry) GetClosestPointsBetweenSegments(p1 gdnative.Vector3, p2 gdnative.Vector3, q1 gdnative.Vector3, q2 gdnative.Vector3) gdnative.PoolVector3Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetClosestPointsBetweenSegments()")
+	// log.Println("Calling _Geometry.GetClosestPointsBetweenSegments()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -439,7 +439,7 @@ func (o *geometry) GetClosestPointsBetweenSegments(p1 gdnative.Vector3, p2 gdnat
 */
 func (o *geometry) GetClosestPointsBetweenSegments2D(p1 gdnative.Vector2, q1 gdnative.Vector2, p2 gdnative.Vector2, q2 gdnative.Vector2) gdnative.PoolVector2Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetClosestPointsBetweenSegments2D()")
+	// log.Println("Calling _Geometry.GetClosestPointsBetweenSegments2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -467,7 +467,7 @@ func (o *geometry) GetClosestPointsBetweenSegments2D(p1 gdnative.Vector2, q1 gdn
 */
 func (o *geometry) GetUv84NormalBit(normal gdnative.Vector3) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.GetUv84NormalBit()")
+	// log.Println("Calling _Geometry.GetUv84NormalBit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -492,7 +492,7 @@ func (o *geometry) GetUv84NormalBit(normal gdnative.Vector3) gdnative.Int {
 */
 func (o *geometry) IntersectPolygons2D(polygonA gdnative.PoolVector2Array, polygonB gdnative.PoolVector2Array) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.IntersectPolygons2D()")
+	// log.Println("Calling _Geometry.IntersectPolygons2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -518,7 +518,7 @@ func (o *geometry) IntersectPolygons2D(polygonA gdnative.PoolVector2Array, polyg
 */
 func (o *geometry) IntersectPolylineWithPolygon2D(polyline gdnative.PoolVector2Array, polygon gdnative.PoolVector2Array) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.IntersectPolylineWithPolygon2D()")
+	// log.Println("Calling _Geometry.IntersectPolylineWithPolygon2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -544,7 +544,7 @@ func (o *geometry) IntersectPolylineWithPolygon2D(polyline gdnative.PoolVector2A
 */
 func (o *geometry) IsPointInCircle(point gdnative.Vector2, circlePosition gdnative.Vector2, circleRadius gdnative.Real) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.IsPointInCircle()")
+	// log.Println("Calling _Geometry.IsPointInCircle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -571,7 +571,7 @@ func (o *geometry) IsPointInCircle(point gdnative.Vector2, circlePosition gdnati
 */
 func (o *geometry) IsPointInPolygon(point gdnative.Vector2, polygon gdnative.PoolVector2Array) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.IsPointInPolygon()")
+	// log.Println("Calling _Geometry.IsPointInPolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -597,7 +597,7 @@ func (o *geometry) IsPointInPolygon(point gdnative.Vector2, polygon gdnative.Poo
 */
 func (o *geometry) IsPolygonClockwise(polygon gdnative.PoolVector2Array) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.IsPolygonClockwise()")
+	// log.Println("Calling _Geometry.IsPolygonClockwise()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -622,7 +622,7 @@ func (o *geometry) IsPolygonClockwise(polygon gdnative.PoolVector2Array) gdnativ
 */
 func (o *geometry) LineIntersectsLine2D(fromA gdnative.Vector2, dirA gdnative.Vector2, fromB gdnative.Vector2, dirB gdnative.Vector2) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.LineIntersectsLine2D()")
+	// log.Println("Calling _Geometry.LineIntersectsLine2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -650,7 +650,7 @@ func (o *geometry) LineIntersectsLine2D(fromA gdnative.Vector2, dirA gdnative.Ve
 */
 func (o *geometry) MakeAtlas(sizes gdnative.PoolVector2Array) gdnative.Dictionary {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.MakeAtlas()")
+	// log.Println("Calling _Geometry.MakeAtlas()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -675,7 +675,7 @@ func (o *geometry) MakeAtlas(sizes gdnative.PoolVector2Array) gdnative.Dictionar
 */
 func (o *geometry) MergePolygons2D(polygonA gdnative.PoolVector2Array, polygonB gdnative.PoolVector2Array) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.MergePolygons2D()")
+	// log.Println("Calling _Geometry.MergePolygons2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -701,7 +701,7 @@ func (o *geometry) MergePolygons2D(polygonA gdnative.PoolVector2Array, polygonB 
 */
 func (o *geometry) OffsetPolygon2D(polygon gdnative.PoolVector2Array, delta gdnative.Real, joinType gdnative.Int) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.OffsetPolygon2D()")
+	// log.Println("Calling _Geometry.OffsetPolygon2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -728,7 +728,7 @@ func (o *geometry) OffsetPolygon2D(polygon gdnative.PoolVector2Array, delta gdna
 */
 func (o *geometry) OffsetPolyline2D(polyline gdnative.PoolVector2Array, delta gdnative.Real, joinType gdnative.Int, endType gdnative.Int) gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.OffsetPolyline2D()")
+	// log.Println("Calling _Geometry.OffsetPolyline2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -756,7 +756,7 @@ func (o *geometry) OffsetPolyline2D(polyline gdnative.PoolVector2Array, delta gd
 */
 func (o *geometry) PointIsInsideTriangle(point gdnative.Vector2, a gdnative.Vector2, b gdnative.Vector2, c gdnative.Vector2) gdnative.Bool {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.PointIsInsideTriangle()")
+	// log.Println("Calling _Geometry.PointIsInsideTriangle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -784,7 +784,7 @@ func (o *geometry) PointIsInsideTriangle(point gdnative.Vector2, a gdnative.Vect
 */
 func (o *geometry) RayIntersectsTriangle(from gdnative.Vector3, dir gdnative.Vector3, a gdnative.Vector3, b gdnative.Vector3, c gdnative.Vector3) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.RayIntersectsTriangle()")
+	// log.Println("Calling _Geometry.RayIntersectsTriangle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -813,7 +813,7 @@ func (o *geometry) RayIntersectsTriangle(from gdnative.Vector3, dir gdnative.Vec
 */
 func (o *geometry) SegmentIntersectsCircle(segmentFrom gdnative.Vector2, segmentTo gdnative.Vector2, circlePosition gdnative.Vector2, circleRadius gdnative.Real) gdnative.Real {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.SegmentIntersectsCircle()")
+	// log.Println("Calling _Geometry.SegmentIntersectsCircle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -841,7 +841,7 @@ func (o *geometry) SegmentIntersectsCircle(segmentFrom gdnative.Vector2, segment
 */
 func (o *geometry) SegmentIntersectsConvex(from gdnative.Vector3, to gdnative.Vector3, planes gdnative.Array) gdnative.PoolVector3Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.SegmentIntersectsConvex()")
+	// log.Println("Calling _Geometry.SegmentIntersectsConvex()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -868,7 +868,7 @@ func (o *geometry) SegmentIntersectsConvex(from gdnative.Vector3, to gdnative.Ve
 */
 func (o *geometry) SegmentIntersectsCylinder(from gdnative.Vector3, to gdnative.Vector3, height gdnative.Real, radius gdnative.Real) gdnative.PoolVector3Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.SegmentIntersectsCylinder()")
+	// log.Println("Calling _Geometry.SegmentIntersectsCylinder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -896,7 +896,7 @@ func (o *geometry) SegmentIntersectsCylinder(from gdnative.Vector3, to gdnative.
 */
 func (o *geometry) SegmentIntersectsSegment2D(fromA gdnative.Vector2, toA gdnative.Vector2, fromB gdnative.Vector2, toB gdnative.Vector2) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.SegmentIntersectsSegment2D()")
+	// log.Println("Calling _Geometry.SegmentIntersectsSegment2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -924,7 +924,7 @@ func (o *geometry) SegmentIntersectsSegment2D(fromA gdnative.Vector2, toA gdnati
 */
 func (o *geometry) SegmentIntersectsSphere(from gdnative.Vector3, to gdnative.Vector3, spherePosition gdnative.Vector3, sphereRadius gdnative.Real) gdnative.PoolVector3Array {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.SegmentIntersectsSphere()")
+	// log.Println("Calling _Geometry.SegmentIntersectsSphere()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -952,7 +952,7 @@ func (o *geometry) SegmentIntersectsSphere(from gdnative.Vector3, to gdnative.Ve
 */
 func (o *geometry) SegmentIntersectsTriangle(from gdnative.Vector3, to gdnative.Vector3, a gdnative.Vector3, b gdnative.Vector3, c gdnative.Vector3) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.SegmentIntersectsTriangle()")
+	// log.Println("Calling _Geometry.SegmentIntersectsTriangle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -981,7 +981,7 @@ func (o *geometry) SegmentIntersectsTriangle(from gdnative.Vector3, to gdnative.
 */
 func (o *geometry) TriangulateDelaunay2D(points gdnative.PoolVector2Array) gdnative.PoolIntArray {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.TriangulateDelaunay2D()")
+	// log.Println("Calling _Geometry.TriangulateDelaunay2D()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1006,7 +1006,7 @@ func (o *geometry) TriangulateDelaunay2D(points gdnative.PoolVector2Array) gdnat
 */
 func (o *geometry) TriangulatePolygon(polygon gdnative.PoolVector2Array) gdnative.PoolIntArray {
 	o.ensureSingleton()
-	//log.Println("Calling _Geometry.TriangulatePolygon()")
+	// log.Println("Calling _Geometry.TriangulatePolygon()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

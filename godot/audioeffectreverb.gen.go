@@ -39,7 +39,7 @@ func (o *AudioEffectReverb) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetDamping() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetDamping()")
+	// log.Println("Calling AudioEffectReverb.GetDamping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *AudioEffectReverb) GetDamping() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetDry() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetDry()")
+	// log.Println("Calling AudioEffectReverb.GetDry()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *AudioEffectReverb) GetDry() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetHpf() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetHpf()")
+	// log.Println("Calling AudioEffectReverb.GetHpf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *AudioEffectReverb) GetHpf() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetPredelayFeedback() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetPredelayFeedback()")
+	// log.Println("Calling AudioEffectReverb.GetPredelayFeedback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *AudioEffectReverb) GetPredelayFeedback() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetPredelayMsec() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetPredelayMsec()")
+	// log.Println("Calling AudioEffectReverb.GetPredelayMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *AudioEffectReverb) GetPredelayMsec() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetRoomSize() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetRoomSize()")
+	// log.Println("Calling AudioEffectReverb.GetRoomSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *AudioEffectReverb) GetRoomSize() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetSpread() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetSpread()")
+	// log.Println("Calling AudioEffectReverb.GetSpread()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *AudioEffectReverb) GetSpread() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *AudioEffectReverb) GetWet() gdnative.Real {
-	//log.Println("Calling AudioEffectReverb.GetWet()")
+	// log.Println("Calling AudioEffectReverb.GetWet()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *AudioEffectReverb) GetWet() gdnative.Real {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectReverb) SetDamping(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetDamping()")
+	// log.Println("Calling AudioEffectReverb.SetDamping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *AudioEffectReverb) SetDamping(amount gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectReverb) SetDry(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetDry()")
+	// log.Println("Calling AudioEffectReverb.SetDry()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *AudioEffectReverb) SetDry(amount gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectReverb) SetHpf(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetHpf()")
+	// log.Println("Calling AudioEffectReverb.SetHpf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *AudioEffectReverb) SetHpf(amount gdnative.Real) {
 	Args: [{ false feedback float}], Returns: void
 */
 func (o *AudioEffectReverb) SetPredelayFeedback(feedback gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetPredelayFeedback()")
+	// log.Println("Calling AudioEffectReverb.SetPredelayFeedback()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -307,7 +307,7 @@ func (o *AudioEffectReverb) SetPredelayFeedback(feedback gdnative.Real) {
 	Args: [{ false msec float}], Returns: void
 */
 func (o *AudioEffectReverb) SetPredelayMsec(msec gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetPredelayMsec()")
+	// log.Println("Calling AudioEffectReverb.SetPredelayMsec()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *AudioEffectReverb) SetPredelayMsec(msec gdnative.Real) {
 	Args: [{ false size float}], Returns: void
 */
 func (o *AudioEffectReverb) SetRoomSize(size gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetRoomSize()")
+	// log.Println("Calling AudioEffectReverb.SetRoomSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -349,7 +349,7 @@ func (o *AudioEffectReverb) SetRoomSize(size gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectReverb) SetSpread(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetSpread()")
+	// log.Println("Calling AudioEffectReverb.SetSpread()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +370,7 @@ func (o *AudioEffectReverb) SetSpread(amount gdnative.Real) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *AudioEffectReverb) SetWet(amount gdnative.Real) {
-	//log.Println("Calling AudioEffectReverb.SetWet()")
+	// log.Println("Calling AudioEffectReverb.SetWet()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

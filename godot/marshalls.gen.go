@@ -62,7 +62,7 @@ func (o *marshalls) BaseClass() string {
 */
 func (o *marshalls) Base64ToRaw(base64Str gdnative.String) gdnative.PoolByteArray {
 	o.ensureSingleton()
-	//log.Println("Calling _Marshalls.Base64ToRaw()")
+	// log.Println("Calling _Marshalls.Base64ToRaw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -87,7 +87,7 @@ func (o *marshalls) Base64ToRaw(base64Str gdnative.String) gdnative.PoolByteArra
 */
 func (o *marshalls) Base64ToUtf8(base64Str gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _Marshalls.Base64ToUtf8()")
+	// log.Println("Calling _Marshalls.Base64ToUtf8()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -112,7 +112,7 @@ func (o *marshalls) Base64ToUtf8(base64Str gdnative.String) gdnative.String {
 */
 func (o *marshalls) Base64ToVariant(base64Str gdnative.String, allowObjects gdnative.Bool) gdnative.Variant {
 	o.ensureSingleton()
-	//log.Println("Calling _Marshalls.Base64ToVariant()")
+	// log.Println("Calling _Marshalls.Base64ToVariant()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -138,7 +138,7 @@ func (o *marshalls) Base64ToVariant(base64Str gdnative.String, allowObjects gdna
 */
 func (o *marshalls) RawToBase64(array gdnative.PoolByteArray) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _Marshalls.RawToBase64()")
+	// log.Println("Calling _Marshalls.RawToBase64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -163,7 +163,7 @@ func (o *marshalls) RawToBase64(array gdnative.PoolByteArray) gdnative.String {
 */
 func (o *marshalls) Utf8ToBase64(utf8Str gdnative.String) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _Marshalls.Utf8ToBase64()")
+	// log.Println("Calling _Marshalls.Utf8ToBase64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -188,7 +188,7 @@ func (o *marshalls) Utf8ToBase64(utf8Str gdnative.String) gdnative.String {
 */
 func (o *marshalls) VariantToBase64(variant gdnative.Variant, fullObjects gdnative.Bool) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling _Marshalls.VariantToBase64()")
+	// log.Println("Calling _Marshalls.VariantToBase64()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

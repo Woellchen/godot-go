@@ -39,7 +39,7 @@ func (o *WebSocketClient) BaseClass() string {
 	Args: [{ false url String} {[] true protocols PoolStringArray} {False true gd_mp_api bool} {[] true custom_headers PoolStringArray}], Returns: enum.Error
 */
 func (o *WebSocketClient) ConnectToUrl(url gdnative.String, protocols gdnative.PoolStringArray, gdMpApi gdnative.Bool, customHeaders gdnative.PoolStringArray) gdnative.Error {
-	//log.Println("Calling WebSocketClient.ConnectToUrl()")
+	// log.Println("Calling WebSocketClient.ConnectToUrl()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -66,7 +66,7 @@ func (o *WebSocketClient) ConnectToUrl(url gdnative.String, protocols gdnative.P
 	Args: [{1000 true code int} { true reason String}], Returns: void
 */
 func (o *WebSocketClient) DisconnectFromHost(code gdnative.Int, reason gdnative.String) {
-	//log.Println("Calling WebSocketClient.DisconnectFromHost()")
+	// log.Println("Calling WebSocketClient.DisconnectFromHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -88,7 +88,7 @@ func (o *WebSocketClient) DisconnectFromHost(code gdnative.Int, reason gdnative.
 	Args: [], Returns: String
 */
 func (o *WebSocketClient) GetConnectedHost() gdnative.String {
-	//log.Println("Calling WebSocketClient.GetConnectedHost()")
+	// log.Println("Calling WebSocketClient.GetConnectedHost()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -111,7 +111,7 @@ func (o *WebSocketClient) GetConnectedHost() gdnative.String {
 	Args: [], Returns: int
 */
 func (o *WebSocketClient) GetConnectedPort() gdnative.Int {
-	//log.Println("Calling WebSocketClient.GetConnectedPort()")
+	// log.Println("Calling WebSocketClient.GetConnectedPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -134,7 +134,7 @@ func (o *WebSocketClient) GetConnectedPort() gdnative.Int {
 	Args: [], Returns: X509Certificate
 */
 func (o *WebSocketClient) GetTrustedSslCertificate() X509CertificateImplementer {
-	//log.Println("Calling WebSocketClient.GetTrustedSslCertificate()")
+	// log.Println("Calling WebSocketClient.GetTrustedSslCertificate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -171,7 +171,7 @@ func (o *WebSocketClient) GetTrustedSslCertificate() X509CertificateImplementer 
 	Args: [], Returns: bool
 */
 func (o *WebSocketClient) IsVerifySslEnabled() gdnative.Bool {
-	//log.Println("Calling WebSocketClient.IsVerifySslEnabled()")
+	// log.Println("Calling WebSocketClient.IsVerifySslEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -194,7 +194,7 @@ func (o *WebSocketClient) IsVerifySslEnabled() gdnative.Bool {
 	Args: [{ false arg0 X509Certificate}], Returns: void
 */
 func (o *WebSocketClient) SetTrustedSslCertificate(arg0 X509CertificateImplementer) {
-	//log.Println("Calling WebSocketClient.SetTrustedSslCertificate()")
+	// log.Println("Calling WebSocketClient.SetTrustedSslCertificate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -215,7 +215,7 @@ func (o *WebSocketClient) SetTrustedSslCertificate(arg0 X509CertificateImplement
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *WebSocketClient) SetVerifySslEnabled(enabled gdnative.Bool) {
-	//log.Println("Calling WebSocketClient.SetVerifySslEnabled()")
+	// log.Println("Calling WebSocketClient.SetVerifySslEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

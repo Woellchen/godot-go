@@ -82,7 +82,7 @@ func (o *ip) BaseClass() string {
 */
 func (o *ip) ClearCache(hostname gdnative.String) {
 	o.ensureSingleton()
-	//log.Println("Calling IP.ClearCache()")
+	// log.Println("Calling IP.ClearCache()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *ip) ClearCache(hostname gdnative.String) {
 */
 func (o *ip) EraseResolveItem(id gdnative.Int) {
 	o.ensureSingleton()
-	//log.Println("Calling IP.EraseResolveItem()")
+	// log.Println("Calling IP.EraseResolveItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -126,7 +126,7 @@ func (o *ip) EraseResolveItem(id gdnative.Int) {
 */
 func (o *ip) GetLocalAddresses() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling IP.GetLocalAddresses()")
+	// log.Println("Calling IP.GetLocalAddresses()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -150,7 +150,7 @@ func (o *ip) GetLocalAddresses() gdnative.Array {
 */
 func (o *ip) GetLocalInterfaces() gdnative.Array {
 	o.ensureSingleton()
-	//log.Println("Calling IP.GetLocalInterfaces()")
+	// log.Println("Calling IP.GetLocalInterfaces()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -174,7 +174,7 @@ func (o *ip) GetLocalInterfaces() gdnative.Array {
 */
 func (o *ip) GetResolveItemAddress(id gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling IP.GetResolveItemAddress()")
+	// log.Println("Calling IP.GetResolveItemAddress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -199,7 +199,7 @@ func (o *ip) GetResolveItemAddress(id gdnative.Int) gdnative.String {
 */
 func (o *ip) GetResolveItemStatus(id gdnative.Int) IPResolverStatus {
 	o.ensureSingleton()
-	//log.Println("Calling IP.GetResolveItemStatus()")
+	// log.Println("Calling IP.GetResolveItemStatus()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -224,7 +224,7 @@ func (o *ip) GetResolveItemStatus(id gdnative.Int) IPResolverStatus {
 */
 func (o *ip) ResolveHostname(host gdnative.String, ipType gdnative.Int) gdnative.String {
 	o.ensureSingleton()
-	//log.Println("Calling IP.ResolveHostname()")
+	// log.Println("Calling IP.ResolveHostname()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -250,7 +250,7 @@ func (o *ip) ResolveHostname(host gdnative.String, ipType gdnative.Int) gdnative
 */
 func (o *ip) ResolveHostnameQueueItem(host gdnative.String, ipType gdnative.Int) gdnative.Int {
 	o.ensureSingleton()
-	//log.Println("Calling IP.ResolveHostnameQueueItem()")
+	// log.Println("Calling IP.ResolveHostnameQueueItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

@@ -39,7 +39,7 @@ func (o *PathFollow2D) BaseClass() string {
 	Args: [], Returns: bool
 */
 func (o *PathFollow2D) GetCubicInterpolation() gdnative.Bool {
-	//log.Println("Calling PathFollow2D.GetCubicInterpolation()")
+	// log.Println("Calling PathFollow2D.GetCubicInterpolation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *PathFollow2D) GetCubicInterpolation() gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *PathFollow2D) GetHOffset() gdnative.Real {
-	//log.Println("Calling PathFollow2D.GetHOffset()")
+	// log.Println("Calling PathFollow2D.GetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *PathFollow2D) GetHOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PathFollow2D) GetLookahead() gdnative.Real {
-	//log.Println("Calling PathFollow2D.GetLookahead()")
+	// log.Println("Calling PathFollow2D.GetLookahead()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *PathFollow2D) GetLookahead() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PathFollow2D) GetOffset() gdnative.Real {
-	//log.Println("Calling PathFollow2D.GetOffset()")
+	// log.Println("Calling PathFollow2D.GetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -131,7 +131,7 @@ func (o *PathFollow2D) GetOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PathFollow2D) GetUnitOffset() gdnative.Real {
-	//log.Println("Calling PathFollow2D.GetUnitOffset()")
+	// log.Println("Calling PathFollow2D.GetUnitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -154,7 +154,7 @@ func (o *PathFollow2D) GetUnitOffset() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *PathFollow2D) GetVOffset() gdnative.Real {
-	//log.Println("Calling PathFollow2D.GetVOffset()")
+	// log.Println("Calling PathFollow2D.GetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -177,7 +177,7 @@ func (o *PathFollow2D) GetVOffset() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *PathFollow2D) HasLoop() gdnative.Bool {
-	//log.Println("Calling PathFollow2D.HasLoop()")
+	// log.Println("Calling PathFollow2D.HasLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -200,7 +200,7 @@ func (o *PathFollow2D) HasLoop() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *PathFollow2D) IsRotating() gdnative.Bool {
-	//log.Println("Calling PathFollow2D.IsRotating()")
+	// log.Println("Calling PathFollow2D.IsRotating()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -223,7 +223,7 @@ func (o *PathFollow2D) IsRotating() gdnative.Bool {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PathFollow2D) SetCubicInterpolation(enable gdnative.Bool) {
-	//log.Println("Calling PathFollow2D.SetCubicInterpolation()")
+	// log.Println("Calling PathFollow2D.SetCubicInterpolation()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -244,7 +244,7 @@ func (o *PathFollow2D) SetCubicInterpolation(enable gdnative.Bool) {
 	Args: [{ false h_offset float}], Returns: void
 */
 func (o *PathFollow2D) SetHOffset(hOffset gdnative.Real) {
-	//log.Println("Calling PathFollow2D.SetHOffset()")
+	// log.Println("Calling PathFollow2D.SetHOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -265,7 +265,7 @@ func (o *PathFollow2D) SetHOffset(hOffset gdnative.Real) {
 	Args: [{ false lookahead float}], Returns: void
 */
 func (o *PathFollow2D) SetLookahead(lookahead gdnative.Real) {
-	//log.Println("Calling PathFollow2D.SetLookahead()")
+	// log.Println("Calling PathFollow2D.SetLookahead()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -286,7 +286,7 @@ func (o *PathFollow2D) SetLookahead(lookahead gdnative.Real) {
 	Args: [{ false loop bool}], Returns: void
 */
 func (o *PathFollow2D) SetLoop(loop gdnative.Bool) {
-	//log.Println("Calling PathFollow2D.SetLoop()")
+	// log.Println("Calling PathFollow2D.SetLoop()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -307,7 +307,7 @@ func (o *PathFollow2D) SetLoop(loop gdnative.Bool) {
 	Args: [{ false offset float}], Returns: void
 */
 func (o *PathFollow2D) SetOffset(offset gdnative.Real) {
-	//log.Println("Calling PathFollow2D.SetOffset()")
+	// log.Println("Calling PathFollow2D.SetOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -328,7 +328,7 @@ func (o *PathFollow2D) SetOffset(offset gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *PathFollow2D) SetRotate(enable gdnative.Bool) {
-	//log.Println("Calling PathFollow2D.SetRotate()")
+	// log.Println("Calling PathFollow2D.SetRotate()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -349,7 +349,7 @@ func (o *PathFollow2D) SetRotate(enable gdnative.Bool) {
 	Args: [{ false unit_offset float}], Returns: void
 */
 func (o *PathFollow2D) SetUnitOffset(unitOffset gdnative.Real) {
-	//log.Println("Calling PathFollow2D.SetUnitOffset()")
+	// log.Println("Calling PathFollow2D.SetUnitOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -370,7 +370,7 @@ func (o *PathFollow2D) SetUnitOffset(unitOffset gdnative.Real) {
 	Args: [{ false v_offset float}], Returns: void
 */
 func (o *PathFollow2D) SetVOffset(vOffset gdnative.Real) {
-	//log.Println("Calling PathFollow2D.SetVOffset()")
+	// log.Println("Calling PathFollow2D.SetVOffset()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

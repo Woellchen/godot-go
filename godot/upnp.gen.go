@@ -74,7 +74,7 @@ func (o *UPNP) BaseClass() string {
 	Args: [{ false device UPNPDevice}], Returns: void
 */
 func (o *UPNP) AddDevice(device UPNPDeviceImplementer) {
-	//log.Println("Calling UPNP.AddDevice()")
+	// log.Println("Calling UPNP.AddDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -95,7 +95,7 @@ func (o *UPNP) AddDevice(device UPNPDeviceImplementer) {
 	Args: [{ false port int} {0 true port_internal int} { true desc String} {UDP true proto String} {0 true duration int}], Returns: int
 */
 func (o *UPNP) AddPortMapping(port gdnative.Int, portInternal gdnative.Int, desc gdnative.String, proto gdnative.String, duration gdnative.Int) gdnative.Int {
-	//log.Println("Calling UPNP.AddPortMapping()")
+	// log.Println("Calling UPNP.AddPortMapping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -123,7 +123,7 @@ func (o *UPNP) AddPortMapping(port gdnative.Int, portInternal gdnative.Int, desc
 	Args: [], Returns: void
 */
 func (o *UPNP) ClearDevices() {
-	//log.Println("Calling UPNP.ClearDevices()")
+	// log.Println("Calling UPNP.ClearDevices()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -143,7 +143,7 @@ func (o *UPNP) ClearDevices() {
 	Args: [{ false port int} {UDP true proto String}], Returns: int
 */
 func (o *UPNP) DeletePortMapping(port gdnative.Int, proto gdnative.String) gdnative.Int {
-	//log.Println("Calling UPNP.DeletePortMapping()")
+	// log.Println("Calling UPNP.DeletePortMapping()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -168,7 +168,7 @@ func (o *UPNP) DeletePortMapping(port gdnative.Int, proto gdnative.String) gdnat
 	Args: [{2000 true timeout int} {2 true ttl int} {InternetGatewayDevice true device_filter String}], Returns: int
 */
 func (o *UPNP) Discover(timeout gdnative.Int, ttl gdnative.Int, deviceFilter gdnative.String) gdnative.Int {
-	//log.Println("Calling UPNP.Discover()")
+	// log.Println("Calling UPNP.Discover()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -194,7 +194,7 @@ func (o *UPNP) Discover(timeout gdnative.Int, ttl gdnative.Int, deviceFilter gdn
 	Args: [{ false index int}], Returns: UPNPDevice
 */
 func (o *UPNP) GetDevice(index gdnative.Int) UPNPDeviceImplementer {
-	//log.Println("Calling UPNP.GetDevice()")
+	// log.Println("Calling UPNP.GetDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -232,7 +232,7 @@ func (o *UPNP) GetDevice(index gdnative.Int) UPNPDeviceImplementer {
 	Args: [], Returns: int
 */
 func (o *UPNP) GetDeviceCount() gdnative.Int {
-	//log.Println("Calling UPNP.GetDeviceCount()")
+	// log.Println("Calling UPNP.GetDeviceCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -255,7 +255,7 @@ func (o *UPNP) GetDeviceCount() gdnative.Int {
 	Args: [], Returns: int
 */
 func (o *UPNP) GetDiscoverLocalPort() gdnative.Int {
-	//log.Println("Calling UPNP.GetDiscoverLocalPort()")
+	// log.Println("Calling UPNP.GetDiscoverLocalPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -278,7 +278,7 @@ func (o *UPNP) GetDiscoverLocalPort() gdnative.Int {
 	Args: [], Returns: String
 */
 func (o *UPNP) GetDiscoverMulticastIf() gdnative.String {
-	//log.Println("Calling UPNP.GetDiscoverMulticastIf()")
+	// log.Println("Calling UPNP.GetDiscoverMulticastIf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -301,7 +301,7 @@ func (o *UPNP) GetDiscoverMulticastIf() gdnative.String {
 	Args: [], Returns: UPNPDevice
 */
 func (o *UPNP) GetGateway() UPNPDeviceImplementer {
-	//log.Println("Calling UPNP.GetGateway()")
+	// log.Println("Calling UPNP.GetGateway()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -338,7 +338,7 @@ func (o *UPNP) GetGateway() UPNPDeviceImplementer {
 	Args: [], Returns: bool
 */
 func (o *UPNP) IsDiscoverIpv6() gdnative.Bool {
-	//log.Println("Calling UPNP.IsDiscoverIpv6()")
+	// log.Println("Calling UPNP.IsDiscoverIpv6()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -361,7 +361,7 @@ func (o *UPNP) IsDiscoverIpv6() gdnative.Bool {
 	Args: [], Returns: String
 */
 func (o *UPNP) QueryExternalAddress() gdnative.String {
-	//log.Println("Calling UPNP.QueryExternalAddress()")
+	// log.Println("Calling UPNP.QueryExternalAddress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -384,7 +384,7 @@ func (o *UPNP) QueryExternalAddress() gdnative.String {
 	Args: [{ false index int}], Returns: void
 */
 func (o *UPNP) RemoveDevice(index gdnative.Int) {
-	//log.Println("Calling UPNP.RemoveDevice()")
+	// log.Println("Calling UPNP.RemoveDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -405,7 +405,7 @@ func (o *UPNP) RemoveDevice(index gdnative.Int) {
 	Args: [{ false index int} { false device UPNPDevice}], Returns: void
 */
 func (o *UPNP) SetDevice(index gdnative.Int, device UPNPDeviceImplementer) {
-	//log.Println("Calling UPNP.SetDevice()")
+	// log.Println("Calling UPNP.SetDevice()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -427,7 +427,7 @@ func (o *UPNP) SetDevice(index gdnative.Int, device UPNPDeviceImplementer) {
 	Args: [{ false ipv6 bool}], Returns: void
 */
 func (o *UPNP) SetDiscoverIpv6(ipv6 gdnative.Bool) {
-	//log.Println("Calling UPNP.SetDiscoverIpv6()")
+	// log.Println("Calling UPNP.SetDiscoverIpv6()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -448,7 +448,7 @@ func (o *UPNP) SetDiscoverIpv6(ipv6 gdnative.Bool) {
 	Args: [{ false port int}], Returns: void
 */
 func (o *UPNP) SetDiscoverLocalPort(port gdnative.Int) {
-	//log.Println("Calling UPNP.SetDiscoverLocalPort()")
+	// log.Println("Calling UPNP.SetDiscoverLocalPort()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -469,7 +469,7 @@ func (o *UPNP) SetDiscoverLocalPort(port gdnative.Int) {
 	Args: [{ false m_if String}], Returns: void
 */
 func (o *UPNP) SetDiscoverMulticastIf(mIf gdnative.String) {
-	//log.Println("Calling UPNP.SetDiscoverMulticastIf()")
+	// log.Println("Calling UPNP.SetDiscoverMulticastIf()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

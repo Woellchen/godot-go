@@ -48,7 +48,7 @@ func (o *VisualScriptYieldSignal) BaseClass() string {
 	Args: [], Returns: NodePath
 */
 func (o *VisualScriptYieldSignal) GetBasePath() gdnative.NodePath {
-	//log.Println("Calling VisualScriptYieldSignal.GetBasePath()")
+	// log.Println("Calling VisualScriptYieldSignal.GetBasePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -71,7 +71,7 @@ func (o *VisualScriptYieldSignal) GetBasePath() gdnative.NodePath {
 	Args: [], Returns: String
 */
 func (o *VisualScriptYieldSignal) GetBaseType() gdnative.String {
-	//log.Println("Calling VisualScriptYieldSignal.GetBaseType()")
+	// log.Println("Calling VisualScriptYieldSignal.GetBaseType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -94,7 +94,7 @@ func (o *VisualScriptYieldSignal) GetBaseType() gdnative.String {
 	Args: [], Returns: enum.VisualScriptYieldSignal::CallMode
 */
 func (o *VisualScriptYieldSignal) GetCallMode() VisualScriptYieldSignalCallMode {
-	//log.Println("Calling VisualScriptYieldSignal.GetCallMode()")
+	// log.Println("Calling VisualScriptYieldSignal.GetCallMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -117,7 +117,7 @@ func (o *VisualScriptYieldSignal) GetCallMode() VisualScriptYieldSignalCallMode 
 	Args: [], Returns: String
 */
 func (o *VisualScriptYieldSignal) GetSignal() gdnative.String {
-	//log.Println("Calling VisualScriptYieldSignal.GetSignal()")
+	// log.Println("Calling VisualScriptYieldSignal.GetSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -140,7 +140,7 @@ func (o *VisualScriptYieldSignal) GetSignal() gdnative.String {
 	Args: [{ false base_path NodePath}], Returns: void
 */
 func (o *VisualScriptYieldSignal) SetBasePath(basePath gdnative.NodePath) {
-	//log.Println("Calling VisualScriptYieldSignal.SetBasePath()")
+	// log.Println("Calling VisualScriptYieldSignal.SetBasePath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -161,7 +161,7 @@ func (o *VisualScriptYieldSignal) SetBasePath(basePath gdnative.NodePath) {
 	Args: [{ false base_type String}], Returns: void
 */
 func (o *VisualScriptYieldSignal) SetBaseType(baseType gdnative.String) {
-	//log.Println("Calling VisualScriptYieldSignal.SetBaseType()")
+	// log.Println("Calling VisualScriptYieldSignal.SetBaseType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -182,7 +182,7 @@ func (o *VisualScriptYieldSignal) SetBaseType(baseType gdnative.String) {
 	Args: [{ false mode int}], Returns: void
 */
 func (o *VisualScriptYieldSignal) SetCallMode(mode gdnative.Int) {
-	//log.Println("Calling VisualScriptYieldSignal.SetCallMode()")
+	// log.Println("Calling VisualScriptYieldSignal.SetCallMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -203,7 +203,7 @@ func (o *VisualScriptYieldSignal) SetCallMode(mode gdnative.Int) {
 	Args: [{ false signal String}], Returns: void
 */
 func (o *VisualScriptYieldSignal) SetSignal(signal gdnative.String) {
-	//log.Println("Calling VisualScriptYieldSignal.SetSignal()")
+	// log.Println("Calling VisualScriptYieldSignal.SetSignal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

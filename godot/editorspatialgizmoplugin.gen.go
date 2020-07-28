@@ -39,7 +39,7 @@ func (o *EditorSpatialGizmoPlugin) BaseClass() string {
 	Args: [{ false name String} { false material SpatialMaterial}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) AddMaterial(name gdnative.String, material SpatialMaterialImplementer) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.AddMaterial()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.AddMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -61,7 +61,7 @@ func (o *EditorSpatialGizmoPlugin) AddMaterial(name gdnative.String, material Sp
 	Args: [], Returns: bool
 */
 func (o *EditorSpatialGizmoPlugin) CanBeHidden() gdnative.Bool {
-	//log.Println("Calling EditorSpatialGizmoPlugin.CanBeHidden()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.CanBeHidden()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -84,7 +84,7 @@ func (o *EditorSpatialGizmoPlugin) CanBeHidden() gdnative.Bool {
 	Args: [{ false gizmo EditorSpatialGizmo} { false index int} { false restore Variant} { false cancel bool}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) CommitHandle(gizmo EditorSpatialGizmoImplementer, index gdnative.Int, restore gdnative.Variant, cancel gdnative.Bool) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.CommitHandle()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.CommitHandle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -108,7 +108,7 @@ func (o *EditorSpatialGizmoPlugin) CommitHandle(gizmo EditorSpatialGizmoImplemen
 	Args: [{ false spatial Spatial}], Returns: EditorSpatialGizmo
 */
 func (o *EditorSpatialGizmoPlugin) CreateGizmo(spatial SpatialImplementer) EditorSpatialGizmoImplementer {
-	//log.Println("Calling EditorSpatialGizmoPlugin.CreateGizmo()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.CreateGizmo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -146,7 +146,7 @@ func (o *EditorSpatialGizmoPlugin) CreateGizmo(spatial SpatialImplementer) Edito
 	Args: [{ false name String} {False true billboard bool}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) CreateHandleMaterial(name gdnative.String, billboard gdnative.Bool) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.CreateHandleMaterial()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.CreateHandleMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -168,7 +168,7 @@ func (o *EditorSpatialGizmoPlugin) CreateHandleMaterial(name gdnative.String, bi
 	Args: [{ false name String} { false texture Texture} {False true on_top bool} {1,1,1,1 true color Color}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) CreateIconMaterial(name gdnative.String, texture TextureImplementer, onTop gdnative.Bool, color gdnative.Color) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.CreateIconMaterial()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.CreateIconMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -192,7 +192,7 @@ func (o *EditorSpatialGizmoPlugin) CreateIconMaterial(name gdnative.String, text
 	Args: [{ false name String} { false color Color} {False true billboard bool} {False true on_top bool} {False true use_vertex_color bool}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) CreateMaterial(name gdnative.String, color gdnative.Color, billboard gdnative.Bool, onTop gdnative.Bool, useVertexColor gdnative.Bool) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.CreateMaterial()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.CreateMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 5, 5)
@@ -217,7 +217,7 @@ func (o *EditorSpatialGizmoPlugin) CreateMaterial(name gdnative.String, color gd
 	Args: [{ false gizmo EditorSpatialGizmo} { false index int}], Returns: String
 */
 func (o *EditorSpatialGizmoPlugin) GetHandleName(gizmo EditorSpatialGizmoImplementer, index gdnative.Int) gdnative.String {
-	//log.Println("Calling EditorSpatialGizmoPlugin.GetHandleName()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.GetHandleName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -242,7 +242,7 @@ func (o *EditorSpatialGizmoPlugin) GetHandleName(gizmo EditorSpatialGizmoImpleme
 	Args: [{ false gizmo EditorSpatialGizmo} { false index int}], Returns: Variant
 */
 func (o *EditorSpatialGizmoPlugin) GetHandleValue(gizmo EditorSpatialGizmoImplementer, index gdnative.Int) gdnative.Variant {
-	//log.Println("Calling EditorSpatialGizmoPlugin.GetHandleValue()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.GetHandleValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -267,7 +267,7 @@ func (o *EditorSpatialGizmoPlugin) GetHandleValue(gizmo EditorSpatialGizmoImplem
 	Args: [{ false name String} { false gizmo EditorSpatialGizmo}], Returns: SpatialMaterial
 */
 func (o *EditorSpatialGizmoPlugin) GetMaterial(name gdnative.String, gizmo EditorSpatialGizmoImplementer) SpatialMaterialImplementer {
-	//log.Println("Calling EditorSpatialGizmoPlugin.GetMaterial()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.GetMaterial()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -306,7 +306,7 @@ func (o *EditorSpatialGizmoPlugin) GetMaterial(name gdnative.String, gizmo Edito
 	Args: [], Returns: String
 */
 func (o *EditorSpatialGizmoPlugin) GetName() gdnative.String {
-	//log.Println("Calling EditorSpatialGizmoPlugin.GetName()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.GetName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -329,7 +329,7 @@ func (o *EditorSpatialGizmoPlugin) GetName() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *EditorSpatialGizmoPlugin) GetPriority() gdnative.String {
-	//log.Println("Calling EditorSpatialGizmoPlugin.GetPriority()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.GetPriority()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -352,7 +352,7 @@ func (o *EditorSpatialGizmoPlugin) GetPriority() gdnative.String {
 	Args: [{ false spatial Spatial}], Returns: bool
 */
 func (o *EditorSpatialGizmoPlugin) HasGizmo(spatial SpatialImplementer) gdnative.Bool {
-	//log.Println("Calling EditorSpatialGizmoPlugin.HasGizmo()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.HasGizmo()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -376,7 +376,7 @@ func (o *EditorSpatialGizmoPlugin) HasGizmo(spatial SpatialImplementer) gdnative
 	Args: [{ false gizmo EditorSpatialGizmo} { false index int}], Returns: bool
 */
 func (o *EditorSpatialGizmoPlugin) IsHandleHighlighted(gizmo EditorSpatialGizmoImplementer, index gdnative.Int) gdnative.Bool {
-	//log.Println("Calling EditorSpatialGizmoPlugin.IsHandleHighlighted()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.IsHandleHighlighted()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -401,7 +401,7 @@ func (o *EditorSpatialGizmoPlugin) IsHandleHighlighted(gizmo EditorSpatialGizmoI
 	Args: [], Returns: bool
 */
 func (o *EditorSpatialGizmoPlugin) IsSelectableWhenHidden() gdnative.Bool {
-	//log.Println("Calling EditorSpatialGizmoPlugin.IsSelectableWhenHidden()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.IsSelectableWhenHidden()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -424,7 +424,7 @@ func (o *EditorSpatialGizmoPlugin) IsSelectableWhenHidden() gdnative.Bool {
 	Args: [{ false gizmo EditorSpatialGizmo}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) Redraw(gizmo EditorSpatialGizmoImplementer) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.Redraw()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.Redraw()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -445,7 +445,7 @@ func (o *EditorSpatialGizmoPlugin) Redraw(gizmo EditorSpatialGizmoImplementer) {
 	Args: [{ false gizmo EditorSpatialGizmo} { false index int} { false camera Camera} { false point Vector2}], Returns: void
 */
 func (o *EditorSpatialGizmoPlugin) SetHandle(gizmo EditorSpatialGizmoImplementer, index gdnative.Int, camera CameraImplementer, point gdnative.Vector2) {
-	//log.Println("Calling EditorSpatialGizmoPlugin.SetHandle()")
+	// log.Println("Calling EditorSpatialGizmoPlugin.SetHandle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)

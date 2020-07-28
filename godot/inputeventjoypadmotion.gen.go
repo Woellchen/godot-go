@@ -39,7 +39,7 @@ func (o *InputEventJoypadMotion) BaseClass() string {
 	Args: [], Returns: int
 */
 func (o *InputEventJoypadMotion) GetAxis() gdnative.Int {
-	//log.Println("Calling InputEventJoypadMotion.GetAxis()")
+	// log.Println("Calling InputEventJoypadMotion.GetAxis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InputEventJoypadMotion) GetAxis() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *InputEventJoypadMotion) GetAxisValue() gdnative.Real {
-	//log.Println("Calling InputEventJoypadMotion.GetAxisValue()")
+	// log.Println("Calling InputEventJoypadMotion.GetAxisValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InputEventJoypadMotion) GetAxisValue() gdnative.Real {
 	Args: [{ false axis int}], Returns: void
 */
 func (o *InputEventJoypadMotion) SetAxis(axis gdnative.Int) {
-	//log.Println("Calling InputEventJoypadMotion.SetAxis()")
+	// log.Println("Calling InputEventJoypadMotion.SetAxis()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *InputEventJoypadMotion) SetAxis(axis gdnative.Int) {
 	Args: [{ false axis_value float}], Returns: void
 */
 func (o *InputEventJoypadMotion) SetAxisValue(axisValue gdnative.Real) {
-	//log.Println("Calling InputEventJoypadMotion.SetAxisValue()")
+	// log.Println("Calling InputEventJoypadMotion.SetAxisValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

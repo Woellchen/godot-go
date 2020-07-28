@@ -39,7 +39,7 @@ func (o *KinematicBody2D) BaseClass() string {
 	Args: [{ false arg0 Object}], Returns: void
 */
 func (o *KinematicBody2D) X_DirectStateChanged(arg0 ObjectImplementer) {
-	//log.Println("Calling KinematicBody2D.X_DirectStateChanged()")
+	// log.Println("Calling KinematicBody2D.X_DirectStateChanged()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *KinematicBody2D) X_DirectStateChanged(arg0 ObjectImplementer) {
 	Args: [], Returns: Vector2
 */
 func (o *KinematicBody2D) GetFloorNormal() gdnative.Vector2 {
-	//log.Println("Calling KinematicBody2D.GetFloorNormal()")
+	// log.Println("Calling KinematicBody2D.GetFloorNormal()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -83,7 +83,7 @@ func (o *KinematicBody2D) GetFloorNormal() gdnative.Vector2 {
 	Args: [], Returns: Vector2
 */
 func (o *KinematicBody2D) GetFloorVelocity() gdnative.Vector2 {
-	//log.Println("Calling KinematicBody2D.GetFloorVelocity()")
+	// log.Println("Calling KinematicBody2D.GetFloorVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -106,7 +106,7 @@ func (o *KinematicBody2D) GetFloorVelocity() gdnative.Vector2 {
 	Args: [], Returns: float
 */
 func (o *KinematicBody2D) GetSafeMargin() gdnative.Real {
-	//log.Println("Calling KinematicBody2D.GetSafeMargin()")
+	// log.Println("Calling KinematicBody2D.GetSafeMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *KinematicBody2D) GetSafeMargin() gdnative.Real {
 	Args: [{ false slide_idx int}], Returns: KinematicCollision2D
 */
 func (o *KinematicBody2D) GetSlideCollision(slideIdx gdnative.Int) KinematicCollision2DImplementer {
-	//log.Println("Calling KinematicBody2D.GetSlideCollision()")
+	// log.Println("Calling KinematicBody2D.GetSlideCollision()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -167,7 +167,7 @@ func (o *KinematicBody2D) GetSlideCollision(slideIdx gdnative.Int) KinematicColl
 	Args: [], Returns: int
 */
 func (o *KinematicBody2D) GetSlideCount() gdnative.Int {
-	//log.Println("Calling KinematicBody2D.GetSlideCount()")
+	// log.Println("Calling KinematicBody2D.GetSlideCount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -190,7 +190,7 @@ func (o *KinematicBody2D) GetSlideCount() gdnative.Int {
 	Args: [], Returns: bool
 */
 func (o *KinematicBody2D) IsOnCeiling() gdnative.Bool {
-	//log.Println("Calling KinematicBody2D.IsOnCeiling()")
+	// log.Println("Calling KinematicBody2D.IsOnCeiling()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -213,7 +213,7 @@ func (o *KinematicBody2D) IsOnCeiling() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *KinematicBody2D) IsOnFloor() gdnative.Bool {
-	//log.Println("Calling KinematicBody2D.IsOnFloor()")
+	// log.Println("Calling KinematicBody2D.IsOnFloor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -236,7 +236,7 @@ func (o *KinematicBody2D) IsOnFloor() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *KinematicBody2D) IsOnWall() gdnative.Bool {
-	//log.Println("Calling KinematicBody2D.IsOnWall()")
+	// log.Println("Calling KinematicBody2D.IsOnWall()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -259,7 +259,7 @@ func (o *KinematicBody2D) IsOnWall() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *KinematicBody2D) IsSyncToPhysicsEnabled() gdnative.Bool {
-	//log.Println("Calling KinematicBody2D.IsSyncToPhysicsEnabled()")
+	// log.Println("Calling KinematicBody2D.IsSyncToPhysicsEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -282,7 +282,7 @@ func (o *KinematicBody2D) IsSyncToPhysicsEnabled() gdnative.Bool {
 	Args: [{ false rel_vec Vector2} {True true infinite_inertia bool} {True true exclude_raycast_shapes bool} {False true test_only bool}], Returns: KinematicCollision2D
 */
 func (o *KinematicBody2D) MoveAndCollide(relVec gdnative.Vector2, infiniteInertia gdnative.Bool, excludeRaycastShapes gdnative.Bool, testOnly gdnative.Bool) KinematicCollision2DImplementer {
-	//log.Println("Calling KinematicBody2D.MoveAndCollide()")
+	// log.Println("Calling KinematicBody2D.MoveAndCollide()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 4, 4)
@@ -323,7 +323,7 @@ func (o *KinematicBody2D) MoveAndCollide(relVec gdnative.Vector2, infiniteInerti
 	Args: [{ false linear_velocity Vector2} {(0, 0) true up_direction Vector2} {False true stop_on_slope bool} {4 true max_slides int} {0.785398 true floor_max_angle float} {True true infinite_inertia bool}], Returns: Vector2
 */
 func (o *KinematicBody2D) MoveAndSlide(linearVelocity gdnative.Vector2, upDirection gdnative.Vector2, stopOnSlope gdnative.Bool, maxSlides gdnative.Int, floorMaxAngle gdnative.Real, infiniteInertia gdnative.Bool) gdnative.Vector2 {
-	//log.Println("Calling KinematicBody2D.MoveAndSlide()")
+	// log.Println("Calling KinematicBody2D.MoveAndSlide()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 6, 6)
@@ -352,7 +352,7 @@ func (o *KinematicBody2D) MoveAndSlide(linearVelocity gdnative.Vector2, upDirect
 	Args: [{ false linear_velocity Vector2} { false snap Vector2} {(0, 0) true up_direction Vector2} {False true stop_on_slope bool} {4 true max_slides int} {0.785398 true floor_max_angle float} {True true infinite_inertia bool}], Returns: Vector2
 */
 func (o *KinematicBody2D) MoveAndSlideWithSnap(linearVelocity gdnative.Vector2, snap gdnative.Vector2, upDirection gdnative.Vector2, stopOnSlope gdnative.Bool, maxSlides gdnative.Int, floorMaxAngle gdnative.Real, infiniteInertia gdnative.Bool) gdnative.Vector2 {
-	//log.Println("Calling KinematicBody2D.MoveAndSlideWithSnap()")
+	// log.Println("Calling KinematicBody2D.MoveAndSlideWithSnap()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 7, 7)
@@ -382,7 +382,7 @@ func (o *KinematicBody2D) MoveAndSlideWithSnap(linearVelocity gdnative.Vector2, 
 	Args: [{ false pixels float}], Returns: void
 */
 func (o *KinematicBody2D) SetSafeMargin(pixels gdnative.Real) {
-	//log.Println("Calling KinematicBody2D.SetSafeMargin()")
+	// log.Println("Calling KinematicBody2D.SetSafeMargin()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -403,7 +403,7 @@ func (o *KinematicBody2D) SetSafeMargin(pixels gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *KinematicBody2D) SetSyncToPhysics(enable gdnative.Bool) {
-	//log.Println("Calling KinematicBody2D.SetSyncToPhysics()")
+	// log.Println("Calling KinematicBody2D.SetSyncToPhysics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -424,7 +424,7 @@ func (o *KinematicBody2D) SetSyncToPhysics(enable gdnative.Bool) {
 	Args: [{ false from Transform2D} { false rel_vec Vector2} {True true infinite_inertia bool}], Returns: bool
 */
 func (o *KinematicBody2D) TestMove(from gdnative.Transform2D, relVec gdnative.Vector2, infiniteInertia gdnative.Bool) gdnative.Bool {
-	//log.Println("Calling KinematicBody2D.TestMove()")
+	// log.Println("Calling KinematicBody2D.TestMove()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

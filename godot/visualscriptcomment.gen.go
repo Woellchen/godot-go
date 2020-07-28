@@ -39,7 +39,7 @@ func (o *VisualScriptComment) BaseClass() string {
 	Args: [], Returns: String
 */
 func (o *VisualScriptComment) GetDescription() gdnative.String {
-	//log.Println("Calling VisualScriptComment.GetDescription()")
+	// log.Println("Calling VisualScriptComment.GetDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *VisualScriptComment) GetDescription() gdnative.String {
 	Args: [], Returns: Vector2
 */
 func (o *VisualScriptComment) GetSize() gdnative.Vector2 {
-	//log.Println("Calling VisualScriptComment.GetSize()")
+	// log.Println("Calling VisualScriptComment.GetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *VisualScriptComment) GetSize() gdnative.Vector2 {
 	Args: [], Returns: String
 */
 func (o *VisualScriptComment) GetTitle() gdnative.String {
-	//log.Println("Calling VisualScriptComment.GetTitle()")
+	// log.Println("Calling VisualScriptComment.GetTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *VisualScriptComment) GetTitle() gdnative.String {
 	Args: [{ false description String}], Returns: void
 */
 func (o *VisualScriptComment) SetDescription(description gdnative.String) {
-	//log.Println("Calling VisualScriptComment.SetDescription()")
+	// log.Println("Calling VisualScriptComment.SetDescription()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *VisualScriptComment) SetDescription(description gdnative.String) {
 	Args: [{ false size Vector2}], Returns: void
 */
 func (o *VisualScriptComment) SetSize(size gdnative.Vector2) {
-	//log.Println("Calling VisualScriptComment.SetSize()")
+	// log.Println("Calling VisualScriptComment.SetSize()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *VisualScriptComment) SetSize(size gdnative.Vector2) {
 	Args: [{ false title String}], Returns: void
 */
 func (o *VisualScriptComment) SetTitle(title gdnative.String) {
-	//log.Println("Calling VisualScriptComment.SetTitle()")
+	// log.Println("Calling VisualScriptComment.SetTitle()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

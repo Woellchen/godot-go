@@ -89,7 +89,7 @@ func (o *CPUParticles) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *CPUParticles) X_UpdateRenderThread() {
-	//log.Println("Calling CPUParticles.X_UpdateRenderThread()")
+	// log.Println("Calling CPUParticles.X_UpdateRenderThread()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -109,7 +109,7 @@ func (o *CPUParticles) X_UpdateRenderThread() {
 	Args: [{ false particles Node}], Returns: void
 */
 func (o *CPUParticles) ConvertFromParticles(particles NodeImplementer) {
-	//log.Println("Calling CPUParticles.ConvertFromParticles()")
+	// log.Println("Calling CPUParticles.ConvertFromParticles()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -130,7 +130,7 @@ func (o *CPUParticles) ConvertFromParticles(particles NodeImplementer) {
 	Args: [], Returns: int
 */
 func (o *CPUParticles) GetAmount() gdnative.Int {
-	//log.Println("Calling CPUParticles.GetAmount()")
+	// log.Println("Calling CPUParticles.GetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -153,7 +153,7 @@ func (o *CPUParticles) GetAmount() gdnative.Int {
 	Args: [], Returns: Color
 */
 func (o *CPUParticles) GetColor() gdnative.Color {
-	//log.Println("Calling CPUParticles.GetColor()")
+	// log.Println("Calling CPUParticles.GetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -176,7 +176,7 @@ func (o *CPUParticles) GetColor() gdnative.Color {
 	Args: [], Returns: Gradient
 */
 func (o *CPUParticles) GetColorRamp() GradientImplementer {
-	//log.Println("Calling CPUParticles.GetColorRamp()")
+	// log.Println("Calling CPUParticles.GetColorRamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -213,7 +213,7 @@ func (o *CPUParticles) GetColorRamp() GradientImplementer {
 	Args: [], Returns: Vector3
 */
 func (o *CPUParticles) GetDirection() gdnative.Vector3 {
-	//log.Println("Calling CPUParticles.GetDirection()")
+	// log.Println("Calling CPUParticles.GetDirection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -236,7 +236,7 @@ func (o *CPUParticles) GetDirection() gdnative.Vector3 {
 	Args: [], Returns: enum.CPUParticles::DrawOrder
 */
 func (o *CPUParticles) GetDrawOrder() CPUParticlesDrawOrder {
-	//log.Println("Calling CPUParticles.GetDrawOrder()")
+	// log.Println("Calling CPUParticles.GetDrawOrder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -259,7 +259,7 @@ func (o *CPUParticles) GetDrawOrder() CPUParticlesDrawOrder {
 	Args: [], Returns: Vector3
 */
 func (o *CPUParticles) GetEmissionBoxExtents() gdnative.Vector3 {
-	//log.Println("Calling CPUParticles.GetEmissionBoxExtents()")
+	// log.Println("Calling CPUParticles.GetEmissionBoxExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -282,7 +282,7 @@ func (o *CPUParticles) GetEmissionBoxExtents() gdnative.Vector3 {
 	Args: [], Returns: PoolColorArray
 */
 func (o *CPUParticles) GetEmissionColors() gdnative.PoolColorArray {
-	//log.Println("Calling CPUParticles.GetEmissionColors()")
+	// log.Println("Calling CPUParticles.GetEmissionColors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -305,7 +305,7 @@ func (o *CPUParticles) GetEmissionColors() gdnative.PoolColorArray {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *CPUParticles) GetEmissionNormals() gdnative.PoolVector3Array {
-	//log.Println("Calling CPUParticles.GetEmissionNormals()")
+	// log.Println("Calling CPUParticles.GetEmissionNormals()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -328,7 +328,7 @@ func (o *CPUParticles) GetEmissionNormals() gdnative.PoolVector3Array {
 	Args: [], Returns: PoolVector3Array
 */
 func (o *CPUParticles) GetEmissionPoints() gdnative.PoolVector3Array {
-	//log.Println("Calling CPUParticles.GetEmissionPoints()")
+	// log.Println("Calling CPUParticles.GetEmissionPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -351,7 +351,7 @@ func (o *CPUParticles) GetEmissionPoints() gdnative.PoolVector3Array {
 	Args: [], Returns: enum.CPUParticles::EmissionShape
 */
 func (o *CPUParticles) GetEmissionShape() CPUParticlesEmissionShape {
-	//log.Println("Calling CPUParticles.GetEmissionShape()")
+	// log.Println("Calling CPUParticles.GetEmissionShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -374,7 +374,7 @@ func (o *CPUParticles) GetEmissionShape() CPUParticlesEmissionShape {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetEmissionSphereRadius() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetEmissionSphereRadius()")
+	// log.Println("Calling CPUParticles.GetEmissionSphereRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -397,7 +397,7 @@ func (o *CPUParticles) GetEmissionSphereRadius() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetExplosivenessRatio() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetExplosivenessRatio()")
+	// log.Println("Calling CPUParticles.GetExplosivenessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -420,7 +420,7 @@ func (o *CPUParticles) GetExplosivenessRatio() gdnative.Real {
 	Args: [], Returns: int
 */
 func (o *CPUParticles) GetFixedFps() gdnative.Int {
-	//log.Println("Calling CPUParticles.GetFixedFps()")
+	// log.Println("Calling CPUParticles.GetFixedFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -443,7 +443,7 @@ func (o *CPUParticles) GetFixedFps() gdnative.Int {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetFlatness() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetFlatness()")
+	// log.Println("Calling CPUParticles.GetFlatness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -466,7 +466,7 @@ func (o *CPUParticles) GetFlatness() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *CPUParticles) GetFractionalDelta() gdnative.Bool {
-	//log.Println("Calling CPUParticles.GetFractionalDelta()")
+	// log.Println("Calling CPUParticles.GetFractionalDelta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -489,7 +489,7 @@ func (o *CPUParticles) GetFractionalDelta() gdnative.Bool {
 	Args: [], Returns: Vector3
 */
 func (o *CPUParticles) GetGravity() gdnative.Vector3 {
-	//log.Println("Calling CPUParticles.GetGravity()")
+	// log.Println("Calling CPUParticles.GetGravity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -512,7 +512,7 @@ func (o *CPUParticles) GetGravity() gdnative.Vector3 {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetLifetime() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetLifetime()")
+	// log.Println("Calling CPUParticles.GetLifetime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -535,7 +535,7 @@ func (o *CPUParticles) GetLifetime() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetLifetimeRandomness() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetLifetimeRandomness()")
+	// log.Println("Calling CPUParticles.GetLifetimeRandomness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -558,7 +558,7 @@ func (o *CPUParticles) GetLifetimeRandomness() gdnative.Real {
 	Args: [], Returns: Mesh
 */
 func (o *CPUParticles) GetMesh() MeshImplementer {
-	//log.Println("Calling CPUParticles.GetMesh()")
+	// log.Println("Calling CPUParticles.GetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -595,7 +595,7 @@ func (o *CPUParticles) GetMesh() MeshImplementer {
 	Args: [], Returns: bool
 */
 func (o *CPUParticles) GetOneShot() gdnative.Bool {
-	//log.Println("Calling CPUParticles.GetOneShot()")
+	// log.Println("Calling CPUParticles.GetOneShot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -618,7 +618,7 @@ func (o *CPUParticles) GetOneShot() gdnative.Bool {
 	Args: [{ false param int}], Returns: float
 */
 func (o *CPUParticles) GetParam(param gdnative.Int) gdnative.Real {
-	//log.Println("Calling CPUParticles.GetParam()")
+	// log.Println("Calling CPUParticles.GetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -642,7 +642,7 @@ func (o *CPUParticles) GetParam(param gdnative.Int) gdnative.Real {
 	Args: [{ false param int}], Returns: Curve
 */
 func (o *CPUParticles) GetParamCurve(param gdnative.Int) CurveImplementer {
-	//log.Println("Calling CPUParticles.GetParamCurve()")
+	// log.Println("Calling CPUParticles.GetParamCurve()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -680,7 +680,7 @@ func (o *CPUParticles) GetParamCurve(param gdnative.Int) CurveImplementer {
 	Args: [{ false param int}], Returns: float
 */
 func (o *CPUParticles) GetParamRandomness(param gdnative.Int) gdnative.Real {
-	//log.Println("Calling CPUParticles.GetParamRandomness()")
+	// log.Println("Calling CPUParticles.GetParamRandomness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -704,7 +704,7 @@ func (o *CPUParticles) GetParamRandomness(param gdnative.Int) gdnative.Real {
 	Args: [{ false flag int}], Returns: bool
 */
 func (o *CPUParticles) GetParticleFlag(flag gdnative.Int) gdnative.Bool {
-	//log.Println("Calling CPUParticles.GetParticleFlag()")
+	// log.Println("Calling CPUParticles.GetParticleFlag()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -728,7 +728,7 @@ func (o *CPUParticles) GetParticleFlag(flag gdnative.Int) gdnative.Bool {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetPreProcessTime() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetPreProcessTime()")
+	// log.Println("Calling CPUParticles.GetPreProcessTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -751,7 +751,7 @@ func (o *CPUParticles) GetPreProcessTime() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetRandomnessRatio() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetRandomnessRatio()")
+	// log.Println("Calling CPUParticles.GetRandomnessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -774,7 +774,7 @@ func (o *CPUParticles) GetRandomnessRatio() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetSpeedScale() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetSpeedScale()")
+	// log.Println("Calling CPUParticles.GetSpeedScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -797,7 +797,7 @@ func (o *CPUParticles) GetSpeedScale() gdnative.Real {
 	Args: [], Returns: float
 */
 func (o *CPUParticles) GetSpread() gdnative.Real {
-	//log.Println("Calling CPUParticles.GetSpread()")
+	// log.Println("Calling CPUParticles.GetSpread()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -820,7 +820,7 @@ func (o *CPUParticles) GetSpread() gdnative.Real {
 	Args: [], Returns: bool
 */
 func (o *CPUParticles) GetUseLocalCoordinates() gdnative.Bool {
-	//log.Println("Calling CPUParticles.GetUseLocalCoordinates()")
+	// log.Println("Calling CPUParticles.GetUseLocalCoordinates()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -843,7 +843,7 @@ func (o *CPUParticles) GetUseLocalCoordinates() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *CPUParticles) IsEmitting() gdnative.Bool {
-	//log.Println("Calling CPUParticles.IsEmitting()")
+	// log.Println("Calling CPUParticles.IsEmitting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -866,7 +866,7 @@ func (o *CPUParticles) IsEmitting() gdnative.Bool {
 	Args: [], Returns: void
 */
 func (o *CPUParticles) Restart() {
-	//log.Println("Calling CPUParticles.Restart()")
+	// log.Println("Calling CPUParticles.Restart()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -886,7 +886,7 @@ func (o *CPUParticles) Restart() {
 	Args: [{ false amount int}], Returns: void
 */
 func (o *CPUParticles) SetAmount(amount gdnative.Int) {
-	//log.Println("Calling CPUParticles.SetAmount()")
+	// log.Println("Calling CPUParticles.SetAmount()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -907,7 +907,7 @@ func (o *CPUParticles) SetAmount(amount gdnative.Int) {
 	Args: [{ false color Color}], Returns: void
 */
 func (o *CPUParticles) SetColor(color gdnative.Color) {
-	//log.Println("Calling CPUParticles.SetColor()")
+	// log.Println("Calling CPUParticles.SetColor()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -928,7 +928,7 @@ func (o *CPUParticles) SetColor(color gdnative.Color) {
 	Args: [{ false ramp Gradient}], Returns: void
 */
 func (o *CPUParticles) SetColorRamp(ramp GradientImplementer) {
-	//log.Println("Calling CPUParticles.SetColorRamp()")
+	// log.Println("Calling CPUParticles.SetColorRamp()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -949,7 +949,7 @@ func (o *CPUParticles) SetColorRamp(ramp GradientImplementer) {
 	Args: [{ false direction Vector3}], Returns: void
 */
 func (o *CPUParticles) SetDirection(direction gdnative.Vector3) {
-	//log.Println("Calling CPUParticles.SetDirection()")
+	// log.Println("Calling CPUParticles.SetDirection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -970,7 +970,7 @@ func (o *CPUParticles) SetDirection(direction gdnative.Vector3) {
 	Args: [{ false order int}], Returns: void
 */
 func (o *CPUParticles) SetDrawOrder(order gdnative.Int) {
-	//log.Println("Calling CPUParticles.SetDrawOrder()")
+	// log.Println("Calling CPUParticles.SetDrawOrder()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -991,7 +991,7 @@ func (o *CPUParticles) SetDrawOrder(order gdnative.Int) {
 	Args: [{ false extents Vector3}], Returns: void
 */
 func (o *CPUParticles) SetEmissionBoxExtents(extents gdnative.Vector3) {
-	//log.Println("Calling CPUParticles.SetEmissionBoxExtents()")
+	// log.Println("Calling CPUParticles.SetEmissionBoxExtents()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1012,7 +1012,7 @@ func (o *CPUParticles) SetEmissionBoxExtents(extents gdnative.Vector3) {
 	Args: [{ false array PoolColorArray}], Returns: void
 */
 func (o *CPUParticles) SetEmissionColors(array gdnative.PoolColorArray) {
-	//log.Println("Calling CPUParticles.SetEmissionColors()")
+	// log.Println("Calling CPUParticles.SetEmissionColors()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1033,7 +1033,7 @@ func (o *CPUParticles) SetEmissionColors(array gdnative.PoolColorArray) {
 	Args: [{ false array PoolVector3Array}], Returns: void
 */
 func (o *CPUParticles) SetEmissionNormals(array gdnative.PoolVector3Array) {
-	//log.Println("Calling CPUParticles.SetEmissionNormals()")
+	// log.Println("Calling CPUParticles.SetEmissionNormals()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1054,7 +1054,7 @@ func (o *CPUParticles) SetEmissionNormals(array gdnative.PoolVector3Array) {
 	Args: [{ false array PoolVector3Array}], Returns: void
 */
 func (o *CPUParticles) SetEmissionPoints(array gdnative.PoolVector3Array) {
-	//log.Println("Calling CPUParticles.SetEmissionPoints()")
+	// log.Println("Calling CPUParticles.SetEmissionPoints()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1075,7 +1075,7 @@ func (o *CPUParticles) SetEmissionPoints(array gdnative.PoolVector3Array) {
 	Args: [{ false shape int}], Returns: void
 */
 func (o *CPUParticles) SetEmissionShape(shape gdnative.Int) {
-	//log.Println("Calling CPUParticles.SetEmissionShape()")
+	// log.Println("Calling CPUParticles.SetEmissionShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1096,7 +1096,7 @@ func (o *CPUParticles) SetEmissionShape(shape gdnative.Int) {
 	Args: [{ false radius float}], Returns: void
 */
 func (o *CPUParticles) SetEmissionSphereRadius(radius gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetEmissionSphereRadius()")
+	// log.Println("Calling CPUParticles.SetEmissionSphereRadius()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1117,7 +1117,7 @@ func (o *CPUParticles) SetEmissionSphereRadius(radius gdnative.Real) {
 	Args: [{ false emitting bool}], Returns: void
 */
 func (o *CPUParticles) SetEmitting(emitting gdnative.Bool) {
-	//log.Println("Calling CPUParticles.SetEmitting()")
+	// log.Println("Calling CPUParticles.SetEmitting()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1138,7 +1138,7 @@ func (o *CPUParticles) SetEmitting(emitting gdnative.Bool) {
 	Args: [{ false ratio float}], Returns: void
 */
 func (o *CPUParticles) SetExplosivenessRatio(ratio gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetExplosivenessRatio()")
+	// log.Println("Calling CPUParticles.SetExplosivenessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1159,7 +1159,7 @@ func (o *CPUParticles) SetExplosivenessRatio(ratio gdnative.Real) {
 	Args: [{ false fps int}], Returns: void
 */
 func (o *CPUParticles) SetFixedFps(fps gdnative.Int) {
-	//log.Println("Calling CPUParticles.SetFixedFps()")
+	// log.Println("Calling CPUParticles.SetFixedFps()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1180,7 +1180,7 @@ func (o *CPUParticles) SetFixedFps(fps gdnative.Int) {
 	Args: [{ false amount float}], Returns: void
 */
 func (o *CPUParticles) SetFlatness(amount gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetFlatness()")
+	// log.Println("Calling CPUParticles.SetFlatness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1201,7 +1201,7 @@ func (o *CPUParticles) SetFlatness(amount gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CPUParticles) SetFractionalDelta(enable gdnative.Bool) {
-	//log.Println("Calling CPUParticles.SetFractionalDelta()")
+	// log.Println("Calling CPUParticles.SetFractionalDelta()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1222,7 +1222,7 @@ func (o *CPUParticles) SetFractionalDelta(enable gdnative.Bool) {
 	Args: [{ false accel_vec Vector3}], Returns: void
 */
 func (o *CPUParticles) SetGravity(accelVec gdnative.Vector3) {
-	//log.Println("Calling CPUParticles.SetGravity()")
+	// log.Println("Calling CPUParticles.SetGravity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1243,7 +1243,7 @@ func (o *CPUParticles) SetGravity(accelVec gdnative.Vector3) {
 	Args: [{ false secs float}], Returns: void
 */
 func (o *CPUParticles) SetLifetime(secs gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetLifetime()")
+	// log.Println("Calling CPUParticles.SetLifetime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1264,7 +1264,7 @@ func (o *CPUParticles) SetLifetime(secs gdnative.Real) {
 	Args: [{ false random float}], Returns: void
 */
 func (o *CPUParticles) SetLifetimeRandomness(random gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetLifetimeRandomness()")
+	// log.Println("Calling CPUParticles.SetLifetimeRandomness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1285,7 +1285,7 @@ func (o *CPUParticles) SetLifetimeRandomness(random gdnative.Real) {
 	Args: [{ false mesh Mesh}], Returns: void
 */
 func (o *CPUParticles) SetMesh(mesh MeshImplementer) {
-	//log.Println("Calling CPUParticles.SetMesh()")
+	// log.Println("Calling CPUParticles.SetMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1306,7 +1306,7 @@ func (o *CPUParticles) SetMesh(mesh MeshImplementer) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CPUParticles) SetOneShot(enable gdnative.Bool) {
-	//log.Println("Calling CPUParticles.SetOneShot()")
+	// log.Println("Calling CPUParticles.SetOneShot()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1327,7 +1327,7 @@ func (o *CPUParticles) SetOneShot(enable gdnative.Bool) {
 	Args: [{ false param int} { false value float}], Returns: void
 */
 func (o *CPUParticles) SetParam(param gdnative.Int, value gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetParam()")
+	// log.Println("Calling CPUParticles.SetParam()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1349,7 +1349,7 @@ func (o *CPUParticles) SetParam(param gdnative.Int, value gdnative.Real) {
 	Args: [{ false param int} { false curve Curve}], Returns: void
 */
 func (o *CPUParticles) SetParamCurve(param gdnative.Int, curve CurveImplementer) {
-	//log.Println("Calling CPUParticles.SetParamCurve()")
+	// log.Println("Calling CPUParticles.SetParamCurve()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1371,7 +1371,7 @@ func (o *CPUParticles) SetParamCurve(param gdnative.Int, curve CurveImplementer)
 	Args: [{ false param int} { false randomness float}], Returns: void
 */
 func (o *CPUParticles) SetParamRandomness(param gdnative.Int, randomness gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetParamRandomness()")
+	// log.Println("Calling CPUParticles.SetParamRandomness()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1393,7 +1393,7 @@ func (o *CPUParticles) SetParamRandomness(param gdnative.Int, randomness gdnativ
 	Args: [{ false flag int} { false enable bool}], Returns: void
 */
 func (o *CPUParticles) SetParticleFlag(flag gdnative.Int, enable gdnative.Bool) {
-	//log.Println("Calling CPUParticles.SetParticleFlag()")
+	// log.Println("Calling CPUParticles.SetParticleFlag()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -1415,7 +1415,7 @@ func (o *CPUParticles) SetParticleFlag(flag gdnative.Int, enable gdnative.Bool) 
 	Args: [{ false secs float}], Returns: void
 */
 func (o *CPUParticles) SetPreProcessTime(secs gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetPreProcessTime()")
+	// log.Println("Calling CPUParticles.SetPreProcessTime()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1436,7 +1436,7 @@ func (o *CPUParticles) SetPreProcessTime(secs gdnative.Real) {
 	Args: [{ false ratio float}], Returns: void
 */
 func (o *CPUParticles) SetRandomnessRatio(ratio gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetRandomnessRatio()")
+	// log.Println("Calling CPUParticles.SetRandomnessRatio()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1457,7 +1457,7 @@ func (o *CPUParticles) SetRandomnessRatio(ratio gdnative.Real) {
 	Args: [{ false scale float}], Returns: void
 */
 func (o *CPUParticles) SetSpeedScale(scale gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetSpeedScale()")
+	// log.Println("Calling CPUParticles.SetSpeedScale()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1478,7 +1478,7 @@ func (o *CPUParticles) SetSpeedScale(scale gdnative.Real) {
 	Args: [{ false degrees float}], Returns: void
 */
 func (o *CPUParticles) SetSpread(degrees gdnative.Real) {
-	//log.Println("Calling CPUParticles.SetSpread()")
+	// log.Println("Calling CPUParticles.SetSpread()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -1499,7 +1499,7 @@ func (o *CPUParticles) SetSpread(degrees gdnative.Real) {
 	Args: [{ false enable bool}], Returns: void
 */
 func (o *CPUParticles) SetUseLocalCoordinates(enable gdnative.Bool) {
-	//log.Println("Calling CPUParticles.SetUseLocalCoordinates()")
+	// log.Println("Calling CPUParticles.SetUseLocalCoordinates()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

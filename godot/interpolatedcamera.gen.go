@@ -39,7 +39,7 @@ func (o *InterpolatedCamera) BaseClass() string {
 	Args: [], Returns: float
 */
 func (o *InterpolatedCamera) GetSpeed() gdnative.Real {
-	//log.Println("Calling InterpolatedCamera.GetSpeed()")
+	// log.Println("Calling InterpolatedCamera.GetSpeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -62,7 +62,7 @@ func (o *InterpolatedCamera) GetSpeed() gdnative.Real {
 	Args: [], Returns: NodePath
 */
 func (o *InterpolatedCamera) GetTargetPath() gdnative.NodePath {
-	//log.Println("Calling InterpolatedCamera.GetTargetPath()")
+	// log.Println("Calling InterpolatedCamera.GetTargetPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -85,7 +85,7 @@ func (o *InterpolatedCamera) GetTargetPath() gdnative.NodePath {
 	Args: [], Returns: bool
 */
 func (o *InterpolatedCamera) IsInterpolationEnabled() gdnative.Bool {
-	//log.Println("Calling InterpolatedCamera.IsInterpolationEnabled()")
+	// log.Println("Calling InterpolatedCamera.IsInterpolationEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -108,7 +108,7 @@ func (o *InterpolatedCamera) IsInterpolationEnabled() gdnative.Bool {
 	Args: [{ false target_path bool}], Returns: void
 */
 func (o *InterpolatedCamera) SetInterpolationEnabled(targetPath gdnative.Bool) {
-	//log.Println("Calling InterpolatedCamera.SetInterpolationEnabled()")
+	// log.Println("Calling InterpolatedCamera.SetInterpolationEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -129,7 +129,7 @@ func (o *InterpolatedCamera) SetInterpolationEnabled(targetPath gdnative.Bool) {
 	Args: [{ false speed float}], Returns: void
 */
 func (o *InterpolatedCamera) SetSpeed(speed gdnative.Real) {
-	//log.Println("Calling InterpolatedCamera.SetSpeed()")
+	// log.Println("Calling InterpolatedCamera.SetSpeed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -150,7 +150,7 @@ func (o *InterpolatedCamera) SetSpeed(speed gdnative.Real) {
 	Args: [{ false target Object}], Returns: void
 */
 func (o *InterpolatedCamera) SetTarget(target ObjectImplementer) {
-	//log.Println("Calling InterpolatedCamera.SetTarget()")
+	// log.Println("Calling InterpolatedCamera.SetTarget()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -171,7 +171,7 @@ func (o *InterpolatedCamera) SetTarget(target ObjectImplementer) {
 	Args: [{ false target_path NodePath}], Returns: void
 */
 func (o *InterpolatedCamera) SetTargetPath(targetPath gdnative.NodePath) {
-	//log.Println("Calling InterpolatedCamera.SetTargetPath()")
+	// log.Println("Calling InterpolatedCamera.SetTargetPath()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

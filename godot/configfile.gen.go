@@ -39,7 +39,7 @@ func (o *ConfigFile) BaseClass() string {
 	Args: [{ false section String}], Returns: void
 */
 func (o *ConfigFile) EraseSection(section gdnative.String) {
-	//log.Println("Calling ConfigFile.EraseSection()")
+	// log.Println("Calling ConfigFile.EraseSection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *ConfigFile) EraseSection(section gdnative.String) {
 	Args: [{ false section String} { false key String}], Returns: void
 */
 func (o *ConfigFile) EraseSectionKey(section gdnative.String, key gdnative.String) {
-	//log.Println("Calling ConfigFile.EraseSectionKey()")
+	// log.Println("Calling ConfigFile.EraseSectionKey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -82,7 +82,7 @@ func (o *ConfigFile) EraseSectionKey(section gdnative.String, key gdnative.Strin
 	Args: [{ false section String}], Returns: PoolStringArray
 */
 func (o *ConfigFile) GetSectionKeys(section gdnative.String) gdnative.PoolStringArray {
-	//log.Println("Calling ConfigFile.GetSectionKeys()")
+	// log.Println("Calling ConfigFile.GetSectionKeys()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -106,7 +106,7 @@ func (o *ConfigFile) GetSectionKeys(section gdnative.String) gdnative.PoolString
 	Args: [], Returns: PoolStringArray
 */
 func (o *ConfigFile) GetSections() gdnative.PoolStringArray {
-	//log.Println("Calling ConfigFile.GetSections()")
+	// log.Println("Calling ConfigFile.GetSections()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -129,7 +129,7 @@ func (o *ConfigFile) GetSections() gdnative.PoolStringArray {
 	Args: [{ false section String} { false key String} {Null true default Variant}], Returns: Variant
 */
 func (o *ConfigFile) GetValue(section gdnative.String, key gdnative.String, aDefault gdnative.Variant) gdnative.Variant {
-	//log.Println("Calling ConfigFile.GetValue()")
+	// log.Println("Calling ConfigFile.GetValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)
@@ -155,7 +155,7 @@ func (o *ConfigFile) GetValue(section gdnative.String, key gdnative.String, aDef
 	Args: [{ false section String}], Returns: bool
 */
 func (o *ConfigFile) HasSection(section gdnative.String) gdnative.Bool {
-	//log.Println("Calling ConfigFile.HasSection()")
+	// log.Println("Calling ConfigFile.HasSection()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -179,7 +179,7 @@ func (o *ConfigFile) HasSection(section gdnative.String) gdnative.Bool {
 	Args: [{ false section String} { false key String}], Returns: bool
 */
 func (o *ConfigFile) HasSectionKey(section gdnative.String, key gdnative.String) gdnative.Bool {
-	//log.Println("Calling ConfigFile.HasSectionKey()")
+	// log.Println("Calling ConfigFile.HasSectionKey()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -204,7 +204,7 @@ func (o *ConfigFile) HasSectionKey(section gdnative.String, key gdnative.String)
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *ConfigFile) Load(path gdnative.String) gdnative.Error {
-	//log.Println("Calling ConfigFile.Load()")
+	// log.Println("Calling ConfigFile.Load()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -228,7 +228,7 @@ func (o *ConfigFile) Load(path gdnative.String) gdnative.Error {
 	Args: [{ false path String} { false key PoolByteArray}], Returns: enum.Error
 */
 func (o *ConfigFile) LoadEncrypted(path gdnative.String, key gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling ConfigFile.LoadEncrypted()")
+	// log.Println("Calling ConfigFile.LoadEncrypted()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -253,7 +253,7 @@ func (o *ConfigFile) LoadEncrypted(path gdnative.String, key gdnative.PoolByteAr
 	Args: [{ false path String} { false password String}], Returns: enum.Error
 */
 func (o *ConfigFile) LoadEncryptedPass(path gdnative.String, password gdnative.String) gdnative.Error {
-	//log.Println("Calling ConfigFile.LoadEncryptedPass()")
+	// log.Println("Calling ConfigFile.LoadEncryptedPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -278,7 +278,7 @@ func (o *ConfigFile) LoadEncryptedPass(path gdnative.String, password gdnative.S
 	Args: [{ false data String}], Returns: enum.Error
 */
 func (o *ConfigFile) Parse(data gdnative.String) gdnative.Error {
-	//log.Println("Calling ConfigFile.Parse()")
+	// log.Println("Calling ConfigFile.Parse()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -302,7 +302,7 @@ func (o *ConfigFile) Parse(data gdnative.String) gdnative.Error {
 	Args: [{ false path String}], Returns: enum.Error
 */
 func (o *ConfigFile) Save(path gdnative.String) gdnative.Error {
-	//log.Println("Calling ConfigFile.Save()")
+	// log.Println("Calling ConfigFile.Save()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -326,7 +326,7 @@ func (o *ConfigFile) Save(path gdnative.String) gdnative.Error {
 	Args: [{ false path String} { false key PoolByteArray}], Returns: enum.Error
 */
 func (o *ConfigFile) SaveEncrypted(path gdnative.String, key gdnative.PoolByteArray) gdnative.Error {
-	//log.Println("Calling ConfigFile.SaveEncrypted()")
+	// log.Println("Calling ConfigFile.SaveEncrypted()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -351,7 +351,7 @@ func (o *ConfigFile) SaveEncrypted(path gdnative.String, key gdnative.PoolByteAr
 	Args: [{ false path String} { false password String}], Returns: enum.Error
 */
 func (o *ConfigFile) SaveEncryptedPass(path gdnative.String, password gdnative.String) gdnative.Error {
-	//log.Println("Calling ConfigFile.SaveEncryptedPass()")
+	// log.Println("Calling ConfigFile.SaveEncryptedPass()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -376,7 +376,7 @@ func (o *ConfigFile) SaveEncryptedPass(path gdnative.String, password gdnative.S
 	Args: [{ false section String} { false key String} { false value Variant}], Returns: void
 */
 func (o *ConfigFile) SetValue(section gdnative.String, key gdnative.String, value gdnative.Variant) {
-	//log.Println("Calling ConfigFile.SetValue()")
+	// log.Println("Calling ConfigFile.SetValue()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 3, 3)

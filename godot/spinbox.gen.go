@@ -39,7 +39,7 @@ func (o *SpinBox) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *SpinBox) X_GuiInput(arg0 InputEventImplementer) {
-	//log.Println("Calling SpinBox.X_GuiInput()")
+	// log.Println("Calling SpinBox.X_GuiInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -60,7 +60,7 @@ func (o *SpinBox) X_GuiInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *SpinBox) X_LineEditFocusExit() {
-	//log.Println("Calling SpinBox.X_LineEditFocusExit()")
+	// log.Println("Calling SpinBox.X_LineEditFocusExit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *SpinBox) X_LineEditFocusExit() {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *SpinBox) X_LineEditInput(arg0 InputEventImplementer) {
-	//log.Println("Calling SpinBox.X_LineEditInput()")
+	// log.Println("Calling SpinBox.X_LineEditInput()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -101,7 +101,7 @@ func (o *SpinBox) X_LineEditInput(arg0 InputEventImplementer) {
 	Args: [], Returns: void
 */
 func (o *SpinBox) X_RangeClickTimeout() {
-	//log.Println("Calling SpinBox.X_RangeClickTimeout()")
+	// log.Println("Calling SpinBox.X_RangeClickTimeout()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -121,7 +121,7 @@ func (o *SpinBox) X_RangeClickTimeout() {
 	Args: [{ false arg0 String}], Returns: void
 */
 func (o *SpinBox) X_TextEntered(arg0 gdnative.String) {
-	//log.Println("Calling SpinBox.X_TextEntered()")
+	// log.Println("Calling SpinBox.X_TextEntered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -142,7 +142,7 @@ func (o *SpinBox) X_TextEntered(arg0 gdnative.String) {
 	Args: [], Returns: void
 */
 func (o *SpinBox) Apply() {
-	//log.Println("Calling SpinBox.Apply()")
+	// log.Println("Calling SpinBox.Apply()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -162,7 +162,7 @@ func (o *SpinBox) Apply() {
 	Args: [], Returns: enum.LineEdit::Align
 */
 func (o *SpinBox) GetAlign() LineEditAlign {
-	//log.Println("Calling SpinBox.GetAlign()")
+	// log.Println("Calling SpinBox.GetAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -185,7 +185,7 @@ func (o *SpinBox) GetAlign() LineEditAlign {
 	Args: [], Returns: LineEdit
 */
 func (o *SpinBox) GetLineEdit() LineEditImplementer {
-	//log.Println("Calling SpinBox.GetLineEdit()")
+	// log.Println("Calling SpinBox.GetLineEdit()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -222,7 +222,7 @@ func (o *SpinBox) GetLineEdit() LineEditImplementer {
 	Args: [], Returns: String
 */
 func (o *SpinBox) GetPrefix() gdnative.String {
-	//log.Println("Calling SpinBox.GetPrefix()")
+	// log.Println("Calling SpinBox.GetPrefix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -245,7 +245,7 @@ func (o *SpinBox) GetPrefix() gdnative.String {
 	Args: [], Returns: String
 */
 func (o *SpinBox) GetSuffix() gdnative.String {
-	//log.Println("Calling SpinBox.GetSuffix()")
+	// log.Println("Calling SpinBox.GetSuffix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -268,7 +268,7 @@ func (o *SpinBox) GetSuffix() gdnative.String {
 	Args: [], Returns: bool
 */
 func (o *SpinBox) IsEditable() gdnative.Bool {
-	//log.Println("Calling SpinBox.IsEditable()")
+	// log.Println("Calling SpinBox.IsEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -291,7 +291,7 @@ func (o *SpinBox) IsEditable() gdnative.Bool {
 	Args: [{ false align int}], Returns: void
 */
 func (o *SpinBox) SetAlign(align gdnative.Int) {
-	//log.Println("Calling SpinBox.SetAlign()")
+	// log.Println("Calling SpinBox.SetAlign()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -312,7 +312,7 @@ func (o *SpinBox) SetAlign(align gdnative.Int) {
 	Args: [{ false editable bool}], Returns: void
 */
 func (o *SpinBox) SetEditable(editable gdnative.Bool) {
-	//log.Println("Calling SpinBox.SetEditable()")
+	// log.Println("Calling SpinBox.SetEditable()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -333,7 +333,7 @@ func (o *SpinBox) SetEditable(editable gdnative.Bool) {
 	Args: [{ false prefix String}], Returns: void
 */
 func (o *SpinBox) SetPrefix(prefix gdnative.String) {
-	//log.Println("Calling SpinBox.SetPrefix()")
+	// log.Println("Calling SpinBox.SetPrefix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -354,7 +354,7 @@ func (o *SpinBox) SetPrefix(prefix gdnative.String) {
 	Args: [{ false suffix String}], Returns: void
 */
 func (o *SpinBox) SetSuffix(suffix gdnative.String) {
-	//log.Println("Calling SpinBox.SetSuffix()")
+	// log.Println("Calling SpinBox.SetSuffix()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

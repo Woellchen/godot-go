@@ -47,7 +47,7 @@ func (o *TouchScreenButton) BaseClass() string {
 	Args: [{ false arg0 InputEvent}], Returns: void
 */
 func (o *TouchScreenButton) X_Input(arg0 InputEventImplementer) {
-	//log.Println("Calling TouchScreenButton.X_Input()")
+	// log.Println("Calling TouchScreenButton.X_Input()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -68,7 +68,7 @@ func (o *TouchScreenButton) X_Input(arg0 InputEventImplementer) {
 	Args: [], Returns: String
 */
 func (o *TouchScreenButton) GetAction() gdnative.String {
-	//log.Println("Calling TouchScreenButton.GetAction()")
+	// log.Println("Calling TouchScreenButton.GetAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -91,7 +91,7 @@ func (o *TouchScreenButton) GetAction() gdnative.String {
 	Args: [], Returns: BitMap
 */
 func (o *TouchScreenButton) GetBitmask() BitMapImplementer {
-	//log.Println("Calling TouchScreenButton.GetBitmask()")
+	// log.Println("Calling TouchScreenButton.GetBitmask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *TouchScreenButton) GetBitmask() BitMapImplementer {
 	Args: [], Returns: Shape2D
 */
 func (o *TouchScreenButton) GetShape() Shape2DImplementer {
-	//log.Println("Calling TouchScreenButton.GetShape()")
+	// log.Println("Calling TouchScreenButton.GetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -165,7 +165,7 @@ func (o *TouchScreenButton) GetShape() Shape2DImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TouchScreenButton) GetTexture() TextureImplementer {
-	//log.Println("Calling TouchScreenButton.GetTexture()")
+	// log.Println("Calling TouchScreenButton.GetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -202,7 +202,7 @@ func (o *TouchScreenButton) GetTexture() TextureImplementer {
 	Args: [], Returns: Texture
 */
 func (o *TouchScreenButton) GetTexturePressed() TextureImplementer {
-	//log.Println("Calling TouchScreenButton.GetTexturePressed()")
+	// log.Println("Calling TouchScreenButton.GetTexturePressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -239,7 +239,7 @@ func (o *TouchScreenButton) GetTexturePressed() TextureImplementer {
 	Args: [], Returns: enum.TouchScreenButton::VisibilityMode
 */
 func (o *TouchScreenButton) GetVisibilityMode() TouchScreenButtonVisibilityMode {
-	//log.Println("Calling TouchScreenButton.GetVisibilityMode()")
+	// log.Println("Calling TouchScreenButton.GetVisibilityMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -262,7 +262,7 @@ func (o *TouchScreenButton) GetVisibilityMode() TouchScreenButtonVisibilityMode 
 	Args: [], Returns: bool
 */
 func (o *TouchScreenButton) IsPassbyPressEnabled() gdnative.Bool {
-	//log.Println("Calling TouchScreenButton.IsPassbyPressEnabled()")
+	// log.Println("Calling TouchScreenButton.IsPassbyPressEnabled()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -285,7 +285,7 @@ func (o *TouchScreenButton) IsPassbyPressEnabled() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TouchScreenButton) IsPressed() gdnative.Bool {
-	//log.Println("Calling TouchScreenButton.IsPressed()")
+	// log.Println("Calling TouchScreenButton.IsPressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -308,7 +308,7 @@ func (o *TouchScreenButton) IsPressed() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TouchScreenButton) IsShapeCentered() gdnative.Bool {
-	//log.Println("Calling TouchScreenButton.IsShapeCentered()")
+	// log.Println("Calling TouchScreenButton.IsShapeCentered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -331,7 +331,7 @@ func (o *TouchScreenButton) IsShapeCentered() gdnative.Bool {
 	Args: [], Returns: bool
 */
 func (o *TouchScreenButton) IsShapeVisible() gdnative.Bool {
-	//log.Println("Calling TouchScreenButton.IsShapeVisible()")
+	// log.Println("Calling TouchScreenButton.IsShapeVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -354,7 +354,7 @@ func (o *TouchScreenButton) IsShapeVisible() gdnative.Bool {
 	Args: [{ false action String}], Returns: void
 */
 func (o *TouchScreenButton) SetAction(action gdnative.String) {
-	//log.Println("Calling TouchScreenButton.SetAction()")
+	// log.Println("Calling TouchScreenButton.SetAction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -375,7 +375,7 @@ func (o *TouchScreenButton) SetAction(action gdnative.String) {
 	Args: [{ false bitmask BitMap}], Returns: void
 */
 func (o *TouchScreenButton) SetBitmask(bitmask BitMapImplementer) {
-	//log.Println("Calling TouchScreenButton.SetBitmask()")
+	// log.Println("Calling TouchScreenButton.SetBitmask()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -396,7 +396,7 @@ func (o *TouchScreenButton) SetBitmask(bitmask BitMapImplementer) {
 	Args: [{ false enabled bool}], Returns: void
 */
 func (o *TouchScreenButton) SetPassbyPress(enabled gdnative.Bool) {
-	//log.Println("Calling TouchScreenButton.SetPassbyPress()")
+	// log.Println("Calling TouchScreenButton.SetPassbyPress()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -417,7 +417,7 @@ func (o *TouchScreenButton) SetPassbyPress(enabled gdnative.Bool) {
 	Args: [{ false shape Shape2D}], Returns: void
 */
 func (o *TouchScreenButton) SetShape(shape Shape2DImplementer) {
-	//log.Println("Calling TouchScreenButton.SetShape()")
+	// log.Println("Calling TouchScreenButton.SetShape()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -438,7 +438,7 @@ func (o *TouchScreenButton) SetShape(shape Shape2DImplementer) {
 	Args: [{ false bool bool}], Returns: void
 */
 func (o *TouchScreenButton) SetShapeCentered(bool gdnative.Bool) {
-	//log.Println("Calling TouchScreenButton.SetShapeCentered()")
+	// log.Println("Calling TouchScreenButton.SetShapeCentered()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -459,7 +459,7 @@ func (o *TouchScreenButton) SetShapeCentered(bool gdnative.Bool) {
 	Args: [{ false bool bool}], Returns: void
 */
 func (o *TouchScreenButton) SetShapeVisible(bool gdnative.Bool) {
-	//log.Println("Calling TouchScreenButton.SetShapeVisible()")
+	// log.Println("Calling TouchScreenButton.SetShapeVisible()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -480,7 +480,7 @@ func (o *TouchScreenButton) SetShapeVisible(bool gdnative.Bool) {
 	Args: [{ false texture Texture}], Returns: void
 */
 func (o *TouchScreenButton) SetTexture(texture TextureImplementer) {
-	//log.Println("Calling TouchScreenButton.SetTexture()")
+	// log.Println("Calling TouchScreenButton.SetTexture()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -501,7 +501,7 @@ func (o *TouchScreenButton) SetTexture(texture TextureImplementer) {
 	Args: [{ false texture_pressed Texture}], Returns: void
 */
 func (o *TouchScreenButton) SetTexturePressed(texturePressed TextureImplementer) {
-	//log.Println("Calling TouchScreenButton.SetTexturePressed()")
+	// log.Println("Calling TouchScreenButton.SetTexturePressed()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -522,7 +522,7 @@ func (o *TouchScreenButton) SetTexturePressed(texturePressed TextureImplementer)
 	Args: [{ false mode int}], Returns: void
 */
 func (o *TouchScreenButton) SetVisibilityMode(mode gdnative.Int) {
-	//log.Println("Calling TouchScreenButton.SetVisibilityMode()")
+	// log.Println("Calling TouchScreenButton.SetVisibilityMode()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

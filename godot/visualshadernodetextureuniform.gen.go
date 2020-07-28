@@ -57,7 +57,7 @@ func (o *VisualShaderNodeTextureUniform) BaseClass() string {
 	Args: [], Returns: enum.VisualShaderNodeTextureUniform::ColorDefault
 */
 func (o *VisualShaderNodeTextureUniform) GetColorDefault() VisualShaderNodeTextureUniformColorDefault {
-	//log.Println("Calling VisualShaderNodeTextureUniform.GetColorDefault()")
+	// log.Println("Calling VisualShaderNodeTextureUniform.GetColorDefault()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -80,7 +80,7 @@ func (o *VisualShaderNodeTextureUniform) GetColorDefault() VisualShaderNodeTextu
 	Args: [], Returns: enum.VisualShaderNodeTextureUniform::TextureType
 */
 func (o *VisualShaderNodeTextureUniform) GetTextureType() VisualShaderNodeTextureUniformTextureType {
-	//log.Println("Calling VisualShaderNodeTextureUniform.GetTextureType()")
+	// log.Println("Calling VisualShaderNodeTextureUniform.GetTextureType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -103,7 +103,7 @@ func (o *VisualShaderNodeTextureUniform) GetTextureType() VisualShaderNodeTextur
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualShaderNodeTextureUniform) SetColorDefault(aType gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeTextureUniform.SetColorDefault()")
+	// log.Println("Calling VisualShaderNodeTextureUniform.SetColorDefault()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -124,7 +124,7 @@ func (o *VisualShaderNodeTextureUniform) SetColorDefault(aType gdnative.Int) {
 	Args: [{ false type int}], Returns: void
 */
 func (o *VisualShaderNodeTextureUniform) SetTextureType(aType gdnative.Int) {
-	//log.Println("Calling VisualShaderNodeTextureUniform.SetTextureType()")
+	// log.Println("Calling VisualShaderNodeTextureUniform.SetTextureType()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)

@@ -39,7 +39,7 @@ func (o *MeshLibrary) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *MeshLibrary) Clear() {
-	//log.Println("Calling MeshLibrary.Clear()")
+	// log.Println("Calling MeshLibrary.Clear()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *MeshLibrary) Clear() {
 	Args: [{ false id int}], Returns: void
 */
 func (o *MeshLibrary) CreateItem(id gdnative.Int) {
-	//log.Println("Calling MeshLibrary.CreateItem()")
+	// log.Println("Calling MeshLibrary.CreateItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -80,7 +80,7 @@ func (o *MeshLibrary) CreateItem(id gdnative.Int) {
 	Args: [{ false name String}], Returns: int
 */
 func (o *MeshLibrary) FindItemByName(name gdnative.String) gdnative.Int {
-	//log.Println("Calling MeshLibrary.FindItemByName()")
+	// log.Println("Calling MeshLibrary.FindItemByName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -104,7 +104,7 @@ func (o *MeshLibrary) FindItemByName(name gdnative.String) gdnative.Int {
 	Args: [], Returns: PoolIntArray
 */
 func (o *MeshLibrary) GetItemList() gdnative.PoolIntArray {
-	//log.Println("Calling MeshLibrary.GetItemList()")
+	// log.Println("Calling MeshLibrary.GetItemList()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -127,7 +127,7 @@ func (o *MeshLibrary) GetItemList() gdnative.PoolIntArray {
 	Args: [{ false id int}], Returns: Mesh
 */
 func (o *MeshLibrary) GetItemMesh(id gdnative.Int) MeshImplementer {
-	//log.Println("Calling MeshLibrary.GetItemMesh()")
+	// log.Println("Calling MeshLibrary.GetItemMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -165,7 +165,7 @@ func (o *MeshLibrary) GetItemMesh(id gdnative.Int) MeshImplementer {
 	Args: [{ false id int}], Returns: String
 */
 func (o *MeshLibrary) GetItemName(id gdnative.Int) gdnative.String {
-	//log.Println("Calling MeshLibrary.GetItemName()")
+	// log.Println("Calling MeshLibrary.GetItemName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -189,7 +189,7 @@ func (o *MeshLibrary) GetItemName(id gdnative.Int) gdnative.String {
 	Args: [{ false id int}], Returns: NavigationMesh
 */
 func (o *MeshLibrary) GetItemNavmesh(id gdnative.Int) NavigationMeshImplementer {
-	//log.Println("Calling MeshLibrary.GetItemNavmesh()")
+	// log.Println("Calling MeshLibrary.GetItemNavmesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -227,7 +227,7 @@ func (o *MeshLibrary) GetItemNavmesh(id gdnative.Int) NavigationMeshImplementer 
 	Args: [{ false id int}], Returns: Transform
 */
 func (o *MeshLibrary) GetItemNavmeshTransform(id gdnative.Int) gdnative.Transform {
-	//log.Println("Calling MeshLibrary.GetItemNavmeshTransform()")
+	// log.Println("Calling MeshLibrary.GetItemNavmeshTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -251,7 +251,7 @@ func (o *MeshLibrary) GetItemNavmeshTransform(id gdnative.Int) gdnative.Transfor
 	Args: [{ false id int}], Returns: Texture
 */
 func (o *MeshLibrary) GetItemPreview(id gdnative.Int) TextureImplementer {
-	//log.Println("Calling MeshLibrary.GetItemPreview()")
+	// log.Println("Calling MeshLibrary.GetItemPreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -289,7 +289,7 @@ func (o *MeshLibrary) GetItemPreview(id gdnative.Int) TextureImplementer {
 	Args: [{ false id int}], Returns: Array
 */
 func (o *MeshLibrary) GetItemShapes(id gdnative.Int) gdnative.Array {
-	//log.Println("Calling MeshLibrary.GetItemShapes()")
+	// log.Println("Calling MeshLibrary.GetItemShapes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -313,7 +313,7 @@ func (o *MeshLibrary) GetItemShapes(id gdnative.Int) gdnative.Array {
 	Args: [], Returns: int
 */
 func (o *MeshLibrary) GetLastUnusedItemId() gdnative.Int {
-	//log.Println("Calling MeshLibrary.GetLastUnusedItemId()")
+	// log.Println("Calling MeshLibrary.GetLastUnusedItemId()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -336,7 +336,7 @@ func (o *MeshLibrary) GetLastUnusedItemId() gdnative.Int {
 	Args: [{ false id int}], Returns: void
 */
 func (o *MeshLibrary) RemoveItem(id gdnative.Int) {
-	//log.Println("Calling MeshLibrary.RemoveItem()")
+	// log.Println("Calling MeshLibrary.RemoveItem()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -357,7 +357,7 @@ func (o *MeshLibrary) RemoveItem(id gdnative.Int) {
 	Args: [{ false id int} { false mesh Mesh}], Returns: void
 */
 func (o *MeshLibrary) SetItemMesh(id gdnative.Int, mesh MeshImplementer) {
-	//log.Println("Calling MeshLibrary.SetItemMesh()")
+	// log.Println("Calling MeshLibrary.SetItemMesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -379,7 +379,7 @@ func (o *MeshLibrary) SetItemMesh(id gdnative.Int, mesh MeshImplementer) {
 	Args: [{ false id int} { false name String}], Returns: void
 */
 func (o *MeshLibrary) SetItemName(id gdnative.Int, name gdnative.String) {
-	//log.Println("Calling MeshLibrary.SetItemName()")
+	// log.Println("Calling MeshLibrary.SetItemName()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -401,7 +401,7 @@ func (o *MeshLibrary) SetItemName(id gdnative.Int, name gdnative.String) {
 	Args: [{ false id int} { false navmesh NavigationMesh}], Returns: void
 */
 func (o *MeshLibrary) SetItemNavmesh(id gdnative.Int, navmesh NavigationMeshImplementer) {
-	//log.Println("Calling MeshLibrary.SetItemNavmesh()")
+	// log.Println("Calling MeshLibrary.SetItemNavmesh()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -423,7 +423,7 @@ func (o *MeshLibrary) SetItemNavmesh(id gdnative.Int, navmesh NavigationMeshImpl
 	Args: [{ false id int} { false navmesh Transform}], Returns: void
 */
 func (o *MeshLibrary) SetItemNavmeshTransform(id gdnative.Int, navmesh gdnative.Transform) {
-	//log.Println("Calling MeshLibrary.SetItemNavmeshTransform()")
+	// log.Println("Calling MeshLibrary.SetItemNavmeshTransform()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -445,7 +445,7 @@ func (o *MeshLibrary) SetItemNavmeshTransform(id gdnative.Int, navmesh gdnative.
 	Args: [{ false id int} { false texture Texture}], Returns: void
 */
 func (o *MeshLibrary) SetItemPreview(id gdnative.Int, texture TextureImplementer) {
-	//log.Println("Calling MeshLibrary.SetItemPreview()")
+	// log.Println("Calling MeshLibrary.SetItemPreview()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)
@@ -467,7 +467,7 @@ func (o *MeshLibrary) SetItemPreview(id gdnative.Int, texture TextureImplementer
 	Args: [{ false id int} { false shapes Array}], Returns: void
 */
 func (o *MeshLibrary) SetItemShapes(id gdnative.Int, shapes gdnative.Array) {
-	//log.Println("Calling MeshLibrary.SetItemShapes()")
+	// log.Println("Calling MeshLibrary.SetItemShapes()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 2, 2)

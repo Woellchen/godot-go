@@ -39,7 +39,7 @@ func (o *StaticBody) BaseClass() string {
 	Args: [], Returns: void
 */
 func (o *StaticBody) X_ReloadPhysicsCharacteristics() {
-	//log.Println("Calling StaticBody.X_ReloadPhysicsCharacteristics()")
+	// log.Println("Calling StaticBody.X_ReloadPhysicsCharacteristics()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -59,7 +59,7 @@ func (o *StaticBody) X_ReloadPhysicsCharacteristics() {
 	Args: [], Returns: float
 */
 func (o *StaticBody) GetBounce() gdnative.Real {
-	//log.Println("Calling StaticBody.GetBounce()")
+	// log.Println("Calling StaticBody.GetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -82,7 +82,7 @@ func (o *StaticBody) GetBounce() gdnative.Real {
 	Args: [], Returns: Vector3
 */
 func (o *StaticBody) GetConstantAngularVelocity() gdnative.Vector3 {
-	//log.Println("Calling StaticBody.GetConstantAngularVelocity()")
+	// log.Println("Calling StaticBody.GetConstantAngularVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -105,7 +105,7 @@ func (o *StaticBody) GetConstantAngularVelocity() gdnative.Vector3 {
 	Args: [], Returns: Vector3
 */
 func (o *StaticBody) GetConstantLinearVelocity() gdnative.Vector3 {
-	//log.Println("Calling StaticBody.GetConstantLinearVelocity()")
+	// log.Println("Calling StaticBody.GetConstantLinearVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -128,7 +128,7 @@ func (o *StaticBody) GetConstantLinearVelocity() gdnative.Vector3 {
 	Args: [], Returns: float
 */
 func (o *StaticBody) GetFriction() gdnative.Real {
-	//log.Println("Calling StaticBody.GetFriction()")
+	// log.Println("Calling StaticBody.GetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -151,7 +151,7 @@ func (o *StaticBody) GetFriction() gdnative.Real {
 	Args: [], Returns: PhysicsMaterial
 */
 func (o *StaticBody) GetPhysicsMaterialOverride() PhysicsMaterialImplementer {
-	//log.Println("Calling StaticBody.GetPhysicsMaterialOverride()")
+	// log.Println("Calling StaticBody.GetPhysicsMaterialOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 0, 0)
@@ -188,7 +188,7 @@ func (o *StaticBody) GetPhysicsMaterialOverride() PhysicsMaterialImplementer {
 	Args: [{ false bounce float}], Returns: void
 */
 func (o *StaticBody) SetBounce(bounce gdnative.Real) {
-	//log.Println("Calling StaticBody.SetBounce()")
+	// log.Println("Calling StaticBody.SetBounce()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -209,7 +209,7 @@ func (o *StaticBody) SetBounce(bounce gdnative.Real) {
 	Args: [{ false vel Vector3}], Returns: void
 */
 func (o *StaticBody) SetConstantAngularVelocity(vel gdnative.Vector3) {
-	//log.Println("Calling StaticBody.SetConstantAngularVelocity()")
+	// log.Println("Calling StaticBody.SetConstantAngularVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -230,7 +230,7 @@ func (o *StaticBody) SetConstantAngularVelocity(vel gdnative.Vector3) {
 	Args: [{ false vel Vector3}], Returns: void
 */
 func (o *StaticBody) SetConstantLinearVelocity(vel gdnative.Vector3) {
-	//log.Println("Calling StaticBody.SetConstantLinearVelocity()")
+	// log.Println("Calling StaticBody.SetConstantLinearVelocity()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -251,7 +251,7 @@ func (o *StaticBody) SetConstantLinearVelocity(vel gdnative.Vector3) {
 	Args: [{ false friction float}], Returns: void
 */
 func (o *StaticBody) SetFriction(friction gdnative.Real) {
-	//log.Println("Calling StaticBody.SetFriction()")
+	// log.Println("Calling StaticBody.SetFriction()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
@@ -272,7 +272,7 @@ func (o *StaticBody) SetFriction(friction gdnative.Real) {
 	Args: [{ false physics_material_override PhysicsMaterial}], Returns: void
 */
 func (o *StaticBody) SetPhysicsMaterialOverride(physicsMaterialOverride PhysicsMaterialImplementer) {
-	//log.Println("Calling StaticBody.SetPhysicsMaterialOverride()")
+	// log.Println("Calling StaticBody.SetPhysicsMaterialOverride()")
 
 	// Build out the method's arguments
 	ptrArguments := make([]gdnative.Pointer, 1, 1)
